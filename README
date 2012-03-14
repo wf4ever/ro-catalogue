@@ -2,9 +2,14 @@ wf4ever/ro-catalogue
 
 A collection of Research Objects for development and testing.
 
-Directory structure
+Directory and file structure
 
-v0.1/ - ROs conforming to RO specification version 0.1
+./ro.sh editable file defines symbols for running ro-manager on local system.
+This is not included in the git index, so that each local system can maintain
+its own copy.  A sample file from which a local copy of ro.sh may be derived
+is ro.sg.gk-eskarina
 
-v0.2/ - ROs conforming to RO specification version 0.2
+./v0.1/ - ROs conforming to RO specification version 0.1
+
+./v0.2/ - ROs conforming to RO specification version 0.2
 
