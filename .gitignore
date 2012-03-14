@@ -1,0 +1,29 @@
+# Package-specific excludes
+
+# Site-specific RO-manager configuration
+/ro.sh
+
+#
+# Windows
+#
+
+# Windows Thumbnail Cache
+# See: http://en.wikipedia.org/wiki/Windows_thumbnail_cache
+Thumbs.db
+
+#
+# Linux
+#
+
+# Ignore "backup" files which vim and emacs commonly create
+*~
+
+#
+# OS X
+#
+
+# Desktop Service Store files
+# See: http://en.wikipedia.org/wiki/.DS_Store
+.DS_Store
+
+
