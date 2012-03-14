@@ -42,4 +42,6 @@ $RO annotations -v 20120114-1156-405.jpg
 
 echo "--------"
 
+$RO annotations -v
+
 # End.

@@ -7,27 +7,27 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:ro="http://purl.org/wf4ever/ro#"
 >
-  <rdf:Description rdf:nodeID="VOJJIyvb7">
+  <rdf:Description rdf:nodeID="XuTPtJoZ8">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ro:annotatesAggregatedResource rdf:resource=""/>
+    <ao:body rdf:resource=".ro/Ann-20120314-0001-20120114-1156-405.jpg.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="20120114-1156-405.jpg"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="XuTPtJoZ7">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
     <ao:body rdf:resource=".ro/manifest.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource=""/>
   </rdf:Description>
   <rdf:Description rdf:about="">
-    <dcterms:identifier>RO-with-image</dcterms:identifier>
-    <dcterms:title>Frosty morning image</dcterms:title>
-    <ore:aggregates rdf:resource="20120114-1156-405.jpg"/>
-    <ore:aggregates rdf:nodeID="VOJJIyvb7"/>
-    <ore:aggregates rdf:nodeID="VOJJIyvb8"/>
-    <ore:aggregates rdf:resource="README"/>
-    <ore:aggregates rdf:resource="ro_trivial.sh"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
     <dcterms:description>Frosty morning image</dcterms:description>
+    <dcterms:created>2012-03-14T16:49:07</dcterms:created>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
+    <dcterms:identifier>RO-with-image</dcterms:identifier>
     <dcterms:creator>Test user</dcterms:creator>
-    <dcterms:created>2012-03-14T16:14:23</dcterms:created>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="VOJJIyvb8">
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ro:annotatesAggregatedResource rdf:resource="20120114-1156-405.jpg"/>
-    <ao:body rdf:resource=".ro/Ann-20120314-0001-20120114-1156-405.jpg.rdf"/>
+    <dcterms:title>Frosty morning image</dcterms:title>
+    <ore:aggregates rdf:resource="README"/>
+    <ore:aggregates rdf:nodeID="XuTPtJoZ8"/>
+    <ore:aggregates rdf:resource="make.sh"/>
+    <ore:aggregates rdf:nodeID="XuTPtJoZ7"/>
+    <ore:aggregates rdf:resource="20120114-1156-405.jpg"/>
   </rdf:Description>
 </rdf:RDF>
