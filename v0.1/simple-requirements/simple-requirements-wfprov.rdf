@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY rdf     "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY rdfs    "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY owl     "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd     "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml     "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfg    "http://www.w3.org/2004/03/trix/rdfg-1/" >
+    <!ENTITY ore     "http://www.openarchives.org/ore/terms/" >
+    <!ENTITY ao      "http://purl.org/ao/" >
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY foaf    "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY ro      "http://purl.org/wf4ever/ro#" >
+    <!ENTITY wfprov  "http://purl.org/wf4ever/wfprov#" >
+    <!ENTITY wfdesc  "http://purl.org/wf4ever/wfdesc#" >
+]>
+
+<rdf:RDF xmlns=""
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:rdfg="http://www.w3.org/2004/03/trix/rdfg-1/"
+     xmlns:ore="http://www.openarchives.org/ore/terms/"
+     xmlns:ao="http://purl.org/ao/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:ro="http://purl.org/wf4ever/ro#"
+     xmlns:wfprov="http://purl.org/wf4ever/wfprov#"
+     xmlns:wfdesc="http://purl.org/wf4ever/wfdesc#"
+>
+
+  <!-- ============
+       Workflow run
+       ============
+    -->
+
+  <wfprov:WorkflowRun rdf:about="#ods_json">
+    <rdfs:label>ODS to JSON</rdfs:label>
+    <rdfs:comment>Conversion of ODS files to JSON for processing by Dexy</rdfs:comment>
+    <wfprov:describedByProcess rdf:resource="simple-requirements-wfdesc.rdf#ods_json" />
+    <!-- @@ Which one?  I think the second - should have global URI for bash? -->
+    <wfprov:wasEnactedBy rdf:resource="docs/mkjson.sh" />
+    <wfprov:wasEnactedBy rdf:resource="#MacOS_10.5_bash" />
+    <wfprov:usedInput>
+      <wfprov:Artifact rdf:about="data/UserRequirements-gen.ods">
+        <dcterms:creator>GK</dcterms:creator>
+      </wfprov:Artifact>
+    </wfprov:usedInput>
+    <wfprov:usedInput>
+      <wfprov:Artifact rdf:about="data/UserRequirements-astro.ods">
+        <dcterms:creator>GK</dcterms:creator>
+      </wfprov:Artifact>
+    </wfprov:usedInput>
+    <wfprov:usedInput>
+      <wfprov:Artifact rdf:about="data/UserRequirements-bio.ods">
+        <dcterms:creator>GK</dcterms:creator>
+      </wfprov:Artifact>
+    </wfprov:usedInput>
+  </wfprov:WorkflowRun>
+
+  <!-- Workflow outputs -->
+
+  <wfprov:Artifact rdf:about="docs/UserRequirements-gen.json">
+    <wfprov:wasOutputFrom rdf:resource="#ods_json" />
+    <dcterms:created>2012-03-15T11:02</dcterms:created>
+  </wfprov:Artifact>
+
+  <wfprov:Artifact rdf:about="docs/UserRequirements-astro.json">
+    <wfprov:wasOutputFrom rdf:resource="#ods_json" />
+    <dcterms:created>2012-03-15T11:02</dcterms:created>
+  </wfprov:Artifact>
+
+  <wfprov:Artifact rdf:about="docs/UserRequirements-bio.json">
+    <wfprov:wasOutputFrom rdf:resource="#ods_json" />
+    <dcterms:created>2012-03-15T11:02</dcterms:created>
+  </wfprov:Artifact>
+
+  <!-- ======================
+       Workflow sub-processes
+       ======================
+    -->
+
+  <!-- 1: UserRequirements-gen -->
+
+  <wfprov:ProcessRun rdf:about="#ods_csv_1">
+    <rdfs:label>ODS to CSV</rdfs:label>
+    <rdfs:comment>Conversion of single ODS file to CSV</rdfs:comment>
+    <wfprov:wasPartOfWorkflowRun rdf:resource="#ods_json" />
+    <wfprov:describedByProcess rdf:resource="simple-requirements-wfdesc.rdf#ods_csv_1" />
+    <wfprov:usedInput>
+      <wfprov:Artifact rdf:about="data/UserRequirements-gen.ods">
+      </wfprov:Artifact>
+    </wfprov:usedInput>
+  </wfprov:ProcessRun>
+
+  <wfprov:ProcessRun rdf:about="#csv_json_1">
+    <rdfs:label>CSV to JSON</rdfs:label>
+    <rdfs:comment>Conversion of single CSV file to JSON</rdfs:comment>
+    <wfprov:wasPartOfWorkflowRun rdf:resource="#ods_json" />
+    <wfprov:describedByProcess rdf:resource="simple-requirements-wfdesc.rdf#csv_json_1" />
+    <wfprov:usedInput>
+      <wfprov:Artifact rdf:about="data/UserRequirements-gen.csv">
+        <wfprov:wasOutputFrom rdf:resource="#ods_csv_1" />
+        <dcterms:created>2012-03-15T11:02</dcterms:created>
+      </wfprov:Artifact>
+    </wfprov:usedInput>
+  </wfprov:ProcessRun>
+
+  <!-- @@NOTE this is same artifact described above as workflow output 
+       Hence we have two provenance accounts here.  Is this OK?
+    -->
+  <wfprov:Artifact rdf:about="docs/UserRequirements-gen.json">
+    <wfprov:wasOutputFrom rdf:resource="#csv_json_1" />
+    <dcterms:created>2012-03-15T11:02</dcterms:created>
+  </wfprov:Artifact>
+
+  <!-- 2: UserRequirements-astro -->
+
+  <wfprov:ProcessRun rdf:about="#ods_csv_2">
+    <rdfs:label>ODS to CSV</rdfs:label>
+    <rdfs:comment>Conversion of single ODS file to CSV</rdfs:comment>
+    <wfprov:wasPartOfWorkflowRun rdf:resource="#ods_json" />
+    <wfprov:describedByProcess rdf:resource="simple-requirements-wfdesc.rdf#ods_csv_2" />
+    <wfprov:usedInput>
+      <wfprov:Artifact rdf:about="data/UserRequirements-astro.ods">
+      </wfprov:Artifact>
+    </wfprov:usedInput>
+  </wfprov:ProcessRun>
+
+  <wfprov:ProcessRun rdf:about="#csv_json_2">
+    <rdfs:label>CSV to JSON</rdfs:label>
+    <rdfs:comment>Conversion of single CSV file to JSON</rdfs:comment>
+    <wfprov:wasPartOfWorkflowRun rdf:resource="#ods_json" />
+    <wfprov:describedByProcess rdf:resource="simple-requirements-wfdesc.rdf#csv_json_2" />
+    <wfprov:usedInput>
+      <wfprov:Artifact rdf:about="data/UserRequirements-astro.csv">
+        <wfprov:wasOutputFrom rdf:resource="#ods_csv_1" />
+        <dcterms:created>2012-03-15T11:02</dcterms:created>
+      </wfprov:Artifact>
+    </wfprov:usedInput>
+  </wfprov:ProcessRun>
+
+  <!-- @@NOTE this is same artifact described above as workflow output 
+       Hence we have two provenance accounts here.  Is this OK?
+    -->
+  <wfprov:Artifact rdf:about="docs/UserRequirements-astro.json">
+    <wfprov:wasOutputFrom rdf:resource="#csv_json_2" />
+    <dcterms:created>2012-03-15T11:02</dcterms:created>
+  </wfprov:Artifact>
+
+  <!-- 3: UserRequirements-bio -->
+
+  <wfprov:ProcessRun rdf:about="#ods_csv_3">
+    <rdfs:label>ODS to CSV</rdfs:label>
+    <rdfs:comment>Conversion of single ODS file to CSV</rdfs:comment>
+    <wfprov:wasPartOfWorkflowRun rdf:resource="#ods_json" />
+    <wfprov:describedByProcess rdf:resource="simple-requirements-wfdesc.rdf#ods_csv_3" />
+    <wfprov:usedInput>
+      <wfprov:Artifact rdf:about="data/UserRequirements-bio.ods">
+      </wfprov:Artifact>
+    </wfprov:usedInput>
+  </wfprov:ProcessRun>
+
+  <wfprov:ProcessRun rdf:about="#csv_json_3">
+    <rdfs:label>CSV to JSON</rdfs:label>
+    <rdfs:comment>Conversion of single CSV file to JSON</rdfs:comment>
+    <wfprov:wasPartOfWorkflowRun rdf:resource="#ods_json" />
+    <wfprov:describedByProcess rdf:resource="simple-requirements-wfdesc.rdf#csv_json_3" />
+    <wfprov:usedInput>
+      <wfprov:Artifact rdf:about="data/UserRequirements-bio.csv">
+        <wfprov:wasOutputFrom rdf:resource="#ods_csv_3" />
+        <dcterms:created>2012-03-15T11:02</dcterms:created>
+      </wfprov:Artifact>
+    </wfprov:usedInput>
+  </wfprov:ProcessRun>
+
+  <!-- @@NOTE this is same artifact described above as workflow output 
+       Hence we have two provenance accounts here.  Is this OK?
+    -->
+  <wfprov:Artifact rdf:about="docs/UserRequirements-bio.json">
+    <wfprov:wasOutputFrom rdf:resource="#csv_json_3" />
+    <dcterms:created>2012-03-15T11:02</dcterms:created>
+  </wfprov:Artifact>
+
+</rdf:RDF>
+
