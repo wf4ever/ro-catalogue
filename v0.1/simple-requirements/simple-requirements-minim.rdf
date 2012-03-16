@@ -34,93 +34,196 @@
      xmlns:minim="&minim;"
 >
 
+  <!-- ===========
+       CONSTRAINTS 
+       ===========
+    -->
+
   <!-- Target for Minimum information requirement 
-  
+
        Minim invokes minimum information models on for a specified purpose
        relating to a specified target.  The requirement may apply to some
        resource other than the specified target.
-       
+     
        For example, in this case, the requirement to create the 
        UserRequirements-gen.json file is that a given Minim model 
        must be satisfied by the Research Object.
     -->
-  <rdf:Description rdf:about="docs/UserRequirements-gen.csv">
+
+  <rdf:Description rdf:about="">
     <minim:hasConstraint>
-      <minim:Constraint rdf:about="#create/docs/UserRequirements-gen.csv">
-        <minim:forPurpose>create UserRequirements-gen.csv</minim:forPurpose> <!-- or just use rdfs:label? -->
+      <minim:Constraint rdf:about="#runnable_RO">
+        <minim:forPurpose>Runnable</minim:forPurpose>
         <minim:onResource rdf:resource="" />
-        <minim:toModel rdf:resource="#runnableRequirementRO" />
+        <minim:toModel rdf:resource="#runnable_RO_model" />
+        <rdfs:comment>
+          Constraint to be satisfied if the RO is to be runnable
+        </rdfs:comment>
       </minim:Constraint>
     </minim:hasConstraint>
   </rdf:Description>
 
-  <!-- Requirements on RO to be runnable, to create defined outputs
+  <rdf:Description rdf:about="">
+    <minim:hasConstraint>
+      <minim:Constraint rdf:about="#reviewable_RO">
+        <minim:forPurpose>Retracable</minim:forPurpose>
+        <minim:onResource rdf:resource="" />
+        <minim:toModel rdf:resource="#reviewable_RO_model" />
+        <rdfs:comment>
+          Constraint to be satisfied if the RO is to be retracable; 
+          i.e. a reviewer can retrace the execution steps, including inputs and outputs, 
+          without actually running the RO.
+        </rdfs:comment>
+      </minim:Constraint>
+    </minim:hasConstraint>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="">
+    <minim:hasConstraint>
+      <minim:Constraint rdf:about="#repeatable_RO">
+        <minim:forPurpose>Repeatable</minim:forPurpose>
+        <minim:onResource rdf:resource="" />
+        <minim:toModel rdf:resource="#repeatable_RO_model" />
+        <rdfs:comment>
+          Constraint to be satisfied if the RO is to be repeatable; 
+          i.e. a reviewer can rerun the execution and compare results 
+          with those obtained previously.
+        </rdfs:comment>
+      </minim:Constraint>
+    </minim:hasConstraint>
+  </rdf:Description>
+
+  <!-- ======
+       MODELS
+       ======
     -->
-  <minim:Model rdf:about="#runnableRequirementRO">
-    <rdfs:label>Runnable Requirements RO</rdfs:label>
+
+  <!-- Model capturing requirements for RO to be runnable, 
+       to create expected outputs
+    -->
+  <minim:Model rdf:about="#runnable_RO_model">
+    <rdfs:label>Runnable RO</rdfs:label>
     <rdfs:comment>
-      This model defines information that must be available for the requirements Research Object to be runnable.
+      This model defines information that must be available for the 
+      requirements Research Object to be runnable.
     </rdfs:comment>
-
-    <!-- # Environment needs lpod-show -->
-    <!-- # Environment needs Python -->
-    <!-- # Environment needs Dexy -->
-
-    <minim:hasMustRequirement>
-      <minim:Requirement rdf:about="#isPresent/data/UserRequirements-astro.ods">
-        <minim:isDerivedBy>
-          <minim:SoftwareEnvironmentRule>
-            <minim:command>lpod-show.py --version</minim:command>
-            <minim:response>0.9.3</minim:response>
-            <minim:derives rdf:resource="#environment-software/lpod-show" />
-          </minim:SoftwareEnvironmentRule>
-        </minim:isDerivedBy>
-      </minim:Requirement>
-    </minim:hasMustRequirement>
-
-    <minim:hasMustRequirement>
-      <minim:Requirement rdf:about="#isPresent/data/UserRequirements-astro.ods">
-        <minim:isDerivedBy>
-          <minim:DataRequirementRule>
-            <minim:aggregates rdf:resource="data/UserRequirements-astro.ods" />
-            <minim:derives rdf:resource="#isPresent/data/UserRequirements-astro.ods" />
-          </minim:DataRequirementRule>
-        </minim:isDerivedBy>
-      </minim:Requirement>
-    </minim:hasMustRequirement>
-
-    <minim:hasShouldRequirement>
-      <minim:Requirement rdf:about="#isPresent/docs/reqs.css">
-        <minim:isDerivedBy>
-          <minim:DataRequirementRule>
-            <minim:aggregates rdf:resource="data/docs/reqs.css" />
-            <minim:derives rdf:resource="#isPresent/docs/reqs.css" />
-          </minim:DataRequirementRule>
-        </minim:isDerivedBy>
-      </minim:Requirement>
-    </minim:hasShouldRequirement>
-
-    <!--
-    # MUST contain 
-    <... rdf:resource="data/UserRequirements-astro.ods" />
-    <... rdf:resource="data/UserRequirements-bio.ods" />
-    <... rdf:resource="data/UserRequirements-gen.ods" />
-    <... rdf:resource="data/TechRequirements-all.ods" />
-    <... rdf:resource="data/TechnicalFacets.ods" />
-    <... rdf:resource="docs/.dexy" />
-    <... rdf:resource="docs/UserRequirements-all.html" />
-    <... rdf:resource="docs/TechRequirements-all.html" />
-    <... rdf:resource="docs/TechnicalFacets.html" />
-    <... rdf:resource="docs/mkjson.sh" />
-    <... rdf:resource="python/ReadCSV.py" />
-    ...
-    # SHOULD contain
-    <... rdf:resource="docs/reqs.css" />
-    <... rdf:resource="docs/trac.css" />
-
-
-      -->
-
+    <minim:hasMustRequirement rdf:resource="#environment-software/lpod-show" />
+    <minim:hasMustRequirement rdf:resource="#environment-software/python" />
+    <minim:hasMustRequirement rdf:resource="#isPresent/workflow-instance" />
+    <minim:hasMustRequirement rdf:resource="#isPresent/workflow-inputfiles" />
   </minim:Model>
+
+  <!-- Model capturing requirements for RO to be reviewable,
+       to review execution of workflow that produced available outputs
+    -->
+  <minim:Model rdf:about="#reviewable_RO_model">
+    <rdfs:label>Reviewable requirements RO</rdfs:label>
+    <rdfs:comment>
+      This model defines information that must be available for the 
+      requirements Research Object to be reviewable; i.e. so that a reviewer
+      can see all the workflow executions, with inputs and outputs generated.
+      
+      (This does not require visibility of intermediate steps within the WF.)
+    </rdfs:comment>
+    <minim:hasMustRequirement rdf:resource="#isPresent/workflow-instance" />
+    <minim:hasMustRequirement rdf:resource="#isPresent/workflow-run" />
+    <minim:hasMustRequirement rdf:resource="#isPresent/workflow-inputfiles" />
+    <minim:hasMustRequirement rdf:resource="#isPresent/workflow-outputfiles" />
+  </minim:Model>
+
+  <!-- Model capturing requirements for RO to be repeatable, 
+       to create expected outputs and compare with those already obtained
+    -->
+  <minim:Model rdf:about="#runnable_RO_model">
+    <rdfs:label>Runnable RO</rdfs:label>
+    <rdfs:comment>
+      This model defines information that must be available for the 
+      requirements Research Object to be runnable.
+    </rdfs:comment>
+    <minim:hasMustRequirement rdf:resource="#environment-software/lpod-show" />
+    <minim:hasMustRequirement rdf:resource="#environment-software/python" />
+    <minim:hasMustRequirement rdf:resource="#isPresent/workflow-instance" />
+    <minim:hasMustRequirement rdf:resource="#isPresent/workflow-inputfiles" />
+    <minim:hasMustRequirement rdf:resource="#isPresent/workflow-outputfiles" />
+  </minim:Model>
+
+  <!-- =================
+       REQUIREMENT RULES
+       =================
+    -->
+
+  <!-- Environment needs lpod-show -->
+  <minim:Requirement rdf:about="#environment-software/lpod-show">
+    <minim:isDerivedBy>
+      <minim:SoftwareEnvironmentRule>
+        <minim:command>lpod-show.py --version</minim:command>
+        <minim:response>0.9.3</minim:response>
+        <minim:derives rdf:resource="#environment-software/lpod-show" />
+      </minim:SoftwareEnvironmentRule>
+    </minim:isDerivedBy>
+  </minim:Requirement>
+
+  <!-- Environment needs python -->
+  <minim:Requirement rdf:about="#environment-software/python">
+    <minim:isDerivedBy>
+      <minim:SoftwareEnvironmentRule>
+        <minim:command>python --version</minim:command>
+        <minim:response>Python 2.7</minim:response>
+        <minim:derives rdf:resource="#environment-software/python" />
+      </minim:SoftwareEnvironmentRule>
+    </minim:isDerivedBy>
+  </minim:Requirement>
+
+  <!-- Workflow instance must be present -->
+  <minim:Requirement rdf:about="#isPresent/workflow-instance">
+    <minim:isDerivedBy>
+      <minim:ContentMatchRequirementRule>
+        <minim:exists>
+          ?wf rdf:type wfdesc:Workflow .
+        </minim:exists>
+        <minim:derives rdf:resource="#isPresent/workflow-instance" />
+      </minim:ContentMatchRequirementRule>
+    </minim:isDerivedBy>
+  </minim:Requirement>
+
+  <!-- Workflow run must be present -->
+  <minim:Requirement rdf:about="#isPresent/workflow-run">
+    <minim:isDerivedBy>
+      <minim:ContentMatchRequirementRule>
+        <minim:exists>
+          ?wf rdf:type wfprov:WorkflowRun .
+        </minim:exists>
+        <minim:derives rdf:resource="#isPresent/workflow-run" />
+      </minim:ContentMatchRequirementRule>
+    </minim:isDerivedBy>
+  </minim:Requirement>
+
+  <!-- Workflow input files must be present -->
+  <minim:Requirement rdf:about="#isPresent/isPresent/workflow-inputfiles">
+    <minim:isDerivedBy>
+      <minim:ContentMatchRequirementRule>
+        <minim:forall>
+          ?wf rdf:type wfdesc:Workflow ;
+              wfdesc:hasInput [ wfdesc:hasArtifact ?if ] .
+        </minim:forall>
+        <minim:aggregatesTemplate>{if}</minim:aggregatesTemplate>
+        <minim:derives rdf:resource="#isPresent/workflow-inputfiles" />
+      </minim:ContentMatchRequirementRule>
+    </minim:isDerivedBy>
+  </minim:Requirement>
+
+  <!-- Workflow output files must be present -->
+  <minim:Requirement rdf:about="#isPresent/isPresent/workflow-outputfiles">
+    <minim:isDerivedBy>
+      <minim:ContentMatchRequirementRule>
+        <minim:forall>
+          ?wf rdf:type wfdesc:Workflow ;
+              wfdesc:hasOutput [ wfdesc:hasArtifact ?of ] .
+        </minim:forall>
+        <minim:aggregatesTemplate>{of}</minim:aggregatesTemplate>
+        <minim:derives rdf:resource="#isPresent/workflow-outputfiles" />
+      </minim:ContentMatchRequirementRule>
+    </minim:isDerivedBy>
+  </minim:Requirement>
 
 </rdf:RDF>
