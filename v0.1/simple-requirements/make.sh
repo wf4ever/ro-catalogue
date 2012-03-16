@@ -3,8 +3,10 @@
 # RO manager sample script
 #
 
-ROBASE="/usr/workspace/"
-RO="/usr/workspace/wf4ever-ro-manager/src/ro"
+source ../../ro.sh
+
+RONAME="simple-requirements"
+TESTRO="$ROPATH/$RONAME"
 
 echo "--------"
 
@@ -16,41 +18,46 @@ $RO config -v \
   -n "Test user" \
   -e "testuser@example.org"
 
-$RO create -v "Wf4Ever requirements" -d $ROBASE/wf4ever-requirements/ -i wf4ever-requirements
+rm .ro/*
 
-for F in \
-    data/UserRequirements-astro.ods \
-    data/UserRequirements-bio.ods   \
-    data/UserRequirements-gen.ods   \
-    data/TechRequirements-all.ods   \
-    data/TechnicalFacets.ods
-do
-    $RO add -v -d $ROBASE/wf4ever-requirements/ $ROBASE/wf4ever-requirements/$F
-done
+$RO create -v "Simple requirements RO" -d $ROPATH/$RONAME -i $RONAME
 
-$RO status -v -d $ROBASE/wf4ever-requirements
+$RO add -v -d -a -d $TESTRO
 
-# $RO list -v -d $ROBASE/wf4ever-requirements
+#for F in \
+#    data/UserRequirements-astro.ods \
+#    data/UserRequirements-bio.ods   \
+#    data/UserRequirements-gen.ods   \
+#do
+#    $RO add -v -d $ROBASE/wf4ever-requirements/ $ROBASE/wf4ever-requirements/$F
+#done
 
+echo "--------"
 
-#echo "--------"
+$RO status -v -d $TESTRO
 
-#./ro annotate -v $ROBASE/test-create-RO/subdir1/subdir1-file.txt title "subdir1-file.txt title"
+echo "--------"
+
+$RO list -v -d $TESTRO
+
+echo "--------"
+
+$RO annotations
+
+echo "--------"
+
+$RO annotate -v $TESTRO/simple-requirements-wfdesc.rdf type "workflow-description"
+$RO annotate -v $TESTRO/simple-requirements-wfprov.rdf type "workflow-run-provenance"
+$RO annotate -v $TESTRO/simple-requirements-minim.rdf type "minim"
+
+$RO annotations
+
+echo "--------"
 
 #./ro annotations -v $ROBASE/test-create-RO/subdir1/subdir1-file.txt
 
 #echo "--------"
 
-#./ro annotate -v $ROBASE/test-create-RO/subdir2/subdir2-file.txt type        "subdir2-file.txt type"
-#./ro annotate -v $ROBASE/test-create-RO/subdir2/subdir2-file.txt keywords    "subdir2-file.txt foo,bar"
-#./ro annotate -v $ROBASE/test-create-RO/subdir2/subdir2-file.txt description "subdir2-file.txt description\nline 2"
-#./ro annotate -v $ROBASE/test-create-RO/subdir2/subdir2-file.txt format      "subdir2-file.txt format"
-#./ro annotate -v $ROBASE/test-create-RO/subdir2/subdir2-file.txt title       "subdir2-file.txt title"
-#./ro annotate -v $ROBASE/test-create-RO/subdir2/subdir2-file.txt created     "20110914T12:00:00"
-
-#./ro annotations -v $ROBASE/test-create-RO/subdir2/subdir2-file.txt
-
 #echo "--------"
 
 # End.
-

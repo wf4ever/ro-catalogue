@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xml:base=".."
+   xmlns:ao="http://purl.org/ao/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:ore="http://www.openarchives.org/ore/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ro="http://purl.org/wf4ever/ro#"
+>
+  <rdf:Description rdf:nodeID="WOKmZhBr11">
+    <ao:body rdf:resource=".ro/Ann-20120316-0001-simple-requirements-wfdesc.rdf.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="simple-requirements-wfdesc.rdf"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="WOKmZhBr12">
+    <ao:body rdf:resource=".ro/Ann-20120316-0001-simple-requirements-minim.rdf.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="simple-requirements-minim.rdf"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="">
+    <dcterms:creator>Test user</dcterms:creator>
+    <dcterms:description>Simple requirements RO</dcterms:description>
+    <dcterms:created>2012-03-16T15:32:45</dcterms:created>
+    <ore:aggregates rdf:nodeID="WOKmZhBr11"/>
+    <ore:aggregates rdf:nodeID="WOKmZhBr12"/>
+    <ore:aggregates rdf:resource="make.sh"/>
+    <ore:aggregates rdf:nodeID="WOKmZhBr9"/>
+    <ore:aggregates rdf:resource="simple-requirements-minim.rdf"/>
+    <ore:aggregates rdf:resource="TODO"/>
+    <ore:aggregates rdf:nodeID="WOKmZhBr10"/>
+    <ore:aggregates rdf:resource="simple-requirements-wfprov.rdf"/>
+    <ore:aggregates rdf:resource="simple-requirements-wfdesc.rdf"/>
+    <ore:aggregates rdf:resource="README"/>
+    <dcterms:title>Simple requirements RO</dcterms:title>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
+    <dcterms:identifier>simple-requirements</dcterms:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="WOKmZhBr10">
+    <ao:body rdf:resource=".ro/manifest.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource=""/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="WOKmZhBr9">
+    <ao:body rdf:resource=".ro/Ann-20120316-0001-simple-requirements-wfprov.rdf.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="simple-requirements-wfprov.rdf"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+</rdf:RDF>
