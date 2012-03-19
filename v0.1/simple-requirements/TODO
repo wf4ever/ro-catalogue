@@ -1,7 +1,9 @@
 TODO for simple-requirements RO example
 
+See also: https://www.pivotaltracker.com/story/show/26123933
+
 * need to dig out mechanism in wfdesc for referencing executable WF description or script
-* need minimal model to check for existence of executable WF or script
+/ need minimal model to check for existence of executable WF or script
 * requirement description that exposes intermediate steps in workflow
 * minim requirement that workflow provenance must be present (currently only checks for presence of WorkflowRun description, not detailed provenance content)
 
