@@ -50,7 +50,7 @@
        must be satisfied by the Research Object.
     -->
 
-  <rdf:Description rdf:about="">
+  <rdf:Description rdf:about=".">
     <minim:hasConstraint>
       <minim:Constraint rdf:about="#runnable_RO">
         <minim:forPurpose>Runnable</minim:forPurpose>
@@ -199,7 +199,7 @@
   </minim:Requirement>
 
   <!-- Workflow input files must be present -->
-  <minim:Requirement rdf:about="#isPresent/isPresent/workflow-inputfiles">
+  <minim:Requirement rdf:about="#isPresent/workflow-inputfiles">
     <minim:isDerivedBy>
       <minim:ContentMatchRequirementRule>
         <minim:forall>
@@ -213,7 +213,7 @@
   </minim:Requirement>
 
   <!-- Workflow output files must be present -->
-  <minim:Requirement rdf:about="#isPresent/isPresent/workflow-outputfiles">
+  <minim:Requirement rdf:about="#isPresent/workflow-outputfiles">
     <minim:isDerivedBy>
       <minim:ContentMatchRequirementRule>
         <minim:forall>
