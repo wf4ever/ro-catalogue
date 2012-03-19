@@ -50,6 +50,11 @@ $RO annotate -v $TESTRO/simple-requirements-wfdesc.rdf type "workflow-descriptio
 $RO annotate -v $TESTRO/simple-requirements-wfprov.rdf type "workflow-run-provenance"
 $RO annotate -v $TESTRO/simple-requirements-minim.rdf type "minim"
 
+$RO annotate -v docs/mkjson.sh -g $TESTRO/simple-requirements-wfdesc.rdf
+$RO annotate -v docs/UserRequirements-gen.json   -g $TESTRO/simple-requirements-wfprov.rdf
+$RO annotate -v docs/UserRequirements-astro.json -g $TESTRO/simple-requirements-wfprov.rdf
+$RO annotate -v docs/UserRequirements-bio.json   -g $TESTRO/simple-requirements-wfprov.rdf
+
 $RO annotations
 
 echo "--------"

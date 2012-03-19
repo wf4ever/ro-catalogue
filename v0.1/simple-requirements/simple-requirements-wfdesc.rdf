@@ -34,7 +34,7 @@
 
   <!-- Workflow instance -->
 
-  <wfdesc:Workflow rdf:about="#ods_json">
+  <wfdesc:Workflow rdf:about="docs/mkjson.sh">
     <rdfs:label>ODS to JSON</rdfs:label>
     <rdfs:comment>Converts multiple ODS files to JSON for processing by Dexy</rdfs:comment>
 
