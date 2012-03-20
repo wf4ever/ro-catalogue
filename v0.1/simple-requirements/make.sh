@@ -22,7 +22,7 @@ rm .ro/*
 
 $RO create -v "Simple requirements RO" -d $ROPATH/$RONAME -i $RONAME
 
-$RO add -v -d -a -d $TESTRO
+$RO add -v -a -d $TESTRO
 
 #for F in \
 #    data/UserRequirements-astro.ods \

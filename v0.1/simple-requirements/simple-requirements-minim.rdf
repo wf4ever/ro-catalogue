@@ -203,10 +203,15 @@
     <minim:isDerivedBy>
       <minim:ContentMatchRequirementRule>
         <minim:forall>
+          <!--
           ?wf rdf:type wfdesc:Workflow ;
               wfdesc:hasInput [ wfdesc:hasArtifact ?if ] .
+          -->
+          ?wf rdf:type wfdesc:Workflow ;
+              wfdesc:hasInput ?wi .
+          ?wi wfdesc:hasArtifact ?if .
         </minim:forall>
-        <minim:aggregatesTemplate>{if}</minim:aggregatesTemplate>
+        <minim:aggregatesTemplate>{+if}</minim:aggregatesTemplate>
         <minim:derives rdf:resource="#isPresent/workflow-inputfiles" />
       </minim:ContentMatchRequirementRule>
     </minim:isDerivedBy>
@@ -217,10 +222,15 @@
     <minim:isDerivedBy>
       <minim:ContentMatchRequirementRule>
         <minim:forall>
+          <!--
           ?wf rdf:type wfdesc:Workflow ;
               wfdesc:hasOutput [ wfdesc:hasArtifact ?of ] .
+          -->
+          ?wf rdf:type wfdesc:Workflow ;
+              wfdesc:hasOutput ?wo .
+          ?wo wfdesc:hasArtifact ?of .
         </minim:forall>
-        <minim:aggregatesTemplate>{of}</minim:aggregatesTemplate>
+        <minim:aggregatesTemplate>{+of}</minim:aggregatesTemplate>
         <minim:derives rdf:resource="#isPresent/workflow-outputfiles" />
       </minim:ContentMatchRequirementRule>
     </minim:isDerivedBy>
