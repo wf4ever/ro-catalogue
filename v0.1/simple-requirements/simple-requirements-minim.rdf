@@ -63,14 +63,14 @@
     </minim:hasConstraint>
   </rdf:Description>
 
-  <rdf:Description rdf:about="">
+  <rdf:Description rdf:about=".">
     <minim:hasConstraint>
       <minim:Constraint rdf:about="#reviewable_RO">
-        <minim:forPurpose>Retracable</minim:forPurpose>
+        <minim:forPurpose>Reviewable</minim:forPurpose>
         <minim:onResource rdf:resource="" />
         <minim:toModel rdf:resource="#reviewable_RO_model" />
         <rdfs:comment>
-          Constraint to be satisfied if the RO is to be retracable; 
+          Constraint to be satisfied if the RO is to be reviewable; 
           i.e. a reviewer can retrace the execution steps, including inputs and outputs, 
           without actually running the RO.
         </rdfs:comment>
@@ -78,7 +78,7 @@
     </minim:hasConstraint>
   </rdf:Description>
 
-  <rdf:Description rdf:about="">
+  <rdf:Description rdf:about=".">
     <minim:hasConstraint>
       <minim:Constraint rdf:about="#repeatable_RO">
         <minim:forPurpose>Repeatable</minim:forPurpose>
@@ -134,11 +134,12 @@
   <!-- Model capturing requirements for RO to be repeatable, 
        to create expected outputs and compare with those already obtained
     -->
-  <minim:Model rdf:about="#runnable_RO_model">
-    <rdfs:label>Runnable RO</rdfs:label>
+  <minim:Model rdf:about="#repeatable_RO_model">
+    <rdfs:label>Repeatable RO</rdfs:label>
     <rdfs:comment>
       This model defines information that must be available for the 
-      requirements Research Object to be runnable.
+      requirements Research Object to be repeatable; i.e. to re-run it and
+      compare results with a previous run.
     </rdfs:comment>
     <minim:hasMustRequirement rdf:resource="#environment-software/lpod-show" />
     <minim:hasMustRequirement rdf:resource="#environment-software/python" />
@@ -158,6 +159,7 @@
       <minim:SoftwareEnvironmentRule>
         <minim:command>lpod-show.py --version</minim:command>
         <minim:response>0.9.3</minim:response>
+        <minim:report>lpOD command %(command)s returns %(response)s</minim:report>
         <minim:derives rdf:resource="#environment-software/lpod-show" />
       </minim:SoftwareEnvironmentRule>
     </minim:isDerivedBy>
@@ -169,6 +171,7 @@
       <minim:SoftwareEnvironmentRule>
         <minim:command>python --version</minim:command>
         <minim:response>Python 2.7</minim:response>
+        <minim:report>Installed python version %(response)s</minim:report>
         <minim:derives rdf:resource="#environment-software/python" />
       </minim:SoftwareEnvironmentRule>
     </minim:isDerivedBy>
@@ -181,6 +184,8 @@
         <minim:exists>
           ?wf rdf:type wfdesc:Workflow .
         </minim:exists>
+        <minim:pass>Workflow instance or template found</minim:pass>
+        <minim:fail>No workflow instance or template found</minim:fail>
         <minim:derives rdf:resource="#isPresent/workflow-instance" />
       </minim:ContentMatchRequirementRule>
     </minim:isDerivedBy>
@@ -193,6 +198,8 @@
         <minim:exists>
           ?wf rdf:type wfprov:WorkflowRun .
         </minim:exists>
+        <minim:pass>Workflow run found</minim:pass>
+        <minim:fail>No workflow run found</minim:fail>
         <minim:derives rdf:resource="#isPresent/workflow-run" />
       </minim:ContentMatchRequirementRule>
     </minim:isDerivedBy>
@@ -212,6 +219,8 @@
           ?wi wfdesc:hasArtifact ?if .
         </minim:forall>
         <minim:aggregatesTemplate>{+if}</minim:aggregatesTemplate>
+        <minim:pass>All workflow inputs referenced or present</minim:pass>
+        <minim:fail>Workflow %(wf)s input %(if)s not found</minim:fail>
         <minim:derives rdf:resource="#isPresent/workflow-inputfiles" />
       </minim:ContentMatchRequirementRule>
     </minim:isDerivedBy>
@@ -230,6 +239,8 @@
               wfdesc:hasOutput ?wo .
           ?wo wfdesc:hasArtifact ?of .
         </minim:forall>
+        <minim:pass>All workflow outputs referenced or present</minim:pass>
+        <minim:fail>Workflow %(wf)s output %(of)s not found</minim:fail>
         <minim:aggregatesTemplate>{+of}</minim:aggregatesTemplate>
         <minim:derives rdf:resource="#isPresent/workflow-outputfiles" />
       </minim:ContentMatchRequirementRule>
