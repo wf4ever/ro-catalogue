@@ -14,6 +14,14 @@ $RO evaluate completeness -v -d $TESTRO -a simple-requirements-minim.rdf "Runnab
 
 echo "--------"
 
+$RO evaluate completeness -v -d $TESTRO -a simple-requirements-minim.rdf "Reviewable" $TESTRO/
+
+echo "--------"
+
+$RO evaluate completeness -v -d $TESTRO -a simple-requirements-minim.rdf "Repeatable" $TESTRO/
+
+echo "--------"
+
 #./ro annotations -v $ROBASE/test-create-RO/subdir1/subdir1-file.txt
 
 #echo "--------"
