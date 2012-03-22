@@ -159,7 +159,7 @@
       <minim:SoftwareEnvironmentRule>
         <minim:command>lpod-show.py --version</minim:command>
         <minim:response>0.9.3</minim:response>
-        <minim:report>lpOD command %(command)s returns %(response)s</minim:report>
+        <minim:show>lpOD command %(command)s returns %(response)s</minim:show>
         <minim:derives rdf:resource="#environment-software/lpod-show" />
       </minim:SoftwareEnvironmentRule>
     </minim:isDerivedBy>
@@ -171,7 +171,7 @@
       <minim:SoftwareEnvironmentRule>
         <minim:command>python --version</minim:command>
         <minim:response>Python 2.7</minim:response>
-        <minim:report>Installed python version %(response)s</minim:report>
+        <minim:show>Installed python version %(response)s</minim:show>
         <minim:derives rdf:resource="#environment-software/python" />
       </minim:SoftwareEnvironmentRule>
     </minim:isDerivedBy>
@@ -184,8 +184,8 @@
         <minim:exists>
           ?wf rdf:type wfdesc:Workflow .
         </minim:exists>
-        <minim:pass>Workflow instance or template found</minim:pass>
-        <minim:fail>No workflow instance or template found</minim:fail>
+        <minim:showpass>Workflow instance or template found</minim:showpass>
+        <minim:showfail>No workflow instance or template found</minim:showfail>
         <minim:derives rdf:resource="#isPresent/workflow-instance" />
       </minim:ContentMatchRequirementRule>
     </minim:isDerivedBy>
@@ -198,8 +198,8 @@
         <minim:exists>
           ?wf rdf:type wfprov:WorkflowRun .
         </minim:exists>
-        <minim:pass>Workflow run found</minim:pass>
-        <minim:fail>No workflow run found</minim:fail>
+        <minim:showpass>Workflow run found</minim:showpass>
+        <minim:showfail>No workflow run found</minim:showfail>
         <minim:derives rdf:resource="#isPresent/workflow-run" />
       </minim:ContentMatchRequirementRule>
     </minim:isDerivedBy>
@@ -219,8 +219,8 @@
           ?wi wfdesc:hasArtifact ?if .
         </minim:forall>
         <minim:aggregatesTemplate>{+if}</minim:aggregatesTemplate>
-        <minim:pass>All workflow inputs referenced or present</minim:pass>
-        <minim:fail>Workflow %(wf)s input %(if)s not found</minim:fail>
+        <minim:showpass>All workflow inputs referenced or present</minim:showpass>
+        <minim:showfail>Workflow %(wf)s input %(if)s not found</minim:showfail>
         <minim:derives rdf:resource="#isPresent/workflow-inputfiles" />
       </minim:ContentMatchRequirementRule>
     </minim:isDerivedBy>
@@ -239,8 +239,8 @@
               wfdesc:hasOutput ?wo .
           ?wo wfdesc:hasArtifact ?of .
         </minim:forall>
-        <minim:pass>All workflow outputs referenced or present</minim:pass>
-        <minim:fail>Workflow %(wf)s output %(of)s not found</minim:fail>
+        <minim:showpass>All workflow outputs referenced or present</minim:showpass>
+        <minim:showfail>Workflow %(wf)s output %(of)s not found</minim:showfail>
         <minim:aggregatesTemplate>{+of}</minim:aggregatesTemplate>
         <minim:derives rdf:resource="#isPresent/workflow-outputfiles" />
       </minim:ContentMatchRequirementRule>
