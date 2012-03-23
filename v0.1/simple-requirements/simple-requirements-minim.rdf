@@ -72,7 +72,7 @@
         <rdfs:comment>
           Constraint to be satisfied if the RO is to be reviewable; 
           i.e. a reviewer can retrace the execution steps, including inputs and outputs, 
-          without actually running the RO.
+          and appropriate annotations, without actually running the RO.
         </rdfs:comment>
       </minim:Constraint>
     </minim:hasConstraint>
@@ -129,6 +129,7 @@
     <minim:hasMustRequirement rdf:resource="#isPresent/workflow-run" />
     <minim:hasMustRequirement rdf:resource="#isPresent/workflow-inputfiles" />
     <minim:hasMustRequirement rdf:resource="#isPresent/workflow-outputfiles" />
+    <!-- @@TODO add some stuff for comments to guide the reviewer -->
   </minim:Model>
 
   <!-- Model capturing requirements for RO to be repeatable, 
