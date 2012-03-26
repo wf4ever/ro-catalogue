@@ -52,7 +52,8 @@ $RO annotate -v $TESTRO/ description "Taverna workflow example with provenance (
 $RO annotate -v $TESTRO/bioaid_proteindiscovery_181667.wfdesc.ttl type "workflow-description"
 $RO annotate -v $TESTRO/wf74.wfprov.ttl type "workflow-run-provenance"
 
-$RO annotate -v bioaid_proteindiscovery_181667.t2flow -g $TESTRO/bioaid_proteindiscovery_181667.wfdesc.ttl
+#$RO annotate -v bioaid_proteindiscovery_181667.t2flow -g $TESTRO/bioaid_proteindiscovery_181667.wfdesc.ttl
+$RO annotate -v -d $TESTRO http://ns.taverna.org.uk/2010/workflowBundle/86b2ed23-5c86-4f9a-a57a-d1c989ad8251/workflow/BioAID_ProteinDiscovery/ -g $TESTRO/bioaid_proteindiscovery_181667.wfdesc.ttl
 
 # Associate provenance with all output files
 # The file output-resources.txt was creeated with the help of this command:
