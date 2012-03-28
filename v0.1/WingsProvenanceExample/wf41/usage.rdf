@@ -1,0 +1,170 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:ns1="http://purl.org/wf4ever/wfprov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:err="http://www.w3.org/2005/xqt-errors#"
+     xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+     xmlns:xs="http://www.w3.org/2001/XMLSchema#">
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessInstance/RAWINTERACTIONNETWORKMERGER1332778615941">
+    <ns1:wasPartOfWorkflowRun rdf:resource="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778615941"/>
+    <ns1:usedInput rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/27985F0E6EB1E44A8D98E21D39B5B74B"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/27985F0E6EB1E44A8D98E21D39B5B74B">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessInstance/RAWINTERACTIONNETWORKMERGER1332778615941">
+    <ns1:wasPartOfWorkflowRun rdf:resource="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778615941"/>
+    <ns1:usedInput rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/11CFF72D9A32D5CFD49E845BAEE9397B"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/11CFF72D9A32D5CFD49E845BAEE9397B">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessInstance/RESULTSORTERV21332778615941">
+    <ns1:wasPartOfWorkflowRun rdf:resource="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778615941"/>
+    <ns1:usedInput rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/PVALUE0.00001"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/PVALUE0.00001">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessInstance/RESULTSORTERV21332778615941">
+    <ns1:wasPartOfWorkflowRun rdf:resource="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778615941"/>
+    <ns1:usedInput rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/A59E1AE2CBB23641B28280D3F911200C"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/A59E1AE2CBB23641B28280D3F911200C">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessInstance/RESULTSORTERV21332778615941">
+    <ns1:wasPartOfWorkflowRun rdf:resource="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778615941"/>
+    <ns1:usedInput rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/C37F56DF420AEF7A6CAC81CFF8B77383"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/C37F56DF420AEF7A6CAC81CFF8B77383">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessInstance/ALIGNEMENTRESULTMERGER1332778615941">
+    <ns1:wasPartOfWorkflowRun rdf:resource="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778615941"/>
+    <ns1:usedInput rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/6BA799A1D07F98246A9C4F60FEBE95CB"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/6BA799A1D07F98246A9C4F60FEBE95CB">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessInstance/ALIGNEMENTRESULTMERGER1332778615941">
+    <ns1:wasPartOfWorkflowRun rdf:resource="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778615941"/>
+    <ns1:usedInput rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/E3B8D8F9CB40DDE948CA1EB188D781C7"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/E3B8D8F9CB40DDE948CA1EB188D781C7">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessInstance/COMPARELIGANDBINDINGSITESV211332778615941">
+    <ns1:wasPartOfWorkflowRun rdf:resource="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778615941"/>
+    <ns1:usedInput rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/21266522D7479CEC6D99FE083531E6AB"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/21266522D7479CEC6D99FE083531E6AB">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessInstance/COMPARELIGANDBINDINGSITESV211332778615941">
+    <ns1:wasPartOfWorkflowRun rdf:resource="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778615941"/>
+    <ns1:usedInput rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/34B51D77144907D968D5A7009A3E292D"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/34B51D77144907D968D5A7009A3E292D">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessInstance/COMPARELIGANDBINDINGSITESV211332778615941">
+    <ns1:wasPartOfWorkflowRun rdf:resource="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778615941"/>
+    <ns1:usedInput rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/93E4B7977BCCE9889CA916553C91901A"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/93E4B7977BCCE9889CA916553C91901A">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessInstance/COMPARELIGANDBINDINGSITESV21332778615941">
+    <ns1:wasPartOfWorkflowRun rdf:resource="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778615941"/>
+    <ns1:usedInput rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/34B51D77144907D968D5A7009A3E292D"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/34B51D77144907D968D5A7009A3E292D">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessInstance/COMPARELIGANDBINDINGSITESV21332778615941">
+    <ns1:wasPartOfWorkflowRun rdf:resource="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778615941"/>
+    <ns1:usedInput rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/21266522D7479CEC6D99FE083531E6AB"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/21266522D7479CEC6D99FE083531E6AB">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessInstance/COMPARELIGANDBINDINGSITESV21332778615941">
+    <ns1:wasPartOfWorkflowRun rdf:resource="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778615941"/>
+    <ns1:usedInput rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/A59E1AE2CBB23641B28280D3F911200C"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/A59E1AE2CBB23641B28280D3F911200C">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessInstance/RESULTSORTERV211332778615941">
+    <ns1:wasPartOfWorkflowRun rdf:resource="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778615941"/>
+    <ns1:usedInput rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/PVALUE0.00001"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/PVALUE0.00001">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessInstance/RESULTSORTERV211332778615941">
+    <ns1:wasPartOfWorkflowRun rdf:resource="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778615941"/>
+    <ns1:usedInput rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/9BE54235368BE29C6DC38AF3B84BD5CA"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/9BE54235368BE29C6DC38AF3B84BD5CA">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessInstance/RESULTSORTERV211332778615941">
+    <ns1:wasPartOfWorkflowRun rdf:resource="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778615941"/>
+    <ns1:usedInput rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/93E4B7977BCCE9889CA916553C91901A"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/93E4B7977BCCE9889CA916553C91901A">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+</RDF>

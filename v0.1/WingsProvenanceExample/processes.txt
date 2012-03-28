@@ -1,0 +1,5 @@
+http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTGLOBALWORKFLOW2
+http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON
+http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACCTSUBWFFATCAT
+http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTSUBWFDOCKING
+http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778615941

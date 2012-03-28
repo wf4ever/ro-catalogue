@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:ns1="http://purl.org/wf4ever/wfprov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:err="http://www.w3.org/2005/xqt-errors#"
+     xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+     xmlns:xs="http://www.w3.org/2001/XMLSchema#">
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778606534">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Workflow"/>
+    <ns1:describedByWorkflow rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTSUBWFDOCKING"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTSUBWFDOCKING">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Workflow"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778606534">
+    <ns1:describedByWorkflow rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACCTSUBWFFATCAT"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACCTSUBWFFATCAT">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Workflow"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778606534">
+    <ns1:describedByWorkflow rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Workflow"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778606534">
+    <ns1:describedByWorkflow rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTGLOBALWORKFLOW2"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTGLOBALWORKFLOW2">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Workflow"/>
+  </Description>
+</RDF>

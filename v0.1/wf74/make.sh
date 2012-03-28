@@ -65,8 +65,6 @@ for resource in $(cat output-resources.txt); do
     $RO annotate -v -d $TESTRO -g wf74.wfprov.ttl $resource
 done
 
-
-
 $RO annotations
 
 echo "--------"

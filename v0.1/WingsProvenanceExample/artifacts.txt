@@ -1,0 +1,13 @@
+http://wings.isi.edu/opmexport/resource/ArtifactInstance/11CFF72D9A32D5CFD49E845BAEE9397B
+http://wings.isi.edu/opmexport/resource/ArtifactInstance/12FD2C4FED1B32B186C71C1B6C2BCD1D
+http://wings.isi.edu/opmexport/resource/ArtifactInstance/21266522D7479CEC6D99FE083531E6AB
+http://wings.isi.edu/opmexport/resource/ArtifactInstance/27985F0E6EB1E44A8D98E21D39B5B74B
+http://wings.isi.edu/opmexport/resource/ArtifactInstance/34B51D77144907D968D5A7009A3E292D
+http://wings.isi.edu/opmexport/resource/ArtifactInstance/6BA799A1D07F98246A9C4F60FEBE95CB
+http://wings.isi.edu/opmexport/resource/ArtifactInstance/890ACD8D190664D37C1E37700092FD3B
+http://wings.isi.edu/opmexport/resource/ArtifactInstance/93E4B7977BCCE9889CA916553C91901A
+http://wings.isi.edu/opmexport/resource/ArtifactInstance/9BE54235368BE29C6DC38AF3B84BD5CA
+http://wings.isi.edu/opmexport/resource/ArtifactInstance/A59E1AE2CBB23641B28280D3F911200C
+http://wings.isi.edu/opmexport/resource/ArtifactInstance/C37F56DF420AEF7A6CAC81CFF8B77383
+http://wings.isi.edu/opmexport/resource/ArtifactInstance/E3B8D8F9CB40DDE948CA1EB188D781C7
+http://wings.isi.edu/opmexport/resource/ArtifactInstance/PVALUE0.00001
