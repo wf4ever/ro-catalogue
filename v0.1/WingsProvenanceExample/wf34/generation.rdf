@@ -10,7 +10,7 @@
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessInstance/RESULTSORTER1332778606534">
     <ns1:wasPartOfWorkflowRun rdf:resource="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778606534"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Process"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/38BB806F498FA762C244979C80412F0D">
     <ns1:wasOutputFrom rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessInstance/RESULTSORTER1332778606534"/>
@@ -20,7 +20,7 @@
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessInstance/COMPARELIGANDBINDINGSITESV21332778606534">
     <ns1:wasPartOfWorkflowRun rdf:resource="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778606534"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Process"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/F9CCED7A4F18CC5AD2600B92723197E2">
     <ns1:wasOutputFrom rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessInstance/COMPARELIGANDBINDINGSITESV21332778606534"/>
@@ -30,7 +30,7 @@
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessInstance/COMPARELIGANDBINDINGSITESV21332778606534">
     <ns1:wasPartOfWorkflowRun rdf:resource="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778606534"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Process"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/4A04D9CBCBA5A24FC5C19F693AC49238">
     <ns1:wasOutputFrom rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessInstance/COMPARELIGANDBINDINGSITESV21332778606534"/>
@@ -40,7 +40,7 @@
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessInstance/RAWINTERACTIONNETWORKMERGER1332778606534">
     <ns1:wasPartOfWorkflowRun rdf:resource="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778606534"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Process"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/CC53D47E72A3C6C144DEEF5272CEF5BA">
     <ns1:wasOutputFrom rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessInstance/RAWINTERACTIONNETWORKMERGER1332778606534"/>
@@ -50,7 +50,7 @@
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessInstance/ALIGNEMENTRESULTMERGER1332778606534">
     <ns1:wasPartOfWorkflowRun rdf:resource="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778606534"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Process"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/615789F206249A99842F1E0EFA65A957">
     <ns1:wasOutputFrom rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessInstance/ALIGNEMENTRESULTMERGER1332778606534"/>
@@ -60,7 +60,7 @@
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessInstance/COMPARELIGANDBINDINGSITESV211332778606534">
     <ns1:wasPartOfWorkflowRun rdf:resource="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778606534"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Process"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/6B7AB2E53A9186CACAD94833DD34EF8E">
     <ns1:wasOutputFrom rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessInstance/COMPARELIGANDBINDINGSITESV211332778606534"/>
@@ -70,7 +70,7 @@
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessInstance/RESULTSORTER11332778606534">
     <ns1:wasPartOfWorkflowRun rdf:resource="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778606534"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Process"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/0FD08D3BDAC0216F1F892D8BB9B3E7E1">
     <ns1:wasOutputFrom rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessInstance/RESULTSORTER11332778606534"/>
@@ -80,7 +80,7 @@
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessInstance/COMPARELIGANDBINDINGSITESV211332778606534">
     <ns1:wasPartOfWorkflowRun rdf:resource="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778606534"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Process"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/65E39FED3439AA6650E6AE55314BE6AD">
     <ns1:wasOutputFrom rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessInstance/COMPARELIGANDBINDINGSITESV211332778606534"/>
