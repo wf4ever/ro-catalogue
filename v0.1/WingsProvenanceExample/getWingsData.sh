@@ -2,6 +2,11 @@
 #
 # Issue SPARQL query to Wings service to obtain test data for RO
 #
+# getWingsData.sh - performs a series of SPARQL CONSTRUCT queries to extract Wings provenance data 
+# from the isi.edu endpoint, and convert it to wfdesc/wfprov vocabularies.  
+# (Uses SPARQL CONSTRUCT query as a kind of simple inference rule.)  
+# The resulting RDF data is saved in subdirectory wf34.
+#
 # http://wind.isi.edu:10035/catalogs/java-catalog/repositories/WINGSTemplatesAndResults#query
 
 WINGSEP=http://wind.isi.edu:10035/catalogs/java-catalog/repositories
@@ -133,7 +138,7 @@ CONSTRUCT{
 <http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778606534> a <http://purl.org/wf4ever/wfdesc#Workflow>;                <http://purl.org/wf4ever/wfprov#describedByWorkflow> ?templ.
 }WHERE{
 ?templ a <http://wings.isi.edu/ontology/opmv/WorkflowTemplate>.
-<http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778606534> a <http://openprovenance.org/model/opmo#Account>;                                 <http://wings.isi.edu/ontology/opmv/hasWorkflowTemplate> ?proc.
+<http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778606534> a <http://openprovenance.org/model/opmo#Account>;                                 <http://wings.isi.edu/ontology/opmv/hasWorkflowTemplate> ?templ.
 }
 %EOF%
 

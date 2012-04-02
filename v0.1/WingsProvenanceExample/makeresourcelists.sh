@@ -2,6 +2,10 @@
 #
 # Create resource lists from RDF wfdesc/wfprov data
 #
+# makeresourcelists.sh - is a local helper script that queries the RDF data obtained from Wings
+# (using Jena tools for querying local RDF files) and generates a list of resources of various types.
+# These lists are used when generating RO manifests by the next script.
+#
 
 export JENAROOT=/Users/graham/DevTools/apache-jena-2.7.0-incubating
 
