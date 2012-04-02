@@ -9,17 +9,17 @@
      xmlns:xs="http://www.w3.org/2001/XMLSchema#">
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON">
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Workflow"/>
-    <ns1:hasProcess rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_ALIGNEMENTRESULTMERGER"/>
-    <ns1:hasProcess rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RAWINTERACTIONNETWORKMERGER"/>
-    <ns1:hasProcess rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_COMPARELIGANDBINDINGSITESV2"/>
-    <ns1:hasProcess rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RESULTSORTERV21"/>
-    <ns1:hasProcess rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RESULTSORTERV2"/>
-    <ns1:hasProcess rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_COMPARELIGANDBINDINGSITESV21"/>
-    <ns1:hasProcess rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_ALIGNEMENTRESULTMERGER"/>
-    <ns1:hasProcess rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RAWINTERACTIONNETWORKMERGER"/>
-    <ns1:hasProcess rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_COMPARELIGANDBINDINGSITESV2"/>
-    <ns1:hasProcess rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RESULTSORTERV21"/>
-    <ns1:hasProcess rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RESULTSORTERV2"/>
-    <ns1:hasProcess rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_COMPARELIGANDBINDINGSITESV21"/>
+    <ns1:hasSubProcess rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_ALIGNEMENTRESULTMERGER"/>
+    <ns1:hasSubProcess rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RAWINTERACTIONNETWORKMERGER"/>
+    <ns1:hasSubProcess rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_COMPARELIGANDBINDINGSITESV2"/>
+    <ns1:hasSubProcess rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RESULTSORTERV21"/>
+    <ns1:hasSubProcess rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RESULTSORTERV2"/>
+    <ns1:hasSubProcess rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_COMPARELIGANDBINDINGSITESV21"/>
+    <ns1:hasSubProcess rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_ALIGNEMENTRESULTMERGER"/>
+    <ns1:hasSubProcess rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RAWINTERACTIONNETWORKMERGER"/>
+    <ns1:hasSubProcess rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_COMPARELIGANDBINDINGSITESV2"/>
+    <ns1:hasSubProcess rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RESULTSORTERV21"/>
+    <ns1:hasSubProcess rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RESULTSORTERV2"/>
+    <ns1:hasSubProcess rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_COMPARELIGANDBINDINGSITESV21"/>
   </Description>
 </RDF>

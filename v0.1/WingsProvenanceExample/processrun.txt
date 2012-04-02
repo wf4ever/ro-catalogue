@@ -4,9 +4,3 @@ http://wings.isi.edu/opmexport/resource/ProcessInstance/COMPARELIGANDBINDINGSITE
 http://wings.isi.edu/opmexport/resource/ProcessInstance/ALIGNEMENTRESULTMERGER1332778606534
 http://wings.isi.edu/opmexport/resource/ProcessInstance/RAWINTERACTIONNETWORKMERGER1332778606534
 http://wings.isi.edu/opmexport/resource/ProcessInstance/RESULTSORTER11332778606534
-http://wings.isi.edu/opmexport/resource/ProcessInstance/RESULTSORTERV211332778615941
-http://wings.isi.edu/opmexport/resource/ProcessInstance/COMPARELIGANDBINDINGSITESV21332778615941
-http://wings.isi.edu/opmexport/resource/ProcessInstance/COMPARELIGANDBINDINGSITESV211332778615941
-http://wings.isi.edu/opmexport/resource/ProcessInstance/ALIGNEMENTRESULTMERGER1332778615941
-http://wings.isi.edu/opmexport/resource/ProcessInstance/RESULTSORTERV21332778615941
-http://wings.isi.edu/opmexport/resource/ProcessInstance/RAWINTERACTIONNETWORKMERGER1332778615941

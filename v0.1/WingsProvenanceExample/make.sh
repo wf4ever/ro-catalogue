@@ -47,7 +47,7 @@ $RO annotate -v $TESTRO/ description "Wings provenance example"
 # Associate provenance with all output files
 # The resource listings were created using makeresourcelists.sh
 
-for wf in wf34 wf41; do
+for wf in wf34; do
 
     for res in $(cat mainworkflow.txt); do
         $RO add -v -d $TESTRO $res
@@ -59,30 +59,26 @@ for wf in wf34 wf41; do
         $RO add -v -d $TESTRO $res
         $RO annotate -v -d $TESTRO -g ./$wf/template.rdf $res
         $RO annotate -v -d $TESTRO -g ./$wf/linking.rdf  $res
-    done
-
-    for res in $(cat processes.txt); do
-        $RO annotate -v -d $TESTRO -g ./$wf/template.rdf $res
-        $RO annotate -v -d $TESTRO -g ./$wf/processGeneration.rdf $res
-        $RO annotate -v -d $TESTRO -g ./$wf/processUsage.rdf      $res
+        $RO annotate -v -d $TESTRO -g ./$wf/process-generation.rdf $res
+        $RO annotate -v -d $TESTRO -g ./$wf/process-usage.rdf      $res
     done
 
     for res in $(cat artifacts.txt); do
         $RO add -v -d $TESTRO $res
-        $RO annotate -v -d $TESTRO -g ./$wf/linkingArtifacts.rdf  $res
-        $RO annotate -v -d $TESTRO -g ./$wf/processGeneration.rdf $res
-        $RO annotate -v -d $TESTRO -g ./$wf/processUsage.rdf      $res
+        $RO annotate -v -d $TESTRO -g ./$wf/linking-artifacts.rdf  $res
+        $RO annotate -v -d $TESTRO -g ./$wf/process-generation.rdf $res
+        $RO annotate -v -d $TESTRO -g ./$wf/process-usage.rdf      $res
         $RO annotate -v -d $TESTRO -g ./$wf/artifact.rdf          $res
         $RO annotate -v -d $TESTRO -g ./$wf/usage.rdf             $res
         $RO annotate -v -d $TESTRO -g ./$wf/generation.rdf        $res
     done
 
     for res in $(cat mainworkflowrun.txt); do
-        $RO annotate -v -d $TESTRO -g ./$wf/wfExec.rdf $res
+        $RO annotate -v -d $TESTRO -g ./$wf/wfexec.rdf $res
     done
 
     for res in $(cat processrun.txt); do
-        $RO annotate -v -d $TESTRO -g ./$wf/linkingSteps.rdf $res
+        $RO annotate -v -d $TESTRO -g ./$wf/linking-steps.rdf $res
     done
 
 done
@@ -99,18 +95,6 @@ done
 ### These have processes typed as artifacts: surely not?
 # ./wf34/usage.rdf              #wfprov - resource, artifact, with wasPartOfWorkflowRun, usedInput
 # ./wf34/generation.rdf         #wfprov - resource, artifact, with wasPartOfWorkflowRun, wasOutputFrom
-
-# ./wf41/template.rdf
-# ./wf41/linking.rdf
-# ./wf41/linkingArtifacts.rdf
-# ./wf41/linkingSteps.rdf
-# ./wf41/processGeneration.rdf
-# ./wf41/processUsage.rdf
-
-# ./wf41/wfExec.rdf
-# ./wf41/artifact.rdf
-# ./wf41/usage.rdf
-# ./wf41/generation.rdf
 
 $RO annotations
 

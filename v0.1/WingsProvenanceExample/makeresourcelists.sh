@@ -9,31 +9,23 @@ export JENAROOT=/Users/graham/DevTools/apache-jena-2.7.0-incubating
 
 rm mainworkflow.txt
 rm subworkflows.txt
-rm processes.txt
+rm -f artifacts.tmp
 rm artifacts.txt
 
 CR='\015'
 
 $JENAROOT/bin/arq -q --data=wf34/template.rdf --query=workflow-query.sparql --results=csv           | tail -n +2 | tr -d $CR >>mainworkflow.txt
 $JENAROOT/bin/arq -q --data=wf34/linking.rdf --query=workflow-query.sparql --results=csv            | tail -n +2 | tr -d $CR >>subworkflows.txt
-$JENAROOT/bin/arq -q --data=wf34/linkingArtifacts.rdf --query=artifacts-query.sparql --results=csv  | tail -n +2 | tr -d $CR >>artifacts.txt
-
-# $JENAROOT/bin/arq -q --data=wf41/template.rdf --query=workflow-query.sparql --results=csv           | tail -n +2 >>mainworkflow.txt
-$JENAROOT/bin/arq -q --data=wf41/linking.rdf --query=workflow-query.sparql --results=csv            | tail -n +2 | tr -d $CR >>processes.txt
-$JENAROOT/bin/arq -q --data=wf41/linkingArtifacts.rdf --query=artifacts-query.sparql --results=csv  | tail -n +2 | tr -d $CR >>artifacts.tmp
+$JENAROOT/bin/arq -q --data=wf34/linking-artifacts.rdf --query=artifacts-query.sparql --results=csv  | tail -n +2 | tr -d $CR >>artifacts.tmp
 
 # wfprov
 
 rm mainworkflowrun.txt
 rm processrun.txt
 
-$JENAROOT/bin/arq -q --data=wf34/wfExec.rdf --query=workflowrun-query.sparql --results=csv          | tail -n +2 | tr -d $CR >>mainworkflowrun.txt
-$JENAROOT/bin/arq -q --data=wf34/linkingSteps.rdf --query=processrun-query.sparql --results=csv     | tail -n +2 | tr -d $CR >>processrun.txt
-$JENAROOT/bin/arq -q --data=wf34/artifact.rdf --query=artifacts-query.sparql --results=csv          | tail -n +2 | tr -d $CR >>artifacts.txt
-
-$JENAROOT/bin/arq -q --data=wf41/wfExec.rdf --query=workflowrun-query.sparql --results=csv          | tail -n +2 | tr -d $CR >>mainworkflowrun.txt
-$JENAROOT/bin/arq -q --data=wf41/linkingSteps.rdf --query=processrun-query.sparql --results=csv     | tail -n +2 | tr -d $CR >>processrun.txt
-$JENAROOT/bin/arq -q --data=wf41/artifact.rdf --query=artifacts-query.sparql --results=csv          | tail -n +2 | tr -d $CR >>artifacts.txt
+$JENAROOT/bin/arq -q --data=wf34/wfexec.rdf --query=workflowrun-query.sparql --results=csv          | tail -n +2 | tr -d $CR >>mainworkflowrun.txt
+$JENAROOT/bin/arq -q --data=wf34/linking-steps.rdf --query=processrun-query.sparql --results=csv     | tail -n +2 | tr -d $CR >>processrun.txt
+$JENAROOT/bin/arq -q --data=wf34/artifact.rdf --query=artifacts-query.sparql --results=csv          | tail -n +2 | tr -d $CR >>artifacts.tmp
 
 cat artifacts.tmp | sort -u > artifacts.txt
 rm artifacts.tmp
@@ -50,16 +42,3 @@ rm artifacts.tmp
 ### These have processes typed as artifacts: surely not?
 # ./wf34/usage.rdf              #wfprov - resource, artifact, with wasPartOfWorkflowRun, usedInput
 # ./wf34/generation.rdf         #wfprov - resource, artifact, with wasPartOfWorkflowRun, wasOutputFrom
-
-# ./wf41/template.rdf
-# ./wf41/linking.rdf
-# ./wf41/linkingArtifacts.rdf
-# ./wf41/linkingSteps.rdf
-# ./wf41/processGeneration.rdf
-# ./wf41/processUsage.rdf
-
-# ./wf41/wfExec.rdf
-# ./wf41/artifact.rdf
-# ./wf41/usage.rdf
-# ./wf41/generation.rdf
-

@@ -118,14 +118,14 @@ cp prefixes.sparql wings-query-template.sparql
 cat >>wings-query-template.sparql <<%EOF%
 CONSTRUCT{
 <http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON> a <http://purl.org/wf4ever/wfdesc#Workflow>;
-                 <http://purl.org/wf4ever/wfdesc#hasProcess> ?proc.  # @@ hasSubProcess???
+                 <http://purl.org/wf4ever/wfdesc#hasSubProcess> ?proc.
 }WHERE{
 <http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON> a <http://wings.isi.edu/ontology/opmv/WorkflowTemplate>;
                  <http://openprovenance.org/model/opmo#hasProcess> ?proc.
 }
 %EOF%
 
-# Linking results @@workflow instances??? to template
+# Linking workflow instances to template
 cp prefixes.sparql wings-query-linking.sparql
 cat >>wings-query-linking.sparql <<%EOF%
 CONSTRUCT{
@@ -173,16 +173,12 @@ CONSTRUCT{
 echo "===== ISSUE SPARQL QUERIES ====="
 
 # JSON results
-curl -X POST $WINGSEP/$DATASET \
-  -H "accept: application/sparql-results+json" \
-  -H "Content-Type: application/x-www-form-urlencoded" \
-  --data-urlencode query@wings-query-test.sparql
+#curl -X POST $WINGSEP/$DATASET \
+#  -H "accept: application/sparql-results+json" \
+#  -H "Content-Type: application/x-www-form-urlencoded" \
+#  --data-urlencode query@wings-query-test.sparql
 
 # RDF/XML results
-#curl -X POST $WINGSEP/$DATASET \
-#  -H "accept: application/rdf+xml" \
-#  -H "Content-Type: application/x-www-form-urlencoded" \
-#  --data-urlencode query@wings-query-artifact.sparql
 
 for q in \
         usage generation artifact wfexec \

@@ -7,12 +7,12 @@
      xmlns:err="http://www.w3.org/2005/xqt-errors#"
      xmlns:fn="http://www.w3.org/2005/xpath-functions#"
      xmlns:xs="http://www.w3.org/2001/XMLSchema#">
-  <Description rdf:nodeID="b9838C7C2x1">
+  <Description rdf:nodeID="bFB6306A2x1">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/ALIGNEMENTRESULTS"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_ALIGNEMENTRESULTMERGER">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x1"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x1"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -20,12 +20,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x2">
+  <Description rdf:nodeID="bFB6306A2x2">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/ALIGNEMENTRESULTS1"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_ALIGNEMENTRESULTMERGER">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x2"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x2"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -33,12 +33,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x3">
+  <Description rdf:nodeID="bFB6306A2x3">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/ALIGNEMENTRESULTS"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_ALIGNEMENTRESULTMERGER">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x3"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x3"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -46,12 +46,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x4">
+  <Description rdf:nodeID="bFB6306A2x4">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/ALIGNEMENTRESULTS1"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_ALIGNEMENTRESULTMERGER">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x4"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x4"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -59,12 +59,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x5">
+  <Description rdf:nodeID="bFB6306A2x5">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/RAWINTERACTIONNETWORK1"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RAWINTERACTIONNETWORKMERGER">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x5"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x5"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -72,12 +72,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x6">
+  <Description rdf:nodeID="bFB6306A2x6">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/RAWINTERACTIONNETWORK"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RAWINTERACTIONNETWORKMERGER">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x6"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x6"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -85,12 +85,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x7">
+  <Description rdf:nodeID="bFB6306A2x7">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/RAWINTERACTIONNETWORK1"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RAWINTERACTIONNETWORKMERGER">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x7"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x7"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -98,12 +98,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x8">
+  <Description rdf:nodeID="bFB6306A2x8">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/RAWINTERACTIONNETWORK"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RAWINTERACTIONNETWORKMERGER">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x8"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x8"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -111,12 +111,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x9">
+  <Description rdf:nodeID="bFB6306A2x9">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/CONFIGURATIONFILE"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_COMPARELIGANDBINDINGSITESV2">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x9"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x9"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -124,12 +124,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x10">
+  <Description rdf:nodeID="bFB6306A2x10">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/STRUCTUREFORCOMPARISON"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_COMPARELIGANDBINDINGSITESV2">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x10"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x10"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -137,12 +137,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x11">
+  <Description rdf:nodeID="bFB6306A2x11">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/DRUGBINDINGSITES"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_COMPARELIGANDBINDINGSITESV2">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x11"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x11"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -150,12 +150,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x12">
+  <Description rdf:nodeID="bFB6306A2x12">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/CONFIGURATIONFILE"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_COMPARELIGANDBINDINGSITESV2">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x12"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x12"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -163,12 +163,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x13">
+  <Description rdf:nodeID="bFB6306A2x13">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/STRUCTUREFORCOMPARISON"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_COMPARELIGANDBINDINGSITESV2">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x13"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x13"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -176,12 +176,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x14">
+  <Description rdf:nodeID="bFB6306A2x14">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/DRUGBINDINGSITES"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_COMPARELIGANDBINDINGSITESV2">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x14"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x14"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -189,12 +189,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x15">
+  <Description rdf:nodeID="bFB6306A2x15">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/COMPARISONRESULTS1"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RESULTSORTERV21">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x15"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x15"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -202,12 +202,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x16">
+  <Description rdf:nodeID="bFB6306A2x16">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/STRUCTUREFORCOMPARISON1"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RESULTSORTERV21">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x16"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x16"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -215,12 +215,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x17">
+  <Description rdf:nodeID="bFB6306A2x17">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/COMPARISONRESULTS1"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RESULTSORTERV21">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x17"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x17"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -228,12 +228,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x18">
+  <Description rdf:nodeID="bFB6306A2x18">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/STRUCTUREFORCOMPARISON1"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RESULTSORTERV21">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x18"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x18"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -241,12 +241,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x19">
+  <Description rdf:nodeID="bFB6306A2x19">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/STRUCTUREFORCOMPARISON"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RESULTSORTERV2">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x19"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x19"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -254,12 +254,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x20">
+  <Description rdf:nodeID="bFB6306A2x20">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/COMPARISONRESULTS"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RESULTSORTERV2">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x20"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x20"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -267,12 +267,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x21">
+  <Description rdf:nodeID="bFB6306A2x21">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/STRUCTUREFORCOMPARISON"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RESULTSORTERV2">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x21"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x21"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -280,12 +280,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x22">
+  <Description rdf:nodeID="bFB6306A2x22">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/COMPARISONRESULTS"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RESULTSORTERV2">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x22"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x22"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -293,12 +293,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x23">
+  <Description rdf:nodeID="bFB6306A2x23">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/CONFIGURATIONFILE"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_COMPARELIGANDBINDINGSITESV21">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x23"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x23"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -306,12 +306,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x24">
+  <Description rdf:nodeID="bFB6306A2x24">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/DRUGBINDINGSITES"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_COMPARELIGANDBINDINGSITESV21">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x24"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x24"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -319,12 +319,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x25">
+  <Description rdf:nodeID="bFB6306A2x25">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/STRUCTUREFORCOMPARISON1"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_COMPARELIGANDBINDINGSITESV21">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x25"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x25"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -332,12 +332,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x26">
+  <Description rdf:nodeID="bFB6306A2x26">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/CONFIGURATIONFILE"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_COMPARELIGANDBINDINGSITESV21">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x26"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x26"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -345,12 +345,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x27">
+  <Description rdf:nodeID="bFB6306A2x27">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/DRUGBINDINGSITES"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_COMPARELIGANDBINDINGSITESV21">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x27"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x27"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -358,12 +358,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x28">
+  <Description rdf:nodeID="bFB6306A2x28">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/STRUCTUREFORCOMPARISON1"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_COMPARELIGANDBINDINGSITESV21">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x28"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x28"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -371,12 +371,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x29">
+  <Description rdf:nodeID="bFB6306A2x29">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/ALIGNEMENTRESULTS"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_ALIGNEMENTRESULTMERGER">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x29"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x29"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -384,12 +384,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x30">
+  <Description rdf:nodeID="bFB6306A2x30">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/ALIGNEMENTRESULTS1"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_ALIGNEMENTRESULTMERGER">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x30"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x30"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -397,12 +397,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x31">
+  <Description rdf:nodeID="bFB6306A2x31">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/ALIGNEMENTRESULTS"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_ALIGNEMENTRESULTMERGER">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x31"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x31"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -410,12 +410,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x32">
+  <Description rdf:nodeID="bFB6306A2x32">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/ALIGNEMENTRESULTS1"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_ALIGNEMENTRESULTMERGER">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x32"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x32"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -423,12 +423,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x33">
+  <Description rdf:nodeID="bFB6306A2x33">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/RAWINTERACTIONNETWORK1"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RAWINTERACTIONNETWORKMERGER">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x33"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x33"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -436,12 +436,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x34">
+  <Description rdf:nodeID="bFB6306A2x34">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/RAWINTERACTIONNETWORK"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RAWINTERACTIONNETWORKMERGER">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x34"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x34"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -449,12 +449,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x35">
+  <Description rdf:nodeID="bFB6306A2x35">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/RAWINTERACTIONNETWORK1"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RAWINTERACTIONNETWORKMERGER">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x35"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x35"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -462,12 +462,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x36">
+  <Description rdf:nodeID="bFB6306A2x36">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/RAWINTERACTIONNETWORK"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RAWINTERACTIONNETWORKMERGER">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x36"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x36"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -475,12 +475,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x37">
+  <Description rdf:nodeID="bFB6306A2x37">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/CONFIGURATIONFILE"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_COMPARELIGANDBINDINGSITESV2">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x37"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x37"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -488,12 +488,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x38">
+  <Description rdf:nodeID="bFB6306A2x38">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/STRUCTUREFORCOMPARISON"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_COMPARELIGANDBINDINGSITESV2">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x38"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x38"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -501,12 +501,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x39">
+  <Description rdf:nodeID="bFB6306A2x39">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/DRUGBINDINGSITES"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_COMPARELIGANDBINDINGSITESV2">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x39"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x39"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -514,12 +514,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x40">
+  <Description rdf:nodeID="bFB6306A2x40">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/CONFIGURATIONFILE"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_COMPARELIGANDBINDINGSITESV2">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x40"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x40"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -527,12 +527,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x41">
+  <Description rdf:nodeID="bFB6306A2x41">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/STRUCTUREFORCOMPARISON"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_COMPARELIGANDBINDINGSITESV2">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x41"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x41"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -540,12 +540,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x42">
+  <Description rdf:nodeID="bFB6306A2x42">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/DRUGBINDINGSITES"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_COMPARELIGANDBINDINGSITESV2">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x42"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x42"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -553,12 +553,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x43">
+  <Description rdf:nodeID="bFB6306A2x43">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/COMPARISONRESULTS1"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RESULTSORTERV21">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x43"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x43"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -566,12 +566,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x44">
+  <Description rdf:nodeID="bFB6306A2x44">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/STRUCTUREFORCOMPARISON1"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RESULTSORTERV21">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x44"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x44"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -579,12 +579,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x45">
+  <Description rdf:nodeID="bFB6306A2x45">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/COMPARISONRESULTS1"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RESULTSORTERV21">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x45"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x45"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -592,12 +592,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x46">
+  <Description rdf:nodeID="bFB6306A2x46">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/STRUCTUREFORCOMPARISON1"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RESULTSORTERV21">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x46"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x46"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -605,12 +605,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x47">
+  <Description rdf:nodeID="bFB6306A2x47">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/STRUCTUREFORCOMPARISON"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RESULTSORTERV2">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x47"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x47"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -618,12 +618,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x48">
+  <Description rdf:nodeID="bFB6306A2x48">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/COMPARISONRESULTS"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RESULTSORTERV2">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x48"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x48"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -631,12 +631,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x49">
+  <Description rdf:nodeID="bFB6306A2x49">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/STRUCTUREFORCOMPARISON"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RESULTSORTERV2">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x49"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x49"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -644,12 +644,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x50">
+  <Description rdf:nodeID="bFB6306A2x50">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/COMPARISONRESULTS"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_RESULTSORTERV2">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x50"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x50"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -657,12 +657,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x51">
+  <Description rdf:nodeID="bFB6306A2x51">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/CONFIGURATIONFILE"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_COMPARELIGANDBINDINGSITESV21">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x51"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x51"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -670,12 +670,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x52">
+  <Description rdf:nodeID="bFB6306A2x52">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/DRUGBINDINGSITES"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_COMPARELIGANDBINDINGSITESV21">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x52"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x52"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -683,12 +683,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x53">
+  <Description rdf:nodeID="bFB6306A2x53">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/STRUCTUREFORCOMPARISON1"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_COMPARELIGANDBINDINGSITESV21">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x53"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x53"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -696,12 +696,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x54">
+  <Description rdf:nodeID="bFB6306A2x54">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/CONFIGURATIONFILE"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_COMPARELIGANDBINDINGSITESV21">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x54"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x54"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -709,12 +709,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x55">
+  <Description rdf:nodeID="bFB6306A2x55">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/DRUGBINDINGSITES"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_COMPARELIGANDBINDINGSITESV21">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x55"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x55"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
@@ -722,12 +722,12 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
   </Description>
-  <Description rdf:nodeID="b9838C7C2x56">
+  <Description rdf:nodeID="bFB6306A2x56">
     <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/STRUCTUREFORCOMPARISON1"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/ProcessTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON_COMPARELIGANDBINDINGSITESV21">
-    <ns1:hasInput rdf:nodeID="b9838C7C2x56"/>
+    <ns1:hasInput rdf:nodeID="bFB6306A2x56"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
   </Description>
