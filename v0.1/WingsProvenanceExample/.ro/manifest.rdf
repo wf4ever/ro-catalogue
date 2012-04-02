@@ -7,728 +7,653 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:ro="http://purl.org/wf4ever/ro#"
 >
-  <rdf:Description rdf:nodeID="tmawZCpO168">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/C9C5120FAFC153B5178D47192EFEF7B7"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  <rdf:Description rdf:nodeID="hZkloJjF112">
     <ao:body rdf:resource="wf34/usage.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/4A04D9CBCBA5A24FC5C19F693AC49238"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF196">
+    <ao:body rdf:resource="wf34/process-usage.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/66D929138F1D484C8D8ADC86D5BE7477"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF103">
+    <ao:body rdf:resource="wf34/artifact.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/F9CCED7A4F18CC5AD2600B92723197E2"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF195">
+    <ao:body rdf:resource="wf34/linking-artifacts.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/615789F206249A99842F1E0EFA65A957"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF197">
+    <ao:body rdf:resource="wf34/process-usage.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/65E39FED3439AA6650E6AE55314BE6AD"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF134">
+    <ao:body rdf:resource="wf34/generation.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/PVALUE0.00001"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF188">
+    <ao:body rdf:resource="wf34/linking-artifacts.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/CC53D47E72A3C6C144DEEF5272CEF5BA"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF130">
+    <ao:body rdf:resource="wf34/usage.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/0FD08D3BDAC0216F1F892D8BB9B3E7E1"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF187">
+    <ao:body rdf:resource="wf34/process-usage.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
   </rdf:Description>
   <rdf:Description rdf:about="">
-    <dcterms:created>2012-04-02T12:49:09</dcterms:created>
-    <ore:aggregates rdf:nodeID="tmawZCpO168"/>
-    <ore:aggregates rdf:resource="wf34/process-usage.rdf"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO143"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO138"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO133"/>
-    <ore:aggregates rdf:resource="process-query.sparql"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO117"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO130"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO199"/>
-    <ore:aggregates rdf:resource="wings-query-usage.sparql"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO187"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO202"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO160"/>
-    <ore:aggregates rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/CC53D47E72A3C6C144DEEF5272CEF5BA"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO132"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO195"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO118"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO122"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO212"/>
-    <ore:aggregates rdf:resource="README"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO169"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO161"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO116"/>
-    <ore:aggregates rdf:resource="wings-query-artifact.sparql"/>
-    <ore:aggregates rdf:resource="wings-query-generation.sparql"/>
-    <ore:aggregates rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/6B7AB2E53A9186CACAD94833DD34EF8E"/>
-    <ore:aggregates rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACCTSUBWFFATCAT"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO206"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO153"/>
-    <ore:aggregates rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO121"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO222"/>
-    <ore:aggregates rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/0FD08D3BDAC0216F1F892D8BB9B3E7E1"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO214"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO158"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO216"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO172"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO154"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO119"/>
-    <ore:aggregates rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/C9C5120FAFC153B5178D47192EFEF7B7"/>
-    <ore:aggregates rdf:resource="artifacts.txt"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO197"/>
-    <ore:aggregates rdf:resource="wf34/linking-artifacts.rdf"/>
-    <ore:aggregates rdf:resource="wings-query-process-generation.sparql"/>
-    <ore:aggregates rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/615789F206249A99842F1E0EFA65A957"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO157"/>
-    <ore:aggregates rdf:resource="subworkflows.txt"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO129"/>
-    <ore:aggregates rdf:resource="artifacts-query.sparql"/>
-    <ore:aggregates rdf:resource="wf34/linking-steps.rdf"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO144"/>
-    <ore:aggregates rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/65E39FED3439AA6650E6AE55314BE6AD"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO176"/>
-    <ore:aggregates rdf:resource="makeresourcelists.sh"/>
-    <ore:aggregates rdf:resource="wings-query-linking.sparql"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO203"/>
-    <ore:aggregates rdf:resource="wings-query-process-usage.sparql"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO209"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO140"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO159"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO190"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO127"/>
-    <ore:aggregates rdf:resource="wf34/generation.rdf"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO155"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO139"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO142"/>
-    <ore:aggregates rdf:resource="make.sh"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO150"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO196"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO128"/>
-    <ore:aggregates rdf:resource="workflow-query.sparql"/>
-    <ore:aggregates rdf:resource="wf34/usage.rdf"/>
-    <ore:aggregates rdf:resource="wf34/artifact.rdf"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO134"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO162"/>
-    <ore:aggregates rdf:resource="wings-query-linking-artifacts.sparql"/>
-    <ore:aggregates rdf:resource="workflowrun-query.sparql"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO181"/>
-    <ore:aggregates rdf:resource="wf34/template.rdf"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO219"/>
-    <ore:aggregates rdf:resource="wings-query-test.sparql"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO221"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO137"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO135"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO208"/>
-    <ore:aggregates rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/38BB806F498FA762C244979C80412F0D"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO125"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO177"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO147"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO163"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO156"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO124"/>
-    <ore:aggregates rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/PVALUE0.00001"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO192"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO174"/>
-    <ore:aggregates rdf:resource="wings-query-wfexec.sparql"/>
-    <ore:aggregates rdf:resource="wings-query-template.sparql"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO201"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO179"/>
-    <ore:aggregates rdf:resource="wings-query.sparql"/>
-    <ore:aggregates rdf:resource="provenance-query-example.txt"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO123"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO173"/>
-    <ore:aggregates rdf:resource="processrun.txt"/>
-    <ore:aggregates rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/66D929138F1D484C8D8ADC86D5BE7477"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO114"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO164"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO113"/>
-    <ore:aggregates rdf:resource="mainworkflow.txt"/>
-    <ore:aggregates rdf:resource="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778606534"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO131"/>
-    <ore:aggregates rdf:resource="wf34/linking.rdf"/>
-    <ore:aggregates rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/68ED7970F5C2CA17B6F867B0F223D194"/>
-    <ore:aggregates rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTSUBWFDOCKING"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO189"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO205"/>
-    <ore:aggregates rdf:resource="wf34/wfexec.rdf"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO175"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO215"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO184"/>
-    <ore:aggregates rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTGLOBALWORKFLOW2"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO151"/>
-    <ore:aggregates rdf:resource="getWingsData.sh"/>
-    <ore:aggregates rdf:resource="prefixes.sparql"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO218"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO183"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO198"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO213"/>
-    <ore:aggregates rdf:resource="wf34/process-generation.rdf"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO166"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO207"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO165"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO126"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO193"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO180"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO204"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO211"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO220"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO148"/>
-    <ore:aggregates rdf:resource="processrun-query.sparql"/>
-    <ore:aggregates rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/272CE70CCBB30666D4310D15280C405B"/>
-    <ore:aggregates rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/4A04D9CBCBA5A24FC5C19F693AC49238"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO210"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO149"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO120"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO217"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO146"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO141"/>
-    <ore:aggregates rdf:resource="mainworkflowrun.txt"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO115"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO200"/>
-    <ore:aggregates rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/F9CCED7A4F18CC5AD2600B92723197E2"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO171"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO167"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO188"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO145"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO186"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO136"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO182"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO178"/>
-    <ore:aggregates rdf:resource="wings-query-linking-steps.sparql"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO185"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO191"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO194"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO152"/>
-    <ore:aggregates rdf:nodeID="tmawZCpO170"/>
     <dcterms:identifier>WingsProvenanceExample</dcterms:identifier>
-    <dcterms:description>Wings provenance example</dcterms:description>
-    <dcterms:title>Wings provenance example</dcterms:title>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
     <dcterms:creator>Test user</dcterms:creator>
+    <ore:aggregates rdf:resource="wings-query-generation.sparql"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF118"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF112"/>
+    <ore:aggregates rdf:resource="wf34/usage.rdf"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF103"/>
+    <ore:aggregates rdf:resource="wf34/linking-artifacts.rdf"/>
+    <ore:aggregates rdf:resource="wf34/process-usage.rdf"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF195"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF197"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF134"/>
+    <ore:aggregates rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/4A04D9CBCBA5A24FC5C19F693AC49238"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF188"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF130"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF187"/>
+    <ore:aggregates rdf:resource="wf34/template.rdf"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF196"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF135"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF124"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF178"/>
+    <ore:aggregates rdf:resource="workflowrun-query.sparql"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF141"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF143"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF145"/>
+    <ore:aggregates rdf:resource="artifacts.txt"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF104"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF149"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF176"/>
+    <ore:aggregates rdf:resource="wings-query-linking-artifacts.sparql"/>
+    <ore:aggregates rdf:resource="artifacts-query.sparql"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF121"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF180"/>
+    <ore:aggregates rdf:resource="subworkflows.txt"/>
+    <ore:aggregates rdf:resource="wings-query-test.sparql"/>
+    <ore:aggregates rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/65E39FED3439AA6650E6AE55314BE6AD"/>
+    <ore:aggregates rdf:resource="wings-query-wfexec.sparql"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF123"/>
+    <ore:aggregates rdf:resource="provenance-query-example.txt"/>
+    <ore:aggregates rdf:resource="prefixes.sparql"/>
+    <ore:aggregates rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/66D929138F1D484C8D8ADC86D5BE7477"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF122"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF153"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF144"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF170"/>
+    <ore:aggregates rdf:resource="wings-query-linking.sparql"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF146"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF190"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF142"/>
+    <ore:aggregates rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/F9CCED7A4F18CC5AD2600B92723197E2"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF120"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF129"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF101"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF106"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF165"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF166"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF181"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF113"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF156"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF161"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF186"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF164"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF179"/>
+    <ore:aggregates rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/38BB806F498FA762C244979C80412F0D"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF131"/>
+    <ore:aggregates rdf:resource="wings-query-usage.sparql"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF102"/>
+    <ore:aggregates rdf:resource="wings-query-template.sparql"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF137"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF152"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF127"/>
+    <ore:aggregates rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/0FD08D3BDAC0216F1F892D8BB9B3E7E1"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF159"/>
+    <ore:aggregates rdf:resource="wings-query-process-usage.sparql"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF125"/>
+    <ore:aggregates rdf:resource="getWingsData.sh"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF116"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF140"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF168"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF155"/>
+    <ore:aggregates rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/6B7AB2E53A9186CACAD94833DD34EF8E"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF139"/>
+    <ore:aggregates rdf:resource="mainworkflowrun.txt"/>
+    <ore:aggregates rdf:resource="wf34/wfexec.rdf"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF150"/>
+    <ore:aggregates rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/615789F206249A99842F1E0EFA65A957"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF198"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF115"/>
+    <ore:aggregates rdf:resource="makeresourcelists.sh"/>
+    <ore:aggregates rdf:resource="mainworkflow.txt"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF189"/>
+    <ore:aggregates rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/272CE70CCBB30666D4310D15280C405B"/>
+    <ore:aggregates rdf:resource="wings-query-linking-steps.sparql"/>
+    <ore:aggregates rdf:resource="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778606534"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF192"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF172"/>
+    <ore:aggregates rdf:resource="wf34/process-generation.rdf"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF162"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF108"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF128"/>
+    <ore:aggregates rdf:resource="wf34/generation.rdf"/>
+    <ore:aggregates rdf:resource="README"/>
+    <ore:aggregates rdf:resource="processrun-query.sparql"/>
+    <ore:aggregates rdf:resource="wf34/linking.rdf"/>
+    <ore:aggregates rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/CC53D47E72A3C6C144DEEF5272CEF5BA"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF158"/>
+    <ore:aggregates rdf:resource="processrun.txt"/>
+    <ore:aggregates rdf:resource="workflow-query.sparql"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF110"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF133"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF111"/>
+    <ore:aggregates rdf:resource="make.sh"/>
+    <ore:aggregates rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/C9C5120FAFC153B5178D47192EFEF7B7"/>
+    <ore:aggregates rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF177"/>
+    <ore:aggregates rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/PVALUE0.00001"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF154"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF167"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF126"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF173"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF105"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF138"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF174"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF151"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF148"/>
+    <ore:aggregates rdf:resource="wings-query-artifact.sparql"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF175"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF117"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF182"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF163"/>
+    <ore:aggregates rdf:resource="wings-query-process-generation.sparql"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF194"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF147"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF132"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF183"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF107"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF109"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF171"/>
+    <ore:aggregates rdf:resource="process-query.sparql"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF185"/>
+    <ore:aggregates rdf:resource="wings-query.sparql"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF114"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF169"/>
+    <ore:aggregates rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/68ED7970F5C2CA17B6F867B0F223D194"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF160"/>
+    <ore:aggregates rdf:resource="wf34/artifact.rdf"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF119"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF193"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF184"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF157"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF136"/>
+    <ore:aggregates rdf:resource="wf34/linking-steps.rdf"/>
+    <ore:aggregates rdf:nodeID="hZkloJjF191"/>
+    <dcterms:created>2012-04-02T21:11:14</dcterms:created>
+    <dcterms:title>Wings provenance example</dcterms:title>
+    <dcterms:description>Wings provenance example</dcterms:description>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO143">
+  <rdf:Description rdf:nodeID="hZkloJjF135">
+    <ao:body rdf:resource="wf34/usage.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/38BB806F498FA762C244979C80412F0D"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF124">
+    <ao:body rdf:resource="wf34/linking.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF178">
+    <ao:body rdf:resource="wf34/artifact.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/66D929138F1D484C8D8ADC86D5BE7477"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF141">
+    <ao:body rdf:resource="wf34/usage.rdf"/>
     <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/6B7AB2E53A9186CACAD94833DD34EF8E"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/process-usage.rdf"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO138">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/PVALUE0.00001"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/artifact.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO133">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/38BB806F498FA762C244979C80412F0D"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/usage.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO117">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/65E39FED3439AA6650E6AE55314BE6AD"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/usage.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO130">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/272CE70CCBB30666D4310D15280C405B"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/process-generation.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO199">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/F9CCED7A4F18CC5AD2600B92723197E2"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/usage.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO187">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTGLOBALWORKFLOW2"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/process-usage.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO202">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessInstance/COMPARELIGANDBINDINGSITESV211332778606534"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  <rdf:Description rdf:nodeID="hZkloJjF143">
     <ao:body rdf:resource="wf34/linking-steps.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO160">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/F9CCED7A4F18CC5AD2600B92723197E2"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/process-generation.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO132">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/4A04D9CBCBA5A24FC5C19F693AC49238"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/artifact.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO195">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/process-usage.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO118">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/4A04D9CBCBA5A24FC5C19F693AC49238"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/process-usage.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO122">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/65E39FED3439AA6650E6AE55314BE6AD"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/linking-artifacts.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO212">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/PVALUE0.00001"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/process-generation.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO169">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/template.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO161">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/615789F206249A99842F1E0EFA65A957"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/generation.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO116">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/272CE70CCBB30666D4310D15280C405B"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/usage.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO206">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTSUBWFDOCKING"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/template.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO153">
-    <ro:annotatesAggregatedResource rdf:resource=""/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource=".ro/Ann-20120402-0001-WingsProvenanceExample.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO146">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/65E39FED3439AA6650E6AE55314BE6AD"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/process-generation.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO222">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessInstance/RESULTSORTER11332778606534"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/linking-steps.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO214">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTSUBWFDOCKING"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/process-generation.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO158">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/4A04D9CBCBA5A24FC5C19F693AC49238"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/process-generation.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO216">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/F9CCED7A4F18CC5AD2600B92723197E2"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/linking-artifacts.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO172">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/66D929138F1D484C8D8ADC86D5BE7477"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/process-usage.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO154">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/38BB806F498FA762C244979C80412F0D"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/artifact.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO119">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTGLOBALWORKFLOW2"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/linking.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO197">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/66D929138F1D484C8D8ADC86D5BE7477"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/usage.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO157">
     <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessInstance/RESULTSORTER1332778606534"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/linking-steps.rdf"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO129">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/68ED7970F5C2CA17B6F867B0F223D194"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/generation.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO144">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/PVALUE0.00001"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/linking-artifacts.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO176">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/6B7AB2E53A9186CACAD94833DD34EF8E"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/artifact.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO209">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessInstance/RAWINTERACTIONNETWORKMERGER1332778606534"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/linking-steps.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO140">
+  <rdf:Description rdf:nodeID="hZkloJjF145">
+    <ao:body rdf:resource="wf34/process-usage.rdf"/>
     <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/C9C5120FAFC153B5178D47192EFEF7B7"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/process-usage.rdf"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO159">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/CC53D47E72A3C6C144DEEF5272CEF5BA"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/process-usage.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO190">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/65E39FED3439AA6650E6AE55314BE6AD"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  <rdf:Description rdf:nodeID="hZkloJjF104">
     <ao:body rdf:resource="wf34/artifact.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO127">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/6B7AB2E53A9186CACAD94833DD34EF8E"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/PVALUE0.00001"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/usage.rdf"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO170">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/65E39FED3439AA6650E6AE55314BE6AD"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/process-usage.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO139">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/66D929138F1D484C8D8ADC86D5BE7477"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  <rdf:Description rdf:nodeID="hZkloJjF149">
     <ao:body rdf:resource="wf34/process-generation.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO142">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778606534"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/process-usage.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO150">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/38BB806F498FA762C244979C80412F0D"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/linking-artifacts.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO196">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/68ED7970F5C2CA17B6F867B0F223D194"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/process-generation.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO128">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/0FD08D3BDAC0216F1F892D8BB9B3E7E1"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/process-usage.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO141">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/65E39FED3439AA6650E6AE55314BE6AD"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/generation.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO134">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/template.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO162">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACCTSUBWFFATCAT"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/template.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO181">
-    <ro:annotatesAggregatedResource rdf:resource=""/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource=".ro/Ann-20120402-0002-WingsProvenanceExample.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO219">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/CC53D47E72A3C6C144DEEF5272CEF5BA"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/generation.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO221">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/615789F206249A99842F1E0EFA65A957"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/artifact.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO137">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTGLOBALWORKFLOW2"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/template.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO135">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/615789F206249A99842F1E0EFA65A957"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/usage.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO208">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/6B7AB2E53A9186CACAD94833DD34EF8E"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/linking-artifacts.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO125">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/4A04D9CBCBA5A24FC5C19F693AC49238"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/usage.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO147">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778606534"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/process-generation.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO163">
-    <ro:annotatesAggregatedResource rdf:resource=""/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource=".ro/manifest.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO156">
     <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/F9CCED7A4F18CC5AD2600B92723197E2"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/artifact.rdf"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO124">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/linking.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO192">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/PVALUE0.00001"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/process-usage.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO174">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/0FD08D3BDAC0216F1F892D8BB9B3E7E1"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  <rdf:Description rdf:nodeID="hZkloJjF176">
     <ao:body rdf:resource="wf34/usage.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/F9CCED7A4F18CC5AD2600B92723197E2"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO201">
+  <rdf:Description rdf:nodeID="hZkloJjF121">
+    <ao:body rdf:resource="wf34/process-generation.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/615789F206249A99842F1E0EFA65A957"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF123">
+    <ao:body rdf:resource="wf34/usage.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/615789F206249A99842F1E0EFA65A957"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF122">
+    <ao:body rdf:resource="wf34/artifact.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/615789F206249A99842F1E0EFA65A957"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF153">
+    <ao:body rdf:resource="wf34/process-generation.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/65E39FED3439AA6650E6AE55314BE6AD"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF144">
+    <ao:body rdf:resource="wf34/generation.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/65E39FED3439AA6650E6AE55314BE6AD"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF170">
+    <ao:body rdf:resource="wf34/process-generation.rdf"/>
     <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/PVALUE0.00001"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/generation.rdf"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO179">
+  <rdf:Description rdf:nodeID="hZkloJjF146">
+    <ao:body rdf:resource="wf34/artifact.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/65E39FED3439AA6650E6AE55314BE6AD"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF190">
+    <ao:body rdf:resource="wf34/usage.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/PVALUE0.00001"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF142">
+    <ao:body rdf:resource="wf34/linking-artifacts.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/C9C5120FAFC153B5178D47192EFEF7B7"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF180">
+    <ao:body rdf:resource="wf34/linking-artifacts.rdf"/>
     <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/0FD08D3BDAC0216F1F892D8BB9B3E7E1"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/artifact.rdf"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO123">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON"/>
+  <rdf:Description rdf:nodeID="hZkloJjF120">
+    <ao:body rdf:resource="wf34/process-usage.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/F9CCED7A4F18CC5AD2600B92723197E2"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/process-generation.rdf"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO173">
+  <rdf:Description rdf:nodeID="hZkloJjF129">
+    <ao:body rdf:resource=".ro/Ann-20120402-0001-WingsProvenanceExample.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource=""/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF101">
+    <ao:body rdf:resource="wf34/usage.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/68ED7970F5C2CA17B6F867B0F223D194"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF106">
+    <ao:body rdf:resource="wf34/usage.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/65E39FED3439AA6650E6AE55314BE6AD"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF165">
+    <ao:body rdf:resource="wf34/process-generation.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/0FD08D3BDAC0216F1F892D8BB9B3E7E1"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF166">
+    <ao:body rdf:resource="wf34/usage.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/C9C5120FAFC153B5178D47192EFEF7B7"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF181">
+    <ao:body rdf:resource="wf34/process-generation.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/C9C5120FAFC153B5178D47192EFEF7B7"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF113">
+    <ao:body rdf:resource="wf34/linking-artifacts.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/68ED7970F5C2CA17B6F867B0F223D194"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF156">
+    <ao:body rdf:resource="wf34/template.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778606534"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF161">
+    <ao:body rdf:resource="wf34/artifact.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/6B7AB2E53A9186CACAD94833DD34EF8E"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF186">
+    <ao:body rdf:resource="wf34/process-usage.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/PVALUE0.00001"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF164">
+    <ao:body rdf:resource="wf34/linking-artifacts.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/F9CCED7A4F18CC5AD2600B92723197E2"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF179">
+    <ao:body rdf:resource="wf34/process-generation.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/68ED7970F5C2CA17B6F867B0F223D194"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF131">
+    <ao:body rdf:resource="wf34/linking-artifacts.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/PVALUE0.00001"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF102">
+    <ao:body rdf:resource="wf34/artifact.rdf"/>
     <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/272CE70CCBB30666D4310D15280C405B"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/process-usage.rdf"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO114">
+  <rdf:Description rdf:nodeID="hZkloJjF137">
+    <ao:body rdf:resource="wf34/generation.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/38BB806F498FA762C244979C80412F0D"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF152">
+    <ao:body rdf:resource="wf34/process-generation.rdf"/>
     <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778606534"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/linking.rdf"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO164">
+  <rdf:Description rdf:nodeID="hZkloJjF127">
+    <ao:body rdf:resource="wf34/linking-artifacts.rdf"/>
     <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/66D929138F1D484C8D8ADC86D5BE7477"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/generation.rdf"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO113">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/615789F206249A99842F1E0EFA65A957"/>
+  <rdf:Description rdf:nodeID="hZkloJjF191">
+    <ao:body rdf:resource="wf34/process-generation.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/66D929138F1D484C8D8ADC86D5BE7477"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF159">
     <ao:body rdf:resource="wf34/process-usage.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO131">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/C9C5120FAFC153B5178D47192EFEF7B7"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/272CE70CCBB30666D4310D15280C405B"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF118">
+    <ao:body rdf:resource="wf34/linking.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778606534"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF125">
+    <ao:body rdf:resource=".ro/Ann-20120402-0002-WingsProvenanceExample.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource=""/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF116">
     <ao:body rdf:resource="wf34/artifact.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO189">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/F9CCED7A4F18CC5AD2600B92723197E2"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/68ED7970F5C2CA17B6F867B0F223D194"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/generation.rdf"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO205">
+  <rdf:Description rdf:nodeID="hZkloJjF140">
+    <ao:body rdf:resource="wf34/generation.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/0FD08D3BDAC0216F1F892D8BB9B3E7E1"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF168">
+    <ao:body rdf:resource="wf34/process-usage.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/38BB806F498FA762C244979C80412F0D"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF139">
+    <ao:body rdf:resource=".ro/manifest.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource=""/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF115">
+    <ao:body rdf:resource="wf34/usage.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/CC53D47E72A3C6C144DEEF5272CEF5BA"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF198">
+    <ao:body rdf:resource="wf34/linking-steps.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessInstance/RESULTSORTER11332778606534"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF150">
+    <ao:body rdf:resource="wf34/process-generation.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/38BB806F498FA762C244979C80412F0D"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF189">
+    <ao:body rdf:resource="wf34/linking-steps.rdf"/>
     <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessInstance/ALIGNEMENTRESULTMERGER1332778606534"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/linking-steps.rdf"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO185">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/0FD08D3BDAC0216F1F892D8BB9B3E7E1"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/generation.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO175">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/0FD08D3BDAC0216F1F892D8BB9B3E7E1"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/linking-artifacts.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO215">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTSUBWFDOCKING"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/linking.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO184">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/68ED7970F5C2CA17B6F867B0F223D194"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/process-usage.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO151">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/PVALUE0.00001"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/usage.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO203">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACCTSUBWFFATCAT"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/linking.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO218">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/615789F206249A99842F1E0EFA65A957"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  <rdf:Description rdf:nodeID="hZkloJjF193">
     <ao:body rdf:resource="wf34/process-generation.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO183">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/4A04D9CBCBA5A24FC5C19F693AC49238"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/generation.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO198">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTSUBWFDOCKING"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/process-usage.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO213">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessInstance/COMPARELIGANDBINDINGSITESV21332778606534"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/linking-steps.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO166">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTGLOBALWORKFLOW2"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/process-generation.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO207">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/38BB806F498FA762C244979C80412F0D"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/process-usage.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO165">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/272CE70CCBB30666D4310D15280C405B"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/generation.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO126">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACCTSUBWFFATCAT"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/process-usage.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO180">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/38BB806F498FA762C244979C80412F0D"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/generation.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO204">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/68ED7970F5C2CA17B6F867B0F223D194"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/artifact.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO211">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/66D929138F1D484C8D8ADC86D5BE7477"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/artifact.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO220">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/CC53D47E72A3C6C144DEEF5272CEF5BA"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/artifact.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO148">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/C9C5120FAFC153B5178D47192EFEF7B7"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/linking-artifacts.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO210">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/68ED7970F5C2CA17B6F867B0F223D194"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/linking-artifacts.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO149">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/66D929138F1D484C8D8ADC86D5BE7477"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/linking-artifacts.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO120">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/272CE70CCBB30666D4310D15280C405B"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/linking-artifacts.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO217">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/38BB806F498FA762C244979C80412F0D"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/process-generation.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO177">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/4A04D9CBCBA5A24FC5C19F693AC49238"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/linking-artifacts.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO200">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/C9C5120FAFC153B5178D47192EFEF7B7"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/generation.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO115">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/0FD08D3BDAC0216F1F892D8BB9B3E7E1"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/process-generation.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO121">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/CC53D47E72A3C6C144DEEF5272CEF5BA"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/usage.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO171">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/68ED7970F5C2CA17B6F867B0F223D194"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/usage.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO167">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/CC53D47E72A3C6C144DEEF5272CEF5BA"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/linking-artifacts.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO188">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/linking.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO145">
     <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/6B7AB2E53A9186CACAD94833DD34EF8E"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/generation.rdf"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO186">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/C9C5120FAFC153B5178D47192EFEF7B7"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  <rdf:Description rdf:nodeID="hZkloJjF192">
     <ao:body rdf:resource="wf34/process-generation.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO136">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACCTSUBWFFATCAT"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/process-generation.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO182">
     <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/272CE70CCBB30666D4310D15280C405B"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/artifact.rdf"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO178">
+  <rdf:Description rdf:nodeID="hZkloJjF172">
+    <ao:body rdf:resource="wf34/linking-artifacts.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/65E39FED3439AA6650E6AE55314BE6AD"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF162">
+    <ao:body rdf:resource="wf34/linking-steps.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessInstance/RAWINTERACTIONNETWORKMERGER1332778606534"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF108">
+    <ao:body rdf:resource="wf34/process-generation.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/CC53D47E72A3C6C144DEEF5272CEF5BA"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF128">
+    <ao:body rdf:resource="wf34/process-usage.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/CC53D47E72A3C6C144DEEF5272CEF5BA"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF158">
+    <ao:body rdf:resource="wf34/process-usage.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/6B7AB2E53A9186CACAD94833DD34EF8E"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF185">
+    <ao:body rdf:resource="wf34/linking-artifacts.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/38BB806F498FA762C244979C80412F0D"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF110">
+    <ao:body rdf:resource="wf34/generation.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/272CE70CCBB30666D4310D15280C405B"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF133">
+    <ao:body rdf:resource="wf34/process-generation.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/4A04D9CBCBA5A24FC5C19F693AC49238"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF111">
+    <ao:body rdf:resource="wf34/generation.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/4A04D9CBCBA5A24FC5C19F693AC49238"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF155">
+    <ao:body rdf:resource="wf34/process-usage.rdf"/>
     <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778606534"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/template.rdf"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO193">
+  <rdf:Description rdf:nodeID="hZkloJjF177">
+    <ao:body rdf:resource="wf34/generation.rdf"/>
     <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/F9CCED7A4F18CC5AD2600B92723197E2"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF154">
+    <ao:body rdf:resource="wf34/template.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF167">
     <ao:body rdf:resource="wf34/process-usage.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO191">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/6B7AB2E53A9186CACAD94833DD34EF8E"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/0FD08D3BDAC0216F1F892D8BB9B3E7E1"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/process-generation.rdf"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO194">
-    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/615789F206249A99842F1E0EFA65A957"/>
+  <rdf:Description rdf:nodeID="hZkloJjF126">
+    <ao:body rdf:resource="wf34/linking.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/linking-artifacts.rdf"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO152">
+  <rdf:Description rdf:nodeID="hZkloJjF173">
+    <ao:body rdf:resource="wf34/artifact.rdf"/>
     <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/CC53D47E72A3C6C144DEEF5272CEF5BA"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/process-generation.rdf"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="tmawZCpO155">
+  <rdf:Description rdf:nodeID="hZkloJjF105">
+    <ao:body rdf:resource="wf34/process-usage.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/68ED7970F5C2CA17B6F867B0F223D194"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF138">
+    <ao:body rdf:resource="wf34/generation.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/CC53D47E72A3C6C144DEEF5272CEF5BA"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF174">
+    <ao:body rdf:resource="wf34/generation.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/68ED7970F5C2CA17B6F867B0F223D194"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF151">
+    <ao:body rdf:resource="wf34/linking-artifacts.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/6B7AB2E53A9186CACAD94833DD34EF8E"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF148">
+    <ao:body rdf:resource="wf34/wfexec.rdf"/>
     <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778606534"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wf34/wfexec.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF175">
+    <ao:body rdf:resource="wf34/generation.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/C9C5120FAFC153B5178D47192EFEF7B7"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF117">
+    <ao:body rdf:resource="wf34/generation.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/6B7AB2E53A9186CACAD94833DD34EF8E"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF182">
+    <ao:body rdf:resource="wf34/artifact.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/4A04D9CBCBA5A24FC5C19F693AC49238"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF163">
+    <ao:body rdf:resource="wf34/process-usage.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/615789F206249A99842F1E0EFA65A957"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF194">
+    <ao:body rdf:resource="wf34/artifact.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/38BB806F498FA762C244979C80412F0D"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF147">
+    <ao:body rdf:resource="wf34/generation.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/66D929138F1D484C8D8ADC86D5BE7477"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF132">
+    <ao:body rdf:resource="wf34/linking-steps.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessInstance/COMPARELIGANDBINDINGSITESV211332778606534"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF183">
+    <ao:body rdf:resource="wf34/artifact.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/0FD08D3BDAC0216F1F892D8BB9B3E7E1"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF107">
+    <ao:body rdf:resource="wf34/usage.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/272CE70CCBB30666D4310D15280C405B"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF109">
+    <ao:body rdf:resource="wf34/process-generation.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF171">
+    <ao:body rdf:resource="wf34/process-usage.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/4A04D9CBCBA5A24FC5C19F693AC49238"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF114">
+    <ao:body rdf:resource="wf34/template.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF169">
+    <ao:body rdf:resource="wf34/usage.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/66D929138F1D484C8D8ADC86D5BE7477"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF160">
+    <ao:body rdf:resource="wf34/linking-artifacts.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/4A04D9CBCBA5A24FC5C19F693AC49238"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF119">
+    <ao:body rdf:resource="wf34/linking-artifacts.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/272CE70CCBB30666D4310D15280C405B"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF184">
+    <ao:body rdf:resource="wf34/generation.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/615789F206249A99842F1E0EFA65A957"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF157">
+    <ao:body rdf:resource="wf34/linking-steps.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ProcessInstance/COMPARELIGANDBINDINGSITESV21332778606534"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="hZkloJjF136">
+    <ao:body rdf:resource="wf34/artifact.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="http://wings.isi.edu/opmexport/resource/ArtifactInstance/C9C5120FAFC153B5178D47192EFEF7B7"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
   </rdf:Description>
 </rdf:RDF>

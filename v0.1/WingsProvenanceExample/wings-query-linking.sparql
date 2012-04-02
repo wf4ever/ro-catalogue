@@ -17,5 +17,5 @@ CONSTRUCT{
 <http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778606534> a <http://purl.org/wf4ever/wfdesc#Workflow>;                <http://purl.org/wf4ever/wfprov#describedByWorkflow> ?templ.
 }WHERE{
 ?templ a <http://wings.isi.edu/ontology/opmv/WorkflowTemplate>.
-<http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778606534> a <http://openprovenance.org/model/opmo#Account>;                                 <http://wings.isi.edu/ontology/opmv/hasWorkflowTemplate> ?proc.
+<http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778606534> a <http://openprovenance.org/model/opmo#Account>;                                 <http://wings.isi.edu/ontology/opmv/hasWorkflowTemplate> ?templ.
 }
