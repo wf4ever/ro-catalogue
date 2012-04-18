@@ -26,7 +26,7 @@ cat >>wings-query-usage.sparql <<%EOF%
 CONSTRUCT {
   ?artifact a <http://purl.org/wf4ever/wfprov#Artifact>, <http://purl.org/wf4ever/ro#Resource>;
   		<http://www.w3.org/2000/01/rdf-schema#label> ?label.
-  ?activity a <http://purl.org/wf4ever/wfprov#Process>, <http://purl.org/wf4ever/ro#Resource>;
+  ?activity a <http://purl.org/wf4ever/wfprov#ProcessRun>, <http://purl.org/wf4ever/ro#Resource>;
             <http://purl.org/wf4ever/wfprov#usedInput> ?artifact;
 			<http://www.w3.org/2000/01/rdf-schema#label> ?labelA;
             <http://purl.org/wf4ever/wfprov#wasPartOfWorkflowRun> <http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778606534>.
@@ -48,7 +48,7 @@ CONSTRUCT {
   ?artifact a <http://purl.org/wf4ever/wfprov#Artifact>, <http://purl.org/wf4ever/ro#Resource>;
 			<http://www.w3.org/2000/01/rdf-schema#label> ?label;
             <http://purl.org/wf4ever/wfprov#wasOutputFrom> ?activity.
-  ?activity a <http://purl.org/wf4ever/wfprov#Process>, <http://purl.org/wf4ever/ro#Resource>;
+  ?activity a <http://purl.org/wf4ever/wfprov#ProcessRun>, <http://purl.org/wf4ever/ro#Resource>;
 			<http://www.w3.org/2000/01/rdf-schema#label> ?labelA;
             <http://purl.org/wf4ever/wfprov#wasPartOfWorkflowRun> <http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778606534>.
 } WHERE {
@@ -194,7 +194,7 @@ cat >>wings-query-linking-steps.sparql <<%EOF%
 CONSTRUCT{
 ?pTempl a <http://purl.org/wf4ever/wfdesc#Process>;
 		<http://www.w3.org/2000/01/rdf-schema#label> ?label.
-?process a <http://purl.org/wf4ever/wfprov#Process>;
+?process a <http://purl.org/wf4ever/wfprov#ProcessRun>;
           <http://purl.org/wf4ever/wfprov#describedByProcess> ?pTempl.
 }WHERE{
 ?process a <http://wings.isi.edu/ontology/opmv/ProcessInstance>;
