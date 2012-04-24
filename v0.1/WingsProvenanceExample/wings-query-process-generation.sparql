@@ -12,17 +12,21 @@ PREFIX ao:         <http://purl.org/ao/>
 PREFIX dcterms:    <http://purl.org/dc/terms/>
 PREFIX foaf:       <http://xmlns.com/foaf/0.1/>
 
- CONSTRUCT   {
-  ?artifact a <http://purl.org/wf4ever/wfdesc#Artifact>, <http://purl.org/wf4ever/ro#Resource>.
+ CONSTRUCT {
+  ?artifact a <http://purl.org/wf4ever/wfdesc#Artifact>, <http://purl.org/wf4ever/ro#Resource>;
+			<http://www.w3.org/2000/01/rdf-schema#label> ?label.
   ?activity a <http://purl.org/wf4ever/wfdesc#Process>, <http://purl.org/wf4ever/ro#Resource>;
+			<http://www.w3.org/2000/01/rdf-schema#label> ?labelA;
             <http://purl.org/wf4ever/wfdesc#hasOutput> _:p.
   _:p a <http://purl.org/wf4ever/wfdesc#Parameter>;
       <http://purl.org/wf4ever/wfdesc#hasArtifact> ?artifact.
-} WHERE  {
+} WHERE {
   <http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON> a <http://wings.isi.edu/ontology/opmv/WorkflowTemplate>;
             <http://openprovenance.org/model/opmo#hasArtifact> ?artifact;
-            <http://openprovenance.org/model/opmo#hasProcess> ?activity.                                                                                           
+            <http://openprovenance.org/model/opmo#hasProcess> ?activity.
   ?artifact a <http://wings.isi.edu/ontology/opmv/DataVariable>;
             <http://purl.org/net/opmv/ns#wasGeneratedBy> ?activity.
   ?activity a <http://wings.isi.edu/ontology/opmv/ProcessTemplate>.
+  OPTIONAL{?artifact <http://www.w3.org/2000/01/rdf-schema#label> ?label.}.
+  OPTIONAL{?activity <http://www.w3.org/2000/01/rdf-schema#label> ?labelA.}.
 }

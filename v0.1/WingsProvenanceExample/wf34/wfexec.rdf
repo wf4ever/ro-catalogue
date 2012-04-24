@@ -8,5 +8,6 @@
      xmlns:xs="http://www.w3.org/2001/XMLSchema#">
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778606534">
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#WorkflowRun"/>
+    <rdfs:label>Account created on 1332778606534</rdfs:label>
   </Description>
 </RDF>

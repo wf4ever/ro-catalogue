@@ -12,16 +12,18 @@ PREFIX ao:         <http://purl.org/ao/>
 PREFIX dcterms:    <http://purl.org/dc/terms/>
 PREFIX foaf:       <http://xmlns.com/foaf/0.1/>
 
-CONSTRUCT   {
+CONSTRUCT {
   ?artifact a <http://purl.org/wf4ever/wfprov#Artifact>, <http://purl.org/wf4ever/ro#Resource>;
             <http://purl.org/wf4ever/ro#name> ?f;
-            <http://purl.org/wf4ever/ro#fileSize> ?s.             
+            <http://purl.org/wf4ever/ro#fileSize> ?s;
+			<http://www.w3.org/2000/01/rdf-schema#label> ?label.
 
-} WHERE  {
-  ?artifact a <http://wings.isi.edu/ontology/opmv/ArtifactInstance>.            
+} WHERE {
+  ?artifact a <http://wings.isi.edu/ontology/opmv/ArtifactInstance>.
   ?artifact <http://openprovenance.org/model/opmo#account> <http://wings.isi.edu/opmexport/resource/Account/ACCOUNT1332778606534>.
   OPTIONAL{
            ?artifact <http://wings.isi.edu/ontology/opmv/hasFileName> ?f.
            ?artifact <http://wings.isi.edu/ontology/opmv/hasSize> ?s.
+		   ?artifact <http://www.w3.org/2000/01/rdf-schema#label> ?label.
   }.
 }

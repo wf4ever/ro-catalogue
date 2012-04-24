@@ -12,6 +12,7 @@
     <ns1:describedByWorkflow rdf:resource="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON"/>
   </Description>
   <Description rdf:about="http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON">
+    <rdfs:label>AbstractSubWFLigandBindingSitesComparison</rdfs:label>
     <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Workflow"/>
   </Description>
 </RDF>
