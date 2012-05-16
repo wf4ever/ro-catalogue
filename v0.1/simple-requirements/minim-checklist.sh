@@ -14,11 +14,11 @@ $RO evaluate checklist -v -d $TESTRO -a simple-requirements-minim.rdf "Runnable"
 
 echo "--------"
 
-$RO evaluate checklist -v -d $TESTRO -a simple-requirements-minim.rdf "Reviewable" $TESTRO/
+#$RO evaluate checklist -v -d $TESTRO -a simple-requirements-minim.rdf "Reviewable" $TESTRO/
 
 echo "--------"
 
-$RO evaluate checklist -v -d $TESTRO -a simple-requirements-minim.rdf "Repeatable" $TESTRO/
+#$RO evaluate checklist -v -d $TESTRO -a simple-requirements-minim.rdf "Repeatable" $TESTRO/
 
 echo "--------"
 

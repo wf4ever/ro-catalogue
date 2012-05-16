@@ -12,9 +12,8 @@ echo "--------"
 
 $RO config -v \
   -b $ROBASE \
-  -r http://sandbox.wf4ever-project.org/rosrs3 \
-  -u "OpenID-1318340111490" \
-  -p "2ae55d36-de48-444c-a" \
+  -r http://sandbox.wf4ever-project.org/rosrs5 \
+  -t "32801fc0-1df1-4e34-b" \
   -n "Test user" \
   -e "testuser@example.org"
 

@@ -54,7 +54,7 @@
     <minim:hasConstraint>
       <minim:Constraint rdf:about="#runnable_RO">
         <minim:forPurpose>Runnable</minim:forPurpose>
-        <minim:onResource rdf:resource="" />
+        <minim:onResource rdf:resource="." />
         <minim:toModel rdf:resource="#runnable_RO_model" />
         <rdfs:comment>
           Constraint to be satisfied if the RO is to be runnable
@@ -67,7 +67,7 @@
     <minim:hasConstraint>
       <minim:Constraint rdf:about="#reviewable_RO">
         <minim:forPurpose>Reviewable</minim:forPurpose>
-        <minim:onResource rdf:resource="" />
+        <minim:onResource rdf:resource="." />
         <minim:toModel rdf:resource="#reviewable_RO_model" />
         <rdfs:comment>
           Constraint to be satisfied if the RO is to be reviewable; 
@@ -82,7 +82,7 @@
     <minim:hasConstraint>
       <minim:Constraint rdf:about="#repeatable_RO">
         <minim:forPurpose>Repeatable</minim:forPurpose>
-        <minim:onResource rdf:resource="" />
+        <minim:onResource rdf:resource="." />
         <minim:toModel rdf:resource="#repeatable_RO_model" />
         <rdfs:comment>
           Constraint to be satisfied if the RO is to be repeatable; 
