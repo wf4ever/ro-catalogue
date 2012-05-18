@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:ns2="http://purl.org/wf4ever/wfprov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ns1="http://purl.org/wf4ever/wfdesc#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:err="http://www.w3.org/2005/xqt-errors#"
+     xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+     xmlns:xs="http://www.w3.org/2001/XMLSchema#">
+  <Description rdf:nodeID="b71EC8486x1">
+    <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/RAWINTERACTIONNETWORK"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/38BB806F498FA762C244979C80412F0D">
+    <ns2:describedByParameter rdf:nodeID="b71EC8486x1"/>
+    <rdfs:label>Instance artifact with id: 38bb806f498fa762c244979c80412f0d</rdfs:label>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/DataVariable/RAWINTERACTIONNETWORK">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
+  </Description>
+  <Description rdf:nodeID="b71EC8486x2">
+    <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/ALIGNEMENTRESULTS"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/F9CCED7A4F18CC5AD2600B92723197E2">
+    <ns2:describedByParameter rdf:nodeID="b71EC8486x2"/>
+    <rdfs:label>Instance artifact with id: f9cced7a4f18cc5ad2600b92723197e2</rdfs:label>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/DataVariable/ALIGNEMENTRESULTS">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
+  </Description>
+  <Description rdf:nodeID="b71EC8486x3">
+    <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/CONFIGURATIONFILE"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/68ED7970F5C2CA17B6F867B0F223D194">
+    <ns2:describedByParameter rdf:nodeID="b71EC8486x3"/>
+    <rdfs:label>Instance artifact with id: 68ed7970f5c2ca17b6f867b0f223d194</rdfs:label>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/DataVariable/CONFIGURATIONFILE">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
+  </Description>
+  <Description rdf:nodeID="b71EC8486x4">
+    <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/COMPARISONRESULTS"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/4A04D9CBCBA5A24FC5C19F693AC49238">
+    <ns2:describedByParameter rdf:nodeID="b71EC8486x4"/>
+    <rdfs:label>Instance artifact with id: 4a04d9cbcba5a24fc5c19f693ac49238</rdfs:label>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/DataVariable/COMPARISONRESULTS">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
+  </Description>
+  <Description rdf:nodeID="b71EC8486x5">
+    <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/STRUCTUREFORCOMPARISON"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/C9C5120FAFC153B5178D47192EFEF7B7">
+    <ns2:describedByParameter rdf:nodeID="b71EC8486x5"/>
+    <rdfs:label>Instance artifact with id: c9c5120fafc153b5178d47192efef7b7</rdfs:label>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/DataVariable/STRUCTUREFORCOMPARISON">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
+  </Description>
+  <Description rdf:nodeID="b71EC8486x6">
+    <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/STRUCTUREFORCOMPARISON1"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/66D929138F1D484C8D8ADC86D5BE7477">
+    <ns2:describedByParameter rdf:nodeID="b71EC8486x6"/>
+    <rdfs:label>Instance artifact with id: 66d929138f1d484c8d8adc86d5be7477</rdfs:label>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/DataVariable/STRUCTUREFORCOMPARISON1">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
+  </Description>
+  <Description rdf:nodeID="b71EC8486x7">
+    <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/MERGEDOUTPUT"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/CC53D47E72A3C6C144DEEF5272CEF5BA">
+    <ns2:describedByParameter rdf:nodeID="b71EC8486x7"/>
+    <rdfs:label>Instance artifact with id: cc53d47e72a3c6c144deef5272cef5ba</rdfs:label>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/DataVariable/MERGEDOUTPUT">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
+  </Description>
+  <Description rdf:nodeID="b71EC8486x8">
+    <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/ALIGNEMENTRESULTMERGED"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/615789F206249A99842F1E0EFA65A957">
+    <ns2:describedByParameter rdf:nodeID="b71EC8486x8"/>
+    <rdfs:label>Instance artifact with id: 615789f206249a99842f1e0efa65a957</rdfs:label>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/DataVariable/ALIGNEMENTRESULTMERGED">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
+  </Description>
+  <Description rdf:nodeID="b71EC8486x9">
+    <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/ALIGNEMENTRESULTS1"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/6B7AB2E53A9186CACAD94833DD34EF8E">
+    <ns2:describedByParameter rdf:nodeID="b71EC8486x9"/>
+    <rdfs:label>Instance artifact with id: 6b7ab2e53a9186cacad94833dd34ef8e</rdfs:label>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/DataVariable/ALIGNEMENTRESULTS1">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
+  </Description>
+  <Description rdf:nodeID="b71EC8486x10">
+    <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/ParameterVariable/PVALUE"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/PVALUE0.00001">
+    <ns2:describedByParameter rdf:nodeID="b71EC8486x10"/>
+    <rdfs:label>Instance artifact with id: pvalue0.00001</rdfs:label>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ParameterVariable/PVALUE">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
+  </Description>
+  <Description rdf:nodeID="b71EC8486x11">
+    <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/RAWINTERACTIONNETWORK1"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/0FD08D3BDAC0216F1F892D8BB9B3E7E1">
+    <ns2:describedByParameter rdf:nodeID="b71EC8486x11"/>
+    <rdfs:label>Instance artifact with id: 0fd08d3bdac0216f1f892d8bb9b3e7e1</rdfs:label>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/DataVariable/RAWINTERACTIONNETWORK1">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
+  </Description>
+  <Description rdf:nodeID="b71EC8486x12">
+    <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/COMPARISONRESULTS1"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/65E39FED3439AA6650E6AE55314BE6AD">
+    <ns2:describedByParameter rdf:nodeID="b71EC8486x12"/>
+    <rdfs:label>Instance artifact with id: 65e39fed3439aa6650e6ae55314be6ad</rdfs:label>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/DataVariable/COMPARISONRESULTS1">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
+  </Description>
+  <Description rdf:nodeID="b71EC8486x13">
+    <ns1:hasArtifact rdf:resource="http://wings.isi.edu/opmexport/resource/DataVariable/DRUGBINDINGSITES"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/ArtifactInstance/272CE70CCBB30666D4310D15280C405B">
+    <ns2:describedByParameter rdf:nodeID="b71EC8486x13"/>
+    <rdfs:label>Instance artifact with id: 272ce70ccbb30666d4310d15280c405b</rdfs:label>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+  </Description>
+  <Description rdf:about="http://wings.isi.edu/opmexport/resource/DataVariable/DRUGBINDINGSITES">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Artifact"/>
+  </Description>
+</RDF>

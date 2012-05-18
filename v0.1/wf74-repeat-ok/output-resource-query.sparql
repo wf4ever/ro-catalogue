@@ -1,0 +1,5 @@
+select ?r
+where
+{
+  ?r <http://purl.org/wf4ever/wfprov#wasOutputFrom> ?w .
+}

@@ -1,0 +1,21 @@
+PREFIX rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:       <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:        <http://www.w3.org/2002/07/owl#>
+PREFIX xsd:        <http://www.w3.org/2001/XMLSchema#>
+PREFIX xml:        <http://www.w3.org/XML/1998/namespace>
+PREFIX ro:         <http://purl.org/wf4ever/ro#>
+PREFIX wfprov:     <http://purl.org/wf4ever/wfprov#>
+PREFIX wfdesc:     <http://purl.org/wf4ever/wfdesc#>
+PREFIX rdfg:       <http://www.w3.org/2004/03/trix/rdfg-1/>
+PREFIX ore:        <http://www.openarchives.org/ore/terms/>
+PREFIX ao:         <http://purl.org/ao/>
+PREFIX dcterms:    <http://purl.org/dc/terms/>
+PREFIX foaf:       <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT{
+<http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON> a <http://purl.org/wf4ever/wfdesc#Workflow>;
+                 <http://purl.org/wf4ever/wfdesc#hasSubProcess> ?proc.
+}WHERE{
+<http://wings.isi.edu/opmexport/resource/WorkflowTemplate/ABSTRACTSUBWFLIGANDBINDINGSITESCOMPARISON> a <http://wings.isi.edu/ontology/opmv/WorkflowTemplate>;
+                 <http://openprovenance.org/model/opmo#hasProcess> ?proc.
+}
