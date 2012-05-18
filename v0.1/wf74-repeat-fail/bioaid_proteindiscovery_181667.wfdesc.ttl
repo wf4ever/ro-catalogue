@@ -42,6 +42,7 @@
 <> a wfdesc:Workflow , wfdesc:Description , wfdesc:Process ;
 	rdfs:label "BioAID_ProteinDiscovery" ;
 	wfdesc:hasInput <in/Query> , <in/maxHits_parameter> ;
+	wfdesc:hasOutput <out/nosuchoutput>;
 	wfdesc:hasSubProcess <processor/AIDA_Retrieve_documents_in_parts/> , <processor/Lucene_bioquery_optimizer_by_year/> , <processor/ProteinExtractionFromText/> , <processor/ValidateByUniProtID/> , <processor/document_index_value/> , <processor/search_field_value/> ;
 	wfdesc:hasDataLink <datalink?from=in/Query&to=processor/Lucene_bioquery_optimizer_by_year/in/query_string> , <datalink?from=in/maxHits_parameter&to=processor/AIDA_Retrieve_documents_in_parts/in/maxHits> , <datalink?from=processor/AIDA_Retrieve_documents_in_parts/out/title_abstract&to=processor/ProteinExtractionFromText/in/input_text> , <datalink?from=processor/Lucene_bioquery_optimizer_by_year/out/extended_lucene_query&to=processor/AIDA_Retrieve_documents_in_parts/in/queryString> , <datalink?from=processor/ProteinExtractionFromText/out/potential_protein_name_list&to=processor/ValidateByUniProtID/in/potentialProteinName> , <datalink?from=processor/ValidateByUniProtID/out/validatedProteinNamesList&to=out/ValidatedProtein> , <datalink?from=processor/ValidateByUniProtID/out/validatedUniProtIDlist&to=out/UniProtID> , <datalink?from=processor/document_index_value/out/value&to=processor/AIDA_Retrieve_documents_in_parts/in/document_index> , <datalink?from=processor/search_field_value/out/value&to=processor/AIDA_Retrieve_documents_in_parts/in/search_field> .
 
