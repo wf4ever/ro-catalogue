@@ -1,0 +1,198 @@
+********** Snapshot of the Pack: Towards Genotype-Phenotype Correlations **********
+
+Downloaded from myExperiment
+Snapshot generated at 12:51:16 on Wednesday, 27 June 2012
+
+
+
+========== Pack Details ==========
+
+Title: Towards Genotype-Phenotype Correlations
+Items: 20
+Location: http://www.myexperiment.org/packs/55
+Created by: Paul Fisher (profile: http://www.myexperiment.org/users/43)
+Created at: 13:14:54 on Wednesday, 08 April 2009
+Last updated at: 14:50:01 on Tuesday, 11 August 2009
+
+Description: 
+
+It is increasingly common to combine Microarray and Quantitative Trait Loci data to aid the search for candidate genes responsible for phenotypic variation. Workflows provide a means of systematically processing large datasets, and represent a framework for the re-use and the explicit declaration of experimental methods. In this pack is a paper which describes the issues facing the manual analysis of microarray and QTL data for the discovery of candidate genes underlying complex phenotypes. Our methodology was applied to a use case of resistance to African trypanosomiasis in the mouse. Workflows developed in this investigation, including a guide to loading and executing them with example data, are available within this pack.
+Supplimentary information is provided in this pack.
+
+
+
+========== Summary of Pack Items (20) ==========
+
+Total number of items in the pack: 20
+
+Downloaded items: 18
+     |-  Workflows: 3
+     |-  Files    : 15
+
+Not downloaded items: 2
+     |- Packs         : 1 (download of nested packs is not supported)
+     |- External items: 1
+     |- Items that can be viewed, but not downloaded: 0 (view-only permissions)
+         |- Workflows : 0
+         |- Files     : 0
+     |- Items that cannot be viewed : 0
+
+
+
+========== Downloaded Items (18) ==========
+
++ File: Ensembl gene report (local copy: files/report.text)
+  Location: http://www.myexperiment.org/files/203
+  Uploader: Paul Fisher (profile: http://www.myexperiment.org/users/43)
+  | Added to pack by: Paul Fisher (profile: http://www.myexperiment.org/users/43); added on (08/04/2009 @ 19:30:29)
+  | Comment: none
+
++ File: Kegg pathway identifiers (local copy: files/pathway_ids.text)
+  Location: http://www.myexperiment.org/files/202
+  Uploader: Paul Fisher (profile: http://www.myexperiment.org/users/43)
+  | Added to pack by: Paul Fisher (profile: http://www.myexperiment.org/users/43); added on (08/04/2009 @ 19:29:04)
+  | Comment: none
+
++ File: Kegg pathway descriptions (local copy: files/pathway_descriptions.text)
+  Location: http://www.myexperiment.org/files/201
+  Uploader: Paul Fisher (profile: http://www.myexperiment.org/users/43)
+  | Added to pack by: Paul Fisher (profile: http://www.myexperiment.org/users/43); added on (08/04/2009 @ 19:28:17)
+  | Comment: none
+
++ File: Kegg pathways and genes (local copy: files/merged_pathways.text)
+  Location: http://www.myexperiment.org/files/200
+  Uploader: Paul Fisher (profile: http://www.myexperiment.org/users/43)
+  | Added to pack by: Paul Fisher (profile: http://www.myexperiment.org/users/43); added on (08/04/2009 @ 19:26:46)
+  | Comment: none
+
++ File: Kegg Pathway release (local copy: files/kegg_pathway_release.text)
+  Location: http://www.myexperiment.org/files/199
+  Uploader: Paul Fisher (profile: http://www.myexperiment.org/users/43)
+  | Added to pack by: Paul Fisher (profile: http://www.myexperiment.org/users/43); added on (08/04/2009 @ 19:25:32)
+  | Comment: none
+
++ File: Kegg-Uniprot-Entrez cross-references (local copy: files/kegg_external_gene_reference.text)
+  Location: http://www.myexperiment.org/files/198
+  Uploader: Paul Fisher (profile: http://www.myexperiment.org/users/43)
+  | Added to pack by: Paul Fisher (profile: http://www.myexperiment.org/users/43); added on (08/04/2009 @ 19:24:07)
+  | Comment: none
+
++ File: Kegg gene descriptions (local copy: files/gene_descriptions.text)
+  Location: http://www.myexperiment.org/files/197
+  Uploader: Paul Fisher (profile: http://www.myexperiment.org/users/43)
+  | Added to pack by: Paul Fisher (profile: http://www.myexperiment.org/users/43); added on (08/04/2009 @ 18:06:41)
+  | Comment: none
+
++ File: Ensembl database release (local copy: files/ensembl_database_release.text)
+  Location: http://www.myexperiment.org/files/196
+  Uploader: Paul Fisher (profile: http://www.myexperiment.org/users/43)
+  | Added to pack by: Paul Fisher (profile: http://www.myexperiment.org/users/43); added on (08/04/2009 @ 18:04:50)
+  | Comment: none
+
++ File: Tir1 QTL - microarray day 7 intersecting pathways (local copy: files/Tir1_Day7_intersecting_pathways.xls)
+  Location: http://www.myexperiment.org/files/195
+  Uploader: Paul Fisher (profile: http://www.myexperiment.org/users/43)
+  | Added to pack by: Paul Fisher (profile: http://www.myexperiment.org/users/43); added on (08/04/2009 @ 17:58:14)
+  | Comment: none
+
++ File: Tir1 QTL - Day 3 Microarray intersecting pathways (local copy: files/Tir1_Day3_intersecting_pathways.xls)
+  Location: http://www.myexperiment.org/files/194
+  Uploader: Paul Fisher (profile: http://www.myexperiment.org/users/43)
+  | Added to pack by: Paul Fisher (profile: http://www.myexperiment.org/users/43); added on (08/04/2009 @ 17:56:29)
+  | Comment: none
+
++ File: Re-sequenced Daxx gene info (local copy: files/Table3.xls)
+  Location: http://www.myexperiment.org/files/193
+  Uploader: Paul Fisher (profile: http://www.myexperiment.org/users/43)
+  | Added to pack by: Paul Fisher (profile: http://www.myexperiment.org/users/43); added on (08/04/2009 @ 17:54:10)
+  | Comment: none
+
++ File: Authors table (local copy: files/Table2.xls)
+  Location: http://www.myexperiment.org/files/192
+  Uploader: Paul Fisher (profile: http://www.myexperiment.org/users/43)
+  | Added to pack by: Paul Fisher (profile: http://www.myexperiment.org/users/43); added on (08/04/2009 @ 13:36:23)
+  | Comment: none
+
++ File: Table of SNP sequenceing results (local copy: files/snp_table.doc)
+  Location: http://www.myexperiment.org/files/190
+  Uploader: Paul Fisher (profile: http://www.myexperiment.org/users/43)
+  | Added to pack by: Paul Fisher (profile: http://www.myexperiment.org/users/43); added on (08/04/2009 @ 13:29:50)
+  | Comment: none
+
++ File: Candidate Gene protocol (local copy: files/Candidate_gene_protocol.doc)
+  Location: http://www.myexperiment.org/files/189
+  Uploader: Paul Fisher (profile: http://www.myexperiment.org/users/43)
+  | Added to pack by: Paul Fisher (profile: http://www.myexperiment.org/users/43); added on (08/04/2009 @ 13:27:53)
+  | Comment: none
+
++ File: A Systematic Strategy for Large-Scale Analysis of Genotype-Phenotype Correlations: Identification of candidate genes involved in African Trypanosomiasis (local copy: files/paul_fisher_5625.pdf)
+  Location: http://www.myexperiment.org/files/188
+  Uploader: Paul Fisher (profile: http://www.myexperiment.org/users/43)
+  | Added to pack by: Paul Fisher (profile: http://www.myexperiment.org/users/43); added on (08/04/2009 @ 13:23:31)
+  | Comment: none
+
++ Workflow: KEGG pathways common to both QTL and microarray based investigations (local copy: workflows/kegg_pathways_common_to_both_qtl_and_microarray_based_investigations_869806.xml)
+  Type: Taverna 1
+  Location: http://www.myexperiment.org/workflows/13?version=3
+  Originally uploaded by: Paul Fisher (profile: http://www.myexperiment.org/users/43)
+  Version: 3 (created on: 24/11/2009, last edited on: 03/12/2009)
+  Version uploaded by: Paul Fisher (profile: http://www.myexperiment.org/users/43)
+  | Added to pack by: Paul Fisher (profile: http://www.myexperiment.org/users/43); added on (08/04/2009 @ 13:18:55)
+  | Comment: 
+  |   Common pathways
+
++ Workflow: Mouse Microarray Analysis (local copy: workflows/pathways_from_diff_expressed_genes_22895.xml)
+  Type: Taverna 1
+  Location: http://www.myexperiment.org/workflows/19?version=3
+  Originally uploaded by: Paul Fisher (profile: http://www.myexperiment.org/users/43)
+  Version: 3 (created on: 03/10/2007, last edited on: 03/12/2009)
+  Version uploaded by: Paul Fisher (profile: http://www.myexperiment.org/users/43)
+  | Added to pack by: Paul Fisher (profile: http://www.myexperiment.org/users/43); added on (08/04/2009 @ 13:18:26)
+  | Comment: 
+  |   Microarray workflow
+
++ Workflow: Pathways and Gene annotations for QTL region (local copy: workflows/pathways_and_gene_annotations_forqtl_region_290738.t2flow)
+  Type: Taverna 2
+  Location: http://www.myexperiment.org/workflows/16?version=7
+  Originally uploaded by: Paul Fisher (profile: http://www.myexperiment.org/users/43)
+  Version: 7 (created on: 02/09/2011, last edited on: 02/09/2011)
+  Version uploaded by: Paul Fisher (profile: http://www.myexperiment.org/users/43)
+  | Added to pack by: Paul Fisher (profile: http://www.myexperiment.org/users/43); added on (08/04/2009 @ 13:17:26)
+  | Comment: 
+  |   QTL workflow
+
+
+
+========== Not Downloaded Items (2) ==========
+
+
+=== Packs within this pack (1) ===
+
+- Pack: Pathway to Phenotype using Text Mining
+  Location: http://www.myexperiment.org/packs/82
+  Download link: http://www.myexperiment.org/packs/82/download ( --download of nested packs is not supported, however using this link it can be downloaded separately-- )
+  Uploader: Paul Fisher (profile: http://www.myexperiment.org/users/43)
+  | Added to pack by: Paul Fisher (profile: http://www.myexperiment.org/users/43); added on (11/08/2009 @ 14:50:01)
+  | Comment: none
+
+
+
+=== External items (1) ===
+
++ Link - http://www.slideshare.net/fisherp/a-systematic-approach-to-genotypephenotype-correlations
+  (alternate link: none)
+  | Added to pack by: Paul Fisher (profile: http://www.myexperiment.org/users/43); added on (10/08/2009 @ 12:38:06)
+  | Comment: none
+
+
+
+=== Items that can be viewed, but not downloaded (0) ===
+
+    // None //
+
+
+
+=== Items that cannot be viewed (0) ===
+
+    // None //
+

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<s:scufl xmlns:s="http://org.embl.ebi.escience/xscufl/0.1alpha" version="0.2" log="0">
+  <s:workflowdescription lsid="urn:lsid:net.sf.taverna:wfDefinition:fc665a37-4096-4cb2-9215-a415eea297b2" author="Paul Fisher" title="KEGG pathways common to both QTL and microarray based investigations">This workflow takes in two lists of KEGG pathway ids. These are designed to come from pathways found from genes in a QTL (Quantitative Trait Loci) region, and from pathways found from genes differentially expressed in a microarray study. By identifying the intersecting pathways from both studies, a more informative picture is obtained of the candidate processes involved in the expression of a phenotype</s:workflowdescription>
+  <s:processor name="kegg_pathways">
+    <s:arbitrarywsdl>
+      <s:wsdl>http://soap.genome.jp/KEGG.wsdl</s:wsdl>
+      <s:operation>btit</s:operation>
+    </s:arbitrarywsdl>
+  </s:processor>
+  <s:processor name="common_pathways">
+    <s:description>Two lists of KEGG pathways are compared and common pathways extracted - for use with QTL and microarray derived pathways</s:description>
+    <s:soaplabwsdl>http://phoebus.cs.man.ac.uk:1977/axis/services/qtl_analysis.common_pathways</s:soaplabwsdl>
+  </s:processor>
+  <s:processor name="regex" boring="true">
+    <s:stringconstant>\n</s:stringconstant>
+  </s:processor>
+  <s:processor name="split_pathway_ids">
+    <s:local>org.embl.ebi.escience.scuflworkers.java.SplitByRegex</s:local>
+  </s:processor>
+  <s:processor name="merge_pathway_desc">
+    <s:local>org.embl.ebi.escience.scuflworkers.java.StringListMerge</s:local>
+  </s:processor>
+  <s:processor name="remove_null_values">
+    <s:beanshell>
+      <s:scriptvalue>String[] split = input.split("\n");
+Vector nonEmpty = new Vector();
+
+for (int i = 0; i &lt; split.length; i++){
+   if (!(split[i].equals("")))
+   {
+       nonEmpty.add(split[i].trim());
+   }
+}
+
+String[] non_empty = new String[nonEmpty.size()];
+
+for (int i = 0; i &lt; non_empty.length; i ++)
+{
+   non_empty[i] = nonEmpty.elementAt(i);
+}
+
+String output = "";
+
+for (int i = 0; i &lt; non_empty.length; i++)
+{
+	output = output + (String) (non_empty[i] + "\n");
+}</s:scriptvalue>
+      <s:beanshellinputlist>
+        <s:beanshellinput s:syntactictype="'text/plain'">input</s:beanshellinput>
+      </s:beanshellinputlist>
+      <s:beanshelloutputlist>
+        <s:beanshelloutput s:syntactictype="'text/plain'">output</s:beanshelloutput>
+      </s:beanshelloutputlist>
+      <s:dependencies s:classloader="iteration" />
+    </s:beanshell>
+  </s:processor>
+  <s:link source="microarray_pathways" sink="common_pathways:microarray_pathways_direct_data" />
+  <s:link source="qtl_pathways" sink="common_pathways:qtl_pathways_direct_data" />
+  <s:link source="common_pathways:output" sink="split_pathway_ids:string" />
+  <s:link source="kegg_pathways:return" sink="merge_pathway_desc:stringlist" />
+  <s:link source="merge_pathway_desc:concatenated" sink="remove_null_values:input" />
+  <s:link source="regex:value" sink="split_pathway_ids:regex" />
+  <s:link source="remove_null_values:output" sink="intersecting_pathways" />
+  <s:link source="split_pathway_ids:split" sink="kegg_pathways:string" />
+  <s:source name="qtl_pathways" />
+  <s:source name="microarray_pathways" />
+  <s:sink name="intersecting_pathways" />
+</s:scufl>
+
