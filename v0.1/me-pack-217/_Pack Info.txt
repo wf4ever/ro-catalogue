@@ -1,0 +1,106 @@
+********** Snapshot of the Pack: Graphing and Citing Time Series Data **********
+
+Downloaded from myExperiment
+Snapshot generated at 12:49:53 on Wednesday, 27 June 2012
+
+
+
+========== Pack Details ==========
+
+Title: Graphing and Citing Time Series Data
+Items: 6
+Location: http://www.myexperiment.org/packs/217
+Created by: Trisha Adamus (profile: http://www.myexperiment.org/users/18933)
+Created at: 15:28:17 on Wednesday, 05 October 2011
+Last updated at: 16:02:12 on Wednesday, 05 October 2011
+
+Description: 
+
+This pack includes a worflow and its results. The workflow extracts data from the Times Series Data Library and graphs it using Google charts. The workflow also produces a citation for the date the data was accessed.
+
+
+
+========== Summary of Pack Items (6) ==========
+
+Total number of items in the pack: 6
+
+Downloaded items: 3
+     |-  Workflows: 1
+     |-  Files    : 2
+
+Not downloaded items: 3
+     |- Packs         : 0 (download of nested packs is not supported)
+     |- External items: 3
+     |- Items that can be viewed, but not downloaded: 0 (view-only permissions)
+         |- Workflows : 0
+         |- Files     : 0
+     |- Items that cannot be viewed : 0
+
+
+
+========== Downloaded Items (3) ==========
+
++ Workflow: Time Series Data Graphed and Cited (local copy: workflows/time_series_data_graphed_and_cited_936779.t2flow)
+  Type: Taverna 2
+  Location: http://www.myexperiment.org/workflows/2464?version=1
+  Originally uploaded by: Trisha Adamus (profile: http://www.myexperiment.org/users/18933)
+  Version: 1 (created on: 05/10/2011, last edited on: 05/10/2011)
+  Version uploaded by: Trisha Adamus (profile: http://www.myexperiment.org/users/18933)
+  | Added to pack by: Trisha Adamus (profile: http://www.myexperiment.org/users/18933); added on (05/10/2011 @ 15:44:27)
+  | Comment: none
+
++ File: Google charts line chart result (local copy: files/GraphResult.png)
+  Location: http://www.myexperiment.org/files/576
+  Uploader: Trisha Adamus (profile: http://www.myexperiment.org/users/18933)
+  | Added to pack by: Trisha Adamus (profile: http://www.myexperiment.org/users/18933); added on (05/10/2011 @ 15:44:11)
+  | Comment: none
+
++ File: Time Series Data Library Citation Result (local copy: files/CitationResult.png)
+  Location: http://www.myexperiment.org/files/577
+  Uploader: Trisha Adamus (profile: http://www.myexperiment.org/users/18933)
+  | Added to pack by: Trisha Adamus (profile: http://www.myexperiment.org/users/18933); added on (05/10/2011 @ 15:44:02)
+  | Comment: none
+
+
+
+========== Not Downloaded Items (3) ==========
+
+
+=== Packs within this pack (0) ===
+
+    // None //
+
+
+
+=== External items (3) ===
+
++ TSDL Home Page - http://robjhyndman.com/TSDL/
+  (alternate link: none)
+  | Added to pack by: Trisha Adamus (profile: http://www.myexperiment.org/users/18933); added on (05/10/2011 @ 15:51:28)
+  | Comment: 
+  |   This is the home page for the Time Series Data Library (TSDL).  It contains the citation information used in the Times Series Data Graphed and Cited workflow.
+
++ Annual Unit Price of Lynx Pelts - http://robjhyndman.com/tsdldata/data/andrews3.dat
+  (alternate link: none)
+  | Added to pack by: Trisha Adamus (profile: http://www.myexperiment.org/users/18933); added on (05/10/2011 @ 15:51:13)
+  | Comment: 
+  |   This is a dataset of the annual unit price of lynx pelts from 1857-1911 obtained from the Time Series Data Library (TSDL).  This data is used in the Times Series Data Graphed and Cited workflow.
+
++ Annual Number of Lynx Pelts - http://robjhyndman.com/tsdldata/data/andrews2.dat
+  (alternate link: none)
+  | Added to pack by: Trisha Adamus (profile: http://www.myexperiment.org/users/18933); added on (05/10/2011 @ 15:50:43)
+  | Comment: 
+  |   This is a dataset of the annual number of lynx pelts from 1857-1911 obtained from the Time Series Data Library (TSDL).  This data is used in the Times Series Data Graphed and Cited workflow.
+
+
+
+=== Items that can be viewed, but not downloaded (0) ===
+
+    // None //
+
+
+
+=== Items that cannot be viewed (0) ===
+
+    // None //
+
