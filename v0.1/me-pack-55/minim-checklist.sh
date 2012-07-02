@@ -10,7 +10,7 @@ TESTRO="$ROPATH/$RONAME"
 
 echo "--------"
 
-$RO evaluate checklist -v -d $TESTRO -a me-pack-55-minim.rdf "Runnable" $TESTRO/
+$RO evaluate checklist -d $TESTRO -a me-pack-55-minim.rdf "Runnable" $TESTRO/
 
 echo "--------"
 

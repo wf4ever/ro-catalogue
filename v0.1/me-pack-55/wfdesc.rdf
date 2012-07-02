@@ -33,17 +33,23 @@
 >
 
   <!-- Workflow instance -->
-<wfdesc:Workflow rdf:about="workflows/pathways_and_gene_annotations_forqtl_region_290738.t2flow">
-<wfdesc:hasInput>
-  <rdfs:label>chromsome_name</rdfs:label>
-</wfdesc:hasInput>
-<wfdesc:hasInput>
-  <rdfs:label>start_position</rdfs:label>
-</wfdesc:hasInput>
-<wfdesc:hasInput>
-  <rdfs:label>end_position</rdfs:label>
-</wfdesc:hasInput>
-</wfdesc:Workflow>
+  <wfdesc:Workflow rdf:about="workflows/pathways_and_gene_annotations_forqtl_region_290738.t2flow">
+    <wfdesc:hasInput>
+      <wfdesc:Input rdf:about="#input1">
+        <rdfs:label>chromsome_name</rdfs:label>
+      </wfdesc:Input>
+    </wfdesc:hasInput>
+    <wfdesc:hasInput>
+      <wfdesc:Input rdf:about="#input2">
+        <rdfs:label>start_position</rdfs:label>
+      </wfdesc:Input>
+    </wfdesc:hasInput>
+    <wfdesc:hasInput>
+      <wfdesc:Input rdf:about="#input3">
+        <rdfs:label>end_position</rdfs:label>
+      </wfdesc:Input>
+    </wfdesc:hasInput>
+  </wfdesc:Workflow>
 
 </rdf:RDF>
 

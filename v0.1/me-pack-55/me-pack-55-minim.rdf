@@ -107,13 +107,10 @@
       This model defines information that must be available for the 
       requirements Research Object to be runnable.
     </rdfs:comment>
-    <!--
-    <minim:hasMustRequirement rdf:resource="#environment-software/lpod-show" />
-    -->
-    <!-- minim:hasMustRequirement rdf:resource="#environment-software/python" / -->
     <minim:hasMustRequirement rdf:resource="#isPresent/workflow-instance" />
     <minim:hasMustRequirement rdf:resource="#isPresent/workflow-inputfiles" />
-    <!-- minim:hasMustRequirement rdf:resource="#isPresent/workflow-inputexamples" / -->  
+    <minim:hasMustRequirement rdf:resource="#isPresent/workflow-inputexamples" />  
+    <minim:hasMustRequirement rdf:resource="#isPresent/workflow-inputportnames" />  
   </minim:Model>
 
   <!-- Model capturing requirements for RO to be reviewable,
@@ -158,30 +155,6 @@
        REQUIREMENT RULES
        =================
     -->
-
-  <!-- Environment needs lpod-show -->
-  <minim:Requirement rdf:about="#environment-software/lpod-show">
-    <minim:isDerivedBy>
-      <minim:SoftwareEnvironmentRule>
-        <minim:command>lpod-show.py --version</minim:command>
-        <minim:response>0.9.3</minim:response>
-        <minim:show>lpOD command %(command)s returns %(response)s</minim:show>
-        <minim:derives rdf:resource="#environment-software/lpod-show" />
-      </minim:SoftwareEnvironmentRule>
-    </minim:isDerivedBy>
-  </minim:Requirement>
-
-  <!-- Environment needs python -->
-  <minim:Requirement rdf:about="#environment-software/python">
-    <minim:isDerivedBy>
-      <minim:SoftwareEnvironmentRule>
-        <minim:command>python --version</minim:command>
-        <minim:response>Python 2.7</minim:response>
-        <minim:show>Installed python version %(response)s</minim:show>
-        <minim:derives rdf:resource="#environment-software/python" />
-      </minim:SoftwareEnvironmentRule>
-    </minim:isDerivedBy>
-  </minim:Requirement>
 
   <!-- Workflow instance must be present -->
   <minim:Requirement rdf:about="#isPresent/workflow-instance">
@@ -232,22 +205,41 @@
     </minim:isDerivedBy>
   </minim:Requirement>
 
+  <!-- Workflow input port names must be present
+  
+       NOTE: workflow inputs MUST NOT be bnodes for this test to work
+    -->
+  <minim:Requirement rdf:about="#isPresent/workflow-inputportnames">
+    <minim:isDerivedBy>
+      <minim:ContentMatchRequirementRule>
+        <minim:forall>
+          ?wf rdf:type wfdesc:Workflow ;
+              wfdesc:hasInput ?wi .
+        </minim:forall>
+        <minim:exists>
+          ?wi rdfs:label ?portname .
+        </minim:exists>
+        <minim:showpass>All workflow inputs have port names</minim:showpass>
+        <minim:showfail>Workflow %(wf)s miss some port names</minim:showfail>
+        <minim:derives rdf:resource="#isPresent/workflow-inputportnames" />
+      </minim:ContentMatchRequirementRule>
+    </minim:isDerivedBy>
+  </minim:Requirement>
 
-<!-- Workflow input sample values must be present -->
+  <!-- Workflow input sample values must be present
+  
+       NOTE: workflow inputs MUST NOT be bnodes for this test to work
+    -->
   <minim:Requirement rdf:about="#isPresent/workflow-inputexamples">
     <minim:isDerivedBy>
       <minim:ContentMatchRequirementRule>
         <minim:forall>
-          <!--                                                                                                                                                                                                               
-          ?wf rdf:type wfdesc:Workflow ;                                                                                                                                                                                     
-              wfdesc:hasInput [ wfdesc:hasArtifact ?if ] .                                                                                                                                                                   
-          -->
           ?wf rdf:type wfdesc:Workflow ;
               wfdesc:hasInput ?wi .
         </minim:forall>
-	<!-- minim:exists>
-	  ?wi rdfs:comment ?samplevalue .
-	</minim:exists -->
+        <minim:exists>
+          ?wi rdfs:comment ?samplevalue .
+        </minim:exists>
         <minim:showpass>All workflow inputs have sample values</minim:showpass>
         <minim:showfail>Workflow %(wf)s miss some sample values</minim:showfail>
         <minim:derives rdf:resource="#isPresent/workflow-inputexamples" />
