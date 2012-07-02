@@ -206,8 +206,6 @@
   </minim:Requirement>
 
   <!-- Workflow input port names must be present
-  
-       NOTE: workflow inputs MUST NOT be bnodes for this test to work
     -->
   <minim:Requirement rdf:about="#isPresent/workflow-inputportnames">
     <minim:isDerivedBy>
@@ -227,8 +225,6 @@
   </minim:Requirement>
 
   <!-- Workflow input sample values must be present
-  
-       NOTE: workflow inputs MUST NOT be bnodes for this test to work
     -->
   <minim:Requirement rdf:about="#isPresent/workflow-inputexamples">
     <minim:isDerivedBy>
