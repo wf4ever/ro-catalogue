@@ -33,19 +33,23 @@
 >
 
   <!-- Workflow instance -->
-<wfdesc:Workflow rdf:about="workflows/_untitled__394292.t2flow">
-</wfdesc:Workflow>
+  <wfdesc:Workflow rdf:about="workflows/_untitled__394292.t2flow">
+  </wfdesc:Workflow>
 
-<wfdesc:Workflow rdf:about="workflows/_untitled__947103.t2flow">
-<wfdesc:hasInput>
-  <rdfs:label>cities</rdfs:label>
-  <!-- rdfs:comment>osaka</rdfs:comment -->  
-</wfdesc:hasInput>
-<wfdesc:hasInput>
-  <rdfs:label>countries</rdfs:label>
-  <!-- rdfs:comment>japan</rdfs:comment -->
-</wfdesc:hasInput>
-</wfdesc:Workflow>
+  <wfdesc:Workflow rdf:about="workflows/_untitled__947103.t2flow">
+  <wfdesc:hasInput>
+    <wfdesc:Input>
+      <rdfs:label>cities</rdfs:label>
+      <!-- rdfs:comment>osaka</rdfs:comment -->  
+    </wfdesc:Input>
+  </wfdesc:hasInput>
+  <wfdesc:hasInput>
+    <wfdesc:Input>
+      <rdfs:label>countries</rdfs:label>
+      <!-- rdfs:comment>japan</rdfs:comment -->
+    </wfdesc:Input>
+  </wfdesc:hasInput>
+  </wfdesc:Workflow>
 
   <wfdesc:Workflow rdf:about="workflows/_untitled__176167.t2flow">
     <!-- wfdesc:hasInput>

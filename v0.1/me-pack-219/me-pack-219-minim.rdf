@@ -113,6 +113,7 @@
     <!-- minim:hasMustRequirement rdf:resource="#environment-software/python" / -->
     <minim:hasMustRequirement rdf:resource="#isPresent/workflow-instance" />
     <minim:hasMustRequirement rdf:resource="#isPresent/workflow-inputfiles" />
+    <minim:hasMustRequirement rdf:resource="#isPresent/workflow-inputportnames" />  
     <minim:hasMustRequirement rdf:resource="#isPresent/workflow-inputexamples" />  
   </minim:Model>
 
@@ -233,23 +234,37 @@
   </minim:Requirement>
 
 
-<!-- Workflow input sample values must be present -->
+  <!-- Workflow input port names must be present
+    -->
+  <minim:Requirement rdf:about="#isPresent/workflow-inputportnames">
+    <minim:isDerivedBy>
+      <minim:ContentMatchRequirementRule>
+        <minim:forall>
+          ?wf rdf:type wfdesc:Workflow ;
+              wfdesc:hasInput ?wi .
+        </minim:forall>
+        <minim:exists>
+          ?wi rdfs:label ?portname .
+        </minim:exists>
+        <minim:showpass>All workflow inputs have port names</minim:showpass>
+        <minim:showfail>Workflow %(wf)s miss some port names</minim:showfail>
+        <minim:derives rdf:resource="#isPresent/workflow-inputportnames" />
+      </minim:ContentMatchRequirementRule>
+    </minim:isDerivedBy>
+  </minim:Requirement>
+
+  <!-- Workflow input sample values must be present
+    -->
   <minim:Requirement rdf:about="#isPresent/workflow-inputexamples">
     <minim:isDerivedBy>
       <minim:ContentMatchRequirementRule>
         <minim:forall>
-          <!--                                                                                                                                                                                                               
-          ?wf rdf:type wfdesc:Workflow ;                                                                                                                                                                                     
-              wfdesc:hasInput [ wfdesc:hasArtifact ?if ] .                                                                                                                                                                   
-          -->
           ?wf rdf:type wfdesc:Workflow ;
               wfdesc:hasInput ?wi .
         </minim:forall>
-	<minim:exists>
-	  ?wf rdf:type wfdesc:Workflow ;
-              wfdesc:hasInput ?wi .
-	  ?wi rdfs:comment ?samplevalue .
-	</minim:exists>
+        <minim:exists>
+          ?wi rdfs:comment ?samplevalue .
+        </minim:exists>
         <minim:showpass>All workflow inputs have sample values</minim:showpass>
         <minim:showfail>Workflow %(wf)s miss some sample values</minim:showfail>
         <minim:derives rdf:resource="#isPresent/workflow-inputexamples" />

@@ -7,51 +7,48 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:ro="http://purl.org/wf4ever/ro#"
 >
-  <rdf:Description rdf:about="">
-    <dcterms:title>Simple me-219 RO</dcterms:title>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
-    <dcterms:description>Simple me-219 RO</dcterms:description>
-    <dcterms:created>2012-07-02T11:49:08</dcterms:created>
-    <dcterms:creator>Test user</dcterms:creator>
-    <ore:aggregates rdf:resource="files/weather example.jpg"/>
-    <ore:aggregates rdf:resource="workflows/_untitled__947103.t2flow"/>
-    <ore:aggregates rdf:resource="files/output example.jpg"/>
-    <ore:aggregates rdf:nodeID="GKvaiEzb7"/>
-    <ore:aggregates rdf:resource="workflows/_untitled__394292.t2flow"/>
-    <ore:aggregates rdf:resource="files/workflow compact.jpg"/>
-    <ore:aggregates rdf:resource="wfdesc.rdf"/>
-    <ore:aggregates rdf:resource="workflows/_untitled__176167.t2flow"/>
-    <ore:aggregates rdf:resource="minim-checklist.sh"/>
-    <ore:aggregates rdf:resource="_Pack Info.txt"/>
-    <ore:aggregates rdf:resource="make.sh"/>
-    <ore:aggregates rdf:resource="files/workflow expanded.jpg"/>
-    <ore:aggregates rdf:resource="make.sh~"/>
-    <ore:aggregates rdf:resource="me-pack-219-minim.rdf"/>
-    <ore:aggregates rdf:nodeID="GKvaiEzb10"/>
-    <ore:aggregates rdf:resource="minim-checklist.sh~"/>
-    <ore:aggregates rdf:nodeID="GKvaiEzb9"/>
-    <ore:aggregates rdf:nodeID="GKvaiEzb8"/>
-    <ore:aggregates rdf:resource="wfdesc.rdf~"/>
-    <dcterms:identifier>me-pack-219</dcterms:identifier>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="GKvaiEzb9">
+  <rdf:Description rdf:nodeID="_d574bd6f-318e-42bd-b81d-19dbfa613139">
+    <ao:body rdf:resource="wfdesc.rdf"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
     <ro:annotatesAggregatedResource rdf:resource="workflows/_untitled__947103.t2flow"/>
-    <ao:body rdf:resource="wfdesc.rdf"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="GKvaiEzb8">
+  <rdf:Description rdf:nodeID="_48684b59-41aa-4c10-a4a9-58a8fb3dbfec">
+    <ao:body rdf:resource=".ro/manifest.rdf"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
     <ro:annotatesAggregatedResource rdf:resource=""/>
-    <ao:body rdf:resource=".ro/manifest.rdf"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="GKvaiEzb10">
-    <ro:annotatesAggregatedResource rdf:resource="workflows/_untitled__394292.t2flow"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  <rdf:Description rdf:nodeID="_a8db72e6-a196-4d04-8d75-b0b84ff46eae">
     <ao:body rdf:resource="wfdesc.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="GKvaiEzb7">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
     <ro:annotatesAggregatedResource rdf:resource="workflows/_untitled__176167.t2flow"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_2b0a2e2f-6a6f-4bb7-8fcc-cbb5b46ae033">
     <ao:body rdf:resource="wfdesc.rdf"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="workflows/_untitled__394292.t2flow"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="">
+    <dcterms:created>2012-07-02T17:09:42</dcterms:created>
+    <dcterms:creator>Test user</dcterms:creator>
+    <dcterms:description>Simple me-219 RO</dcterms:description>
+    <dcterms:identifier>me-pack-219</dcterms:identifier>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
+    <ore:aggregates rdf:nodeID="_d574bd6f-318e-42bd-b81d-19dbfa613139"/>
+    <ore:aggregates rdf:resource="files/output example.jpg"/>
+    <ore:aggregates rdf:resource="make.sh"/>
+    <ore:aggregates rdf:nodeID="_48684b59-41aa-4c10-a4a9-58a8fb3dbfec"/>
+    <ore:aggregates rdf:resource="_Pack Info.txt"/>
+    <ore:aggregates rdf:resource="workflows/_untitled__947103.t2flow"/>
+    <ore:aggregates rdf:nodeID="_2b0a2e2f-6a6f-4bb7-8fcc-cbb5b46ae033"/>
+    <ore:aggregates rdf:resource="workflows/_untitled__394292.t2flow"/>
+    <ore:aggregates rdf:resource="files/workflow compact.jpg"/>
+    <ore:aggregates rdf:resource="me-pack-219-minim.rdf"/>
+    <ore:aggregates rdf:resource="wfdesc.rdf"/>
+    <ore:aggregates rdf:resource="minim-checklist.sh"/>
+    <ore:aggregates rdf:resource="workflows/_untitled__176167.t2flow"/>
+    <ore:aggregates rdf:resource="files/weather example.jpg"/>
+    <ore:aggregates rdf:nodeID="_a8db72e6-a196-4d04-8d75-b0b84ff46eae"/>
+    <ore:aggregates rdf:resource="files/workflow expanded.jpg"/>
+    <dcterms:title>Simple me-219 RO</dcterms:title>
   </rdf:Description>
 </rdf:RDF>
