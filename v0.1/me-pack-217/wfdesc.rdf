@@ -35,161 +35,17 @@
   <!-- Workflow instance -->
 
   <wfdesc:Workflow rdf:about="workflows/time_series_data_graphed_and_cited_936779.t2flow">
-    <!-- wfdesc:hasInput>
-      <wfdesc:Input>
-        <wfdesc:hasArtifact rdf:resource="data/UserRequirements-gen.ods" />
-      </wfdesc:Input>
-    </wfdesc:hasInput>
-    <wfdesc:hasInput>
-      <wfdesc:Input>
-        <wfdesc:hasArtifact rdf:resource="data/UserRequirements-astro.ods" />
-      </wfdesc:Input>
-    </wfdesc:hasInput>
-    <wfdesc:hasInput>
-      <wfdesc:Input>
-        <wfdesc:hasArtifact rdf:resource="data/UserRequirements-bio.ods" />
-      </wfdesc:Input>
-    </wfdesc:hasInput -->
-
     <wfdesc:hasOutput>
       <wfdesc:Output>
-        <wfdesc:hasArtifact rdf:resource="docs/UserRequirements-gen.json" />
+        <wfdesc:hasArtifact rdf:resource="files/GraphResult.png" />
       </wfdesc:Output>
     </wfdesc:hasOutput>
     <wfdesc:hasOutput>
       <wfdesc:Output>
-        <wfdesc:hasArtifact rdf:resource="docs/UserRequirements-astro.json" />
+        <wfdesc:hasArtifact rdf:resource="files/CitationResult.png" />
       </wfdesc:Output>
     </wfdesc:hasOutput>
-    <wfdesc:hasOutput>
-      <wfdesc:Output>
-        <wfdesc:hasArtifact rdf:resource="docs/UserRequirements-bio.json" />
-      </wfdesc:Output>
-    </wfdesc:hasOutput>
-
-    <wfdesc:hasSubProcess rdf:resource="#ods_csv_1" />
-    <wfdesc:hasDataLink rdf:resource="#csv_link_1" />
-    <wfdesc:hasSubProcess rdf:resource="#csv_json_1" />
-
-    <wfdesc:hasSubProcess rdf:resource="#ods_csv_2" />
-    <wfdesc:hasDataLink rdf:resource="#csv_link_2" />
-    <wfdesc:hasSubProcess rdf:resource="#csv_json_2" />
-
-    <wfdesc:hasSubProcess rdf:resource="#ods_csv_3" />
-    <wfdesc:hasDataLink rdf:resource="#csv_link_3" />
-    <wfdesc:hasSubProcess rdf:resource="#csv_json_3" />
-
   </wfdesc:Workflow>
-
-  <!-- Processes and data link for UserRequirements-gen.ods -->
-
-  <wfdesc:Process rdf:about="#ods_csv_1">
-    <rdfs:label>ODS to CSV</rdfs:label>
-    <rdfs:comment>Converts single ODS file to CSV</rdfs:comment>
-    <wfdesc:hasInput>
-      <wfdesc:Input>
-        <wfdesc:hasArtifact rdf:resource="data/UserRequirements-gen.ods" />
-      </wfdesc:Input>
-    </wfdesc:hasInput>
-    <wfdesc:hasOutput>
-      <wfdesc:Output rdf:about="#ods_csv_output_1">
-        <wfdesc:hasArtifact rdf:resource="docs/UserRequirements-gen.csv" />
-      </wfdesc:Output>
-    </wfdesc:hasOutput>
-  </wfdesc:Process>
-
-  <wfdesc:DataLink rdf:about="#csv_link_1">
-    <wfdesc:hasSource rdf:resource="#ods_csv_output_1" />
-    <wfdesc:hasSink rdf:resource="#csv_json_input_1" />
-  </wfdesc:DataLink>
-
-  <wfdesc:Process rdf:about="#csv_json_1">
-    <rdfs:label>CSV to JSON</rdfs:label>
-    <rdfs:comment>Converts single CSV file to JSON</rdfs:comment>
-    <wfdesc:hasInput>
-      <wfdesc:Input rdf:about="#csv_json_input_1">
-        <wfdesc:hasArtifact rdf:resource="docs/UserRequirements-gen.csv" />
-      </wfdesc:Input>
-    </wfdesc:hasInput>
-    <wfdesc:hasOutput>
-      <wfdesc:Output>
-        <wfdesc:hasArtifact rdf:resource="docs/UserRequirements-gen.json" />
-      </wfdesc:Output>
-    </wfdesc:hasOutput>
-  </wfdesc:Process>
-
-
-  <wfdesc:Process rdf:about="#ods_csv_2">
-    <rdfs:label>ODS to CSV</rdfs:label>
-    <rdfs:comment>Converts single ODS file to CSV</rdfs:comment>
-    <wfdesc:hasInput>
-      <wfdesc:Input>
-        <wfdesc:hasArtifact rdf:resource="data/UserRequirements-astro.ods" />
-      </wfdesc:Input>
-    </wfdesc:hasInput>
-    <wfdesc:hasOutput>
-      <wfdesc:Output rdf:about="#ods_csv_output_2">
-        <wfdesc:hasArtifact rdf:resource="docs/UserRequirements-astro.csv" />
-      </wfdesc:Output>
-    </wfdesc:hasOutput>
-  </wfdesc:Process>
-
-  <wfdesc:DataLink rdf:about="#csv_link_2">
-    <wfdesc:hasSource rdf:resource="#ods_csv_output_2" />
-    <wfdesc:hasSink rdf:resource="#csv_json_input_2" />
-  </wfdesc:DataLink>
-
-  <wfdesc:Process rdf:about="#csv_json_2">
-    <rdfs:label>CSV to JSON</rdfs:label>
-    <rdfs:comment>Converts single CSV file to JSON</rdfs:comment>
-    <wfdesc:hasInput>
-      <wfdesc:Input rdf:about="#csv_json_input_2">
-        <wfdesc:hasArtifact rdf:resource="docs/UserRequirements-astro.csv" />
-      </wfdesc:Input>
-    </wfdesc:hasInput>
-    <wfdesc:hasOutput>
-      <wfdesc:Output>
-        <wfdesc:hasArtifact rdf:resource="docs/UserRequirements-astro.json" />
-      </wfdesc:Output>
-    </wfdesc:hasOutput>
-  </wfdesc:Process>
-
-
-  <wfdesc:Process rdf:about="#ods_csv_3">
-    <rdfs:label>ODS to CSV</rdfs:label>
-    <rdfs:comment>Converts single ODS file to CSV</rdfs:comment>
-    <wfdesc:hasInput>
-      <wfdesc:Input>
-        <wfdesc:hasArtifact rdf:resource="data/UserRequirements-bio.ods" />
-      </wfdesc:Input>
-    </wfdesc:hasInput>
-    <wfdesc:hasOutput>
-      <wfdesc:Output rdf:about="#ods_csv_output_3">
-        <wfdesc:hasArtifact rdf:resource="docs/UserRequirements-bio.csv" />
-      </wfdesc:Output>
-    </wfdesc:hasOutput>
-  </wfdesc:Process>
-
-  <wfdesc:DataLink rdf:about="#csv_link_3">
-    <wfdesc:hasSource rdf:resource="#ods_csv_output_3" />
-    <wfdesc:hasSink rdf:resource="#csv_json_input_3" />
-  </wfdesc:DataLink>
-
-  <wfdesc:Process rdf:about="#csv_json_3">
-    <rdfs:label>CSV to JSON</rdfs:label>
-    <rdfs:comment>Converts single CSV file to JSON</rdfs:comment>
-    <wfdesc:hasInput>
-      <wfdesc:Input rdf:about="#csv_json_input_3">
-        <wfdesc:hasArtifact rdf:resource="docs/UserRequirements-bio.csv" />
-      </wfdesc:Input>
-    </wfdesc:hasInput>
-    <wfdesc:hasOutput>
-      <wfdesc:Output>
-        <wfdesc:hasArtifact rdf:resource="docs/UserRequirements-bio.json" />
-      </wfdesc:Output>
-    </wfdesc:hasOutput>
-  </wfdesc:Process>
-
 
 </rdf:RDF>
 

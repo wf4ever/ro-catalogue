@@ -7,38 +7,35 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:ro="http://purl.org/wf4ever/ro#"
 >
-  <rdf:Description rdf:nodeID="MSAtDxHJ5">
-    <ao:body rdf:resource=".ro/manifest.rdf"/>
-    <ro:annotatesAggregatedResource rdf:resource=""/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-  </rdf:Description>
   <rdf:Description rdf:about="">
-    <dcterms:created>2012-07-02T10:40:32</dcterms:created>
+    <dcterms:description>Simple me-217 RO</dcterms:description>
+    <dcterms:created>2012-07-03T11:43:47</dcterms:created>
+    <dcterms:title>Simple me-217 RO</dcterms:title>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
     <dcterms:identifier>me-pack-217</dcterms:identifier>
     <dcterms:creator>Test user</dcterms:creator>
-    <dcterms:description>Simple me-217 RO</dcterms:description>
-    <ore:aggregates rdf:resource="wfdesc.rdf~"/>
-    <ore:aggregates rdf:resource="minim-checklist.sh"/>
-    <ore:aggregates rdf:resource="janus-2706.rdf"/>
-    <ore:aggregates rdf:resource="minim-checklist.sh~"/>
-    <ore:aggregates rdf:resource="minim.rdf~"/>
-    <ore:aggregates rdf:nodeID="MSAtDxHJ6"/>
-    <ore:aggregates rdf:resource="me-pack-217-minim.rdf~"/>
-    <ore:aggregates rdf:resource="_Pack Info.txt"/>
-    <ore:aggregates rdf:resource="run-2706.rdf"/>
     <ore:aggregates rdf:resource="workflows/time_series_data_graphed_and_cited_936779.t2flow"/>
-    <ore:aggregates rdf:resource="minim.rdf"/>
-    <ore:aggregates rdf:nodeID="MSAtDxHJ5"/>
+    <ore:aggregates rdf:resource="_Pack Info.txt"/>
+    <ore:aggregates rdf:resource="me-pack-217-replicable.rdf"/>
+    <ore:aggregates rdf:resource="janus-2706.rdf"/>
     <ore:aggregates rdf:resource="make.sh"/>
-    <ore:aggregates rdf:resource="me-pack-217-minim.rdf"/>
-    <ore:aggregates rdf:resource="make.sh~"/>
+    <ore:aggregates rdf:nodeID="sbuDElcy6"/>
+    <ore:aggregates rdf:nodeID="sbuDElcy5"/>
+    <ore:aggregates rdf:resource="files/GraphResult.png"/>
+    <ore:aggregates rdf:resource="run-2706.rdf"/>
     <ore:aggregates rdf:resource="wfdesc.rdf"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
-    <dcterms:title>Simple me-217 RO</dcterms:title>
+    <ore:aggregates rdf:resource="minim-checklist.sh"/>
+    <ore:aggregates rdf:resource="me-pack-217-runnable.rdf"/>
+    <ore:aggregates rdf:resource="files/CitationResult.png"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="MSAtDxHJ6">
+  <rdf:Description rdf:nodeID="sbuDElcy6">
     <ao:body rdf:resource="wfdesc.rdf"/>
-    <ro:annotatesAggregatedResource rdf:resource="workflows/time_series_data_graphed_and_cited_936779.t2flow"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="workflows/time_series_data_graphed_and_cited_936779.t2flow"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="sbuDElcy5">
+    <ao:body rdf:resource=".ro/manifest.rdf"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource=""/>
   </rdf:Description>
 </rdf:RDF>
