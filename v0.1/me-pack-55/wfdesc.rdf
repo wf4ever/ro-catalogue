@@ -49,6 +49,57 @@
         <rdfs:label>end_position</rdfs:label>
       </wfdesc:Input>
     </wfdesc:hasInput>
+
+    <wfdesc:hasOutput>
+      <wfdesc:Output>
+        <wfdesc:hasArtifact rdf:resource="files/gene_descriptions.text" />
+	<rdfs:label>gene_descriptions</rdfs:label>
+      </wfdesc:Output>
+    </wfdesc:hasOutput>
+
+
+    <wfdesc:hasOutput>
+      <wfdesc:Output>
+        <wfdesc:hasArtifact rdf:resource="files/kegg_external_gene_reference.text" />
+        <rdfs:label>kegg_external_gene_reference</rdfs:label>
+      </wfdesc:Output>
+    </wfdesc:hasOutput>
+
+    <wfdesc:hasOutput>
+      <wfdesc:Output>
+        <wfdesc:hasArtifact rdf:resource="files/kegg_pathway_release.text" />
+        <rdfs:label>kegg_pathway_release</rdfs:label>
+      </wfdesc:Output>
+    </wfdesc:hasOutput>
+
+    <wfdesc:hasOutput>
+      <wfdesc:Output>
+        <wfdesc:hasArtifact rdf:resource="files/merged_pathways.text" />
+        <rdfs:label>merged_pathways</rdfs:label>
+      </wfdesc:Output>
+    </wfdesc:hasOutput>
+
+    <wfdesc:hasOutput>
+      <wfdesc:Output>
+        <wfdesc:hasArtifact rdf:resource="files/pathway_descriptions.text" />
+        <rdfs:label>pathway_descriptions</rdfs:label>
+      </wfdesc:Output>
+    </wfdesc:hasOutput>
+
+   <wfdesc:hasOutput>
+      <wfdesc:Output>
+        <wfdesc:hasArtifact rdf:resource="files/pathway_ids.text" />
+        <rdfs:label>pathway_ids</rdfs:label>
+      </wfdesc:Output>
+    </wfdesc:hasOutput>
+
+    <wfdesc:hasOutput>
+      <wfdesc:Output>
+        <wfdesc:hasArtifact rdf:resource="files/report.text" />
+        <rdfs:label>report</rdfs:label>
+      </wfdesc:Output>
+    </wfdesc:hasOutput>
+
   </wfdesc:Workflow>
 
 </rdf:RDF>

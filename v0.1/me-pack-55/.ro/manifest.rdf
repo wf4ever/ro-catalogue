@@ -7,47 +7,49 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:ro="http://purl.org/wf4ever/ro#"
 >
-  <rdf:Description rdf:nodeID="_9e91cb83-f452-4f4d-9d27-109fd2ad198d">
-    <ro:annotatesAggregatedResource rdf:resource=""/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource=".ro/manifest.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="_1543117f-f957-4a30-ae25-4244dbdcf47b">
-    <ro:annotatesAggregatedResource rdf:resource="workflows/pathways_and_gene_annotations_forqtl_region_290738.t2flow"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="wfdesc.rdf"/>
-  </rdf:Description>
   <rdf:Description rdf:about="">
+    <dcterms:title>Simple me-55 RO</dcterms:title>
+    <dcterms:created>2012-07-03T12:26:41</dcterms:created>
+    <dcterms:description>Simple me-55 RO</dcterms:description>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
     <dcterms:creator>Test user</dcterms:creator>
-    <dcterms:title>Simple me-55 RO</dcterms:title>
-    <dcterms:created>2012-07-02T16:20:49</dcterms:created>
-    <dcterms:description>Simple me-55 RO</dcterms:description>
     <dcterms:identifier>me-pack-55</dcterms:identifier>
+    <ore:aggregates rdf:resource="files/Table2.xls"/>
+    <ore:aggregates rdf:resource="workflows/kegg_pathways_common_to_both_qtl_and_microarray_based_investigations_869806.xml"/>
+    <ore:aggregates rdf:resource="files/pathway_ids.text"/>
+    <ore:aggregates rdf:resource="files/kegg_external_gene_reference.text"/>
+    <ore:aggregates rdf:resource="files/kegg_pathway_release.text"/>
+    <ore:aggregates rdf:resource="files/pathway_descriptions.text"/>
+    <ore:aggregates rdf:resource="files/paul_fisher_5625.pdf"/>
+    <ore:aggregates rdf:resource="me-pack-55-runnable.rdf"/>
+    <ore:aggregates rdf:resource="files/ensembl_database_release.text"/>
+    <ore:aggregates rdf:resource="minim-checklist.sh"/>
+    <ore:aggregates rdf:resource="wfdesc.rdf"/>
+    <ore:aggregates rdf:resource="workflows/pathways_and_gene_annotations_forqtl_region_290738.t2flow"/>
     <ore:aggregates rdf:resource="files/report.text"/>
-    <ore:aggregates rdf:resource="me-pack-55-minim.rdf"/>
-    <ore:aggregates rdf:resource="files/Tir1_Day3_intersecting_pathways.xls"/>
-    <ore:aggregates rdf:resource="files/gene_descriptions.text"/>
-    <ore:aggregates rdf:resource="_Pack Info.txt"/>
     <ore:aggregates rdf:resource="files/Candidate_gene_protocol.doc"/>
     <ore:aggregates rdf:resource="files/snp_table.doc"/>
-    <ore:aggregates rdf:resource="workflows/pathways_and_gene_annotations_forqtl_region_290738.t2flow"/>
-    <ore:aggregates rdf:resource="make.sh"/>
-    <ore:aggregates rdf:resource="files/pathway_descriptions.text"/>
-    <ore:aggregates rdf:resource="files/Tir1_Day7_intersecting_pathways.xls"/>
-    <ore:aggregates rdf:resource="workflows/kegg_pathways_common_to_both_qtl_and_microarray_based_investigations_869806.xml"/>
-    <ore:aggregates rdf:resource="files/kegg_external_gene_reference.text"/>
-    <ore:aggregates rdf:resource="files/paul_fisher_5625.pdf"/>
-    <ore:aggregates rdf:resource="files/ensembl_database_release.text"/>
-    <ore:aggregates rdf:resource="files/Table2.xls"/>
-    <ore:aggregates rdf:resource="files/merged_pathways.text"/>
-    <ore:aggregates rdf:resource="files/kegg_pathway_release.text"/>
-    <ore:aggregates rdf:resource="files/pathway_ids.text"/>
-    <ore:aggregates rdf:nodeID="_9e91cb83-f452-4f4d-9d27-109fd2ad198d"/>
-    <ore:aggregates rdf:nodeID="_1543117f-f957-4a30-ae25-4244dbdcf47b"/>
-    <ore:aggregates rdf:resource="workflows/pathways_from_diff_expressed_genes_22895.xml"/>
-    <ore:aggregates rdf:resource="wfdesc.rdf"/>
-    <ore:aggregates rdf:resource="minim-checklist.sh"/>
     <ore:aggregates rdf:resource="files/Table3.xls"/>
+    <ore:aggregates rdf:resource="files/gene_descriptions.text"/>
+    <ore:aggregates rdf:resource="workflows/pathways_from_diff_expressed_genes_22895.xml"/>
+    <ore:aggregates rdf:resource="make.sh"/>
+    <ore:aggregates rdf:resource="files/Tir1_Day3_intersecting_pathways.xls"/>
+    <ore:aggregates rdf:resource="me-pack-55-minim.rdf"/>
+    <ore:aggregates rdf:resource="files/merged_pathways.text"/>
+    <ore:aggregates rdf:resource="files/Tir1_Day7_intersecting_pathways.xls"/>
+    <ore:aggregates rdf:resource="_Pack Info.txt"/>
+    <ore:aggregates rdf:nodeID="HDdAzeBL5"/>
+    <ore:aggregates rdf:nodeID="HDdAzeBL6"/>
+    <ore:aggregates rdf:resource="me-pack-55-replicable.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="HDdAzeBL6">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="workflows/pathways_and_gene_annotations_forqtl_region_290738.t2flow"/>
+    <ao:body rdf:resource="wfdesc.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="HDdAzeBL5">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource=""/>
+    <ao:body rdf:resource=".ro/manifest.rdf"/>
   </rdf:Description>
 </rdf:RDF>
