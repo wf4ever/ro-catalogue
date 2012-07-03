@@ -37,20 +37,20 @@
   </wfdesc:Workflow>
 
   <wfdesc:Workflow rdf:about="workflows/_untitled__947103.t2flow">
-  <wfdesc:hasInput>
-    <wfdesc:Input>
-      <rdfs:label>cities</rdfs:label>
-      <rdfs:comment>osaka</rdfs:comment>  
-    </wfdesc:Input>
-  </wfdesc:hasInput>
-  <wfdesc:hasInput>
-    <wfdesc:Input>
-      <rdfs:label>countries</rdfs:label>
-      <rdfs:comment>japan</rdfs:comment>
-    </wfdesc:Input>
-  </wfdesc:hasInput>
-  <wfdesc:hasOutput>      
-   <wfdesc:Output>
+    <wfdesc:hasInput>
+      <wfdesc:Input>
+        <rdfs:label>cities</rdfs:label>
+        <rdfs:comment>osaka</rdfs:comment>  
+      </wfdesc:Input>
+    </wfdesc:hasInput>
+    <wfdesc:hasInput>
+      <wfdesc:Input>
+        <rdfs:label>countries</rdfs:label>
+        <rdfs:comment>japan</rdfs:comment>
+      </wfdesc:Input>
+    </wfdesc:hasInput>
+    <wfdesc:hasOutput>      
+      <wfdesc:Output>
         <wfdesc:hasArtifact rdf:resource="files/output-example.jpg" />
       </wfdesc:Output>
     </wfdesc:hasOutput>
