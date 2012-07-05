@@ -37,18 +37,21 @@
     <wfdesc:hasInput>
       <wfdesc:Input rdf:about="#input1">
         <rdfs:label>chromosome_name</rdfs:label>
+        <rdfs:comment>17</rdfs:comment>  <!-- sample value -->
         <wfdesc:hasArtifact rdf:resource="inputs/chromosome_name.text" />
       </wfdesc:Input>
     </wfdesc:hasInput>
     <wfdesc:hasInput>
       <wfdesc:Input rdf:about="#input2">
         <rdfs:label>start_position</rdfs:label>
+        <rdfs:comment>31800000</rdfs:comment>  <!-- sample value -->
         <wfdesc:hasArtifact rdf:resource="inputs/start_position.text" />
       </wfdesc:Input>
     </wfdesc:hasInput>
     <wfdesc:hasInput>
       <wfdesc:Input rdf:about="#input3">
         <rdfs:label>end_position</rdfs:label>
+        <rdfs:comment>32200000</rdfs:comment>  <!-- sample value -->
         <wfdesc:hasArtifact rdf:resource="inputs/end_position.text" />
       </wfdesc:Input>
     </wfdesc:hasInput>

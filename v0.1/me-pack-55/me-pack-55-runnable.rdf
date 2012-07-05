@@ -117,6 +117,7 @@
           ?wi wfdesc:hasArtifact ?if .
         </minim:forall>
         <minim:aggregatesTemplate>{+if}</minim:aggregatesTemplate>
+        <minim:isLiveTemplate>{+if}</minim:isLiveTemplate>
         <minim:showpass>All workflow inputs referenced or present</minim:showpass>
         <minim:showfail>Workflow %(wf)s input %(if)s not found</minim:showfail>
         <minim:derives rdf:resource="#isPresent/workflow-inputfiles" />
