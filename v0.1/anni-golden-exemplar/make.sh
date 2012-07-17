@@ -24,7 +24,7 @@ echo "--------"
 
 rm -rf .ro
 
-$RO create -v "Anno Golden Exemplar" -d . -i anni-golden-exemplar
+$RO create -v "Anni Golden Exemplar" -d . -i anni-golden-exemplar
 
 $RO add -v -a -d .
 
@@ -40,12 +40,11 @@ echo "--------"
 
 $RO annotate -v showcase62a_wf-withMulitipleBPCUIs.t2flow title "Anni golden exemplar main workflow"
 
-#$RO annotate -v 20120114-1156-405.jpg title "Golden exemplay anni workflow"
-
-#$RO annotations -v 
+$RO annotate -v . -g ro_annotation.rdf
 
 echo "--------"
 
 $RO annotations -v
 
 # End.
+
