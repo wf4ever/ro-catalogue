@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xml:base=".."
+   xmlns:ao="http://purl.org/ao/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:ore="http://www.openarchives.org/ore/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ro="http://purl.org/wf4ever/ro#"
+>
+  <rdf:Description rdf:about="">
+    <dcterms:identifier>ro-decay-paper</dcterms:identifier>
+    <dcterms:created>2012-07-17T20:11:14</dcterms:created>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
+    <dcterms:creator>Test user</dcterms:creator>
+    <dcterms:title>RO for the decay paper</dcterms:title>
+    <dcterms:description>RO for the decay paper</dcterms:description>
+    <ore:aggregates rdf:resource="me-pack-55/wfdesc.rdf"/>
+    <ore:aggregates rdf:resource="me-pack-55/files/ensembl_database_release.text"/>
+    <ore:aggregates rdf:resource="me-pack-217/me-pack-217-minim.rdf"/>
+    <ore:aggregates rdf:resource="me-pack-55/files/Table2.xls"/>
+    <ore:aggregates rdf:resource="me-pack-55/files/Table3.xls"/>
+    <ore:aggregates rdf:resource="me-pack-55/me-pack-55-runnable.rdf"/>
+    <ore:aggregates rdf:resource="me-pack-55/files/merged_pathways.text"/>
+    <ore:aggregates rdf:resource="me-pack-219/workflows/_untitled__947103.t2flow"/>
+    <ore:aggregates rdf:resource="me-pack-219/files/output-example.jpg"/>
+    <ore:aggregates rdf:resource="me-pack-55/files/Tir1_Day3_intersecting_pathways.xls"/>
+    <ore:aggregates rdf:resource="me-pack-55/_Pack Info.txt"/>
+    <ore:aggregates rdf:resource="me-pack-55/inputs/start_position.text"/>
+    <ore:aggregates rdf:resource="me-pack-217/janus-2706.rdf"/>
+    <ore:aggregates rdf:resource="make.sh~"/>
+    <ore:aggregates rdf:resource="make.sh"/>
+    <ore:aggregates rdf:resource="me-pack-55/workflows/pathways_and_gene_annotations_forqtl_region_290738.t2flow"/>
+    <ore:aggregates rdf:resource="me-pack-219/files/workflow compact.jpg"/>
+    <ore:aggregates rdf:resource="me-pack-55/minim-check-runnable.sh"/>
+    <ore:aggregates rdf:resource="me-pack-55/inputs/README.txt"/>
+    <ore:aggregates rdf:resource="me-pack-55/files/kegg_pathway_release.text"/>
+    <ore:aggregates rdf:resource="me-pack-55/me-pack-55-minim.rdf"/>
+    <ore:aggregates rdf:resource="me-pack-219/minim-checklist.sh"/>
+    <ore:aggregates rdf:resource="me-pack-219/me-pack-219-minim.rdf"/>
+    <ore:aggregates rdf:resource="me-pack-219/me-pack-219-runnable.rdf"/>
+    <ore:aggregates rdf:resource="me-pack-217/me-pack-217-runnable.rdf"/>
+    <ore:aggregates rdf:resource="me-pack-55/me-pack-55-replicable.rdf"/>
+    <ore:aggregates rdf:resource="type-of-workflows.xlsx"/>
+    <ore:aggregates rdf:resource="me-pack-217/wfdesc.rdf"/>
+    <ore:aggregates rdf:resource="me-pack-219/make.sh"/>
+    <ore:aggregates rdf:resource="me-pack-217/run-2706.rdf"/>
+    <ore:aggregates rdf:resource="me-pack-55/files/paul_fisher_5625.pdf"/>
+    <ore:aggregates rdf:resource="me-pack-219/_Pack Info.txt"/>
+    <ore:aggregates rdf:resource="me-pack-55/make.sh"/>
+    <ore:aggregates rdf:resource="me-pack-55/minim-checklist.sh"/>
+    <ore:aggregates rdf:resource="me-pack-217/_Pack Info.txt"/>
+    <ore:aggregates rdf:resource="me-pack-55/inputs/chromosome_name.text"/>
+    <ore:aggregates rdf:resource="me-pack-55/files/report.text"/>
+    <ore:aggregates rdf:resource="me-pack-55/workflows/kegg_pathways_common_to_both_qtl_and_microarray_based_investigations_869806.xml"/>
+    <ore:aggregates rdf:resource="me-pack-219/workflows/_untitled__394292.t2flow"/>
+    <ore:aggregates rdf:resource="decay-type.xlsx"/>
+    <ore:aggregates rdf:resource="me-pack-219/me-pack-219-replicable.rdf"/>
+    <ore:aggregates rdf:resource="me-pack-217/me-pack-217-replicable.rdf"/>
+    <ore:aggregates rdf:resource="me-pack-219/workflows/_untitled__176167.t2flow"/>
+    <ore:aggregates rdf:resource="me-pack-217/minim-checklist.sh"/>
+    <ore:aggregates rdf:resource="me-pack-217/files/CitationResult.png"/>
+    <ore:aggregates rdf:resource="me-pack-55/inputs/end_position.text"/>
+    <ore:aggregates rdf:resource="me-pack-219/files/workflow expanded.jpg"/>
+    <ore:aggregates rdf:resource="me-pack-219/wfdesc.rdf"/>
+    <ore:aggregates rdf:resource="type-of-workflows.xlsb"/>
+    <ore:aggregates rdf:resource="me-pack-55/files/pathway_descriptions.text"/>
+    <ore:aggregates rdf:resource="me-pack-55/files/Tir1_Day7_intersecting_pathways.xls"/>
+    <ore:aggregates rdf:resource="me-pack-55/files/Candidate_gene_protocol.doc"/>
+    <ore:aggregates rdf:resource="me-pack-217/workflows/time_series_data_graphed_and_cited_936779.t2flow"/>
+    <ore:aggregates rdf:resource="me-pack-55/workflows/pathways_from_diff_expressed_genes_22895.xml"/>
+    <ore:aggregates rdf:resource="me-pack-217/files/GraphResult.png"/>
+    <ore:aggregates rdf:resource="me-pack-55/files/pathway_ids.text"/>
+    <ore:aggregates rdf:resource="me-pack-217/make.sh"/>
+    <ore:aggregates rdf:resource="me-pack-55/files/gene_descriptions.text"/>
+    <ore:aggregates rdf:resource="me-pack-55/files/snp_table.doc"/>
+    <ore:aggregates rdf:resource="MyExperiment workflow exploration.xls"/>
+    <ore:aggregates rdf:nodeID="VtgTVtZg2"/>
+    <ore:aggregates rdf:resource="me-pack-55/files/kegg_external_gene_reference.text"/>
+    <ore:aggregates rdf:resource="me-pack-219/files/weather example.jpg"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="VtgTVtZg2">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ao:body rdf:resource=".ro/manifest.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource=""/>
+  </rdf:Description>
+</rdf:RDF>

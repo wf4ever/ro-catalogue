@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xml:base=".."
+   xmlns:ao="http://purl.org/ao/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:ore="http://www.openarchives.org/ore/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ro="http://purl.org/wf4ever/ro#"
+>
+  <rdf:Description rdf:about="">
+    <dcterms:description>Simple me-219 RO</dcterms:description>
+    <ore:aggregates rdf:resource="me-pack-219-replicable.rdf"/>
+    <ore:aggregates rdf:nodeID="zwvRJkWz7"/>
+    <ore:aggregates rdf:resource="files/weather example.jpg"/>
+    <ore:aggregates rdf:resource="files/output-example.jpg"/>
+    <ore:aggregates rdf:nodeID="zwvRJkWz9"/>
+    <ore:aggregates rdf:nodeID="zwvRJkWz8"/>
+    <ore:aggregates rdf:resource="_Pack Info.txt"/>
+    <ore:aggregates rdf:resource="wfdesc.rdf"/>
+    <ore:aggregates rdf:resource="me-pack-219-minim.rdf"/>
+    <ore:aggregates rdf:resource="files/workflow expanded.jpg"/>
+    <ore:aggregates rdf:resource="me-pack-219-runnable.rdf"/>
+    <ore:aggregates rdf:resource="minim-checklist.sh"/>
+    <ore:aggregates rdf:resource="workflows/_untitled__394292.t2flow"/>
+    <ore:aggregates rdf:resource="files/workflow compact.jpg"/>
+    <ore:aggregates rdf:resource="workflows/_untitled__176167.t2flow"/>
+    <ore:aggregates rdf:nodeID="zwvRJkWz10"/>
+    <ore:aggregates rdf:resource="wfdesc.rdf~"/>
+    <ore:aggregates rdf:resource="make.sh"/>
+    <ore:aggregates rdf:resource="workflows/_untitled__947103.t2flow"/>
+    <dcterms:creator>Test user</dcterms:creator>
+    <dcterms:identifier>me-pack-219</dcterms:identifier>
+    <dcterms:created>2012-07-03T12:03:10</dcterms:created>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
+    <dcterms:title>Simple me-219 RO</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="zwvRJkWz8">
+    <ro:annotatesAggregatedResource rdf:resource=""/>
+    <ao:body rdf:resource=".ro/manifest.rdf"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="zwvRJkWz7">
+    <ro:annotatesAggregatedResource rdf:resource="workflows/_untitled__947103.t2flow"/>
+    <ao:body rdf:resource="wfdesc.rdf"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="zwvRJkWz9">
+    <ro:annotatesAggregatedResource rdf:resource="workflows/_untitled__176167.t2flow"/>
+    <ao:body rdf:resource="wfdesc.rdf"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="zwvRJkWz10">
+    <ro:annotatesAggregatedResource rdf:resource="workflows/_untitled__394292.t2flow"/>
+    <ao:body rdf:resource="wfdesc.rdf"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+</rdf:RDF>

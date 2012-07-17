@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY rdf     "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY rdfs    "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY owl     "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd     "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml     "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfg    "http://www.w3.org/2004/03/trix/rdfg-1/" >
+    <!ENTITY ore     "http://www.openarchives.org/ore/terms/" >
+    <!ENTITY ao      "http://purl.org/ao/" >
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY foaf    "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY ro      "http://purl.org/wf4ever/ro#" >
+    <!ENTITY wfprov  "http://purl.org/wf4ever/wfprov#" >
+    <!ENTITY wfdesc  "http://purl.org/wf4ever/wfdesc#" >
+]>
+
+<rdf:RDF xmlns=""
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:rdfg="http://www.w3.org/2004/03/trix/rdfg-1/"
+     xmlns:ore="http://www.openarchives.org/ore/terms/"
+     xmlns:ao="http://purl.org/ao/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:ro="http://purl.org/wf4ever/ro#"
+     xmlns:wfprov="http://purl.org/wf4ever/wfprov#"
+     xmlns:wfdesc="http://purl.org/wf4ever/wfdesc#"
+>
+
+  <!-- Workflow instance -->
+  <wfdesc:Workflow rdf:about="workflows/pathways_and_gene_annotations_forqtl_region_290738.t2flow">
+    <wfdesc:hasInput>
+      <wfdesc:Input rdf:about="#input1">
+        <rdfs:label>chromosome_name</rdfs:label>
+        <rdfs:comment>17</rdfs:comment>  <!-- sample value -->
+        <wfdesc:hasArtifact rdf:resource="inputs/chromosome_name.text" />
+      </wfdesc:Input>
+    </wfdesc:hasInput>
+    <wfdesc:hasInput>
+      <wfdesc:Input rdf:about="#input2">
+        <rdfs:label>start_position</rdfs:label>
+        <rdfs:comment>31800000</rdfs:comment>  <!-- sample value -->
+        <wfdesc:hasArtifact rdf:resource="inputs/start_position.text" />
+      </wfdesc:Input>
+    </wfdesc:hasInput>
+    <wfdesc:hasInput>
+      <wfdesc:Input rdf:about="#input3">
+        <rdfs:label>end_position</rdfs:label>
+        <rdfs:comment>32200000</rdfs:comment>  <!-- sample value -->
+        <wfdesc:hasArtifact rdf:resource="inputs/end_position.text" />
+      </wfdesc:Input>
+    </wfdesc:hasInput>
+
+    <wfdesc:hasOutput>
+      <wfdesc:Output>
+        <wfdesc:hasArtifact rdf:resource="files/gene_descriptions.text" />
+        <rdfs:label>gene_descriptions</rdfs:label>
+      </wfdesc:Output>
+    </wfdesc:hasOutput>
+
+
+    <wfdesc:hasOutput>
+      <wfdesc:Output>
+        <wfdesc:hasArtifact rdf:resource="files/kegg_external_gene_reference.text" />
+        <rdfs:label>kegg_external_gene_reference</rdfs:label>
+      </wfdesc:Output>
+    </wfdesc:hasOutput>
+
+    <wfdesc:hasOutput>
+      <wfdesc:Output>
+        <wfdesc:hasArtifact rdf:resource="files/kegg_pathway_release.text" />
+        <rdfs:label>kegg_pathway_release</rdfs:label>
+      </wfdesc:Output>
+    </wfdesc:hasOutput>
+
+    <wfdesc:hasOutput>
+      <wfdesc:Output>
+        <wfdesc:hasArtifact rdf:resource="files/merged_pathways.text" />
+        <rdfs:label>merged_pathways</rdfs:label>
+      </wfdesc:Output>
+    </wfdesc:hasOutput>
+
+    <wfdesc:hasOutput>
+      <wfdesc:Output>
+        <wfdesc:hasArtifact rdf:resource="files/pathway_descriptions.text" />
+        <rdfs:label>pathway_descriptions</rdfs:label>
+      </wfdesc:Output>
+    </wfdesc:hasOutput>
+
+   <wfdesc:hasOutput>
+      <wfdesc:Output>
+        <wfdesc:hasArtifact rdf:resource="files/pathway_ids.text" />
+        <rdfs:label>pathway_ids</rdfs:label>
+      </wfdesc:Output>
+    </wfdesc:hasOutput>
+
+    <wfdesc:hasOutput>
+      <wfdesc:Output>
+        <wfdesc:hasArtifact rdf:resource="files/report.text" />
+        <rdfs:label>report</rdfs:label>
+      </wfdesc:Output>
+    </wfdesc:hasOutput>
+
+  </wfdesc:Workflow>
+
+</rdf:RDF>
+
