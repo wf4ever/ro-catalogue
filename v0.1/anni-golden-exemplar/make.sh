@@ -3,7 +3,7 @@
 # RO manager script to create trivial RO
 #
 
-source ../../ro.sh
+source ../../ro.sh.kmh-kmhettne
 
 TESTRO="."
 RONAME="anni-golden-exemplar"
@@ -13,12 +13,9 @@ echo "--------"
 $RO config -v \
   -b $ROBASE \
   -r http://sandbox.wf4ever-project.org/rosrs5 \
-  -n "https://me.yahoo.com/grahamklyne#734de" \
-  -t "faeb3ffd-20c5-4ef2-a" \
-  -e "testuser@example.org"
-  # These credentials work
-  #-t "47d5423c-b507-4e1c-8" \
-  #-n "Test User" \
+  -n "https://www.google.com/accounts/o8/id?id=AItOawl4I-H_ask7ollkwUzMrjTDrgD2oj_Qu2Q" \
+  -t "a5c489aa-b413-47ad-b" \
+  -e "k.m.hettne@lumc.nl"
 
 echo "--------"
 
@@ -38,7 +35,7 @@ $RO list -v -a -d .
 
 echo "--------"
 
-$RO annotate -v showcase62a_wf-withMulitipleBPCUIs.t2flow title "Anni golden exemplar main workflow"
+#$RO annotate -v showcase62a_wf-withMulitipleBPCUIs.t2flow title "Anni golden exemplar main workflow"
 
 $RO annotate -v . -g ro_annotation.rdf
 

@@ -4,8 +4,8 @@
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
  <rdf:Description rdf:about="./">
-   <rdfs:seeAlso rdf:resource="http://www.myexperiment.org/workflows/2973.html" />
-   <rdfs:comment>Described in myExperiment entry number 2973</rdfs:comment>
+   <rdfs:seeAlso rdf:resource="http://www.myexperiment.org/packs/282" />
+   <rdfs:comment>Described in myExperiment pack number 282</rdfs:comment>
  </rdf:Description>
 </rdf:RDF>
 
