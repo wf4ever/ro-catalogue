@@ -1,4 +1,4 @@
-<workflow xmlns="http://taverna.sf.net/2008/xml/t2flow" version="1" producedBy="taverna-2.4.0"><dataflow id="93c10c3d-ba50-4b18-acbf-499fc783e983" role="top"><name>List_Concept_Sets</name><inputPorts /><outputPorts><port><name>Concept_set_ID</name><annotations><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+<workflow xmlns="http://taverna.sf.net/2008/xml/t2flow" version="1" producedBy="taverna-2.4.0"><dataflow id="d7ea2901-cc78-462f-b4ee-037d651a09f4" role="top"><name>List_Concept_Sets</name><inputPorts /><outputPorts><port><name>Concept_set_ID</name><annotations><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
       <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.ExampleValue">
@@ -225,6 +225,17 @@
 </net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain></annotations></port><port><name>Concept_set_name</name><annotations><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.FreeTextDescription">
+        <text>The names of the Concept Sets in the current database.</text>
+      </annotationBean>
+      <date>2012-07-04 08:16:58.51 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
       <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.ExampleValue">
         <text>Predefined Concept Sets
 Chemicals
@@ -435,29 +446,7 @@ Therapeutic or Preventive Procedure</text>
       <curationEventList />
     </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
   </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
-  <annotationAssertions>
-    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.FreeTextDescription">
-        <text>The names of the Concept Sets in the current database.</text>
-      </annotationBean>
-      <date>2012-07-04 08:16:58.51 UTC</date>
-      <creators />
-      <curationEventList />
-    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-  </annotationAssertions>
 </net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain></annotations></port><port><name>Concept_set_parent</name><annotations><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
-  <annotationAssertions>
-    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.FreeTextDescription">
-        <text>The list of IDs for the parent Concept Sets for the Concept Sets in the current database.</text>
-      </annotationBean>
-      <date>2012-07-04 08:19:20.3 UTC</date>
-      <creators />
-      <curationEventList />
-    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-  </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
       <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.ExampleValue">
@@ -670,6 +659,17 @@ Therapeutic or Preventive Procedure</text>
       <curationEventList />
     </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
   </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.FreeTextDescription">
+        <text>The list of IDs for the parent Concept Sets for the Concept Sets in the current database.</text>
+      </annotationBean>
+      <date>2012-07-04 08:19:20.3 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
 </net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain></annotations></port></outputPorts><processors><processor><name>listPredefinedConceptSets</name><inputPorts /><outputPorts><port><name>parameters</name><depth>0</depth><granularDepth>0</granularDepth></port></outputPorts><annotations><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
@@ -831,35 +831,13 @@ Therapeutic or Preventive Procedure</text>
   <initialDelay>1000</initialDelay>
   <maxDelay>5000</maxDelay>
   <maxRetries>0</maxRetries>
-</net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.RetryConfig></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Invoke</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer></dispatchStack><iterationStrategyStack><iteration><strategy><cross><port name="input" depth="0" /></cross></strategy></iteration></iterationStrategyStack></processor></processors><conditions /><datalinks><datalink><sink type="processor"><processor>listPredefinedConceptSets_output</processor><port>input</port></sink><source type="processor"><processor>listPredefinedConceptSets</processor><port>parameters</port></source></datalink><datalink><sink type="processor"><processor>listPredefinedConceptSets_return</processor><port>input</port></sink><source type="processor"><processor>listPredefinedConceptSets_output</processor><port>return</port></source></datalink><datalink><sink type="processor"><processor>return_ConceptSetInfoList</processor><port>input</port></sink><source type="processor"><processor>listPredefinedConceptSets_return</processor><port>ConceptSetInfoList</port></source></datalink><datalink><sink type="processor"><processor>ConceptSetInfoList_ConceptSetInfoList</processor><port>input</port></sink><source type="processor"><processor>return_ConceptSetInfoList</processor><port>ConceptSetInfoList</port></source></datalink><datalink><sink type="dataflow"><port>Concept_set_ID</port></sink><source type="processor"><processor>ConceptSetInfoList_ConceptSetInfoList</processor><port>id</port></source></datalink><datalink><sink type="dataflow"><port>Concept_set_name</port></sink><source type="processor"><processor>ConceptSetInfoList_ConceptSetInfoList</processor><port>name</port></source></datalink><datalink><sink type="dataflow"><port>Concept_set_parent</port></sink><source type="processor"><processor>ConceptSetInfoList_ConceptSetInfoList</processor><port>parent</port></source></datalink></datalinks><annotations><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
-  <annotationAssertions>
-    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
-        <identification>93c10c3d-ba50-4b18-acbf-499fc783e983</identification>
-      </annotationBean>
-      <date>2012-07-04 08:24:18.657 UTC</date>
-      <creators />
-      <curationEventList />
-    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-  </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+</net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.RetryConfig></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Invoke</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer></dispatchStack><iterationStrategyStack><iteration><strategy><cross><port name="input" depth="0" /></cross></strategy></iteration></iterationStrategyStack></processor></processors><conditions /><datalinks><datalink><sink type="processor"><processor>listPredefinedConceptSets_output</processor><port>input</port></sink><source type="processor"><processor>listPredefinedConceptSets</processor><port>parameters</port></source></datalink><datalink><sink type="processor"><processor>listPredefinedConceptSets_return</processor><port>input</port></sink><source type="processor"><processor>listPredefinedConceptSets_output</processor><port>return</port></source></datalink><datalink><sink type="processor"><processor>return_ConceptSetInfoList</processor><port>input</port></sink><source type="processor"><processor>listPredefinedConceptSets_return</processor><port>ConceptSetInfoList</port></source></datalink><datalink><sink type="processor"><processor>ConceptSetInfoList_ConceptSetInfoList</processor><port>input</port></sink><source type="processor"><processor>return_ConceptSetInfoList</processor><port>ConceptSetInfoList</port></source></datalink><datalink><sink type="dataflow"><port>Concept_set_ID</port></sink><source type="processor"><processor>ConceptSetInfoList_ConceptSetInfoList</processor><port>id</port></source></datalink><datalink><sink type="dataflow"><port>Concept_set_name</port></sink><source type="processor"><processor>ConceptSetInfoList_ConceptSetInfoList</processor><port>name</port></source></datalink><datalink><sink type="dataflow"><port>Concept_set_parent</port></sink><source type="processor"><processor>ConceptSetInfoList_ConceptSetInfoList</processor><port>parent</port></source></datalink></datalinks><annotations><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
       <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.DescriptiveTitle">
         <text>List Concept Sets</text>
       </annotationBean>
       <date>2012-07-04 08:23:55.304 UTC</date>
-      <creators />
-      <curationEventList />
-    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-  </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
-  <annotationAssertions>
-    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.Author">
-        <text>Kristina Hettne</text>
-      </annotationBean>
-      <date>2012-07-04 08:19:35.474 UTC</date>
       <creators />
       <curationEventList />
     </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
@@ -879,11 +857,53 @@ Therapeutic or Preventive Procedure</text>
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
       <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.FreeTextDescription">
-        <text>The workflow returns a list of all Concept Set IDs currently available in the database. The Concept Sets have an hierarchical structure that can be inferred by referring to the parent Concept Set ID.</text>
+        <text>Pupose:
+The workflow returns a list of all Concept Set IDs currently available in the database. The Concept Sets have an hierarchical structure that can be inferred by referring to the parent Concept Set ID.
+
+Author comments:
+This workflow can be used together with other workflows in this pack: http://www.myexperiment.org/packs/282 for functional gene and SNP annotation and knowledge discovery.
+</text>
       </annotationBean>
-      <date>2012-07-04 08:23:39.371 UTC</date>
+      <date>2012-07-18 13:33:08.509 UTC</date>
       <creators />
       <curationEventList />
     </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
   </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain></annotations></dataflow></workflow>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
+        <identification>d7ea2901-cc78-462f-b4ee-037d651a09f4</identification>
+      </annotationBean>
+      <date>2012-07-18 13:34:00.715 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.Author">
+        <text>Creator:
+Kristina Hettne on behalf of the BioSemantics group
+
+Contributors:
+Web services by Reinout van Schouwen</text>
+      </annotationBean>
+      <date>2012-07-18 13:33:54.128 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
+        <identification>93c10c3d-ba50-4b18-acbf-499fc783e983</identification>
+      </annotationBean>
+      <date>2012-07-04 08:24:18.657 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2></annotations></dataflow></workflow>
