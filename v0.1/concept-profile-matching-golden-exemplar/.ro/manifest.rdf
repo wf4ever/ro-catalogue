@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xml:base=".."
+   xmlns:ao="http://purl.org/ao/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:ore="http://www.openarchives.org/ore/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ro="http://purl.org/wf4ever/ro#"
+>
+  <rdf:Description rdf:nodeID="_0ad36b01-1f60-4da8-a70e-20d29736067b">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ao:body rdf:resource=".ro/manifest.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource=""/>
+  </rdf:Description>
+  <rdf:Description rdf:about="">
+    <dcterms:creator>https://www.google.com/accounts/o8/id?id=AItOawl4I-H_ask7ollkwUzMrjTDrgD2oj_Qu2Q</dcterms:creator>
+    <dcterms:description>Concept Profile Matching Golden Exemplar</dcterms:description>
+    <dcterms:title>Concept Profile Matching Golden Exemplar</dcterms:title>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
+    <dcterms:identifier>concept-profile-matching-golden-exemplar</dcterms:identifier>
+    <ore:aggregates rdf:resource="Workflows/SWA4LS_Workflow.t2flow"/>
+    <ore:aggregates rdf:resource="Workflows/Find_Supporting_Documents_component.t2flow"/>
+    <ore:aggregates rdf:resource="Documents/README.txt"/>
+    <ore:aggregates rdf:resource="annotation-skeleton.rdf"/>
+    <ore:aggregates rdf:nodeID="_be921e44-ea2a-44b0-99bd-ba68e45a5a26"/>
+    <ore:aggregates rdf:resource="Documents/HOWTO.txt~"/>
+    <ore:aggregates rdf:resource="Workflows/Get_concept_information_component.t2flow"/>
+    <ore:aggregates rdf:resource="Workflows/Explain_concept_scores_component.t2flow"/>
+    <ore:aggregates rdf:resource="Workflows/main_nested_workflow.t2flow"/>
+    <ore:aggregates rdf:resource="Datasets/top_snps_to_annotate_input.txt"/>
+    <ore:aggregates rdf:nodeID="_0ad36b01-1f60-4da8-a70e-20d29736067b"/>
+    <ore:aggregates rdf:resource="Workflows/Match_concept_profiles_component.t2flow"/>
+    <ore:aggregates rdf:resource="make.sh"/>
+    <ore:aggregates rdf:resource="ro_annotation.rdf"/>
+    <ore:aggregates rdf:resource="Workflows/Get_Concept_IDs_component.t2flow"/>
+    <ore:aggregates rdf:resource="Workflows/SNP_ID2EntrezGene_ID_component.t2flow"/>
+    <ore:aggregates rdf:resource="Datasets/List_Concept_Sets_output.xls"/>
+    <ore:aggregates rdf:resource="make.sh~"/>
+    <ore:aggregates rdf:resource="Workflows/Find_co_occurring_documents_component.t2flow"/>
+    <ore:aggregates rdf:resource="Workflows/List_Predefined_Concept_Sets.t2flow"/>
+    <ore:aggregates rdf:resource="Documents/HOWTO.txt"/>
+    <ore:aggregates rdf:resource="Documents/README.txt~"/>
+    <ore:aggregates rdf:resource="Workflow-runs/List_Concept_sets_run1.rdf"/>
+    <ore:aggregates rdf:resource="Datasets/SNP_ID2EntrezGene_ID_output.xls"/>
+    <ore:aggregates rdf:resource="Workflows/DatabaseID_to_ConceptID_component.t2flow"/>
+    <ore:aggregates rdf:resource="ro_annotation.rdf~"/>
+    <dcterms:created>2012-07-20T14:39:59</dcterms:created>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_be921e44-ea2a-44b0-99bd-ba68e45a5a26">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ao:body rdf:resource="ro_annotation.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="./"/>
+  </rdf:Description>
+</rdf:RDF>

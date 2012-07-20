@@ -1,0 +1,20 @@
+
+
+The scientific experiment represented by this research object pertains to the functional annotation of SNPs using next-generation text mining technology. (See README.txt)
+
+
+HOW TO GET THE SNP ANNOTATIONS
+_________________________________________________________________________________________
+
+This HOWTO shows how to get the SNP annotations.
+
+
+1) Run the workflow: List_Predefined_Concept_Sets.t2flow. Inspect the output and select a concept set number that will be used for the text mining workflow (main_nested_workflow.t2flow).
+2) Run the workflow: main_nested_workflow.t2flow. Input file: top_snps_to_annotate_input.txt.
+
+
+NOTES
+___________________________________________________
+
+Our internal data are in:
+Anni databases: 	(@@add locations!)
