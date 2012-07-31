@@ -1,0 +1,179 @@
+@base <http://ns.taverna.org.uk/2010/workflowBundle/3c6eca00-e3a8-46b8-86bd-7c4b48a3ac77/workflow/Explain_concept_scores/> .
+@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
+@prefix wf4ever: <http://purl.org/wf4ever/wf4ever#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<processor/Beanshell/> a wfdesc:Process , <http://www.w3.org/2002/07/owl#Thing> , wfdesc:Description , wf4ever:BeanshellScript ;
+	wf4ever:script """ArrayList tmp = new ArrayList(inputList);
+
+tmp.add(item);
+
+outputList = tmp;""" ;
+	rdfs:label "Beanshell" ;
+	wfdesc:hasInput <processor/Beanshell/in/inputList> , <processor/Beanshell/in/item> ;
+	wfdesc:hasOutput <processor/Beanshell/out/outputList> .
+
+<processor/explainScores/> a wfdesc:Process , <http://www.w3.org/2002/07/owl#Thing> , wfdesc:Description , wf4ever:SOAPService ;
+	wf4ever:wsdlURI "http://ws.biosemantics.org/ConceptRecognizerService?wsdl"^^<http://www.w3.org/2001/XMLSchema#anyURI> ;
+	rdfs:label "explainScores" ;
+	wfdesc:hasInput <processor/explainScores/in/parameters> ;
+	wfdesc:hasOutput <processor/explainScores/out/parameters> .
+
+<datalink?from=in/matchConcept&to=processor/Beanshell/in/item> a wfdesc:DataLink ;
+	wfdesc:hasSource <in/matchConcept> ;
+	wfdesc:hasSink <processor/Beanshell/in/item> .
+
+<datalink?from=in/maxNrResults&to=processor/explainScores_input/in/cutoffValue> a wfdesc:DataLink ;
+	wfdesc:hasSource <in/maxNrResults> ;
+	wfdesc:hasSink <processor/explainScores_input/in/cutoffValue> .
+
+<datalink?from=in/queryConceptSet&to=processor/Beanshell/in/inputList> a wfdesc:DataLink ;
+	wfdesc:hasSource <in/queryConceptSet> ;
+	wfdesc:hasSink <processor/Beanshell/in/inputList> .
+
+<datalink?from=processor/Beanshell/out/outputList&to=processor/explainScores_input/in/conceptCUIs> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/Beanshell/out/outputList> ;
+	wfdesc:hasSink <processor/explainScores_input/in/conceptCUIs> .
+
+<datalink?from=processor/ConceptContributionTable_ConceptContributionTable/out/conceptId&to=out/ConceptID> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/ConceptContributionTable_ConceptContributionTable/out/conceptId> ;
+	wfdesc:hasSink <out/ConceptID> .
+
+<datalink?from=processor/ConceptContributionTable_ConceptContributionTable/out/conceptName&to=out/ConceptName> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/ConceptContributionTable_ConceptContributionTable/out/conceptName> ;
+	wfdesc:hasSink <out/ConceptName> .
+
+<datalink?from=processor/ConceptContributionTable_ConceptContributionTable/out/contribution&to=out/ConceptContribution> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/ConceptContributionTable_ConceptContributionTable/out/contribution> ;
+	wfdesc:hasSink <out/ConceptContribution> .
+
+<datalink?from=processor/explainScores/out/parameters&to=processor/explainScores_output/in/input> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/explainScores/out/parameters> ;
+	wfdesc:hasSink <processor/explainScores_output/in/input> .
+
+<datalink?from=processor/explainScores_input/out/output&to=processor/explainScores/in/parameters> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/explainScores_input/out/output> ;
+	wfdesc:hasSink <processor/explainScores/in/parameters> .
+
+<datalink?from=processor/explainScores_output/out/return&to=processor/explainScores_return/in/input> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/explainScores_output/out/return> ;
+	wfdesc:hasSink <processor/explainScores_return/in/input> .
+
+<datalink?from=processor/explainScores_return/out/ConceptContributionTable&to=out/xml_table> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/explainScores_return/out/ConceptContributionTable> ;
+	wfdesc:hasSink <out/xml_table> .
+
+<datalink?from=processor/explainScores_return/out/ConceptContributionTable&to=processor/return_ConceptContributionTable/in/input> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/explainScores_return/out/ConceptContributionTable> ;
+	wfdesc:hasSink <processor/return_ConceptContributionTable/in/input> .
+
+<datalink?from=processor/return_ConceptContributionTable/out/ConceptContributionTable&to=processor/ConceptContributionTable_ConceptContributionTable/in/input> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/return_ConceptContributionTable/out/ConceptContributionTable> ;
+	wfdesc:hasSink <processor/ConceptContributionTable_ConceptContributionTable/in/input> .
+
+<> a wfdesc:Workflow , wfdesc:Description , wfdesc:Process ;
+	rdfs:label "Explain_concept_scores" ;
+	wfdesc:hasInput <in/matchConcept> , <in/maxNrResults> , <in/queryConceptSet> ;
+	wfdesc:hasOutput <out/ConceptContribution> , <out/ConceptID> , <out/ConceptName> , <out/xml_table> ;
+	wfdesc:hasSubProcess <processor/Beanshell/> , <processor/ConceptContributionTable_ConceptContributionTable/> , <processor/explainScores/> , <processor/explainScores_input/> , <processor/explainScores_output/> , <processor/explainScores_return/> , <processor/return_ConceptContributionTable/> ;
+	wfdesc:hasDataLink <datalink?from=in/matchConcept&to=processor/Beanshell/in/item> , <datalink?from=in/maxNrResults&to=processor/explainScores_input/in/cutoffValue> , <datalink?from=in/queryConceptSet&to=processor/Beanshell/in/inputList> , <datalink?from=processor/Beanshell/out/outputList&to=processor/explainScores_input/in/conceptCUIs> , <datalink?from=processor/ConceptContributionTable_ConceptContributionTable/out/conceptId&to=out/ConceptID> , <datalink?from=processor/ConceptContributionTable_ConceptContributionTable/out/conceptName&to=out/ConceptName> , <datalink?from=processor/ConceptContributionTable_ConceptContributionTable/out/contribution&to=out/ConceptContribution> , <datalink?from=processor/explainScores/out/parameters&to=processor/explainScores_output/in/input> , <datalink?from=processor/explainScores_input/out/output&to=processor/explainScores/in/parameters> , <datalink?from=processor/explainScores_output/out/return&to=processor/explainScores_return/in/input> , <datalink?from=processor/explainScores_return/out/ConceptContributionTable&to=out/xml_table> , <datalink?from=processor/explainScores_return/out/ConceptContributionTable&to=processor/return_ConceptContributionTable/in/input> , <datalink?from=processor/return_ConceptContributionTable/out/ConceptContributionTable&to=processor/ConceptContributionTable_ConceptContributionTable/in/input> .
+
+<in/matchConcept> a wfdesc:Input , wfdesc:Description , wfdesc:Output ;
+	rdfs:label "matchConcept" .
+
+<in/maxNrResults> a wfdesc:Input , wfdesc:Description , wfdesc:Output ;
+	rdfs:label "maxNrResults" .
+
+<in/queryConceptSet> a wfdesc:Input , wfdesc:Description , wfdesc:Output ;
+	rdfs:label "queryConceptSet" .
+
+<out/ConceptContribution> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
+	rdfs:label "ConceptContribution" .
+
+<out/ConceptID> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
+	rdfs:label "ConceptID" .
+
+<out/ConceptName> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
+	rdfs:label "ConceptName" .
+
+<out/xml_table> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
+	rdfs:label "xml_table" .
+
+<processor/Beanshell/in/inputList> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "inputList" .
+
+<processor/Beanshell/in/item> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "item" .
+
+<processor/Beanshell/out/outputList> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "outputList" .
+
+<processor/ConceptContributionTable_ConceptContributionTable/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "ConceptContributionTable_ConceptContributionTable" ;
+	wfdesc:hasInput <processor/ConceptContributionTable_ConceptContributionTable/in/input> ;
+	wfdesc:hasOutput <processor/ConceptContributionTable_ConceptContributionTable/out/conceptId> , <processor/ConceptContributionTable_ConceptContributionTable/out/conceptName> , <processor/ConceptContributionTable_ConceptContributionTable/out/contribution> .
+
+<processor/ConceptContributionTable_ConceptContributionTable/in/input> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "input" .
+
+<processor/ConceptContributionTable_ConceptContributionTable/out/conceptId> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "conceptId" .
+
+<processor/ConceptContributionTable_ConceptContributionTable/out/conceptName> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "conceptName" .
+
+<processor/ConceptContributionTable_ConceptContributionTable/out/contribution> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "contribution" .
+
+<processor/explainScores/in/parameters> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "parameters" .
+
+<processor/explainScores/out/parameters> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "parameters" .
+
+<processor/explainScores_input/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "explainScores_input" ;
+	wfdesc:hasInput <processor/explainScores_input/in/conceptCUIs> , <processor/explainScores_input/in/cutoffValue> ;
+	wfdesc:hasOutput <processor/explainScores_input/out/output> .
+
+<processor/explainScores_input/in/conceptCUIs> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "conceptCUIs" .
+
+<processor/explainScores_input/in/cutoffValue> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "cutoffValue" .
+
+<processor/explainScores_input/out/output> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "output" .
+
+<processor/explainScores_output/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "explainScores_output" ;
+	wfdesc:hasInput <processor/explainScores_output/in/input> ;
+	wfdesc:hasOutput <processor/explainScores_output/out/return> .
+
+<processor/explainScores_output/in/input> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "input" .
+
+<processor/explainScores_output/out/return> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "return" .
+
+<processor/explainScores_return/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "explainScores_return" ;
+	wfdesc:hasInput <processor/explainScores_return/in/input> ;
+	wfdesc:hasOutput <processor/explainScores_return/out/ConceptContributionTable> .
+
+<processor/explainScores_return/in/input> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "input" .
+
+<processor/explainScores_return/out/ConceptContributionTable> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "ConceptContributionTable" .
+
+<processor/return_ConceptContributionTable/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "return_ConceptContributionTable" ;
+	wfdesc:hasInput <processor/return_ConceptContributionTable/in/input> ;
+	wfdesc:hasOutput <processor/return_ConceptContributionTable/out/ConceptContributionTable> .
+
+<processor/return_ConceptContributionTable/in/input> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "input" .
+
+<processor/return_ConceptContributionTable/out/ConceptContributionTable> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "ConceptContributionTable" .

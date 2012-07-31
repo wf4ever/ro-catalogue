@@ -1,0 +1,142 @@
+@base <http://ns.taverna.org.uk/2010/workflowBundle/234b78c5-66c4-4e83-bbe0-a21ec539a50d/workflow/Find_co_occurring_do/> .
+@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
+@prefix wf4ever: <http://purl.org/wf4ever/wf4ever#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<processor/findCoOccurringDocuments/> a wfdesc:Process , <http://www.w3.org/2002/07/owl#Thing> , wfdesc:Description , wf4ever:SOAPService ;
+	wf4ever:wsdlURI "http://ws.biosemantics.org/ConceptRecognizerService?wsdl"^^<http://www.w3.org/2001/XMLSchema#anyURI> ;
+	rdfs:label "findCoOccurringDocuments" ;
+	wfdesc:hasInput <processor/findCoOccurringDocuments/in/parameters> ;
+	wfdesc:hasOutput <processor/findCoOccurringDocuments/out/parameters> .
+
+<datalink?from=in/ConceptID_1&to=processor/findCoOccurringDocuments_input/in/conceptID1> a wfdesc:DataLink ;
+	wfdesc:hasSource <in/ConceptID_1> ;
+	wfdesc:hasSink <processor/findCoOccurringDocuments_input/in/conceptID1> .
+
+<datalink?from=in/ConceptID_2&to=processor/findCoOccurringDocuments_input/in/conceptID2> a wfdesc:DataLink ;
+	wfdesc:hasSource <in/ConceptID_2> ;
+	wfdesc:hasSink <processor/findCoOccurringDocuments_input/in/conceptID2> .
+
+<datalink?from=in/Cutoff_value&to=processor/findCoOccurringDocuments_input/in/cutoffValue> a wfdesc:DataLink ;
+	wfdesc:hasSource <in/Cutoff_value> ;
+	wfdesc:hasSink <processor/findCoOccurringDocuments_input/in/cutoffValue> .
+
+<datalink?from=processor/SupportingDocumentsList_SupportingDocumentsList/out/ID&to=out/Document_ID> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/SupportingDocumentsList_SupportingDocumentsList/out/ID> ;
+	wfdesc:hasSink <out/Document_ID> .
+
+<datalink?from=processor/SupportingDocumentsList_SupportingDocumentsList/out/title&to=out/Document_title> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/SupportingDocumentsList_SupportingDocumentsList/out/title> ;
+	wfdesc:hasSink <out/Document_title> .
+
+<datalink?from=processor/findCoOccurringDocuments/out/parameters&to=processor/findCoOccurringDocuments_output/in/input> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/findCoOccurringDocuments/out/parameters> ;
+	wfdesc:hasSink <processor/findCoOccurringDocuments_output/in/input> .
+
+<datalink?from=processor/findCoOccurringDocuments_input/out/output&to=processor/findCoOccurringDocuments/in/parameters> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/findCoOccurringDocuments_input/out/output> ;
+	wfdesc:hasSink <processor/findCoOccurringDocuments/in/parameters> .
+
+<datalink?from=processor/findCoOccurringDocuments_output/out/return&to=processor/findCoOccurringDocuments_return/in/input> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/findCoOccurringDocuments_output/out/return> ;
+	wfdesc:hasSink <processor/findCoOccurringDocuments_return/in/input> .
+
+<datalink?from=processor/findCoOccurringDocuments_return/out/SupportingDocumentsList&to=processor/return_SupportingDocumentsList/in/input> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/findCoOccurringDocuments_return/out/SupportingDocumentsList> ;
+	wfdesc:hasSink <processor/return_SupportingDocumentsList/in/input> .
+
+<datalink?from=processor/return_SupportingDocumentsList/out/SupportingDocumentsList&to=processor/SupportingDocumentsList_SupportingDocumentsList/in/input> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/return_SupportingDocumentsList/out/SupportingDocumentsList> ;
+	wfdesc:hasSink <processor/SupportingDocumentsList_SupportingDocumentsList/in/input> .
+
+<> a wfdesc:Workflow , wfdesc:Description , wfdesc:Process ;
+	rdfs:label "Find_co_occurring_do" ;
+	wfdesc:hasInput <in/ConceptID_1> , <in/ConceptID_2> , <in/Cutoff_value> ;
+	wfdesc:hasOutput <out/Document_ID> , <out/Document_title> ;
+	wfdesc:hasSubProcess <processor/SupportingDocumentsList_SupportingDocumentsList/> , <processor/findCoOccurringDocuments/> , <processor/findCoOccurringDocuments_input/> , <processor/findCoOccurringDocuments_output/> , <processor/findCoOccurringDocuments_return/> , <processor/return_SupportingDocumentsList/> ;
+	wfdesc:hasDataLink <datalink?from=in/ConceptID_1&to=processor/findCoOccurringDocuments_input/in/conceptID1> , <datalink?from=in/ConceptID_2&to=processor/findCoOccurringDocuments_input/in/conceptID2> , <datalink?from=in/Cutoff_value&to=processor/findCoOccurringDocuments_input/in/cutoffValue> , <datalink?from=processor/SupportingDocumentsList_SupportingDocumentsList/out/ID&to=out/Document_ID> , <datalink?from=processor/SupportingDocumentsList_SupportingDocumentsList/out/title&to=out/Document_title> , <datalink?from=processor/findCoOccurringDocuments/out/parameters&to=processor/findCoOccurringDocuments_output/in/input> , <datalink?from=processor/findCoOccurringDocuments_input/out/output&to=processor/findCoOccurringDocuments/in/parameters> , <datalink?from=processor/findCoOccurringDocuments_output/out/return&to=processor/findCoOccurringDocuments_return/in/input> , <datalink?from=processor/findCoOccurringDocuments_return/out/SupportingDocumentsList&to=processor/return_SupportingDocumentsList/in/input> , <datalink?from=processor/return_SupportingDocumentsList/out/SupportingDocumentsList&to=processor/SupportingDocumentsList_SupportingDocumentsList/in/input> .
+
+<in/ConceptID_1> a wfdesc:Input , wfdesc:Description , wfdesc:Output ;
+	rdfs:label "ConceptID_1" .
+
+<in/ConceptID_2> a wfdesc:Input , wfdesc:Description , wfdesc:Output ;
+	rdfs:label "ConceptID_2" .
+
+<in/Cutoff_value> a wfdesc:Input , wfdesc:Description , wfdesc:Output ;
+	rdfs:label "Cutoff_value" .
+
+<out/Document_ID> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
+	rdfs:label "Document_ID" .
+
+<out/Document_title> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
+	rdfs:label "Document_title" .
+
+<processor/SupportingDocumentsList_SupportingDocumentsList/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "SupportingDocumentsList_SupportingDocumentsList" ;
+	wfdesc:hasInput <processor/SupportingDocumentsList_SupportingDocumentsList/in/input> ;
+	wfdesc:hasOutput <processor/SupportingDocumentsList_SupportingDocumentsList/out/ID> , <processor/SupportingDocumentsList_SupportingDocumentsList/out/title> .
+
+<processor/SupportingDocumentsList_SupportingDocumentsList/in/input> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "input" .
+
+<processor/SupportingDocumentsList_SupportingDocumentsList/out/ID> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "ID" .
+
+<processor/SupportingDocumentsList_SupportingDocumentsList/out/title> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "title" .
+
+<processor/findCoOccurringDocuments/in/parameters> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "parameters" .
+
+<processor/findCoOccurringDocuments/out/parameters> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "parameters" .
+
+<processor/findCoOccurringDocuments_input/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "findCoOccurringDocuments_input" ;
+	wfdesc:hasInput <processor/findCoOccurringDocuments_input/in/conceptID1> , <processor/findCoOccurringDocuments_input/in/conceptID2> , <processor/findCoOccurringDocuments_input/in/cutoffValue> ;
+	wfdesc:hasOutput <processor/findCoOccurringDocuments_input/out/output> .
+
+<processor/findCoOccurringDocuments_input/in/conceptID1> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "conceptID1" .
+
+<processor/findCoOccurringDocuments_input/in/conceptID2> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "conceptID2" .
+
+<processor/findCoOccurringDocuments_input/in/cutoffValue> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "cutoffValue" .
+
+<processor/findCoOccurringDocuments_input/out/output> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "output" .
+
+<processor/findCoOccurringDocuments_output/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "findCoOccurringDocuments_output" ;
+	wfdesc:hasInput <processor/findCoOccurringDocuments_output/in/input> ;
+	wfdesc:hasOutput <processor/findCoOccurringDocuments_output/out/return> .
+
+<processor/findCoOccurringDocuments_output/in/input> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "input" .
+
+<processor/findCoOccurringDocuments_output/out/return> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "return" .
+
+<processor/findCoOccurringDocuments_return/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "findCoOccurringDocuments_return" ;
+	wfdesc:hasInput <processor/findCoOccurringDocuments_return/in/input> ;
+	wfdesc:hasOutput <processor/findCoOccurringDocuments_return/out/SupportingDocumentsList> .
+
+<processor/findCoOccurringDocuments_return/in/input> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "input" .
+
+<processor/findCoOccurringDocuments_return/out/SupportingDocumentsList> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "SupportingDocumentsList" .
+
+<processor/return_SupportingDocumentsList/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "return_SupportingDocumentsList" ;
+	wfdesc:hasInput <processor/return_SupportingDocumentsList/in/input> ;
+	wfdesc:hasOutput <processor/return_SupportingDocumentsList/out/SupportingDocumentsList> .
+
+<processor/return_SupportingDocumentsList/in/input> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "input" .
+
+<processor/return_SupportingDocumentsList/out/SupportingDocumentsList> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "SupportingDocumentsList" .
