@@ -3,7 +3,7 @@
 @prefix wf4ever: <http://purl.org/wf4ever/wf4ever#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<processor/listPredefinedConceptSets/> a wfdesc:Process , <http://www.w3.org/2002/07/owl#Thing> , wfdesc:Description , wf4ever:SOAPService ;
+<processor/listPredefinedConceptSets/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:SOAPService ;
 	wf4ever:wsdlURI "http://ws.biosemantics.org/ConceptRecognizerService?wsdl"^^<http://www.w3.org/2001/XMLSchema#anyURI> ;
 	rdfs:label "listPredefinedConceptSets" ;
 	wfdesc:hasOutput <processor/listPredefinedConceptSets/out/parameters> .

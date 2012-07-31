@@ -1,68 +1,9 @@
-@base <http://ns.taverna.org.uk/2010/workflowBundle/8481be24-7358-4c81-a8fc-2b2b89f0069e/workflow/Workflow11/> .
+@base <http://ns.taverna.org.uk/2010/workflowBundle/dadb1217-4ae9-41cd-8b7c-6d20c1ef250a/workflow/Workflow11/> .
 @prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
 @prefix wf4ever: <http://purl.org/wf4ever/wf4ever#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<processor/Concatenate_Files_2/> a wfdesc:Process , <http://www.w3.org/2002/07/owl#Thing> , wfdesc:Description , wf4ever:BeanshellScript ;
-	wf4ever:script """BufferedReader getReader (String fileUrl) throws IOException {
-		InputStreamReader reader;
-		try {
-			reader = new FileReader(fileUrl);
-		}
-		catch (FileNotFoundException e) {
-			// try a real URL instead
-			URL url = new URL(fileUrl);
-			reader = new InputStreamReader (url.openStream());
-		}
-		return new BufferedReader(reader);
-	}
-
-String NEWLINE = System.getProperty(\"line.separator\");
-
-boolean displayResults = false;
-if (displayresults != void) {
-	displayResults = Boolean.valueOf(displayresults).booleanValue();
-}
-
-StringBuffer sb = new StringBuffer(2000);
-
-if (outputfile == void) {
-	throw new RuntimeException(\"The 'outputfile' parameter cannot be null\");
-}
-
-if (filelist == null) {
-	throw new RuntimeException(\"The 'filelist' parameter cannot be null\");
-}
-
-String str = null;
-
-Writer writer = new FileWriter(outputfile);
-for (int i = 0; i < filelist.size(); i++) {
-	BufferedReader reader = getReader(filelist.get(i));
-	while ((str = reader.readLine()) != null) {
-		writer.write(str);
-		writer.write(NEWLINE);
-
-		if (displayResults) {
-			sb.append(str);
-			sb.append(NEWLINE);
-		}
-	}
-
-	reader.close();
-
-}
-writer.flush();
-writer.close();
-
-if (displayResults) {
-	results= sb.toString();
-}
-""" ;
-	rdfs:label "Concatenate_Files_2" ;
-	wfdesc:hasInput <processor/Concatenate_Files_2/in/filelist> , <processor/Concatenate_Files_2/in/outputfile> .
-
-<processor/Convert_to_Kegg_id/> a wfdesc:Process , <http://www.w3.org/2002/07/owl#Thing> , wfdesc:Description , wf4ever:BeanshellScript ;
+<processor/Convert_to_Kegg_id/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:BeanshellScript ;
 	wf4ever:script """import java.util.*;
 
 String [] line = string.split(\"\\t\");
@@ -82,19 +23,7 @@ else {
 	wfdesc:hasInput <processor/Convert_to_Kegg_id/in/string> ;
 	wfdesc:hasOutput <processor/Convert_to_Kegg_id/out/out1> .
 
-<processor/Create_and_populate_temporary_file_2/> a wfdesc:Process , <http://www.w3.org/2002/07/owl#Thing> , wfdesc:Description , wf4ever:BeanshellScript ;
-	wf4ever:script """File f = File.createTempFile(\"taverna\", \".tmp\");
-
-BufferedWriter writer = new BufferedWriter(new FileWriter(f));
-writer.write(content);
-writer.close();
-
-filepath = f.getCanonicalPath();""" ;
-	rdfs:label "Create_and_populate_temporary_file_2" ;
-	wfdesc:hasInput <processor/Create_and_populate_temporary_file_2/in/content> ;
-	wfdesc:hasOutput <processor/Create_and_populate_temporary_file_2/out/filepath> .
-
-<processor/Flatten_List/> a wfdesc:Process , <http://www.w3.org/2002/07/owl#Thing> , wfdesc:Description , wf4ever:BeanshellScript ;
+<processor/Flatten_List/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:BeanshellScript ;
 	wf4ever:script """flatten(inputs, outputs, depth) {
 	for (i = inputs.iterator(); i.hasNext();) {
 	    element = i.next();
@@ -113,7 +42,7 @@ flatten(inputlist, outputlist, 1);""" ;
 	wfdesc:hasInput <processor/Flatten_List/in/inputlist> ;
 	wfdesc:hasOutput <processor/Flatten_List/out/outputlist> .
 
-<processor/Flatten_List_2/> a wfdesc:Process , <http://www.w3.org/2002/07/owl#Thing> , wfdesc:Description , wf4ever:BeanshellScript ;
+<processor/Flatten_List_2/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:BeanshellScript ;
 	wf4ever:script """flatten(inputs, outputs, depth) {
 	for (i = inputs.iterator(); i.hasNext();) {
 	    element = i.next();
@@ -132,7 +61,7 @@ flatten(inputlist, outputlist, 1);""" ;
 	wfdesc:hasInput <processor/Flatten_List_2/in/inputlist> ;
 	wfdesc:hasOutput <processor/Flatten_List_2/out/outputlist> .
 
-<processor/Flatten_List_3/> a wfdesc:Process , <http://www.w3.org/2002/07/owl#Thing> , wfdesc:Description , wf4ever:BeanshellScript ;
+<processor/Flatten_List_3/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:BeanshellScript ;
 	wf4ever:script """flatten(inputs, outputs, depth) {
 	for (i = inputs.iterator(); i.hasNext();) {
 	    element = i.next();
@@ -151,7 +80,7 @@ flatten(inputlist, outputlist, 1);""" ;
 	wfdesc:hasInput <processor/Flatten_List_3/in/inputlist> ;
 	wfdesc:hasOutput <processor/Flatten_List_3/out/outputlist> .
 
-<processor/Flatten_List_5_2/> a wfdesc:Process , <http://www.w3.org/2002/07/owl#Thing> , wfdesc:Description , wf4ever:BeanshellScript ;
+<processor/Flatten_List_5_2/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:BeanshellScript ;
 	wf4ever:script """flatten(inputs, outputs, depth) {
 	for (i = inputs.iterator(); i.hasNext();) {
 	    element = i.next();
@@ -170,7 +99,7 @@ flatten(inputlist, outputlist, 1);""" ;
 	wfdesc:hasInput <processor/Flatten_List_5_2/in/inputlist> ;
 	wfdesc:hasOutput <processor/Flatten_List_5_2/out/outputlist> .
 
-<processor/Flatten_List_6/> a wfdesc:Process , <http://www.w3.org/2002/07/owl#Thing> , wfdesc:Description , wf4ever:BeanshellScript ;
+<processor/Flatten_List_6/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:BeanshellScript ;
 	wf4ever:script """flatten(inputs, outputs, depth) {
 	for (i = inputs.iterator(); i.hasNext();) {
 	    element = i.next();
@@ -189,53 +118,7 @@ flatten(inputlist, outputlist, 1);""" ;
 	wfdesc:hasInput <processor/Flatten_List_6/in/inputlist> ;
 	wfdesc:hasOutput <processor/Flatten_List_6/out/outputlist> .
 
-<processor/Read_Text_File/> a wfdesc:Process , <http://www.w3.org/2002/07/owl#Thing> , wfdesc:Description , wf4ever:BeanshellScript ;
-	wf4ever:script """BufferedReader getReader (String fileUrl, String encoding) throws IOException {
-		InputStreamReader reader;
-		try {
-			if (encoding == null) {
-				reader = new FileReader(fileUrl);
-			} else {
-				reader = new InputStreamReader(new FileInputStream(fileUrl),encoding); 
-			}
-		}
-		catch (FileNotFoundException e) {
-			// try a real URL instead
-			URL url = new URL(fileUrl);
-			if (encoding == null) {
-				reader = new InputStreamReader (url.openStream());
-			} else {
-				reader = new InputStreamReader (url.openStream(), encoding);
-			}
-		}
-		return new BufferedReader(reader);
-	}
-
-
-
-StringBuffer sb = new StringBuffer(4000);
-
-if (encoding == void) {
-	encoding = null;
-}
-
-BufferedReader in = getReader(fileurl, encoding);
-String str;
-String lineEnding = System.getProperty(\"line.separator\");
-
-while ((str = in.readLine()) != null) {
-	sb.append(str);
-	sb.append(lineEnding);
-}
-in.close();
-filecontents = sb.toString();
-  
-""" ;
-	rdfs:label "Read_Text_File" ;
-	wfdesc:hasInput <processor/Read_Text_File/in/fileurl> ;
-	wfdesc:hasOutput <processor/Read_Text_File/out/filecontents> .
-
-<processor/Split_string_into_string_list_by_regular_expression/> a wfdesc:Process , <http://www.w3.org/2002/07/owl#Thing> , wfdesc:Description , wf4ever:BeanshellScript ;
+<processor/Split_string_into_string_list_by_regular_expression/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:BeanshellScript ;
 	wf4ever:script """List split = new ArrayList();
 if (!string.equals(\"\")) {
 	String regexString = \",\";
@@ -252,7 +135,7 @@ if (!string.equals(\"\")) {
 	wfdesc:hasInput <processor/Split_string_into_string_list_by_regular_expression/in/regex> , <processor/Split_string_into_string_list_by_regular_expression/in/string> ;
 	wfdesc:hasOutput <processor/Split_string_into_string_list_by_regular_expression/out/split> .
 
-<processor/Split_string_into_string_list_by_regular_expression_2/> a wfdesc:Process , <http://www.w3.org/2002/07/owl#Thing> , wfdesc:Description , wf4ever:BeanshellScript ;
+<processor/Split_string_into_string_list_by_regular_expression_2/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:BeanshellScript ;
 	wf4ever:script """List split = new ArrayList();
 if (!string.equals(\"\")) {
 	String regexString = \",\";
@@ -269,7 +152,7 @@ if (!string.equals(\"\")) {
 	wfdesc:hasInput <processor/Split_string_into_string_list_by_regular_expression_2/in/regex> , <processor/Split_string_into_string_list_by_regular_expression_2/in/string> ;
 	wfdesc:hasOutput <processor/Split_string_into_string_list_by_regular_expression_2/out/split> .
 
-<processor/align_snp_gene_and_extract_gene_id/> a wfdesc:Process , <http://www.w3.org/2002/07/owl#Thing> , wfdesc:Description , wf4ever:BeanshellScript ;
+<processor/align_snp_gene_and_extract_gene_id/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:BeanshellScript ;
 	wf4ever:script """import java.util.List;
 import java.util.ArrayList;
 List tmp = new ArrayList();
@@ -305,7 +188,7 @@ out1=tmp;""" ;
 	wfdesc:hasInput <processor/align_snp_gene_and_extract_gene_id/in/in1> , <processor/align_snp_gene_and_extract_gene_id/in/in2> ;
 	wfdesc:hasOutput <processor/align_snp_gene_and_extract_gene_id/out/out1> .
 
-<processor/align_snp_gene_name/> a wfdesc:Process , <http://www.w3.org/2002/07/owl#Thing> , wfdesc:Description , wf4ever:BeanshellScript ;
+<processor/align_snp_gene_name/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:BeanshellScript ;
 	wf4ever:script """import java.util.List;
 import java.util.ArrayList;
 List tmp = new ArrayList();
@@ -341,7 +224,7 @@ out1=tmp;""" ;
 	wfdesc:hasInput <processor/align_snp_gene_name/in/in1> , <processor/align_snp_gene_name/in/in2> ;
 	wfdesc:hasOutput <processor/align_snp_gene_name/out/out1> .
 
-<processor/align_snp_gene_name_pwy_ids_2/> a wfdesc:Process , <http://www.w3.org/2002/07/owl#Thing> , wfdesc:Description , wf4ever:BeanshellScript ;
+<processor/align_snp_gene_name_pwy_ids_2/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:BeanshellScript ;
 	wf4ever:script """import java.util.List;
 import java.util.ArrayList;
 List tmp = new ArrayList();
@@ -377,7 +260,7 @@ out1=tmp;""" ;
 	wfdesc:hasInput <processor/align_snp_gene_name_pwy_ids_2/in/in1> , <processor/align_snp_gene_name_pwy_ids_2/in/in2> ;
 	wfdesc:hasOutput <processor/align_snp_gene_name_pwy_ids_2/out/out1> .
 
-<processor/extract_gene_name/> a wfdesc:Process , <http://www.w3.org/2002/07/owl#Thing> , wfdesc:Description , wf4ever:BeanshellScript ;
+<processor/extract_gene_name/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:BeanshellScript ;
 	wf4ever:script """import java.util.*;
 
 
@@ -404,7 +287,7 @@ else {
 	wfdesc:hasInput <processor/extract_gene_name/in/string> ;
 	wfdesc:hasOutput <processor/extract_gene_name/out/out1> .
 
-<processor/extract_snp_id/> a wfdesc:Process , <http://www.w3.org/2002/07/owl#Thing> , wfdesc:Description , wf4ever:BeanshellScript ;
+<processor/extract_snp_id/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:BeanshellScript ;
 	wf4ever:script """import java.util.*;
 
 String [] line = string.split(\"\\t\");
@@ -413,7 +296,7 @@ out1=line[0].trim();""" ;
 	wfdesc:hasInput <processor/extract_snp_id/in/string> ;
 	wfdesc:hasOutput <processor/extract_snp_id/out/out1> .
 
-<processor/input_chr_position/> a wfdesc:Process , <http://www.w3.org/2002/07/owl#Thing> , wfdesc:Description , wf4ever:BeanshellScript ;
+<processor/input_chr_position/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:BeanshellScript ;
 	wf4ever:script """import java.util.*;
 
 List tmp_end = new ArrayList();
@@ -441,27 +324,23 @@ chr_out = chr_in;
 	wfdesc:hasInput <processor/input_chr_position/in/chr_in> , <processor/input_chr_position/in/in1> , <processor/input_chr_position/in/in2> ;
 	wfdesc:hasOutput <processor/input_chr_position/out/chr_out> , <processor/input_chr_position/out/end_out> , <processor/input_chr_position/out/start_out> .
 
-<processor/btit/> a wfdesc:Process , <http://www.w3.org/2002/07/owl#Thing> , wfdesc:Description , wf4ever:SOAPService ;
+<processor/btit/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:SOAPService ;
 	wf4ever:wsdlURI "http://soap.genome.jp/KEGG.wsdl"^^<http://www.w3.org/2001/XMLSchema#anyURI> ;
 	rdfs:label "btit" ;
 	wfdesc:hasInput <processor/btit/in/string> ;
 	wfdesc:hasOutput <processor/btit/out/return> .
 
-<processor/btit_2_2/> a wfdesc:Process , <http://www.w3.org/2002/07/owl#Thing> , wfdesc:Description , wf4ever:SOAPService ;
+<processor/btit_2_2/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:SOAPService ;
 	wf4ever:wsdlURI "http://soap.genome.jp/KEGG.wsdl"^^<http://www.w3.org/2001/XMLSchema#anyURI> ;
 	rdfs:label "btit_2_2" ;
 	wfdesc:hasInput <processor/btit_2_2/in/string> ;
 	wfdesc:hasOutput <processor/btit_2_2/out/return> .
 
-<processor/get_pathways_by_genes/> a wfdesc:Process , <http://www.w3.org/2002/07/owl#Thing> , wfdesc:Description , wf4ever:SOAPService ;
+<processor/get_pathways_by_genes/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:SOAPService ;
 	wf4ever:wsdlURI "http://soap.genome.jp/KEGG.wsdl"^^<http://www.w3.org/2001/XMLSchema#anyURI> ;
 	rdfs:label "get_pathways_by_genes" ;
 	wfdesc:hasInput <processor/get_pathways_by_genes/in/genes_id_list> ;
 	wfdesc:hasOutput <processor/get_pathways_by_genes/out/return> .
-
-<datalink?from=in/in&to=processor/Read_Text_File/in/fileurl> a wfdesc:DataLink ;
-	wfdesc:hasSource <in/in> ;
-	wfdesc:hasSink <processor/Read_Text_File/in/fileurl> .
 
 <datalink?from=processor/Convert_to_Kegg_id/out/out1&to=processor/Flatten_List_6/in/inputlist> a wfdesc:DataLink ;
 	wfdesc:hasSource <processor/Convert_to_Kegg_id/out/out1> ;
@@ -470,10 +349,6 @@ chr_out = chr_in;
 <datalink?from=processor/Convert_to_Kegg_id/out/out1&to=processor/btit/in/string> a wfdesc:DataLink ;
 	wfdesc:hasSource <processor/Convert_to_Kegg_id/out/out1> ;
 	wfdesc:hasSink <processor/btit/in/string> .
-
-<datalink?from=processor/Create_and_populate_temporary_file_2/out/filepath&to=processor/Concatenate_Files_2/in/filelist> a wfdesc:DataLink ;
-	wfdesc:hasSource <processor/Create_and_populate_temporary_file_2/out/filepath> ;
-	wfdesc:hasSink <processor/Concatenate_Files_2/in/filelist> .
 
 <datalink?from=processor/Flatten_List/out/outputlist&to=processor/input_chr_position/in/chr_in> a wfdesc:DataLink ;
 	wfdesc:hasSource <processor/Flatten_List/out/outputlist> ;
@@ -487,17 +362,13 @@ chr_out = chr_in;
 	wfdesc:hasSource <processor/Flatten_List_3/out/outputlist> ;
 	wfdesc:hasSink <processor/align_snp_gene_name_pwy_ids_2/in/in1> .
 
-<datalink?from=processor/Flatten_List_5_2/out/outputlist&to=processor/Create_and_populate_temporary_file_2/in/content> a wfdesc:DataLink ;
+<datalink?from=processor/Flatten_List_5_2/out/outputlist&to=out/out> a wfdesc:DataLink ;
 	wfdesc:hasSource <processor/Flatten_List_5_2/out/outputlist> ;
-	wfdesc:hasSink <processor/Create_and_populate_temporary_file_2/in/content> .
+	wfdesc:hasSink <out/out> .
 
 <datalink?from=processor/Flatten_List_6/out/outputlist&to=processor/Split_string_into_string_list_by_regular_expression_2/in/string> a wfdesc:DataLink ;
 	wfdesc:hasSource <processor/Flatten_List_6/out/outputlist> ;
 	wfdesc:hasSink <processor/Split_string_into_string_list_by_regular_expression_2/in/string> .
-
-<datalink?from=processor/Read_Text_File/out/filecontents&to=processor/Split_string_into_string_list_by_regular_expression/in/string> a wfdesc:DataLink ;
-	wfdesc:hasSource <processor/Read_Text_File/out/filecontents> ;
-	wfdesc:hasSink <processor/Split_string_into_string_list_by_regular_expression/in/string> .
 
 <datalink?from=processor/Split_string_into_string_list_by_regular_expression/out/split&to=processor/align_snp_gene_and_extract_gene_id/in/in1> a wfdesc:DataLink ;
 	wfdesc:hasSource <processor/Split_string_into_string_list_by_regular_expression/out/split> ;
@@ -571,10 +442,6 @@ chr_out = chr_in;
 	wfdesc:hasSource <processor/input_chr_position/out/start_out> ;
 	wfdesc:hasSink <processor/hsapiens_gene_ensembl/in/hsapiens_gene_ensembl.start_filter> .
 
-<datalink?from=processor/outputfile_value/out/value&to=processor/Concatenate_Files_2/in/outputfile> a wfdesc:DataLink ;
-	wfdesc:hasSource <processor/outputfile_value/out/value> ;
-	wfdesc:hasSink <processor/Concatenate_Files_2/in/outputfile> .
-
 <datalink?from=processor/regex_value/out/value&to=processor/Split_string_into_string_list_by_regular_expression/in/regex> a wfdesc:DataLink ;
 	wfdesc:hasSource <processor/regex_value/out/value> ;
 	wfdesc:hasSink <processor/Split_string_into_string_list_by_regular_expression/in/regex> .
@@ -587,32 +454,24 @@ chr_out = chr_in;
 	wfdesc:hasSource <processor/set_width/out/value> ;
 	wfdesc:hasSink <processor/input_chr_position/in/in1> .
 
+<datalink?from=processor/string_value/out/value&to=processor/Split_string_into_string_list_by_regular_expression/in/string> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/string_value/out/value> ;
+	wfdesc:hasSink <processor/Split_string_into_string_list_by_regular_expression/in/string> .
+
 <> a wfdesc:Workflow , wfdesc:Description , wfdesc:Process ;
 	rdfs:label "Workflow11" ;
-	wfdesc:hasInput <in/in> ;
-	wfdesc:hasSubProcess <processor/Concatenate_Files_2/> , <processor/Convert_to_Kegg_id/> , <processor/Create_and_populate_temporary_file_2/> , <processor/Flatten_List/> , <processor/Flatten_List_2/> , <processor/Flatten_List_3/> , <processor/Flatten_List_5_2/> , <processor/Flatten_List_6/> , <processor/Read_Text_File/> , <processor/Split_string_into_string_list_by_regular_expression/> , <processor/Split_string_into_string_list_by_regular_expression_2/> , <processor/align_snp_gene_and_extract_gene_id/> , <processor/align_snp_gene_name/> , <processor/align_snp_gene_name_pwy_ids_2/> , <processor/btit/> , <processor/btit_2_2/> , <processor/extract_gene_name/> , <processor/extract_snp_id/> , <processor/get_pathways_by_genes/> , <processor/hsapiens_gene_ensembl/> , <processor/hsapiens_snp/> , <processor/input_chr_position/> , <processor/outputfile_value/> , <processor/regex_value/> , <processor/regex_value_1/> , <processor/set_width/> ;
-	wfdesc:hasDataLink <datalink?from=in/in&to=processor/Read_Text_File/in/fileurl> , <datalink?from=processor/Convert_to_Kegg_id/out/out1&to=processor/Flatten_List_6/in/inputlist> , <datalink?from=processor/Convert_to_Kegg_id/out/out1&to=processor/btit/in/string> , <datalink?from=processor/Create_and_populate_temporary_file_2/out/filepath&to=processor/Concatenate_Files_2/in/filelist> , <datalink?from=processor/Flatten_List/out/outputlist&to=processor/input_chr_position/in/chr_in> , <datalink?from=processor/Flatten_List_2/out/outputlist&to=processor/input_chr_position/in/in2> , <datalink?from=processor/Flatten_List_3/out/outputlist&to=processor/align_snp_gene_name_pwy_ids_2/in/in1> , <datalink?from=processor/Flatten_List_5_2/out/outputlist&to=processor/Create_and_populate_temporary_file_2/in/content> , <datalink?from=processor/Flatten_List_6/out/outputlist&to=processor/Split_string_into_string_list_by_regular_expression_2/in/string> , <datalink?from=processor/Read_Text_File/out/filecontents&to=processor/Split_string_into_string_list_by_regular_expression/in/string> , <datalink?from=processor/Split_string_into_string_list_by_regular_expression/out/split&to=processor/align_snp_gene_and_extract_gene_id/in/in1> , <datalink?from=processor/Split_string_into_string_list_by_regular_expression/out/split&to=processor/align_snp_gene_name/in/in1> , <datalink?from=processor/Split_string_into_string_list_by_regular_expression/out/split&to=processor/extract_snp_id/in/string> , <datalink?from=processor/Split_string_into_string_list_by_regular_expression_2/out/split&to=processor/get_pathways_by_genes/in/genes_id_list> , <datalink?from=processor/align_snp_gene_and_extract_gene_id/out/out1&to=processor/Convert_to_Kegg_id/in/string> , <datalink?from=processor/align_snp_gene_name/out/out1&to=processor/Flatten_List_3/in/inputlist> , <datalink?from=processor/align_snp_gene_name_pwy_ids_2/out/out1&to=processor/Flatten_List_5_2/in/inputlist> , <datalink?from=processor/btit/out/return&to=processor/extract_gene_name/in/string> , <datalink?from=processor/btit_2_2/out/return&to=processor/align_snp_gene_name_pwy_ids_2/in/in2> , <datalink?from=processor/extract_gene_name/out/out1&to=processor/align_snp_gene_name/in/in2> , <datalink?from=processor/extract_snp_id/out/out1&to=processor/hsapiens_snp/in/hsapiens_snp.snp_filter_filter> , <datalink?from=processor/get_pathways_by_genes/out/return&to=processor/btit_2_2/in/string> , <datalink?from=processor/hsapiens_gene_ensembl/out/hsapiens_gene_ensembl.entrezgene&to=processor/align_snp_gene_and_extract_gene_id/in/in2> , <datalink?from=processor/hsapiens_snp/out/hsapiens_snp.chr_name&to=processor/Flatten_List/in/inputlist> , <datalink?from=processor/hsapiens_snp/out/hsapiens_snp.chrom_start&to=processor/Flatten_List_2/in/inputlist> , <datalink?from=processor/input_chr_position/out/chr_out&to=processor/hsapiens_gene_ensembl/in/hsapiens_gene_ensembl.chromosome_name_filter> , <datalink?from=processor/input_chr_position/out/end_out&to=processor/hsapiens_gene_ensembl/in/hsapiens_gene_ensembl.end_filter> , <datalink?from=processor/input_chr_position/out/start_out&to=processor/hsapiens_gene_ensembl/in/hsapiens_gene_ensembl.start_filter> , <datalink?from=processor/outputfile_value/out/value&to=processor/Concatenate_Files_2/in/outputfile> , <datalink?from=processor/regex_value/out/value&to=processor/Split_string_into_string_list_by_regular_expression/in/regex> , <datalink?from=processor/regex_value_1/out/value&to=processor/Split_string_into_string_list_by_regular_expression_2/in/regex> , <datalink?from=processor/set_width/out/value&to=processor/input_chr_position/in/in1> .
+	wfdesc:hasOutput <out/out> ;
+	wfdesc:hasSubProcess <processor/Convert_to_Kegg_id/> , <processor/Flatten_List/> , <processor/Flatten_List_2/> , <processor/Flatten_List_3/> , <processor/Flatten_List_5_2/> , <processor/Flatten_List_6/> , <processor/Split_string_into_string_list_by_regular_expression/> , <processor/Split_string_into_string_list_by_regular_expression_2/> , <processor/align_snp_gene_and_extract_gene_id/> , <processor/align_snp_gene_name/> , <processor/align_snp_gene_name_pwy_ids_2/> , <processor/btit/> , <processor/btit_2_2/> , <processor/extract_gene_name/> , <processor/extract_snp_id/> , <processor/get_pathways_by_genes/> , <processor/hsapiens_gene_ensembl/> , <processor/hsapiens_snp/> , <processor/input_chr_position/> , <processor/regex_value/> , <processor/regex_value_1/> , <processor/set_width/> , <processor/string_value/> ;
+	wfdesc:hasDataLink <datalink?from=processor/Convert_to_Kegg_id/out/out1&to=processor/Flatten_List_6/in/inputlist> , <datalink?from=processor/Convert_to_Kegg_id/out/out1&to=processor/btit/in/string> , <datalink?from=processor/Flatten_List/out/outputlist&to=processor/input_chr_position/in/chr_in> , <datalink?from=processor/Flatten_List_2/out/outputlist&to=processor/input_chr_position/in/in2> , <datalink?from=processor/Flatten_List_3/out/outputlist&to=processor/align_snp_gene_name_pwy_ids_2/in/in1> , <datalink?from=processor/Flatten_List_5_2/out/outputlist&to=out/out> , <datalink?from=processor/Flatten_List_6/out/outputlist&to=processor/Split_string_into_string_list_by_regular_expression_2/in/string> , <datalink?from=processor/Split_string_into_string_list_by_regular_expression/out/split&to=processor/align_snp_gene_and_extract_gene_id/in/in1> , <datalink?from=processor/Split_string_into_string_list_by_regular_expression/out/split&to=processor/align_snp_gene_name/in/in1> , <datalink?from=processor/Split_string_into_string_list_by_regular_expression/out/split&to=processor/extract_snp_id/in/string> , <datalink?from=processor/Split_string_into_string_list_by_regular_expression_2/out/split&to=processor/get_pathways_by_genes/in/genes_id_list> , <datalink?from=processor/align_snp_gene_and_extract_gene_id/out/out1&to=processor/Convert_to_Kegg_id/in/string> , <datalink?from=processor/align_snp_gene_name/out/out1&to=processor/Flatten_List_3/in/inputlist> , <datalink?from=processor/align_snp_gene_name_pwy_ids_2/out/out1&to=processor/Flatten_List_5_2/in/inputlist> , <datalink?from=processor/btit/out/return&to=processor/extract_gene_name/in/string> , <datalink?from=processor/btit_2_2/out/return&to=processor/align_snp_gene_name_pwy_ids_2/in/in2> , <datalink?from=processor/extract_gene_name/out/out1&to=processor/align_snp_gene_name/in/in2> , <datalink?from=processor/extract_snp_id/out/out1&to=processor/hsapiens_snp/in/hsapiens_snp.snp_filter_filter> , <datalink?from=processor/get_pathways_by_genes/out/return&to=processor/btit_2_2/in/string> , <datalink?from=processor/hsapiens_gene_ensembl/out/hsapiens_gene_ensembl.entrezgene&to=processor/align_snp_gene_and_extract_gene_id/in/in2> , <datalink?from=processor/hsapiens_snp/out/hsapiens_snp.chr_name&to=processor/Flatten_List/in/inputlist> , <datalink?from=processor/hsapiens_snp/out/hsapiens_snp.chrom_start&to=processor/Flatten_List_2/in/inputlist> , <datalink?from=processor/input_chr_position/out/chr_out&to=processor/hsapiens_gene_ensembl/in/hsapiens_gene_ensembl.chromosome_name_filter> , <datalink?from=processor/input_chr_position/out/end_out&to=processor/hsapiens_gene_ensembl/in/hsapiens_gene_ensembl.end_filter> , <datalink?from=processor/input_chr_position/out/start_out&to=processor/hsapiens_gene_ensembl/in/hsapiens_gene_ensembl.start_filter> , <datalink?from=processor/regex_value/out/value&to=processor/Split_string_into_string_list_by_regular_expression/in/regex> , <datalink?from=processor/regex_value_1/out/value&to=processor/Split_string_into_string_list_by_regular_expression_2/in/regex> , <datalink?from=processor/set_width/out/value&to=processor/input_chr_position/in/in1> , <datalink?from=processor/string_value/out/value&to=processor/Split_string_into_string_list_by_regular_expression/in/string> .
 
-<in/in> a wfdesc:Input , wfdesc:Description , wfdesc:Output ;
-	rdfs:label "in" .
-
-<processor/Concatenate_Files_2/in/filelist> a wfdesc:Input , wfdesc:Description ;
-	rdfs:label "filelist" .
-
-<processor/Concatenate_Files_2/in/outputfile> a wfdesc:Input , wfdesc:Description ;
-	rdfs:label "outputfile" .
+<out/out> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
+	rdfs:label "out" .
 
 <processor/Convert_to_Kegg_id/in/string> a wfdesc:Input , wfdesc:Description ;
 	rdfs:label "string" .
 
 <processor/Convert_to_Kegg_id/out/out1> a wfdesc:Output , wfdesc:Description ;
 	rdfs:label "out1" .
-
-<processor/Create_and_populate_temporary_file_2/in/content> a wfdesc:Input , wfdesc:Description ;
-	rdfs:label "content" .
-
-<processor/Create_and_populate_temporary_file_2/out/filepath> a wfdesc:Output , wfdesc:Description ;
-	rdfs:label "filepath" .
 
 <processor/Flatten_List/in/inputlist> a wfdesc:Input , wfdesc:Description ;
 	rdfs:label "inputlist" .
@@ -643,12 +502,6 @@ chr_out = chr_in;
 
 <processor/Flatten_List_6/out/outputlist> a wfdesc:Output , wfdesc:Description ;
 	rdfs:label "outputlist" .
-
-<processor/Read_Text_File/in/fileurl> a wfdesc:Input , wfdesc:Description ;
-	rdfs:label "fileurl" .
-
-<processor/Read_Text_File/out/filecontents> a wfdesc:Output , wfdesc:Description ;
-	rdfs:label "filecontents" .
 
 <processor/Split_string_into_string_list_by_regular_expression/in/regex> a wfdesc:Input , wfdesc:Description ;
 	rdfs:label "regex" .
@@ -774,13 +627,6 @@ chr_out = chr_in;
 <processor/input_chr_position/out/start_out> a wfdesc:Output , wfdesc:Description ;
 	rdfs:label "start_out" .
 
-<processor/outputfile_value/> a wfdesc:Process , wfdesc:Description ;
-	rdfs:label "outputfile_value" ;
-	wfdesc:hasOutput <processor/outputfile_value/out/value> .
-
-<processor/outputfile_value/out/value> a wfdesc:Output , wfdesc:Description ;
-	rdfs:label "value" .
-
 <processor/regex_value/> a wfdesc:Process , wfdesc:Description ;
 	rdfs:label "regex_value" ;
 	wfdesc:hasOutput <processor/regex_value/out/value> .
@@ -800,4 +646,11 @@ chr_out = chr_in;
 	wfdesc:hasOutput <processor/set_width/out/value> .
 
 <processor/set_width/out/value> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "value" .
+
+<processor/string_value/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "string_value" ;
+	wfdesc:hasOutput <processor/string_value/out/value> .
+
+<processor/string_value/out/value> a wfdesc:Output , wfdesc:Description ;
 	rdfs:label "value" .
