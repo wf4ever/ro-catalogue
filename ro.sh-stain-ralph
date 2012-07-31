@@ -4,7 +4,7 @@
 #
 
 # Change these lines to match local setup
-ROBASE=~/Projects/ro-catalogue/v0.1/
-RO=~/Projects/ro-manager/src/ro 
+ROBASE=$HOME/src/ro-catalogue
+RO=$HOME/src/ro-manager/src/ro
 
 # End.
