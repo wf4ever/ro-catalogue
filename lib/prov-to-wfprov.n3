@@ -1,0 +1,99 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
+@prefix wfprov: <http://purl.org/wf4ever/wfprov#> .
+
+: rdfs:label "prov-to-wfprov";
+  rdfs:comment """To use these filters together with a wfdesc workflow and
+  PROV-O provenance, use cwm:
+
+  cwm helloworld.wfdesc.ttl helloworld.prov.rdf prov-to-wfprov.n3 --think --filter=prov-to-wfprov.n3
+ 
+  Remove the --filter=.. parameter to see all the combined information
+  instead of just the added information.
+ """ ;
+ rdfs:seeAlso <http://www.w3.org/2000/10/swap/doc/cwm.html> .
+
+# alternateOf
+# NOTE: taverna-prov needs to use alternateOf for artifacts output
+# by both a processor and workflow due to prov:wasGeneratedBy being 
+# functional
+##{  ?aliasEntity a wfprov:Artifact ;
+##       prov:alternateOf ?entity } =>
+##{ ?entity a wfprov:Artifact ;
+##      # TODO: Does wfprov need an equivalent to alternateOf?
+##      owl:sameAs ?aliasEntity ;
+##      } .
+##
+
+# ProcessRun
+{ ?activity a prov:Activity;
+      prov:qualifiedAssociation [
+          prov:hadPlan ?recipe 
+      ] .
+  ?recipe a wfdesc:Process } => 
+{ ?activity a wfprov:ProcessRun;
+      wfprov:describedByProcess ?recipe }  .
+
+# Workflow
+{ ?activity a prov:Activity;
+      prov:qualifiedAssociation [
+          prov:hadPlan ?recipe 
+      ] .
+  ?recipe a wfdesc:Workflow } => 
+{ ?activity a wfprov:WorkflowRun;
+   wfprov:describedByWorkflow ?recipe } .
+
+# usedInput
+{ ?activity a prov:Activity;
+      prov:qualifiedUsage [
+          prov:entity ?entity;
+          prov:hadRole ?role
+      ] .
+      ?entity prov:alternateOf ?alias .
+  ?role a wfdesc:Input } =>
+{ ?alias a wfprov:Artifact ;
+      wfprov:describedByParameter ?role .
+  ?activity wfprov:usedInput ?alias } .
+
+# wasOutputFrom  
+{ ?entity a prov:Entity; 
+      prov:alternateOf ?alias ;
+      prov:qualifiedGeneration [
+          prov:activity ?activity;
+          prov:hadRole ?role
+      ] .
+  ?role a wfdesc:Output } =>
+{ ?alias a wfprov:Artifact ;
+      wfprov:wasOutputFrom ?activity ;
+      wfprov:describedByParameter ?role } .
+
+
+
+# wasPartOfWorkflowRun
+{ ?processRun a wfprov:ProcessRun ;
+   prov:wasAssociatedWith ?workflowRun .
+?workflowRun a wfprov:ProcessRun ;
+   wfprov:describedByWorkflow ?workflow ;
+    } =>
+{ ?processRun wfprov:wasPartOfWorkflowRun ?workflowRun } .
+
+
+# WorkflowEngine extraction - quite taverna-prov specific which assumes
+# that the engine must also have created the provenance container based
+# on the workflow run
+{ ?workflowRun a wfprov:ProcessRun ;
+      wfprov:describedByWorkflow ?workflow . 
+  ?bundle a prov:Bundle;
+      prov:wasGeneratedBy [ 
+        prov:wasAssociatedWith ?workflowEngine;
+        prov:wasInformedBy ?workflowRun ]
+      } => 
+{ ?workflowRun wfprov:wasEnactedBy ?workflowEngine .
+  ?workflowEngine a wfprov:WorkflowEngine .
+} .      
+
+
+
