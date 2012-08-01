@@ -3,7 +3,7 @@
 @prefix wf4ever: <http://purl.org/wf4ever/wf4ever#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<processor/Flatten_List/> a wfdesc:Process , <http://www.w3.org/2002/07/owl#Thing> , wfdesc:Description , wf4ever:BeanshellScript ;
+<processor/Flatten_List/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:BeanshellScript ;
 	wf4ever:script """flatten(inputs, outputs, depth) {
 	for (i = inputs.iterator(); i.hasNext();) {
 	    element = i.next();
@@ -22,7 +22,7 @@ flatten(inputlist, outputlist, 1);""" ;
 	wfdesc:hasInput <processor/Flatten_List/in/inputlist> ;
 	wfdesc:hasOutput <processor/Flatten_List/out/outputlist> .
 
-<processor/Flatten_List_2/> a wfdesc:Process , <http://www.w3.org/2002/07/owl#Thing> , wfdesc:Description , wf4ever:BeanshellScript ;
+<processor/Flatten_List_2/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:BeanshellScript ;
 	wf4ever:script """flatten(inputs, outputs, depth) {
 	for (i = inputs.iterator(); i.hasNext();) {
 	    element = i.next();
@@ -41,7 +41,7 @@ flatten(inputlist, outputlist, 1);""" ;
 	wfdesc:hasInput <processor/Flatten_List_2/in/inputlist> ;
 	wfdesc:hasOutput <processor/Flatten_List_2/out/outputlist> .
 
-<processor/Split_string_into_string_list_by_regular_expression/> a wfdesc:Process , <http://www.w3.org/2002/07/owl#Thing> , wfdesc:Description , wf4ever:BeanshellScript ;
+<processor/Split_string_into_string_list_by_regular_expression/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:BeanshellScript ;
 	wf4ever:script """List split = new ArrayList();
 if (!string.equals(\"\")) {
 	String regexString = \",\";
@@ -58,7 +58,7 @@ if (!string.equals(\"\")) {
 	wfdesc:hasInput <processor/Split_string_into_string_list_by_regular_expression/in/regex> , <processor/Split_string_into_string_list_by_regular_expression/in/string> ;
 	wfdesc:hasOutput <processor/Split_string_into_string_list_by_regular_expression/out/split> .
 
-<processor/extract_snp_id/> a wfdesc:Process , <http://www.w3.org/2002/07/owl#Thing> , wfdesc:Description , wf4ever:BeanshellScript ;
+<processor/extract_snp_id/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:BeanshellScript ;
 	wf4ever:script """import java.util.*;
 
 String [] line = string.split(\"\\t\");
@@ -67,7 +67,7 @@ out1=line[0].trim();""" ;
 	wfdesc:hasInput <processor/extract_snp_id/in/string> ;
 	wfdesc:hasOutput <processor/extract_snp_id/out/out1> .
 
-<processor/input_chr_position/> a wfdesc:Process , <http://www.w3.org/2002/07/owl#Thing> , wfdesc:Description , wf4ever:BeanshellScript ;
+<processor/input_chr_position/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:BeanshellScript ;
 	wf4ever:script """import java.util.*;
 
 List tmp_end = new ArrayList();

@@ -66,9 +66,23 @@ pushd Documents
 popd
 echo "--------"
 pushd Workflow-runs
-    for run in *run*rdf ; do
+    for run in * */*.prov.ttl ; do
         $RO annotate -v $run rdf:type 'http://purl.org/wf4ever/wfprov#WorkflowRun'
     done
+    pushd List-Concept-Sets-prov-export
+        ../../../../lib/cwm/cwm ../../.ro/List_Predefined_Concept_Sets.wfdesc.ttl workflowrun.prov.ttl \
+            ../../../../lib/prov-to-wfprov.n3 --think \
+            --filter=../../../../lib/prov-to-wfprov.n3 > workflowrun.wfprov.ttl
+        
+        $RO annotate -v workflowrun.prov.ttl -g workflowrun.wfprov.ttl
+    popd
+    pushd SNP2KEGG-main-workflow-prov-export/
+        ../../../../lib/cwm/cwm ../../.ro/SNP2KEGG_main_workflow.wfdesc.ttl workflowrun.prov.ttl \
+            ../../../../lib/prov-to-wfprov.n3 --think \
+            --filter=../../../../lib/prov-to-wfprov.n3 > workflowrun.wfprov.ttl
+        
+        $RO annotate -v workflowrun.prov.ttl -g workflowrun.wfprov.ttl
+    popd
 popd
 
 #$RO annotate -v showcase62a_wf-withMulitipleBPCUIs.t2flow title "Anni golden exemplar main workflow"
