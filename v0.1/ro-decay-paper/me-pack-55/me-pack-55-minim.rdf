@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY rdf     "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY rdfs    "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY owl     "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd     "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml     "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfg    "http://www.w3.org/2004/03/trix/rdfg-1/" >
+    <!ENTITY ore     "http://www.openarchives.org/ore/terms/" >
+    <!ENTITY ao      "http://purl.org/ao/" >
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY foaf    "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY ro      "http://purl.org/wf4ever/ro#" >
+    <!ENTITY wfprov  "http://purl.org/wf4ever/wfprov#" >
+    <!ENTITY wfdesc  "http://purl.org/wf4ever/wfdesc#" >
+    <!ENTITY minim   "http://purl.org/minim/minim#" >
+]>
+
+<rdf:RDF xmlns="."
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:rdfg="http://www.w3.org/2004/03/trix/rdfg-1/"
+     xmlns:ore="http://www.openarchives.org/ore/terms/"
+     xmlns:ao="http://purl.org/ao/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:ro="http://purl.org/wf4ever/ro#"
+     xmlns:wfprov="http://purl.org/wf4ever/wfprov#"
+     xmlns:wfdesc="http://purl.org/wf4ever/wfdesc#"
+     xmlns:minim="&minim;"
+>
+
+  <!-- ===========
+       CONSTRAINTS 
+       ===========
+    -->
+
+  <!-- Target for Minimum information requirement 
+
+       Minim invokes minimum information models on for a specified purpose
+       relating to a specified target.  The requirement may apply to some
+       resource other than the specified target.
+     
+       For example, in this case, the requirement to create the 
+       UserRequirements-gen.json file is that a given Minim model 
+       must be satisfied by the Research Object.
+    -->
+
+  <rdf:Description rdf:about=".">
+    <minim:hasConstraint>
+      <minim:Constraint rdf:about="#runnable_RO">
+        <minim:forPurpose>Runnable</minim:forPurpose>
+        <minim:onResource rdf:resource="." />
+        <minim:toModel rdf:resource="#runnable_RO_model" />
+        <rdfs:comment>
+          Constraint to be satisfied if the RO is to be runnable
+        </rdfs:comment>
+      </minim:Constraint>
+    </minim:hasConstraint>
+  </rdf:Description>
+
+  <rdf:Description rdf:about=".">
+    <minim:hasConstraint>
+      <minim:Constraint rdf:about="#reviewable_RO">
+        <minim:forPurpose>Reviewable</minim:forPurpose>
+        <minim:onResource rdf:resource="." />
+        <minim:toModel rdf:resource="#reviewable_RO_model" />
+        <rdfs:comment>
+          Constraint to be satisfied if the RO is to be reviewable; 
+          i.e. a reviewer can retrace the execution steps, including inputs and outputs, 
+          and appropriate annotations, without actually running the RO.
+        </rdfs:comment>
+      </minim:Constraint>
+    </minim:hasConstraint>
+  </rdf:Description>
+
+  <rdf:Description rdf:about=".">
+    <minim:hasConstraint>
+      <minim:Constraint rdf:about="#repeatable_RO">
+        <minim:forPurpose>Repeatable</minim:forPurpose>
+        <minim:onResource rdf:resource="." />
+        <minim:toModel rdf:resource="#repeatable_RO_model" />
+        <rdfs:comment>
+          Constraint to be satisfied if the RO is to be repeatable; 
+          i.e. a reviewer can rerun the execution and compare results 
+          with those obtained previously.
+        </rdfs:comment>
+      </minim:Constraint>
+    </minim:hasConstraint>
+  </rdf:Description>
+
+  <!-- ======
+       MODELS
+       ======
+    -->
+
+  <!-- Model capturing requirements for RO to be runnable, 
+       to create expected outputs
+    -->
+  <minim:Model rdf:about="#runnable_RO_model">
+    <rdfs:label>Runnable RO</rdfs:label>
+    <rdfs:comment>
+      This model defines information that must be available for the 
+      requirements Research Object to be runnable.
+    </rdfs:comment>
+    <minim:hasMustRequirement rdf:resource="#isPresent/workflow-instance" />
+    <minim:hasMustRequirement rdf:resource="#isPresent/workflow-inputfiles" />
+    <minim:hasMustRequirement rdf:resource="#isPresent/workflow-inputexamples" />  
+    <minim:hasMustRequirement rdf:resource="#isPresent/workflow-inputportnames" />  
+  </minim:Model>
+
+  <!-- Model capturing requirements for RO to be reviewable,
+       to review execution of workflow that produced available outputs
+    -->
+  <minim:Model rdf:about="#reviewable_RO_model">
+    <rdfs:label>Reviewable requirements RO</rdfs:label>
+    <rdfs:comment>
+      This model defines information that must be available for the 
+      requirements Research Object to be reviewable; i.e. so that a reviewer
+      can see all the workflow executions, with inputs and outputs generated.
+      
+      (This does not require visibility of intermediate steps within the WF.)
+    </rdfs:comment>
+    <minim:hasMustRequirement rdf:resource="#isPresent/workflow-instance" />
+    <minim:hasMustRequirement rdf:resource="#isPresent/workflow-run" />
+    <minim:hasMustRequirement rdf:resource="#isPresent/workflow-inputfiles" />
+    <minim:hasMustRequirement rdf:resource="#isPresent/workflow-outputfiles" />
+    <!-- @@TODO add some stuff for comments to guide the reviewer -->
+  </minim:Model>
+
+  <!-- Model capturing requirements for RO to be repeatable, 
+       to create expected outputs and compare with those already obtained
+    -->
+  <minim:Model rdf:about="#repeatable_RO_model">
+    <rdfs:label>Repeatable RO</rdfs:label>
+    <rdfs:comment>
+      This model defines information that must be available for the 
+      requirements Research Object to be repeatable; i.e. to re-run it and
+      compare results with a previous run.
+    </rdfs:comment>
+    <!--
+    <minim:hasMustRequirement rdf:resource="#environment-software/lpod-show" />
+    -->
+    <minim:hasMustRequirement rdf:resource="#environment-software/python" />
+    <minim:hasMustRequirement rdf:resource="#isPresent/workflow-instance" />
+    <minim:hasMustRequirement rdf:resource="#isPresent/workflow-inputfiles" />
+    <minim:hasMustRequirement rdf:resource="#isPresent/workflow-outputfiles" />
+  </minim:Model>
+
+  <!-- =================
+       REQUIREMENT RULES
+       =================
+    -->
+
+  <!-- Workflow instance must be present -->
+  <minim:Requirement rdf:about="#isPresent/workflow-instance">
+    <minim:isDerivedBy>
+      <minim:ContentMatchRequirementRule>
+        <minim:exists>
+          ?wf rdf:type wfdesc:Workflow .
+        </minim:exists>
+        <minim:showpass>Workflow instance or template found</minim:showpass>
+        <minim:showfail>No workflow instance or template found</minim:showfail>
+        <minim:derives rdf:resource="#isPresent/workflow-instance" />
+      </minim:ContentMatchRequirementRule>
+    </minim:isDerivedBy>
+  </minim:Requirement>
+
+  <!-- Workflow run must be present -->
+  <minim:Requirement rdf:about="#isPresent/workflow-run">
+    <minim:isDerivedBy>
+      <minim:ContentMatchRequirementRule>
+        <minim:exists>
+          ?wf rdf:type wfprov:WorkflowRun .
+        </minim:exists>
+        <minim:showpass>Workflow run found</minim:showpass>
+        <minim:showfail>No workflow run found</minim:showfail>
+        <minim:derives rdf:resource="#isPresent/workflow-run" />
+      </minim:ContentMatchRequirementRule>
+    </minim:isDerivedBy>
+  </minim:Requirement>
+
+  <!-- Workflow input files must be present -->
+  <minim:Requirement rdf:about="#isPresent/workflow-inputfiles">
+    <minim:isDerivedBy>
+      <minim:ContentMatchRequirementRule>
+        <minim:forall>
+          <!--
+          ?wf rdf:type wfdesc:Workflow ;
+              wfdesc:hasInput [ wfdesc:hasArtifact ?if ] .
+          -->
+          ?wf rdf:type wfdesc:Workflow ;
+              wfdesc:hasInput ?wi .
+          ?wi wfdesc:hasArtifact ?if .
+        </minim:forall>
+        <minim:aggregatesTemplate>{+if}</minim:aggregatesTemplate>
+        <minim:showpass>All workflow inputs referenced or present</minim:showpass>
+        <minim:showfail>Workflow %(wf)s input %(if)s not found</minim:showfail>
+        <minim:derives rdf:resource="#isPresent/workflow-inputfiles" />
+      </minim:ContentMatchRequirementRule>
+    </minim:isDerivedBy>
+  </minim:Requirement>
+
+  <!-- Workflow input port names must be present
+    -->
+  <minim:Requirement rdf:about="#isPresent/workflow-inputportnames">
+    <minim:isDerivedBy>
+      <minim:ContentMatchRequirementRule>
+        <minim:forall>
+          ?wf rdf:type wfdesc:Workflow ;
+              wfdesc:hasInput ?wi .
+        </minim:forall>
+        <minim:exists>
+          ?wi rdfs:label ?portname .
+        </minim:exists>
+        <minim:showpass>All workflow inputs have port names</minim:showpass>
+        <minim:showfail>Workflow %(wf)s miss some port names</minim:showfail>
+        <minim:derives rdf:resource="#isPresent/workflow-inputportnames" />
+      </minim:ContentMatchRequirementRule>
+    </minim:isDerivedBy>
+  </minim:Requirement>
+
+  <!-- Workflow input sample values must be present
+    -->
+  <minim:Requirement rdf:about="#isPresent/workflow-inputexamples">
+    <minim:isDerivedBy>
+      <minim:ContentMatchRequirementRule>
+        <minim:forall>
+          ?wf rdf:type wfdesc:Workflow ;
+              wfdesc:hasInput ?wi .
+        </minim:forall>
+        <minim:exists>
+          ?wi rdfs:comment ?samplevalue .
+        </minim:exists>
+        <minim:showpass>All workflow inputs have sample values</minim:showpass>
+        <minim:showfail>Workflow %(wf)s miss some sample values</minim:showfail>
+        <minim:derives rdf:resource="#isPresent/workflow-inputexamples" />
+      </minim:ContentMatchRequirementRule>
+    </minim:isDerivedBy>
+  </minim:Requirement>
+
+  <!-- Workflow output files must be present -->
+  <minim:Requirement rdf:about="#isPresent/workflow-outputfiles">
+    <minim:isDerivedBy>
+      <minim:ContentMatchRequirementRule>
+        <minim:forall>
+          <!--
+          ?wf rdf:type wfdesc:Workflow ;
+              wfdesc:hasOutput [ wfdesc:hasArtifact ?of ] .
+          -->
+          ?wf rdf:type wfdesc:Workflow ;
+              wfdesc:hasOutput ?wo .
+          ?wo wfdesc:hasArtifact ?of .
+        </minim:forall>
+        <minim:showpass>All workflow outputs referenced or present</minim:showpass>
+        <minim:showfail>Workflow %(wf)s output %(of)s not found</minim:showfail>
+        <minim:aggregatesTemplate>{+of}</minim:aggregatesTemplate>
+        <minim:derives rdf:resource="#isPresent/workflow-outputfiles" />
+      </minim:ContentMatchRequirementRule>
+    </minim:isDerivedBy>
+  </minim:Requirement>
+
+</rdf:RDF>

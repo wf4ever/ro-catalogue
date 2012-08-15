@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>uk.org.taverna.scufl2</groupId>
+  <artifactId>scufl2-scufl</artifactId>
+  <version>0.10-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <localCopy>true</localCopy>
+    </snapshot>
+    <lastUpdated>20120731083732</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>0.10-SNAPSHOT</value>
+        <updated>20120731083732</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>

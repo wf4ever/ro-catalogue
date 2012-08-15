@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>uk.org.taverna.scufl2</groupId>
+  <artifactId>scufl2-ucfpackage</artifactId>
+  <versioning>
+    <versions>
+      <version>0.10-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20120731083732</lastUpdated>
+  </versioning>
+</metadata>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>jboss</groupId>
+  <artifactId>javassist</artifactId>
+  <versioning>
+    <release>3.7.ga</release>
+    <versions>
+      <version>3.7.ga</version>
+    </versions>
+    <lastUpdated>20120731083732</lastUpdated>
+  </versioning>
+</metadata>

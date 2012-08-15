@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xml:base=".."
+   xmlns:ao="http://purl.org/ao/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:ore="http://www.openarchives.org/ore/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ro="http://purl.org/wf4ever/ro#"
+>
+  <rdf:Description rdf:about="">
+    <dcterms:description>Simple me-217 RO</dcterms:description>
+    <dcterms:created>2012-07-03T11:43:47</dcterms:created>
+    <dcterms:title>Simple me-217 RO</dcterms:title>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
+    <dcterms:identifier>me-pack-217</dcterms:identifier>
+    <dcterms:creator>Test user</dcterms:creator>
+    <ore:aggregates rdf:resource="workflows/time_series_data_graphed_and_cited_936779.t2flow"/>
+    <ore:aggregates rdf:resource="_Pack Info.txt"/>
+    <ore:aggregates rdf:resource="me-pack-217-replicable.rdf"/>
+    <ore:aggregates rdf:resource="janus-2706.rdf"/>
+    <ore:aggregates rdf:resource="make.sh"/>
+    <ore:aggregates rdf:nodeID="sbuDElcy6"/>
+    <ore:aggregates rdf:nodeID="sbuDElcy5"/>
+    <ore:aggregates rdf:resource="files/GraphResult.png"/>
+    <ore:aggregates rdf:resource="run-2706.rdf"/>
+    <ore:aggregates rdf:resource="wfdesc.rdf"/>
+    <ore:aggregates rdf:resource="minim-checklist.sh"/>
+    <ore:aggregates rdf:resource="me-pack-217-runnable.rdf"/>
+    <ore:aggregates rdf:resource="files/CitationResult.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="sbuDElcy6">
+    <ao:body rdf:resource="wfdesc.rdf"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="workflows/time_series_data_graphed_and_cited_936779.t2flow"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="sbuDElcy5">
+    <ao:body rdf:resource=".ro/manifest.rdf"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource=""/>
+  </rdf:Description>
+</rdf:RDF>

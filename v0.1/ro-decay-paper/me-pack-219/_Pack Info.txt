@@ -1,0 +1,141 @@
+********** Snapshot of the Pack: Find elevation given city and country names **********
+
+Downloaded from myExperiment
+Snapshot generated at 12:50:52 on Wednesday, 27 June 2012
+
+
+
+========== Pack Details ==========
+
+Title: Find elevation given city and country names
+Items: 7
+Location: http://www.myexperiment.org/packs/219
+Created by: Chrisser (profile: http://www.myexperiment.org/users/18931)
+Created at: 03:06:29 on Thursday, 06 October 2011
+Last updated at: 04:15:33 on Thursday, 06 October 2011
+
+Description: 
+
+This pack contains the workflows and supplemental files that I created for a project in IST600 - eScience and eResearch Workflows.
+This workflow accepts city and country names as user-supplied input. These value are supplied to the GetWeather webservice (http://www.webservicex.net/globalweather.asmx?WSDL), which returns an XML record of location and weather info for each recognized city. (See the uploaded photo "weather example")
+The XML returned from GetWeather is then searched using regular expressions for the geogrpahic coordinates. Because the coordinates are returned in a different format (with a hyphen) than is required for the next web service (with a period), a lot string-wrangling needs to happen in order to format the coordinates as is needed while not loosing values along the way. All of this happens in the two additional workflows embedded in the main workflow, and which have been uploaded with the titles "latitudewithbeans" and longitudewithbeans". The names reference the fact that in each workflow netbeans scripts had to be edited in order to produce the required output.
+From the two nested workflows, the output is two lists - one of latitude coordinates, one of longitude coordinates, both ordered to reflect the order in which the cities were originally entered. These lists are then supplied as inputs for a REST Service that I've configured to use the STRM webservice from geonames.org to fetch an elevation for supplied latitude and longitude coordinates (http://www.geonames.org/export/web-services.html#srtm3).
+Because I've designed the workflow to pass blank values when cities are not recognized, another customized regular expression matching beanshell must follow the REST Service to catch any errors thrown from blank input values. Now, errors default to an elevation of -450, lower than any actual city on earth.
+Finally, elevations are output onto a bar chart which is labelled with the appropriate city names. Negative elevations print as an elevation equal to zero.
+!! Rserve is required for this workflow. !!
+img, #cubbies-overlay{ -moz-transition-property: margin, box-shadow, z-index; -moz-transition-duration: 0.1s; -webkit-transition-property: margin, box-shadow, z-index; -webkit-transition-duration: 0.1s; }
+.cubbies-selected{ z-index: 9999; box-shadow: 3px 3px 8px -1px blue !important; cursor: pointer !important; margin: -3px 3px 3px -3px; }
+.cubbies-selected:active{ box-shadow: 2px 2px 5px -1px darkblue !important; margin: -1px 1px 1px -1px; }
+#cubbies-overlay{ position: fixed; z-index: 9999; bottom: 30px; left: 30px; box-shadow: 0 2px 3px rgba(0,0,0,0.8); border: none; }
+#cubbies-overlay:hover{ box-shadow: 0 2px 3px rgb(0,0,0); }
+img, #cubbies-overlay{ -moz-transition-property: margin, box-shadow, z-index; -moz-transition-duration: 0.1s; -webkit-transition-property: margin, box-shadow, z-index; -webkit-transition-duration: 0.1s; }
+.cubbies-selected{ z-index: 9999; box-shadow: 3px 3px 8px -1px blue !important; cursor: pointer !important; margin: -3px 3px 3px -3px; }
+.cubbies-selected:active{ box-shadow: 2px 2px 5px -1px darkblue !important; margin: -1px 1px 1px -1px; }
+#cubbies-overlay{ position: fixed; z-index: 9999; bottom: 30px; left: 30px; box-shadow: 0 2px 3px rgba(0,0,0,0.8); border: none; }
+#cubbies-overlay:hover{ box-shadow: 0 2px 3px rgb(0,0,0); }
+img, #cubbies-overlay{ -moz-transition-property: margin, box-shadow, z-index; -moz-transition-duration: 0.1s; -webkit-transition-property: margin, box-shadow, z-index; -webkit-transition-duration: 0.1s; }
+.cubbies-selected{ z-index: 9999; box-shadow: 3px 3px 8px -1px blue !important; cursor: pointer !important; margin: -3px 3px 3px -3px; }
+.cubbies-selected:active{ box-shadow: 2px 2px 5px -1px darkblue !important; margin: -1px 1px 1px -1px; }
+#cubbies-overlay{ position: fixed; z-index: 9999; bottom: 30px; left: 30px; box-shadow: 0 2px 3px rgba(0,0,0,0.8); border: none; }
+#cubbies-overlay:hover{ box-shadow: 0 2px 3px rgb(0,0,0); }
+
+
+
+========== Summary of Pack Items (7) ==========
+
+Total number of items in the pack: 7
+
+Downloaded items: 7
+     |-  Workflows: 3
+     |-  Files    : 4
+
+Not downloaded items: 0
+     |- Packs         : 0 (download of nested packs is not supported)
+     |- External items: 0
+     |- Items that can be viewed, but not downloaded: 0 (view-only permissions)
+         |- Workflows : 0
+         |- Files     : 0
+     |- Items that cannot be viewed : 0
+
+
+
+========== Downloaded Items (7) ==========
+
++ File: Weather Example (local copy: files/weather example.jpg)
+  Location: http://www.myexperiment.org/files/583
+  Uploader: Chrisser (profile: http://www.myexperiment.org/users/18931)
+  | Added to pack by: Chrisser (profile: http://www.myexperiment.org/users/18931); added on (06/10/2011 @ 04:13:07)
+  | Comment: none
+
++ File: Workflow compact (local copy: files/workflow compact.jpg)
+  Location: http://www.myexperiment.org/files/584
+  Uploader: Chrisser (profile: http://www.myexperiment.org/users/18931)
+  | Added to pack by: Chrisser (profile: http://www.myexperiment.org/users/18931); added on (06/10/2011 @ 04:12:45)
+  | Comment: none
+
++ File: "Elevation plot..." workflow, expanded view (local copy: files/workflow expanded.jpg)
+  Location: http://www.myexperiment.org/files/585
+  Uploader: Chrisser (profile: http://www.myexperiment.org/users/18931)
+  | Added to pack by: Chrisser (profile: http://www.myexperiment.org/users/18931); added on (06/10/2011 @ 04:12:22)
+  | Comment: none
+
++ File: "Elevation plot..." example output (local copy: files/output example.jpg)
+  Location: http://www.myexperiment.org/files/586
+  Uploader: Chrisser (profile: http://www.myexperiment.org/users/18931)
+  | Added to pack by: Chrisser (profile: http://www.myexperiment.org/users/18931); added on (06/10/2011 @ 04:12:10)
+  | Comment: none
+
++ Workflow: Longitude with beanshell (local copy: workflows/_untitled__176167.t2flow)
+  Type: Taverna 2
+  Location: http://www.myexperiment.org/workflows/2472?version=1
+  Originally uploaded by: Chrisser (profile: http://www.myexperiment.org/users/18931)
+  Version: 1 (created on: 06/10/2011, last edited on: 06/10/2011)
+  Version uploaded by: Chrisser (profile: http://www.myexperiment.org/users/18931)
+  | Added to pack by: Chrisser (profile: http://www.myexperiment.org/users/18931); added on (06/10/2011 @ 04:11:47)
+  | Comment: none
+
++ Workflow: Elevation plot v.2 (local copy: workflows/_untitled__947103.t2flow)
+  Type: Taverna 2
+  Location: http://www.myexperiment.org/workflows/2470?version=2
+  Originally uploaded by: Chrisser (profile: http://www.myexperiment.org/users/18931)
+  Version: 2 (created on: 06/10/2011, last edited on: 06/10/2011)
+  Version uploaded by: Chrisser (profile: http://www.myexperiment.org/users/18931)
+  | Added to pack by: Chrisser (profile: http://www.myexperiment.org/users/18931); added on (06/10/2011 @ 04:10:03)
+  | Comment: none
+
++ Workflow: Latitude with beanshell (local copy: workflows/_untitled__394292.t2flow)
+  Type: Taverna 2
+  Location: http://www.myexperiment.org/workflows/2471?version=1
+  Originally uploaded by: Chrisser (profile: http://www.myexperiment.org/users/18931)
+  Version: 1 (created on: 06/10/2011, last edited on: 06/10/2011)
+  Version uploaded by: Chrisser (profile: http://www.myexperiment.org/users/18931)
+  | Added to pack by: Chrisser (profile: http://www.myexperiment.org/users/18931); added on (06/10/2011 @ 04:09:37)
+  | Comment: none
+
+
+
+========== Not Downloaded Items (0) ==========
+
+
+=== Packs within this pack (0) ===
+
+    // None //
+
+
+
+=== External items (0) ===
+
+    // None //
+
+
+
+=== Items that can be viewed, but not downloaded (0) ===
+
+    // None //
+
+
+
+=== Items that cannot be viewed (0) ===
+
+    // None //
+

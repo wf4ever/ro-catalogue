@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+# Definitions to run RO manager
+#
+
+# Change these lines to match local setup
+ROBASE=$HOME/src/ro-catalogue
+RO=$HOME/src/ro-manager/src/ro
+
+# End.

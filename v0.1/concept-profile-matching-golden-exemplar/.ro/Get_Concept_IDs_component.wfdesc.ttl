@@ -1,0 +1,82 @@
+@base <http://ns.taverna.org.uk/2010/workflowBundle/de983674-aca7-42d2-8719-d741ba53b9dd/workflow/Get_Concept_IDs/> .
+@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
+@prefix wf4ever: <http://purl.org/wf4ever/wf4ever#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<processor/getPredefinedConceptSet/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:SOAPService ;
+	wf4ever:wsdlURI "http://ws.biosemantics.org/ConceptRecognizerService?wsdl"^^<http://www.w3.org/2001/XMLSchema#anyURI> ;
+	rdfs:label "getPredefinedConceptSet" ;
+	wfdesc:hasInput <processor/getPredefinedConceptSet/in/parameters> ;
+	wfdesc:hasOutput <processor/getPredefinedConceptSet/out/parameters> .
+
+<datalink?from=in/Concept_set_ID&to=processor/getPredefinedConceptSet_input/in/conceptSetID> a wfdesc:DataLink ;
+	wfdesc:hasSource <in/Concept_set_ID> ;
+	wfdesc:hasSink <processor/getPredefinedConceptSet_input/in/conceptSetID> .
+
+<datalink?from=processor/getPredefinedConceptSet/out/parameters&to=processor/getPredefinedConceptSet_output/in/input> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/getPredefinedConceptSet/out/parameters> ;
+	wfdesc:hasSink <processor/getPredefinedConceptSet_output/in/input> .
+
+<datalink?from=processor/getPredefinedConceptSet_input/out/output&to=processor/getPredefinedConceptSet/in/parameters> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/getPredefinedConceptSet_input/out/output> ;
+	wfdesc:hasSink <processor/getPredefinedConceptSet/in/parameters> .
+
+<datalink?from=processor/getPredefinedConceptSet_output/out/return&to=processor/getPredefinedConceptSet_return/in/input> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/getPredefinedConceptSet_output/out/return> ;
+	wfdesc:hasSink <processor/getPredefinedConceptSet_return/in/input> .
+
+<datalink?from=processor/getPredefinedConceptSet_return/out/conceptSet&to=out/Concept_ID_set> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/getPredefinedConceptSet_return/out/conceptSet> ;
+	wfdesc:hasSink <out/Concept_ID_set> .
+
+<> a wfdesc:Workflow , wfdesc:Description , wfdesc:Process ;
+	rdfs:label "Get_Concept_IDs" ;
+	wfdesc:hasInput <in/Concept_set_ID> ;
+	wfdesc:hasOutput <out/Concept_ID_set> ;
+	wfdesc:hasSubProcess <processor/getPredefinedConceptSet/> , <processor/getPredefinedConceptSet_input/> , <processor/getPredefinedConceptSet_output/> , <processor/getPredefinedConceptSet_return/> ;
+	wfdesc:hasDataLink <datalink?from=in/Concept_set_ID&to=processor/getPredefinedConceptSet_input/in/conceptSetID> , <datalink?from=processor/getPredefinedConceptSet/out/parameters&to=processor/getPredefinedConceptSet_output/in/input> , <datalink?from=processor/getPredefinedConceptSet_input/out/output&to=processor/getPredefinedConceptSet/in/parameters> , <datalink?from=processor/getPredefinedConceptSet_output/out/return&to=processor/getPredefinedConceptSet_return/in/input> , <datalink?from=processor/getPredefinedConceptSet_return/out/conceptSet&to=out/Concept_ID_set> .
+
+<in/Concept_set_ID> a wfdesc:Input , wfdesc:Description , wfdesc:Output ;
+	rdfs:label "Concept_set_ID" .
+
+<out/Concept_ID_set> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
+	rdfs:label "Concept_ID_set" .
+
+<processor/getPredefinedConceptSet/in/parameters> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "parameters" .
+
+<processor/getPredefinedConceptSet/out/parameters> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "parameters" .
+
+<processor/getPredefinedConceptSet_input/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "getPredefinedConceptSet_input" ;
+	wfdesc:hasInput <processor/getPredefinedConceptSet_input/in/conceptSetID> ;
+	wfdesc:hasOutput <processor/getPredefinedConceptSet_input/out/output> .
+
+<processor/getPredefinedConceptSet_input/in/conceptSetID> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "conceptSetID" .
+
+<processor/getPredefinedConceptSet_input/out/output> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "output" .
+
+<processor/getPredefinedConceptSet_output/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "getPredefinedConceptSet_output" ;
+	wfdesc:hasInput <processor/getPredefinedConceptSet_output/in/input> ;
+	wfdesc:hasOutput <processor/getPredefinedConceptSet_output/out/return> .
+
+<processor/getPredefinedConceptSet_output/in/input> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "input" .
+
+<processor/getPredefinedConceptSet_output/out/return> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "return" .
+
+<processor/getPredefinedConceptSet_return/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "getPredefinedConceptSet_return" ;
+	wfdesc:hasInput <processor/getPredefinedConceptSet_return/in/input> ;
+	wfdesc:hasOutput <processor/getPredefinedConceptSet_return/out/conceptSet> .
+
+<processor/getPredefinedConceptSet_return/in/input> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "input" .
+
+<processor/getPredefinedConceptSet_return/out/conceptSet> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "conceptSet" .
