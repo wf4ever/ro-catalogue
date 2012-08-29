@@ -8,7 +8,7 @@ source ../../ro.sh
 # Fail on first error
 set -e
 
-#Should not be needed if above shell is run
+#Kristina: Should not be needed if above shell is run
 #ROBASE=~/Projects/ro-catalogue/v0.1 
 #RO=~/Projects/ro-manager/src/ro 
 

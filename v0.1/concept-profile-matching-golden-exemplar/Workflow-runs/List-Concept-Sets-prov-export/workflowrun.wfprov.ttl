@@ -1,10 +1,10 @@
 #Processed by Id: cwm.py,v 1.197 2007/12/13 15:38:39 syosi Exp 
-        #    using base file:///home/stain/src/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflow-runs/List-Concept-Sets-prov-export/
+        #    using base file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflow-runs/List-Concept-Sets-prov-export/
         
 #  Notation3 generation by
 #       notation3.py,v 1.200 2007/12/11 21:18:08 syosi Exp
 
-#   Base was: file:///home/stain/src/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflow-runs/List-Concept-Sets-prov-export/
+#   Base was: file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflow-runs/List-Concept-Sets-prov-export/
      @prefix : <http://purl.org/wf4ever/wfprov#> .
     
     <Concept_set_ID/>     a :Artifact;
