@@ -83,6 +83,13 @@ pushd Workflow-runs
         
         $RO annotate -v workflowrun.prov.ttl -g workflowrun.wfprov.ttl
     popd
+    pushd Main-nested-workflow-prov-export/
+        ../../../../lib/cwm/cwm ../../.ro/main_nested_workflow.wfdesc.ttl workflowrun.prov.ttl \
+            ../../../../lib/prov-to-wfprov.n3 --think \
+            --filter=../../../../lib/prov-to-wfprov.n3 > workflowrun.wfprov.ttl
+        
+        $RO annotate -v workflowrun.prov.ttl -g workflowrun.wfprov.ttl
+    popd
 popd
 
 #$RO annotate -v showcase62a_wf-withMulitipleBPCUIs.t2flow title "Anni golden exemplar main workflow"
