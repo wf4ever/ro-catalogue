@@ -1,10 +1,10 @@
-<workflow xmlns="http://taverna.sf.net/2008/xml/t2flow" version="1" producedBy="taverna-2.4.0"><dataflow id="3c6eca00-e3a8-46b8-86bd-7c4b48a3ac77" role="top"><name>Explain_concept_scores</name><inputPorts><port><name>matchConcept</name><depth>0</depth><granularDepth>0</granularDepth><annotations><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+<workflow xmlns="http://taverna.sf.net/2008/xml/t2flow" version="1" producedBy="taverna-2.4.0"><dataflow id="2b762f5e-4473-4d48-b78f-df306600467a" role="top"><name>Explain_concept_scores</name><inputPorts><port><name>C_ConceptID</name><depth>0</depth><granularDepth>0</granularDepth><annotations><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
       <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.ExampleValue">
-        <text>79822</text>
+        <text>2263126</text>
       </annotationBean>
-      <date>2012-04-16 12:58:11.409 UTC</date>
+      <date>2012-09-10 15:17:30.620 UTC</date>
       <creators />
       <curationEventList />
     </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
@@ -13,20 +13,108 @@
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
       <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.FreeTextDescription">
-        <text>Concept Profile list (by concept identifier). Examples 79822, 25362</text>
+        <text>The concept id of the C concept.</text>
       </annotationBean>
-      <date>2012-04-16 12:57:59.976 UTC</date>
+      <date>2012-09-11 09:01:25.824 UTC</date>
       <creators />
       <curationEventList />
     </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
   </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain></annotations></port><port><name>maxNrResults</name><depth>0</depth><granularDepth>0</granularDepth><annotations><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain></annotations></port><port><name>cutoff</name><depth>0</depth><granularDepth>0</granularDepth><annotations><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.FreeTextDescription">
+        <text>Maximum number of explanatory concepts to return.</text>
+      </annotationBean>
+      <date>2012-09-11 08:30:14.173 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
       <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.ExampleValue">
-        <text>10</text>
+        <text>1</text>
       </annotationBean>
-      <date>2012-04-16 13:04:29.375 UTC</date>
+      <date>2012-09-10 15:18:30.889 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain></annotations></port><port><name>A_ConceptID</name><depth>0</depth><granularDepth>0</granularDepth><annotations><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.FreeTextDescription">
+        <text>The concept id of the A concept.</text>
+      </annotationBean>
+      <date>2012-09-11 09:01:33.736 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.ExampleValue">
+        <text>3096431</text>
+      </annotationBean>
+      <date>2012-09-10 15:18:23.658 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain></annotations></port></inputPorts><outputPorts><port><name>B_ConceptName</name><annotations><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.FreeTextDescription">
+        <text>The concept name of the explanatory B concept.</text>
+      </annotationBean>
+      <date>2012-09-11 09:01:44.136 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.ExampleValue">
+        <text>FADS2</text>
+      </annotationBean>
+      <date>2012-09-10 15:17:05.627 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain></annotations></port><port><name>B_ConceptID</name><annotations><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.FreeTextDescription">
+        <text>The concept ID of the explanatory B concept.</text>
+      </annotationBean>
+      <date>2012-09-11 09:01:40.385 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.ExampleValue">
+        <text>3096431</text>
+      </annotationBean>
+      <date>2012-09-10 15:16:47.938 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain></annotations></port><port><name>B_ConceptContribution</name><annotations><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.ExampleValue">
+        <text>43.36232841014862</text>
+      </annotationBean>
+      <date>2012-09-10 15:16:19.600 UTC</date>
       <creators />
       <curationEventList />
     </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
@@ -35,14 +123,136 @@
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
       <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.FreeTextDescription">
-        <text>Maximum number of concepts to return.</text>
+        <text>The contribution score, that is, the percentage of the contributions of the individual concepts to the coherence score (the average of the inner product scores of all possible concept pairs within the group).</text>
       </annotationBean>
-      <date>2012-04-16 13:04:21.46 UTC</date>
+      <date>2012-09-11 08:58:01.819 UTC</date>
       <creators />
       <curationEventList />
     </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
   </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain></annotations></port><port><name>queryConceptSet</name><depth>1</depth><granularDepth>1</granularDepth><annotations /></port></inputPorts><outputPorts><port><name>ConceptName</name><annotations /></port><port><name>ConceptID</name><annotations /></port><port><name>ConceptContribution</name><annotations /></port><port><name>xml_table</name><annotations /></port></outputPorts><processors><processor><name>return_ConceptContributionTable</name><inputPorts><port><name>input</name><depth>0</depth></port></inputPorts><outputPorts><port><name>ConceptContributionTable</name><depth>1</depth><granularDepth>1</granularDepth></port></outputPorts><annotations /><activities><activity><raven><group>net.sf.taverna.t2.activities</group><artifact>wsdl-activity</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.activities.wsdl.xmlsplitter.XMLOutputSplitterActivity</class><inputMap><map from="input" to="input" /></inputMap><outputMap><map from="ConceptContributionTable" to="ConceptContributionTable" /></outputMap><configBean encoding="xstream"><net.sf.taverna.t2.activities.wsdl.xmlsplitter.XMLSplitterConfigurationBean xmlns="">
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain></annotations></port></outputPorts><processors><processor><name>explainScoresStringInput</name><inputPorts><port><name>parameters</name><depth>0</depth></port></inputPorts><outputPorts><port><name>parameters</name><depth>0</depth><granularDepth>0</granularDepth></port></outputPorts><annotations><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.FreeTextDescription">
+        <text>This Web service takes two concept ids as input and returns the top ranking "B" concepts according to Swanson's ABC model of discovery, where the relationships AB and BC are known and reported in the literature, and the implicit relationship AC is a putative new discovery. It might also be the case that AC is already known. In that case AC does not represent a new discovery but will still be returned by the Web service.
+
+The concept contribution is also reported by the Web service. The concept contribution is the percentage of the contributions of the individual concepts to the coherence score (the average of the inner product scores of all possible concept pairs within the group).</text>
+      </annotationBean>
+      <date>2012-09-11 08:57:10.939 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain></annotations><activities><activity><raven><group>net.sf.taverna.t2.activities</group><artifact>wsdl-activity</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.activities.wsdl.WSDLActivity</class><inputMap><map from="parameters" to="parameters" /></inputMap><outputMap><map from="parameters" to="parameters" /></outputMap><configBean encoding="xstream"><net.sf.taverna.t2.activities.wsdl.WSDLActivityConfigurationBean xmlns="">
+  <wsdl>http://ws.biosemantics.org/ConceptRecognizerService?wsdl</wsdl>
+  <operation>explainScoresStringInput</operation>
+</net.sf.taverna.t2.activities.wsdl.WSDLActivityConfigurationBean></configBean><annotations /></activity></activities><dispatchStack><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Parallelize</class><configBean encoding="xstream"><net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.ParallelizeConfig xmlns="">
+  <maxJobs>1</maxJobs>
+</net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.ParallelizeConfig></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.ErrorBounce</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Failover</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Retry</class><configBean encoding="xstream"><net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.RetryConfig xmlns="">
+  <backoffFactor>1.0</backoffFactor>
+  <initialDelay>1000</initialDelay>
+  <maxDelay>5000</maxDelay>
+  <maxRetries>0</maxRetries>
+</net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.RetryConfig></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Invoke</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer></dispatchStack><iterationStrategyStack><iteration><strategy><cross><port name="parameters" depth="0" /></cross></strategy></iteration></iterationStrategyStack></processor><processor><name>explainScoresStringInput_input</name><inputPorts><port><name>cutoffValue</name><depth>0</depth></port><port><name>conceptCUIsAsString</name><depth>0</depth></port></inputPorts><outputPorts><port><name>output</name><depth>0</depth><granularDepth>0</granularDepth></port></outputPorts><annotations /><activities><activity><raven><group>net.sf.taverna.t2.activities</group><artifact>wsdl-activity</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.activities.wsdl.xmlsplitter.XMLInputSplitterActivity</class><inputMap><map from="cutoffValue" to="cutoffValue" /><map from="conceptCUIsAsString" to="conceptCUIsAsString" /></inputMap><outputMap><map from="output" to="output" /></outputMap><configBean encoding="xstream"><net.sf.taverna.t2.activities.wsdl.xmlsplitter.XMLSplitterConfigurationBean xmlns="">
+  <inputs>
+    <net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityInputPortDefinitionBean>
+      <name>cutoffValue</name>
+      <depth>0</depth>
+      <mimeTypes class="java.util.Collections$SingletonList">
+        <element class="string">'text/plain'</element>
+      </mimeTypes>
+      <allowsLiteralValues>false</allowsLiteralValues>
+    </net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityInputPortDefinitionBean>
+    <net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityInputPortDefinitionBean>
+      <name>conceptCUIsAsString</name>
+      <depth>0</depth>
+      <mimeTypes class="java.util.Collections$SingletonList">
+        <element class="string">'text/plain'</element>
+      </mimeTypes>
+      <allowsLiteralValues>false</allowsLiteralValues>
+    </net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityInputPortDefinitionBean>
+  </inputs>
+  <outputs>
+    <net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityOutputPortDefinitionBean>
+      <name>output</name>
+      <depth>0</depth>
+      <mimeTypes class="java.util.Collections$SingletonList">
+        <element class="string">'text/xml'</element>
+      </mimeTypes>
+      <granularDepth>0</granularDepth>
+    </net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityOutputPortDefinitionBean>
+  </outputs>
+  <wrappedTypeXML>&lt;s:extensions xmlns:s="http://org.embl.ebi.escience/xscufl/0.1alpha"&gt;&lt;s:complextype optional="false" unbounded="false" typename="explainScoresStringInput" name="parameters" qname="{http://services.conceptrecognizer.lumc.nl/}explainScoresStringInput"&gt;&lt;s:elements&gt;&lt;s:basetype optional="false" unbounded="false" typename="int" name="cutoffValue" qname="explainScoresStringInput&amp;gt;cutoffValue" /&gt;&lt;s:basetype optional="true" unbounded="false" typename="string" name="conceptCUIsAsString" qname="explainScoresStringInput&amp;gt;conceptCUIsAsString" /&gt;&lt;/s:elements&gt;&lt;/s:complextype&gt;&lt;/s:extensions&gt;</wrappedTypeXML>
+</net.sf.taverna.t2.activities.wsdl.xmlsplitter.XMLSplitterConfigurationBean></configBean><annotations /></activity></activities><dispatchStack><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Parallelize</class><configBean encoding="xstream"><net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.ParallelizeConfig xmlns="">
+  <maxJobs>1</maxJobs>
+</net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.ParallelizeConfig></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.ErrorBounce</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Failover</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Retry</class><configBean encoding="xstream"><net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.RetryConfig xmlns="">
+  <backoffFactor>1.0</backoffFactor>
+  <initialDelay>1000</initialDelay>
+  <maxDelay>5000</maxDelay>
+  <maxRetries>0</maxRetries>
+</net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.RetryConfig></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Invoke</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer></dispatchStack><iterationStrategyStack><iteration><strategy><cross><port name="cutoffValue" depth="0" /><port name="conceptCUIsAsString" depth="0" /></cross></strategy></iteration></iterationStrategyStack></processor><processor><name>explainScoresStringInput_output</name><inputPorts><port><name>input</name><depth>0</depth></port></inputPorts><outputPorts><port><name>return</name><depth>0</depth><granularDepth>0</granularDepth></port></outputPorts><annotations /><activities><activity><raven><group>net.sf.taverna.t2.activities</group><artifact>wsdl-activity</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.activities.wsdl.xmlsplitter.XMLOutputSplitterActivity</class><inputMap><map from="input" to="input" /></inputMap><outputMap><map from="return" to="return" /></outputMap><configBean encoding="xstream"><net.sf.taverna.t2.activities.wsdl.xmlsplitter.XMLSplitterConfigurationBean xmlns="">
+  <inputs>
+    <net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityInputPortDefinitionBean>
+      <name>input</name>
+      <depth>0</depth>
+      <mimeTypes class="java.util.Collections$SingletonList">
+        <element class="string">'text/xml'</element>
+      </mimeTypes>
+      <handledReferenceSchemes />
+      <translatedElementType>java.lang.String</translatedElementType>
+      <allowsLiteralValues>false</allowsLiteralValues>
+    </net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityInputPortDefinitionBean>
+  </inputs>
+  <outputs>
+    <net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityOutputPortDefinitionBean>
+      <name>return</name>
+      <depth>0</depth>
+      <mimeTypes class="java.util.Collections$SingletonList">
+        <element class="string">'text/xml'</element>
+      </mimeTypes>
+      <granularDepth>0</granularDepth>
+    </net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityOutputPortDefinitionBean>
+  </outputs>
+  <wrappedTypeXML>&lt;s:extensions xmlns:s="http://org.embl.ebi.escience/xscufl/0.1alpha"&gt;&lt;s:complextype optional="false" unbounded="false" typename="explainScoresStringInputResponse" name="parameters" qname="{http://services.conceptrecognizer.lumc.nl/}explainScoresStringInputResponse"&gt;&lt;s:elements&gt;&lt;s:complextype optional="true" unbounded="false" typename="conceptContributionsWrapper" name="return" qname="explainScoresStringInputResponse&amp;gt;return"&gt;&lt;s:elements&gt;&lt;s:arraytype optional="true" unbounded="false" wrapped="true" typename="&amp;gt;conceptContributionsWrapper&amp;gt;ConceptContributionTable" name="ConceptContributionTable" qname="conceptContributionsWrapper&amp;gt;ConceptContributionTable"&gt;&lt;s:elementtype&gt;&lt;s:complextype optional="false" unbounded="false" typename="conceptContribution" name="" qname="{http://services.conceptrecognizer.lumc.nl/}conceptContribution"&gt;&lt;s:elements&gt;&lt;s:basetype optional="true" unbounded="false" typename="string" name="conceptName" qname="conceptContribution&amp;gt;conceptName" /&gt;&lt;s:basetype optional="true" unbounded="false" typename="double" name="contribution" qname="conceptContribution&amp;gt;contribution" /&gt;&lt;s:basetype optional="true" unbounded="false" typename="int" name="conceptId" qname="conceptContribution&amp;gt;conceptId" /&gt;&lt;/s:elements&gt;&lt;/s:complextype&gt;&lt;/s:elementtype&gt;&lt;/s:arraytype&gt;&lt;/s:elements&gt;&lt;/s:complextype&gt;&lt;/s:elements&gt;&lt;/s:complextype&gt;&lt;/s:extensions&gt;</wrappedTypeXML>
+</net.sf.taverna.t2.activities.wsdl.xmlsplitter.XMLSplitterConfigurationBean></configBean><annotations /></activity></activities><dispatchStack><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Parallelize</class><configBean encoding="xstream"><net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.ParallelizeConfig xmlns="">
+  <maxJobs>1</maxJobs>
+</net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.ParallelizeConfig></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.ErrorBounce</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Failover</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Retry</class><configBean encoding="xstream"><net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.RetryConfig xmlns="">
+  <backoffFactor>1.0</backoffFactor>
+  <initialDelay>1000</initialDelay>
+  <maxDelay>5000</maxDelay>
+  <maxRetries>0</maxRetries>
+</net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.RetryConfig></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Invoke</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer></dispatchStack><iterationStrategyStack><iteration><strategy><cross><port name="input" depth="0" /></cross></strategy></iteration></iterationStrategyStack></processor><processor><name>explainScoresStringInput_return</name><inputPorts><port><name>input</name><depth>0</depth></port></inputPorts><outputPorts><port><name>ConceptContributionTable</name><depth>0</depth><granularDepth>0</granularDepth></port></outputPorts><annotations /><activities><activity><raven><group>net.sf.taverna.t2.activities</group><artifact>wsdl-activity</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.activities.wsdl.xmlsplitter.XMLOutputSplitterActivity</class><inputMap><map from="input" to="input" /></inputMap><outputMap><map from="ConceptContributionTable" to="ConceptContributionTable" /></outputMap><configBean encoding="xstream"><net.sf.taverna.t2.activities.wsdl.xmlsplitter.XMLSplitterConfigurationBean xmlns="">
+  <inputs>
+    <net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityInputPortDefinitionBean>
+      <name>input</name>
+      <depth>0</depth>
+      <mimeTypes class="java.util.Collections$SingletonList">
+        <element class="string">'text/xml'</element>
+      </mimeTypes>
+      <handledReferenceSchemes />
+      <translatedElementType>java.lang.String</translatedElementType>
+      <allowsLiteralValues>false</allowsLiteralValues>
+    </net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityInputPortDefinitionBean>
+  </inputs>
+  <outputs>
+    <net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityOutputPortDefinitionBean>
+      <name>ConceptContributionTable</name>
+      <depth>0</depth>
+      <mimeTypes class="java.util.Collections$SingletonList">
+        <element class="string">'text/xml'</element>
+      </mimeTypes>
+      <granularDepth>0</granularDepth>
+    </net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityOutputPortDefinitionBean>
+  </outputs>
+  <wrappedTypeXML>&lt;s:extensions xmlns:s="http://org.embl.ebi.escience/xscufl/0.1alpha"&gt;&lt;s:complextype optional="true" unbounded="false" typename="conceptContributionsWrapper" name="return" qname="explainScoresStringInputResponse&amp;gt;return"&gt;&lt;s:elements&gt;&lt;s:arraytype optional="true" unbounded="false" wrapped="true" typename="&amp;gt;conceptContributionsWrapper&amp;gt;ConceptContributionTable" name="ConceptContributionTable" qname="conceptContributionsWrapper&amp;gt;ConceptContributionTable"&gt;&lt;s:elementtype&gt;&lt;s:complextype optional="false" unbounded="false" typename="conceptContribution" name="" qname="{http://services.conceptrecognizer.lumc.nl/}conceptContribution"&gt;&lt;s:elements&gt;&lt;s:basetype optional="true" unbounded="false" typename="string" name="conceptName" qname="conceptContribution&amp;gt;conceptName" /&gt;&lt;s:basetype optional="true" unbounded="false" typename="double" name="contribution" qname="conceptContribution&amp;gt;contribution" /&gt;&lt;s:basetype optional="true" unbounded="false" typename="int" name="conceptId" qname="conceptContribution&amp;gt;conceptId" /&gt;&lt;/s:elements&gt;&lt;/s:complextype&gt;&lt;/s:elementtype&gt;&lt;/s:arraytype&gt;&lt;/s:elements&gt;&lt;/s:complextype&gt;&lt;/s:extensions&gt;</wrappedTypeXML>
+</net.sf.taverna.t2.activities.wsdl.xmlsplitter.XMLSplitterConfigurationBean></configBean><annotations /></activity></activities><dispatchStack><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Parallelize</class><configBean encoding="xstream"><net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.ParallelizeConfig xmlns="">
+  <maxJobs>1</maxJobs>
+</net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.ParallelizeConfig></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.ErrorBounce</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Failover</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Retry</class><configBean encoding="xstream"><net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.RetryConfig xmlns="">
+  <backoffFactor>1.0</backoffFactor>
+  <initialDelay>1000</initialDelay>
+  <maxDelay>5000</maxDelay>
+  <maxRetries>0</maxRetries>
+</net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.RetryConfig></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Invoke</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer></dispatchStack><iterationStrategyStack><iteration><strategy><cross><port name="input" depth="0" /></cross></strategy></iteration></iterationStrategyStack></processor><processor><name>return_ConceptContributionTable_2</name><inputPorts><port><name>input</name><depth>0</depth></port></inputPorts><outputPorts><port><name>ConceptContributionTable</name><depth>1</depth><granularDepth>1</granularDepth></port></outputPorts><annotations /><activities><activity><raven><group>net.sf.taverna.t2.activities</group><artifact>wsdl-activity</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.activities.wsdl.xmlsplitter.XMLOutputSplitterActivity</class><inputMap><map from="input" to="input" /></inputMap><outputMap><map from="ConceptContributionTable" to="ConceptContributionTable" /></outputMap><configBean encoding="xstream"><net.sf.taverna.t2.activities.wsdl.xmlsplitter.XMLSplitterConfigurationBean xmlns="">
   <inputs>
     <net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityInputPortDefinitionBean>
       <name>input</name>
@@ -73,7 +283,7 @@
   <initialDelay>1000</initialDelay>
   <maxDelay>5000</maxDelay>
   <maxRetries>0</maxRetries>
-</net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.RetryConfig></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Invoke</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer></dispatchStack><iterationStrategyStack><iteration><strategy><cross><port name="input" depth="0" /></cross></strategy></iteration></iterationStrategyStack></processor><processor><name>ConceptContributionTable_ConceptContributionTable</name><inputPorts><port><name>input</name><depth>0</depth></port></inputPorts><outputPorts><port><name>conceptId</name><depth>0</depth><granularDepth>0</granularDepth></port><port><name>contribution</name><depth>0</depth><granularDepth>0</granularDepth></port><port><name>conceptName</name><depth>0</depth><granularDepth>0</granularDepth></port></outputPorts><annotations /><activities><activity><raven><group>net.sf.taverna.t2.activities</group><artifact>wsdl-activity</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.activities.wsdl.xmlsplitter.XMLOutputSplitterActivity</class><inputMap><map from="input" to="input" /></inputMap><outputMap><map from="conceptId" to="conceptId" /><map from="contribution" to="contribution" /><map from="conceptName" to="conceptName" /></outputMap><configBean encoding="xstream"><net.sf.taverna.t2.activities.wsdl.xmlsplitter.XMLSplitterConfigurationBean xmlns="">
+</net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.RetryConfig></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Invoke</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer></dispatchStack><iterationStrategyStack><iteration><strategy><cross><port name="input" depth="0" /></cross></strategy></iteration></iterationStrategyStack></processor><processor><name>2_ConceptContributionTable</name><inputPorts><port><name>input</name><depth>0</depth></port></inputPorts><outputPorts><port><name>contribution</name><depth>0</depth><granularDepth>0</granularDepth></port><port><name>conceptId</name><depth>0</depth><granularDepth>0</granularDepth></port><port><name>conceptName</name><depth>0</depth><granularDepth>0</granularDepth></port></outputPorts><annotations /><activities><activity><raven><group>net.sf.taverna.t2.activities</group><artifact>wsdl-activity</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.activities.wsdl.xmlsplitter.XMLOutputSplitterActivity</class><inputMap><map from="input" to="input" /></inputMap><outputMap><map from="conceptId" to="conceptId" /><map from="contribution" to="contribution" /><map from="conceptName" to="conceptName" /></outputMap><configBean encoding="xstream"><net.sf.taverna.t2.activities.wsdl.xmlsplitter.XMLSplitterConfigurationBean xmlns="">
   <inputs>
     <net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityInputPortDefinitionBean>
       <name>input</name>
@@ -120,154 +330,53 @@
   <initialDelay>1000</initialDelay>
   <maxDelay>5000</maxDelay>
   <maxRetries>0</maxRetries>
-</net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.RetryConfig></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Invoke</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer></dispatchStack><iterationStrategyStack><iteration><strategy><cross><port name="input" depth="0" /></cross></strategy></iteration></iterationStrategyStack></processor><processor><name>explainScores</name><inputPorts><port><name>parameters</name><depth>0</depth></port></inputPorts><outputPorts><port><name>parameters</name><depth>0</depth><granularDepth>0</granularDepth></port></outputPorts><annotations /><activities><activity><raven><group>net.sf.taverna.t2.activities</group><artifact>wsdl-activity</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.activities.wsdl.WSDLActivity</class><inputMap><map from="parameters" to="parameters" /></inputMap><outputMap><map from="parameters" to="parameters" /></outputMap><configBean encoding="xstream"><net.sf.taverna.t2.activities.wsdl.WSDLActivityConfigurationBean xmlns="">
-  <wsdl>http://ws.biosemantics.org/ConceptRecognizerService?wsdl</wsdl>
-  <operation>explainScores</operation>
-</net.sf.taverna.t2.activities.wsdl.WSDLActivityConfigurationBean></configBean><annotations /></activity></activities><dispatchStack><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Parallelize</class><configBean encoding="xstream"><net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.ParallelizeConfig xmlns="">
-  <maxJobs>1</maxJobs>
-</net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.ParallelizeConfig></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.ErrorBounce</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Failover</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Retry</class><configBean encoding="xstream"><net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.RetryConfig xmlns="">
-  <backoffFactor>1.0</backoffFactor>
-  <initialDelay>1000</initialDelay>
-  <maxDelay>5000</maxDelay>
-  <maxRetries>0</maxRetries>
-</net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.RetryConfig></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Invoke</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer></dispatchStack><iterationStrategyStack><iteration><strategy><cross><port name="parameters" depth="0" /></cross></strategy></iteration></iterationStrategyStack></processor><processor><name>explainScores_input</name><inputPorts><port><name>cutoffValue</name><depth>0</depth></port><port><name>conceptCUIs</name><depth>1</depth></port></inputPorts><outputPorts><port><name>output</name><depth>0</depth><granularDepth>0</granularDepth></port></outputPorts><annotations /><activities><activity><raven><group>net.sf.taverna.t2.activities</group><artifact>wsdl-activity</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.activities.wsdl.xmlsplitter.XMLInputSplitterActivity</class><inputMap><map from="cutoffValue" to="cutoffValue" /><map from="conceptCUIs" to="conceptCUIs" /></inputMap><outputMap><map from="output" to="output" /></outputMap><configBean encoding="xstream"><net.sf.taverna.t2.activities.wsdl.xmlsplitter.XMLSplitterConfigurationBean xmlns="">
+</net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.RetryConfig></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Invoke</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer></dispatchStack><iterationStrategyStack><iteration><strategy><cross><port name="input" depth="0" /></cross></strategy></iteration></iterationStrategyStack></processor><processor><name>makeCommaSeparatedString</name><inputPorts><port><name>item2</name><depth>0</depth></port><port><name>item1</name><depth>0</depth></port></inputPorts><outputPorts><port><name>output</name><depth>0</depth><granularDepth>0</granularDepth></port></outputPorts><annotations><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.FreeTextDescription">
+        <text>This script concatenates the two input concept id strings and adds a comma in between.</text>
+      </annotationBean>
+      <date>2012-09-11 08:29:47.911 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain></annotations><activities><activity><raven><group>net.sf.taverna.t2.activities</group><artifact>beanshell-activity</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.activities.beanshell.BeanshellActivity</class><inputMap><map from="item2" to="item2" /><map from="item1" to="item1" /></inputMap><outputMap><map from="output" to="output" /></outputMap><configBean encoding="xstream"><net.sf.taverna.t2.activities.beanshell.BeanshellActivityConfigurationBean xmlns="">
   <inputs>
     <net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityInputPortDefinitionBean>
-      <name>cutoffValue</name>
+      <name>item1</name>
       <depth>0</depth>
-      <mimeTypes class="java.util.Collections$SingletonList">
-        <element class="string">'text/plain'</element>
+      <mimeTypes>
+        <string>text/plain</string>
       </mimeTypes>
-      <allowsLiteralValues>false</allowsLiteralValues>
+      <handledReferenceSchemes />
+      <translatedElementType>java.lang.String</translatedElementType>
+      <allowsLiteralValues>true</allowsLiteralValues>
     </net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityInputPortDefinitionBean>
     <net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityInputPortDefinitionBean>
-      <name>conceptCUIs</name>
-      <depth>1</depth>
-      <mimeTypes class="java.util.Collections$SingletonList">
-        <element class="string">l('text/plain')</element>
+      <name>item2</name>
+      <depth>0</depth>
+      <mimeTypes>
+        <string>text/plain</string>
       </mimeTypes>
-      <allowsLiteralValues>false</allowsLiteralValues>
+      <handledReferenceSchemes />
+      <translatedElementType>java.lang.String</translatedElementType>
+      <allowsLiteralValues>true</allowsLiteralValues>
     </net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityInputPortDefinitionBean>
   </inputs>
   <outputs>
     <net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityOutputPortDefinitionBean>
       <name>output</name>
       <depth>0</depth>
-      <mimeTypes class="java.util.Collections$SingletonList">
-        <element class="string">'text/xml'</element>
-      </mimeTypes>
-      <granularDepth>0</granularDepth>
-    </net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityOutputPortDefinitionBean>
-  </outputs>
-  <wrappedTypeXML>&lt;s:extensions xmlns:s="http://org.embl.ebi.escience/xscufl/0.1alpha"&gt;&lt;s:complextype optional="false" unbounded="false" typename="explainScores" name="parameters" qname="{http://services.conceptrecognizer.lumc.nl/}explainScores"&gt;&lt;s:elements&gt;&lt;s:basetype optional="false" unbounded="false" typename="int" name="cutoffValue" qname="explainScores&amp;gt;cutoffValue" /&gt;&lt;s:arraytype optional="true" unbounded="true" wrapped="false" typename="int" name="conceptCUIs" qname="explainScores&amp;gt;conceptCUIs"&gt;&lt;s:elementtype&gt;&lt;s:basetype optional="false" unbounded="false" typename="int" name="" qname="{http://www.w3.org/2001/XMLSchema}int" /&gt;&lt;/s:elementtype&gt;&lt;/s:arraytype&gt;&lt;/s:elements&gt;&lt;/s:complextype&gt;&lt;/s:extensions&gt;</wrappedTypeXML>
-</net.sf.taverna.t2.activities.wsdl.xmlsplitter.XMLSplitterConfigurationBean></configBean><annotations /></activity></activities><dispatchStack><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Parallelize</class><configBean encoding="xstream"><net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.ParallelizeConfig xmlns="">
-  <maxJobs>1</maxJobs>
-</net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.ParallelizeConfig></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.ErrorBounce</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Failover</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Retry</class><configBean encoding="xstream"><net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.RetryConfig xmlns="">
-  <backoffFactor>1.0</backoffFactor>
-  <initialDelay>1000</initialDelay>
-  <maxDelay>5000</maxDelay>
-  <maxRetries>0</maxRetries>
-</net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.RetryConfig></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Invoke</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer></dispatchStack><iterationStrategyStack><iteration><strategy><cross><port name="cutoffValue" depth="0" /><port name="conceptCUIs" depth="1" /></cross></strategy></iteration></iterationStrategyStack></processor><processor><name>explainScores_output</name><inputPorts><port><name>input</name><depth>0</depth></port></inputPorts><outputPorts><port><name>return</name><depth>0</depth><granularDepth>0</granularDepth></port></outputPorts><annotations /><activities><activity><raven><group>net.sf.taverna.t2.activities</group><artifact>wsdl-activity</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.activities.wsdl.xmlsplitter.XMLOutputSplitterActivity</class><inputMap><map from="input" to="input" /></inputMap><outputMap><map from="return" to="return" /></outputMap><configBean encoding="xstream"><net.sf.taverna.t2.activities.wsdl.xmlsplitter.XMLSplitterConfigurationBean xmlns="">
-  <inputs>
-    <net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityInputPortDefinitionBean>
-      <name>input</name>
-      <depth>0</depth>
-      <mimeTypes class="java.util.Collections$SingletonList">
-        <element class="string">'text/xml'</element>
-      </mimeTypes>
-      <handledReferenceSchemes />
-      <translatedElementType>java.lang.String</translatedElementType>
-      <allowsLiteralValues>false</allowsLiteralValues>
-    </net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityInputPortDefinitionBean>
-  </inputs>
-  <outputs>
-    <net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityOutputPortDefinitionBean>
-      <name>return</name>
-      <depth>0</depth>
-      <mimeTypes class="java.util.Collections$SingletonList">
-        <element class="string">'text/xml'</element>
-      </mimeTypes>
-      <granularDepth>0</granularDepth>
-    </net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityOutputPortDefinitionBean>
-  </outputs>
-  <wrappedTypeXML>&lt;s:extensions xmlns:s="http://org.embl.ebi.escience/xscufl/0.1alpha"&gt;&lt;s:complextype optional="false" unbounded="false" typename="explainScoresResponse" name="parameters" qname="{http://services.conceptrecognizer.lumc.nl/}explainScoresResponse"&gt;&lt;s:elements&gt;&lt;s:complextype optional="true" unbounded="false" typename="conceptContributionsWrapper" name="return" qname="explainScoresResponse&amp;gt;return"&gt;&lt;s:elements&gt;&lt;s:arraytype optional="true" unbounded="false" wrapped="true" typename="&amp;gt;conceptContributionsWrapper&amp;gt;ConceptContributionTable" name="ConceptContributionTable" qname="conceptContributionsWrapper&amp;gt;ConceptContributionTable"&gt;&lt;s:elementtype&gt;&lt;s:complextype optional="false" unbounded="false" typename="conceptContribution" name="" qname="{http://services.conceptrecognizer.lumc.nl/}conceptContribution"&gt;&lt;s:elements&gt;&lt;s:basetype optional="true" unbounded="false" typename="string" name="conceptName" qname="conceptContribution&amp;gt;conceptName" /&gt;&lt;s:basetype optional="true" unbounded="false" typename="double" name="contribution" qname="conceptContribution&amp;gt;contribution" /&gt;&lt;s:basetype optional="true" unbounded="false" typename="int" name="conceptId" qname="conceptContribution&amp;gt;conceptId" /&gt;&lt;/s:elements&gt;&lt;/s:complextype&gt;&lt;/s:elementtype&gt;&lt;/s:arraytype&gt;&lt;/s:elements&gt;&lt;/s:complextype&gt;&lt;/s:elements&gt;&lt;/s:complextype&gt;&lt;/s:extensions&gt;</wrappedTypeXML>
-</net.sf.taverna.t2.activities.wsdl.xmlsplitter.XMLSplitterConfigurationBean></configBean><annotations /></activity></activities><dispatchStack><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Parallelize</class><configBean encoding="xstream"><net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.ParallelizeConfig xmlns="">
-  <maxJobs>1</maxJobs>
-</net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.ParallelizeConfig></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.ErrorBounce</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Failover</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Retry</class><configBean encoding="xstream"><net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.RetryConfig xmlns="">
-  <backoffFactor>1.0</backoffFactor>
-  <initialDelay>1000</initialDelay>
-  <maxDelay>5000</maxDelay>
-  <maxRetries>0</maxRetries>
-</net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.RetryConfig></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Invoke</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer></dispatchStack><iterationStrategyStack><iteration><strategy><cross><port name="input" depth="0" /></cross></strategy></iteration></iterationStrategyStack></processor><processor><name>explainScores_return</name><inputPorts><port><name>input</name><depth>0</depth></port></inputPorts><outputPorts><port><name>ConceptContributionTable</name><depth>0</depth><granularDepth>0</granularDepth></port></outputPorts><annotations /><activities><activity><raven><group>net.sf.taverna.t2.activities</group><artifact>wsdl-activity</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.activities.wsdl.xmlsplitter.XMLOutputSplitterActivity</class><inputMap><map from="input" to="input" /></inputMap><outputMap><map from="ConceptContributionTable" to="ConceptContributionTable" /></outputMap><configBean encoding="xstream"><net.sf.taverna.t2.activities.wsdl.xmlsplitter.XMLSplitterConfigurationBean xmlns="">
-  <inputs>
-    <net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityInputPortDefinitionBean>
-      <name>input</name>
-      <depth>0</depth>
-      <mimeTypes class="java.util.Collections$SingletonList">
-        <element class="string">'text/xml'</element>
-      </mimeTypes>
-      <handledReferenceSchemes />
-      <translatedElementType>java.lang.String</translatedElementType>
-      <allowsLiteralValues>false</allowsLiteralValues>
-    </net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityInputPortDefinitionBean>
-  </inputs>
-  <outputs>
-    <net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityOutputPortDefinitionBean>
-      <name>ConceptContributionTable</name>
-      <depth>0</depth>
-      <mimeTypes class="java.util.Collections$SingletonList">
-        <element class="string">'text/xml'</element>
-      </mimeTypes>
-      <granularDepth>0</granularDepth>
-    </net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityOutputPortDefinitionBean>
-  </outputs>
-  <wrappedTypeXML>&lt;s:extensions xmlns:s="http://org.embl.ebi.escience/xscufl/0.1alpha"&gt;&lt;s:complextype optional="true" unbounded="false" typename="conceptContributionsWrapper" name="return" qname="explainScoresResponse&amp;gt;return"&gt;&lt;s:elements&gt;&lt;s:arraytype optional="true" unbounded="false" wrapped="true" typename="&amp;gt;conceptContributionsWrapper&amp;gt;ConceptContributionTable" name="ConceptContributionTable" qname="conceptContributionsWrapper&amp;gt;ConceptContributionTable"&gt;&lt;s:elementtype&gt;&lt;s:complextype optional="false" unbounded="false" typename="conceptContribution" name="" qname="{http://services.conceptrecognizer.lumc.nl/}conceptContribution"&gt;&lt;s:elements&gt;&lt;s:basetype optional="true" unbounded="false" typename="string" name="conceptName" qname="conceptContribution&amp;gt;conceptName" /&gt;&lt;s:basetype optional="true" unbounded="false" typename="double" name="contribution" qname="conceptContribution&amp;gt;contribution" /&gt;&lt;s:basetype optional="true" unbounded="false" typename="int" name="conceptId" qname="conceptContribution&amp;gt;conceptId" /&gt;&lt;/s:elements&gt;&lt;/s:complextype&gt;&lt;/s:elementtype&gt;&lt;/s:arraytype&gt;&lt;/s:elements&gt;&lt;/s:complextype&gt;&lt;/s:extensions&gt;</wrappedTypeXML>
-</net.sf.taverna.t2.activities.wsdl.xmlsplitter.XMLSplitterConfigurationBean></configBean><annotations /></activity></activities><dispatchStack><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Parallelize</class><configBean encoding="xstream"><net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.ParallelizeConfig xmlns="">
-  <maxJobs>1</maxJobs>
-</net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.ParallelizeConfig></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.ErrorBounce</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Failover</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Retry</class><configBean encoding="xstream"><net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.RetryConfig xmlns="">
-  <backoffFactor>1.0</backoffFactor>
-  <initialDelay>1000</initialDelay>
-  <maxDelay>5000</maxDelay>
-  <maxRetries>0</maxRetries>
-</net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.RetryConfig></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Invoke</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer></dispatchStack><iterationStrategyStack><iteration><strategy><cross><port name="input" depth="0" /></cross></strategy></iteration></iterationStrategyStack></processor><processor><name>Beanshell</name><inputPorts><port><name>item</name><depth>0</depth></port><port><name>inputList</name><depth>1</depth></port></inputPorts><outputPorts><port><name>outputList</name><depth>1</depth><granularDepth>1</granularDepth></port></outputPorts><annotations /><activities><activity><raven><group>net.sf.taverna.t2.activities</group><artifact>beanshell-activity</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.activities.beanshell.BeanshellActivity</class><inputMap><map from="item" to="item" /><map from="inputList" to="inputList" /></inputMap><outputMap><map from="outputList" to="outputList" /></outputMap><configBean encoding="xstream"><net.sf.taverna.t2.activities.beanshell.BeanshellActivityConfigurationBean xmlns="">
-  <inputs>
-    <net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityInputPortDefinitionBean>
-      <name>inputList</name>
-      <depth>1</depth>
-      <mimeTypes>
-        <string>text/plain</string>
-      </mimeTypes>
-      <handledReferenceSchemes />
-      <translatedElementType>java.lang.String</translatedElementType>
-      <allowsLiteralValues>true</allowsLiteralValues>
-    </net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityInputPortDefinitionBean>
-    <net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityInputPortDefinitionBean>
-      <name>item</name>
-      <depth>0</depth>
-      <mimeTypes>
-        <string>text/plain</string>
-      </mimeTypes>
-      <handledReferenceSchemes />
-      <translatedElementType>java.lang.String</translatedElementType>
-      <allowsLiteralValues>true</allowsLiteralValues>
-    </net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityInputPortDefinitionBean>
-  </inputs>
-  <outputs>
-    <net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityOutputPortDefinitionBean>
-      <name>outputList</name>
-      <depth>1</depth>
       <mimeTypes />
-      <granularDepth>1</granularDepth>
+      <granularDepth>0</granularDepth>
     </net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityOutputPortDefinitionBean>
   </outputs>
   <classLoaderSharing>workflow</classLoaderSharing>
   <localDependencies />
   <artifactDependencies />
-  <script>ArrayList tmp = new ArrayList(inputList);
-
-tmp.add(item);
-
-outputList = tmp;</script>
+  <script>String tmp = item1+","+item2;
+output = tmp;</script>
   <dependencies />
 </net.sf.taverna.t2.activities.beanshell.BeanshellActivityConfigurationBean></configBean><annotations /></activity></activities><dispatchStack><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Parallelize</class><configBean encoding="xstream"><net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.ParallelizeConfig xmlns="">
   <maxJobs>1</maxJobs>
@@ -276,72 +385,13 @@ outputList = tmp;</script>
   <initialDelay>1000</initialDelay>
   <maxDelay>5000</maxDelay>
   <maxRetries>0</maxRetries>
-</net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.RetryConfig></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Invoke</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer></dispatchStack><iterationStrategyStack><iteration><strategy><cross><port name="item" depth="0" /><port name="inputList" depth="1" /></cross></strategy></iteration></iterationStrategyStack></processor></processors><conditions /><datalinks><datalink><sink type="processor"><processor>return_ConceptContributionTable</processor><port>input</port></sink><source type="processor"><processor>explainScores_return</processor><port>ConceptContributionTable</port></source></datalink><datalink><sink type="processor"><processor>ConceptContributionTable_ConceptContributionTable</processor><port>input</port></sink><source type="processor"><processor>return_ConceptContributionTable</processor><port>ConceptContributionTable</port></source></datalink><datalink><sink type="processor"><processor>explainScores</processor><port>parameters</port></sink><source type="processor"><processor>explainScores_input</processor><port>output</port></source></datalink><datalink><sink type="processor"><processor>explainScores_input</processor><port>cutoffValue</port></sink><source type="dataflow"><port>maxNrResults</port></source></datalink><datalink><sink type="processor"><processor>explainScores_input</processor><port>conceptCUIs</port></sink><source type="processor"><processor>Beanshell</processor><port>outputList</port></source></datalink><datalink><sink type="processor"><processor>explainScores_output</processor><port>input</port></sink><source type="processor"><processor>explainScores</processor><port>parameters</port></source></datalink><datalink><sink type="processor"><processor>explainScores_return</processor><port>input</port></sink><source type="processor"><processor>explainScores_output</processor><port>return</port></source></datalink><datalink><sink type="processor"><processor>Beanshell</processor><port>item</port></sink><source type="dataflow"><port>matchConcept</port></source></datalink><datalink><sink type="processor"><processor>Beanshell</processor><port>inputList</port></sink><source type="dataflow"><port>queryConceptSet</port></source></datalink><datalink><sink type="dataflow"><port>ConceptName</port></sink><source type="processor"><processor>ConceptContributionTable_ConceptContributionTable</processor><port>conceptName</port></source></datalink><datalink><sink type="dataflow"><port>ConceptID</port></sink><source type="processor"><processor>ConceptContributionTable_ConceptContributionTable</processor><port>conceptId</port></source></datalink><datalink><sink type="dataflow"><port>ConceptContribution</port></sink><source type="processor"><processor>ConceptContributionTable_ConceptContributionTable</processor><port>contribution</port></source></datalink><datalink><sink type="dataflow"><port>xml_table</port></sink><source type="processor"><processor>explainScores_return</processor><port>ConceptContributionTable</port></source></datalink></datalinks><annotations><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
-  <annotationAssertions>
-    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.DescriptiveTitle">
-        <text>Explain concept scores</text>
-      </annotationBean>
-      <date>2012-04-16 13:00:42.27 UTC</date>
-      <creators />
-      <curationEventList />
-    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-  </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+</net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.RetryConfig></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Invoke</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer></dispatchStack><iterationStrategyStack><iteration><strategy><cross><port name="item2" depth="0" /><port name="item1" depth="0" /></cross></strategy></iteration></iterationStrategyStack></processor></processors><conditions /><datalinks><datalink><sink type="processor"><processor>explainScoresStringInput</processor><port>parameters</port></sink><source type="processor"><processor>explainScoresStringInput_input</processor><port>output</port></source></datalink><datalink><sink type="processor"><processor>explainScoresStringInput_input</processor><port>cutoffValue</port></sink><source type="dataflow"><port>cutoff</port></source></datalink><datalink><sink type="processor"><processor>explainScoresStringInput_input</processor><port>conceptCUIsAsString</port></sink><source type="processor"><processor>makeCommaSeparatedString</processor><port>output</port></source></datalink><datalink><sink type="processor"><processor>explainScoresStringInput_output</processor><port>input</port></sink><source type="processor"><processor>explainScoresStringInput</processor><port>parameters</port></source></datalink><datalink><sink type="processor"><processor>explainScoresStringInput_return</processor><port>input</port></sink><source type="processor"><processor>explainScoresStringInput_output</processor><port>return</port></source></datalink><datalink><sink type="processor"><processor>return_ConceptContributionTable_2</processor><port>input</port></sink><source type="processor"><processor>explainScoresStringInput_return</processor><port>ConceptContributionTable</port></source></datalink><datalink><sink type="processor"><processor>2_ConceptContributionTable</processor><port>input</port></sink><source type="processor"><processor>return_ConceptContributionTable_2</processor><port>ConceptContributionTable</port></source></datalink><datalink><sink type="processor"><processor>makeCommaSeparatedString</processor><port>item2</port></sink><source type="dataflow"><port>C_ConceptID</port></source></datalink><datalink><sink type="processor"><processor>makeCommaSeparatedString</processor><port>item1</port></sink><source type="dataflow"><port>A_ConceptID</port></source></datalink><datalink><sink type="dataflow"><port>B_ConceptName</port></sink><source type="processor"><processor>2_ConceptContributionTable</processor><port>conceptName</port></source></datalink><datalink><sink type="dataflow"><port>B_ConceptID</port></sink><source type="processor"><processor>2_ConceptContributionTable</processor><port>conceptId</port></source></datalink><datalink><sink type="dataflow"><port>B_ConceptContribution</port></sink><source type="processor"><processor>2_ConceptContributionTable</processor><port>contribution</port></source></datalink></datalinks><annotations><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
       <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
-        <identification>abaeb048-e186-4c8d-92d4-6b32b22603d8</identification>
+        <identification>bb8d1d77-e3d2-4cee-aee9-3cd4e1bd8547</identification>
       </annotationBean>
-      <date>2012-04-16 13:01:16.427 UTC</date>
-      <creators />
-      <curationEventList />
-    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-  </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
-  <annotationAssertions>
-    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
-        <identification>7a995f89-0c37-48b9-b0f7-8eca5cd36420</identification>
-      </annotationBean>
-      <date>2012-01-06 11:51:06.790 UTC</date>
-      <creators />
-      <curationEventList />
-    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-  </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
-  <annotationAssertions>
-    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
-        <identification>4bed166d-9815-4a35-a613-869b300b7973</identification>
-      </annotationBean>
-      <date>2012-04-16 13:04:34.678 UTC</date>
-      <creators />
-      <curationEventList />
-    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-  </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
-  <annotationAssertions>
-    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.FreeTextDescription">
-        <text>Explain concept scores of concept profiles (enrichment with concept set).
-
-This workflow can be used together with other workflows in this pack: http://www.myexperiment.org/packs/282 for functional gene and SNP annotation and knowledge discovery.
-
-</text>
-      </annotationBean>
-      <date>2012-07-18 13:19:33.541 UTC</date>
-      <creators />
-      <curationEventList />
-    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-  </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
-  <annotationAssertions>
-    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
-        <identification>8efd062c-22d8-4fc6-bfe4-ea8f96ba7e2a</identification>
-      </annotationBean>
-      <date>2012-04-16 12:58:21.8 UTC</date>
+      <date>2012-01-06 12:38:00.681 UTC</date>
       <creators />
       <curationEventList />
     </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
@@ -361,42 +411,9 @@ This workflow can be used together with other workflows in this pack: http://www
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
       <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
-        <identification>bb8d1d77-e3d2-4cee-aee9-3cd4e1bd8547</identification>
+        <identification>88e1d0d3-3377-4a21-a98f-19020444e686</identification>
       </annotationBean>
-      <date>2012-01-06 12:38:00.681 UTC</date>
-      <creators />
-      <curationEventList />
-    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-  </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
-  <annotationAssertions>
-    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
-        <identification>0faa8a91-3a1c-4e03-b74d-f271e7b96290</identification>
-      </annotationBean>
-      <date>2012-04-16 12:55:56.499 UTC</date>
-      <creators />
-      <curationEventList />
-    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-  </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
-  <annotationAssertions>
-    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
-        <identification>2b5167d3-3864-46c1-b761-b66ab721da54</identification>
-      </annotationBean>
-      <date>2012-02-03 13:52:44.748 UTC</date>
-      <creators />
-      <curationEventList />
-    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-  </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
-  <annotationAssertions>
-    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
-        <identification>89f2da6a-161b-47b1-a048-a65fd35f912c</identification>
-      </annotationBean>
-      <date>2012-01-06 11:47:16.46 UTC</date>
+      <date>2012-09-07 14:58:20.922 UTC</date>
       <creators />
       <curationEventList />
     </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
@@ -416,6 +433,84 @@ This workflow can be used together with other workflows in this pack: http://www
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
       <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
+        <identification>4f826cfe-3950-4151-bbe6-bff67413be51</identification>
+      </annotationBean>
+      <date>2012-09-07 15:22:15.103 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
+        <identification>c416805f-aa9d-4d44-b434-f253935ed0ef</identification>
+      </annotationBean>
+      <date>2012-09-11 08:57:11.33 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
+        <identification>9a6508bd-87c3-4d9c-99f2-9003b5b57df4</identification>
+      </annotationBean>
+      <date>2012-09-11 09:01:50.31 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.Author">
+        <text>Creator: Reinout van Schouwen on behalf of the BIoSemantics Group
+Adaptations by Marco Roos and Kristina Hettne</text>
+      </annotationBean>
+      <date>2012-09-11 09:02:52.112 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
+        <identification>2b5167d3-3864-46c1-b761-b66ab721da54</identification>
+      </annotationBean>
+      <date>2012-02-03 13:52:44.748 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
+        <identification>0faa8a91-3a1c-4e03-b74d-f271e7b96290</identification>
+      </annotationBean>
+      <date>2012-04-16 12:55:56.499 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
+        <identification>a260c127-7bbc-4dde-86a9-80647fcbb862</identification>
+      </annotationBean>
+      <date>2012-09-10 15:18:42.957 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
         <identification>3c6eca00-e3a8-46b8-86bd-7c4b48a3ac77</identification>
       </annotationBean>
       <date>2012-07-18 13:20:01.872 UTC</date>
@@ -427,9 +522,57 @@ This workflow can be used together with other workflows in this pack: http://www
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
       <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
-        <identification>541a7a2d-e3e3-490d-885b-52d653a21d11</identification>
+        <identification>713fa342-cdf4-48b7-850d-abecb37b9b1f</identification>
       </annotationBean>
-      <date>2012-02-03 11:42:15.89 UTC</date>
+      <date>2012-09-11 08:58:13.328 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.FreeTextDescription">
+        <text>Purpose of workflow: This workflow takes two concept ids as input and returns the top ranking "B" concepts according to Swanson's ABC model of discovery, where the relationships AB and BC are known and reported in the literature, and the implicit relationship AC is a putative new discovery. It might also be the case that AC is already known. In that case AC does not represent a new discovery but will still be returned (see workflow example values). The B concepts are returned sorted on the percentage of the contributions of the individual concepts to the coherence score (the average of the inner product scores of all possible concept pairs within the group).
+
+This workflow can be used together with other workflows in this pack: http://www.myexperiment.org/packs/282 for functional gene and SNP annotation and knowledge discovery.
+
+</text>
+      </annotationBean>
+      <date>2012-09-11 09:11:13.758 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
+        <identification>8f284446-2578-4c4d-b81d-e842a463641b</identification>
+      </annotationBean>
+      <date>2012-09-07 15:34:00.455 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
+        <identification>8d4a9091-0ba9-468e-9883-7b08e5212cd2</identification>
+      </annotationBean>
+      <date>2012-04-16 13:07:32.864 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
+        <identification>7a995f89-0c37-48b9-b0f7-8eca5cd36420</identification>
+      </annotationBean>
+      <date>2012-01-06 11:51:06.790 UTC</date>
       <creators />
       <curationEventList />
     </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
@@ -449,9 +592,20 @@ This workflow can be used together with other workflows in this pack: http://www
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
       <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
-        <identification>8d4a9091-0ba9-468e-9883-7b08e5212cd2</identification>
+        <identification>7d6ba6db-2552-4c15-b800-1789f5385d44</identification>
       </annotationBean>
-      <date>2012-04-16 13:07:32.864 UTC</date>
+      <date>2012-09-07 15:18:14.352 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
+        <identification>a6c096b8-050d-48bf-8b9c-114762aac26d</identification>
+      </annotationBean>
+      <date>2012-09-07 14:52:03.90 UTC</date>
       <creators />
       <curationEventList />
     </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
@@ -459,16 +613,122 @@ This workflow can be used together with other workflows in this pack: http://www
 </net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.Author">
-        <text>Creator: Reinout van Schouwen on behalf of the BIoSemantics Group
-Adaptation by Marco Roos
-
-Contributions:
-Additional annotations by Kristina Hettne</text>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.DescriptiveTitle">
+        <text>Explain concept scores</text>
       </annotationBean>
-      <date>2012-07-18 13:19:55.900 UTC</date>
+      <date>2012-04-16 13:00:42.27 UTC</date>
       <creators />
       <curationEventList />
     </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
   </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain></annotations></dataflow></workflow>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
+        <identification>4b937a61-6180-48ce-a679-cf3ed1c8f208</identification>
+      </annotationBean>
+      <date>2012-09-11 08:58:54.136 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
+        <identification>541a7a2d-e3e3-490d-885b-52d653a21d11</identification>
+      </annotationBean>
+      <date>2012-02-03 11:42:15.89 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
+        <identification>6bab82da-54d0-4bc7-96fd-e5c5d3c6d77f</identification>
+      </annotationBean>
+      <date>2012-09-07 14:37:53.808 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
+        <identification>8efd062c-22d8-4fc6-bfe4-ea8f96ba7e2a</identification>
+      </annotationBean>
+      <date>2012-04-16 12:58:21.8 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
+        <identification>89f2da6a-161b-47b1-a048-a65fd35f912c</identification>
+      </annotationBean>
+      <date>2012-01-06 11:47:16.46 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
+        <identification>142a2c6d-8e96-4c9f-ad64-da97fd4c2597</identification>
+      </annotationBean>
+      <date>2012-09-04 11:16:44.759 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
+        <identification>abaeb048-e186-4c8d-92d4-6b32b22603d8</identification>
+      </annotationBean>
+      <date>2012-04-16 13:01:16.427 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
+        <identification>2b762f5e-4473-4d48-b78f-df306600467a</identification>
+      </annotationBean>
+      <date>2012-09-11 09:11:13.838 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
+        <identification>90f0af1e-a653-4a85-889c-4120accdd9d9</identification>
+      </annotationBean>
+      <date>2012-09-07 14:44:36.440 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
+        <identification>4bed166d-9815-4a35-a613-869b300b7973</identification>
+      </annotationBean>
+      <date>2012-04-16 13:04:34.678 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2></annotations></dataflow></workflow>

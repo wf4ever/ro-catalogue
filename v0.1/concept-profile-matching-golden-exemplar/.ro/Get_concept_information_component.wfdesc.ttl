@@ -1,48 +1,64 @@
-@base <http://ns.taverna.org.uk/2010/workflowBundle/cf644a3e-3942-4c42-b8c7-2f834fd110d4/workflow/Get_concept_informat/> .
+@base <http://ns.taverna.org.uk/2010/workflowBundle/2824bc65-af91-41c0-8912-e24151314a57/workflow/Get_concept_informat/> .
 @prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
 @prefix wf4ever: <http://purl.org/wf4ever/wf4ever#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<processor/getConceptDefinition/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:SOAPService ;
+<processor/getConceptProfile/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:SOAPService ;
 	wf4ever:wsdlURI "http://ws.biosemantics.org/ConceptRecognizerService?wsdl"^^<http://www.w3.org/2001/XMLSchema#anyURI> ;
-	rdfs:label "getConceptDefinition" ;
-	wfdesc:hasInput <processor/getConceptDefinition/in/parameters> ;
-	wfdesc:hasOutput <processor/getConceptDefinition/out/parameters> .
+	rdfs:label "getConceptProfile" ;
+	wfdesc:hasInput <processor/getConceptProfile/in/parameters> ;
+	wfdesc:hasOutput <processor/getConceptProfile/out/parameters> .
 
-<datalink?from=in/Concept_ID&to=processor/getConceptDefinition_input/in/conceptId> a wfdesc:DataLink ;
+<datalink?from=in/Concept_ID&to=processor/getConceptProfile_input/in/conceptId> a wfdesc:DataLink ;
 	wfdesc:hasSource <in/Concept_ID> ;
-	wfdesc:hasSink <processor/getConceptDefinition_input/in/conceptId> .
+	wfdesc:hasSink <processor/getConceptProfile_input/in/conceptId> .
 
-<datalink?from=processor/getConceptDefinition/out/parameters&to=processor/getConceptDefinition_output/in/input> a wfdesc:DataLink ;
-	wfdesc:hasSource <processor/getConceptDefinition/out/parameters> ;
-	wfdesc:hasSink <processor/getConceptDefinition_output/in/input> .
+<datalink?from=processor/ConceptVector_ConceptVector/out/queryConceptID&to=out/Concept_ID_for_concept_in_profile> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/ConceptVector_ConceptVector/out/queryConceptID> ;
+	wfdesc:hasSink <out/Concept_ID_for_concept_in_profile> .
 
-<datalink?from=processor/getConceptDefinition_input/out/output&to=processor/getConceptDefinition/in/parameters> a wfdesc:DataLink ;
-	wfdesc:hasSource <processor/getConceptDefinition_input/out/output> ;
-	wfdesc:hasSink <processor/getConceptDefinition/in/parameters> .
+<datalink?from=processor/ConceptVector_ConceptVector/out/score&to=out/Value_for_concept_in_profile> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/ConceptVector_ConceptVector/out/score> ;
+	wfdesc:hasSink <out/Value_for_concept_in_profile> .
 
-<datalink?from=processor/getConceptDefinition_output/out/return&to=processor/getConceptDefinition_return/in/input> a wfdesc:DataLink ;
-	wfdesc:hasSource <processor/getConceptDefinition_output/out/return> ;
-	wfdesc:hasSink <processor/getConceptDefinition_return/in/input> .
+<datalink?from=processor/getConceptProfile/out/parameters&to=processor/getConceptProfile_output/in/input> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/getConceptProfile/out/parameters> ;
+	wfdesc:hasSink <processor/getConceptProfile_output/in/input> .
 
-<datalink?from=processor/getConceptDefinition_return/out/conceptId&to=out/Concept_ID> a wfdesc:DataLink ;
-	wfdesc:hasSource <processor/getConceptDefinition_return/out/conceptId> ;
+<datalink?from=processor/getConceptProfile_input/out/output&to=processor/getConceptProfile/in/parameters> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/getConceptProfile_input/out/output> ;
+	wfdesc:hasSink <processor/getConceptProfile/in/parameters> .
+
+<datalink?from=processor/getConceptProfile_output/out/return&to=processor/getConceptProfile_return/in/input> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/getConceptProfile_output/out/return> ;
+	wfdesc:hasSink <processor/getConceptProfile_return/in/input> .
+
+<datalink?from=processor/getConceptProfile_return/out/ConceptVector&to=processor/return_ConceptVector/in/input> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/getConceptProfile_return/out/ConceptVector> ;
+	wfdesc:hasSink <processor/return_ConceptVector/in/input> .
+
+<datalink?from=processor/getConceptProfile_return/out/conceptId&to=out/Concept_ID> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/getConceptProfile_return/out/conceptId> ;
 	wfdesc:hasSink <out/Concept_ID> .
 
-<datalink?from=processor/getConceptDefinition_return/out/definition&to=out/Concept_definition> a wfdesc:DataLink ;
-	wfdesc:hasSource <processor/getConceptDefinition_return/out/definition> ;
+<datalink?from=processor/getConceptProfile_return/out/definition&to=out/Concept_definition> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/getConceptProfile_return/out/definition> ;
 	wfdesc:hasSink <out/Concept_definition> .
 
-<datalink?from=processor/getConceptDefinition_return/out/name&to=out/Concept_name> a wfdesc:DataLink ;
-	wfdesc:hasSource <processor/getConceptDefinition_return/out/name> ;
+<datalink?from=processor/getConceptProfile_return/out/name&to=out/Concept_name> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/getConceptProfile_return/out/name> ;
 	wfdesc:hasSink <out/Concept_name> .
+
+<datalink?from=processor/return_ConceptVector/out/ConceptVector&to=processor/ConceptVector_ConceptVector/in/input> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/return_ConceptVector/out/ConceptVector> ;
+	wfdesc:hasSink <processor/ConceptVector_ConceptVector/in/input> .
 
 <> a wfdesc:Workflow , wfdesc:Description , wfdesc:Process ;
 	rdfs:label "Get_concept_informat" ;
 	wfdesc:hasInput <in/Concept_ID> ;
-	wfdesc:hasOutput <out/Concept_ID> , <out/Concept_definition> , <out/Concept_name> ;
-	wfdesc:hasSubProcess <processor/getConceptDefinition/> , <processor/getConceptDefinition_input/> , <processor/getConceptDefinition_output/> , <processor/getConceptDefinition_return/> ;
-	wfdesc:hasDataLink <datalink?from=in/Concept_ID&to=processor/getConceptDefinition_input/in/conceptId> , <datalink?from=processor/getConceptDefinition/out/parameters&to=processor/getConceptDefinition_output/in/input> , <datalink?from=processor/getConceptDefinition_input/out/output&to=processor/getConceptDefinition/in/parameters> , <datalink?from=processor/getConceptDefinition_output/out/return&to=processor/getConceptDefinition_return/in/input> , <datalink?from=processor/getConceptDefinition_return/out/conceptId&to=out/Concept_ID> , <datalink?from=processor/getConceptDefinition_return/out/definition&to=out/Concept_definition> , <datalink?from=processor/getConceptDefinition_return/out/name&to=out/Concept_name> .
+	wfdesc:hasOutput <out/Concept_ID> , <out/Concept_ID_for_concept_in_profile> , <out/Concept_definition> , <out/Concept_name> , <out/Value_for_concept_in_profile> ;
+	wfdesc:hasSubProcess <processor/ConceptVector_ConceptVector/> , <processor/getConceptProfile/> , <processor/getConceptProfile_input/> , <processor/getConceptProfile_output/> , <processor/getConceptProfile_return/> , <processor/return_ConceptVector/> ;
+	wfdesc:hasDataLink <datalink?from=in/Concept_ID&to=processor/getConceptProfile_input/in/conceptId> , <datalink?from=processor/ConceptVector_ConceptVector/out/queryConceptID&to=out/Concept_ID_for_concept_in_profile> , <datalink?from=processor/ConceptVector_ConceptVector/out/score&to=out/Value_for_concept_in_profile> , <datalink?from=processor/getConceptProfile/out/parameters&to=processor/getConceptProfile_output/in/input> , <datalink?from=processor/getConceptProfile_input/out/output&to=processor/getConceptProfile/in/parameters> , <datalink?from=processor/getConceptProfile_output/out/return&to=processor/getConceptProfile_return/in/input> , <datalink?from=processor/getConceptProfile_return/out/ConceptVector&to=processor/return_ConceptVector/in/input> , <datalink?from=processor/getConceptProfile_return/out/conceptId&to=out/Concept_ID> , <datalink?from=processor/getConceptProfile_return/out/definition&to=out/Concept_definition> , <datalink?from=processor/getConceptProfile_return/out/name&to=out/Concept_name> , <datalink?from=processor/return_ConceptVector/out/ConceptVector&to=processor/ConceptVector_ConceptVector/in/input> .
 
 <in/Concept_ID> a wfdesc:Input , wfdesc:Description , wfdesc:Output ;
 	rdfs:label "Concept_ID" .
@@ -50,53 +66,87 @@
 <out/Concept_ID> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
 	rdfs:label "Concept_ID" .
 
+<out/Concept_ID_for_concept_in_profile> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
+	rdfs:label "Concept_ID_for_concept_in_profile" .
+
 <out/Concept_definition> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
 	rdfs:label "Concept_definition" .
 
 <out/Concept_name> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
 	rdfs:label "Concept_name" .
 
-<processor/getConceptDefinition/in/parameters> a wfdesc:Input , wfdesc:Description ;
+<out/Value_for_concept_in_profile> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
+	rdfs:label "Value_for_concept_in_profile" .
+
+<processor/ConceptVector_ConceptVector/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "ConceptVector_ConceptVector" ;
+	wfdesc:hasInput <processor/ConceptVector_ConceptVector/in/input> ;
+	wfdesc:hasOutput <processor/ConceptVector_ConceptVector/out/queryConceptID> , <processor/ConceptVector_ConceptVector/out/score> .
+
+<processor/ConceptVector_ConceptVector/in/input> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "input" .
+
+<processor/ConceptVector_ConceptVector/out/queryConceptID> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "queryConceptID" .
+
+<processor/ConceptVector_ConceptVector/out/score> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "score" .
+
+<processor/getConceptProfile/in/parameters> a wfdesc:Input , wfdesc:Description ;
 	rdfs:label "parameters" .
 
-<processor/getConceptDefinition/out/parameters> a wfdesc:Output , wfdesc:Description ;
+<processor/getConceptProfile/out/parameters> a wfdesc:Output , wfdesc:Description ;
 	rdfs:label "parameters" .
 
-<processor/getConceptDefinition_input/> a wfdesc:Process , wfdesc:Description ;
-	rdfs:label "getConceptDefinition_input" ;
-	wfdesc:hasInput <processor/getConceptDefinition_input/in/conceptId> ;
-	wfdesc:hasOutput <processor/getConceptDefinition_input/out/output> .
+<processor/getConceptProfile_input/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "getConceptProfile_input" ;
+	wfdesc:hasInput <processor/getConceptProfile_input/in/conceptId> ;
+	wfdesc:hasOutput <processor/getConceptProfile_input/out/output> .
 
-<processor/getConceptDefinition_input/in/conceptId> a wfdesc:Input , wfdesc:Description ;
+<processor/getConceptProfile_input/in/conceptId> a wfdesc:Input , wfdesc:Description ;
 	rdfs:label "conceptId" .
 
-<processor/getConceptDefinition_input/out/output> a wfdesc:Output , wfdesc:Description ;
+<processor/getConceptProfile_input/out/output> a wfdesc:Output , wfdesc:Description ;
 	rdfs:label "output" .
 
-<processor/getConceptDefinition_output/> a wfdesc:Process , wfdesc:Description ;
-	rdfs:label "getConceptDefinition_output" ;
-	wfdesc:hasInput <processor/getConceptDefinition_output/in/input> ;
-	wfdesc:hasOutput <processor/getConceptDefinition_output/out/return> .
+<processor/getConceptProfile_output/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "getConceptProfile_output" ;
+	wfdesc:hasInput <processor/getConceptProfile_output/in/input> ;
+	wfdesc:hasOutput <processor/getConceptProfile_output/out/return> .
 
-<processor/getConceptDefinition_output/in/input> a wfdesc:Input , wfdesc:Description ;
+<processor/getConceptProfile_output/in/input> a wfdesc:Input , wfdesc:Description ;
 	rdfs:label "input" .
 
-<processor/getConceptDefinition_output/out/return> a wfdesc:Output , wfdesc:Description ;
+<processor/getConceptProfile_output/out/return> a wfdesc:Output , wfdesc:Description ;
 	rdfs:label "return" .
 
-<processor/getConceptDefinition_return/> a wfdesc:Process , wfdesc:Description ;
-	rdfs:label "getConceptDefinition_return" ;
-	wfdesc:hasInput <processor/getConceptDefinition_return/in/input> ;
-	wfdesc:hasOutput <processor/getConceptDefinition_return/out/conceptId> , <processor/getConceptDefinition_return/out/definition> , <processor/getConceptDefinition_return/out/name> .
+<processor/getConceptProfile_return/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "getConceptProfile_return" ;
+	wfdesc:hasInput <processor/getConceptProfile_return/in/input> ;
+	wfdesc:hasOutput <processor/getConceptProfile_return/out/ConceptVector> , <processor/getConceptProfile_return/out/conceptId> , <processor/getConceptProfile_return/out/definition> , <processor/getConceptProfile_return/out/name> .
 
-<processor/getConceptDefinition_return/in/input> a wfdesc:Input , wfdesc:Description ;
+<processor/getConceptProfile_return/in/input> a wfdesc:Input , wfdesc:Description ;
 	rdfs:label "input" .
 
-<processor/getConceptDefinition_return/out/conceptId> a wfdesc:Output , wfdesc:Description ;
+<processor/getConceptProfile_return/out/ConceptVector> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "ConceptVector" .
+
+<processor/getConceptProfile_return/out/conceptId> a wfdesc:Output , wfdesc:Description ;
 	rdfs:label "conceptId" .
 
-<processor/getConceptDefinition_return/out/definition> a wfdesc:Output , wfdesc:Description ;
+<processor/getConceptProfile_return/out/definition> a wfdesc:Output , wfdesc:Description ;
 	rdfs:label "definition" .
 
-<processor/getConceptDefinition_return/out/name> a wfdesc:Output , wfdesc:Description ;
+<processor/getConceptProfile_return/out/name> a wfdesc:Output , wfdesc:Description ;
 	rdfs:label "name" .
+
+<processor/return_ConceptVector/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "return_ConceptVector" ;
+	wfdesc:hasInput <processor/return_ConceptVector/in/input> ;
+	wfdesc:hasOutput <processor/return_ConceptVector/out/ConceptVector> .
+
+<processor/return_ConceptVector/in/input> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "input" .
+
+<processor/return_ConceptVector/out/ConceptVector> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "ConceptVector" .

@@ -1,14 +1,10 @@
-<workflow xmlns="http://taverna.sf.net/2008/xml/t2flow" version="1" producedBy="taverna-2.4.0"><dataflow id="d2f0a621-0e45-43b7-bd56-11c61a1c8df9" role="top"><name>DatabaseID_to_ConceptID</name><inputPorts><port><name>DatabaseID</name><depth>0</depth><granularDepth>0</granularDepth><annotations><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+<workflow xmlns="http://taverna.sf.net/2008/xml/t2flow" version="1" producedBy="taverna-2.4.0"><dataflow id="b445c295-6509-4ecf-9697-78f5312959d4" role="top"><name>DatabaseID_to_ConceptID</name><inputPorts><port><name>DatabaseID</name><depth>0</depth><granularDepth>0</granularDepth><annotations><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
       <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.FreeTextDescription">
-        <text>Identifier for databases, e.g. EG for Entrez Gene
-
-Possible values:
-EG, Entrez Gene
-</text>
+        <text>Identifier for databases, e.g. EG for Entrez Gene</text>
       </annotationBean>
-      <date>2012-06-25 20:38:10.999 UTC</date>
+      <date>2012-09-11 11:13:40.275 UTC</date>
       <creators />
       <curationEventList />
     </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
@@ -27,17 +23,6 @@ EG, Entrez Gene
 </net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain></annotations></port><port><name>IDvalue</name><depth>0</depth><granularDepth>0</granularDepth><annotations><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.ExampleValue">
-        <text>3064</text>
-      </annotationBean>
-      <date>2012-04-24 23:17:45.507 UTC</date>
-      <creators />
-      <curationEventList />
-    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-  </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
-  <annotationAssertions>
-    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
       <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.FreeTextDescription">
         <text>Identifier value, e.g. 3064 for HTT when DatabaseID=EG
 </text>
@@ -47,18 +32,18 @@ EG, Entrez Gene
       <curationEventList />
     </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
   </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain></annotations></port></inputPorts><outputPorts><port><name>concepts</name><annotations><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
       <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.ExampleValue">
-        <text>3097212</text>
+        <text>3064</text>
       </annotationBean>
-      <date>2012-04-24 23:19:25.744 UTC</date>
+      <date>2012-04-24 23:17:45.507 UTC</date>
       <creators />
       <curationEventList />
     </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
   </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain></annotations></port></inputPorts><outputPorts><port><name>concepts</name><annotations><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
       <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.FreeTextDescription">
@@ -69,7 +54,29 @@ EG, Entrez Gene
       <curationEventList />
     </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
   </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain></annotations></port></outputPorts><processors><processor><name>mapDatabaseIDToConceptIDs</name><inputPorts><port><name>parameters</name><depth>0</depth></port></inputPorts><outputPorts><port><name>parameters</name><depth>0</depth><granularDepth>0</granularDepth></port></outputPorts><annotations /><activities><activity><raven><group>net.sf.taverna.t2.activities</group><artifact>wsdl-activity</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.activities.wsdl.WSDLActivity</class><inputMap><map from="parameters" to="parameters" /></inputMap><outputMap><map from="parameters" to="parameters" /></outputMap><configBean encoding="xstream"><net.sf.taverna.t2.activities.wsdl.WSDLActivityConfigurationBean xmlns="">
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.ExampleValue">
+        <text>3097212</text>
+      </annotationBean>
+      <date>2012-04-24 23:19:25.744 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain></annotations></port></outputPorts><processors><processor><name>mapDatabaseIDToConceptIDs</name><inputPorts><port><name>parameters</name><depth>0</depth></port></inputPorts><outputPorts><port><name>parameters</name><depth>0</depth><granularDepth>0</granularDepth></port></outputPorts><annotations><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.FreeTextDescription">
+        <text>This Web service takes a database identifier and its value as input and maps it to the corresponding concept id in the Erasmus MC ontology.</text>
+      </annotationBean>
+      <date>2012-09-11 11:15:15.434 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain></annotations><activities><activity><raven><group>net.sf.taverna.t2.activities</group><artifact>wsdl-activity</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.activities.wsdl.WSDLActivity</class><inputMap><map from="parameters" to="parameters" /></inputMap><outputMap><map from="parameters" to="parameters" /></outputMap><configBean encoding="xstream"><net.sf.taverna.t2.activities.wsdl.WSDLActivityConfigurationBean xmlns="">
   <wsdl>http://ws.biosemantics.org/ConceptRecognizerService?wsdl</wsdl>
   <operation>mapDatabaseIDToConceptIDs</operation>
 </net.sf.taverna.t2.activities.wsdl.WSDLActivityConfigurationBean></configBean><annotations /></activity></activities><dispatchStack><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Parallelize</class><configBean encoding="xstream"><net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.ParallelizeConfig xmlns="">
@@ -78,7 +85,7 @@ EG, Entrez Gene
   <backoffFactor>1.0</backoffFactor>
   <initialDelay>1000</initialDelay>
   <maxDelay>5000</maxDelay>
-  <maxRetries>0</maxRetries>
+  <maxRetries>3</maxRetries>
 </net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.RetryConfig></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Invoke</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer></dispatchStack><iterationStrategyStack><iteration><strategy><cross><port name="parameters" depth="0" /></cross></strategy></iteration></iterationStrategyStack></processor><processor><name>mapDatabaseIDToConceptIDs_input</name><inputPorts><port><name>ID</name><depth>0</depth></port><port><name>database</name><depth>0</depth></port></inputPorts><outputPorts><port><name>output</name><depth>0</depth><granularDepth>0</granularDepth></port></outputPorts><annotations /><activities><activity><raven><group>net.sf.taverna.t2.activities</group><artifact>wsdl-activity</artifact><version>1.4</version></raven><class>net.sf.taverna.t2.activities.wsdl.xmlsplitter.XMLInputSplitterActivity</class><inputMap><map from="ID" to="ID" /><map from="database" to="database" /></inputMap><outputMap><map from="output" to="output" /></outputMap><configBean encoding="xstream"><net.sf.taverna.t2.activities.wsdl.xmlsplitter.XMLSplitterConfigurationBean xmlns="">
   <inputs>
     <net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityInputPortDefinitionBean>
@@ -182,9 +189,9 @@ EG, Entrez Gene
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
       <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
-        <identification>14fee9a1-cd21-44f2-9f28-4f2362b8d667</identification>
+        <identification>c2cbb1b4-e2b2-4c45-9dfd-5323f702be83</identification>
       </annotationBean>
-      <date>2012-06-25 20:39:09.656 UTC</date>
+      <date>2012-04-24 23:22:49.83 UTC</date>
       <creators />
       <curationEventList />
     </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
@@ -200,29 +207,23 @@ EG, Entrez Gene
       <curationEventList />
     </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
   </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
-        <identification>d2f0a621-0e45-43b7-bd56-11c61a1c8df9</identification>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.Author">
+        <text>Authors:
+Marco Roos on behalf of the BioSemantics group
+
+Contributors:
+Web Service by Reinout van Schouwen
+Additional annotations by Kristina Hettne</text>
       </annotationBean>
-      <date>2012-07-18 13:13:11.179 UTC</date>
+      <date>2012-07-18 13:12:00.232 UTC</date>
       <creators />
       <curationEventList />
     </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
   </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
-  <annotationAssertions>
-    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
-        <identification>c2cbb1b4-e2b2-4c45-9dfd-5323f702be83</identification>
-      </annotationBean>
-      <date>2012-04-24 23:22:49.83 UTC</date>
-      <creators />
-      <curationEventList />
-    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-  </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
       <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
@@ -256,7 +257,18 @@ This workflow can be used together with other workflows in this pack: http://www
       <curationEventList />
     </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
   </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
+        <identification>14fee9a1-cd21-44f2-9f28-4f2362b8d667</identification>
+      </annotationBean>
+      <date>2012-06-25 20:39:09.656 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
       <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.DescriptiveTitle">
@@ -267,29 +279,46 @@ This workflow can be used together with other workflows in this pack: http://www
       <curationEventList />
     </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
   </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.Author">
-        <text>Authors:
-Marco Roos on behalf of the BioSemantics group
-
-Contributors:
-Web Service by Reinout van Schouwen
-Additional annotations by Kristina Hettne</text>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
+        <identification>d2f0a621-0e45-43b7-bd56-11c61a1c8df9</identification>
       </annotationBean>
-      <date>2012-07-18 13:12:00.232 UTC</date>
+      <date>2012-07-18 13:13:11.179 UTC</date>
       <creators />
       <curationEventList />
     </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
   </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
       <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
         <identification>cdf66f51-8d56-4a5f-87c7-5b8dbd434ee8</identification>
       </annotationBean>
       <date>2012-07-11 14:23:57.252 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
+        <identification>7ecf19fa-7ed5-489c-82e5-9b2468795c30</identification>
+      </annotationBean>
+      <date>2012-09-04 11:14:44.543 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
+        <identification>b445c295-6509-4ecf-9697-78f5312959d4</identification>
+      </annotationBean>
+      <date>2012-09-11 11:15:48.596 UTC</date>
       <creators />
       <curationEventList />
     </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
