@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# Definitions to run RO manager in sandbox
+#
+
+# Change these lines to match local setup
+ROBASE="/home/checklist/git/wf4ever/wf4ever-ro-catalogue"
+RO=/home/checklist/git/wf4ever/ro-manager/src/ro
+
+# Set up ROPATH
+source ../ro.sh
+
+# End.
