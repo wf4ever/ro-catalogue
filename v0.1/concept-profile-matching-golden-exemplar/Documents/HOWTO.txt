@@ -1,20 +1,24 @@
-
-
-The scientific experiment represented by this research object pertains to the functional annotation of SNPs using next-generation text mining technology. (See README.txt)
-
+The scientific experiment represented by this research object pertains to the functional annotation of SNPs using curated metabolic pathway databases and next-generation text mining technology. (See README.txt)
 
 HOW TO GET THE SNP ANNOTATIONS
 _________________________________________________________________________________________
 
 This HOWTO shows how to get the SNP annotations.
 
+1) Inspect the workflow sketch to get an overview of the experiment (Documents/workflow_sketch_final.pdf).
 
-1) Run the workflow: List_Predefined_Concept_Sets.t2flow. Inspect the output and select a concept set number that will be used for the text mining workflow (main_nested_workflow.t2flow).
-2) Run the workflow: main_nested_workflow.t2flow. Input file: top_snps_to_annotate_input.txt.
+2) Run the workflow: Workflows/List_Predefined_Concept_Sets.t2flow.
+
+3) Save the output ports to Excel (save to folder Datasets/).
+
+4) Inspect the output file (example file can be found in Datasets/List_Concept_Sets_output.xls) and select a concept set number that will be used for the text mining workflow (Workflows/main_nested_workflow.t2flow).
+
+5) Run the workflow: Workflows/main_nested_workflow.t2flow one time for each SNP identifier in the file /Datasets/top_snps_to_annotate_input.txt. The workflow is tested with the example inputs, but other parameter settings can be used.
+
+6) Save the output ports to Excel (save to folder Datasets/"snp_name"_output.xls). Save provenance (PROV export) to Workflow-runs/"Workflow_name"-"snp_name"-prov-export.
+
+7) Run the workflow Workflows/SNP2KEGG.t2flow. Be sure to change the file paths in the input parameters to match local settings (input file should be Datasets/top_snps_to_annotate_input.txt, output file should be Datasets/output_snp_gene_kegg.txt). 
+
+8) Collect the outputs from the different workflow runs in a document (example in Documents/kegg_cp_comparison_results.xls. The columns are: SNP ID, Gene name, Illig et al annotation, KEGG, Concept profile matching). 
 
 
-NOTES
-___________________________________________________
-
-Our internal data are in:
-Anni databases: 	(@@add locations!)

@@ -1,4 +1,4 @@
-@base <http://ns.taverna.org.uk/2010/workflowBundle/2edfc9d9-b021-4301-bbd4-a076a5e9017e/workflow/SNP_ID2EntrezGene_ID/> .
+@base <http://ns.taverna.org.uk/2010/workflowBundle/bd0e27ad-006c-4572-bfba-39fb8ce0d5f7/workflow/SNP_ID2EntrezGene_ID/> .
 @prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
 @prefix wf4ever: <http://purl.org/wf4ever/wf4ever#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -99,6 +99,10 @@ chr_out = chr_in;
 	wfdesc:hasSource <in/SNP_ID> ;
 	wfdesc:hasSink <processor/Split_string_into_string_list_by_regular_expression/in/string> .
 
+<datalink?from=in/set_width&to=processor/input_chr_position/in/in1> a wfdesc:DataLink ;
+	wfdesc:hasSource <in/set_width> ;
+	wfdesc:hasSink <processor/input_chr_position/in/in1> .
+
 <datalink?from=processor/Flatten_List/out/outputlist&to=processor/input_chr_position/in/chr_in> a wfdesc:DataLink ;
 	wfdesc:hasSource <processor/Flatten_List/out/outputlist> ;
 	wfdesc:hasSink <processor/input_chr_position/in/chr_in> .
@@ -143,19 +147,18 @@ chr_out = chr_in;
 	wfdesc:hasSource <processor/regex_value/out/value> ;
 	wfdesc:hasSink <processor/Split_string_into_string_list_by_regular_expression/in/regex> .
 
-<datalink?from=processor/set_width/out/value&to=processor/input_chr_position/in/in1> a wfdesc:DataLink ;
-	wfdesc:hasSource <processor/set_width/out/value> ;
-	wfdesc:hasSink <processor/input_chr_position/in/in1> .
-
 <> a wfdesc:Workflow , wfdesc:Description , wfdesc:Process ;
 	rdfs:label "SNP_ID2EntrezGene_ID" ;
-	wfdesc:hasInput <in/SNP_ID> ;
+	wfdesc:hasInput <in/SNP_ID> , <in/set_width> ;
 	wfdesc:hasOutput <out/EntrezGene_ID> ;
-	wfdesc:hasSubProcess <processor/Flatten_List/> , <processor/Flatten_List_2/> , <processor/Split_string_into_string_list_by_regular_expression/> , <processor/extract_snp_id/> , <processor/hsapiens_gene_ensembl/> , <processor/hsapiens_snp/> , <processor/input_chr_position/> , <processor/regex_value/> , <processor/set_width/> ;
-	wfdesc:hasDataLink <datalink?from=in/SNP_ID&to=processor/Split_string_into_string_list_by_regular_expression/in/string> , <datalink?from=processor/Flatten_List/out/outputlist&to=processor/input_chr_position/in/chr_in> , <datalink?from=processor/Flatten_List_2/out/outputlist&to=processor/input_chr_position/in/in2> , <datalink?from=processor/Split_string_into_string_list_by_regular_expression/out/split&to=processor/extract_snp_id/in/string> , <datalink?from=processor/extract_snp_id/out/out1&to=processor/hsapiens_snp/in/hsapiens_snp.snp_filter_filter> , <datalink?from=processor/hsapiens_gene_ensembl/out/hsapiens_gene_ensembl.entrezgene&to=out/EntrezGene_ID> , <datalink?from=processor/hsapiens_snp/out/hsapiens_snp.chr_name&to=processor/Flatten_List/in/inputlist> , <datalink?from=processor/hsapiens_snp/out/hsapiens_snp.chrom_start&to=processor/Flatten_List_2/in/inputlist> , <datalink?from=processor/input_chr_position/out/chr_out&to=processor/hsapiens_gene_ensembl/in/hsapiens_gene_ensembl.chromosome_name_filter> , <datalink?from=processor/input_chr_position/out/end_out&to=processor/hsapiens_gene_ensembl/in/hsapiens_gene_ensembl.end_filter> , <datalink?from=processor/input_chr_position/out/start_out&to=processor/hsapiens_gene_ensembl/in/hsapiens_gene_ensembl.start_filter> , <datalink?from=processor/regex_value/out/value&to=processor/Split_string_into_string_list_by_regular_expression/in/regex> , <datalink?from=processor/set_width/out/value&to=processor/input_chr_position/in/in1> .
+	wfdesc:hasSubProcess <processor/Flatten_List/> , <processor/Flatten_List_2/> , <processor/Split_string_into_string_list_by_regular_expression/> , <processor/extract_snp_id/> , <processor/hsapiens_gene_ensembl/> , <processor/hsapiens_snp/> , <processor/input_chr_position/> , <processor/regex_value/> ;
+	wfdesc:hasDataLink <datalink?from=in/SNP_ID&to=processor/Split_string_into_string_list_by_regular_expression/in/string> , <datalink?from=in/set_width&to=processor/input_chr_position/in/in1> , <datalink?from=processor/Flatten_List/out/outputlist&to=processor/input_chr_position/in/chr_in> , <datalink?from=processor/Flatten_List_2/out/outputlist&to=processor/input_chr_position/in/in2> , <datalink?from=processor/Split_string_into_string_list_by_regular_expression/out/split&to=processor/extract_snp_id/in/string> , <datalink?from=processor/extract_snp_id/out/out1&to=processor/hsapiens_snp/in/hsapiens_snp.snp_filter_filter> , <datalink?from=processor/hsapiens_gene_ensembl/out/hsapiens_gene_ensembl.entrezgene&to=out/EntrezGene_ID> , <datalink?from=processor/hsapiens_snp/out/hsapiens_snp.chr_name&to=processor/Flatten_List/in/inputlist> , <datalink?from=processor/hsapiens_snp/out/hsapiens_snp.chrom_start&to=processor/Flatten_List_2/in/inputlist> , <datalink?from=processor/input_chr_position/out/chr_out&to=processor/hsapiens_gene_ensembl/in/hsapiens_gene_ensembl.chromosome_name_filter> , <datalink?from=processor/input_chr_position/out/end_out&to=processor/hsapiens_gene_ensembl/in/hsapiens_gene_ensembl.end_filter> , <datalink?from=processor/input_chr_position/out/start_out&to=processor/hsapiens_gene_ensembl/in/hsapiens_gene_ensembl.start_filter> , <datalink?from=processor/regex_value/out/value&to=processor/Split_string_into_string_list_by_regular_expression/in/regex> .
 
 <in/SNP_ID> a wfdesc:Input , wfdesc:Description , wfdesc:Output ;
 	rdfs:label "SNP_ID" .
+
+<in/set_width> a wfdesc:Input , wfdesc:Description , wfdesc:Output ;
+	rdfs:label "set_width" .
 
 <out/EntrezGene_ID> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
 	rdfs:label "EntrezGene_ID" .
@@ -241,11 +244,4 @@ chr_out = chr_in;
 	wfdesc:hasOutput <processor/regex_value/out/value> .
 
 <processor/regex_value/out/value> a wfdesc:Output , wfdesc:Description ;
-	rdfs:label "value" .
-
-<processor/set_width/> a wfdesc:Process , wfdesc:Description ;
-	rdfs:label "set_width" ;
-	wfdesc:hasOutput <processor/set_width/out/value> .
-
-<processor/set_width/out/value> a wfdesc:Output , wfdesc:Description ;
 	rdfs:label "value" .

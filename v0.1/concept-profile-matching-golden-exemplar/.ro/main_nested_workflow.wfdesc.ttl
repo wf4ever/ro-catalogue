@@ -1,4 +1,4 @@
-@base <http://ns.taverna.org.uk/2010/workflowBundle/f53cdcc9-070e-4d5e-adf5-06b9bd9990f5/workflow/SNPs_to_Concept_Set_/> .
+@base <http://ns.taverna.org.uk/2010/workflowBundle/3422a432-9059-4f9b-a194-7e31a73e5b1e/workflow/SNPs_to_Concept_Set_/> .
 @prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
 @prefix wf4ever: <http://purl.org/wf4ever/wf4ever#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,132 +11,108 @@
 	wfdesc:hasSource <in/EntrezGene_database_type_ID> ;
 	wfdesc:hasSink <processor/EntrezGeneID_to_ConceptID/in/DatabaseID> .
 
-<datalink?from=in/Max_no_of_co_occurring_documents&to=processor/Co_occurring_documents_matched_concepts/in/Cutoff_value> a wfdesc:DataLink ;
+<datalink?from=in/Max_no_of_co_occurring_documents&to=processor/Find_co_occurring_documents/in/Cutoff_value> a wfdesc:DataLink ;
 	wfdesc:hasSource <in/Max_no_of_co_occurring_documents> ;
-	wfdesc:hasSink <processor/Co_occurring_documents_matched_concepts/in/Cutoff_value> .
+	wfdesc:hasSink <processor/Find_co_occurring_documents/in/Cutoff_value> .
 
-<datalink?from=in/Max_no_of_results&to=processor/Match_concept_profiles/in/Cutoff> a wfdesc:DataLink ;
-	wfdesc:hasSource <in/Max_no_of_results> ;
+<datalink?from=in/Max_no_of_concept_profile_matches&to=processor/Match_concept_profiles/in/Cutoff> a wfdesc:DataLink ;
+	wfdesc:hasSource <in/Max_no_of_concept_profile_matches> ;
 	wfdesc:hasSink <processor/Match_concept_profiles/in/Cutoff> .
 
-<datalink?from=in/Max_no_of_results_to_explain&to=processor/Explain_concept_scores/in/maxNrResults> a wfdesc:DataLink ;
-	wfdesc:hasSource <in/Max_no_of_results_to_explain> ;
-	wfdesc:hasSink <processor/Explain_concept_scores/in/maxNrResults> .
-
-<datalink?from=in/Max_no_of_supporting_documents&to=processor/Supporting_Documents_EntrezGeneIDs/in/MaxNoOfSupportingDocs> a wfdesc:DataLink ;
-	wfdesc:hasSource <in/Max_no_of_supporting_documents> ;
-	wfdesc:hasSink <processor/Supporting_Documents_EntrezGeneIDs/in/MaxNoOfSupportingDocs> .
-
-<datalink?from=in/Max_no_of_supporting_documents&to=processor/Supporting_Documents_Matched_Concepts/in/MaxNoOfSupportingDocs> a wfdesc:DataLink ;
-	wfdesc:hasSource <in/Max_no_of_supporting_documents> ;
-	wfdesc:hasSink <processor/Supporting_Documents_Matched_Concepts/in/MaxNoOfSupportingDocs> .
+<datalink?from=in/Max_no_of_explanatory_concepts&to=processor/Explain_concept_scores/in/cutoff> a wfdesc:DataLink ;
+	wfdesc:hasSource <in/Max_no_of_explanatory_concepts> ;
+	wfdesc:hasSink <processor/Explain_concept_scores/in/cutoff> .
 
 <datalink?from=in/SNP_ID&to=processor/SNP_ID2EntrezGene_ID/in/SNP_ID> a wfdesc:DataLink ;
 	wfdesc:hasSource <in/SNP_ID> ;
 	wfdesc:hasSink <processor/SNP_ID2EntrezGene_ID/in/SNP_ID> .
 
-<datalink?from=processor/Co_occurring_documents_matched_concepts/out/Document_ID&to=out/Co_occurring_document_IDs_between_query_conceptCUI_and_matched_conceptCUI> a wfdesc:DataLink ;
-	wfdesc:hasSource <processor/Co_occurring_documents_matched_concepts/out/Document_ID> ;
-	wfdesc:hasSink <out/Co_occurring_document_IDs_between_query_conceptCUI_and_matched_conceptCUI> .
+<datalink?from=in/Set_width&to=processor/SNP_ID2EntrezGene_ID/in/set_width> a wfdesc:DataLink ;
+	wfdesc:hasSource <in/Set_width> ;
+	wfdesc:hasSink <processor/SNP_ID2EntrezGene_ID/in/set_width> .
 
-<datalink?from=processor/Co_occurring_documents_matched_concepts/out/Document_title&to=out/Co_occurring_document_titles_between_query_conceptCUI_and_matched_conceptCUI> a wfdesc:DataLink ;
-	wfdesc:hasSource <processor/Co_occurring_documents_matched_concepts/out/Document_title> ;
-	wfdesc:hasSink <out/Co_occurring_document_titles_between_query_conceptCUI_and_matched_conceptCUI> .
-
-<datalink?from=processor/EntrezGeneID_to_ConceptID/out/concepts&to=out/Query_conceptCUI> a wfdesc:DataLink ;
+<datalink?from=processor/EntrezGeneID_to_ConceptID/out/concepts&to=processor/Filter_genes_with_profiles/in/Concept_ID> a wfdesc:DataLink ;
 	wfdesc:hasSource <processor/EntrezGeneID_to_ConceptID/out/concepts> ;
-	wfdesc:hasSink <out/Query_conceptCUI> .
+	wfdesc:hasSink <processor/Filter_genes_with_profiles/in/Concept_ID> .
 
-<datalink?from=processor/EntrezGeneID_to_ConceptID/out/concepts&to=processor/Co_occurring_documents_matched_concepts/in/ConceptID_1> a wfdesc:DataLink ;
-	wfdesc:hasSource <processor/EntrezGeneID_to_ConceptID/out/concepts> ;
-	wfdesc:hasSink <processor/Co_occurring_documents_matched_concepts/in/ConceptID_1> .
+<datalink?from=processor/Explain_concept_scores/out/B_ConceptContribution&to=out/Explanatory_concept_contribution> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/Explain_concept_scores/out/B_ConceptContribution> ;
+	wfdesc:hasSink <out/Explanatory_concept_contribution> .
 
-<datalink?from=processor/EntrezGeneID_to_ConceptID/out/concepts&to=processor/Explain_concept_scores/in/matchConcept> a wfdesc:DataLink ;
-	wfdesc:hasSource <processor/EntrezGeneID_to_ConceptID/out/concepts> ;
-	wfdesc:hasSink <processor/Explain_concept_scores/in/matchConcept> .
+<datalink?from=processor/Explain_concept_scores/out/B_ConceptID&to=out/Explanatory_concept_ID> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/Explain_concept_scores/out/B_ConceptID> ;
+	wfdesc:hasSink <out/Explanatory_concept_ID> .
 
-<datalink?from=processor/EntrezGeneID_to_ConceptID/out/concepts&to=processor/Match_concept_profiles/in/QueryConceptSet> a wfdesc:DataLink ;
-	wfdesc:hasSource <processor/EntrezGeneID_to_ConceptID/out/concepts> ;
-	wfdesc:hasSink <processor/Match_concept_profiles/in/QueryConceptSet> .
+<datalink?from=processor/Explain_concept_scores/out/B_ConceptName&to=out/Explanatory_concept_name> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/Explain_concept_scores/out/B_ConceptName> ;
+	wfdesc:hasSink <out/Explanatory_concept_name> .
 
-<datalink?from=processor/EntrezGeneID_to_ConceptID/out/concepts&to=processor/Supporting_Documents_EntrezGeneIDs/in/conceptCUI> a wfdesc:DataLink ;
-	wfdesc:hasSource <processor/EntrezGeneID_to_ConceptID/out/concepts> ;
-	wfdesc:hasSink <processor/Supporting_Documents_EntrezGeneIDs/in/conceptCUI> .
+<datalink?from=processor/Filter_genes_with_profiles/out/Concepts_with_profiles&to=processor/Find_co_occurring_documents/in/ConceptID_1> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/Filter_genes_with_profiles/out/Concepts_with_profiles> ;
+	wfdesc:hasSink <processor/Find_co_occurring_documents/in/ConceptID_1> .
 
-<datalink?from=processor/Explain_concept_scores/out/ConceptID&to=out/Top_contributing_conceptCUI_beween_query_and_match_conceptCUIs> a wfdesc:DataLink ;
-	wfdesc:hasSource <processor/Explain_concept_scores/out/ConceptID> ;
-	wfdesc:hasSink <out/Top_contributing_conceptCUI_beween_query_and_match_conceptCUIs> .
+<datalink?from=processor/Filter_genes_with_profiles/out/Concepts_with_profiles&to=processor/Get_gene_name/in/Concept_ID> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/Filter_genes_with_profiles/out/Concepts_with_profiles> ;
+	wfdesc:hasSink <processor/Get_gene_name/in/Concept_ID> .
 
-<datalink?from=processor/Explain_concept_scores/out/ConceptID&to=processor/Supporting_Documents_EntrezGeneIDs/in/associatedConceptCUI> a wfdesc:DataLink ;
-	wfdesc:hasSource <processor/Explain_concept_scores/out/ConceptID> ;
-	wfdesc:hasSink <processor/Supporting_Documents_EntrezGeneIDs/in/associatedConceptCUI> .
+<datalink?from=processor/Filter_genes_with_profiles/out/Concepts_with_profiles&to=processor/Match_concept_profiles/in/Query_concept_set> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/Filter_genes_with_profiles/out/Concepts_with_profiles> ;
+	wfdesc:hasSink <processor/Match_concept_profiles/in/Query_concept_set> .
 
-<datalink?from=processor/Explain_concept_scores/out/ConceptID&to=processor/Supporting_Documents_Matched_Concepts/in/associatedConceptCUI> a wfdesc:DataLink ;
-	wfdesc:hasSource <processor/Explain_concept_scores/out/ConceptID> ;
-	wfdesc:hasSink <processor/Supporting_Documents_Matched_Concepts/in/associatedConceptCUI> .
+<datalink?from=processor/Find_co_occurring_documents/out/Document_ID&to=out/Co_occurring_document_IDs> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/Find_co_occurring_documents/out/Document_ID> ;
+	wfdesc:hasSink <out/Co_occurring_document_IDs> .
 
-<datalink?from=processor/Explain_concept_scores/out/ConceptName&to=out/Top_contributing_conceptnames_between_query_and_match_conceptCUIs> a wfdesc:DataLink ;
-	wfdesc:hasSource <processor/Explain_concept_scores/out/ConceptName> ;
-	wfdesc:hasSink <out/Top_contributing_conceptnames_between_query_and_match_conceptCUIs> .
+<datalink?from=processor/Find_co_occurring_documents/out/Document_title&to=out/Co_occurring_document_titles> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/Find_co_occurring_documents/out/Document_title> ;
+	wfdesc:hasSink <out/Co_occurring_document_titles> .
 
-<datalink?from=processor/Get_Concept_IDs/out/Concept_ID_set&to=processor/Match_concept_profiles/in/MatchConceptSet> a wfdesc:DataLink ;
+<datalink?from=processor/Get_Concept_IDs/out/Concept_ID_set&to=processor/Match_concept_profiles/in/Match_concept_set> a wfdesc:DataLink ;
 	wfdesc:hasSource <processor/Get_Concept_IDs/out/Concept_ID_set> ;
-	wfdesc:hasSink <processor/Match_concept_profiles/in/MatchConceptSet> .
+	wfdesc:hasSink <processor/Match_concept_profiles/in/Match_concept_set> .
 
-<datalink?from=processor/Get_concept_information/out/Concept_name&to=out/Match_conceptName> a wfdesc:DataLink ;
-	wfdesc:hasSource <processor/Get_concept_information/out/Concept_name> ;
-	wfdesc:hasSink <out/Match_conceptName> .
+<datalink?from=processor/Get_gene_name/out/Concept_ID&to=out/Query_concept_ID> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/Get_gene_name/out/Concept_ID> ;
+	wfdesc:hasSink <out/Query_concept_ID> .
 
-<datalink?from=processor/Match_concept_profiles/out/MatchConceptID&to=out/Match_conceptCUI> a wfdesc:DataLink ;
-	wfdesc:hasSource <processor/Match_concept_profiles/out/MatchConceptID> ;
-	wfdesc:hasSink <out/Match_conceptCUI> .
+<datalink?from=processor/Get_gene_name/out/Concept_ID&to=processor/Explain_concept_scores/in/A_ConceptID> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/Get_gene_name/out/Concept_ID> ;
+	wfdesc:hasSink <processor/Explain_concept_scores/in/A_ConceptID> .
 
-<datalink?from=processor/Match_concept_profiles/out/MatchConceptID&to=processor/Co_occurring_documents_matched_concepts/in/ConceptID_2> a wfdesc:DataLink ;
-	wfdesc:hasSource <processor/Match_concept_profiles/out/MatchConceptID> ;
-	wfdesc:hasSink <processor/Co_occurring_documents_matched_concepts/in/ConceptID_2> .
+<datalink?from=processor/Get_gene_name/out/Concept_name&to=out/Gene_name> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/Get_gene_name/out/Concept_name> ;
+	wfdesc:hasSink <out/Gene_name> .
 
-<datalink?from=processor/Match_concept_profiles/out/MatchConceptID&to=processor/Explain_concept_scores/in/queryConceptSet> a wfdesc:DataLink ;
-	wfdesc:hasSource <processor/Match_concept_profiles/out/MatchConceptID> ;
-	wfdesc:hasSink <processor/Explain_concept_scores/in/queryConceptSet> .
+<datalink?from=processor/Get_match_concept_name/out/Concept_ID&to=out/Match_concept_ID> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/Get_match_concept_name/out/Concept_ID> ;
+	wfdesc:hasSink <out/Match_concept_ID> .
 
-<datalink?from=processor/Match_concept_profiles/out/MatchConceptID&to=processor/Get_concept_information/in/Concept_ID> a wfdesc:DataLink ;
-	wfdesc:hasSource <processor/Match_concept_profiles/out/MatchConceptID> ;
-	wfdesc:hasSink <processor/Get_concept_information/in/Concept_ID> .
+<datalink?from=processor/Get_match_concept_name/out/Concept_ID&to=processor/Explain_concept_scores/in/C_ConceptID> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/Get_match_concept_name/out/Concept_ID> ;
+	wfdesc:hasSink <processor/Explain_concept_scores/in/C_ConceptID> .
 
-<datalink?from=processor/Match_concept_profiles/out/MatchConceptID&to=processor/Supporting_Documents_Matched_Concepts/in/conceptCUI> a wfdesc:DataLink ;
-	wfdesc:hasSource <processor/Match_concept_profiles/out/MatchConceptID> ;
-	wfdesc:hasSink <processor/Supporting_Documents_Matched_Concepts/in/conceptCUI> .
+<datalink?from=processor/Get_match_concept_name/out/Concept_name&to=out/Match_concept_name> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/Get_match_concept_name/out/Concept_name> ;
+	wfdesc:hasSink <out/Match_concept_name> .
 
-<datalink?from=processor/Match_concept_profiles/out/SummedSimilarityScore&to=out/Similarity_score_between_query_and_match_conceptCUI> a wfdesc:DataLink ;
-	wfdesc:hasSource <processor/Match_concept_profiles/out/SummedSimilarityScore> ;
-	wfdesc:hasSink <out/Similarity_score_between_query_and_match_conceptCUI> .
+<datalink?from=processor/Match_concept_profiles/out/Match_concept_ID&to=processor/Find_co_occurring_documents/in/ConceptID_2> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/Match_concept_profiles/out/Match_concept_ID> ;
+	wfdesc:hasSink <processor/Find_co_occurring_documents/in/ConceptID_2> .
+
+<datalink?from=processor/Match_concept_profiles/out/Match_concept_ID&to=processor/Get_match_concept_name/in/Concept_ID> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/Match_concept_profiles/out/Match_concept_ID> ;
+	wfdesc:hasSink <processor/Get_match_concept_name/in/Concept_ID> .
 
 <datalink?from=processor/SNP_ID2EntrezGene_ID/out/EntrezGene_ID&to=processor/EntrezGeneID_to_ConceptID/in/IDvalue> a wfdesc:DataLink ;
 	wfdesc:hasSource <processor/SNP_ID2EntrezGene_ID/out/EntrezGene_ID> ;
 	wfdesc:hasSink <processor/EntrezGeneID_to_ConceptID/in/IDvalue> .
 
-<datalink?from=processor/Supporting_Documents_EntrezGeneIDs/out/DocumentID&to=out/Supporting_document_IDs_between_query_conceptCUI_and_explained_conceptCUI> a wfdesc:DataLink ;
-	wfdesc:hasSource <processor/Supporting_Documents_EntrezGeneIDs/out/DocumentID> ;
-	wfdesc:hasSink <out/Supporting_document_IDs_between_query_conceptCUI_and_explained_conceptCUI> .
-
-<datalink?from=processor/Supporting_Documents_EntrezGeneIDs/out/DocumentTitle&to=out/Supporting_document_titles_between_query_conceptCUI_and_explained_conceptCUI> a wfdesc:DataLink ;
-	wfdesc:hasSource <processor/Supporting_Documents_EntrezGeneIDs/out/DocumentTitle> ;
-	wfdesc:hasSink <out/Supporting_document_titles_between_query_conceptCUI_and_explained_conceptCUI> .
-
-<datalink?from=processor/Supporting_Documents_Matched_Concepts/out/DocumentID&to=out/Supporting_document_IDs_between_match_conceptCUI_and_explained_conceptCUI> a wfdesc:DataLink ;
-	wfdesc:hasSource <processor/Supporting_Documents_Matched_Concepts/out/DocumentID> ;
-	wfdesc:hasSink <out/Supporting_document_IDs_between_match_conceptCUI_and_explained_conceptCUI> .
-
-<datalink?from=processor/Supporting_Documents_Matched_Concepts/out/DocumentTitle&to=out/Supporting_document_titles_between_match_conceptCUI_and_explained_conceptCUI> a wfdesc:DataLink ;
-	wfdesc:hasSource <processor/Supporting_Documents_Matched_Concepts/out/DocumentTitle> ;
-	wfdesc:hasSink <out/Supporting_document_titles_between_match_conceptCUI_and_explained_conceptCUI> .
-
 <> a wfdesc:Workflow , wfdesc:Description , wfdesc:Process ;
 	rdfs:label "SNPs_to_Concept_Set_" ;
-	wfdesc:hasInput <in/Concept_set_ID> , <in/EntrezGene_database_type_ID> , <in/Max_no_of_co_occurring_documents> , <in/Max_no_of_results> , <in/Max_no_of_results_to_explain> , <in/Max_no_of_supporting_documents> , <in/SNP_ID> ;
-	wfdesc:hasOutput <out/Co_occurring_document_IDs_between_query_conceptCUI_and_matched_conceptCUI> , <out/Co_occurring_document_titles_between_query_conceptCUI_and_matched_conceptCUI> , <out/Match_conceptCUI> , <out/Match_conceptName> , <out/Query_conceptCUI> , <out/Similarity_score_between_query_and_match_conceptCUI> , <out/Supporting_document_IDs_between_match_conceptCUI_and_explained_conceptCUI> , <out/Supporting_document_IDs_between_query_conceptCUI_and_explained_conceptCUI> , <out/Supporting_document_titles_between_match_conceptCUI_and_explained_conceptCUI> , <out/Supporting_document_titles_between_query_conceptCUI_and_explained_conceptCUI> , <out/Top_contributing_conceptCUI_beween_query_and_match_conceptCUIs> , <out/Top_contributing_conceptnames_between_query_and_match_conceptCUIs> ;
-	wfdesc:hasSubProcess <processor/Co_occurring_documents_matched_concepts/> , <processor/EntrezGeneID_to_ConceptID/> , <processor/Explain_concept_scores/> , <processor/Get_Concept_IDs/> , <processor/Get_concept_information/> , <processor/Match_concept_profiles/> , <processor/SNP_ID2EntrezGene_ID/> , <processor/Supporting_Documents_EntrezGeneIDs/> , <processor/Supporting_Documents_Matched_Concepts/> ;
-	wfdesc:hasDataLink <datalink?from=in/Concept_set_ID&to=processor/Get_Concept_IDs/in/Concept_set_ID> , <datalink?from=in/EntrezGene_database_type_ID&to=processor/EntrezGeneID_to_ConceptID/in/DatabaseID> , <datalink?from=in/Max_no_of_co_occurring_documents&to=processor/Co_occurring_documents_matched_concepts/in/Cutoff_value> , <datalink?from=in/Max_no_of_results&to=processor/Match_concept_profiles/in/Cutoff> , <datalink?from=in/Max_no_of_results_to_explain&to=processor/Explain_concept_scores/in/maxNrResults> , <datalink?from=in/Max_no_of_supporting_documents&to=processor/Supporting_Documents_EntrezGeneIDs/in/MaxNoOfSupportingDocs> , <datalink?from=in/Max_no_of_supporting_documents&to=processor/Supporting_Documents_Matched_Concepts/in/MaxNoOfSupportingDocs> , <datalink?from=in/SNP_ID&to=processor/SNP_ID2EntrezGene_ID/in/SNP_ID> , <datalink?from=processor/Co_occurring_documents_matched_concepts/out/Document_ID&to=out/Co_occurring_document_IDs_between_query_conceptCUI_and_matched_conceptCUI> , <datalink?from=processor/Co_occurring_documents_matched_concepts/out/Document_title&to=out/Co_occurring_document_titles_between_query_conceptCUI_and_matched_conceptCUI> , <datalink?from=processor/EntrezGeneID_to_ConceptID/out/concepts&to=out/Query_conceptCUI> , <datalink?from=processor/EntrezGeneID_to_ConceptID/out/concepts&to=processor/Co_occurring_documents_matched_concepts/in/ConceptID_1> , <datalink?from=processor/EntrezGeneID_to_ConceptID/out/concepts&to=processor/Explain_concept_scores/in/matchConcept> , <datalink?from=processor/EntrezGeneID_to_ConceptID/out/concepts&to=processor/Match_concept_profiles/in/QueryConceptSet> , <datalink?from=processor/EntrezGeneID_to_ConceptID/out/concepts&to=processor/Supporting_Documents_EntrezGeneIDs/in/conceptCUI> , <datalink?from=processor/Explain_concept_scores/out/ConceptID&to=out/Top_contributing_conceptCUI_beween_query_and_match_conceptCUIs> , <datalink?from=processor/Explain_concept_scores/out/ConceptID&to=processor/Supporting_Documents_EntrezGeneIDs/in/associatedConceptCUI> , <datalink?from=processor/Explain_concept_scores/out/ConceptID&to=processor/Supporting_Documents_Matched_Concepts/in/associatedConceptCUI> , <datalink?from=processor/Explain_concept_scores/out/ConceptName&to=out/Top_contributing_conceptnames_between_query_and_match_conceptCUIs> , <datalink?from=processor/Get_Concept_IDs/out/Concept_ID_set&to=processor/Match_concept_profiles/in/MatchConceptSet> , <datalink?from=processor/Get_concept_information/out/Concept_name&to=out/Match_conceptName> , <datalink?from=processor/Match_concept_profiles/out/MatchConceptID&to=out/Match_conceptCUI> , <datalink?from=processor/Match_concept_profiles/out/MatchConceptID&to=processor/Co_occurring_documents_matched_concepts/in/ConceptID_2> , <datalink?from=processor/Match_concept_profiles/out/MatchConceptID&to=processor/Explain_concept_scores/in/queryConceptSet> , <datalink?from=processor/Match_concept_profiles/out/MatchConceptID&to=processor/Get_concept_information/in/Concept_ID> , <datalink?from=processor/Match_concept_profiles/out/MatchConceptID&to=processor/Supporting_Documents_Matched_Concepts/in/conceptCUI> , <datalink?from=processor/Match_concept_profiles/out/SummedSimilarityScore&to=out/Similarity_score_between_query_and_match_conceptCUI> , <datalink?from=processor/SNP_ID2EntrezGene_ID/out/EntrezGene_ID&to=processor/EntrezGeneID_to_ConceptID/in/IDvalue> , <datalink?from=processor/Supporting_Documents_EntrezGeneIDs/out/DocumentID&to=out/Supporting_document_IDs_between_query_conceptCUI_and_explained_conceptCUI> , <datalink?from=processor/Supporting_Documents_EntrezGeneIDs/out/DocumentTitle&to=out/Supporting_document_titles_between_query_conceptCUI_and_explained_conceptCUI> , <datalink?from=processor/Supporting_Documents_Matched_Concepts/out/DocumentID&to=out/Supporting_document_IDs_between_match_conceptCUI_and_explained_conceptCUI> , <datalink?from=processor/Supporting_Documents_Matched_Concepts/out/DocumentTitle&to=out/Supporting_document_titles_between_match_conceptCUI_and_explained_conceptCUI> .
+	wfdesc:hasInput <in/Concept_set_ID> , <in/EntrezGene_database_type_ID> , <in/Max_no_of_co_occurring_documents> , <in/Max_no_of_concept_profile_matches> , <in/Max_no_of_explanatory_concepts> , <in/SNP_ID> , <in/Set_width> ;
+	wfdesc:hasOutput <out/Co_occurring_document_IDs> , <out/Co_occurring_document_titles> , <out/Explanatory_concept_ID> , <out/Explanatory_concept_contribution> , <out/Explanatory_concept_name> , <out/Gene_name> , <out/Match_concept_ID> , <out/Match_concept_name> , <out/Query_concept_ID> ;
+	wfdesc:hasSubProcess <processor/EntrezGeneID_to_ConceptID/> , <processor/Explain_concept_scores/> , <processor/Filter_genes_with_profiles/> , <processor/Find_co_occurring_documents/> , <processor/Get_Concept_IDs/> , <processor/Get_gene_name/> , <processor/Get_match_concept_name/> , <processor/Match_concept_profiles/> , <processor/SNP_ID2EntrezGene_ID/> ;
+	wfdesc:hasDataLink <datalink?from=in/Concept_set_ID&to=processor/Get_Concept_IDs/in/Concept_set_ID> , <datalink?from=in/EntrezGene_database_type_ID&to=processor/EntrezGeneID_to_ConceptID/in/DatabaseID> , <datalink?from=in/Max_no_of_co_occurring_documents&to=processor/Find_co_occurring_documents/in/Cutoff_value> , <datalink?from=in/Max_no_of_concept_profile_matches&to=processor/Match_concept_profiles/in/Cutoff> , <datalink?from=in/Max_no_of_explanatory_concepts&to=processor/Explain_concept_scores/in/cutoff> , <datalink?from=in/SNP_ID&to=processor/SNP_ID2EntrezGene_ID/in/SNP_ID> , <datalink?from=in/Set_width&to=processor/SNP_ID2EntrezGene_ID/in/set_width> , <datalink?from=processor/EntrezGeneID_to_ConceptID/out/concepts&to=processor/Filter_genes_with_profiles/in/Concept_ID> , <datalink?from=processor/Explain_concept_scores/out/B_ConceptContribution&to=out/Explanatory_concept_contribution> , <datalink?from=processor/Explain_concept_scores/out/B_ConceptID&to=out/Explanatory_concept_ID> , <datalink?from=processor/Explain_concept_scores/out/B_ConceptName&to=out/Explanatory_concept_name> , <datalink?from=processor/Filter_genes_with_profiles/out/Concepts_with_profiles&to=processor/Find_co_occurring_documents/in/ConceptID_1> , <datalink?from=processor/Filter_genes_with_profiles/out/Concepts_with_profiles&to=processor/Get_gene_name/in/Concept_ID> , <datalink?from=processor/Filter_genes_with_profiles/out/Concepts_with_profiles&to=processor/Match_concept_profiles/in/Query_concept_set> , <datalink?from=processor/Find_co_occurring_documents/out/Document_ID&to=out/Co_occurring_document_IDs> , <datalink?from=processor/Find_co_occurring_documents/out/Document_title&to=out/Co_occurring_document_titles> , <datalink?from=processor/Get_Concept_IDs/out/Concept_ID_set&to=processor/Match_concept_profiles/in/Match_concept_set> , <datalink?from=processor/Get_gene_name/out/Concept_ID&to=out/Query_concept_ID> , <datalink?from=processor/Get_gene_name/out/Concept_ID&to=processor/Explain_concept_scores/in/A_ConceptID> , <datalink?from=processor/Get_gene_name/out/Concept_name&to=out/Gene_name> , <datalink?from=processor/Get_match_concept_name/out/Concept_ID&to=out/Match_concept_ID> , <datalink?from=processor/Get_match_concept_name/out/Concept_ID&to=processor/Explain_concept_scores/in/C_ConceptID> , <datalink?from=processor/Get_match_concept_name/out/Concept_name&to=out/Match_concept_name> , <datalink?from=processor/Match_concept_profiles/out/Match_concept_ID&to=processor/Find_co_occurring_documents/in/ConceptID_2> , <datalink?from=processor/Match_concept_profiles/out/Match_concept_ID&to=processor/Get_match_concept_name/in/Concept_ID> , <datalink?from=processor/SNP_ID2EntrezGene_ID/out/EntrezGene_ID&to=processor/EntrezGeneID_to_ConceptID/in/IDvalue> .
 
 <in/Concept_set_ID> a wfdesc:Input , wfdesc:Description , wfdesc:Output ;
 	rdfs:label "Concept_set_ID" .
@@ -147,73 +123,44 @@
 <in/Max_no_of_co_occurring_documents> a wfdesc:Input , wfdesc:Description , wfdesc:Output ;
 	rdfs:label "Max_no_of_co_occurring_documents" .
 
-<in/Max_no_of_results> a wfdesc:Input , wfdesc:Description , wfdesc:Output ;
-	rdfs:label "Max_no_of_results" .
+<in/Max_no_of_concept_profile_matches> a wfdesc:Input , wfdesc:Description , wfdesc:Output ;
+	rdfs:label "Max_no_of_concept_profile_matches" .
 
-<in/Max_no_of_results_to_explain> a wfdesc:Input , wfdesc:Description , wfdesc:Output ;
-	rdfs:label "Max_no_of_results_to_explain" .
-
-<in/Max_no_of_supporting_documents> a wfdesc:Input , wfdesc:Description , wfdesc:Output ;
-	rdfs:label "Max_no_of_supporting_documents" .
+<in/Max_no_of_explanatory_concepts> a wfdesc:Input , wfdesc:Description , wfdesc:Output ;
+	rdfs:label "Max_no_of_explanatory_concepts" .
 
 <in/SNP_ID> a wfdesc:Input , wfdesc:Description , wfdesc:Output ;
 	rdfs:label "SNP_ID" .
 
-<out/Co_occurring_document_IDs_between_query_conceptCUI_and_matched_conceptCUI> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
-	rdfs:label "Co_occurring_document_IDs_between_query_conceptCUI_and_matched_conceptCUI" .
+<in/Set_width> a wfdesc:Input , wfdesc:Description , wfdesc:Output ;
+	rdfs:label "Set_width" .
 
-<out/Co_occurring_document_titles_between_query_conceptCUI_and_matched_conceptCUI> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
-	rdfs:label "Co_occurring_document_titles_between_query_conceptCUI_and_matched_conceptCUI" .
+<out/Co_occurring_document_IDs> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
+	rdfs:label "Co_occurring_document_IDs" .
 
-<out/Match_conceptCUI> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
-	rdfs:label "Match_conceptCUI" .
+<out/Co_occurring_document_titles> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
+	rdfs:label "Co_occurring_document_titles" .
 
-<out/Match_conceptName> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
-	rdfs:label "Match_conceptName" .
+<out/Explanatory_concept_ID> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
+	rdfs:label "Explanatory_concept_ID" .
 
-<out/Query_conceptCUI> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
-	rdfs:label "Query_conceptCUI" .
+<out/Explanatory_concept_contribution> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
+	rdfs:label "Explanatory_concept_contribution" .
 
-<out/Similarity_score_between_query_and_match_conceptCUI> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
-	rdfs:label "Similarity_score_between_query_and_match_conceptCUI" .
+<out/Explanatory_concept_name> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
+	rdfs:label "Explanatory_concept_name" .
 
-<out/Supporting_document_IDs_between_match_conceptCUI_and_explained_conceptCUI> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
-	rdfs:label "Supporting_document_IDs_between_match_conceptCUI_and_explained_conceptCUI" .
+<out/Gene_name> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
+	rdfs:label "Gene_name" .
 
-<out/Supporting_document_IDs_between_query_conceptCUI_and_explained_conceptCUI> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
-	rdfs:label "Supporting_document_IDs_between_query_conceptCUI_and_explained_conceptCUI" .
+<out/Match_concept_ID> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
+	rdfs:label "Match_concept_ID" .
 
-<out/Supporting_document_titles_between_match_conceptCUI_and_explained_conceptCUI> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
-	rdfs:label "Supporting_document_titles_between_match_conceptCUI_and_explained_conceptCUI" .
+<out/Match_concept_name> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
+	rdfs:label "Match_concept_name" .
 
-<out/Supporting_document_titles_between_query_conceptCUI_and_explained_conceptCUI> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
-	rdfs:label "Supporting_document_titles_between_query_conceptCUI_and_explained_conceptCUI" .
-
-<out/Top_contributing_conceptCUI_beween_query_and_match_conceptCUIs> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
-	rdfs:label "Top_contributing_conceptCUI_beween_query_and_match_conceptCUIs" .
-
-<out/Top_contributing_conceptnames_between_query_and_match_conceptCUIs> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
-	rdfs:label "Top_contributing_conceptnames_between_query_and_match_conceptCUIs" .
-
-<processor/Co_occurring_documents_matched_concepts/> a wfdesc:Process , wfdesc:Description ;
-	rdfs:label "Co_occurring_documents_matched_concepts" ;
-	wfdesc:hasInput <processor/Co_occurring_documents_matched_concepts/in/ConceptID_1> , <processor/Co_occurring_documents_matched_concepts/in/ConceptID_2> , <processor/Co_occurring_documents_matched_concepts/in/Cutoff_value> ;
-	wfdesc:hasOutput <processor/Co_occurring_documents_matched_concepts/out/Document_ID> , <processor/Co_occurring_documents_matched_concepts/out/Document_title> .
-
-<processor/Co_occurring_documents_matched_concepts/in/ConceptID_1> a wfdesc:Input , wfdesc:Description ;
-	rdfs:label "ConceptID_1" .
-
-<processor/Co_occurring_documents_matched_concepts/in/ConceptID_2> a wfdesc:Input , wfdesc:Description ;
-	rdfs:label "ConceptID_2" .
-
-<processor/Co_occurring_documents_matched_concepts/in/Cutoff_value> a wfdesc:Input , wfdesc:Description ;
-	rdfs:label "Cutoff_value" .
-
-<processor/Co_occurring_documents_matched_concepts/out/Document_ID> a wfdesc:Output , wfdesc:Description ;
-	rdfs:label "Document_ID" .
-
-<processor/Co_occurring_documents_matched_concepts/out/Document_title> a wfdesc:Output , wfdesc:Description ;
-	rdfs:label "Document_title" .
+<out/Query_concept_ID> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
+	rdfs:label "Query_concept_ID" .
 
 <processor/EntrezGeneID_to_ConceptID/> a wfdesc:Process , wfdesc:Description ;
 	rdfs:label "EntrezGeneID_to_ConceptID" ;
@@ -231,23 +178,57 @@
 
 <processor/Explain_concept_scores/> a wfdesc:Process , wfdesc:Description ;
 	rdfs:label "Explain_concept_scores" ;
-	wfdesc:hasInput <processor/Explain_concept_scores/in/matchConcept> , <processor/Explain_concept_scores/in/maxNrResults> , <processor/Explain_concept_scores/in/queryConceptSet> ;
-	wfdesc:hasOutput <processor/Explain_concept_scores/out/ConceptID> , <processor/Explain_concept_scores/out/ConceptName> .
+	wfdesc:hasInput <processor/Explain_concept_scores/in/A_ConceptID> , <processor/Explain_concept_scores/in/C_ConceptID> , <processor/Explain_concept_scores/in/cutoff> ;
+	wfdesc:hasOutput <processor/Explain_concept_scores/out/B_ConceptContribution> , <processor/Explain_concept_scores/out/B_ConceptID> , <processor/Explain_concept_scores/out/B_ConceptName> .
 
-<processor/Explain_concept_scores/in/matchConcept> a wfdesc:Input , wfdesc:Description ;
-	rdfs:label "matchConcept" .
+<processor/Explain_concept_scores/in/A_ConceptID> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "A_ConceptID" .
 
-<processor/Explain_concept_scores/in/maxNrResults> a wfdesc:Input , wfdesc:Description ;
-	rdfs:label "maxNrResults" .
+<processor/Explain_concept_scores/in/C_ConceptID> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "C_ConceptID" .
 
-<processor/Explain_concept_scores/in/queryConceptSet> a wfdesc:Input , wfdesc:Description ;
-	rdfs:label "queryConceptSet" .
+<processor/Explain_concept_scores/in/cutoff> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "cutoff" .
 
-<processor/Explain_concept_scores/out/ConceptID> a wfdesc:Output , wfdesc:Description ;
-	rdfs:label "ConceptID" .
+<processor/Explain_concept_scores/out/B_ConceptContribution> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "B_ConceptContribution" .
 
-<processor/Explain_concept_scores/out/ConceptName> a wfdesc:Output , wfdesc:Description ;
-	rdfs:label "ConceptName" .
+<processor/Explain_concept_scores/out/B_ConceptID> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "B_ConceptID" .
+
+<processor/Explain_concept_scores/out/B_ConceptName> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "B_ConceptName" .
+
+<processor/Filter_genes_with_profiles/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "Filter_genes_with_profiles" ;
+	wfdesc:hasInput <processor/Filter_genes_with_profiles/in/Concept_ID> ;
+	wfdesc:hasOutput <processor/Filter_genes_with_profiles/out/Concepts_with_profiles> .
+
+<processor/Filter_genes_with_profiles/in/Concept_ID> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "Concept_ID" .
+
+<processor/Filter_genes_with_profiles/out/Concepts_with_profiles> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "Concepts_with_profiles" .
+
+<processor/Find_co_occurring_documents/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "Find_co_occurring_documents" ;
+	wfdesc:hasInput <processor/Find_co_occurring_documents/in/ConceptID_1> , <processor/Find_co_occurring_documents/in/ConceptID_2> , <processor/Find_co_occurring_documents/in/Cutoff_value> ;
+	wfdesc:hasOutput <processor/Find_co_occurring_documents/out/Document_ID> , <processor/Find_co_occurring_documents/out/Document_title> .
+
+<processor/Find_co_occurring_documents/in/ConceptID_1> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "ConceptID_1" .
+
+<processor/Find_co_occurring_documents/in/ConceptID_2> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "ConceptID_2" .
+
+<processor/Find_co_occurring_documents/in/Cutoff_value> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "Cutoff_value" .
+
+<processor/Find_co_occurring_documents/out/Document_ID> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "Document_ID" .
+
+<processor/Find_co_occurring_documents/out/Document_title> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "Document_title" .
 
 <processor/Get_Concept_IDs/> a wfdesc:Process , wfdesc:Description ;
 	rdfs:label "Get_Concept_IDs" ;
@@ -260,84 +241,61 @@
 <processor/Get_Concept_IDs/out/Concept_ID_set> a wfdesc:Output , wfdesc:Description ;
 	rdfs:label "Concept_ID_set" .
 
-<processor/Get_concept_information/> a wfdesc:Process , wfdesc:Description ;
-	rdfs:label "Get_concept_information" ;
-	wfdesc:hasInput <processor/Get_concept_information/in/Concept_ID> ;
-	wfdesc:hasOutput <processor/Get_concept_information/out/Concept_name> .
+<processor/Get_gene_name/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "Get_gene_name" ;
+	wfdesc:hasInput <processor/Get_gene_name/in/Concept_ID> ;
+	wfdesc:hasOutput <processor/Get_gene_name/out/Concept_ID> , <processor/Get_gene_name/out/Concept_name> .
 
-<processor/Get_concept_information/in/Concept_ID> a wfdesc:Input , wfdesc:Description ;
+<processor/Get_gene_name/in/Concept_ID> a wfdesc:Input , wfdesc:Description ;
 	rdfs:label "Concept_ID" .
 
-<processor/Get_concept_information/out/Concept_name> a wfdesc:Output , wfdesc:Description ;
+<processor/Get_gene_name/out/Concept_ID> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "Concept_ID" .
+
+<processor/Get_gene_name/out/Concept_name> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "Concept_name" .
+
+<processor/Get_match_concept_name/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "Get_match_concept_name" ;
+	wfdesc:hasInput <processor/Get_match_concept_name/in/Concept_ID> ;
+	wfdesc:hasOutput <processor/Get_match_concept_name/out/Concept_ID> , <processor/Get_match_concept_name/out/Concept_name> .
+
+<processor/Get_match_concept_name/in/Concept_ID> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "Concept_ID" .
+
+<processor/Get_match_concept_name/out/Concept_ID> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "Concept_ID" .
+
+<processor/Get_match_concept_name/out/Concept_name> a wfdesc:Output , wfdesc:Description ;
 	rdfs:label "Concept_name" .
 
 <processor/Match_concept_profiles/> a wfdesc:Process , wfdesc:Description ;
 	rdfs:label "Match_concept_profiles" ;
-	wfdesc:hasInput <processor/Match_concept_profiles/in/Cutoff> , <processor/Match_concept_profiles/in/MatchConceptSet> , <processor/Match_concept_profiles/in/QueryConceptSet> ;
-	wfdesc:hasOutput <processor/Match_concept_profiles/out/MatchConceptID> , <processor/Match_concept_profiles/out/SummedSimilarityScore> .
+	wfdesc:hasInput <processor/Match_concept_profiles/in/Cutoff> , <processor/Match_concept_profiles/in/Match_concept_set> , <processor/Match_concept_profiles/in/Query_concept_set> ;
+	wfdesc:hasOutput <processor/Match_concept_profiles/out/Match_concept_ID> .
 
 <processor/Match_concept_profiles/in/Cutoff> a wfdesc:Input , wfdesc:Description ;
 	rdfs:label "Cutoff" .
 
-<processor/Match_concept_profiles/in/MatchConceptSet> a wfdesc:Input , wfdesc:Description ;
-	rdfs:label "MatchConceptSet" .
+<processor/Match_concept_profiles/in/Match_concept_set> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "Match_concept_set" .
 
-<processor/Match_concept_profiles/in/QueryConceptSet> a wfdesc:Input , wfdesc:Description ;
-	rdfs:label "QueryConceptSet" .
+<processor/Match_concept_profiles/in/Query_concept_set> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "Query_concept_set" .
 
-<processor/Match_concept_profiles/out/MatchConceptID> a wfdesc:Output , wfdesc:Description ;
-	rdfs:label "MatchConceptID" .
-
-<processor/Match_concept_profiles/out/SummedSimilarityScore> a wfdesc:Output , wfdesc:Description ;
-	rdfs:label "SummedSimilarityScore" .
+<processor/Match_concept_profiles/out/Match_concept_ID> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "Match_concept_ID" .
 
 <processor/SNP_ID2EntrezGene_ID/> a wfdesc:Process , wfdesc:Description ;
 	rdfs:label "SNP_ID2EntrezGene_ID" ;
-	wfdesc:hasInput <processor/SNP_ID2EntrezGene_ID/in/SNP_ID> ;
+	wfdesc:hasInput <processor/SNP_ID2EntrezGene_ID/in/SNP_ID> , <processor/SNP_ID2EntrezGene_ID/in/set_width> ;
 	wfdesc:hasOutput <processor/SNP_ID2EntrezGene_ID/out/EntrezGene_ID> .
 
 <processor/SNP_ID2EntrezGene_ID/in/SNP_ID> a wfdesc:Input , wfdesc:Description ;
 	rdfs:label "SNP_ID" .
 
+<processor/SNP_ID2EntrezGene_ID/in/set_width> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "set_width" .
+
 <processor/SNP_ID2EntrezGene_ID/out/EntrezGene_ID> a wfdesc:Output , wfdesc:Description ;
 	rdfs:label "EntrezGene_ID" .
-
-<processor/Supporting_Documents_EntrezGeneIDs/> a wfdesc:Process , wfdesc:Description ;
-	rdfs:label "Supporting_Documents_EntrezGeneIDs" ;
-	wfdesc:hasInput <processor/Supporting_Documents_EntrezGeneIDs/in/MaxNoOfSupportingDocs> , <processor/Supporting_Documents_EntrezGeneIDs/in/associatedConceptCUI> , <processor/Supporting_Documents_EntrezGeneIDs/in/conceptCUI> ;
-	wfdesc:hasOutput <processor/Supporting_Documents_EntrezGeneIDs/out/DocumentID> , <processor/Supporting_Documents_EntrezGeneIDs/out/DocumentTitle> .
-
-<processor/Supporting_Documents_EntrezGeneIDs/in/MaxNoOfSupportingDocs> a wfdesc:Input , wfdesc:Description ;
-	rdfs:label "MaxNoOfSupportingDocs" .
-
-<processor/Supporting_Documents_EntrezGeneIDs/in/associatedConceptCUI> a wfdesc:Input , wfdesc:Description ;
-	rdfs:label "associatedConceptCUI" .
-
-<processor/Supporting_Documents_EntrezGeneIDs/in/conceptCUI> a wfdesc:Input , wfdesc:Description ;
-	rdfs:label "conceptCUI" .
-
-<processor/Supporting_Documents_EntrezGeneIDs/out/DocumentID> a wfdesc:Output , wfdesc:Description ;
-	rdfs:label "DocumentID" .
-
-<processor/Supporting_Documents_EntrezGeneIDs/out/DocumentTitle> a wfdesc:Output , wfdesc:Description ;
-	rdfs:label "DocumentTitle" .
-
-<processor/Supporting_Documents_Matched_Concepts/> a wfdesc:Process , wfdesc:Description ;
-	rdfs:label "Supporting_Documents_Matched_Concepts" ;
-	wfdesc:hasInput <processor/Supporting_Documents_Matched_Concepts/in/MaxNoOfSupportingDocs> , <processor/Supporting_Documents_Matched_Concepts/in/associatedConceptCUI> , <processor/Supporting_Documents_Matched_Concepts/in/conceptCUI> ;
-	wfdesc:hasOutput <processor/Supporting_Documents_Matched_Concepts/out/DocumentID> , <processor/Supporting_Documents_Matched_Concepts/out/DocumentTitle> .
-
-<processor/Supporting_Documents_Matched_Concepts/in/MaxNoOfSupportingDocs> a wfdesc:Input , wfdesc:Description ;
-	rdfs:label "MaxNoOfSupportingDocs" .
-
-<processor/Supporting_Documents_Matched_Concepts/in/associatedConceptCUI> a wfdesc:Input , wfdesc:Description ;
-	rdfs:label "associatedConceptCUI" .
-
-<processor/Supporting_Documents_Matched_Concepts/in/conceptCUI> a wfdesc:Input , wfdesc:Description ;
-	rdfs:label "conceptCUI" .
-
-<processor/Supporting_Documents_Matched_Concepts/out/DocumentID> a wfdesc:Output , wfdesc:Description ;
-	rdfs:label "DocumentID" .
-
-<processor/Supporting_Documents_Matched_Concepts/out/DocumentTitle> a wfdesc:Output , wfdesc:Description ;
-	rdfs:label "DocumentTitle" .

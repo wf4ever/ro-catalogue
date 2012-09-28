@@ -1,4 +1,4 @@
-@base <http://ns.taverna.org.uk/2010/workflowBundle/de983674-aca7-42d2-8719-d741ba53b9dd/workflow/Get_Concept_IDs/> .
+@base <http://ns.taverna.org.uk/2010/workflowBundle/bed255bd-b255-4abb-ade1-03a32c6c5a52/workflow/Get_Concept_IDs/> .
 @prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
 @prefix wf4ever: <http://purl.org/wf4ever/wf4ever#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .

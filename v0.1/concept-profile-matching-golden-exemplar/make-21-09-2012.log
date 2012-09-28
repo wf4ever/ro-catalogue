@@ -1,0 +1,517 @@
+--------
+ro config -b /home/kmhettne/Projects/ro-catalogue/v0.1
+          -r http://sandbox.wf4ever-project.org/rosrs5
+          -t a5c489aa-b413-47ad-b
+          -n https://www.google.com/accounts/o8/id?id=AItOawl4I-H_ask7ollkwUzMrjTDrgD2oj_Qu2Q -e k.m.hettne@lumc.nl
+ro configuration written to /home/kmhettne
+--------
+ro create "Concept Profile Matching Golden Exemplar" -d "." -i "concept-profile-matching-golden-exemplar"
+ro add -d . -a .
+ro status -d "."
+Research Object status
+  identifier:  concept-profile-matching-golden-exemplar, title: Concept Profile Matching Golden Exemplar
+  creator:     https://www.google.com/accounts/o8/id?id=AItOawl4I-H_ask7ollkwUzMrjTDrgD2oj_Qu2Q, created: 2012-09-21T15:48:16
+  path:        /home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/
+  uri:         file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/
+  description: Concept Profile Matching Golden Exemplar
+ro list -d "."
+Datasets/List_Concept_Sets_output.xls
+Datasets/output_snp_gene_kegg.txt
+Datasets/rs11158519_output.xls
+Datasets/rs168622_output.xls
+Datasets/rs174547_output.xls
+Datasets/rs2014355_output.xls
+Datasets/rs2046813_output.xls
+Datasets/rs211718_output.xls
+Datasets/rs2216405_output.xls
+Datasets/rs2286963_output.xls
+Datasets/rs272889_output.xls
+Datasets/rs541503_output.xls
+Datasets/rs603424_output.xls
+Datasets/rs7094971_output.xls
+Datasets/rs7156144_output.xls
+Datasets/rs8396_output.xls
+Datasets/rs9393903_output.xls
+Datasets/top_snps_to_annotate_input.txt
+Documents/HOWTO.txt
+Documents/HOWTO.txt%7E
+Documents/README.txt
+Documents/README.txt%7E
+Documents/kegg_cp_comparison_results.xls
+Documents/workflow_sketch_final.jpg
+Documents/workflow_sketch_final.odp
+Documents/workflow_sketch_final.pdf
+Documents/workflow_sketch_final.png
+Workflow-runs/List-Concept-Sets-prov-export.zip
+Workflow-runs/Main-nested-workflow-rs11158519-prov-export.zip
+Workflow-runs/Main-nested-workflow-rs168622-prov-export.zip
+Workflow-runs/Main-nested-workflow-rs174547-prov-export.zip
+Workflow-runs/Main-nested-workflow-rs2014355-prov-export.zip
+Workflow-runs/Main-nested-workflow-rs2046813-prov-export.zip
+Workflow-runs/Main-nested-workflow-rs211718-prov-export.zip
+Workflow-runs/Main-nested-workflow-rs2216405-prov-export.zip
+Workflow-runs/Main-nested-workflow-rs2286963-prov-export.zip
+Workflow-runs/Main-nested-workflow-rs272889-prov-export.zip
+Workflow-runs/Main-nested-workflow-rs541503-prov-export.zip
+Workflow-runs/Main-nested-workflow-rs603424-prov-export.zip
+Workflow-runs/Main-nested-workflow-rs7094971-prov-export.zip
+Workflow-runs/Main-nested-workflow-rs7156144-prov-export.zip
+Workflow-runs/Main-nested-workflow-rs8396-prov-export.zip
+Workflow-runs/Main-nested-workflow-rs9393903-prov-export.zip
+Workflow-runs/SNP2KEGG-prov-export.zip
+Workflows/DatabaseID_to_ConceptID_component.t2flow
+Workflows/Explain_concept_scores_component.t2flow
+Workflows/Filter_concepts_with_profiles_component.t2flow
+Workflows/Find_Supporting_Documents_component.t2flow
+Workflows/Find_co_occurring_documents_component.t2flow
+Workflows/Get_Concept_IDs_component.t2flow
+Workflows/Get_concept_information_component.t2flow
+Workflows/List_Predefined_Concept_Sets.t2flow
+Workflows/Match_concept_profiles_component.t2flow
+Workflows/SNP2KEGG.t2flow
+Workflows/SNP_ID2EntrezGene_ID_component.t2flow
+Workflows/main_nested_workflow.t2flow
+annotation-skeleton.rdf
+annotations-21-09-2012.log
+make-21-09-2012.log
+make.log
+make.sh
+make.sh%7E
+ro_annotation.rdf
+ro_annotation.rdf%7E
+--------
+ro list -a -d "."
+a: Datasets/List_Concept_Sets_output.xls
+a: Datasets/output_snp_gene_kegg.txt
+a: Datasets/rs11158519_output.xls
+a: Datasets/rs168622_output.xls
+a: Datasets/rs174547_output.xls
+a: Datasets/rs2014355_output.xls
+a: Datasets/rs2046813_output.xls
+a: Datasets/rs211718_output.xls
+a: Datasets/rs2216405_output.xls
+a: Datasets/rs2286963_output.xls
+a: Datasets/rs272889_output.xls
+a: Datasets/rs541503_output.xls
+a: Datasets/rs603424_output.xls
+a: Datasets/rs7094971_output.xls
+a: Datasets/rs7156144_output.xls
+a: Datasets/rs8396_output.xls
+a: Datasets/rs9393903_output.xls
+a: Datasets/top_snps_to_annotate_input.txt
+a: Documents/HOWTO.txt
+a: Documents/HOWTO.txt%7E
+f: Documents/HOWTO.txt~
+a: Documents/README.txt
+a: Documents/README.txt%7E
+f: Documents/README.txt~
+a: Documents/kegg_cp_comparison_results.xls
+a: Documents/workflow_sketch_final.jpg
+a: Documents/workflow_sketch_final.odp
+a: Documents/workflow_sketch_final.pdf
+a: Documents/workflow_sketch_final.png
+a: Workflow-runs/List-Concept-Sets-prov-export.zip
+a: Workflow-runs/Main-nested-workflow-rs11158519-prov-export.zip
+a: Workflow-runs/Main-nested-workflow-rs168622-prov-export.zip
+a: Workflow-runs/Main-nested-workflow-rs174547-prov-export.zip
+a: Workflow-runs/Main-nested-workflow-rs2014355-prov-export.zip
+a: Workflow-runs/Main-nested-workflow-rs2046813-prov-export.zip
+a: Workflow-runs/Main-nested-workflow-rs211718-prov-export.zip
+a: Workflow-runs/Main-nested-workflow-rs2216405-prov-export.zip
+a: Workflow-runs/Main-nested-workflow-rs2286963-prov-export.zip
+a: Workflow-runs/Main-nested-workflow-rs272889-prov-export.zip
+a: Workflow-runs/Main-nested-workflow-rs541503-prov-export.zip
+a: Workflow-runs/Main-nested-workflow-rs603424-prov-export.zip
+a: Workflow-runs/Main-nested-workflow-rs7094971-prov-export.zip
+a: Workflow-runs/Main-nested-workflow-rs7156144-prov-export.zip
+a: Workflow-runs/Main-nested-workflow-rs8396-prov-export.zip
+a: Workflow-runs/Main-nested-workflow-rs9393903-prov-export.zip
+a: Workflow-runs/SNP2KEGG-prov-export.zip
+a: Workflows/DatabaseID_to_ConceptID_component.t2flow
+a: Workflows/Explain_concept_scores_component.t2flow
+a: Workflows/Filter_concepts_with_profiles_component.t2flow
+a: Workflows/Find_Supporting_Documents_component.t2flow
+a: Workflows/Find_co_occurring_documents_component.t2flow
+a: Workflows/Get_Concept_IDs_component.t2flow
+a: Workflows/Get_concept_information_component.t2flow
+a: Workflows/List_Predefined_Concept_Sets.t2flow
+a: Workflows/Match_concept_profiles_component.t2flow
+a: Workflows/SNP2KEGG.t2flow
+a: Workflows/SNP_ID2EntrezGene_ID_component.t2flow
+a: Workflows/main_nested_workflow.t2flow
+a: annotation-skeleton.rdf
+a: annotations-21-09-2012.log
+a: make-21-09-2012.log
+a: make.log
+a: make.sh
+a: make.sh%7E
+f: make.sh~
+a: ro_annotation.rdf
+a: ro_annotation.rdf%7E
+f: ro_annotation.rdf~
+--------
+~/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows ~/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar
+Converted DatabaseID_to_ConceptID_component.t2flow to DatabaseID_to_ConceptID_component.wfdesc.ttl
+Converted Explain_concept_scores_component.t2flow to Explain_concept_scores_component.wfdesc.ttl
+Converted Filter_concepts_with_profiles_component.t2flow to Filter_concepts_with_profiles_component.wfdesc.ttl
+Converted Find_co_occurring_documents_component.t2flow to Find_co_occurring_documents_component.wfdesc.ttl
+Converted Find_Supporting_Documents_component.t2flow to Find_Supporting_Documents_component.wfdesc.ttl
+Converted Get_Concept_IDs_component.t2flow to Get_Concept_IDs_component.wfdesc.ttl
+Converted Get_concept_information_component.t2flow to Get_concept_information_component.wfdesc.ttl
+Converted List_Predefined_Concept_Sets.t2flow to List_Predefined_Concept_Sets.wfdesc.ttl
+Converted main_nested_workflow.t2flow to main_nested_workflow.wfdesc.ttl
+Converted Match_concept_profiles_component.t2flow to Match_concept_profiles_component.wfdesc.ttl
+Converted SNP2KEGG.t2flow to SNP2KEGG.wfdesc.ttl
+Converted SNP_ID2EntrezGene_ID_component.t2flow to SNP_ID2EntrezGene_ID_component.wfdesc.ttl
+ro annotate -d  DatabaseID_to_ConceptID_component.t2flow -g ../.ro/DatabaseID_to_ConceptID_component.wfdesc.ttl 
+ro annotate -d  DatabaseID_to_ConceptID_component.t2flow rdf:type "http://purl.org/wf4ever/wfdesc#Workflow"
+ro annotate -d  Explain_concept_scores_component.t2flow -g ../.ro/Explain_concept_scores_component.wfdesc.ttl 
+ro annotate -d  Explain_concept_scores_component.t2flow rdf:type "http://purl.org/wf4ever/wfdesc#Workflow"
+ro annotate -d  Filter_concepts_with_profiles_component.t2flow -g ../.ro/Filter_concepts_with_profiles_component.wfdesc.ttl 
+ro annotate -d  Filter_concepts_with_profiles_component.t2flow rdf:type "http://purl.org/wf4ever/wfdesc#Workflow"
+ro annotate -d  Find_co_occurring_documents_component.t2flow -g ../.ro/Find_co_occurring_documents_component.wfdesc.ttl 
+ro annotate -d  Find_co_occurring_documents_component.t2flow rdf:type "http://purl.org/wf4ever/wfdesc#Workflow"
+ro annotate -d  Find_Supporting_Documents_component.t2flow -g ../.ro/Find_Supporting_Documents_component.wfdesc.ttl 
+ro annotate -d  Find_Supporting_Documents_component.t2flow rdf:type "http://purl.org/wf4ever/wfdesc#Workflow"
+ro annotate -d  Get_Concept_IDs_component.t2flow -g ../.ro/Get_Concept_IDs_component.wfdesc.ttl 
+ro annotate -d  Get_Concept_IDs_component.t2flow rdf:type "http://purl.org/wf4ever/wfdesc#Workflow"
+ro annotate -d  Get_concept_information_component.t2flow -g ../.ro/Get_concept_information_component.wfdesc.ttl 
+ro annotate -d  Get_concept_information_component.t2flow rdf:type "http://purl.org/wf4ever/wfdesc#Workflow"
+ro annotate -d  List_Predefined_Concept_Sets.t2flow -g ../.ro/List_Predefined_Concept_Sets.wfdesc.ttl 
+ro annotate -d  List_Predefined_Concept_Sets.t2flow rdf:type "http://purl.org/wf4ever/wfdesc#Workflow"
+ro annotate -d  main_nested_workflow.t2flow -g ../.ro/main_nested_workflow.wfdesc.ttl 
+ro annotate -d  main_nested_workflow.t2flow rdf:type "http://purl.org/wf4ever/wfdesc#Workflow"
+ro annotate -d  Match_concept_profiles_component.t2flow -g ../.ro/Match_concept_profiles_component.wfdesc.ttl 
+ro annotate -d  Match_concept_profiles_component.t2flow rdf:type "http://purl.org/wf4ever/wfdesc#Workflow"
+ro annotate -d  SNP2KEGG.t2flow -g ../.ro/SNP2KEGG.wfdesc.ttl 
+ro annotate -d  SNP2KEGG.t2flow rdf:type "http://purl.org/wf4ever/wfdesc#Workflow"
+ro annotate -d  SNP_ID2EntrezGene_ID_component.t2flow -g ../.ro/SNP_ID2EntrezGene_ID_component.wfdesc.ttl 
+ro annotate -d  SNP_ID2EntrezGene_ID_component.t2flow rdf:type "http://purl.org/wf4ever/wfdesc#Workflow"
+~/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar
+--------
+~/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Datasets ~/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar
+ro annotate -d  List_Concept_Sets_output.xls rdf:type "http://purl.org/wf4ever/wf4ever#Dataset"
+ro annotate -d  output_snp_gene_kegg.txt rdf:type "http://purl.org/wf4ever/wf4ever#Dataset"
+ro annotate -d  rs11158519_output.xls rdf:type "http://purl.org/wf4ever/wf4ever#Dataset"
+ro annotate -d  rs168622_output.xls rdf:type "http://purl.org/wf4ever/wf4ever#Dataset"
+ro annotate -d  rs174547_output.xls rdf:type "http://purl.org/wf4ever/wf4ever#Dataset"
+ro annotate -d  rs2014355_output.xls rdf:type "http://purl.org/wf4ever/wf4ever#Dataset"
+ro annotate -d  rs2046813_output.xls rdf:type "http://purl.org/wf4ever/wf4ever#Dataset"
+ro annotate -d  rs211718_output.xls rdf:type "http://purl.org/wf4ever/wf4ever#Dataset"
+ro annotate -d  rs2216405_output.xls rdf:type "http://purl.org/wf4ever/wf4ever#Dataset"
+ro annotate -d  rs2286963_output.xls rdf:type "http://purl.org/wf4ever/wf4ever#Dataset"
+ro annotate -d  rs272889_output.xls rdf:type "http://purl.org/wf4ever/wf4ever#Dataset"
+ro annotate -d  rs541503_output.xls rdf:type "http://purl.org/wf4ever/wf4ever#Dataset"
+ro annotate -d  rs603424_output.xls rdf:type "http://purl.org/wf4ever/wf4ever#Dataset"
+ro annotate -d  rs7094971_output.xls rdf:type "http://purl.org/wf4ever/wf4ever#Dataset"
+ro annotate -d  rs7156144_output.xls rdf:type "http://purl.org/wf4ever/wf4ever#Dataset"
+ro annotate -d  rs8396_output.xls rdf:type "http://purl.org/wf4ever/wf4ever#Dataset"
+ro annotate -d  rs9393903_output.xls rdf:type "http://purl.org/wf4ever/wf4ever#Dataset"
+ro annotate -d  top_snps_to_annotate_input.txt rdf:type "http://purl.org/wf4ever/wf4ever#Dataset"
+~/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar
+--------
+~/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Documents ~/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar
+ro annotate -d  HOWTO.txt rdf:type "http://purl.org/wf4ever/wf4ever#Document"
+ro annotate -d  HOWTO.txt~ rdf:type "http://purl.org/wf4ever/wf4ever#Document"
+ro annotate -d  kegg_cp_comparison_results.xls rdf:type "http://purl.org/wf4ever/wf4ever#Document"
+ro annotate -d  README.txt rdf:type "http://purl.org/wf4ever/wf4ever#Document"
+ro annotate -d  README.txt~ rdf:type "http://purl.org/wf4ever/wf4ever#Document"
+ro annotate -d  workflow_sketch_final.jpg rdf:type "http://purl.org/wf4ever/wf4ever#Document"
+ro annotate -d  workflow_sketch_final.odp rdf:type "http://purl.org/wf4ever/wf4ever#Document"
+ro annotate -d  workflow_sketch_final.pdf rdf:type "http://purl.org/wf4ever/wf4ever#Document"
+ro annotate -d  workflow_sketch_final.png rdf:type "http://purl.org/wf4ever/wf4ever#Document"
+~/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar
+--------
+ro annotate -d Workflow-runs Workflow-runs/SNP2KEGG-prov-export.zip rdf:type "http://purl.org/wf4ever/wfprov#WorkflowRun"
+ro annotate -d Workflow-runs Workflow-runs/List-Concept-Sets-prov-export.zip rdf:type "http://purl.org/wf4ever/wfprov#WorkflowRun"
+ro annotate -d Workflow-runs Workflow-runs/Main-nested-workflow-rs8396-prov-export.zip rdf:type "http://purl.org/wf4ever/wfprov#WorkflowRun"
+ro annotate -d Workflow-runs Workflow-runs/Main-nested-workflow-rs168622-prov-export.zip rdf:type "http://purl.org/wf4ever/wfprov#WorkflowRun"
+ro annotate -d Workflow-runs Workflow-runs/Main-nested-workflow-rs174547-prov-export.zip rdf:type "http://purl.org/wf4ever/wfprov#WorkflowRun"
+ro annotate -d Workflow-runs Workflow-runs/Main-nested-workflow-rs211718-prov-export.zip rdf:type "http://purl.org/wf4ever/wfprov#WorkflowRun"
+ro annotate -d Workflow-runs Workflow-runs/Main-nested-workflow-rs272889-prov-export.zip rdf:type "http://purl.org/wf4ever/wfprov#WorkflowRun"
+ro annotate -d Workflow-runs Workflow-runs/Main-nested-workflow-rs541503-prov-export.zip rdf:type "http://purl.org/wf4ever/wfprov#WorkflowRun"
+ro annotate -d Workflow-runs Workflow-runs/Main-nested-workflow-rs603424-prov-export.zip rdf:type "http://purl.org/wf4ever/wfprov#WorkflowRun"
+ro annotate -d Workflow-runs Workflow-runs/Main-nested-workflow-rs2014355-prov-export.zip rdf:type "http://purl.org/wf4ever/wfprov#WorkflowRun"
+ro annotate -d Workflow-runs Workflow-runs/Main-nested-workflow-rs2046813-prov-export.zip rdf:type "http://purl.org/wf4ever/wfprov#WorkflowRun"
+ro annotate -d Workflow-runs Workflow-runs/Main-nested-workflow-rs2216405-prov-export.zip rdf:type "http://purl.org/wf4ever/wfprov#WorkflowRun"
+ro annotate -d Workflow-runs Workflow-runs/Main-nested-workflow-rs2286963-prov-export.zip rdf:type "http://purl.org/wf4ever/wfprov#WorkflowRun"
+ro annotate -d Workflow-runs Workflow-runs/Main-nested-workflow-rs7094971-prov-export.zip rdf:type "http://purl.org/wf4ever/wfprov#WorkflowRun"
+ro annotate -d Workflow-runs Workflow-runs/Main-nested-workflow-rs7156144-prov-export.zip rdf:type "http://purl.org/wf4ever/wfprov#WorkflowRun"
+ro annotate -d Workflow-runs Workflow-runs/Main-nested-workflow-rs9393903-prov-export.zip rdf:type "http://purl.org/wf4ever/wfprov#WorkflowRun"
+ro annotate -d Workflow-runs Workflow-runs/Main-nested-workflow-rs11158519-prov-export.zip rdf:type "http://purl.org/wf4ever/wfprov#WorkflowRun"
+ro annotate -d Workflow-runs Workflow-runs/SNP2KEGG-prov-export.zip wprov:enactorAgent "Kristina Hettne"
+ro annotate -d Workflow-runs Workflow-runs/List-Concept-Sets-prov-export.zip wprov:enactorAgent "Kristina Hettne"
+ro annotate -d Workflow-runs Workflow-runs/Main-nested-workflow-rs8396-prov-export.zip wprov:enactorAgent "Kristina Hettne"
+ro annotate -d Workflow-runs Workflow-runs/Main-nested-workflow-rs168622-prov-export.zip wprov:enactorAgent "Kristina Hettne"
+ro annotate -d Workflow-runs Workflow-runs/Main-nested-workflow-rs174547-prov-export.zip wprov:enactorAgent "Kristina Hettne"
+ro annotate -d Workflow-runs Workflow-runs/Main-nested-workflow-rs211718-prov-export.zip wprov:enactorAgent "Kristina Hettne"
+ro annotate -d Workflow-runs Workflow-runs/Main-nested-workflow-rs272889-prov-export.zip wprov:enactorAgent "Kristina Hettne"
+ro annotate -d Workflow-runs Workflow-runs/Main-nested-workflow-rs541503-prov-export.zip wprov:enactorAgent "Kristina Hettne"
+ro annotate -d Workflow-runs Workflow-runs/Main-nested-workflow-rs603424-prov-export.zip wprov:enactorAgent "Kristina Hettne"
+ro annotate -d Workflow-runs Workflow-runs/Main-nested-workflow-rs2014355-prov-export.zip wprov:enactorAgent "Kristina Hettne"
+ro annotate -d Workflow-runs Workflow-runs/Main-nested-workflow-rs2046813-prov-export.zip wprov:enactorAgent "Kristina Hettne"
+ro annotate -d Workflow-runs Workflow-runs/Main-nested-workflow-rs2216405-prov-export.zip wprov:enactorAgent "Kristina Hettne"
+ro annotate -d Workflow-runs Workflow-runs/Main-nested-workflow-rs2286963-prov-export.zip wprov:enactorAgent "Kristina Hettne"
+ro annotate -d Workflow-runs Workflow-runs/Main-nested-workflow-rs7094971-prov-export.zip wprov:enactorAgent "Kristina Hettne"
+ro annotate -d Workflow-runs Workflow-runs/Main-nested-workflow-rs7156144-prov-export.zip wprov:enactorAgent "Kristina Hettne"
+ro annotate -d Workflow-runs Workflow-runs/Main-nested-workflow-rs9393903-prov-export.zip wprov:enactorAgent "Kristina Hettne"
+ro annotate -d Workflow-runs Workflow-runs/Main-nested-workflow-rs11158519-prov-export.zip wprov:enactorAgent "Kristina Hettne"
+ro annotate -d Documents Documents/HOWTO.txt rdfs:comment "Text file describing the protocol for the experiment, including the order of workflow execution."
+ro annotate -d Documents Documents/README.txt rdfs:comment "Text file describing the background of the experiment, and the formulated hypothesis."
+ro annotate -d Documents Documents/kegg_cp_comparison_results.xls rdf:type "http://purl.org/wf4ever/wfdesc#Results"
+ro annotate -d Documents Documents/kegg_cp_comparison_results.xls rdfs:comment "Excel file comparing the results from the workflows."
+ro annotate -d Documents Documents/workflow_sketch_final.jpg rdfs:comment "High-level overview of experiment and order of workflow execution."
+ro annotate -d Documents Documents/workflow_sketch_final.odp rdfs:comment "High-level overview of experiment and order of workflow execution."
+ro annotate -d Documents Documents/workflow_sketch_final.pdf rdfs:comment "High-level overview of experiment and order of workflow execution."
+ro annotate -d Documents Documents/workflow_sketch_final.png rdfs:comment "High-level overview of experiment and order of workflow execution."
+ro annotate -d  . -g ro_annotation.rdf 
+--------
+ro annotations -d ""  
+
+<Datasets/rs174547_output.xls>
+  rdf:type <http://purl.org/wf4ever/wf4ever#Dataset>
+  wfprov:wasOutputFrom <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/main_nested_workflow.t2flow>
+
+<Datasets/List_Concept_Sets_output.xls>
+  rdf:type <http://purl.org/wf4ever/wf4ever#Dataset>
+  wfprov:wasOutputFrom <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/List_Predefined_Concept_Sets.t2flow>
+
+<Workflows/SNP_ID2EntrezGene_ID_component.t2flow>
+  rdf:type <http://purl.org/wf4ever/wfdesc#Workflow>
+
+<Workflow-runs/Main-nested-workflow-rs211718-prov-export.zip>
+  wfprov:describedByWorkflow <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/main_nested_workflow.t2flow>
+  rdf:type <http://purl.org/wf4ever/wfprov#WorkflowRun>
+  <wprov:enactorAgent> "Kristina Hettne"
+
+<Documents/workflow_sketch_final.png>
+  rdf:type <http://purl.org/wf4ever/wf4ever#Document>
+  rdfs:comment "High-level overview of experiment and order of workflow execution."
+
+<Datasets/rs2014355_output.xls>
+  rdf:type <http://purl.org/wf4ever/wf4ever#Dataset>
+  wfprov:wasOutputFrom <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/main_nested_workflow.t2flow>
+
+<>
+  dcterms:creator "https://www.google.com/accounts/o8/id?id=AItOawl4I-H_ask7ollkwUzMrjTDrgD2oj_Qu2Q"
+  description """Concept Profile Matching Golden Exemplar"""
+  created "2012-09-21T15:48:16"
+  rdfs:comment "Described in myExperiment pack number 282"
+  title "Concept Profile Matching Golden Exemplar"
+  rdf:type <http://purl.org/wf4ever/ro#ResearchObject>
+  rdfs:seeAlso <http://www.myexperiment.org/packs/282>
+  dcterms:identifier "concept-profile-matching-golden-exemplar"
+
+<Documents/workflow_sketch_final.pdf>
+  rdf:type <http://purl.org/wf4ever/wf4ever#Document>
+  rdfs:comment "High-level overview of experiment and order of workflow execution."
+
+<Workflows/Find_co_occurring_documents_component.t2flow>
+  rdf:type <http://purl.org/wf4ever/wfdesc#Workflow>
+
+<Datasets/output_snp_gene_kegg.txt>
+  rdf:type <http://purl.org/wf4ever/wf4ever#Dataset>
+  wfprov:wasOutputFrom <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/SNP2KEGG.t2flow>
+
+<Documents/HOWTO.txt%7E>
+  rdf:type <http://purl.org/wf4ever/wf4ever#Document>
+
+<Documents/kegg_cp_comparison_results.xls>
+  rdf:type <http://purl.org/wf4ever/wf4ever#Document>
+  rdf:type <http://purl.org/wf4ever/wfdesc#Results>
+  rdfs:comment "Excel file comparing the results from the workflows."
+
+<Datasets/rs272889_output.xls>
+  rdf:type <http://purl.org/wf4ever/wf4ever#Dataset>
+  wfprov:wasOutputFrom <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/main_nested_workflow.t2flow>
+
+<Workflow-runs/Main-nested-workflow-rs7094971-prov-export.zip>
+  wfprov:describedByWorkflow <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/main_nested_workflow.t2flow>
+  rdf:type <http://purl.org/wf4ever/wfprov#WorkflowRun>
+  <wprov:enactorAgent> "Kristina Hettne"
+
+<Workflows/Find_Supporting_Documents_component.t2flow>
+  rdf:type <http://purl.org/wf4ever/wfdesc#Workflow>
+
+<Workflow-runs/Main-nested-workflow-rs174547-prov-export.zip>
+  wfprov:describedByWorkflow <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/main_nested_workflow.t2flow>
+  rdf:type <http://purl.org/wf4ever/wfprov#WorkflowRun>
+  <wprov:enactorAgent> "Kristina Hettne"
+
+<Workflow-runs/Main-nested-workflow-rs603424-prov-export.zip>
+  wfprov:describedByWorkflow <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/main_nested_workflow.t2flow>
+  rdf:type <http://purl.org/wf4ever/wfprov#WorkflowRun>
+  <wprov:enactorAgent> "Kristina Hettne"
+
+<Datasets/rs211718_output.xls>
+  rdf:type <http://purl.org/wf4ever/wf4ever#Dataset>
+  wfprov:wasOutputFrom <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/main_nested_workflow.t2flow>
+
+<Documents/workflow_sketch_final.odp>
+  rdf:type <http://purl.org/wf4ever/wf4ever#Document>
+  rdfs:comment "High-level overview of experiment and order of workflow execution."
+
+<Datasets/rs2046813_output.xls>
+  rdf:type <http://purl.org/wf4ever/wf4ever#Dataset>
+  wfprov:wasOutputFrom <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/main_nested_workflow.t2flow>
+
+<Datasets/top_snps_to_annotate_input.txt>
+  rdf:type <http://purl.org/wf4ever/wf4ever#Dataset>
+  wfprov:usedInput <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/SNP2KEGG.t2flow>
+  wfprov:usedInput <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/main_nested_workflow.t2flow>
+
+<Workflow-runs/Main-nested-workflow-rs2014355-prov-export.zip>
+  wfprov:describedByWorkflow <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/main_nested_workflow.t2flow>
+  rdf:type <http://purl.org/wf4ever/wfprov#WorkflowRun>
+  <wprov:enactorAgent> "Kristina Hettne"
+
+<Datasets/rs2216405_output.xls>
+  rdf:type <http://purl.org/wf4ever/wf4ever#Dataset>
+  wfprov:wasOutputFrom <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/main_nested_workflow.t2flow>
+
+<Workflows/List_Predefined_Concept_Sets.t2flow>
+  rdf:type <http://purl.org/wf4ever/wfdesc#Workflow>
+
+<Documents/HOWTO.txt>
+  rdf:type <http://purl.org/wf4ever/wf4ever#Document>
+  rdfs:comment "Text file describing the protocol for the experiment, including the order of workflow execution."
+
+<Workflows/Match_concept_profiles_component.t2flow>
+  rdf:type <http://purl.org/wf4ever/wfdesc#Workflow>
+
+<Documents/README.txt>
+  rdf:type <http://purl.org/wf4ever/wf4ever#Document>
+  rdfs:comment "Text file describing the background of the experiment, and the formulated hypothesis."
+
+<Datasets/rs11158519_output.xls>
+  rdf:type <http://purl.org/wf4ever/wf4ever#Dataset>
+  wfprov:wasOutputFrom <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/main_nested_workflow.t2flow>
+
+<Datasets/rs8396_output.xls>
+  rdf:type <http://purl.org/wf4ever/wf4ever#Dataset>
+  wfprov:wasOutputFrom <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/main_nested_workflow.t2flow>
+
+<Workflows/Explain_concept_scores_component.t2flow>
+  rdf:type <http://purl.org/wf4ever/wfdesc#Workflow>
+
+<Workflow-runs/Main-nested-workflow-rs8396-prov-export.zip>
+  wfprov:describedByWorkflow <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/main_nested_workflow.t2flow>
+  rdf:type <http://purl.org/wf4ever/wfprov#WorkflowRun>
+  <wprov:enactorAgent> "Kristina Hettne"
+
+<Datasets/rs603424_output.xls>
+  rdf:type <http://purl.org/wf4ever/wf4ever#Dataset>
+  wfprov:wasOutputFrom <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/main_nested_workflow.t2flow>
+
+<Documents/README.txt%7E>
+  rdf:type <http://purl.org/wf4ever/wf4ever#Document>
+
+<Workflow-runs/Main-nested-workflow-rs541503-prov-export.zip>
+  wfprov:describedByWorkflow <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/main_nested_workflow.t2flow>
+  rdf:type <http://purl.org/wf4ever/wfprov#WorkflowRun>
+  <wprov:enactorAgent> "Kristina Hettne"
+
+<Workflow-runs/Main-nested-workflow-rs168622-prov-export.zip>
+  wfprov:describedByWorkflow <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/main_nested_workflow.t2flow>
+  rdf:type <http://purl.org/wf4ever/wfprov#WorkflowRun>
+  <wprov:enactorAgent> "Kristina Hettne"
+
+<Workflow-runs/SNP2KEGG-prov-export.zip>
+  wfprov:describedByWorkflow <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/SNP2KEGG.t2flow>
+  rdf:type <http://purl.org/wf4ever/wfprov#WorkflowRun>
+  <wprov:enactorAgent> "Kristina Hettne"
+
+<Datasets/rs168622_output.xls>
+  rdf:type <http://purl.org/wf4ever/wf4ever#Dataset>
+  wfprov:wasOutputFrom <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/main_nested_workflow.t2flow>
+
+<Workflow-runs/Main-nested-workflow-rs2046813-prov-export.zip>
+  wfprov:describedByWorkflow <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/main_nested_workflow.t2flow>
+  rdf:type <http://purl.org/wf4ever/wfprov#WorkflowRun>
+  <wprov:enactorAgent> "Kristina Hettne"
+
+<Datasets/rs7094971_output.xls>
+  rdf:type <http://purl.org/wf4ever/wf4ever#Dataset>
+  wfprov:wasOutputFrom <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/main_nested_workflow.t2flow>
+
+<Workflows/Filter_concepts_with_profiles_component.t2flow>
+  rdf:type <http://purl.org/wf4ever/wfdesc#Workflow>
+
+<Workflows/SNP2KEGG.t2flow>
+  rdf:type <http://purl.org/wf4ever/wfdesc#Workflow>
+
+<Workflows/main_nested_workflow.t2flow>
+  rdf:type <http://purl.org/wf4ever/wfdesc#Workflow>
+  wfdesc:hasSubWorkflow <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/DatabaseID_to_ConceptID_component.t2flow>
+  wfdesc:hasSubWorkflow <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/SNP_ID2EntrezGene_ID_component.t2flow>
+  wfdesc:hasSubWorkflow <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/Match_concept_profiles_component.t2flow>
+  wfdesc:hasSubWorkflow <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/Get_concept_information_component.t2flow>
+  wfdesc:hasSubWorkflow <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/Get_Concept_IDs_component.t2flow>
+  wfdesc:hasSubWorkflow <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/Find_co_occurring_documents_component.t2flow>
+  wfdesc:hasSubWorkflow <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/Filter_concepts_with_profiles_component.t2flow>
+  wfdesc:hasSubWorkflow <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/Find_Supporting_Documents_component.t2flow>
+  wfdesc:hasSubWorkflow <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/Explain_concept_scores_component.t2flow>
+
+<Datasets/rs9393903_output.xls>
+  rdf:type <http://purl.org/wf4ever/wf4ever#Dataset>
+  wfprov:wasOutputFrom <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/main_nested_workflow.t2flow>
+
+<Documents/workflow_sketch_final.jpg>
+  rdf:type <http://purl.org/wf4ever/wf4ever#Document>
+  rdfs:comment "High-level overview of experiment and order of workflow execution."
+
+<Workflow-runs/Main-nested-workflow-rs2286963-prov-export.zip>
+  wfprov:describedByWorkflow <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/main_nested_workflow.t2flow>
+  rdf:type <http://purl.org/wf4ever/wfprov#WorkflowRun>
+  <wprov:enactorAgent> "Kristina Hettne"
+
+<Datasets/rs7156144_output.xls>
+  rdf:type <http://purl.org/wf4ever/wf4ever#Dataset>
+  wfprov:wasOutputFrom <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/main_nested_workflow.t2flow>
+
+<Workflow-runs/Main-nested-workflow-rs2216405-prov-export.zip>
+  wfprov:describedByWorkflow <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/main_nested_workflow.t2flow>
+  rdf:type <http://purl.org/wf4ever/wfprov#WorkflowRun>
+  <wprov:enactorAgent> "Kristina Hettne"
+
+<Workflow-runs/Main-nested-workflow-rs9393903-prov-export.zip>
+  wfprov:describedByWorkflow <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/main_nested_workflow.t2flow>
+  rdf:type <http://purl.org/wf4ever/wfprov#WorkflowRun>
+  <wprov:enactorAgent> "Kristina Hettne"
+
+<Datasets/rs541503_output.xls>
+  rdf:type <http://purl.org/wf4ever/wf4ever#Dataset>
+  wfprov:wasOutputFrom <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/main_nested_workflow.t2flow>
+
+<Workflows/Get_Concept_IDs_component.t2flow>
+  rdf:type <http://purl.org/wf4ever/wfdesc#Workflow>
+
+<Workflows/DatabaseID_to_ConceptID_component.t2flow>
+  rdf:type <http://purl.org/wf4ever/wfdesc#Workflow>
+
+<Datasets/rs2286963_output.xls>
+  rdf:type <http://purl.org/wf4ever/wf4ever#Dataset>
+  wfprov:wasOutputFrom <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/main_nested_workflow.t2flow>
+
+<Workflow-runs/Main-nested-workflow-rs7156144-prov-export.zip>
+  wfprov:describedByWorkflow <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/main_nested_workflow.t2flow>
+  rdf:type <http://purl.org/wf4ever/wfprov#WorkflowRun>
+  <wprov:enactorAgent> "Kristina Hettne"
+
+<Workflow-runs/Main-nested-workflow-rs272889-prov-export.zip>
+  wfprov:describedByWorkflow <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/main_nested_workflow.t2flow>
+  rdf:type <http://purl.org/wf4ever/wfprov#WorkflowRun>
+  <wprov:enactorAgent> "Kristina Hettne"
+
+<Workflow-runs/List-Concept-Sets-prov-export.zip>
+  wfprov:describedByWorkflow <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/List_Predefined_Concept_Sets.t2flow>
+  rdf:type <http://purl.org/wf4ever/wfprov#WorkflowRun>
+  <wprov:enactorAgent> "Kristina Hettne"
+
+<Workflows/Get_concept_information_component.t2flow>
+  rdf:type <http://purl.org/wf4ever/wfdesc#Workflow>
+
+<Workflow-runs/Main-nested-workflow-rs11158519-prov-export.zip>
+  wfprov:describedByWorkflow <file:///home/kmhettne/Projects/ro-catalogue/v0.1/concept-profile-matching-golden-exemplar/Workflows/main_nested_workflow.t2flow>
+  rdf:type <http://purl.org/wf4ever/wfprov#WorkflowRun>
+  <wprov:enactorAgent> "Kristina Hettne"

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xml:base=".."
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="Documents/workflow_sketch_final.odp">
+    <rdfs:comment>High-level overview of experiment and order of workflow execution.</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>
