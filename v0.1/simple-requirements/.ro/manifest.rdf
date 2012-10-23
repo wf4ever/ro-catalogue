@@ -7,78 +7,77 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:ro="http://purl.org/wf4ever/ro#"
 >
-  <rdf:Description rdf:nodeID="_1dbc43fe-2ee2-44fe-bbff-6b74637262a9">
-    <ao:body rdf:resource="file:///Users/graham/workspace/wf4ever-ro-catalogue/v0.1/simple-requirements/simple-requirements-wfprov.rdf"/>
-    <ro:annotatesAggregatedResource rdf:resource="docs/UserRequirements-bio.json"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="_47bb66a5-3608-4177-b8aa-9816178e2524">
-    <ao:body rdf:resource="file:///Users/graham/workspace/wf4ever-ro-catalogue/v0.1/simple-requirements/simple-requirements-wfdesc.rdf"/>
-    <ro:annotatesAggregatedResource rdf:resource="docs/mkjson.sh"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="_b1567e9d-9f7c-43bc-a198-c74a8892cc3d">
-    <ao:body rdf:resource=".ro/Ann-20120814-0001-simple-requirements-minim.rdf.rdf"/>
-    <ro:annotatesAggregatedResource rdf:resource="simple-requirements-minim.rdf"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="_256f62b9-296a-4cf4-a312-9c1088be215f">
-    <ao:body rdf:resource=".ro/Ann-20120814-0001-simple-requirements-wfprov.rdf.rdf"/>
-    <ro:annotatesAggregatedResource rdf:resource="simple-requirements-wfprov.rdf"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="_6369424f-02e8-4f16-8c49-dc8e127edf07">
-    <ao:body rdf:resource="file:///Users/graham/workspace/wf4ever-ro-catalogue/v0.1/simple-requirements/simple-requirements-wfprov.rdf"/>
+  <rdf:Description rdf:about=".ro/annotations/d04e9c73-dfd5-4327-9ef4-3f1bef17def2">
     <ro:annotatesAggregatedResource rdf:resource="docs/UserRequirements-astro.json"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="_b2c190d4-2306-4ffc-8764-57db7bc11759">
-    <ao:body rdf:resource=".ro/manifest.rdf"/>
-    <ro:annotatesAggregatedResource rdf:resource=""/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="_70463aa5-1238-450e-b39b-56840cb42b85">
     <ao:body rdf:resource="file:///Users/graham/workspace/wf4ever-ro-catalogue/v0.1/simple-requirements/simple-requirements-wfprov.rdf"/>
-    <ro:annotatesAggregatedResource rdf:resource="docs/UserRequirements-gen.json"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="_23a47689-f6b7-48e9-a377-b949dffb7427">
-    <ao:body rdf:resource=".ro/Ann-20120814-0001-simple-requirements-wfdesc.rdf.rdf"/>
-    <ro:annotatesAggregatedResource rdf:resource="simple-requirements-wfdesc.rdf"/>
+  <rdf:Description rdf:about=".ro/annotations/167f8f95-c7ef-4526-8d60-6fcdb30940dd">
+    <ro:annotatesAggregatedResource rdf:resource="simple-requirements-wfprov.rdf"/>
+    <ao:body rdf:resource=".ro/Ann-20121023-0001-simple-requirements-wfprov.rdf.rdf"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about=".ro/annotations/c41ad4bf-1ab3-4e42-9319-03a6760c38e6">
+    <ro:annotatesAggregatedResource rdf:resource=""/>
+    <ao:body rdf:resource=".ro/manifest.rdf"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
   </rdf:Description>
   <rdf:Description rdf:about="">
-    <dcterms:title>Simple requirements RO</dcterms:title>
-    <dcterms:created>2012-08-14T16:50:37</dcterms:created>
-    <dcterms:creator>Test user</dcterms:creator>
+    <dcterms:created>2012-10-23T12:45:35</dcterms:created>
     <dcterms:description>Simple requirements RO</dcterms:description>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
-    <ore:aggregates rdf:resource="python/ReadCSV.py"/>
-    <ore:aggregates rdf:resource="make.sh"/>
-    <ore:aggregates rdf:resource="simple-requirements-wfdesc.rdf"/>
-    <ore:aggregates rdf:resource="docs/UserRequirements-gen.csv"/>
-    <ore:aggregates rdf:resource="docs/UserRequirements-bio.json"/>
-    <ore:aggregates rdf:nodeID="_70463aa5-1238-450e-b39b-56840cb42b85"/>
-    <ore:aggregates rdf:resource="docs/UserRequirements-astro.json"/>
-    <ore:aggregates rdf:resource="data/UserRequirements-gen.ods"/>
-    <ore:aggregates rdf:nodeID="_1dbc43fe-2ee2-44fe-bbff-6b74637262a9"/>
-    <ore:aggregates rdf:nodeID="_256f62b9-296a-4cf4-a312-9c1088be215f"/>
-    <ore:aggregates rdf:resource="TODO"/>
-    <ore:aggregates rdf:nodeID="_b1567e9d-9f7c-43bc-a198-c74a8892cc3d"/>
-    <ore:aggregates rdf:nodeID="_6369424f-02e8-4f16-8c49-dc8e127edf07"/>
-    <ore:aggregates rdf:resource="docs/mkjson.sh"/>
-    <ore:aggregates rdf:resource="docs/UserRequirements-gen.json"/>
-    <ore:aggregates rdf:nodeID="_23a47689-f6b7-48e9-a377-b949dffb7427"/>
-    <ore:aggregates rdf:resource="data/UserRequirements-bio.ods"/>
-    <ore:aggregates rdf:resource="simple-requirements-minim.rdf"/>
-    <ore:aggregates rdf:resource="simple-requirements-wfprov.rdf"/>
-    <ore:aggregates rdf:nodeID="_b2c190d4-2306-4ffc-8764-57db7bc11759"/>
-    <ore:aggregates rdf:resource="README"/>
-    <ore:aggregates rdf:resource="docs/UserRequirements-astro.csv"/>
-    <ore:aggregates rdf:resource="docs/UserRequirements-bio.csv"/>
-    <ore:aggregates rdf:resource="data/UserRequirements-astro.ods"/>
-    <ore:aggregates rdf:resource="minim-checklist.sh"/>
-    <ore:aggregates rdf:nodeID="_47bb66a5-3608-4177-b8aa-9816178e2524"/>
     <dcterms:identifier>simple-requirements</dcterms:identifier>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
+    <ore:aggregates rdf:resource="data/UserRequirements-bio.ods"/>
+    <ore:aggregates rdf:resource="docs/UserRequirements-astro.json"/>
+    <ore:aggregates rdf:resource="docs/UserRequirements-astro.csv"/>
+    <ore:aggregates rdf:resource="docs/mkjson.sh"/>
+    <ore:aggregates rdf:resource="README"/>
+    <ore:aggregates rdf:resource=".ro/annotations/167f8f95-c7ef-4526-8d60-6fcdb30940dd"/>
+    <ore:aggregates rdf:resource="docs/UserRequirements-bio.json"/>
+    <ore:aggregates rdf:resource="TODO"/>
+    <ore:aggregates rdf:resource="minim-checklist.sh"/>
+    <ore:aggregates rdf:resource="docs/UserRequirements-gen.json"/>
+    <ore:aggregates rdf:resource="simple-requirements-wfprov.rdf"/>
+    <ore:aggregates rdf:resource=".ro/annotations/d7ecef63-976f-4b0a-a0b7-5aa1e67bed6e"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121023-0001-simple-requirements-wfprov.rdf.rdf"/>
+    <ore:aggregates rdf:resource=".ro/annotations/6e3cbf9b-fcff-4efd-b1b1-582eb0d12994"/>
+    <ore:aggregates rdf:resource="docs/UserRequirements-gen.csv"/>
+    <ore:aggregates rdf:resource="make.sh"/>
+    <ore:aggregates rdf:resource="python/ReadCSV.py"/>
+    <ore:aggregates rdf:resource=".ro/annotations/c41ad4bf-1ab3-4e42-9319-03a6760c38e6"/>
+    <ore:aggregates rdf:resource="data/UserRequirements-astro.ods"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121023-0001-simple-requirements-wfdesc.rdf.rdf"/>
+    <ore:aggregates rdf:resource="simple-requirements-wfdesc.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121023-0001-simple-requirements-minim.rdf.rdf"/>
+    <ore:aggregates rdf:resource="docs/UserRequirements-bio.csv"/>
+    <ore:aggregates rdf:resource="simple-requirements-minim.rdf"/>
+    <ore:aggregates rdf:resource="data/UserRequirements-gen.ods"/>
+    <dcterms:title>Simple requirements RO</dcterms:title>
+    <dcterms:creator>Test user</dcterms:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about=".ro/annotations/57311baa-1d37-464c-a5d7-f7335e68b9d6">
+    <ro:annotatesAggregatedResource rdf:resource="docs/UserRequirements-bio.json"/>
+    <ao:body rdf:resource="file:///Users/graham/workspace/wf4ever-ro-catalogue/v0.1/simple-requirements/simple-requirements-wfprov.rdf"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about=".ro/annotations/6e3cbf9b-fcff-4efd-b1b1-582eb0d12994">
+    <ro:annotatesAggregatedResource rdf:resource="simple-requirements-wfdesc.rdf"/>
+    <ao:body rdf:resource=".ro/Ann-20121023-0001-simple-requirements-wfdesc.rdf.rdf"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about=".ro/annotations/d7ecef63-976f-4b0a-a0b7-5aa1e67bed6e">
+    <ro:annotatesAggregatedResource rdf:resource="simple-requirements-minim.rdf"/>
+    <ao:body rdf:resource=".ro/Ann-20121023-0001-simple-requirements-minim.rdf.rdf"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about=".ro/annotations/00e881ac-ffba-4a81-9b80-d73597c37e6b">
+    <ro:annotatesAggregatedResource rdf:resource="docs/mkjson.sh"/>
+    <ao:body rdf:resource="file:///Users/graham/workspace/wf4ever-ro-catalogue/v0.1/simple-requirements/simple-requirements-wfdesc.rdf"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about=".ro/annotations/2ec3f1c6-b8d8-4c9f-8808-2df37b6d3862">
+    <ro:annotatesAggregatedResource rdf:resource="docs/UserRequirements-gen.json"/>
+    <ao:body rdf:resource="file:///Users/graham/workspace/wf4ever-ro-catalogue/v0.1/simple-requirements/simple-requirements-wfprov.rdf"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
   </rdf:Description>
 </rdf:RDF>

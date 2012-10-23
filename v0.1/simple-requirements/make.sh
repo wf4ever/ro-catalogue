@@ -11,9 +11,9 @@ TESTRO="$ROPATH/$RONAME"
 echo "--------"
 
 $RO config -v \
-  -b $ROBASE \
-  -r http://sandbox.wf4ever-project.org/rosrs5 \
-  -t "32801fc0-1df1-4e34-b" \
+  -b $ROPATH \
+  -r $ROSRS_URI \
+  -t "$ROSRS_ACCESS_TOKEN" \
   -n "Test user" \
   -e "testuser@example.org"
 
