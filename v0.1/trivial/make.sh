@@ -11,10 +11,9 @@ RONAME="trivial"
 echo "--------"
 
 $RO config -v \
-  -b $ROBASE \
-  -r http://sandbox.wf4ever-project.org/rosrs3 \
-  -u "OpenID-1318340111490" \
-  -p "2ae55d36-de48-444c-a" \
+  -b $ROPATH \
+  -r $ROSRS_URI \
+  -t "$ROSRS_ACCESS_TOKEN" \
   -n "Test user" \
   -e "testuser@example.org"
 
@@ -37,6 +36,7 @@ $RO list -v -a -d .
 echo "--------"
 
 $RO annotate -v 20120114-1156-405.jpg title "Trees on frosty morning"
+$RO annotate -v 20120114-1156-405.jpg -g $TESTRO/metadata.rdf
 
 $RO annotations -v 20120114-1156-405.jpg
 
