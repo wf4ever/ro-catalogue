@@ -42,11 +42,19 @@ ro add -a -d .
 
 ro list -d .
 
+# Create link annotation between RO and README.txt
+
+ro link . rdfs:seeAlso README.txt
+
+# Display new annotation on RO
+
+ro annotations `pwd`/
+
 # Create new single annotation with explicit target
 
-ro annotate TavernaHelloWorld.t2flow title "Hellow World workflow"
+ro annotate TavernaHelloWorld.t2flow title "Hellow World"
 
-# Display new annotation on filke
+# Display new annotation on file
 
 ro annotations TavernaHelloWorld.t2flow
 
