@@ -66,63 +66,63 @@ echo "--------"
 #zip -r Workflow-runs/SNP2KEGG-prov-export.zip Workflow-runs/SNP2KEGG-prov-export
 #rm -rf SNP2KEGG-prov-export
 
-#$RO annotate -v Workflow-runs/SNP2KEGG-prov-export.zip rdf:type 'http://purl.org/wf4ever/wfprov#WorkflowRun'
-#$RO annotate -v Workflow-runs/List-Concept-Sets-prov-export.zip rdf:type 'http://purl.org/wf4ever/wfprov#WorkflowRun'
-#$RO annotate -v Workflow-runs/Main-nested-workflow-rs8396-prov-export.zip rdf:type 'http://purl.org/wf4ever/wfprov#WorkflowRun'
-#$RO annotate -v Workflow-runs/Main-nested-workflow-rs168622-prov-export.zip rdf:type 'http://purl.org/wf4ever/wfprov#WorkflowRun'
-#$RO annotate -v Workflow-runs/Main-nested-workflow-rs174547-prov-export.zip rdf:type 'http://purl.org/wf4ever/wfprov#WorkflowRun'
-#$RO annotate -v Workflow-runs/Main-nested-workflow-rs211718-prov-export.zip rdf:type 'http://purl.org/wf4ever/wfprov#WorkflowRun'
-#$RO annotate -v Workflow-runs/Main-nested-workflow-rs272889-prov-export.zip rdf:type 'http://purl.org/wf4ever/wfprov#WorkflowRun'
-#$RO annotate -v Workflow-runs/Main-nested-workflow-rs541503-prov-export.zip rdf:type 'http://purl.org/wf4ever/wfprov#WorkflowRun'
-#$RO annotate -v Workflow-runs/Main-nested-workflow-rs603424-prov-export.zip rdf:type 'http://purl.org/wf4ever/wfprov#WorkflowRun'
-#$RO annotate -v Workflow-runs/Main-nested-workflow-rs2014355-prov-export.zip rdf:type 'http://purl.org/wf4ever/wfprov#WorkflowRun'
-#$RO annotate -v Workflow-runs/Main-nested-workflow-rs2046813-prov-export.zip rdf:type 'http://purl.org/wf4ever/wfprov#WorkflowRun'
-#$RO annotate -v Workflow-runs/Main-nested-workflow-rs2216405-prov-export.zip rdf:type 'http://purl.org/wf4ever/wfprov#WorkflowRun'
-#$RO annotate -v Workflow-runs/Main-nested-workflow-rs2286963-prov-export.zip rdf:type 'http://purl.org/wf4ever/wfprov#WorkflowRun'
-#$RO annotate -v Workflow-runs/Main-nested-workflow-rs7094971-prov-export.zip rdf:type 'http://purl.org/wf4ever/wfprov#WorkflowRun'
-#$RO annotate -v Workflow-runs/Main-nested-workflow-rs7156144-prov-export.zip rdf:type 'http://purl.org/wf4ever/wfprov#WorkflowRun'
-#$RO annotate -v Workflow-runs/Main-nested-workflow-rs9393903-prov-export.zip rdf:type 'http://purl.org/wf4ever/wfprov#WorkflowRun'
-#$RO annotate -v Workflow-runs/Main-nested-workflow-rs11158519-prov-export.zip rdf:type 'http://purl.org/wf4ever/wfprov#WorkflowRun'
+#$RO annotate -v Workflow-runs/SNP2KEGG-prov-export.zip rdf:type 'http://purl.org/wf4ever/ro-user#ProvBundle'
+#$RO annotate -v Workflow-runs/List-Concept-Sets-prov-export.zip rdf:type 'http://purl.org/wf4ever/ro-user#ProvBundle'
+#$RO annotate -v Workflow-runs/Main-nested-workflow-rs8396-prov-export.zip rdf:type 'http://purl.org/wf4ever/ro-user#ProvBundle'
+#$RO annotate -v Workflow-runs/Main-nested-workflow-rs168622-prov-export.zip rdf:type 'http://purl.org/wf4ever/ro-user#ProvBundle'
+#$RO annotate -v Workflow-runs/Main-nested-workflow-rs174547-prov-export.zip rdf:type 'http://purl.org/wf4ever/ro-user#ProvBundle'
+#$RO annotate -v Workflow-runs/Main-nested-workflow-rs211718-prov-export.zip rdf:type 'http://purl.org/wf4ever/ro-user#ProvBundle'
+#$RO annotate -v Workflow-runs/Main-nested-workflow-rs272889-prov-export.zip rdf:type 'http://purl.org/wf4ever/ro-user#ProvBundle'
+#$RO annotate -v Workflow-runs/Main-nested-workflow-rs541503-prov-export.zip rdf:type 'http://purl.org/wf4ever/ro-user#ProvBundle'
+#$RO annotate -v Workflow-runs/Main-nested-workflow-rs603424-prov-export.zip rdf:type 'http://purl.org/wf4ever/ro-user#ProvBundle'
+#$RO annotate -v Workflow-runs/Main-nested-workflow-rs2014355-prov-export.zip rdf:type 'http://purl.org/wf4ever/ro-user#ProvBundle'
+#$RO annotate -v Workflow-runs/Main-nested-workflow-rs2046813-prov-export.zip rdf:type 'http://purl.org/wf4ever/ro-user#ProvBundle'
+#$RO annotate -v Workflow-runs/Main-nested-workflow-rs2216405-prov-export.zip rdf:type 'http://purl.org/wf4ever/ro-user#ProvBundle'
+#$RO annotate -v Workflow-runs/Main-nested-workflow-rs2286963-prov-export.zip rdf:type 'http://purl.org/wf4ever/ro-user#ProvBundle'
+#$RO annotate -v Workflow-runs/Main-nested-workflow-rs7094971-prov-export.zip rdf:type 'http://purl.org/wf4ever/ro-user#ProvBundle'
+#$RO annotate -v Workflow-runs/Main-nested-workflow-rs7156144-prov-export.zip rdf:type 'http://purl.org/wf4ever/ro-user#ProvBundle'
+#$RO annotate -v Workflow-runs/Main-nested-workflow-rs9393903-prov-export.zip rdf:type 'http://purl.org/wf4ever/ro-user#ProvBundle'
+#$RO annotate -v Workflow-runs/Main-nested-workflow-rs11158519-prov-export.zip rdf:type 'http://purl.org/wf4ever/ro-user#ProvBundle'
 
 
-#$RO annotate -v Workflow-runs/SNP2KEGG-prov-export.zip wprov:enactorAgent 'Kristina Hettne'
-#$RO annotate -v Workflow-runs/List-Concept-Sets-prov-export.zip wprov:enactorAgent 'Kristina Hettne'
-#$RO annotate -v Workflow-runs/Main-nested-workflow-rs8396-prov-export.zip wprov:enactorAgent 'Kristina Hettne'
-#$RO annotate -v Workflow-runs/Main-nested-workflow-rs168622-prov-export.zip wprov:enactorAgent 'Kristina Hettne'
-#$RO annotate -v Workflow-runs/Main-nested-workflow-rs174547-prov-export.zip wprov:enactorAgent 'Kristina Hettne'
-#$RO annotate -v Workflow-runs/Main-nested-workflow-rs211718-prov-export.zip wprov:enactorAgent 'Kristina Hettne'
-#$RO annotate -v Workflow-runs/Main-nested-workflow-rs272889-prov-export.zip wprov:enactorAgent 'Kristina Hettne'
-#$RO annotate -v Workflow-runs/Main-nested-workflow-rs541503-prov-export.zip wprov:enactorAgent 'Kristina Hettne'
-#$RO annotate -v Workflow-runs/Main-nested-workflow-rs603424-prov-export.zip wprov:enactorAgent 'Kristina Hettne'
-#$RO annotate -v Workflow-runs/Main-nested-workflow-rs2014355-prov-export.zip wprov:enactorAgent 'Kristina Hettne'
-#$RO annotate -v Workflow-runs/Main-nested-workflow-rs2046813-prov-export.zip wprov:enactorAgent 'Kristina Hettne'
-#$RO annotate -v Workflow-runs/Main-nested-workflow-rs2216405-prov-export.zip wprov:enactorAgent 'Kristina Hettne'
-#$RO annotate -v Workflow-runs/Main-nested-workflow-rs2286963-prov-export.zip wprov:enactorAgent 'Kristina Hettne'
-#$RO annotate -v Workflow-runs/Main-nested-workflow-rs7094971-prov-export.zip wprov:enactorAgent 'Kristina Hettne'
-#$RO annotate -v Workflow-runs/Main-nested-workflow-rs7156144-prov-export.zip wprov:enactorAgent 'Kristina Hettne'
-#$RO annotate -v Workflow-runs/Main-nested-workflow-rs9393903-prov-export.zip wprov:enactorAgent 'Kristina Hettne'
-#$RO annotate -v Workflow-runs/Main-nested-workflow-rs11158519-prov-export.zip wprov:enactorAgent 'Kristina Hettne'
+#$RO annotate -v Workflow-runs/SNP2KEGG-prov-export.zip http://purl.org/wf4ever/ro-user#attributedTo 'Kristina Hettne'
+#$RO annotate -v Workflow-runs/List-Concept-Sets-prov-export.zip http://purl.org/wf4ever/ro-user#attributedTo 'Kristina Hettne'
+#$RO annotate -v Workflow-runs/Main-nested-workflow-rs8396-prov-export.zip http://purl.org/wf4ever/ro-user#attributedTo 'Kristina Hettne'
+#$RO annotate -v Workflow-runs/Main-nested-workflow-rs168622-prov-export.zip http://purl.org/wf4ever/ro-user#attributedTo 'Kristina Hettne'
+#$RO annotate -v Workflow-runs/Main-nested-workflow-rs174547-prov-export.zip http://purl.org/wf4ever/ro-user#attributedTo 'Kristina Hettne'
+#$RO annotate -v Workflow-runs/Main-nested-workflow-rs211718-prov-export.zip http://purl.org/wf4ever/ro-user#attributedTo 'Kristina Hettne'
+#$RO annotate -v Workflow-runs/Main-nested-workflow-rs272889-prov-export.zip http://purl.org/wf4ever/ro-user#attributedTo 'Kristina Hettne'
+#$RO annotate -v Workflow-runs/Main-nested-workflow-rs541503-prov-export.zip http://purl.org/wf4ever/ro-user#attributedTo 'Kristina Hettne'
+#$RO annotate -v Workflow-runs/Main-nested-workflow-rs603424-prov-export.zip http://purl.org/wf4ever/ro-user#attributedTo 'Kristina Hettne'
+#$RO annotate -v Workflow-runs/Main-nested-workflow-rs2014355-prov-export.zip http://purl.org/wf4ever/ro-user#attributedTo 'Kristina Hettne'
+#$RO annotate -v Workflow-runs/Main-nested-workflow-rs2046813-prov-export.zip http://purl.org/wf4ever/ro-user#attributedTo 'Kristina Hettne'
+#$RO annotate -v Workflow-runs/Main-nested-workflow-rs2216405-prov-export.zip http://purl.org/wf4ever/ro-user#attributedTo 'Kristina Hettne'
+#$RO annotate -v Workflow-runs/Main-nested-workflow-rs2286963-prov-export.zip http://purl.org/wf4ever/ro-user#attributedTo 'Kristina Hettne'
+#$RO annotate -v Workflow-runs/Main-nested-workflow-rs7094971-prov-export.zip http://purl.org/wf4ever/ro-user#attributedTo 'Kristina Hettne'
+#$RO annotate -v Workflow-runs/Main-nested-workflow-rs7156144-prov-export.zip http://purl.org/wf4ever/ro-user#attributedTo 'Kristina Hettne'
+#$RO annotate -v Workflow-runs/Main-nested-workflow-rs9393903-prov-export.zip http://purl.org/wf4ever/ro-user#attributedTo 'Kristina Hettne'
+#$RO annotate -v Workflow-runs/Main-nested-workflow-rs11158519-prov-export.zip http://purl.org/wf4ever/ro-user#attributedTo 'Kristina Hettne'
 
-$RO link Datasets/output_snp_gene_kegg.txt user:outputFrom Workflows/SNP2KEGG.t2flow
-$RO link Datasets/List_Concept_Sets_output.xls user:outputFrom Workflows/List_Predefined_Concept_Sets.t2flow
-$RO link Datasets/rs8396_output.xls user:outputFrom Workflows/main_nested_workflow.t2flow
-$RO link Datasets/rs168622_output.xls user:outputFrom Workflows/main_nested_workflow.t2flow
-$RO link Datasets/rs174547_output.xls user:outputFrom Workflows/main_nested_workflow.t2flow
-$RO link Datasets/rs211718_output.xls user:outputFrom Workflows/main_nested_workflow.t2flow
-$RO link Datasets/rs272889_output.xls user:outputFrom Workflows/main_nested_workflow.t2flow
-$RO link Datasets/rs541503_output.xls user:outputFrom Workflows/main_nested_workflow.t2flow
-$RO link Datasets/rs603424_output.xls user:outputFrom Workflows/main_nested_workflow.t2flow
-$RO link Datasets/rs2014355_output.xls user:outputFrom Workflows/main_nested_workflow.t2flow
-$RO link Datasets/rs2046813_output.xls user:outputFrom Workflows/main_nested_workflow.t2flow
-$RO link Datasets/rs2216405_output.xls user:outputFrom Workflows/main_nested_workflow.t2flow
-$RO link Datasets/rs2286963_output.xls user:outputFrom Workflows/main_nested_workflow.t2flow
-$RO link Datasets/rs7094971_output.xls user:outputFrom Workflows/main_nested_workflow.t2flow
-$RO link Datasets/rs7156144_output.xls user:outputFrom Workflows/main_nested_workflow.t2flow
-$RO link Datasets/rs9393903_output.xls user:outputFrom Workflows/main_nested_workflow.t2flow
-$RO link Datasets/rs11158519_output.xls user:outputFrom Workflows/main_nested_workflow.t2flow
+$RO link Datasets/output_snp_gene_kegg.txt http://purl.org/wf4ever/ro-user#outputFrom Workflows/SNP2KEGG.t2flow
+$RO link Datasets/List_Concept_Sets_output.xls http://purl.org/wf4ever/ro-user#outputFrom Workflows/List_Predefined_Concept_Sets.t2flow
+$RO link Datasets/rs8396_output.xls http://purl.org/wf4ever/ro-user#outputFrom Workflows/main_nested_workflow.t2flow
+$RO link Datasets/rs168622_output.xls http://purl.org/wf4ever/ro-user#outputFrom Workflows/main_nested_workflow.t2flow
+$RO link Datasets/rs174547_output.xls http://purl.org/wf4ever/ro-user#outputFrom Workflows/main_nested_workflow.t2flow
+$RO link Datasets/rs211718_output.xls http://purl.org/wf4ever/ro-user#outputFrom Workflows/main_nested_workflow.t2flow
+$RO link Datasets/rs272889_output.xls http://purl.org/wf4ever/ro-user#outputFrom Workflows/main_nested_workflow.t2flow
+$RO link Datasets/rs541503_output.xls http://purl.org/wf4ever/ro-user#outputFrom Workflows/main_nested_workflow.t2flow
+$RO link Datasets/rs603424_output.xls http://purl.org/wf4ever/ro-user#outputFrom Workflows/main_nested_workflow.t2flow
+$RO link Datasets/rs2014355_output.xls http://purl.org/wf4ever/ro-user#outputFrom Workflows/main_nested_workflow.t2flow
+$RO link Datasets/rs2046813_output.xls http://purl.org/wf4ever/ro-user#outputFrom Workflows/main_nested_workflow.t2flow
+$RO link Datasets/rs2216405_output.xls http://purl.org/wf4ever/ro-user#outputFrom Workflows/main_nested_workflow.t2flow
+$RO link Datasets/rs2286963_output.xls http://purl.org/wf4ever/ro-user#outputFrom Workflows/main_nested_workflow.t2flow
+$RO link Datasets/rs7094971_output.xls http://purl.org/wf4ever/ro-user#outputFrom Workflows/main_nested_workflow.t2flow
+$RO link Datasets/rs7156144_output.xls http://purl.org/wf4ever/ro-user#outputFrom Workflows/main_nested_workflow.t2flow
+$RO link Datasets/rs9393903_output.xls http://purl.org/wf4ever/ro-user#outputFrom Workflows/main_nested_workflow.t2flow
+$RO link Datasets/rs11158519_output.xls http://purl.org/wf4ever/ro-user#outputFrom Workflows/main_nested_workflow.t2flow
 
-$RO link Datasets/top_snps_to_annotate_input.txt user:usedInput Workflows/main_nested_workflow.t2flow
-$RO link Datasets/top_snps_to_annotate_input.txt user:usedInput Workflows/SNP2KEGG.t2flow
+$RO link Datasets/top_snps_to_annotate_input.txt http://purl.org/wf4ever/ro-user#usedInput Workflows/main_nested_workflow.t2flow
+$RO link Datasets/top_snps_to_annotate_input.txt http://purl.org/wf4ever/ro-user#usedInput Workflows/SNP2KEGG.t2flow
 
 $RO annotate -v Documents/HOWTO.txt rdfs:comment 'Text file describing the protocol for the experiment, including the order of workflow execution.'
 $RO annotate -v Documents/README.txt rdfs:comment 'Text file describing the background of the experiment, and the formulated hypothesis.'
@@ -134,33 +134,33 @@ $RO annotate -v Documents/workflow_sketch_final.odp rdfs:comment 'High-level ove
 $RO annotate -v Documents/workflow_sketch_final.pdf rdfs:comment 'High-level overview of experiment and order of workflow execution.'
 $RO annotate -v Documents/workflow_sketch_final.png rdfs:comment 'High-level overview of experiment and order of workflow execution.'
 
-#$RO link Workflow-runs/List-Concept-Sets-prov-export.zip wfprov:describedByWorkflow Workflows/List_Predefined_Concept_Sets.t2flow
-#$RO link Workflow-runs/SNP2KEGG-prov-export.zip wfprov:describedByWorkflow Workflows/SNP2KEGG.t2flow
-#$RO link Workflow-runs/Main-nested-workflow-rs8396-prov-export.zip wfprov:describedByWorkflow Workflows/main_nested_workflow.t2flow
-#$RO link Workflow-runs/Main-nested-workflow-rs168622-prov-export.zip wfprov:describedByWorkflow Workflows/main_nested_workflow.t2flow
-#$RO link Workflow-runs/Main-nested-workflow-rs174547-prov-export.zip wfprov:describedByWorkflow Workflows/main_nested_workflow.t2flow
-#$RO link Workflow-runs/Main-nested-workflow-rs211718-prov-export.zip wfprov:describedByWorkflow Workflows/main_nested_workflow.t2flow
-#$RO link Workflow-runs/Main-nested-workflow-rs272889-prov-export.zip wfprov:describedByWorkflow Workflows/main_nested_workflow.t2flow
-#$RO link Workflow-runs/Main-nested-workflow-rs541503-prov-export.zip wfprov:describedByWorkflow Workflows/main_nested_workflow.t2flow
-#$RO link Workflow-runs/Main-nested-workflow-rs603424-prov-export.zip wfprov:describedByWorkflow Workflows/main_nested_workflow.t2flow
-#$RO link Workflow-runs/Main-nested-workflow-rs2014355-prov-export.zip wfprov:describedByWorkflow Workflows/main_nested_workflow.t2flow
-#$RO link Workflow-runs/Main-nested-workflow-rs2046813-prov-export.zip wfprov:describedByWorkflow Workflows/main_nested_workflow.t2flow
-#$RO link Workflow-runs/Main-nested-workflow-rs2216405-prov-export.zip wfprov:describedByWorkflow Workflows/main_nested_workflow.t2flow
-#$RO link Workflow-runs/Main-nested-workflow-rs7094971-prov-export.zip wfprov:describedByWorkflow Workflows/main_nested_workflow.t2flow
-#$RO link Workflow-runs/Main-nested-workflow-rs7156144-prov-export.zip wfprov:describedByWorkflow Workflows/main_nested_workflow.t2flow
-#$RO link Workflow-runs/Main-nested-workflow-rs9393903-prov-export.zip wfprov:describedByWorkflow Workflows/main_nested_workflow.t2flow
-#$RO link Workflow-runs/Main-nested-workflow-rs11158519-prov-export.zip wfprov:describedByWorkflow Workflows/main_nested_workflow.t2flow
-#$RO link Workflow-runs/Main-nested-workflow-rs2286963-prov-export.zip wfprov:describedByWorkflow Workflows/main_nested_workflow.t2flow
+#$RO link Workflow-runs/List-Concept-Sets-prov-export.zip http://purl.org/wf4ever/ro-user#runOfWorkflow Workflows/List_Predefined_Concept_Sets.t2flow
+#$RO link Workflow-runs/SNP2KEGG-prov-export.zip http://purl.org/wf4ever/ro-user#runOfWorkflow Workflows/SNP2KEGG.t2flow
+#$RO link Workflow-runs/Main-nested-workflow-rs8396-prov-export.zip http://purl.org/wf4ever/ro-user#runOfWorkflow Workflows/main_nested_workflow.t2flow
+#$RO link Workflow-runs/Main-nested-workflow-rs168622-prov-export.zip http://purl.org/wf4ever/ro-user#runOfWorkflow Workflows/main_nested_workflow.t2flow
+#$RO link Workflow-runs/Main-nested-workflow-rs174547-prov-export.zip http://purl.org/wf4ever/ro-user#runOfWorkflow Workflows/main_nested_workflow.t2flow
+#$RO link Workflow-runs/Main-nested-workflow-rs211718-prov-export.zip http://purl.org/wf4ever/ro-user#runOfWorkflow Workflows/main_nested_workflow.t2flow
+#$RO link Workflow-runs/Main-nested-workflow-rs272889-prov-export.zip http://purl.org/wf4ever/ro-user#runOfWorkflow Workflows/main_nested_workflow.t2flow
+#$RO link Workflow-runs/Main-nested-workflow-rs541503-prov-export.zip http://purl.org/wf4ever/ro-user#runOfWorkflow Workflows/main_nested_workflow.t2flow
+#$RO link Workflow-runs/Main-nested-workflow-rs603424-prov-export.zip http://purl.org/wf4ever/ro-user#runOfWorkflow Workflows/main_nested_workflow.t2flow
+#$RO link Workflow-runs/Main-nested-workflow-rs2014355-prov-export.zip http://purl.org/wf4ever/ro-user#runOfWorkflow Workflows/main_nested_workflow.t2flow
+#$RO link Workflow-runs/Main-nested-workflow-rs2046813-prov-export.zip http://purl.org/wf4ever/ro-user#runOfWorkflow Workflows/main_nested_workflow.t2flow
+#$RO link Workflow-runs/Main-nested-workflow-rs2216405-prov-export.zip http://purl.org/wf4ever/ro-user#runOfWorkflow Workflows/main_nested_workflow.t2flow
+#$RO link Workflow-runs/Main-nested-workflow-rs7094971-prov-export.zip http://purl.org/wf4ever/ro-user#runOfWorkflow Workflows/main_nested_workflow.t2flow
+#$RO link Workflow-runs/Main-nested-workflow-rs7156144-prov-export.zip http://purl.org/wf4ever/ro-user#runOfWorkflow Workflows/main_nested_workflow.t2flow
+#$RO link Workflow-runs/Main-nested-workflow-rs9393903-prov-export.zip http://purl.org/wf4ever/ro-user#runOfWorkflow Workflows/main_nested_workflow.t2flow
+#$RO link Workflow-runs/Main-nested-workflow-rs11158519-prov-export.zip http://purl.org/wf4ever/ro-user#runOfWorkflow Workflows/main_nested_workflow.t2flow
+#$RO link Workflow-runs/Main-nested-workflow-rs2286963-prov-export.zip http://purl.org/wf4ever/ro-user#runOfWorkflow Workflows/main_nested_workflow.t2flow
 
-$RO link Workflows/main_nested_workflow.t2flow user:hasSubWorkflow Workflows/Filter_concepts_with_profiles_component.t2flow
-$RO link Workflows/main_nested_workflow.t2flow user:hasSubWorkflow Workflows/Find_co_occurring_documents_component.t2flow
-$RO link Workflows/main_nested_workflow.t2flow user:hasSubWorkflow Workflows/Get_concept_information_component.t2flow
-$RO link Workflows/main_nested_workflow.t2flow user:hasSubWorkflow Workflows/Match_concept_profiles_component.t2flow
-$RO link Workflows/main_nested_workflow.t2flow user:hasSubWorkflow Workflows/DatabaseID_to_ConceptID_component.t2flow
-$RO link Workflows/main_nested_workflow.t2flow user:hasSubWorkflow Workflows/SNP_ID2EntrezGene_ID_component.t2flow
-$RO link Workflows/main_nested_workflow.t2flow user:hasSubWorkflow Workflows/Get_Concept_IDs_component.t2flow
-$RO link Workflows/main_nested_workflow.t2flow user:hasSubWorkflow Workflows/Explain_concept_scores_component.t2flow
-$RO link Workflows/main_nested_workflow.t2flow user:hasSubWorkflow Workflows/Find_Supporting_Documents_component.t2flow
+$RO link Workflows/main_nested_workflow.t2flow http://purl.org/wf4ever/ro-user#hasSubWorkflow Workflows/Filter_concepts_with_profiles_component.t2flow
+$RO link Workflows/main_nested_workflow.t2flow http://purl.org/wf4ever/ro-user#hasSubWorkflow Workflows/Find_co_occurring_documents_component.t2flow
+$RO link Workflows/main_nested_workflow.t2flow http://purl.org/wf4ever/ro-user#hasSubWorkflow Workflows/Get_concept_information_component.t2flow
+$RO link Workflows/main_nested_workflow.t2flow http://purl.org/wf4ever/ro-user#hasSubWorkflow Workflows/Match_concept_profiles_component.t2flow
+$RO link Workflows/main_nested_workflow.t2flow http://purl.org/wf4ever/ro-user#hasSubWorkflow Workflows/DatabaseID_to_ConceptID_component.t2flow
+$RO link Workflows/main_nested_workflow.t2flow http://purl.org/wf4ever/ro-user#hasSubWorkflow Workflows/SNP_ID2EntrezGene_ID_component.t2flow
+$RO link Workflows/main_nested_workflow.t2flow http://purl.org/wf4ever/ro-user#hasSubWorkflow Workflows/Get_Concept_IDs_component.t2flow
+$RO link Workflows/main_nested_workflow.t2flow http://purl.org/wf4ever/ro-user#hasSubWorkflow Workflows/Explain_concept_scores_component.t2flow
+$RO link Workflows/main_nested_workflow.t2flow http://purl.org/wf4ever/ro-user#hasSubWorkflow Workflows/Find_Supporting_Documents_component.t2flow
 
 $RO annotate -v . -g ro_annotation.rdf
 
