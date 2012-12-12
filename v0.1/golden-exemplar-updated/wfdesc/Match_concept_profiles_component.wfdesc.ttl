@@ -1,0 +1,202 @@
+@base <http://ns.taverna.org.uk/2010/workflowBundle/6036660d-2ac0-4369-a7f7-d208a0a26265/workflow/Match_concept_profiles/> .
+@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
+@prefix wf4ever: <http://purl.org/wf4ever/wf4ever#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<processor/Filter_ConceptID/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:BeanshellScript ;
+	wf4ever:script """import java.util.regex.*;
+
+filteredlist = new ArrayList();
+Pattern thePat = Pattern.compile(regex);
+int theGroup = Integer.parseInt(group);
+
+for (Iterator i = stringlist.iterator(); i.hasNext();) {
+	String item = (String) i.next();
+	Matcher matcher = thePat.matcher(item);
+
+	if (matcher.find()) {
+		filteredlist.add(matcher.group(theGroup));
+	}
+}
+""" ;
+	rdfs:label "Filter_ConceptID" ;
+	wfdesc:hasInput <processor/Filter_ConceptID/in/group> , <processor/Filter_ConceptID/in/regex> , <processor/Filter_ConceptID/in/stringlist> ;
+	wfdesc:hasOutput <processor/Filter_ConceptID/out/filteredlist> .
+
+<processor/getSimilarConceptProfiles/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:SOAPService ;
+	wf4ever:wsdlURI "http://ws.biosemantics.org/ConceptRecognizerService?wsdl"^^<http://www.w3.org/2001/XMLSchema#anyURI> ;
+	rdfs:label "getSimilarConceptProfiles" ;
+	wfdesc:hasInput <processor/getSimilarConceptProfiles/in/parameters> ;
+	wfdesc:hasOutput <processor/getSimilarConceptProfiles/out/parameters> .
+
+<datalink?from=in/Cutoff&to=processor/getSimilarConceptProfiles_input/in/cutoffValue> a wfdesc:DataLink ;
+	wfdesc:hasSource <in/Cutoff> ;
+	wfdesc:hasSink <processor/getSimilarConceptProfiles_input/in/cutoffValue> .
+
+<datalink?from=in/Match_concept_set&to=processor/getSimilarConceptProfiles_input/in/matchConceptProfileList> a wfdesc:DataLink ;
+	wfdesc:hasSource <in/Match_concept_set> ;
+	wfdesc:hasSink <processor/getSimilarConceptProfiles_input/in/matchConceptProfileList> .
+
+<datalink?from=in/Query_concept_set&to=processor/getSimilarConceptProfiles_input/in/queryConceptProfileList> a wfdesc:DataLink ;
+	wfdesc:hasSource <in/Query_concept_set> ;
+	wfdesc:hasSink <processor/getSimilarConceptProfiles_input/in/queryConceptProfileList> .
+
+<datalink?from=processor/Filter_ConceptID/out/filteredlist&to=out/Match_concept_ID> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/Filter_ConceptID/out/filteredlist> ;
+	wfdesc:hasSink <out/Match_concept_ID> .
+
+<datalink?from=processor/MatchingResult_SimilarityScoreLists/out/SimilarityScoreLists&to=out/Similarity_score> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/MatchingResult_SimilarityScoreLists/out/SimilarityScoreLists> ;
+	wfdesc:hasSink <out/Similarity_score> .
+
+<datalink?from=processor/getSimilarConceptProfiles/out/parameters&to=processor/getSimilarConceptProfiles_output/in/input> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/getSimilarConceptProfiles/out/parameters> ;
+	wfdesc:hasSink <processor/getSimilarConceptProfiles_output/in/input> .
+
+<datalink?from=processor/getSimilarConceptProfiles_MatchingResult/out/MatchConceptProfileList&to=out/Match_result_list> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/getSimilarConceptProfiles_MatchingResult/out/MatchConceptProfileList> ;
+	wfdesc:hasSink <out/Match_result_list> .
+
+<datalink?from=processor/getSimilarConceptProfiles_MatchingResult/out/MatchConceptProfileList&to=processor/Filter_ConceptID/in/stringlist> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/getSimilarConceptProfiles_MatchingResult/out/MatchConceptProfileList> ;
+	wfdesc:hasSink <processor/Filter_ConceptID/in/stringlist> .
+
+<datalink?from=processor/getSimilarConceptProfiles_MatchingResult/out/SimilarityScoreLists&to=processor/MatchingResult_SimilarityScoreLists/in/input> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/getSimilarConceptProfiles_MatchingResult/out/SimilarityScoreLists> ;
+	wfdesc:hasSink <processor/MatchingResult_SimilarityScoreLists/in/input> .
+
+<datalink?from=processor/getSimilarConceptProfiles_MatchingResult/out/SummedSimilarityScoreList&to=out/Summed_similarity_score> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/getSimilarConceptProfiles_MatchingResult/out/SummedSimilarityScoreList> ;
+	wfdesc:hasSink <out/Summed_similarity_score> .
+
+<datalink?from=processor/getSimilarConceptProfiles_input/out/output&to=processor/getSimilarConceptProfiles/in/parameters> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/getSimilarConceptProfiles_input/out/output> ;
+	wfdesc:hasSink <processor/getSimilarConceptProfiles/in/parameters> .
+
+<datalink?from=processor/getSimilarConceptProfiles_output/out/MatchingResult&to=processor/getSimilarConceptProfiles_MatchingResult/in/input> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/getSimilarConceptProfiles_output/out/MatchingResult> ;
+	wfdesc:hasSink <processor/getSimilarConceptProfiles_MatchingResult/in/input> .
+
+<datalink?from=processor/group_value/out/value&to=processor/Filter_ConceptID/in/group> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/group_value/out/value> ;
+	wfdesc:hasSink <processor/Filter_ConceptID/in/group> .
+
+<datalink?from=processor/regex_value/out/value&to=processor/Filter_ConceptID/in/regex> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/regex_value/out/value> ;
+	wfdesc:hasSink <processor/Filter_ConceptID/in/regex> .
+
+<> a wfdesc:Workflow , wfdesc:Description , wfdesc:Process ;
+	rdfs:label "Match_concept_profiles" ;
+	wfdesc:hasInput <in/Cutoff> , <in/Match_concept_set> , <in/Query_concept_set> ;
+	wfdesc:hasOutput <out/Match_concept_ID> , <out/Match_result_list> , <out/Similarity_score> , <out/Summed_similarity_score> ;
+	wfdesc:hasSubProcess <processor/Filter_ConceptID/> , <processor/MatchingResult_SimilarityScoreLists/> , <processor/getSimilarConceptProfiles/> , <processor/getSimilarConceptProfiles_MatchingResult/> , <processor/getSimilarConceptProfiles_input/> , <processor/getSimilarConceptProfiles_output/> , <processor/group_value/> , <processor/regex_value/> ;
+	wfdesc:hasDataLink <datalink?from=in/Cutoff&to=processor/getSimilarConceptProfiles_input/in/cutoffValue> , <datalink?from=in/Match_concept_set&to=processor/getSimilarConceptProfiles_input/in/matchConceptProfileList> , <datalink?from=in/Query_concept_set&to=processor/getSimilarConceptProfiles_input/in/queryConceptProfileList> , <datalink?from=processor/Filter_ConceptID/out/filteredlist&to=out/Match_concept_ID> , <datalink?from=processor/MatchingResult_SimilarityScoreLists/out/SimilarityScoreLists&to=out/Similarity_score> , <datalink?from=processor/getSimilarConceptProfiles/out/parameters&to=processor/getSimilarConceptProfiles_output/in/input> , <datalink?from=processor/getSimilarConceptProfiles_MatchingResult/out/MatchConceptProfileList&to=out/Match_result_list> , <datalink?from=processor/getSimilarConceptProfiles_MatchingResult/out/MatchConceptProfileList&to=processor/Filter_ConceptID/in/stringlist> , <datalink?from=processor/getSimilarConceptProfiles_MatchingResult/out/SimilarityScoreLists&to=processor/MatchingResult_SimilarityScoreLists/in/input> , <datalink?from=processor/getSimilarConceptProfiles_MatchingResult/out/SummedSimilarityScoreList&to=out/Summed_similarity_score> , <datalink?from=processor/getSimilarConceptProfiles_input/out/output&to=processor/getSimilarConceptProfiles/in/parameters> , <datalink?from=processor/getSimilarConceptProfiles_output/out/MatchingResult&to=processor/getSimilarConceptProfiles_MatchingResult/in/input> , <datalink?from=processor/group_value/out/value&to=processor/Filter_ConceptID/in/group> , <datalink?from=processor/regex_value/out/value&to=processor/Filter_ConceptID/in/regex> .
+
+<in/Cutoff> a wfdesc:Input , wfdesc:Description , wfdesc:Output ;
+	rdfs:label "Cutoff" .
+
+<in/Match_concept_set> a wfdesc:Input , wfdesc:Description , wfdesc:Output ;
+	rdfs:label "Match_concept_set" .
+
+<in/Query_concept_set> a wfdesc:Input , wfdesc:Description , wfdesc:Output ;
+	rdfs:label "Query_concept_set" .
+
+<out/Match_concept_ID> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
+	rdfs:label "Match_concept_ID" .
+
+<out/Match_result_list> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
+	rdfs:label "Match_result_list" .
+
+<out/Similarity_score> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
+	rdfs:label "Similarity_score" .
+
+<out/Summed_similarity_score> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
+	rdfs:label "Summed_similarity_score" .
+
+<processor/Filter_ConceptID/in/group> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "group" .
+
+<processor/Filter_ConceptID/in/regex> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "regex" .
+
+<processor/Filter_ConceptID/in/stringlist> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "stringlist" .
+
+<processor/Filter_ConceptID/out/filteredlist> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "filteredlist" .
+
+<processor/MatchingResult_SimilarityScoreLists/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "MatchingResult_SimilarityScoreLists" ;
+	wfdesc:hasInput <processor/MatchingResult_SimilarityScoreLists/in/input> ;
+	wfdesc:hasOutput <processor/MatchingResult_SimilarityScoreLists/out/SimilarityScoreLists> .
+
+<processor/MatchingResult_SimilarityScoreLists/in/input> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "input" .
+
+<processor/MatchingResult_SimilarityScoreLists/out/SimilarityScoreLists> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "SimilarityScoreLists" .
+
+<processor/getSimilarConceptProfiles/in/parameters> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "parameters" .
+
+<processor/getSimilarConceptProfiles/out/parameters> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "parameters" .
+
+<processor/getSimilarConceptProfiles_MatchingResult/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "getSimilarConceptProfiles_MatchingResult" ;
+	wfdesc:hasInput <processor/getSimilarConceptProfiles_MatchingResult/in/input> ;
+	wfdesc:hasOutput <processor/getSimilarConceptProfiles_MatchingResult/out/MatchConceptProfileList> , <processor/getSimilarConceptProfiles_MatchingResult/out/SimilarityScoreLists> , <processor/getSimilarConceptProfiles_MatchingResult/out/SummedSimilarityScoreList> .
+
+<processor/getSimilarConceptProfiles_MatchingResult/in/input> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "input" .
+
+<processor/getSimilarConceptProfiles_MatchingResult/out/MatchConceptProfileList> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "MatchConceptProfileList" .
+
+<processor/getSimilarConceptProfiles_MatchingResult/out/SimilarityScoreLists> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "SimilarityScoreLists" .
+
+<processor/getSimilarConceptProfiles_MatchingResult/out/SummedSimilarityScoreList> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "SummedSimilarityScoreList" .
+
+<processor/getSimilarConceptProfiles_input/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "getSimilarConceptProfiles_input" ;
+	wfdesc:hasInput <processor/getSimilarConceptProfiles_input/in/cutoffValue> , <processor/getSimilarConceptProfiles_input/in/matchConceptProfileList> , <processor/getSimilarConceptProfiles_input/in/queryConceptProfileList> ;
+	wfdesc:hasOutput <processor/getSimilarConceptProfiles_input/out/output> .
+
+<processor/getSimilarConceptProfiles_input/in/cutoffValue> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "cutoffValue" .
+
+<processor/getSimilarConceptProfiles_input/in/matchConceptProfileList> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "matchConceptProfileList" .
+
+<processor/getSimilarConceptProfiles_input/in/queryConceptProfileList> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "queryConceptProfileList" .
+
+<processor/getSimilarConceptProfiles_input/out/output> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "output" .
+
+<processor/getSimilarConceptProfiles_output/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "getSimilarConceptProfiles_output" ;
+	wfdesc:hasInput <processor/getSimilarConceptProfiles_output/in/input> ;
+	wfdesc:hasOutput <processor/getSimilarConceptProfiles_output/out/MatchingResult> .
+
+<processor/getSimilarConceptProfiles_output/in/input> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "input" .
+
+<processor/getSimilarConceptProfiles_output/out/MatchingResult> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "MatchingResult" .
+
+<processor/group_value/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "group_value" ;
+	wfdesc:hasOutput <processor/group_value/out/value> .
+
+<processor/group_value/out/value> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "value" .
+
+<processor/regex_value/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "regex_value" ;
+	wfdesc:hasOutput <processor/regex_value/out/value> .
+
+<processor/regex_value/out/value> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "value" .

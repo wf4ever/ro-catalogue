@@ -1,0 +1,130 @@
+rs174547	DKFZP434K028	-1
+rs174547	 DAGLA	path:hsa04723 Retrograde endocannabinoid signaling - Homo sapiens (human)
+rs174547	 C11orf9	-1
+rs174547	 C11orf10	-1
+rs174547	 FEN1	path:hsa03030 DNA replication - Homo sapiens (human)
+rs174547	 FEN1	 path:hsa03410 Base excision repair - Homo sapiens (human)
+rs174547	 FEN1	 path:hsa03450 Non-homologous end-joining - Homo sapiens (human)
+rs174547	 FADS2	path:hsa00592 alpha-Linolenic acid metabolism - Homo sapiens (human)
+rs174547	 FADS2	 path:hsa01040 Biosynthesis of unsaturated fatty acids - Homo sapiens (human)
+rs174547	 FADS2	 path:hsa03320 PPAR signaling pathway - Homo sapiens (human)
+rs174547	 MIR1908	-1
+rs174547	 FADS1	path:hsa01040 Biosynthesis of unsaturated fatty acids - Homo sapiens (human)
+rs174547	 FADS3	-1
+rs174547	 RAB3IL1	-1
+rs174547	 MIR611	-1
+rs2014355	CABP1	-1
+rs2014355	 MLEC	-1
+rs2014355	 UNC119B	-1
+rs2014355	 ACADS	path:hsa00071 Fatty acid metabolism - Homo sapiens (human)
+rs2014355	 ACADS	 path:hsa00280 Valine
+rs2014355	 ACADS	 leucine and isoleucine degradation - Homo sapiens (human)
+rs2014355	 ACADS	 path:hsa00650 Butanoate metabolism - Homo sapiens (human)
+rs2014355	 ACADS	 path:hsa01100 Metabolic pathways - Homo sapiens (human)
+rs2014355	 SPPL3	-1
+rs2014355	 MIR4700	-1
+rs211718	SLC44A5	-1
+rs211718	 ACADM	path:hsa00071 Fatty acid metabolism - Homo sapiens (human)
+rs211718	 ACADM	 path:hsa00280 Valine
+rs211718	 ACADM	 leucine and isoleucine degradation - Homo sapiens (human)
+rs211718	 ACADM	 path:hsa00410 beta-Alanine metabolism - Homo sapiens (human)
+rs211718	 ACADM	 path:hsa00640 Propanoate metabolism - Homo sapiens (human)
+rs211718	 ACADM	 path:hsa01100 Metabolic pathways - Homo sapiens (human)
+rs211718	 ACADM	 path:hsa03320 PPAR signaling pathway - Homo sapiens (human)
+rs2286963	KANSL1L	-1
+rs2286963	 ACADL	path:hsa00071 Fatty acid metabolism - Homo sapiens (human)
+rs2286963	 ACADL	 path:hsa01100 Metabolic pathways - Homo sapiens (human)
+rs2286963	 ACADL	 path:hsa03320 PPAR signaling pathway - Homo sapiens (human)
+rs2286963	 MYL1	-1
+rs9393903	uncharacterized LOC100506409	-1
+rs9393903	 SYCP2L	-1
+rs9393903	 ELOVL2	path:hsa00062 Fatty acid elongation - Homo sapiens (human)
+rs9393903	 ELOVL2	 path:hsa01040 Biosynthesis of unsaturated fatty acids - Homo sapiens (human)
+rs9393903	 C6orf228	-1
+rs9393903	 ERVFRD-1	-1
+rs2216405	CPS1	path:hsa00250 Alanine
+rs2216405	CPS1	 aspartate and glutamate metabolism - Homo sapiens (human)
+rs2216405	CPS1	 path:hsa00330 Arginine and proline metabolism - Homo sapiens (human)
+rs2216405	CPS1	 path:hsa01100 Metabolic pathways - Homo sapiens (human)
+rs7156144	TMEM229B	-1
+rs7156144	 PLEKHH1	-1
+rs7156144	 PIGH	path:hsa00563 Glycosylphosphatidylinositol(GPI)-anchor biosynthesis - Homo sapiens (human)
+rs7156144	 PIGH	 path:hsa01100 Metabolic pathways - Homo sapiens (human)
+rs7156144	-1
+rs11158519	SYNE2	-1
+rs168622	uncharacterized LOC100505515	-1
+rs168622	 SPTLC3	path:hsa00600 Sphingolipid metabolism - Homo sapiens (human)
+rs168622	 SPTLC3	 path:hsa01100 Metabolic pathways - Homo sapiens (human)
+rs8396	RXFP1	path:hsa04080 Neuroactive ligand-receptor interaction - Homo sapiens (human)
+rs8396	 C4orf46	-1
+rs8396	 ETFDH	-1
+rs8396	 PPID	-1
+rs8396	 FNIP2	-1
+rs7094971	SLC16A9	-1
+rs7094971	 CCDC6	path:hsa05200 Pathways in cancer - Homo sapiens (human)
+rs7094971	 CCDC6	 path:hsa05216 Thyroid cancer - Homo sapiens (human)
+rs7094971	 M1	-1
+rs2046813	SLED1	-1
+rs2046813	 uncharacterized LOC100506229	-1
+rs2046813	 ACSL1	path:hsa00071 Fatty acid metabolism - Homo sapiens (human)
+rs2046813	 ACSL1	 path:hsa01100 Metabolic pathways - Homo sapiens (human)
+rs2046813	 ACSL1	 path:hsa03320 PPAR signaling pathway - Homo sapiens (human)
+rs2046813	 ACSL1	 path:hsa04146 Peroxisome - Homo sapiens (human)
+rs2046813	 ACSL1	 path:hsa04920 Adipocytokine signaling pathway - Homo sapiens (human)
+rs2046813	 MIR3945	-1
+rs2046813	 MIR4455	-1
+rs603424	uncharacterized LOC100653313	-1
+rs603424	 uncharacterized LOC100652751	-1
+rs603424	 CHUK	path:hsa04010 MAPK signaling pathway - Homo sapiens (human)
+rs603424	 CHUK	 path:hsa04062 Chemokine signaling pathway - Homo sapiens (human)
+rs603424	 CHUK	 path:hsa04064 NF-kappa B signaling pathway - Homo sapiens (human)
+rs603424	 CHUK	 path:hsa04210 Apoptosis - Homo sapiens (human)
+rs603424	 CHUK	 path:hsa04380 Osteoclast differentiation - Homo sapiens (human)
+rs603424	 CHUK	 path:hsa04620 Toll-like receptor signaling pathway - Homo sapiens (human)
+rs603424	 CHUK	 path:hsa04621 NOD-like receptor signaling pathway - Homo sapiens (human)
+rs603424	 CHUK	 path:hsa04622 RIG-I-like receptor signaling pathway - Homo sapiens (human)
+rs603424	 CHUK	 path:hsa04623 Cytosolic DNA-sensing pathway - Homo sapiens (human)
+rs603424	 CHUK	 path:hsa04660 T cell receptor signaling pathway - Homo sapiens (human)
+rs603424	 CHUK	 path:hsa04662 B cell receptor signaling pathway - Homo sapiens (human)
+rs603424	 CHUK	 path:hsa04920 Adipocytokine signaling pathway - Homo sapiens (human)
+rs603424	 CHUK	 path:hsa05120 Epithelial cell signaling in Helicobacter pylori infection - Homo sapiens (human)
+rs603424	 CHUK	 path:hsa05131 Shigellosis - Homo sapiens (human)
+rs603424	 CHUK	 path:hsa05142 Chagas disease (American trypanosomiasis) - Homo sapiens (human)
+rs603424	 CHUK	 path:hsa05145 Toxoplasmosis - Homo sapiens (human)
+rs603424	 CHUK	 path:hsa05160 Hepatitis C - Homo sapiens (human)
+rs603424	 CHUK	 path:hsa05162 Measles - Homo sapiens (human)
+rs603424	 CHUK	 path:hsa05166 HTLV-I infection - Homo sapiens (human)
+rs603424	 CHUK	 path:hsa05168 Herpes simplex infection - Homo sapiens (human)
+rs603424	 CHUK	 path:hsa05169 Epstein-Barr virus infection - Homo sapiens (human)
+rs603424	 CHUK	 path:hsa05200 Pathways in cancer - Homo sapiens (human)
+rs603424	 CHUK	 path:hsa05212 Pancreatic cancer - Homo sapiens (human)
+rs603424	 CHUK	 path:hsa05215 Prostate cancer - Homo sapiens (human)
+rs603424	 CHUK	 path:hsa05220 Chronic myeloid leukemia - Homo sapiens (human)
+rs603424	 CHUK	 path:hsa05221 Acute myeloid leukemia - Homo sapiens (human)
+rs603424	 CHUK	 path:hsa05222 Small cell lung cancer - Homo sapiens (human)
+rs603424	 CWF19L1	-1
+rs603424	 BLOC1S2	-1
+rs603424	 PKD2L1	-1
+rs603424	 SCD	path:hsa01040 Biosynthesis of unsaturated fatty acids - Homo sapiens (human)
+rs603424	 SCD	 path:hsa03320 PPAR signaling pathway - Homo sapiens (human)
+rs603424	 SNORA12	-1
+rs272889	DKFZp779A135	-1
+rs272889	 P4HA2	path:hsa00330 Arginine and proline metabolism - Homo sapiens (human)
+rs272889	 P4HA2	 path:hsa01100 Metabolic pathways - Homo sapiens (human)
+rs272889	 PDLIM4	-1
+rs272889	 SLC22A4	-1
+rs272889	 SLC22A5	-1
+rs272889	 MIR3936	-1
+rs541503	HSD3BP4	-1
+rs541503	 FLJ41173	-1
+rs541503	 ZNF697	-1
+rs541503	 PHGDH	path:hsa00260 Glycine
+rs541503	 PHGDH	 serine and threonine metabolism - Homo sapiens (human)
+rs541503	 PHGDH	 path:hsa01100 Metabolic pathways - Homo sapiens (human)
+rs541503	 HMGCS2	path:hsa00072 Synthesis and degradation of ketone bodies - Homo sapiens (human)
+rs541503	 HMGCS2	 path:hsa00280 Valine
+rs541503	 HMGCS2	 leucine and isoleucine degradation - Homo sapiens (human)
+rs541503	 HMGCS2	 path:hsa00650 Butanoate metabolism - Homo sapiens (human)
+rs541503	 HMGCS2	 path:hsa00900 Terpenoid backbone biosynthesis - Homo sapiens (human)
+rs541503	 HMGCS2	 path:hsa01100 Metabolic pathways - Homo sapiens (human)
+rs541503	 HMGCS2	 path:hsa03320 PPAR signaling pathway - Homo sapiens (human)

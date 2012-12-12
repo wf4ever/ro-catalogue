@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xml:base=".."
+   xmlns:ao="http://purl.org/ao/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:ore="http://www.openarchives.org/ore/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ro="http://purl.org/wf4ever/ro#"
+>
+  <rdf:Description rdf:nodeID="_ce8d38d7-e8b5-4abc-97ae-497cbc5538b3">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/rs211718_output.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-rs211718_output.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_9ed1a893-c6bb-4350-9850-2ac69beb8589">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/rs7094971_output.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0002-rs7094971_output.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_e371d2bc-0b5e-4f50-9a9c-75110a9479d3">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/rs7156144_output.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-rs7156144_output.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_0e95032a-7706-4a65-b8a6-7b72e8279fed">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/main_nested_workflow.t2flow"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-main_nested_workflow.t2flow.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_4a32a92a-0a88-4f6a-86c0-c89febbd710e">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/output_snp_gene_kegg.txt"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-output_snp_gene_kegg.txt.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_1c654108-be4c-4d04-a3bd-e81093210d73">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/List_Concept_Sets_output.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0002-List_Concept_Sets_output.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_e96158be-55cb-4816-87d8-3c6ba443b9c8">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/rs8396_output.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-rs8396_output.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_b9c687dd-bb56-4d99-8c96-3cde3bdcbb93">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/rs541503_output.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-rs541503_output.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_c059bfde-422c-429c-9d25-c141b921f49e">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Documents/workflow_sketch_final.png"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-workflow_sketch_final.png.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_9702ee34-2be4-4041-b01c-c4a4c104091b">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Documents/kegg_cp_comparison_results.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0003-kegg_cp_comparison_results.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_2ddcc6fe-4f0b-4e42-80b9-92772c6d239d">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/rs8396_output.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0002-rs8396_output.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_c7add4fd-2150-42b8-9fce-a753f0446d47">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Documents/workflow_sketch_final.pdf"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-workflow_sketch_final.pdf.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_ddd2e414-eb35-4936-97f2-c679fea8891f">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/rs2216405_output.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0002-rs2216405_output.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_903c6839-cbf7-4160-aeec-da81f14a85ab">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/SNP_ID2EntrezGene_ID_component.t2flow"/>
+    <ao:body rdf:resource="file:///Users/zhaoj/oxford/workspace/wf4ever/ro-catalogue/v0.1/.ro/SNP_ID2EntrezGene_ID_component.wfdesc.ttl"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_e2672ab2-7eca-4d3c-8cbc-aa38c520af0c">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Documents/workflow_sketch_final.jpg"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-workflow_sketch_final.jpg.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_e8b77193-5ddb-4f80-9add-66f839dbda74">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/rs11158519_output.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-rs11158519_output.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_8c15374a-958e-4beb-a2ce-9611ae1624cc">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/rs174547_output.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-rs174547_output.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_2290d98c-3e2a-4059-a872-4e6ed82f5031">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/rs2286963_output.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0002-rs2286963_output.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_64ff31ae-252f-48dc-b7e3-1bad36238168">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource=""/>
+    <ao:body rdf:resource=".ro/manifest.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_f10266a0-25ab-40be-8c14-3880544504da">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/top_snps_to_annotate_input.txt"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0002-top_snps_to_annotate_input.txt.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_79342a42-0650-4d16-ae29-e584ae8342c4">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/rs2046813_output.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0002-rs2046813_output.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
+    <dcterms:creator>https://www.google.com/accounts/o8/id?id=AItOawl4I-H_ask7ollkwUzMrjTDrgD2oj_Qu2Q</dcterms:creator>
+    <dcterms:title>Concept Profile Matching Golden Exemplar Updated</dcterms:title>
+    <dcterms:description>Concept Profile Matching Golden Exemplar Updated</dcterms:description>
+    <dcterms:identifier>concept-profile-matching-golden-exemplar</dcterms:identifier>
+    <dcterms:created>2012-12-12T16:17:21</dcterms:created>
+    <ore:aggregates rdf:nodeID="_ce8d38d7-e8b5-4abc-97ae-497cbc5538b3"/>
+    <ore:aggregates rdf:nodeID="_9ed1a893-c6bb-4350-9850-2ac69beb8589"/>
+    <ore:aggregates rdf:nodeID="_e371d2bc-0b5e-4f50-9a9c-75110a9479d3"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-Filter_concepts_with_profiles_component.t2flow.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-Get_concept_information_component.t2flow.rdf"/>
+    <ore:aggregates rdf:nodeID="_0e95032a-7706-4a65-b8a6-7b72e8279fed"/>
+    <ore:aggregates rdf:nodeID="_4a32a92a-0a88-4f6a-86c0-c89febbd710e"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-rs2216405_output.xls.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0002-List_Concept_Sets_output.xls.rdf"/>
+    <ore:aggregates rdf:nodeID="_1c654108-be4c-4d04-a3bd-e81093210d73"/>
+    <ore:aggregates rdf:resource="wfdesc/main_nested_workflow.wfdesc.ttl"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0006-main_nested_workflow.t2flow.rdf"/>
+    <ore:aggregates rdf:nodeID="_e96158be-55cb-4816-87d8-3c6ba443b9c8"/>
+    <ore:aggregates rdf:resource="Documents/workflow_sketch_final.png"/>
+    <ore:aggregates rdf:nodeID="_b9c687dd-bb56-4d99-8c96-3cde3bdcbb93"/>
+    <ore:aggregates rdf:resource="Workflows/Match_concept_profiles_component.t2flow"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-rs11158519_output.xls.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-README.txt.rdf"/>
+    <ore:aggregates rdf:nodeID="_c059bfde-422c-429c-9d25-c141b921f49e"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0004-main_nested_workflow.t2flow.rdf"/>
+    <ore:aggregates rdf:resource="Documents/HOWTO.txt"/>
+    <ore:aggregates rdf:nodeID="_2ddcc6fe-4f0b-4e42-80b9-92772c6d239d"/>
+    <ore:aggregates rdf:resource="Datasets/rs541503_output.xls"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-DatabaseID_to_ConceptID_component.t2flow.rdf"/>
+    <ore:aggregates rdf:nodeID="_ddd2e414-eb35-4936-97f2-c679fea8891f"/>
+    <ore:aggregates rdf:nodeID="_903c6839-cbf7-4160-aeec-da81f14a85ab"/>
+    <ore:aggregates rdf:nodeID="_e2672ab2-7eca-4d3c-8cbc-aa38c520af0c"/>
+    <ore:aggregates rdf:resource="make.sh"/>
+    <ore:aggregates rdf:nodeID="_e8b77193-5ddb-4f80-9add-66f839dbda74"/>
+    <ore:aggregates rdf:nodeID="_8c15374a-958e-4beb-a2ce-9611ae1624cc"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0002-workflow_sketch_final.jpg.rdf"/>
+    <ore:aggregates rdf:resource="wfdesc/Explain_concept_scores_component.wfdesc.ttl"/>
+    <ore:aggregates rdf:nodeID="_b34f2288-9bba-4810-a55d-408d161ca752"/>
+    <ore:aggregates rdf:resource="Datasets/rs2286963_output.xls"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-workflow_sketch_final.jpg.rdf"/>
+    <ore:aggregates rdf:nodeID="_f10266a0-25ab-40be-8c14-3880544504da"/>
+    <ore:aggregates rdf:resource="Documents/kegg_cp_comparison_results.xls"/>
+    <ore:aggregates rdf:resource="Datasets/output_snp_gene_kegg.txt"/>
+    <ore:aggregates rdf:resource="make.sh%7E"/>
+    <ore:aggregates rdf:resource="Datasets/top_snps_to_annotate_input.txt"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0002-rs2046813_output.xls.rdf"/>
+    <ore:aggregates rdf:resource="Datasets/rs9393903_output.xls"/>
+    <ore:aggregates rdf:resource="Datasets/List_Concept_Sets_output.xls"/>
+    <ore:aggregates rdf:nodeID="_799fb99c-4e0d-4226-a7bc-6ab40679dcde"/>
+    <ore:aggregates rdf:nodeID="_2290d98c-3e2a-4059-a872-4e6ed82f5031"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0002-rs168622_output.xls.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-output_snp_gene_kegg.txt.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0002-rs7094971_output.xls.rdf"/>
+    <ore:aggregates rdf:nodeID="_ed0f2489-7650-470b-b9fe-a6e21ac85c0a"/>
+    <ore:aggregates rdf:nodeID="_32168f08-d27d-492a-b424-c9a80d5685c4"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-rs174547_output.xls.rdf"/>
+    <ore:aggregates rdf:nodeID="_3251a665-e319-4242-9761-d0afd2b561d7"/>
+    <ore:aggregates rdf:nodeID="_9702ee34-2be4-4041-b01c-c4a4c104091b"/>
+    <ore:aggregates rdf:resource="Workflows/Find_co_occurring_documents_component.t2flow"/>
+    <ore:aggregates rdf:resource="Datasets/rs2014355_output.xls"/>
+    <ore:aggregates rdf:nodeID="_cd20599c-e0e3-4d9b-9bc5-9f59d074702b"/>
+    <ore:aggregates rdf:nodeID="_b37773a1-2599-45c1-b113-e6c01234ec22"/>
+    <ore:aggregates rdf:nodeID="_bf7a599a-8091-410e-b941-db8cc4fd1845"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0007-main_nested_workflow.t2flow.rdf"/>
+    <ore:aggregates rdf:nodeID="_4294f6b2-66cd-45c9-9af7-02f1fc3801c9"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0002-top_snps_to_annotate_input.txt.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0002-rs2286963_output.xls.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0002-rs11158519_output.xls.rdf"/>
+    <ore:aggregates rdf:resource="wfdesc/DatabaseID_to_ConceptID_component.wfdesc.ttl"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-rs168622_output.xls.rdf"/>
+    <ore:aggregates rdf:nodeID="_9b6a8d91-19e3-493b-b879-6c86b5dd5ad6"/>
+    <ore:aggregates rdf:nodeID="_867c6745-9c5b-4a86-b666-f39b1651e1e9"/>
+    <ore:aggregates rdf:nodeID="_983d65bd-db3d-40a1-9546-00ec6660f8f0"/>
+    <ore:aggregates rdf:nodeID="_9cb529e8-84a6-47ed-b274-13b4c019482c"/>
+    <ore:aggregates rdf:resource="Documents/workflow_sketch_final.pdf"/>
+    <ore:aggregates rdf:nodeID="_86f91a8a-0c71-48f5-ab5f-e3675cf5fed1"/>
+    <ore:aggregates rdf:nodeID="_c255e679-f9fe-46ba-8386-51b4c36d2964"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-rs7156144_output.xls.rdf"/>
+    <ore:aggregates rdf:resource="Workflows/DatabaseID_to_ConceptID_component.t2flow"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-rs272889_output.xls.rdf"/>
+    <ore:aggregates rdf:resource="Workflows/List_Predefined_Concept_Sets.t2flow"/>
+    <ore:aggregates rdf:nodeID="_8e47f898-4251-4776-b6f6-57c44a00c50a"/>
+    <ore:aggregates rdf:resource="ro_annotation.rdf"/>
+    <ore:aggregates rdf:nodeID="_64602b1f-3b18-45db-a53e-e07eab41a6a0"/>
+    <ore:aggregates rdf:nodeID="_c60bf4b4-2874-4389-863d-da06cca5b321"/>
+    <ore:aggregates rdf:nodeID="_af917f02-5ad7-419b-9acb-b5abfbdd5b3c"/>
+    <ore:aggregates rdf:resource="wfdesc/Match_concept_profiles_component.wfdesc.ttl"/>
+    <ore:aggregates rdf:resource="Datasets/rs174547_output.xls"/>
+    <ore:aggregates rdf:resource="Datasets/rs603424_output.xls"/>
+    <ore:aggregates rdf:resource="Workflows/Get_concept_information_component.t2flow"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0002-rs541503_output.xls.rdf"/>
+    <ore:aggregates rdf:nodeID="_b0b1c7e5-5e16-4401-9927-c5384180a7a9"/>
+    <ore:aggregates rdf:nodeID="_049df9d1-95f3-4be2-8b9f-6a3bdf966552"/>
+    <ore:aggregates rdf:resource="Workflows/SNP_ID2EntrezGene_ID_component.t2flow"/>
+    <ore:aggregates rdf:nodeID="_8fbd3c4b-5350-4139-898a-fe8b0a9c19f0"/>
+    <ore:aggregates rdf:nodeID="_fd6383b7-a377-4b8c-a5bb-f27c2d0df1b0"/>
+    <ore:aggregates rdf:nodeID="_eb4a05fe-eab7-4bd9-bf6e-5cefd8905678"/>
+    <ore:aggregates rdf:resource="Workflows/main_nested_workflow.t2flow"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-Match_concept_profiles_component.t2flow.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0002-HOWTO.txt.rdf"/>
+    <ore:aggregates rdf:resource="wfdesc/SNP_ID2EntrezGene_ID_component.wfdesc.ttl"/>
+    <ore:aggregates rdf:nodeID="_3eacd575-de67-49eb-91fb-fe35acda9702"/>
+    <ore:aggregates rdf:resource="wfdesc/Filter_concepts_with_profiles_component.wfdesc.ttl"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-SNP2KEGG.t2flow.rdf"/>
+    <ore:aggregates rdf:resource="Datasets/rs8396_output.xls"/>
+    <ore:aggregates rdf:resource="wfdesc/Get_concept_information_component.wfdesc.ttl"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-top_snps_to_annotate_input.txt.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-main_nested_workflow.t2flow.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-rs2046813_output.xls.rdf"/>
+    <ore:aggregates rdf:nodeID="_202d1df4-8875-462e-bb8d-a52d96cdf190"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0010-main_nested_workflow.t2flow.rdf"/>
+    <ore:aggregates rdf:resource="Datasets/rs11158519_output.xls"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-HOWTO.txt.rdf"/>
+    <ore:aggregates rdf:resource="Workflows/Get_Concept_IDs_component.t2flow"/>
+    <ore:aggregates rdf:resource="Datasets/rs272889_output.xls"/>
+    <ore:aggregates rdf:nodeID="_5c6f4d29-8525-490f-a49d-007dc1423aa8"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-rs2286963_output.xls.rdf"/>
+    <ore:aggregates rdf:resource="Datasets/rs2216405_output.xls"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0003-top_snps_to_annotate_input.txt.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0002-rs2014355_output.xls.rdf"/>
+    <ore:aggregates rdf:nodeID="_4bdaf330-41cb-4a37-aadf-101dda353fa4"/>
+    <ore:aggregates rdf:resource="wfdesc/Find_Supporting_Documents_component.wfdesc.ttl"/>
+    <ore:aggregates rdf:nodeID="_64ff31ae-252f-48dc-b7e3-1bad36238168"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-kegg_cp_comparison_results.xls.rdf"/>
+    <ore:aggregates rdf:nodeID="_db3b25fb-bdc9-4ab0-9919-44f15ae642dd"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-rs7094971_output.xls.rdf"/>
+    <ore:aggregates rdf:resource="Documents/workflow_sketch_final.odp"/>
+    <ore:aggregates rdf:resource="Datasets/rs211718_output.xls"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0005-main_nested_workflow.t2flow.rdf"/>
+    <ore:aggregates rdf:nodeID="_b5178abc-482e-4a04-8793-51853b80d999"/>
+    <ore:aggregates rdf:nodeID="_a265b65a-683c-4955-9f64-1c0fe264e713"/>
+    <ore:aggregates rdf:resource="make%20%28Autosaved%29"/>
+    <ore:aggregates rdf:resource="Workflows/SNP2KEGG.t2flow"/>
+    <ore:aggregates rdf:resource="wfdesc/Get_Concept_IDs_component.wfdesc.ttl"/>
+    <ore:aggregates rdf:nodeID="_e2d7777e-6cf0-49ed-bc4e-90a583b1f7a8"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-rs541503_output.xls.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-rs2014355_output.xls.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0002-rs2216405_output.xls.rdf"/>
+    <ore:aggregates rdf:nodeID="_04ac2c1c-7109-4d92-ab2d-dc1ecd340476"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0002-rs9393903_output.xls.rdf"/>
+    <ore:aggregates rdf:nodeID="_44d23fdd-e158-426c-87b0-440dab20d89d"/>
+    <ore:aggregates rdf:nodeID="_eb90513a-78ec-4745-bd69-35a00884ac40"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0002-rs7156144_output.xls.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-workflow_sketch_final.png.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-rs603424_output.xls.rdf"/>
+    <ore:aggregates rdf:nodeID="_dd3f9e21-12de-4f05-a116-8d9467d01665"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0009-main_nested_workflow.t2flow.rdf"/>
+    <ore:aggregates rdf:nodeID="_1ffb9f67-8446-4d48-86ae-7a91b6b7b5f2"/>
+    <ore:aggregates rdf:resource="Documents/workflow_sketch_final.jpg"/>
+    <ore:aggregates rdf:nodeID="_79342a42-0650-4d16-ae29-e584ae8342c4"/>
+    <ore:aggregates rdf:nodeID="_30c72724-c363-4f3f-b4b0-148412b184c5"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0002-output_snp_gene_kegg.txt.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0002-rs603424_output.xls.rdf"/>
+    <ore:aggregates rdf:nodeID="_1f9b444a-fc26-47b7-93b9-477dd14b6b92"/>
+    <ore:aggregates rdf:nodeID="_b3bc76f1-5b85-420b-b240-53da1841b5e6"/>
+    <ore:aggregates rdf:resource="wfdesc/List_Predefined_Concept_Sets.wfdesc.ttl"/>
+    <ore:aggregates rdf:nodeID="_cfa53fd5-24d9-4592-aa32-2f2608b91c60"/>
+    <ore:aggregates rdf:nodeID="_70f40bdf-7762-4f8e-8fd1-20ac950d7d79"/>
+    <ore:aggregates rdf:nodeID="_14868663-35e4-4ec7-8c84-ace047b59f2d"/>
+    <ore:aggregates rdf:resource="Datasets/rs7156144_output.xls"/>
+    <ore:aggregates rdf:nodeID="_96140171-79e3-4ec9-9fe8-1147db4ed29d"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-Find_co_occurring_documents_component.t2flow.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-Find_Supporting_Documents_component.t2flow.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0002-rs174547_output.xls.rdf"/>
+    <ore:aggregates rdf:nodeID="_c7add4fd-2150-42b8-9fce-a753f0446d47"/>
+    <ore:aggregates rdf:nodeID="_44dddd0a-7102-4f5b-9fe4-b702d9b56a38"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-workflow_sketch_final.odp.rdf"/>
+    <ore:aggregates rdf:resource="Datasets/rs2046813_output.xls"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0003-main_nested_workflow.t2flow.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-List_Predefined_Concept_Sets.t2flow.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0002-rs8396_output.xls.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-List_Concept_Sets_output.xls.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0002-rs272889_output.xls.rdf"/>
+    <ore:aggregates rdf:nodeID="_d6b18d9a-7077-489b-a00b-0f163b815422"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-rs8396_output.xls.rdf"/>
+    <ore:aggregates rdf:nodeID="_01b16d6e-0dc2-4f02-9e1b-ea541f949832"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0003-kegg_cp_comparison_results.xls.rdf"/>
+    <ore:aggregates rdf:resource="Workflows/Filter_concepts_with_profiles_component.t2flow"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0002-workflow_sketch_final.odp.rdf"/>
+    <ore:aggregates rdf:resource="wfdesc/SNP2KEGG.wfdesc.ttl"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-rs9393903_output.xls.rdf"/>
+    <ore:aggregates rdf:nodeID="_9b18dbad-6bc1-498a-926a-eceddf4a4402"/>
+    <ore:aggregates rdf:nodeID="_d3aa8faa-f7f0-497b-8a6a-a95ec773dfdf"/>
+    <ore:aggregates rdf:nodeID="_e6d75069-cd90-48d5-bba7-c4c5cba4853a"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0002-kegg_cp_comparison_results.xls.rdf"/>
+    <ore:aggregates rdf:resource="Workflows/Explain_concept_scores_component.t2flow"/>
+    <ore:aggregates rdf:nodeID="_02993de3-a219-4bd7-8d3d-e1fe66074f49"/>
+    <ore:aggregates rdf:nodeID="_10e7436c-356c-4748-bb93-35ca6ab7739f"/>
+    <ore:aggregates rdf:nodeID="_3642e4fc-0231-40c3-94bd-dc8e7d420798"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-SNP_ID2EntrezGene_ID_component.t2flow.rdf"/>
+    <ore:aggregates rdf:nodeID="_a1ff398a-4fd2-4fa0-adb0-e3111e6af972"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0002-rs211718_output.xls.rdf"/>
+    <ore:aggregates rdf:resource="wfdesc/Find_co_occurring_documents_component.wfdesc.ttl"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-rs211718_output.xls.rdf"/>
+    <ore:aggregates rdf:resource="Datasets/rs7094971_output.xls"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0002-main_nested_workflow.t2flow.rdf"/>
+    <ore:aggregates rdf:resource="Workflows/Find_Supporting_Documents_component.t2flow"/>
+    <ore:aggregates rdf:resource="Documents/README.txt"/>
+    <ore:aggregates rdf:nodeID="_1b06541e-b1f3-4505-b727-dd3ad8fd9330"/>
+    <ore:aggregates rdf:nodeID="_2e275430-bd7d-4744-9e14-30487bde318c"/>
+    <ore:aggregates rdf:nodeID="_5a605b78-c6be-43e7-86c6-82984936ef77"/>
+    <ore:aggregates rdf:nodeID="_60f7d42a-0e9f-4f7c-bae8-e209abcd3bce"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-Get_Concept_IDs_component.t2flow.rdf"/>
+    <ore:aggregates rdf:resource="Datasets/rs168622_output.xls"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-workflow_sketch_final.pdf.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0002-workflow_sketch_final.pdf.rdf"/>
+    <ore:aggregates rdf:nodeID="_f75b122c-b455-48b6-b668-578acc32dcb5"/>
+    <ore:aggregates rdf:nodeID="_3bad53d7-f3a5-4b43-9af3-d016cf38be40"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0008-main_nested_workflow.t2flow.rdf"/>
+    <ore:aggregates rdf:nodeID="_3451d0bb-e187-4972-8fd3-92562e8468e2"/>
+    <ore:aggregates rdf:nodeID="_d4c6a80c-3a44-4341-ba85-18f3b15e513b"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0001-Explain_concept_scores_component.t2flow.rdf"/>
+    <ore:aggregates rdf:nodeID="_4d737ca2-cb26-4ca7-98a9-cb417f71011f"/>
+    <ore:aggregates rdf:nodeID="_7b96c6b1-acd0-4d61-8ccc-f622eda7ba05"/>
+    <ore:aggregates rdf:nodeID="_b4bdac1f-ba4a-451a-b5b2-e9977fad43d7"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0002-workflow_sketch_final.png.rdf"/>
+    <ore:aggregates rdf:nodeID="_bebcfb60-adca-4f85-a1cd-20f44b919ccc"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20121212-0002-README.txt.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_799fb99c-4e0d-4226-a7bc-6ab40679dcde">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/Match_concept_profiles_component.t2flow"/>
+    <ao:body rdf:resource="file:///Users/zhaoj/oxford/workspace/wf4ever/ro-catalogue/v0.1/.ro/Match_concept_profiles_component.wfdesc.ttl"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_b34f2288-9bba-4810-a55d-408d161ca752">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Documents/workflow_sketch_final.odp"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0002-workflow_sketch_final.odp.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_1ffb9f67-8446-4d48-86ae-7a91b6b7b5f2">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/rs2286963_output.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-rs2286963_output.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_ed0f2489-7650-470b-b9fe-a6e21ac85c0a">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/rs7094971_output.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-rs7094971_output.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_4294f6b2-66cd-45c9-9af7-02f1fc3801c9">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/output_snp_gene_kegg.txt"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0002-output_snp_gene_kegg.txt.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_3251a665-e319-4242-9761-d0afd2b561d7">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/rs168622_output.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-rs168622_output.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_cd20599c-e0e3-4d9b-9bc5-9f59d074702b">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/rs2014355_output.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0002-rs2014355_output.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_b37773a1-2599-45c1-b113-e6c01234ec22">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/main_nested_workflow.t2flow"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0002-main_nested_workflow.t2flow.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_bf7a599a-8091-410e-b941-db8cc4fd1845">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/main_nested_workflow.t2flow"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0008-main_nested_workflow.t2flow.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_9b6a8d91-19e3-493b-b879-6c86b5dd5ad6">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/main_nested_workflow.t2flow"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0003-main_nested_workflow.t2flow.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_cfa53fd5-24d9-4592-aa32-2f2608b91c60">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Documents/workflow_sketch_final.png"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0002-workflow_sketch_final.png.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_983d65bd-db3d-40a1-9546-00ec6660f8f0">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/rs11158519_output.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0002-rs11158519_output.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_9cb529e8-84a6-47ed-b274-13b4c019482c">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/Match_concept_profiles_component.t2flow"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-Match_concept_profiles_component.t2flow.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_9b18dbad-6bc1-498a-926a-eceddf4a4402">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/rs272889_output.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-rs272889_output.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_86f91a8a-0c71-48f5-ab5f-e3675cf5fed1">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/List_Concept_Sets_output.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-List_Concept_Sets_output.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_c255e679-f9fe-46ba-8386-51b4c36d2964">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/main_nested_workflow.t2flow"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0007-main_nested_workflow.t2flow.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_8e47f898-4251-4776-b6f6-57c44a00c50a">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/top_snps_to_annotate_input.txt"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0003-top_snps_to_annotate_input.txt.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_64602b1f-3b18-45db-a53e-e07eab41a6a0">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/rs603424_output.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0002-rs603424_output.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_c60bf4b4-2874-4389-863d-da06cca5b321">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/Find_Supporting_Documents_component.t2flow"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-Find_Supporting_Documents_component.t2flow.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_af917f02-5ad7-419b-9acb-b5abfbdd5b3c">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/Get_Concept_IDs_component.t2flow"/>
+    <ao:body rdf:resource="file:///Users/zhaoj/oxford/workspace/wf4ever/ro-catalogue/v0.1/.ro/Get_Concept_IDs_component.wfdesc.ttl"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_d3aa8faa-f7f0-497b-8a6a-a95ec773dfdf">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/Get_concept_information_component.t2flow"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-Get_concept_information_component.t2flow.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_b0b1c7e5-5e16-4401-9927-c5384180a7a9">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/rs2046813_output.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-rs2046813_output.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_8fbd3c4b-5350-4139-898a-fe8b0a9c19f0">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/List_Predefined_Concept_Sets.t2flow"/>
+    <ao:body rdf:resource="file:///Users/zhaoj/oxford/workspace/wf4ever/ro-catalogue/v0.1/.ro/List_Predefined_Concept_Sets.wfdesc.ttl"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_fd6383b7-a377-4b8c-a5bb-f27c2d0df1b0">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/rs2014355_output.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-rs2014355_output.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_eb4a05fe-eab7-4bd9-bf6e-5cefd8905678">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Documents/kegg_cp_comparison_results.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0002-kegg_cp_comparison_results.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_202d1df4-8875-462e-bb8d-a52d96cdf190">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/rs168622_output.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0002-rs168622_output.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_5c6f4d29-8525-490f-a49d-007dc1423aa8">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="./"/>
+    <ao:body rdf:resource="ro_annotation.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_4bdaf330-41cb-4a37-aadf-101dda353fa4">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/Find_Supporting_Documents_component.t2flow"/>
+    <ao:body rdf:resource="file:///Users/zhaoj/oxford/workspace/wf4ever/ro-catalogue/v0.1/.ro/Find_Supporting_Documents_component.wfdesc.ttl"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_db3b25fb-bdc9-4ab0-9919-44f15ae642dd">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/Explain_concept_scores_component.t2flow"/>
+    <ao:body rdf:resource="file:///Users/zhaoj/oxford/workspace/wf4ever/ro-catalogue/v0.1/.ro/Explain_concept_scores_component.wfdesc.ttl"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_3bad53d7-f3a5-4b43-9af3-d016cf38be40">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/DatabaseID_to_ConceptID_component.t2flow"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-DatabaseID_to_ConceptID_component.t2flow.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_b5178abc-482e-4a04-8793-51853b80d999">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/rs272889_output.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0002-rs272889_output.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_a265b65a-683c-4955-9f64-1c0fe264e713">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/rs9393903_output.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-rs9393903_output.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_e2d7777e-6cf0-49ed-bc4e-90a583b1f7a8">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/DatabaseID_to_ConceptID_component.t2flow"/>
+    <ao:body rdf:resource="file:///Users/zhaoj/oxford/workspace/wf4ever/ro-catalogue/v0.1/.ro/DatabaseID_to_ConceptID_component.wfdesc.ttl"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_04ac2c1c-7109-4d92-ab2d-dc1ecd340476">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Documents/HOWTO.txt"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0002-HOWTO.txt.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_44d23fdd-e158-426c-87b0-440dab20d89d">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/main_nested_workflow.t2flow"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0006-main_nested_workflow.t2flow.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_eb90513a-78ec-4745-bd69-35a00884ac40">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/rs174547_output.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0002-rs174547_output.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_44dddd0a-7102-4f5b-9fe4-b702d9b56a38">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Documents/HOWTO.txt"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-HOWTO.txt.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_30c72724-c363-4f3f-b4b0-148412b184c5">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/rs9393903_output.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0002-rs9393903_output.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_1f9b444a-fc26-47b7-93b9-477dd14b6b92">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/rs7156144_output.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0002-rs7156144_output.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_b3bc76f1-5b85-420b-b240-53da1841b5e6">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/SNP_ID2EntrezGene_ID_component.t2flow"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-SNP_ID2EntrezGene_ID_component.t2flow.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_70f40bdf-7762-4f8e-8fd1-20ac950d7d79">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Documents/kegg_cp_comparison_results.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-kegg_cp_comparison_results.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_14868663-35e4-4ec7-8c84-ace047b59f2d">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Documents/workflow_sketch_final.jpg"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0002-workflow_sketch_final.jpg.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_96140171-79e3-4ec9-9fe8-1147db4ed29d">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/main_nested_workflow.t2flow"/>
+    <ao:body rdf:resource="file:///Users/zhaoj/oxford/workspace/wf4ever/ro-catalogue/v0.1/.ro/main_nested_workflow.wfdesc.ttl"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_049df9d1-95f3-4be2-8b9f-6a3bdf966552">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/Get_Concept_IDs_component.t2flow"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-Get_Concept_IDs_component.t2flow.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_867c6745-9c5b-4a86-b666-f39b1651e1e9">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/rs2216405_output.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-rs2216405_output.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_3eacd575-de67-49eb-91fb-fe35acda9702">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Documents/README.txt"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-README.txt.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_dd3f9e21-12de-4f05-a116-8d9467d01665">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/Get_concept_information_component.t2flow"/>
+    <ao:body rdf:resource="file:///Users/zhaoj/oxford/workspace/wf4ever/ro-catalogue/v0.1/.ro/Get_concept_information_component.wfdesc.ttl"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_f75b122c-b455-48b6-b668-578acc32dcb5">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/SNP2KEGG.t2flow"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-SNP2KEGG.t2flow.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_d6b18d9a-7077-489b-a00b-0f163b815422">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/main_nested_workflow.t2flow"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0009-main_nested_workflow.t2flow.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_01b16d6e-0dc2-4f02-9e1b-ea541f949832">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/Find_co_occurring_documents_component.t2flow"/>
+    <ao:body rdf:resource="file:///Users/zhaoj/oxford/workspace/wf4ever/ro-catalogue/v0.1/.ro/Find_co_occurring_documents_component.wfdesc.ttl"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_e6d75069-cd90-48d5-bba7-c4c5cba4853a">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/Find_co_occurring_documents_component.t2flow"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-Find_co_occurring_documents_component.t2flow.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_02993de3-a219-4bd7-8d3d-e1fe66074f49">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Documents/workflow_sketch_final.odp"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-workflow_sketch_final.odp.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_10e7436c-356c-4748-bb93-35ca6ab7739f">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/rs211718_output.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0002-rs211718_output.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_3642e4fc-0231-40c3-94bd-dc8e7d420798">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/main_nested_workflow.t2flow"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0004-main_nested_workflow.t2flow.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_a1ff398a-4fd2-4fa0-adb0-e3111e6af972">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/Filter_concepts_with_profiles_component.t2flow"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-Filter_concepts_with_profiles_component.t2flow.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_1b06541e-b1f3-4505-b727-dd3ad8fd9330">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/rs603424_output.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-rs603424_output.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_2e275430-bd7d-4744-9e14-30487bde318c">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/SNP2KEGG.t2flow"/>
+    <ao:body rdf:resource="file:///Users/zhaoj/oxford/workspace/wf4ever/ro-catalogue/v0.1/.ro/SNP2KEGG.wfdesc.ttl"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_5a605b78-c6be-43e7-86c6-82984936ef77">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/List_Predefined_Concept_Sets.t2flow"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-List_Predefined_Concept_Sets.t2flow.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_60f7d42a-0e9f-4f7c-bae8-e209abcd3bce">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Documents/README.txt"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0002-README.txt.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_bebcfb60-adca-4f85-a1cd-20f44b919ccc">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/Explain_concept_scores_component.t2flow"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-Explain_concept_scores_component.t2flow.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_3451d0bb-e187-4972-8fd3-92562e8468e2">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/Filter_concepts_with_profiles_component.t2flow"/>
+    <ao:body rdf:resource="file:///Users/zhaoj/oxford/workspace/wf4ever/ro-catalogue/v0.1/.ro/Filter_concepts_with_profiles_component.wfdesc.ttl"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_d4c6a80c-3a44-4341-ba85-18f3b15e513b">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Documents/workflow_sketch_final.pdf"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0002-workflow_sketch_final.pdf.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_32168f08-d27d-492a-b424-c9a80d5685c4">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/rs541503_output.xls"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0002-rs541503_output.xls.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_4d737ca2-cb26-4ca7-98a9-cb417f71011f">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/main_nested_workflow.t2flow"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0010-main_nested_workflow.t2flow.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_7b96c6b1-acd0-4d61-8ccc-f622eda7ba05">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/main_nested_workflow.t2flow"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0005-main_nested_workflow.t2flow.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_b4bdac1f-ba4a-451a-b5b2-e9977fad43d7">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="Datasets/top_snps_to_annotate_input.txt"/>
+    <ao:body rdf:resource=".ro/Ann-20121212-0001-top_snps_to_annotate_input.txt.rdf"/>
+  </rdf:Description>
+</rdf:RDF>

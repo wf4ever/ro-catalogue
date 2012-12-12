@@ -1,0 +1,247 @@
+@base <http://ns.taverna.org.uk/2010/workflowBundle/bd0e27ad-006c-4572-bfba-39fb8ce0d5f7/workflow/SNP_ID2EntrezGene_ID/> .
+@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
+@prefix wf4ever: <http://purl.org/wf4ever/wf4ever#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<processor/Flatten_List/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:BeanshellScript ;
+	wf4ever:script """flatten(inputs, outputs, depth) {
+	for (i = inputs.iterator(); i.hasNext();) {
+	    element = i.next();
+		if (element instanceof Collection && depth > 0) {
+			flatten(element, outputs, depth - 1);
+		} else {
+			outputs.add(element);
+		}
+	}
+}
+
+outputlist = new ArrayList();
+
+flatten(inputlist, outputlist, 1);""" ;
+	rdfs:label "Flatten_List" ;
+	wfdesc:hasInput <processor/Flatten_List/in/inputlist> ;
+	wfdesc:hasOutput <processor/Flatten_List/out/outputlist> .
+
+<processor/Flatten_List_2/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:BeanshellScript ;
+	wf4ever:script """flatten(inputs, outputs, depth) {
+	for (i = inputs.iterator(); i.hasNext();) {
+	    element = i.next();
+		if (element instanceof Collection && depth > 0) {
+			flatten(element, outputs, depth - 1);
+		} else {
+			outputs.add(element);
+		}
+	}
+}
+
+outputlist = new ArrayList();
+
+flatten(inputlist, outputlist, 1);""" ;
+	rdfs:label "Flatten_List_2" ;
+	wfdesc:hasInput <processor/Flatten_List_2/in/inputlist> ;
+	wfdesc:hasOutput <processor/Flatten_List_2/out/outputlist> .
+
+<processor/Split_string_into_string_list_by_regular_expression/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:BeanshellScript ;
+	wf4ever:script """List split = new ArrayList();
+if (!string.equals(\"\")) {
+	String regexString = \",\";
+	if (regex != void) {
+		regexString = regex;
+	}
+	String[] result = string.split(regexString);
+	for (int i = 0; i < result.length; i++) {
+		split.add(result[i]);
+	}
+}
+""" ;
+	rdfs:label "Split_string_into_string_list_by_regular_expression" ;
+	wfdesc:hasInput <processor/Split_string_into_string_list_by_regular_expression/in/regex> , <processor/Split_string_into_string_list_by_regular_expression/in/string> ;
+	wfdesc:hasOutput <processor/Split_string_into_string_list_by_regular_expression/out/split> .
+
+<processor/extract_snp_id/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:BeanshellScript ;
+	wf4ever:script """import java.util.*;
+
+String [] line = string.split(\"\\t\");
+out1=line[0].trim();""" ;
+	rdfs:label "extract_snp_id" ;
+	wfdesc:hasInput <processor/extract_snp_id/in/string> ;
+	wfdesc:hasOutput <processor/extract_snp_id/out/out1> .
+
+<processor/input_chr_position/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:BeanshellScript ;
+	wf4ever:script """import java.util.*;
+
+List tmp_end = new ArrayList();
+List tmp_start = new ArrayList();
+width =Integer.parseInt(in1.get(0));
+
+int out_end=0;
+int out_start=0;
+for(int i=0; i < in2.size(); i++) {
+           value_pos = Integer.parseInt(in2.get(i));
+	   out_end = value_pos + width;
+	   out_start = value_pos - width;	
+	
+
+		
+    tmp_end.add(out_end);
+    tmp_start.add(out_start);
+ }
+
+end_out = tmp_end;
+start_out = tmp_start;
+chr_out = chr_in;
+""" ;
+	rdfs:label "input_chr_position" ;
+	wfdesc:hasInput <processor/input_chr_position/in/chr_in> , <processor/input_chr_position/in/in1> , <processor/input_chr_position/in/in2> ;
+	wfdesc:hasOutput <processor/input_chr_position/out/chr_out> , <processor/input_chr_position/out/end_out> , <processor/input_chr_position/out/start_out> .
+
+<datalink?from=in/SNP_ID&to=processor/Split_string_into_string_list_by_regular_expression/in/string> a wfdesc:DataLink ;
+	wfdesc:hasSource <in/SNP_ID> ;
+	wfdesc:hasSink <processor/Split_string_into_string_list_by_regular_expression/in/string> .
+
+<datalink?from=in/set_width&to=processor/input_chr_position/in/in1> a wfdesc:DataLink ;
+	wfdesc:hasSource <in/set_width> ;
+	wfdesc:hasSink <processor/input_chr_position/in/in1> .
+
+<datalink?from=processor/Flatten_List/out/outputlist&to=processor/input_chr_position/in/chr_in> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/Flatten_List/out/outputlist> ;
+	wfdesc:hasSink <processor/input_chr_position/in/chr_in> .
+
+<datalink?from=processor/Flatten_List_2/out/outputlist&to=processor/input_chr_position/in/in2> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/Flatten_List_2/out/outputlist> ;
+	wfdesc:hasSink <processor/input_chr_position/in/in2> .
+
+<datalink?from=processor/Split_string_into_string_list_by_regular_expression/out/split&to=processor/extract_snp_id/in/string> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/Split_string_into_string_list_by_regular_expression/out/split> ;
+	wfdesc:hasSink <processor/extract_snp_id/in/string> .
+
+<datalink?from=processor/extract_snp_id/out/out1&to=processor/hsapiens_snp/in/hsapiens_snp.snp_filter_filter> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/extract_snp_id/out/out1> ;
+	wfdesc:hasSink <processor/hsapiens_snp/in/hsapiens_snp.snp_filter_filter> .
+
+<datalink?from=processor/hsapiens_gene_ensembl/out/hsapiens_gene_ensembl.entrezgene&to=out/EntrezGene_ID> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/hsapiens_gene_ensembl/out/hsapiens_gene_ensembl.entrezgene> ;
+	wfdesc:hasSink <out/EntrezGene_ID> .
+
+<datalink?from=processor/hsapiens_snp/out/hsapiens_snp.chr_name&to=processor/Flatten_List/in/inputlist> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/hsapiens_snp/out/hsapiens_snp.chr_name> ;
+	wfdesc:hasSink <processor/Flatten_List/in/inputlist> .
+
+<datalink?from=processor/hsapiens_snp/out/hsapiens_snp.chrom_start&to=processor/Flatten_List_2/in/inputlist> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/hsapiens_snp/out/hsapiens_snp.chrom_start> ;
+	wfdesc:hasSink <processor/Flatten_List_2/in/inputlist> .
+
+<datalink?from=processor/input_chr_position/out/chr_out&to=processor/hsapiens_gene_ensembl/in/hsapiens_gene_ensembl.chromosome_name_filter> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/input_chr_position/out/chr_out> ;
+	wfdesc:hasSink <processor/hsapiens_gene_ensembl/in/hsapiens_gene_ensembl.chromosome_name_filter> .
+
+<datalink?from=processor/input_chr_position/out/end_out&to=processor/hsapiens_gene_ensembl/in/hsapiens_gene_ensembl.end_filter> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/input_chr_position/out/end_out> ;
+	wfdesc:hasSink <processor/hsapiens_gene_ensembl/in/hsapiens_gene_ensembl.end_filter> .
+
+<datalink?from=processor/input_chr_position/out/start_out&to=processor/hsapiens_gene_ensembl/in/hsapiens_gene_ensembl.start_filter> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/input_chr_position/out/start_out> ;
+	wfdesc:hasSink <processor/hsapiens_gene_ensembl/in/hsapiens_gene_ensembl.start_filter> .
+
+<datalink?from=processor/regex_value/out/value&to=processor/Split_string_into_string_list_by_regular_expression/in/regex> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/regex_value/out/value> ;
+	wfdesc:hasSink <processor/Split_string_into_string_list_by_regular_expression/in/regex> .
+
+<> a wfdesc:Workflow , wfdesc:Description , wfdesc:Process ;
+	rdfs:label "SNP_ID2EntrezGene_ID" ;
+	wfdesc:hasInput <in/SNP_ID> , <in/set_width> ;
+	wfdesc:hasOutput <out/EntrezGene_ID> ;
+	wfdesc:hasSubProcess <processor/Flatten_List/> , <processor/Flatten_List_2/> , <processor/Split_string_into_string_list_by_regular_expression/> , <processor/extract_snp_id/> , <processor/hsapiens_gene_ensembl/> , <processor/hsapiens_snp/> , <processor/input_chr_position/> , <processor/regex_value/> ;
+	wfdesc:hasDataLink <datalink?from=in/SNP_ID&to=processor/Split_string_into_string_list_by_regular_expression/in/string> , <datalink?from=in/set_width&to=processor/input_chr_position/in/in1> , <datalink?from=processor/Flatten_List/out/outputlist&to=processor/input_chr_position/in/chr_in> , <datalink?from=processor/Flatten_List_2/out/outputlist&to=processor/input_chr_position/in/in2> , <datalink?from=processor/Split_string_into_string_list_by_regular_expression/out/split&to=processor/extract_snp_id/in/string> , <datalink?from=processor/extract_snp_id/out/out1&to=processor/hsapiens_snp/in/hsapiens_snp.snp_filter_filter> , <datalink?from=processor/hsapiens_gene_ensembl/out/hsapiens_gene_ensembl.entrezgene&to=out/EntrezGene_ID> , <datalink?from=processor/hsapiens_snp/out/hsapiens_snp.chr_name&to=processor/Flatten_List/in/inputlist> , <datalink?from=processor/hsapiens_snp/out/hsapiens_snp.chrom_start&to=processor/Flatten_List_2/in/inputlist> , <datalink?from=processor/input_chr_position/out/chr_out&to=processor/hsapiens_gene_ensembl/in/hsapiens_gene_ensembl.chromosome_name_filter> , <datalink?from=processor/input_chr_position/out/end_out&to=processor/hsapiens_gene_ensembl/in/hsapiens_gene_ensembl.end_filter> , <datalink?from=processor/input_chr_position/out/start_out&to=processor/hsapiens_gene_ensembl/in/hsapiens_gene_ensembl.start_filter> , <datalink?from=processor/regex_value/out/value&to=processor/Split_string_into_string_list_by_regular_expression/in/regex> .
+
+<in/SNP_ID> a wfdesc:Input , wfdesc:Description , wfdesc:Output ;
+	rdfs:label "SNP_ID" .
+
+<in/set_width> a wfdesc:Input , wfdesc:Description , wfdesc:Output ;
+	rdfs:label "set_width" .
+
+<out/EntrezGene_ID> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
+	rdfs:label "EntrezGene_ID" .
+
+<processor/Flatten_List/in/inputlist> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "inputlist" .
+
+<processor/Flatten_List/out/outputlist> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "outputlist" .
+
+<processor/Flatten_List_2/in/inputlist> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "inputlist" .
+
+<processor/Flatten_List_2/out/outputlist> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "outputlist" .
+
+<processor/Split_string_into_string_list_by_regular_expression/in/regex> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "regex" .
+
+<processor/Split_string_into_string_list_by_regular_expression/in/string> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "string" .
+
+<processor/Split_string_into_string_list_by_regular_expression/out/split> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "split" .
+
+<processor/extract_snp_id/in/string> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "string" .
+
+<processor/extract_snp_id/out/out1> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "out1" .
+
+<processor/hsapiens_gene_ensembl/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "hsapiens_gene_ensembl" ;
+	wfdesc:hasInput <processor/hsapiens_gene_ensembl/in/hsapiens_gene_ensembl.chromosome_name_filter> , <processor/hsapiens_gene_ensembl/in/hsapiens_gene_ensembl.end_filter> , <processor/hsapiens_gene_ensembl/in/hsapiens_gene_ensembl.start_filter> ;
+	wfdesc:hasOutput <processor/hsapiens_gene_ensembl/out/hsapiens_gene_ensembl.entrezgene> .
+
+<processor/hsapiens_gene_ensembl/in/hsapiens_gene_ensembl.chromosome_name_filter> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "hsapiens_gene_ensembl.chromosome_name_filter" .
+
+<processor/hsapiens_gene_ensembl/in/hsapiens_gene_ensembl.end_filter> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "hsapiens_gene_ensembl.end_filter" .
+
+<processor/hsapiens_gene_ensembl/in/hsapiens_gene_ensembl.start_filter> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "hsapiens_gene_ensembl.start_filter" .
+
+<processor/hsapiens_gene_ensembl/out/hsapiens_gene_ensembl.entrezgene> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "hsapiens_gene_ensembl.entrezgene" .
+
+<processor/hsapiens_snp/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "hsapiens_snp" ;
+	wfdesc:hasInput <processor/hsapiens_snp/in/hsapiens_snp.snp_filter_filter> ;
+	wfdesc:hasOutput <processor/hsapiens_snp/out/hsapiens_snp.chr_name> , <processor/hsapiens_snp/out/hsapiens_snp.chrom_start> .
+
+<processor/hsapiens_snp/in/hsapiens_snp.snp_filter_filter> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "hsapiens_snp.snp_filter_filter" .
+
+<processor/hsapiens_snp/out/hsapiens_snp.chr_name> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "hsapiens_snp.chr_name" .
+
+<processor/hsapiens_snp/out/hsapiens_snp.chrom_start> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "hsapiens_snp.chrom_start" .
+
+<processor/input_chr_position/in/chr_in> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "chr_in" .
+
+<processor/input_chr_position/in/in1> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "in1" .
+
+<processor/input_chr_position/in/in2> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "in2" .
+
+<processor/input_chr_position/out/chr_out> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "chr_out" .
+
+<processor/input_chr_position/out/end_out> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "end_out" .
+
+<processor/input_chr_position/out/start_out> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "start_out" .
+
+<processor/regex_value/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "regex_value" ;
+	wfdesc:hasOutput <processor/regex_value/out/value> .
+
+<processor/regex_value/out/value> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "value" .
