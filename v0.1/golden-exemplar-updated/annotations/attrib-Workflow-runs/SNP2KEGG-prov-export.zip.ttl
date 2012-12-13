@@ -1,0 +1,7 @@
+@prefix wfprov: <http://purl.org/wf4ever/wfprov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<Workflow-runs/SNP2KEGG-prov-export.zip> wfprov:wasGeneratedBy
+  [ a wfprov:WorkflowRun ;
+    wfprov:wasInitiatedBy
+      [ a foaf:Agent ; foaf:name "Kristina Hettne" ]
+  ] .

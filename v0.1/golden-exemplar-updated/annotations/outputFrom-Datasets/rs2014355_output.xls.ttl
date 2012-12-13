@@ -1,0 +1,8 @@
+
+@prefix wfprov: <http://purl.org/wf4ever/wfprov#> .
+@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
+<Datasets/rs2014355_output.xls> wfprov:wasOutputFrom
+  [ a wfprov:WorkflowRun ;
+    wfprov:describedByWorkflow
+      [ wfdesc:hasWorkflowDefinition  <Workflows/main_nested_workflow.t2flow> ]
+  ] .

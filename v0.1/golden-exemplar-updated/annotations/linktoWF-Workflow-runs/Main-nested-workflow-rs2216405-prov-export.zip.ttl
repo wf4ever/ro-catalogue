@@ -1,0 +1,6 @@
+@prefix wfprov: <http://purl.org/wf4ever/wfprov#> .
+@prefix prov: <http://www.w3.org/TR/prov-o/> .
+@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
+<Workflow-runs/Main-nested-workflow-rs2216405-prov-export.zip> prov:wasGeneratedBy [   
+     a wfprov:WorkflowRun ;
+     wfprov:describedByWorkflow [wfdesc:hasWorkflowDefinition <Workflows/main_nested_workflow.t2flow>] ].
