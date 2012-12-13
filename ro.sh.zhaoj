@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+# Definitions to run RO manager
+#
+
+# Change these lines to match local setup
+ROBASE=/Users/zhaoj/oxford/workspace/wf4ever/ro-catalogue/v0.1
+RO=/Users/zhaoj/oxford/workspace/wf4ever/ro-manager/src/ro
+
+# End.
