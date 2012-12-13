@@ -11,16 +11,16 @@ function attributedTo {
     prov=$1
     name=$2
     cat >annotations/attrib-$prov.ttl <<EOF
-@@prefixes here@@
-
-$prov wfprov:wasGeneratedBy
-  [ a wfprov:WorkflowRun" ;
+@prefix wfprov: <http://purl.org/wf4ever/wfprov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<$prov> wfprov:wasGeneratedBy
+  [ a wfprov:WorkflowRun ;
     wfprov:wasInitiatedBy
       [ a foaf:Agent ; foaf:name "$name" ]
   ] .
 EOF
     ro add "annotations/attrib-$prov.ttl"
-    ro annotate $prov -g "annotations/attrib-$prov.ttl"
+    ro annotate -v $prov -g "annotations/attrib-$prov.ttl"
 }
 
 # $RO annotate -v Workflow-runs/SNP2KEGG-prov-export.zip wprov:enactorAgent 'Kristina Hettne'
