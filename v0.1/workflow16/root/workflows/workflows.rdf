@@ -1,0 +1,54 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://purl.org/wf4ever/ro#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.1="http://www.openarchives.org/ore/terms/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="main">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <j.1:isAggregatedBy rdf:resource=""/>
+  </rdf:Description>
+  <rdf:Description rdf:about="entries/48183646-42b8-4bbd-87f4-348f76b86118">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#FolderEntry"/>
+    <j.1:proxyIn rdf:resource=""/>
+    <j.1:proxyFor rdf:resource="nested"/>
+    <j.0:entryName>nested/</j.0:entryName>
+  </rdf:Description>
+  <rdf:Description rdf:about="entries/2bbc6e20-4432-4333-934e-336b31e437d0">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#FolderEntry"/>
+    <j.1:proxyIn rdf:resource=""/>
+    <j.1:proxyFor rdf:resource="main"/>
+    <j.0:entryName>main/</j.0:entryName>
+  </rdf:Description>
+  <rdf:Description rdf:about="entries/1500f690-4fba-4582-94ee-35c20efefafa">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#FolderEntry"/>
+    <j.1:proxyIn rdf:resource=""/>
+    <j.1:proxyFor rdf:resource="components"/>
+    <j.0:entryName>components/</j.0:entryName>
+  </rdf:Description>
+  <rdf:Description rdf:about="">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Folder"/>
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+    <j.1:isDescribedBy rdf:resource="workflows.rdf"/>
+    <j.1:aggregates rdf:resource="components"/>
+    <j.1:aggregates rdf:resource="main"/>
+    <j.1:aggregates rdf:resource="nested"/>
+    <j.1:isAggregatedBy rdf:resource="../.."/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nested">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <j.1:isAggregatedBy rdf:resource=""/>
+  </rdf:Description>
+  <rdf:Description rdf:about="../..">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
+    <j.1:isDescribedBy rdf:resource="../../.ro/manifest.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="components">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <j.1:isAggregatedBy rdf:resource=""/>
+  </rdf:Description>
+</rdf:RDF>
