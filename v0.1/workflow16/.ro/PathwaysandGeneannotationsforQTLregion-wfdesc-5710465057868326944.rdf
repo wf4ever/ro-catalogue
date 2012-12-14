@@ -1,0 +1,1816 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:wfdesc="http://purl.org/wf4ever/wfdesc#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:wf4ever="http://purl.org/wf4ever/wf4ever#" > 
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/remove_duplicate_kegg_genes/out/strippedlist&amp;to=processor/Get_pathways/in/gene_ids">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_duplicate_kegg_genes/out/strippedlist"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/Get_pathways/in/gene_ids"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/create_report/in/geneEnd">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>geneEnd</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.uniprot_swissprot_accession&amp;to=processor/create_report/in/uniprotAcc">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.uniprot_swissprot_accession"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/create_report/in/uniprotAcc"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/out/merged_pathways">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>merged_pathways</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.affy_mouse430_2&amp;to=processor/create_report/in/Affy_Mouse430_2">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.affy_mouse430_2"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/create_report/in/Affy_Mouse430_2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/out/genes_pathways">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>genes_pathways</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_pathway_list_2/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>stringlist</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/pathway_descriptions/in/string">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>string</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/pathway_descriptions/out/return&amp;to=processor/remove_pathway_duplicates/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/pathway_descriptions/out/return"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_pathway_duplicates/in/stringlist"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/add_ncbi_to_string/in/input">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>input</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/create_report/in/ensemblGene_Id">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>ensemblGene_Id</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/split_for_duplicates/out/split&amp;to=processor/remove_duplicate_kegg_genes/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/split_for_duplicates/out/split"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_duplicate_kegg_genes/in/stringlist"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_uniprot_duplicates/out/strippedlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>strippedlist</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_genes_and_pathways_3/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#BeanshellScript"/>
+    <rdfs:label>merge_genes_and_pathways_3</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_genes_and_pathways_3/out/concatenated"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_genes_and_pathways_3/in/stringlist"/>
+    <wf4ever:script>String seperatorString = "\n";
+if (seperator != void) {
+	seperatorString = seperator;
+}
+StringBuffer sb = new StringBuffer();
+for (Iterator i = stringlist.iterator(); i.hasNext();) {
+	String item = (String) i.next();
+	sb.append(item);
+	if (i.hasNext()) {
+		sb.append(seperatorString);
+	}
+}
+concatenated = sb.toString();
+</wf4ever:script>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/Kegg_gene_ids/in/string">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>string</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=in/end_position&amp;to=processor/genes_in_qtl/in/mmusculus_gene_ensembl.end_filter">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/in/end_position"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/genes_in_qtl/in/mmusculus_gene_ensembl.end_filter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_pathway_nulls_2/in/input">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>input</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/genes_in_qtl/out/mmusculus_gene_ensembl.ensembl_gene_id">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>mmusculus_gene_ensembl.ensembl_gene_id</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/create_report/in/uniprotAcc">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>uniprotAcc</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_pathway_nulls_2/out/output">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>output</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/out/pathway_descriptions">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>pathway_descriptions</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.ensembl_transcript_id">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>mmusculus_gene_ensembl.ensembl_transcript_id</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/Kegg_gene_ids_2/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#SOAPService"/>
+    <rdfs:label>Kegg_gene_ids_2</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/Kegg_gene_ids_2/out/attachmentList"/>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/Kegg_gene_ids_2/out/return"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/Kegg_gene_ids_2/in/string"/>
+    <wf4ever:wsdlURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://soap.genome.jp/KEGG.wsdl</wf4ever:wsdlURI>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/merge_pathway_list_1/out/concatenated&amp;to=processor/merge_pathway_list_2/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_pathway_list_1/out/concatenated"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_pathway_list_2/in/stringlist"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.ensembl_gene_id&amp;to=processor/create_report/in/ensemblGene_Id">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.ensembl_gene_id"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/create_report/in/ensemblGene_Id"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/regex_2/out/value">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>value</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/out/kegg_pathway_release">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>kegg_pathway_release</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/Kegg_gene_ids/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#SOAPService"/>
+    <rdfs:label>Kegg_gene_ids</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/Kegg_gene_ids/out/attachmentList"/>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/Kegg_gene_ids/out/return"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/Kegg_gene_ids/in/string"/>
+    <wf4ever:wsdlURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://soap.genome.jp/KEGG.wsdl</wf4ever:wsdlURI>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.affy_mouse430_2">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>mmusculus_gene_ensembl.affy_mouse430_2</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/in/chromosome_name">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>chromosome_name</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/split_for_duplicate_pathways/out/split">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>split</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/concat_kegg_genes/out/output&amp;to=processor/merge_kegg_references/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/concat_kegg_genes/out/output"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_kegg_references/in/stringlist"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/genes_in_qtl/in/mmusculus_gene_ensembl.end_filter">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>mmusculus_gene_ensembl.end_filter</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_entrez_genes/out/concatenated">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>concatenated</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/flatten_pathway_files/out/output">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>output</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_pathway_desc/out/concatenated">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>concatenated</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/merge_uniprot_ids/out/concatenated&amp;to=processor/REMOVE_NULLS_2/in/input">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_uniprot_ids/out/concatenated"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/REMOVE_NULLS_2/in/input"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/split_for_duplicates/in/regex">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>regex</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/remove_nulls_3/out/output&amp;to=out/gene_descriptions">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_nulls_3/out/output"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/out/gene_descriptions"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/gene_descriptions/out/return&amp;to=processor/merge_gene_desc/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/gene_descriptions/out/return"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_gene_desc/in/stringlist"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_gene_desc/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>stringlist</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=in/start_position&amp;to=processor/genes_in_qtl/in/mmusculus_gene_ensembl.start_filter">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/in/start_position"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/genes_in_qtl/in/mmusculus_gene_ensembl.start_filter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/merge_genes_and_pathways_3/out/concatenated&amp;to=processor/flatten_pathway_files/in/merged_pathways_direct_data">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_genes_and_pathways_3/out/concatenated"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/flatten_pathway_files/in/merged_pathways_direct_data"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/split_gene_ids/out/output">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>output</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.external_gene_id">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>mmusculus_gene_ensembl.external_gene_id</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/in/start_position">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>start_position</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_patwhay_ids/out/concatenated">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>concatenated</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/remove_duplicate_kegg_genes/out/strippedlist&amp;to=processor/gene_descriptions/in/string">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_duplicate_kegg_genes/out/strippedlist"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/gene_descriptions/in/string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.start_position">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>mmusculus_gene_ensembl.start_position</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_pathway_nulls/out/output">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>output</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/Get_pathways/out/pathway_ids">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>pathway_ids</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/merge_genes_and_pathways_2/out/concatenated&amp;to=processor/merge_genes_and_pathways_3/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_genes_and_pathways_2/out/concatenated"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_genes_and_pathways_3/in/stringlist"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_pathway_duplicates/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>stringlist</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/gene_descriptions/in/string">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>string</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/genes_in_qtl/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdfs:label>genes_in_qtl</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/genes_in_qtl/out/mmusculus_gene_ensembl.ensembl_gene_id"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/genes_in_qtl/in/mmusculus_gene_ensembl.chromosome_name_filter"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/genes_in_qtl/in/mmusculus_gene_ensembl.end_filter"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/genes_in_qtl/in/mmusculus_gene_ensembl.start_filter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Workflow"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdfs:label>PathwaysandGeneannotationsforQTLregion</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/out/pathway_descriptions"/>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/out/kegg_external_gene_reference"/>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/out/gene_descriptions"/>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/out/pathway_ids"/>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/out/merged_pathways"/>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/out/report"/>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/out/kegg_pathway_release"/>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/out/genes_pathways"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/REMOVE_NULLS_2/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/add_ncbi_to_string/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/add_uniprot_to_string/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/concat_kegg_genes/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/create_report/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_entrez_genes/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_gene_desc/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_genes_and_pathways/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_genes_and_pathways_2/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_genes_and_pathways_3/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_kegg_references/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_pathway_desc/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_pathway_list_1/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_pathway_list_2/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_patwhay_ids/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_reports/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_uniprot_ids/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_Nulls/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_duplicate_ids/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_duplicate_kegg_genes/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_entrez_duplicates/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_nulls_3/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_pathway_duplicates/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_pathway_nulls/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_pathway_nulls_2/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_uniprot_duplicates/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/split_for_duplicate_pathways/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/split_for_duplicates/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/split_gene_ids/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/Kegg_gene_ids/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/Kegg_gene_ids_2/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/binfo/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/gene_descriptions/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/pathway_descriptions/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/Get_pathways/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/flatten_pathway_files/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/genes_in_qtl/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/kegg_pathway_release/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/"/>
+    <wfdesc:hasSubProcess rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/regex_2/"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=in/chromosome_name&amp;to=processor/genes_in_qtl/in/mmusculus_gene_ensembl.chromosome_name_filter"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=in/end_position&amp;to=processor/genes_in_qtl/in/mmusculus_gene_ensembl.end_filter"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=in/start_position&amp;to=processor/genes_in_qtl/in/mmusculus_gene_ensembl.start_filter"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/Get_pathways/out/pathway_genes&amp;to=processor/merge_genes_and_pathways/in/stringlist"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/Get_pathways/out/pathway_ids&amp;to=processor/merge_pathway_list_1/in/stringlist"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/Kegg_gene_ids/out/return&amp;to=processor/concat_kegg_genes/in/string1"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/Kegg_gene_ids_2/out/return&amp;to=processor/concat_kegg_genes/in/string2"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/REMOVE_NULLS_2/out/output&amp;to=processor/add_uniprot_to_string/in/input"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/add_ncbi_to_string/out/output&amp;to=processor/Kegg_gene_ids_2/in/string"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/add_uniprot_to_string/out/output&amp;to=processor/Kegg_gene_ids/in/string"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/binfo/out/return&amp;to=out/kegg_pathway_release"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/concat_kegg_genes/out/output&amp;to=processor/merge_kegg_references/in/stringlist"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/concat_kegg_genes/out/output&amp;to=processor/split_gene_ids/in/input"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/create_report/out/result&amp;to=processor/merge_reports/in/stringlist"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/flatten_pathway_files/out/output&amp;to=out/genes_pathways"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/gene_descriptions/out/return&amp;to=processor/merge_gene_desc/in/stringlist"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/genes_in_qtl/out/mmusculus_gene_ensembl.ensembl_gene_id&amp;to=processor/mmusculus_gene_ensembl/in/mmusculus_gene_ensembl.ensembl_gene_id_filter"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/kegg_pathway_release/out/value&amp;to=processor/binfo/in/db"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/merge_entrez_genes/out/concatenated&amp;to=processor/remove_Nulls/in/input"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/merge_gene_desc/out/concatenated&amp;to=processor/remove_nulls_3/in/input"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/merge_genes_and_pathways/out/concatenated&amp;to=processor/merge_genes_and_pathways_2/in/stringlist"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/merge_genes_and_pathways_2/out/concatenated&amp;to=processor/merge_genes_and_pathways_3/in/stringlist"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/merge_genes_and_pathways_3/out/concatenated&amp;to=out/merged_pathways"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/merge_genes_and_pathways_3/out/concatenated&amp;to=processor/flatten_pathway_files/in/merged_pathways_direct_data"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/merge_kegg_references/out/concatenated&amp;to=out/kegg_external_gene_reference"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/merge_pathway_desc/out/concatenated&amp;to=processor/remove_pathway_nulls/in/input"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/merge_pathway_list_1/out/concatenated&amp;to=processor/merge_pathway_list_2/in/stringlist"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/merge_pathway_list_2/out/concatenated&amp;to=processor/split_for_duplicate_pathways/in/string"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/merge_patwhay_ids/out/concatenated&amp;to=processor/remove_pathway_nulls_2/in/input"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/merge_reports/out/concatenated&amp;to=out/report"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/merge_uniprot_ids/out/concatenated&amp;to=processor/REMOVE_NULLS_2/in/input"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.affy_mouse430_2&amp;to=processor/create_report/in/Affy_Mouse430_2"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.chromosome_name&amp;to=processor/create_report/in/chromoName"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.end_position&amp;to=processor/create_report/in/geneEnd"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.ensembl_gene_id&amp;to=processor/create_report/in/ensemblGene_Id"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.ensembl_transcript_id&amp;to=processor/create_report/in/ensemblTranscriptId"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.entrezgene&amp;to=processor/create_report/in/entrezGeneId"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.entrezgene&amp;to=processor/remove_entrez_duplicates/in/stringlist"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.external_gene_id&amp;to=processor/create_report/in/externalGeneId"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.start_position&amp;to=processor/create_report/in/geneStart"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.uniprot_swissprot_accession&amp;to=processor/create_report/in/uniprotAcc"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.uniprot_swissprot_accession&amp;to=processor/remove_uniprot_duplicates/in/stringlist"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/pathway_descriptions/out/return&amp;to=processor/remove_pathway_duplicates/in/stringlist"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/regex_2/out/value&amp;to=processor/split_for_duplicate_pathways/in/regex"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/regex_2/out/value&amp;to=processor/split_for_duplicates/in/regex"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/remove_Nulls/out/output&amp;to=processor/add_ncbi_to_string/in/input"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/remove_duplicate_ids/out/strippedlist&amp;to=processor/merge_patwhay_ids/in/stringlist"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/remove_duplicate_ids/out/strippedlist&amp;to=processor/pathway_descriptions/in/string"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/remove_duplicate_kegg_genes/out/strippedlist&amp;to=processor/Get_pathways/in/gene_ids"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/remove_duplicate_kegg_genes/out/strippedlist&amp;to=processor/gene_descriptions/in/string"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/remove_entrez_duplicates/out/strippedlist&amp;to=processor/merge_entrez_genes/in/stringlist"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/remove_nulls_3/out/output&amp;to=out/gene_descriptions"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/remove_nulls_3/out/output&amp;to=processor/flatten_pathway_files/in/gene_descriptions_direct_data"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/remove_pathway_duplicates/out/strippedlist&amp;to=processor/merge_pathway_desc/in/stringlist"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/remove_pathway_nulls/out/output&amp;to=out/pathway_descriptions"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/remove_pathway_nulls/out/output&amp;to=processor/flatten_pathway_files/in/pathway_descriptions_direct_data"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/remove_pathway_nulls_2/out/output&amp;to=out/pathway_ids"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/remove_uniprot_duplicates/out/strippedlist&amp;to=processor/merge_uniprot_ids/in/stringlist"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/split_for_duplicate_pathways/out/split&amp;to=processor/remove_duplicate_ids/in/stringlist"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/split_for_duplicates/out/split&amp;to=processor/remove_duplicate_kegg_genes/in/stringlist"/>
+    <wfdesc:hasDataLink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/split_gene_ids/out/output&amp;to=processor/split_for_duplicates/in/string"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/in/start_position"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/in/end_position"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/in/chromosome_name"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/create_report/in/externalGeneId">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>externalGeneId</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/Get_pathways/out/pathway_ids&amp;to=processor/merge_pathway_list_1/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/Get_pathways/out/pathway_ids"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_pathway_list_1/in/stringlist"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_patwhay_ids/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>stringlist</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_genes_and_pathways/out/concatenated">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>concatenated</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_kegg_references/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>stringlist</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_pathway_duplicates/out/strippedlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>strippedlist</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/out/report">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>report</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/create_report/out/result">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>result</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/create_report/in/Affy_Mouse430_2">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>Affy_Mouse430_2</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/flatten_pathway_files/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdfs:label>flatten_pathway_files</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/flatten_pathway_files/out/output"/>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/flatten_pathway_files/out/report"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/flatten_pathway_files/in/merged_pathways_direct_data"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/flatten_pathway_files/in/gene_descriptions_direct_data"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/flatten_pathway_files/in/pathway_descriptions_direct_data"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/add_uniprot_to_string/out/output">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>output</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_genes_and_pathways_3/out/concatenated">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>concatenated</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/binfo/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#SOAPService"/>
+    <rdfs:label>binfo</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/binfo/out/attachmentList"/>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/binfo/out/return"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/binfo/in/db"/>
+    <wf4ever:wsdlURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://soap.genome.jp/KEGG.wsdl</wf4ever:wsdlURI>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/create_report/in/entrezGeneId">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>entrezGeneId</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/binfo/in/db">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>db</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/split_gene_ids/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#BeanshellScript"/>
+    <rdfs:label>split_gene_ids</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/split_gene_ids/out/output"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/split_gene_ids/in/input"/>
+    <wf4ever:script>String[] split = input.split("\n");
+Vector nonEmpty = new Vector();
+
+for (int i = 0; i &lt; split.length; i++) 
+{		
+	String trimmed = split[i].trim();
+	String[] trimmedSplit = trimmed.split("\t");
+	if (trimmedSplit.length &gt; 2)
+	{
+	    nonEmpty.add(trimmedSplit[1].trim());	
+	}
+}
+
+String output = "";
+
+for (int i = 0; i &lt; nonEmpty.size(); i++)
+{
+	output = output + (String) (nonEmpty.elementAt(i) + "\n");
+}</wf4ever:script>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_uniprot_ids/out/concatenated">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>concatenated</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_uniprot_ids/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>stringlist</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_genes_and_pathways_2/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#BeanshellScript"/>
+    <rdfs:label>merge_genes_and_pathways_2</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_genes_and_pathways_2/out/concatenated"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_genes_and_pathways_2/in/stringlist"/>
+    <wf4ever:script>String seperatorString = "\n";
+if (seperator != void) {
+	seperatorString = seperator;
+}
+StringBuffer sb = new StringBuffer();
+for (Iterator i = stringlist.iterator(); i.hasNext();) {
+	String item = (String) i.next();
+	sb.append(item);
+	if (i.hasNext()) {
+		sb.append(seperatorString);
+	}
+}
+concatenated = sb.toString();
+</wf4ever:script>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/in/mmusculus_gene_ensembl.ensembl_gene_id_filter">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>mmusculus_gene_ensembl.ensembl_gene_id_filter</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.end_position">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>mmusculus_gene_ensembl.end_position</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/out/pathway_ids">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>pathway_ids</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_gene_desc/out/concatenated">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>concatenated</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/Kegg_gene_ids/out/attachmentList">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>attachmentList</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/pathway_descriptions/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#SOAPService"/>
+    <rdfs:label>pathway_descriptions</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/pathway_descriptions/out/attachmentList"/>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/pathway_descriptions/out/return"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/pathway_descriptions/in/string"/>
+    <wf4ever:wsdlURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://soap.genome.jp/KEGG.wsdl</wf4ever:wsdlURI>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_duplicate_ids/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>stringlist</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/add_uniprot_to_string/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#BeanshellScript"/>
+    <rdfs:label>add_uniprot_to_string</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/add_uniprot_to_string/out/output"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/add_uniprot_to_string/in/input"/>
+    <wf4ever:script>String[] split = input.split("\n");
+Vector nonEmpty = new Vector();
+
+for (int i = 0; i &lt; split.length; i++) 
+{		
+	String trimmed = split[i].trim();
+	nonEmpty.add(trimmed);	
+}
+
+String output = "";
+
+for (int i = 0; i &lt; nonEmpty.size(); i++)
+{
+	output = output + "uniprot:" + (String) (nonEmpty.elementAt(i) + "\n");
+}</wf4ever:script>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/create_report/in/ensemblTranscriptId">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>ensemblTranscriptId</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/out/kegg_external_gene_reference">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>kegg_external_gene_reference</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/REMOVE_NULLS_2/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#BeanshellScript"/>
+    <rdfs:label>REMOVE_NULLS_2</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/REMOVE_NULLS_2/out/output"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/REMOVE_NULLS_2/in/input"/>
+    <wf4ever:script>String[] split = input.split("\n");
+Vector nonEmpty = new Vector();
+
+for (int i = 0; i &lt; split.length; i++){
+   if (!(split[i].equals("")))
+   {
+       nonEmpty.add(split[i].trim());
+   }
+}
+
+String[] non_empty = new String[nonEmpty.size()];
+
+for (int i = 0; i &lt; non_empty.length; i ++)
+{
+   non_empty[i] = nonEmpty.elementAt(i);
+}
+
+String output = "";
+
+for (int i = 0; i &lt; non_empty.length; i++)
+{
+	output = output + (String) (non_empty[i] + "\n");
+}</wf4ever:script>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/REMOVE_NULLS_2/out/output">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>output</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_genes_and_pathways_2/out/concatenated">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>concatenated</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_duplicate_ids/out/strippedlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>strippedlist</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/flatten_pathway_files/out/report">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>report</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/Get_pathways/in/gene_ids">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>gene_ids</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_pathway_duplicates/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#BeanshellScript"/>
+    <rdfs:label>remove_pathway_duplicates</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_pathway_duplicates/out/strippedlist"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_pathway_duplicates/in/stringlist"/>
+    <wf4ever:script>List strippedlist = new ArrayList();
+for (Iterator i = stringlist.iterator(); i.hasNext();) {
+	String item = (String) i.next();
+	if (strippedlist.contains(item) == false) {
+		strippedlist.add(item);
+	}
+}
+</wf4ever:script>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/REMOVE_NULLS_2/in/input">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>input</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.start_position&amp;to=processor/create_report/in/geneStart">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.start_position"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/create_report/in/geneStart"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/kegg_pathway_release/out/value">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>value</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_Nulls/out/output">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>output</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_Nulls/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#BeanshellScript"/>
+    <rdfs:label>remove_Nulls</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_Nulls/out/output"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_Nulls/in/input"/>
+    <wf4ever:script>String[] split = input.split("\n");
+Vector nonEmpty = new Vector();
+
+for (int i = 0; i &lt; split.length; i++){
+   if (!(split[i].equals("")))
+   {
+       nonEmpty.add(split[i].trim());
+   }
+}
+
+String[] non_empty = new String[nonEmpty.size()];
+
+for (int i = 0; i &lt; non_empty.length; i ++)
+{
+   non_empty[i] = nonEmpty.elementAt(i);
+}
+
+String output = "";
+
+for (int i = 0; i &lt; non_empty.length; i++)
+{
+	output = output + (String) (non_empty[i] + "\n");
+}</wf4ever:script>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/split_for_duplicate_pathways/out/split&amp;to=processor/remove_duplicate_ids/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/split_for_duplicate_pathways/out/split"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_duplicate_ids/in/stringlist"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_reports/out/concatenated">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>concatenated</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/create_report/in/chromoName">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>chromoName</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/regex_2/out/value&amp;to=processor/split_for_duplicates/in/regex">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/regex_2/out/value"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/split_for_duplicates/in/regex"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_uniprot_duplicates/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>stringlist</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/add_ncbi_to_string/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#BeanshellScript"/>
+    <rdfs:label>add_ncbi_to_string</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/add_ncbi_to_string/out/output"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/add_ncbi_to_string/in/input"/>
+    <wf4ever:script>String[] split = input.split("\n");
+Vector nonEmpty = new Vector();
+
+for (int i = 0; i &lt; split.length; i++) 
+{		
+	String trimmed = split[i].trim();
+	nonEmpty.add(trimmed);	
+}
+
+String output = "";
+
+for (int i = 0; i &lt; nonEmpty.size(); i++)
+{
+	output = output + "ncbi-geneid:" + (String) (nonEmpty.elementAt(i) + "\n");
+}</wf4ever:script>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_uniprot_duplicates/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#BeanshellScript"/>
+    <rdfs:label>remove_uniprot_duplicates</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_uniprot_duplicates/out/strippedlist"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_uniprot_duplicates/in/stringlist"/>
+    <wf4ever:script>List strippedlist = new ArrayList();
+for (Iterator i = stringlist.iterator(); i.hasNext();) {
+	String item = (String) i.next();
+	if (strippedlist.contains(item) == false) {
+		strippedlist.add(item);
+	}
+}
+</wf4ever:script>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_entrez_genes/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#BeanshellScript"/>
+    <rdfs:label>merge_entrez_genes</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_entrez_genes/out/concatenated"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_entrez_genes/in/stringlist"/>
+    <wf4ever:script>String seperatorString = "\n";
+if (seperator != void) {
+	seperatorString = seperator;
+}
+StringBuffer sb = new StringBuffer();
+for (Iterator i = stringlist.iterator(); i.hasNext();) {
+	String item = (String) i.next();
+	sb.append(item);
+	if (i.hasNext()) {
+		sb.append(seperatorString);
+	}
+}
+concatenated = sb.toString();
+</wf4ever:script>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/out/gene_descriptions">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>gene_descriptions</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_genes_and_pathways_3/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>stringlist</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_duplicate_kegg_genes/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>stringlist</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/regex_2/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdfs:label>regex_2</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/regex_2/out/value"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/split_for_duplicate_pathways/in/regex">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>regex</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/gene_descriptions/out/attachmentList">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>attachmentList</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/REMOVE_NULLS_2/out/output&amp;to=processor/add_uniprot_to_string/in/input">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/REMOVE_NULLS_2/out/output"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/add_uniprot_to_string/in/input"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/add_ncbi_to_string/out/output">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>output</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_genes_and_pathways_2/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>stringlist</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_pathway_desc/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>stringlist</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_duplicate_kegg_genes/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#BeanshellScript"/>
+    <rdfs:label>remove_duplicate_kegg_genes</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_duplicate_kegg_genes/out/strippedlist"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_duplicate_kegg_genes/in/stringlist"/>
+    <wf4ever:script>List strippedlist = new ArrayList();
+for (Iterator i = stringlist.iterator(); i.hasNext();) {
+	String item = (String) i.next();
+	if (strippedlist.contains(item) == false) {
+		strippedlist.add(item);
+	}
+}
+</wf4ever:script>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/split_for_duplicate_pathways/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#BeanshellScript"/>
+    <rdfs:label>split_for_duplicate_pathways</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/split_for_duplicate_pathways/out/split"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/split_for_duplicate_pathways/in/regex"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/split_for_duplicate_pathways/in/string"/>
+    <wf4ever:script>List split = new ArrayList();
+if (!string.equals("")) {
+	String regexString = ",";
+	if (regex != void) {
+		regexString = regex;
+	}
+	String[] result = string.split(regexString);
+	for (int i = 0; i &lt; result.length; i++) {
+		split.add(result[i]);
+	}
+}
+</wf4ever:script>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/add_ncbi_to_string/out/output&amp;to=processor/Kegg_gene_ids_2/in/string">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/add_ncbi_to_string/out/output"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/Kegg_gene_ids_2/in/string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_pathway_desc/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#BeanshellScript"/>
+    <rdfs:label>merge_pathway_desc</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_pathway_desc/out/concatenated"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_pathway_desc/in/stringlist"/>
+    <wf4ever:script>String seperatorString = "\n";
+if (seperator != void) {
+	seperatorString = seperator;
+}
+StringBuffer sb = new StringBuffer();
+for (Iterator i = stringlist.iterator(); i.hasNext();) {
+	String item = (String) i.next();
+	sb.append(item);
+	if (i.hasNext()) {
+		sb.append(seperatorString);
+	}
+}
+concatenated = sb.toString();
+</wf4ever:script>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/Kegg_gene_ids_2/out/return&amp;to=processor/concat_kegg_genes/in/string2">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/Kegg_gene_ids_2/out/return"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/concat_kegg_genes/in/string2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/gene_descriptions/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#SOAPService"/>
+    <rdfs:label>gene_descriptions</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/gene_descriptions/out/attachmentList"/>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/gene_descriptions/out/return"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/gene_descriptions/in/string"/>
+    <wf4ever:wsdlURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://soap.genome.jp/KEGG.wsdl</wf4ever:wsdlURI>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.end_position&amp;to=processor/create_report/in/geneEnd">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.end_position"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/create_report/in/geneEnd"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/Kegg_gene_ids_2/out/return">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>return</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=in/chromosome_name&amp;to=processor/genes_in_qtl/in/mmusculus_gene_ensembl.chromosome_name_filter">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/in/chromosome_name"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/genes_in_qtl/in/mmusculus_gene_ensembl.chromosome_name_filter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/remove_pathway_nulls/out/output&amp;to=out/pathway_descriptions">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_pathway_nulls/out/output"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/out/pathway_descriptions"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/merge_genes_and_pathways_3/out/concatenated&amp;to=out/merged_pathways">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_genes_and_pathways_3/out/concatenated"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/out/merged_pathways"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.external_gene_id&amp;to=processor/create_report/in/externalGeneId">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.external_gene_id"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/create_report/in/externalGeneId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_nulls_3/in/input">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>input</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_entrez_genes/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>stringlist</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/flatten_pathway_files/in/merged_pathways_direct_data">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>merged_pathways_direct_data</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.entrezgene">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>mmusculus_gene_ensembl.entrezgene</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/merge_genes_and_pathways/out/concatenated&amp;to=processor/merge_genes_and_pathways_2/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_genes_and_pathways/out/concatenated"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_genes_and_pathways_2/in/stringlist"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_kegg_references/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#BeanshellScript"/>
+    <rdfs:label>merge_kegg_references</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_kegg_references/out/concatenated"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_kegg_references/in/stringlist"/>
+    <wf4ever:script>String seperatorString = "\n";
+if (seperator != void) {
+	seperatorString = seperator;
+}
+StringBuffer sb = new StringBuffer();
+for (Iterator i = stringlist.iterator(); i.hasNext();) {
+	String item = (String) i.next();
+	sb.append(item);
+	if (i.hasNext()) {
+		sb.append(seperatorString);
+	}
+}
+concatenated = sb.toString();
+</wf4ever:script>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_genes_and_pathways/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#BeanshellScript"/>
+    <rdfs:label>merge_genes_and_pathways</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_genes_and_pathways/out/concatenated"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_genes_and_pathways/in/stringlist"/>
+    <wf4ever:script>String seperatorString = "\n";
+if (seperator != void) {
+	seperatorString = seperator;
+}
+StringBuffer sb = new StringBuffer();
+for (Iterator i = stringlist.iterator(); i.hasNext();) {
+	String item = (String) i.next();
+	sb.append(item);
+	if (i.hasNext()) {
+		sb.append(seperatorString);
+	}
+}
+concatenated = sb.toString();
+</wf4ever:script>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_pathway_list_1/out/concatenated">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>concatenated</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.chromosome_name">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>mmusculus_gene_ensembl.chromosome_name</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/remove_duplicate_ids/out/strippedlist&amp;to=processor/pathway_descriptions/in/string">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_duplicate_ids/out/strippedlist"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/pathway_descriptions/in/string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/merge_reports/out/concatenated&amp;to=out/report">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_reports/out/concatenated"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/out/report"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/create_report/in/geneStart">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>geneStart</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_pathway_nulls/in/input">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>input</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdfs:label>mmusculus_gene_ensembl</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.affy_mouse430_2"/>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.chromosome_name"/>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.end_position"/>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.ensembl_gene_id"/>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.ensembl_transcript_id"/>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.entrezgene"/>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.external_gene_id"/>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.start_position"/>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.uniprot_swissprot_accession"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/in/mmusculus_gene_ensembl.ensembl_gene_id_filter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/binfo/out/return">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>return</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_entrez_duplicates/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#BeanshellScript"/>
+    <rdfs:label>remove_entrez_duplicates</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_entrez_duplicates/out/strippedlist"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_entrez_duplicates/in/stringlist"/>
+    <wf4ever:script>List strippedlist = new ArrayList();
+for (Iterator i = stringlist.iterator(); i.hasNext();) {
+	String item = (String) i.next();
+	if (strippedlist.contains(item) == false) {
+		strippedlist.add(item);
+	}
+}
+</wf4ever:script>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/remove_pathway_nulls/out/output&amp;to=processor/flatten_pathway_files/in/pathway_descriptions_direct_data">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_pathway_nulls/out/output"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/flatten_pathway_files/in/pathway_descriptions_direct_data"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.ensembl_transcript_id&amp;to=processor/create_report/in/ensemblTranscriptId">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.ensembl_transcript_id"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/create_report/in/ensemblTranscriptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_reports/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#BeanshellScript"/>
+    <rdfs:label>merge_reports</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_reports/out/concatenated"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_reports/in/stringlist"/>
+    <wf4ever:script>String seperatorString = "\n";
+if (seperator != void) {
+	seperatorString = seperator;
+}
+StringBuffer sb = new StringBuffer();
+for (Iterator i = stringlist.iterator(); i.hasNext();) {
+	String item = (String) i.next();
+	sb.append(item);
+	if (i.hasNext()) {
+		sb.append(seperatorString);
+	}
+}
+concatenated = sb.toString();
+</wf4ever:script>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/concat_kegg_genes/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#BeanshellScript"/>
+    <rdfs:label>concat_kegg_genes</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/concat_kegg_genes/out/output"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/concat_kegg_genes/in/string1"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/concat_kegg_genes/in/string2"/>
+    <wf4ever:script>output = string1 + string2;</wf4ever:script>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/create_report/out/result&amp;to=processor/merge_reports/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/create_report/out/result"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_reports/in/stringlist"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/split_for_duplicates/in/string">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>string</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/flatten_pathway_files/in/gene_descriptions_direct_data">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>gene_descriptions_direct_data</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_entrez_duplicates/out/strippedlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>strippedlist</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.entrezgene&amp;to=processor/remove_entrez_duplicates/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.entrezgene"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_entrez_duplicates/in/stringlist"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_pathway_list_1/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>stringlist</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/Kegg_gene_ids_2/out/attachmentList">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>attachmentList</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/merge_gene_desc/out/concatenated&amp;to=processor/remove_nulls_3/in/input">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_gene_desc/out/concatenated"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_nulls_3/in/input"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/genes_in_qtl/in/mmusculus_gene_ensembl.start_filter">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>mmusculus_gene_ensembl.start_filter</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/regex_2/out/value&amp;to=processor/split_for_duplicate_pathways/in/regex">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/regex_2/out/value"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/split_for_duplicate_pathways/in/regex"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/split_for_duplicate_pathways/in/string">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>string</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/kegg_pathway_release/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdfs:label>kegg_pathway_release</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/kegg_pathway_release/out/value"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/pathway_descriptions/out/attachmentList">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>attachmentList</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/remove_uniprot_duplicates/out/strippedlist&amp;to=processor/merge_uniprot_ids/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_uniprot_duplicates/out/strippedlist"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_uniprot_ids/in/stringlist"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/gene_descriptions/out/return">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>return</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/Kegg_gene_ids/out/return&amp;to=processor/concat_kegg_genes/in/string1">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/Kegg_gene_ids/out/return"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/concat_kegg_genes/in/string1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_entrez_duplicates/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>stringlist</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/merge_kegg_references/out/concatenated&amp;to=out/kegg_external_gene_reference">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_kegg_references/out/concatenated"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/out/kegg_external_gene_reference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_pathway_list_2/out/concatenated">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>concatenated</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_genes_and_pathways/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>stringlist</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/remove_pathway_duplicates/out/strippedlist&amp;to=processor/merge_pathway_desc/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_pathway_duplicates/out/strippedlist"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_pathway_desc/in/stringlist"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/concat_kegg_genes/out/output">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>output</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/split_for_duplicates/out/split">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>split</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_pathway_nulls_2/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#BeanshellScript"/>
+    <rdfs:label>remove_pathway_nulls_2</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_pathway_nulls_2/out/output"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_pathway_nulls_2/in/input"/>
+    <wf4ever:script>String[] split = input.split("\n");
+Vector nonEmpty = new Vector();
+
+for (int i = 0; i &lt; split.length; i++){
+   if (!(split[i].equals("")))
+   {
+       nonEmpty.add(split[i].trim());
+   }
+}
+
+String[] non_empty = new String[nonEmpty.size()];
+
+for (int i = 0; i &lt; non_empty.length; i ++)
+{
+   non_empty[i] = nonEmpty.elementAt(i);
+}
+
+String output = "";
+
+for (int i = 0; i &lt; non_empty.length; i++)
+{
+	output = output + (String) (non_empty[i] + "\n");
+}</wf4ever:script>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/merge_pathway_desc/out/concatenated&amp;to=processor/remove_pathway_nulls/in/input">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_pathway_desc/out/concatenated"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_pathway_nulls/in/input"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.entrezgene&amp;to=processor/create_report/in/entrezGeneId">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.entrezgene"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/create_report/in/entrezGeneId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_duplicate_kegg_genes/out/strippedlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>strippedlist</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/split_gene_ids/in/input">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>input</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_nulls_3/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#BeanshellScript"/>
+    <rdfs:label>remove_nulls_3</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_nulls_3/out/output"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_nulls_3/in/input"/>
+    <wf4ever:script>String[] split = input.split("\n");
+Vector nonEmpty = new Vector();
+
+for (int i = 0; i &lt; split.length; i++){
+   if (!(split[i].equals("")))
+   {
+       nonEmpty.add(split[i].trim());
+   }
+}
+
+String[] non_empty = new String[nonEmpty.size()];
+
+for (int i = 0; i &lt; non_empty.length; i ++)
+{
+   non_empty[i] = nonEmpty.elementAt(i);
+}
+
+String output = "";
+
+for (int i = 0; i &lt; non_empty.length; i++)
+{
+	output = output + (String) (non_empty[i] + "\n");
+}</wf4ever:script>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.uniprot_swissprot_accession&amp;to=processor/remove_uniprot_duplicates/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.uniprot_swissprot_accession"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_uniprot_duplicates/in/stringlist"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/flatten_pathway_files/out/output&amp;to=out/genes_pathways">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/flatten_pathway_files/out/output"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/out/genes_pathways"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/Kegg_gene_ids_2/in/string">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>string</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/create_report/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#BeanshellScript"/>
+    <rdfs:label>create_report</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/create_report/out/result"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/create_report/in/Affy_Mouse430_2"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/create_report/in/chromoName"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/create_report/in/ensemblGene_Id"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/create_report/in/ensemblTranscriptId"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/create_report/in/entrezGeneId"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/create_report/in/externalGeneId"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/create_report/in/geneEnd"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/create_report/in/geneStart"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/create_report/in/uniprotAcc"/>
+    <wf4ever:script>result = ensemblGene_Id + "," + entrezGeneId + "," + externalGeneId + "," + chromoName + "," + geneStart + "," + geneEnd + "," + ensemblTranscriptId + "," + uniprotAcc + "," + Affy_Mouse430_2;</wf4ever:script>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/flatten_pathway_files/in/pathway_descriptions_direct_data">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>pathway_descriptions_direct_data</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_Nulls/in/input">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>input</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/genes_in_qtl/in/mmusculus_gene_ensembl.chromosome_name_filter">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>mmusculus_gene_ensembl.chromosome_name_filter</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_uniprot_ids/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#BeanshellScript"/>
+    <rdfs:label>merge_uniprot_ids</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_uniprot_ids/out/concatenated"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_uniprot_ids/in/stringlist"/>
+    <wf4ever:script>String seperatorString = "\n";
+if (seperator != void) {
+	seperatorString = seperator;
+}
+StringBuffer sb = new StringBuffer();
+for (Iterator i = stringlist.iterator(); i.hasNext();) {
+	String item = (String) i.next();
+	sb.append(item);
+	if (i.hasNext()) {
+		sb.append(seperatorString);
+	}
+}
+concatenated = sb.toString();
+</wf4ever:script>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/remove_Nulls/out/output&amp;to=processor/add_ncbi_to_string/in/input">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_Nulls/out/output"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/add_ncbi_to_string/in/input"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/Get_pathways/out/pathway_genes&amp;to=processor/merge_genes_and_pathways/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/Get_pathways/out/pathway_genes"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_genes_and_pathways/in/stringlist"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.chromosome_name&amp;to=processor/create_report/in/chromoName">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.chromosome_name"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/create_report/in/chromoName"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_gene_desc/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#BeanshellScript"/>
+    <rdfs:label>merge_gene_desc</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_gene_desc/out/concatenated"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_gene_desc/in/stringlist"/>
+    <wf4ever:script>String seperatorString = "\n";
+if (seperator != void) {
+	seperatorString = seperator;
+}
+StringBuffer sb = new StringBuffer();
+for (Iterator i = stringlist.iterator(); i.hasNext();) {
+	String item = (String) i.next();
+	sb.append(item);
+	if (i.hasNext()) {
+		sb.append(seperatorString);
+	}
+}
+concatenated = sb.toString();
+</wf4ever:script>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/Get_pathways/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdfs:label>Get_pathways</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/Get_pathways/out/pathway_genes"/>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/Get_pathways/out/pathway_ids"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/Get_pathways/in/gene_ids"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/binfo/out/attachmentList">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>attachmentList</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/binfo/out/return&amp;to=out/kegg_pathway_release">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/binfo/out/return"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/out/kegg_pathway_release"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/remove_nulls_3/out/output&amp;to=processor/flatten_pathway_files/in/gene_descriptions_direct_data">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_nulls_3/out/output"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/flatten_pathway_files/in/gene_descriptions_direct_data"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_pathway_nulls/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#BeanshellScript"/>
+    <rdfs:label>remove_pathway_nulls</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_pathway_nulls/out/output"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_pathway_nulls/in/input"/>
+    <wf4ever:script>String[] split = input.split("\n");
+Vector nonEmpty = new Vector();
+
+for (int i = 0; i &lt; split.length; i++){
+   if (!(split[i].equals("")))
+   {
+       nonEmpty.add(split[i].trim());
+   }
+}
+
+String[] non_empty = new String[nonEmpty.size()];
+
+for (int i = 0; i &lt; non_empty.length; i ++)
+{
+   non_empty[i] = nonEmpty.elementAt(i);
+}
+
+String output = "";
+
+for (int i = 0; i &lt; non_empty.length; i++)
+{
+	output = output + (String) (non_empty[i] + "\n");
+}</wf4ever:script>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/concat_kegg_genes/in/string2">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>string2</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/remove_duplicate_ids/out/strippedlist&amp;to=processor/merge_patwhay_ids/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_duplicate_ids/out/strippedlist"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_patwhay_ids/in/stringlist"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_patwhay_ids/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#BeanshellScript"/>
+    <rdfs:label>merge_patwhay_ids</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_patwhay_ids/out/concatenated"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_patwhay_ids/in/stringlist"/>
+    <wf4ever:script>String seperatorString = "\n";
+if (seperator != void) {
+	seperatorString = seperator;
+}
+StringBuffer sb = new StringBuffer();
+for (Iterator i = stringlist.iterator(); i.hasNext();) {
+	String item = (String) i.next();
+	sb.append(item);
+	if (i.hasNext()) {
+		sb.append(seperatorString);
+	}
+}
+concatenated = sb.toString();
+</wf4ever:script>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/kegg_pathway_release/out/value&amp;to=processor/binfo/in/db">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/kegg_pathway_release/out/value"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/binfo/in/db"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/pathway_descriptions/out/return">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>return</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/add_uniprot_to_string/out/output&amp;to=processor/Kegg_gene_ids/in/string">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/add_uniprot_to_string/out/output"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/Kegg_gene_ids/in/string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/in/end_position">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>end_position</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/merge_entrez_genes/out/concatenated&amp;to=processor/remove_Nulls/in/input">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_entrez_genes/out/concatenated"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_Nulls/in/input"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.uniprot_swissprot_accession">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>mmusculus_gene_ensembl.uniprot_swissprot_accession</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/Kegg_gene_ids/out/return">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>return</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/Get_pathways/out/pathway_genes">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>pathway_genes</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_nulls_3/out/output">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>output</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/remove_entrez_duplicates/out/strippedlist&amp;to=processor/merge_entrez_genes/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_entrez_duplicates/out/strippedlist"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_entrez_genes/in/stringlist"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_reports/in/stringlist">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>stringlist</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_duplicate_ids/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#BeanshellScript"/>
+    <rdfs:label>remove_duplicate_ids</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_duplicate_ids/out/strippedlist"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_duplicate_ids/in/stringlist"/>
+    <wf4ever:script>List strippedlist = new ArrayList();
+for (Iterator i = stringlist.iterator(); i.hasNext();) {
+	String item = (String) i.next();
+	if (strippedlist.contains(item) == false) {
+		strippedlist.add(item);
+	}
+}
+</wf4ever:script>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/out/mmusculus_gene_ensembl.ensembl_gene_id">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>mmusculus_gene_ensembl.ensembl_gene_id</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/concat_kegg_genes/in/string1">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>string1</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/split_gene_ids/out/output&amp;to=processor/split_for_duplicates/in/string">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/split_gene_ids/out/output"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/split_for_duplicates/in/string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_pathway_list_1/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#BeanshellScript"/>
+    <rdfs:label>merge_pathway_list_1</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_pathway_list_1/out/concatenated"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_pathway_list_1/in/stringlist"/>
+    <wf4ever:script>String seperatorString = "\n";
+if (seperator != void) {
+	seperatorString = seperator;
+}
+StringBuffer sb = new StringBuffer();
+for (Iterator i = stringlist.iterator(); i.hasNext();) {
+	String item = (String) i.next();
+	sb.append(item);
+	if (i.hasNext()) {
+		sb.append(seperatorString);
+	}
+}
+concatenated = sb.toString();
+</wf4ever:script>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/add_uniprot_to_string/in/input">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Input"/>
+    <rdfs:label>input</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/merge_patwhay_ids/out/concatenated&amp;to=processor/remove_pathway_nulls_2/in/input">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_patwhay_ids/out/concatenated"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_pathway_nulls_2/in/input"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/merge_pathway_list_2/out/concatenated&amp;to=processor/split_for_duplicate_pathways/in/string">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_pathway_list_2/out/concatenated"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/split_for_duplicate_pathways/in/string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_pathway_list_2/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#BeanshellScript"/>
+    <rdfs:label>merge_pathway_list_2</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_pathway_list_2/out/concatenated"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_pathway_list_2/in/stringlist"/>
+    <wf4ever:script>String seperatorString = "\n";
+if (seperator != void) {
+	seperatorString = seperator;
+}
+StringBuffer sb = new StringBuffer();
+for (Iterator i = stringlist.iterator(); i.hasNext();) {
+	String item = (String) i.next();
+	sb.append(item);
+	if (i.hasNext()) {
+		sb.append(seperatorString);
+	}
+}
+concatenated = sb.toString();
+</wf4ever:script>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/concat_kegg_genes/out/output&amp;to=processor/split_gene_ids/in/input">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/concat_kegg_genes/out/output"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/split_gene_ids/in/input"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/genes_in_qtl/out/mmusculus_gene_ensembl.ensembl_gene_id&amp;to=processor/mmusculus_gene_ensembl/in/mmusculus_gene_ensembl.ensembl_gene_id_filter">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/genes_in_qtl/out/mmusculus_gene_ensembl.ensembl_gene_id"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/mmusculus_gene_ensembl/in/mmusculus_gene_ensembl.ensembl_gene_id_filter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/merge_kegg_references/out/concatenated">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+    <rdfs:label>concatenated</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/datalink?from=processor/remove_pathway_nulls_2/out/output&amp;to=out/pathway_ids">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#DataLink"/>
+    <wfdesc:hasSource rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/remove_pathway_nulls_2/out/output"/>
+    <wfdesc:hasSink rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/out/pathway_ids"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/split_for_duplicates/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Description"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#BeanshellScript"/>
+    <rdfs:label>split_for_duplicates</rdfs:label>
+    <wfdesc:hasOutput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/split_for_duplicates/out/split"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/split_for_duplicates/in/regex"/>
+    <wfdesc:hasInput rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/workflow/PathwaysandGeneannotationsforQTLregion/processor/split_for_duplicates/in/string"/>
+    <wf4ever:script>List split = new ArrayList();
+if (!string.equals("")) {
+	String regexString = ",";
+	if (regex != void) {
+		regexString = regex;
+	}
+	String[] result = string.split(regexString);
+	for (int i = 0; i &lt; result.length; i++) {
+		split.add(result[i]);
+	}
+}
+</wf4ever:script>
+  </rdf:Description>
+</rdf:RDF>

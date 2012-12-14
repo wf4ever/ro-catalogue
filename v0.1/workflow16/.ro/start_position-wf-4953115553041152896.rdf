@@ -1,0 +1,19 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://purl.org/dc/elements/1.1/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:j.0="http://www.w3.org/ns/openannotation/core/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="">
+    <rdf:type rdf:resource="http://www.w3.org/ns/openannotation/core/Annotation"/>
+    <j.0:annoted rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-04-05T09:33:33.856Z</j.0:annoted>
+    <j.0:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-12-14T10:34:01.698+01:00</j.0:created>
+    <j.0:generator rdf:resource="http://sandbox.wf4ever-project.org/2012/scufl2/t2flowParser"/>
+    <j.0:hasBody rdf:resource="annotation/9990c1ef-759b-4868-ad77-5229a602a510.rdf"/>
+    <j.0:hasTarget rdf:resource="../workflow/PathwaysandGeneannotationsforQTLregion/in/start_position"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="../workflow/PathwaysandGeneannotationsforQTLregion/in/start_position">
+    <format>text/plain</format>
+  </rdf:Description>
+</rdf:RDF>

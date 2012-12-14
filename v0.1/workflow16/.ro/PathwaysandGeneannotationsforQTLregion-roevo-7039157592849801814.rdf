@@ -1,0 +1,17 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:roevo="http://purl.org/wf4ever/roevo#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflow/f3883e0c-4da4-4d6b-bc16-0e2cebad4f65/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/roevo#VersionableResource"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <prov:wasRevisionOf rdf:resource="http://ns.taverna.org.uk/2010/workflow/0b975e74-7374-4716-a3d1-54916704e9fb/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.taverna.org.uk/2010/workflow/0b975e74-7374-4716-a3d1-54916704e9fb/">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/roevo#VersionableResource"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </rdf:Description>
+</rdf:RDF>
