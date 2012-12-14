@@ -15,10 +15,10 @@ echo "--------"
 
 $RO config -v \
   -b $ROBASE \
-  -r http://sandbox.wf4ever-project.org/rodl \
+  -r http://sandbox.wf4ever-project.org/rodl/ROs/ \
   -n "https://www.google.com/accounts/o8/id?id=AItOawl4I-H_ask7ollkwUzMrjTDrgD2oj_Qu2Q" \
-  -t "a5c489aa-b413-47ad-b" \
-  -e "k.m.hettne@lumc.nl"
+  -t "5cef281f-922a-4238-b276-594a118f7acb" \
+  -e "jun.zhao@zoo"
 
 echo "--------"
 
