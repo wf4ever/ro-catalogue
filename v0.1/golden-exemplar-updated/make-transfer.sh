@@ -41,11 +41,9 @@ function usedInput {
 
 @prefix wfprov: <http://purl.org/wf4ever/wfprov#> .
 @prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
-<> wfprov:usedInput "$input" ;
-  a wfprov:WorkflowRun ;
-  wfprov:describedByWorkflow
-      [ wfdesc:hasWorkflowDefinition  <$t2flow> ]
-  .
+[ a wfprov:WorkflowRun ; wfprov:describedByWorkflow
+  [ wfdesc:hasWorkflowDefinition  <$t2flow> ]
+] wfprov:usedInput <$input> .
 EOF
     ro add "annotations/usedInput-$input.ttl"
     ro annotate $input -g "annotations/usedInput-$input.ttl"
@@ -83,7 +81,7 @@ EOF
 # =>
 # $zip prov:wasGeneratedBy [
 #     a wfprov:WorkflowRun ;
-#     wfprov:describedByWorkflow [wfdesc:hasWorkflowDefinition Â$t2flow ].
+#     wfprov:describedByWorkflow [wfdesc:hasWorkflowDefinition Ã‚$t2flow ].
 # (use ro-manager wildcard?)
 
 function linkToWorkflow {
@@ -95,7 +93,7 @@ function linkToWorkflow {
 @prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
 <$prov> prov:wasGeneratedBy [   
      a wfprov:WorkflowRun ;
-     wfprov:describedByWorkflow [wfdesc:hasWorkflowDefinition <$t2flow>] ].
+     wfprov:describedByWorkflow [wfdesc:hasWorkflowDefinition <$t2flow>] ] .
 EOF
     ro add "annotations/linktoWF-$prov.ttl"
     ro annotate $prov -g "annotations/linktoWF-$prov.ttl"

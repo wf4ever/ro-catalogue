@@ -43,7 +43,7 @@ pushd Workflows
     # as ro:Resources
     #mv *wfdesc.ttl ../.ro/
     for t2flow in *t2flow ; do
-        $RO annotate -v $t2flow -g ../.ro/$(echo $t2flow|sed s/.t2flow$/.wfdesc.ttl/)
+        $RO annotate -v $t2flow -g wfdesc/$(echo $t2flow|sed s/.t2flow$/.wfdesc.ttl/)
         $RO annotate -v $t2flow rdf:type 'http://purl.org/wf4ever/rouser#WorkflowDefinition'
     done
 popd
