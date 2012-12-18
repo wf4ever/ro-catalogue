@@ -1,0 +1,82 @@
+@base <http://ns.taverna.org.uk/2010/workflowBundle/c4a53ec6-d774-4b4e-b60f-2899dea1dee7/workflow/Filter_concepts_with/> .
+@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
+@prefix wf4ever: <http://purl.org/wf4ever/wf4ever#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<processor/filterConceptsWithProfile/> a wfdesc:Process , wfdesc:Description , <http://www.w3.org/2002/07/owl#Thing> , wf4ever:SOAPService ;
+	wf4ever:wsdlURI "http://ws.biosemantics.org/ConceptRecognizerService?wsdl"^^<http://www.w3.org/2001/XMLSchema#anyURI> ;
+	rdfs:label "filterConceptsWithProfile" ;
+	wfdesc:hasInput <processor/filterConceptsWithProfile/in/parameters> ;
+	wfdesc:hasOutput <processor/filterConceptsWithProfile/out/parameters> .
+
+<datalink?from=in/Concept_ID&to=processor/filterConceptsWithProfile_input/in/conceptSet> a wfdesc:DataLink ;
+	wfdesc:hasSource <in/Concept_ID> ;
+	wfdesc:hasSink <processor/filterConceptsWithProfile_input/in/conceptSet> .
+
+<datalink?from=processor/filterConceptsWithProfile/out/parameters&to=processor/filterConceptsWithProfile_output/in/input> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/filterConceptsWithProfile/out/parameters> ;
+	wfdesc:hasSink <processor/filterConceptsWithProfile_output/in/input> .
+
+<datalink?from=processor/filterConceptsWithProfile_input/out/output&to=processor/filterConceptsWithProfile/in/parameters> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/filterConceptsWithProfile_input/out/output> ;
+	wfdesc:hasSink <processor/filterConceptsWithProfile/in/parameters> .
+
+<datalink?from=processor/filterConceptsWithProfile_output/out/return&to=processor/filterConceptsWithProfile_return/in/input> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/filterConceptsWithProfile_output/out/return> ;
+	wfdesc:hasSink <processor/filterConceptsWithProfile_return/in/input> .
+
+<datalink?from=processor/filterConceptsWithProfile_return/out/conceptSet&to=out/Concepts_with_profiles> a wfdesc:DataLink ;
+	wfdesc:hasSource <processor/filterConceptsWithProfile_return/out/conceptSet> ;
+	wfdesc:hasSink <out/Concepts_with_profiles> .
+
+<> a wfdesc:Workflow , wfdesc:Description , wfdesc:Process ;
+	rdfs:label "Filter_concepts_with" ;
+	wfdesc:hasInput <in/Concept_ID> ;
+	wfdesc:hasOutput <out/Concepts_with_profiles> ;
+	wfdesc:hasSubProcess <processor/filterConceptsWithProfile/> , <processor/filterConceptsWithProfile_input/> , <processor/filterConceptsWithProfile_output/> , <processor/filterConceptsWithProfile_return/> ;
+	wfdesc:hasDataLink <datalink?from=in/Concept_ID&to=processor/filterConceptsWithProfile_input/in/conceptSet> , <datalink?from=processor/filterConceptsWithProfile/out/parameters&to=processor/filterConceptsWithProfile_output/in/input> , <datalink?from=processor/filterConceptsWithProfile_input/out/output&to=processor/filterConceptsWithProfile/in/parameters> , <datalink?from=processor/filterConceptsWithProfile_output/out/return&to=processor/filterConceptsWithProfile_return/in/input> , <datalink?from=processor/filterConceptsWithProfile_return/out/conceptSet&to=out/Concepts_with_profiles> .
+
+<in/Concept_ID> a wfdesc:Input , wfdesc:Description , wfdesc:Output ;
+	rdfs:label "Concept_ID" .
+
+<out/Concepts_with_profiles> a wfdesc:Output , wfdesc:Description , wfdesc:Input ;
+	rdfs:label "Concepts_with_profiles" .
+
+<processor/filterConceptsWithProfile/in/parameters> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "parameters" .
+
+<processor/filterConceptsWithProfile/out/parameters> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "parameters" .
+
+<processor/filterConceptsWithProfile_input/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "filterConceptsWithProfile_input" ;
+	wfdesc:hasInput <processor/filterConceptsWithProfile_input/in/conceptSet> ;
+	wfdesc:hasOutput <processor/filterConceptsWithProfile_input/out/output> .
+
+<processor/filterConceptsWithProfile_input/in/conceptSet> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "conceptSet" .
+
+<processor/filterConceptsWithProfile_input/out/output> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "output" .
+
+<processor/filterConceptsWithProfile_output/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "filterConceptsWithProfile_output" ;
+	wfdesc:hasInput <processor/filterConceptsWithProfile_output/in/input> ;
+	wfdesc:hasOutput <processor/filterConceptsWithProfile_output/out/return> .
+
+<processor/filterConceptsWithProfile_output/in/input> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "input" .
+
+<processor/filterConceptsWithProfile_output/out/return> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "return" .
+
+<processor/filterConceptsWithProfile_return/> a wfdesc:Process , wfdesc:Description ;
+	rdfs:label "filterConceptsWithProfile_return" ;
+	wfdesc:hasInput <processor/filterConceptsWithProfile_return/in/input> ;
+	wfdesc:hasOutput <processor/filterConceptsWithProfile_return/out/conceptSet> .
+
+<processor/filterConceptsWithProfile_return/in/input> a wfdesc:Input , wfdesc:Description ;
+	rdfs:label "input" .
+
+<processor/filterConceptsWithProfile_return/out/conceptSet> a wfdesc:Output , wfdesc:Description ;
+	rdfs:label "conceptSet" .
