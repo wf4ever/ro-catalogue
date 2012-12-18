@@ -28,4 +28,5 @@ Thumbs.db
 # See: http://en.wikipedia.org/wiki/.DS_Store
 .DS_Store
 
-
+# RO metadata directories (except when explicitly added)
+.ro/
