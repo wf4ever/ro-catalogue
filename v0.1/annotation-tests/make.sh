@@ -47,16 +47,20 @@ $RO annotate -v 20120114-1156-405.jpg title "Trees on frosty morning"
 $RO annotate -v 20120114-1156-405.jpg -g $TESTRO/metadata.rdf
 
 # Annotate external aggregated resource
-$RO annotate -v $EXTURI1 title "More trees"
+$RO annotate -v -d . $EXTURI1 title "More trees"
 
 # Annotate external non-aggregated resource
-$RO annotate -v $EXTURI2 title "README text"
+$RO annotate -v -d . $EXTURI2 title "README text"
 
 # Annotate external aggregated resource via graph
-$RO annotate -v $EXTURI1 -g $TESTRO/metadataext1.rdf
+$RO annotate -v -d . $EXTURI1 -g $TESTRO/metadataext1.rdf
 
 # Annotate external non-agregated resource via graph
-$RO annotate -v $EXTURI2 -g $TESTRO/metadataext2.rdf
+$RO annotate -v -d . $EXTURI2 -g $TESTRO/metadataext2.rdf
+
+# Create annotation on RO using external graph annotations
+#$RO annotate -v . -g $TESTRO/metadataext1.rdf
+#$RO annotate -v . -g $TESTRO/metadataext2.rdf
 
 echo "--------"
 
