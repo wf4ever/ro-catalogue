@@ -30,6 +30,10 @@ $RO config -v \
 #  -n "Test user" \                                      # User name
 #  -e "testuser@example.org"                             # User email
 
+# Remove old RO structure
+
+rm -rf .ro
+
 # show simple directory content
 
 ro create "Year 2 demo features test" -d . -i $RONAME
@@ -61,6 +65,11 @@ ro annotate Notes/Sketch.txt rdf:type roterms:Sketch
 # Annotate selelcted input data
 
 ro link Workflows/TavernaHelloWorld.t2flow roterms:inputSelected Inputs/InputName.txt
+
+# Annotate figure for results presentation results
+
+ro annotate Notes/Results.graffle rdf:type roterms:ResultsPresentation
+ro annotate Notes/Results.png     rdf:type roterms:ResultsPresentation
 
 # Annotate final interpretation/conclusion
 
