@@ -14,7 +14,7 @@ RONAME="golden-exemplar-updated"
 echo "--------"
 
 $RO config -v \
-  -b $ROBASE \
+  -b $ROPATH \
   -r http://sandbox.wf4ever-project.org/rodl/ROs/ \
   -n "https://www.google.com/accounts/o8/id?id=AItOawl4I-H_ask7ollkwUzMrjTDrgD2oj_Qu2Q" \
   -t "5cef281f-922a-4238-b276-594a118f7acb" \
@@ -24,7 +24,7 @@ echo "--------"
 
 rm -rf .ro
 
-$RO create -v "Concept Profile Matching Golden Exemplar Updated" -d . -i concept-profile-matching-golden-exemplar
+$RO create -v "Concept Profile Matching Golden Exemplar Updated" -d . -i $RONAME
 
 $RO add -v -a -d .
 

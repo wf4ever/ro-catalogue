@@ -1,8 +1,6 @@
 
 @prefix wfprov: <http://purl.org/wf4ever/wfprov#> .
 @prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
-<> wfprov:usedInput "Workflows/SNP2KEGG.t2flow" ;
-  a wfprov:WorkflowRun ;
-  wfprov:describedByWorkflow
-      [ wfdesc:hasWorkflowDefinition  <Datasets/top_snps_to_annotate_input.txt> ]
-  .
+[ a wfprov:WorkflowRun ; wfprov:describedByWorkflow
+  [ wfdesc:hasWorkflowDefinition  <Datasets/top_snps_to_annotate_input.txt> ]
+] wfprov:usedInput <Workflows/SNP2KEGG.t2flow> .
