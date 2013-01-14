@@ -1,0 +1,10 @@
+- Minim model to detect broken RO - reference to missing external resource
+- Minim model for hypothesis present in RO
+- Minim model for WF sketch present in RO
+- Minim model for data selection present: for demo, copy of data tagged as WF input data
+- Minim model for final interpretation/conclusion present in RO 
+  (probably an aggregated document tagged as such)  
+  Could include results formatted for presentation, etc.  (May need to discuss details)
+
+[Considered but removed from sequence]
+- Minim model for "final" satisfactory workflow run present and annotated; look for presence of snapshot containing an example run (link to snapshot?)  May need further discussion.

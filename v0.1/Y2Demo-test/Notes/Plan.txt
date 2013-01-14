@@ -1,0 +1,4 @@
+- Create Minim models (see Check-items.txt)
+- Drive creation of sample RO with sample annotations, etc
+- Ruby interface for eval display
+? Ruby interface for snapshotting?
