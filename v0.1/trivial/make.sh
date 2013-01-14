@@ -21,7 +21,9 @@ echo "--------"
 
 rm -rf .ro
 
-$RO create -v "Frosty morning image" -d . -i RO-with-image
+$RO create -v "Trivial RO" -d . -i $RONAME
+
+$RO annotate . dcterms:identifier $RONAME
 
 $RO add -v -a -d .
 
