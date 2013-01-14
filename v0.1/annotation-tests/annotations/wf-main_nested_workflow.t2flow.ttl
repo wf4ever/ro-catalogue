@@ -1,0 +1,4 @@
+@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
+<workflows/main_nested_workflow.t2flow> wfdesc:isDefinitionOf
+  [ a wfdesc:Workflow
+  ] .
