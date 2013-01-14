@@ -44,6 +44,7 @@ function usedInput {
 [ a wfprov:WorkflowRun ; wfprov:describedByWorkflow
   [ wfdesc:hasWorkflowDefinition  <$t2flow> ]
 ] wfprov:usedInput <$input> .
+<$input> wfdesc:hasArtifact <$input> .
 EOF
     ro add "annotations/usedInput-$input.ttl"
     ro annotate $input -g "annotations/usedInput-$input.ttl"

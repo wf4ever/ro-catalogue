@@ -4,3 +4,4 @@
 [ a wfprov:WorkflowRun ; wfprov:describedByWorkflow
   [ wfdesc:hasWorkflowDefinition  <Datasets/top_snps_to_annotate_input.txt> ]
 ] wfprov:usedInput <Workflows/main_nested_workflow.t2flow> .
+<Workflows/main_nested_workflow.t2flow> wfdesc:hasArtifact <Workflows/main_nested_workflow.t2flow> .

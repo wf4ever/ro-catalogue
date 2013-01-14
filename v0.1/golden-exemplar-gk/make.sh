@@ -26,7 +26,7 @@ rm -rf .ro
 
 $RO create -v "Concept Profile Matching Golden Exemplar GK" -d . -i $RONAME
 
-$RO annotate . dcterms:identifier $RONAME
+$RO annotate . rdfs:label $RONAME
 
 $RO add -v -a -d .
 

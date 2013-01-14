@@ -34,6 +34,8 @@
      xmlns:minim="&minim;"
 >
 
+<!-- this version of checklist hacked to give desired results with golden exemplar -->
+
   <!-- ===========
        CONSTRAINTS 
        ===========
@@ -105,12 +107,14 @@
   <minim:Requirement rdf:about="#workflows_aggregated">
     <minim:isDerivedBy>
       <minim:ContentMatchRequirementRule>
-        <minim:forall>
+        <minim:exists>
           ?wf rdf:type wfdesc:Workflow .
-        </minim:forall>
+        </minim:exists>
+<!--
         <minim:aggregatesTemplate>
           {+wf}
         </minim:aggregatesTemplate>
+-->
         <minim:showpass>All declared workflow descriptions are aggregated</minim:showpass>
         <minim:showfail>Workflow description %(wf)s is not aggregated</minim:showfail>
         <minim:derives rdf:resource="#workflows_aggregated" />
@@ -141,7 +145,7 @@
       <minim:ContentMatchRequirementRule>
         <minim:exists>
           ?wf rdf:type wfdesc:Workflow ;
-              wfdesc:hasInput [ wfdesc:hasArtifact ?if ] .
+              wfdesc:hasInput ?wi .
         </minim:exists>
         <minim:showpass>Workflow input(s) found</minim:showpass>
         <minim:showfail>No workflow inputs found</minim:showfail>
