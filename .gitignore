@@ -30,3 +30,8 @@ Thumbs.db
 
 # RO metadata directories (except when explicitly added)
 .ro/
+
+# Other temporary files
+.registries.json
+tmp/
+
