@@ -60,7 +60,7 @@ ro annotate Notes/Hypothesis.txt rdf:type roterms:Hypothesis
 
 # Annotate WF sketch
 
-ro annotate Notes/Sketch.txt rdf:type roterms:Sketch
+ro annotate Notes/Sketch.pptx rdf:type roterms:Sketch
 
 # Annotate selelcted input data
 
