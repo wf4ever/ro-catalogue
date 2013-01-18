@@ -7,86 +7,80 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:ro="http://purl.org/wf4ever/ro#"
 >
-  <rdf:Description rdf:about=".ro/annotations/54c0c7fe-2850-4742-97d3-99de10b4ac31">
-    <ro:annotatesAggregatedResource rdf:resource="Workflows/TavernaHelloWorld.t2flow"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource=".ro/Ann-20130115-0001-TavernaHelloWorld.t2flow.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:about=".ro/annotations/31f50510-9e23-439e-87a5-bb5bd497d329">
-    <ro:annotatesAggregatedResource rdf:resource="Notes/Sketch.pptx"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource=".ro/Ann-20130115-0001-Sketch.pptx.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:about=".ro/annotations/2c3a37f9-2794-4bfc-abd5-6f2a3b5b99c7">
+  <rdf:Description rdf:nodeID="_65284662-6a75-46f5-9c31-59572d30cd9e">
     <ro:annotatesAggregatedResource rdf:resource="Notes/Results.png"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource=".ro/Ann-20130115-0001-Results.png.rdf"/>
+    <ao:body rdf:resource=".ro/Ann-20130118-0001-Results.png.rdf"/>
   </rdf:Description>
-  <rdf:Description rdf:about=".ro/annotations/c7b0d380-d4e5-4f6c-855e-0b55f0fb0b57">
+  <rdf:Description rdf:nodeID="_40908e79-8d9a-4a70-a948-e178cf16d8bd">
     <ro:annotatesAggregatedResource rdf:resource="Notes/Hypothesis.txt"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource=".ro/Ann-20130115-0001-Hypothesis.txt.rdf"/>
+    <ao:body rdf:resource=".ro/Ann-20130118-0001-Hypothesis.txt.rdf"/>
   </rdf:Description>
-  <rdf:Description rdf:about=".ro/annotations/13fdce1a-ff3a-4c71-b7d1-e37f61fc14bf">
-    <ro:annotatesAggregatedResource rdf:resource="Notes/Results.graffle"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource=".ro/Ann-20130115-0001-Results.graffle.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:about=".ro/annotations/56a149fb-4d8b-45a5-9121-ba881ca42ef9">
+  <rdf:Description rdf:nodeID="_10237465-1de7-40f1-b17d-d8c57a2523b1">
     <ro:annotatesAggregatedResource rdf:resource="Notes/Conclusions.txt"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource=".ro/Ann-20130115-0001-Conclusions.txt.rdf"/>
+    <ao:body rdf:resource=".ro/Ann-20130118-0001-Conclusions.txt.rdf"/>
   </rdf:Description>
-  <rdf:Description rdf:about="">
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
-    <ore:aggregates rdf:resource="Outputs/HelloOutput.txt"/>
-    <ore:aggregates rdf:resource=".ro/Ann-20130115-0001-Conclusions.txt.rdf"/>
-    <ore:aggregates rdf:resource="Notes/Sketch.pptx"/>
-    <ore:aggregates rdf:resource=".ro/Ann-20130115-0001-Results.png.rdf"/>
-    <ore:aggregates rdf:resource=".ro/Ann-20130115-0001-Results.graffle.rdf"/>
-    <ore:aggregates rdf:resource=".ro/annotations/c7b0d380-d4e5-4f6c-855e-0b55f0fb0b57"/>
-    <ore:aggregates rdf:resource="Inputs/InputName.txt"/>
-    <ore:aggregates rdf:resource=".ro/annotations/56a149fb-4d8b-45a5-9121-ba881ca42ef9"/>
-    <ore:aggregates rdf:resource="make.sh"/>
-    <ore:aggregates rdf:resource="Notes/Results.png"/>
-    <ore:aggregates rdf:resource="Notes/Check-Items.txt"/>
-    <ore:aggregates rdf:resource=".ro/annotations/31f50510-9e23-439e-87a5-bb5bd497d329"/>
-    <ore:aggregates rdf:resource="HelloWorld-wfdesc.rdf"/>
-    <ore:aggregates rdf:resource="Notes/Hypothesis.txt"/>
-    <ore:aggregates rdf:resource="Notes/Conclusions.txt"/>
-    <ore:aggregates rdf:resource=".ro/annotations/82b26c54-65c4-440d-a1be-a8f9bdba3892"/>
-    <ore:aggregates rdf:resource=".ro/annotations/2c3a37f9-2794-4bfc-abd5-6f2a3b5b99c7"/>
-    <ore:aggregates rdf:resource=".ro/annotations/54c0c7fe-2850-4742-97d3-99de10b4ac31"/>
-    <ore:aggregates rdf:resource=".ro/Ann-20130115-0001-TavernaHelloWorld.t2flow.rdf"/>
-    <ore:aggregates rdf:resource="Workflows/TavernaHelloWorld.t2flow"/>
-    <ore:aggregates rdf:resource=".ro/Ann-20130115-0001-Y2Demo-test.rdf"/>
-    <ore:aggregates rdf:resource=".ro/annotations/6d2f2320-e2e4-4472-911c-cd2e9ccb15b6"/>
-    <ore:aggregates rdf:resource="Notes/Plan.txt"/>
-    <ore:aggregates rdf:resource=".ro/Ann-20130115-0001-Sketch.pptx.rdf"/>
-    <ore:aggregates rdf:resource=".ro/annotations/13fdce1a-ff3a-4c71-b7d1-e37f61fc14bf"/>
-    <ore:aggregates rdf:resource=".ro/Ann-20130115-0001-Hypothesis.txt.rdf"/>
-    <ore:aggregates rdf:resource="Notes/Results.graffle"/>
-    <ore:aggregates rdf:resource="README.txt"/>
-    <ore:aggregates rdf:resource=".ro/annotations/65d1835a-e991-4967-aef0-cff4dbe84c47"/>
-    <dcterms:title>Year 2 demo features test</dcterms:title>
-    <dcterms:identifier>Y2Demo-test</dcterms:identifier>
-    <dcterms:creator>Test user</dcterms:creator>
-    <dcterms:created>2013-01-15T10:40:40</dcterms:created>
-    <dcterms:description>Year 2 demo features test</dcterms:description>
-  </rdf:Description>
-  <rdf:Description rdf:about=".ro/annotations/82b26c54-65c4-440d-a1be-a8f9bdba3892">
-    <ro:annotatesAggregatedResource rdf:resource="Workflows/TavernaHelloWorld.t2flow"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource="HelloWorld-wfdesc.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:about=".ro/annotations/65d1835a-e991-4967-aef0-cff4dbe84c47">
+  <rdf:Description rdf:nodeID="_b228e9f1-e9a2-42a0-96e1-c4413724ea89">
     <ro:annotatesAggregatedResource rdf:resource=""/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
     <ao:body rdf:resource=".ro/manifest.rdf"/>
   </rdf:Description>
-  <rdf:Description rdf:about=".ro/annotations/6d2f2320-e2e4-4472-911c-cd2e9ccb15b6">
+  <rdf:Description rdf:nodeID="_f862c1d5-3da9-43c4-8176-0c49dcd9cce5">
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/TavernaHelloWorld.t2flow"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ao:body rdf:resource="HelloWorld-wfdesc.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
+    <dcterms:title>Year 2 demo features test</dcterms:title>
+    <dcterms:identifier>Y2Demo-test</dcterms:identifier>
+    <dcterms:description>Year 2 demo features test</dcterms:description>
+    <dcterms:creator>Test user</dcterms:creator>
+    <ore:aggregates rdf:resource="Inputs/InputName.txt"/>
+    <ore:aggregates rdf:resource="workflow-experiment-checklist.rdf"/>
+    <ore:aggregates rdf:resource="Outputs/HelloOutput.txt"/>
+    <ore:aggregates rdf:resource="HelloWorld-wfdesc.rdf"/>
+    <ore:aggregates rdf:resource="Notes/Results.graffle"/>
+    <ore:aggregates rdf:nodeID="_eb1cbf2a-993b-4f55-8c29-af1cb160deb6"/>
+    <ore:aggregates rdf:nodeID="_f862c1d5-3da9-43c4-8176-0c49dcd9cce5"/>
+    <ore:aggregates rdf:resource="README.txt"/>
+    <ore:aggregates rdf:nodeID="_65284662-6a75-46f5-9c31-59572d30cd9e"/>
+    <ore:aggregates rdf:nodeID="_03b7abe2-364f-4cff-aac2-cca985a0b7e4"/>
+    <ore:aggregates rdf:resource="Notes/Hypothesis.txt"/>
+    <ore:aggregates rdf:resource="make.sh"/>
+    <ore:aggregates rdf:nodeID="_8d3b4f55-abd7-4ac1-b87c-10acba987356"/>
+    <ore:aggregates rdf:resource="Notes/Conclusions.txt"/>
+    <ore:aggregates rdf:resource="Notes/Sketch.pptx"/>
+    <ore:aggregates rdf:nodeID="_10237465-1de7-40f1-b17d-d8c57a2523b1"/>
+    <ore:aggregates rdf:nodeID="_a38f91ec-3597-4f15-aab1-c6fd4534cbe4"/>
+    <ore:aggregates rdf:resource="Notes/Check-Items.txt"/>
+    <ore:aggregates rdf:resource="Notes/Results.png"/>
+    <ore:aggregates rdf:resource="Workflows/TavernaHelloWorld.t2flow"/>
+    <ore:aggregates rdf:nodeID="_40908e79-8d9a-4a70-a948-e178cf16d8bd"/>
+    <ore:aggregates rdf:nodeID="_b228e9f1-e9a2-42a0-96e1-c4413724ea89"/>
+    <ore:aggregates rdf:resource="Notes/Plan.txt"/>
+    <dcterms:created>2013-01-18T10:21:24</dcterms:created>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_a38f91ec-3597-4f15-aab1-c6fd4534cbe4">
+    <ro:annotatesAggregatedResource rdf:resource="Notes/Sketch.pptx"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ao:body rdf:resource=".ro/Ann-20130118-0001-Sketch.pptx.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_eb1cbf2a-993b-4f55-8c29-af1cb160deb6">
     <ro:annotatesAggregatedResource rdf:resource=""/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <ao:body rdf:resource=".ro/Ann-20130115-0001-Y2Demo-test.rdf"/>
+    <ao:body rdf:resource=".ro/Ann-20130118-0001-Y2Demo-test.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_8d3b4f55-abd7-4ac1-b87c-10acba987356">
+    <ro:annotatesAggregatedResource rdf:resource="Workflows/TavernaHelloWorld.t2flow"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ao:body rdf:resource=".ro/Ann-20130118-0001-TavernaHelloWorld.t2flow.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_03b7abe2-364f-4cff-aac2-cca985a0b7e4">
+    <ro:annotatesAggregatedResource rdf:resource="Notes/Results.graffle"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ao:body rdf:resource=".ro/Ann-20130118-0001-Results.graffle.rdf"/>
   </rdf:Description>
 </rdf:RDF>
