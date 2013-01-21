@@ -1,0 +1,30 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://purl.org/wf4ever/ro#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.1="http://www.openarchives.org/ore/terms/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="entries/e20751a1-9499-4e07-9700-5ef690547b18">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#FolderEntry"/>
+    <j.1:proxyIn rdf:resource=""/>
+    <j.1:proxyFor rdf:resource="Mining_the_Kegg_path.wfbundle"/>
+    <j.0:entryName>Mining_the_Kegg_path.wfbundle</j.0:entryName>
+  </rdf:Description>
+  <rdf:Description rdf:about="../../..">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
+    <j.1:isDescribedBy rdf:resource="../../../.ro/manifest.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="Mining_the_Kegg_path.wfbundle">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <j.1:isAggregatedBy rdf:resource=""/>
+  </rdf:Description>
+  <rdf:Description rdf:about="">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Folder"/>
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+    <j.1:isDescribedBy rdf:resource="main.rdf"/>
+    <j.1:aggregates rdf:resource="Mining_the_Kegg_path.wfbundle"/>
+    <j.1:isAggregatedBy rdf:resource="../../.."/>
+  </rdf:Description>
+</rdf:RDF>
