@@ -1,0 +1,2 @@
+Our hypothesis is that genes involved in imflammation pathways are involved in the onset of metabolic syndrome. To test this hypothesis we explore genes derived from genome-metabolite associations in a population in the Netherlands, and the pathways that they are implicated in.
+

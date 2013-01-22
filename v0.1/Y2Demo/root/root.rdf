@@ -5,45 +5,38 @@
     xmlns:j.1="http://www.openarchives.org/ore/terms/"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
-  <rdf:Description rdf:about="biblio">
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
-    <j.1:isAggregatedBy rdf:resource=""/>
-  </rdf:Description>
-  <rdf:Description rdf:about="..">
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
-    <j.1:isDescribedBy rdf:resource="../.ro/manifest.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="entries/dad6568a-791b-4146-8e41-94406cce3165">
-    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#FolderEntry"/>
-    <j.1:proxyIn rdf:resource=""/>
-    <j.1:proxyFor rdf:resource="workflows"/>
-    <j.0:entryName>workflows/</j.0:entryName>
-  </rdf:Description>
-  <rdf:Description rdf:about="entries/59cd7d56-f791-4792-9b7e-e0d7ada1be4a">
+  <rdf:Description rdf:about="entries/0d8637bf-9469-4df3-9067-cd0e66a5c456">
     <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#FolderEntry"/>
     <j.1:proxyIn rdf:resource=""/>
     <j.1:proxyFor rdf:resource="config"/>
     <j.0:entryName>config/</j.0:entryName>
   </rdf:Description>
-  <rdf:Description rdf:about="workflows">
+  <rdf:Description rdf:about="biblio">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <j.1:isAggregatedBy rdf:resource=""/>
   </rdf:Description>
-  <rdf:Description rdf:about="entries/16ad780e-bd3a-4819-af2c-6f27a7eb021c">
-    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#FolderEntry"/>
-    <j.1:proxyIn rdf:resource=""/>
-    <j.1:proxyFor rdf:resource="datasets"/>
-    <j.0:entryName>datasets/</j.0:entryName>
-  </rdf:Description>
-  <rdf:Description rdf:about="entries/ead0d5c9-880f-48e7-a5cb-d7b4bda39389">
+  <rdf:Description rdf:about="entries/3330665a-541f-4eaa-8159-5b867635e8e6">
     <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#FolderEntry"/>
     <j.1:proxyIn rdf:resource=""/>
     <j.1:proxyFor rdf:resource="biblio"/>
     <j.0:entryName>biblio/</j.0:entryName>
+  </rdf:Description>
+  <rdf:Description rdf:about="..">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
+    <j.1:isDescribedBy rdf:resource="../.ro/manifest.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="workflows">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <j.1:isAggregatedBy rdf:resource=""/>
+  </rdf:Description>
+  <rdf:Description rdf:about="entries/a14b405d-669b-4922-8a14-6cd368c05dd0">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#FolderEntry"/>
+    <j.1:proxyIn rdf:resource=""/>
+    <j.1:proxyFor rdf:resource="datasets"/>
+    <j.0:entryName>datasets/</j.0:entryName>
   </rdf:Description>
   <rdf:Description rdf:about="">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Folder"/>
@@ -58,6 +51,13 @@
   <rdf:Description rdf:about="config">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <j.1:isAggregatedBy rdf:resource=""/>
+  </rdf:Description>
+  <rdf:Description rdf:about="entries/4bdcce88-96ff-45bb-903f-25b810cbee85">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#FolderEntry"/>
+    <j.1:proxyIn rdf:resource=""/>
+    <j.1:proxyFor rdf:resource="workflows"/>
+    <j.0:entryName>workflows/</j.0:entryName>
   </rdf:Description>
   <rdf:Description rdf:about="datasets">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>

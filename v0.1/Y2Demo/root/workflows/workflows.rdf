@@ -9,20 +9,6 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
     <j.1:isDescribedBy rdf:resource="../../.ro/manifest.rdf"/>
   </rdf:Description>
-  <rdf:Description rdf:about="entries/4a4888ce-3c02-464d-8d91-f88ff5f23b68">
-    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#FolderEntry"/>
-    <j.1:proxyIn rdf:resource=""/>
-    <j.1:proxyFor rdf:resource="components"/>
-    <j.0:entryName>components/</j.0:entryName>
-  </rdf:Description>
-  <rdf:Description rdf:about="entries/899eca53-15ff-4eb4-8034-1da6b031dbf3">
-    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#FolderEntry"/>
-    <j.1:proxyIn rdf:resource=""/>
-    <j.1:proxyFor rdf:resource="nested"/>
-    <j.0:entryName>nested/</j.0:entryName>
-  </rdf:Description>
   <rdf:Description rdf:about="">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Folder"/>
     <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
@@ -32,7 +18,14 @@
     <j.1:aggregates rdf:resource="nested"/>
     <j.1:isAggregatedBy rdf:resource="../.."/>
   </rdf:Description>
-  <rdf:Description rdf:about="entries/f69a5321-4a2a-4f78-9aca-b579fb1f90d8">
+  <rdf:Description rdf:about="entries/bbc726a7-cdf6-4ef0-9bcf-a676cd353e57">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#FolderEntry"/>
+    <j.1:proxyIn rdf:resource=""/>
+    <j.1:proxyFor rdf:resource="components"/>
+    <j.0:entryName>components/</j.0:entryName>
+  </rdf:Description>
+  <rdf:Description rdf:about="entries/236d87ca-ef90-4082-a416-32043d6ecd2a">
     <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#FolderEntry"/>
     <j.1:proxyIn rdf:resource=""/>
@@ -46,6 +39,13 @@
   <rdf:Description rdf:about="components">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <j.1:isAggregatedBy rdf:resource=""/>
+  </rdf:Description>
+  <rdf:Description rdf:about="entries/4381bb24-7019-4e00-a1a7-43d47e3cc688">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#FolderEntry"/>
+    <j.1:proxyIn rdf:resource=""/>
+    <j.1:proxyFor rdf:resource="nested"/>
+    <j.0:entryName>nested/</j.0:entryName>
   </rdf:Description>
   <rdf:Description rdf:about="nested">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>

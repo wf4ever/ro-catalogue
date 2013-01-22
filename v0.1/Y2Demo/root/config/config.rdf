@@ -5,30 +5,9 @@
     xmlns:j.1="http://www.openarchives.org/ore/terms/"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
-  <rdf:Description rdf:about="entries/595534c1-1f37-47fa-8f31-1e4c0cccddb1">
-    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#FolderEntry"/>
-    <j.1:proxyIn rdf:resource=""/>
-    <j.1:proxyFor rdf:resource="web%20services"/>
-    <j.0:entryName>web services/</j.0:entryName>
-  </rdf:Description>
-  <rdf:Description rdf:about="entries/817b6b6c-12f6-4c02-9928-85d187459b53">
-    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#FolderEntry"/>
-    <j.1:proxyIn rdf:resource=""/>
-    <j.1:proxyFor rdf:resource="software"/>
-    <j.0:entryName>software/</j.0:entryName>
-  </rdf:Description>
   <rdf:Description rdf:about="scripts">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <j.1:isAggregatedBy rdf:resource=""/>
-  </rdf:Description>
-  <rdf:Description rdf:about="entries/21a5cd64-c43c-4b43-a4ec-76c4f47b9443">
-    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#FolderEntry"/>
-    <j.1:proxyIn rdf:resource=""/>
-    <j.1:proxyFor rdf:resource="setup"/>
-    <j.0:entryName>setup/</j.0:entryName>
   </rdf:Description>
   <rdf:Description rdf:about="setup">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
@@ -38,9 +17,23 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
     <j.1:isDescribedBy rdf:resource="../../.ro/manifest.rdf"/>
   </rdf:Description>
+  <rdf:Description rdf:about="entries/2fce1984-7d84-442d-a3ab-bff7c2e37a17">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#FolderEntry"/>
+    <j.1:proxyIn rdf:resource=""/>
+    <j.1:proxyFor rdf:resource="setup"/>
+    <j.0:entryName>setup/</j.0:entryName>
+  </rdf:Description>
   <rdf:Description rdf:about="web%20services">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <j.1:isAggregatedBy rdf:resource=""/>
+  </rdf:Description>
+  <rdf:Description rdf:about="entries/e0186450-5665-465f-b9b7-a6d71c41cfc6">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#FolderEntry"/>
+    <j.1:proxyIn rdf:resource=""/>
+    <j.1:proxyFor rdf:resource="software"/>
+    <j.0:entryName>software/</j.0:entryName>
   </rdf:Description>
   <rdf:Description rdf:about="">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Folder"/>
@@ -52,15 +45,22 @@
     <j.1:aggregates rdf:resource="web%20services"/>
     <j.1:isAggregatedBy rdf:resource="../.."/>
   </rdf:Description>
-  <rdf:Description rdf:about="entries/26a433dd-7bad-430b-b550-efff55b26b7d">
+  <rdf:Description rdf:about="software">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <j.1:isAggregatedBy rdf:resource=""/>
+  </rdf:Description>
+  <rdf:Description rdf:about="entries/41f44b92-affe-402d-92d9-2a8bd80d0374">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#FolderEntry"/>
+    <j.1:proxyIn rdf:resource=""/>
+    <j.1:proxyFor rdf:resource="web%20services"/>
+    <j.0:entryName>web services/</j.0:entryName>
+  </rdf:Description>
+  <rdf:Description rdf:about="entries/ede3d245-4373-4d57-a44d-56508525b11e">
     <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#FolderEntry"/>
     <j.1:proxyIn rdf:resource=""/>
     <j.1:proxyFor rdf:resource="scripts"/>
     <j.0:entryName>scripts/</j.0:entryName>
-  </rdf:Description>
-  <rdf:Description rdf:about="software">
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
-    <j.1:isAggregatedBy rdf:resource=""/>
   </rdf:Description>
 </rdf:RDF>

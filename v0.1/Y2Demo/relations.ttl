@@ -1,0 +1,18 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix roterms:  <http://purl.org/wf4ever/roterms#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<Hypothesis.txt>
+      a       roterms:Hypothesis .
+
+<conclusion.pdf>
+      a       roterms:Conclusions .
+
+<root/workflows/main/Mining_the_Kegg_path.wfbundle>
+      roterms:inputSelected
+              <datasetmarkers_hgvrs487.txt> .
+
+<workflow_sketch_final.jpg>
+      a       roterms:Sketch .
