@@ -37,6 +37,7 @@
   <wfdesc:Workflow rdf:about="Workflows/TavernaHelloWorld.t2flow">
     <rdfs:label>Hello World workflow</rdfs:label>
     <rdfs:comment>Reads name from input file and write hello message to output file</rdfs:comment>
+    <wfdesc:hasWorkflowDefinition rdf:resource="Workflows/TavernaHelloWorld.t2flow" />
 
     <wfdesc:hasInput>
       <wfdesc:Input>
