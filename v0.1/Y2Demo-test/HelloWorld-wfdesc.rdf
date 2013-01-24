@@ -14,22 +14,24 @@
     <!ENTITY ro      "http://purl.org/wf4ever/ro#" >
     <!ENTITY wfprov  "http://purl.org/wf4ever/wfprov#" >
     <!ENTITY wfdesc  "http://purl.org/wf4ever/wfdesc#" >
+    <!ENTITY wf4ever "http://purl.org/wf4ever/wf4ever#" >
 ]>
 
 <rdf:RDF xmlns=""
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:rdfg="http://www.w3.org/2004/03/trix/rdfg-1/"
-     xmlns:ore="http://www.openarchives.org/ore/terms/"
-     xmlns:ao="http://purl.org/ao/"
-     xmlns:dcterms="http://purl.org/dc/terms/"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:ro="http://purl.org/wf4ever/ro#"
-     xmlns:wfprov="http://purl.org/wf4ever/wfprov#"
-     xmlns:wfdesc="http://purl.org/wf4ever/wfdesc#"
+     xmlns:rdf="&rdf;"
+     xmlns:rdfs="&rdfs;"
+     xmlns:owl="&owl;"
+     xmlns:xsd="&xsd;"
+     xmlns:xml="&xml;"
+     xmlns:rdfg="&rdfg;"
+     xmlns:ore="&ore;"
+     xmlns:ao="&ao;"
+     xmlns:dcterms="&dcterms;"
+     xmlns:foaf="&foaf;"
+     xmlns:ro="&ro;"
+     xmlns:wfprov="&wfprov;"
+     xmlns:wfdesc="&wfdesc;"
+     xmlns:wf4ever="&wf4ever;"
 >
 
   <!-- Workflow instance -->
@@ -56,6 +58,20 @@
         <rdfs:label>Workflow output file</rdfs:label>
       </wfdesc:Output>
     </wfdesc:hasOutput>
+
+    <wfdesc:hasSubProcess>
+      <wfdesc:Process rdf:about="Workflows/HelloWorld/SubProcess1">
+        <rdfs:label>Web service sub-process</rdfs:label>
+        <wf4ever:serviceURI>http://soap.genome.jp/KEGG.wsdl</wf4ever:serviceURI>
+      </wfdesc:Process>
+    </wfdesc:hasSubProcess>
+
+    <wfdesc:hasSubProcess>
+      <wfdesc:Process rdf:about="Workflows/HelloWorld/SubProcess2">
+        <rdfs:label>WSDL-described sub-process</rdfs:label>
+        <wf4ever:wsdlURI>http://soap.genome.jp/KEGG.wsdl</wf4ever:wsdlURI>
+      </wfdesc:Process>
+    </wfdesc:hasSubProcess>
 
   </wfdesc:Workflow>
 
