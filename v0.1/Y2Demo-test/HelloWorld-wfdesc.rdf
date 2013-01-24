@@ -36,18 +36,24 @@
 
   <wfdesc:Workflow rdf:about="Workflows/TavernaHelloWorld.t2flow">
     <rdfs:label>Hello World workflow</rdfs:label>
+    <dcterms:title>Hello World workflow</dcterms:title>
     <rdfs:comment>Reads name from input file and write hello message to output file</rdfs:comment>
+    <dcterms:description>
+      Reads name from input file and write hello message to output file
+    </dcterms:description>
     <wfdesc:hasWorkflowDefinition rdf:resource="Workflows/TavernaHelloWorld.t2flow" />
 
     <wfdesc:hasInput>
       <wfdesc:Input>
         <wfdesc:hasArtifact rdf:resource="Inputs/InputName.txt" />
+        <rdfs:label>Workflow input file</rdfs:label>
       </wfdesc:Input>
     </wfdesc:hasInput>
 
     <wfdesc:hasOutput>
       <wfdesc:Output>
         <wfdesc:hasArtifact rdf:resource="Outputs/HelloOutput.txt" />
+        <rdfs:label>Workflow output file</rdfs:label>
       </wfdesc:Output>
     </wfdesc:hasOutput>
 
