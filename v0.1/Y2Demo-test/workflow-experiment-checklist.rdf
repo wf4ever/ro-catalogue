@@ -96,8 +96,8 @@
     <minim:hasMustRequirement   rdf:resource="#WF_accessible" />
     <!--
     -->
-    <minim:hasMustRequirement   rdf:resource="#WF_has_input" />
     <!--
+    <minim:hasMustRequirement   rdf:resource="#WF_has_input" />
     <minim:hasMayRequirement   rdf:resource="#WF_has_input_label" />
     <minim:hasMustRequirement   rdf:resource="#WF_inputs_agregated" />
     -->
