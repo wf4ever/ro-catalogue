@@ -17,23 +17,16 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
     <j.1:isDescribedBy rdf:resource="../../.ro/manifest.rdf"/>
   </rdf:Description>
-  <rdf:Description rdf:about="entries/2fce1984-7d84-442d-a3ab-bff7c2e37a17">
-    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#FolderEntry"/>
-    <j.1:proxyIn rdf:resource=""/>
-    <j.1:proxyFor rdf:resource="setup"/>
-    <j.0:entryName>setup/</j.0:entryName>
-  </rdf:Description>
-  <rdf:Description rdf:about="web%20services">
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
-    <j.1:isAggregatedBy rdf:resource=""/>
-  </rdf:Description>
-  <rdf:Description rdf:about="entries/e0186450-5665-465f-b9b7-a6d71c41cfc6">
+  <rdf:Description rdf:about="entries/42f091bd-840d-4075-8577-a9b6cc820c76">
     <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#FolderEntry"/>
     <j.1:proxyIn rdf:resource=""/>
     <j.1:proxyFor rdf:resource="software"/>
     <j.0:entryName>software/</j.0:entryName>
+  </rdf:Description>
+  <rdf:Description rdf:about="web%20services">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <j.1:isAggregatedBy rdf:resource=""/>
   </rdf:Description>
   <rdf:Description rdf:about="">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Folder"/>
@@ -45,22 +38,29 @@
     <j.1:aggregates rdf:resource="web%20services"/>
     <j.1:isAggregatedBy rdf:resource="../.."/>
   </rdf:Description>
-  <rdf:Description rdf:about="software">
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
-    <j.1:isAggregatedBy rdf:resource=""/>
-  </rdf:Description>
-  <rdf:Description rdf:about="entries/41f44b92-affe-402d-92d9-2a8bd80d0374">
+  <rdf:Description rdf:about="entries/afabc3a4-b963-47c8-b359-da0dcba8a779">
     <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#FolderEntry"/>
     <j.1:proxyIn rdf:resource=""/>
-    <j.1:proxyFor rdf:resource="web%20services"/>
-    <j.0:entryName>web services/</j.0:entryName>
+    <j.1:proxyFor rdf:resource="setup"/>
+    <j.0:entryName>setup/</j.0:entryName>
   </rdf:Description>
-  <rdf:Description rdf:about="entries/ede3d245-4373-4d57-a44d-56508525b11e">
+  <rdf:Description rdf:about="entries/d30e3deb-44e7-4380-ae24-7bb45b39f9a1">
     <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#FolderEntry"/>
     <j.1:proxyIn rdf:resource=""/>
     <j.1:proxyFor rdf:resource="scripts"/>
     <j.0:entryName>scripts/</j.0:entryName>
+  </rdf:Description>
+  <rdf:Description rdf:about="software">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    <j.1:isAggregatedBy rdf:resource=""/>
+  </rdf:Description>
+  <rdf:Description rdf:about="entries/a8cc0e7a-c16a-405f-bade-c81c5ad6a0b6">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#FolderEntry"/>
+    <j.1:proxyIn rdf:resource=""/>
+    <j.1:proxyFor rdf:resource="web%20services"/>
+    <j.0:entryName>web services/</j.0:entryName>
   </rdf:Description>
 </rdf:RDF>

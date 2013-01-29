@@ -20,7 +20,7 @@
     <j.1:aggregates rdf:resource="Mining_the_Kegg_path.wfbundle"/>
     <j.1:isAggregatedBy rdf:resource="../../.."/>
   </rdf:Description>
-  <rdf:Description rdf:about="entries/488d5d75-b669-4f3d-85a5-60f6c688c451">
+  <rdf:Description rdf:about="entries/52b778ec-ffc6-44a2-bdce-37d41a06c02c">
     <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#FolderEntry"/>
     <j.1:proxyIn rdf:resource=""/>

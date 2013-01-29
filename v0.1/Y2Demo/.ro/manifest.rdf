@@ -7,51 +7,87 @@
     xmlns:j.2="http://www.openarchives.org/ore/terms/"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
-  <rdf:Description rdf:about="proxies/0f142bbe-cdcc-4436-b967-cdc4875a4b03">
-    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
-    <j.2:proxyIn rdf:resource=".."/>
-    <j.2:proxyFor rdf:resource="../root/config"/>
-  </rdf:Description>
   <rdf:Description rdf:about="../datasetmarkers_hgvrs487.txt">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-22T08:40:15.235Z</j.3:created>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:36:26.98Z</j.3:created>
     <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
     <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">datasetmarkers_hgvrs487.txt</j.0:name>
     <j.0:filesize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">157</j.0:filesize>
     <j.0:checksum rdf:resource="urn:MD5:06b88f2d61f803dd5ea3c9c265a26c5d"/>
   </rdf:Description>
+  <rdf:Description rdf:about="proxies/c15fd961-8490-435c-91cb-788295a8e012">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+    <j.2:proxyIn rdf:resource=".."/>
+    <j.2:proxyFor rdf:resource="../root/datasets/inputs"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="annotations/c13ea1cd-ab35-4ea9-becf-2f1824bbc12a">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-28T12:59:57.72Z</j.3:created>
+    <j.3:creator rdf:resource="http://example.org/public"/>
+    <j.1:body rdf:resource="../cea0cc5d-9dcc-474a-8794-d8d8c031f5fa"/>
+    <j.0:annotatesAggregatedResource rdf:resource=".."/>
+  </rdf:Description>
+  <rdf:Description rdf:about="annotations/57f1db4e-69fd-4743-8e3b-22089d285d98">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:35:32.627Z</j.3:created>
+    <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
+    <j.1:body rdf:resource="Mining_the_Kegg_path.wfbundle-link-7963549988581041147.rdf"/>
+    <j.0:annotatesAggregatedResource rdf:resource="../root/workflows/main/Mining_the_Kegg_path.wfbundle"/>
+  </rdf:Description>
   <rdf:Description rdf:about="../root/workflows/main">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Folder"/>
     <j.2:isDescribedBy rdf:resource="../root/workflows/main/main.rdf"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-21T13:48:45.133Z</j.3:created>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:35:06.783Z</j.3:created>
     <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
   </rdf:Description>
   <rdf:Description rdf:about="../root/config/software">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Folder"/>
     <j.2:isDescribedBy rdf:resource="../root/config/software/software.rdf"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-21T13:48:40.088Z</j.3:created>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:35:02.35Z</j.3:created>
     <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="proxies/68b5f6e4-9325-46bf-92ed-e853fd9423eb">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+    <j.2:proxyIn rdf:resource=".."/>
+    <j.2:proxyFor rdf:resource="../root/config/web%20services"/>
   </rdf:Description>
   <rdf:Description rdf:about="../root/biblio">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Folder"/>
     <j.2:isDescribedBy rdf:resource="../root/biblio/biblio.rdf"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-21T13:48:36.193Z</j.3:created>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:34:59.329Z</j.3:created>
     <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="proxies/da6ac43e-1603-4cce-a34a-e63ee961e536">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+    <j.2:proxyIn rdf:resource=".."/>
+    <j.2:proxyFor rdf:resource="../datasetmarkers_hgvrs487.txt"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="Mining_the_Kegg_path.wfbundle-roevo-8271687465233241643.rdf">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:35:28.119Z</j.3:created>
+    <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="annotations/6a0676a3-902e-4c2a-b55f-8b870c6ef32c">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-28T10:01:10.671Z</j.3:created>
+    <j.3:creator rdf:resource="http://wf4ever-test.myopenid.com/"/>
+    <j.1:body rdf:resource="../c68cb4be-69fd-4e09-bd18-89a21ced7c82"/>
+    <j.0:annotatesAggregatedResource rdf:resource=".."/>
   </rdf:Description>
   <rdf:Description rdf:about="../root/datasets/inputs">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Folder"/>
     <j.2:isDescribedBy rdf:resource="../root/datasets/inputs/inputs.rdf"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-21T13:48:41.987Z</j.3:created>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:35:04.074Z</j.3:created>
     <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
   </rdf:Description>
   <rdf:Description rdf:about="..">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
     <j.2:isDescribedBy rdf:resource="manifest.rdf"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-21T13:48:28.127Z</j.3:created>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:34:56.896Z</j.3:created>
     <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
     <j.2:aggregates rdf:resource="evo_info.ttl"/>
     <j.2:aggregates rdf:resource="../root"/>
@@ -71,366 +107,358 @@
     <j.2:aggregates rdf:resource="../root/workflows/main"/>
     <j.2:aggregates rdf:resource="../root/workflows/nested"/>
     <j.2:aggregates rdf:resource="../root/workflows/main/Mining_the_Kegg_path.wfbundle"/>
-    <j.2:aggregates rdf:resource="annotations/f6e727f8-5dfe-4ed4-b030-b8a0ad3e19c2"/>
-    <j.2:aggregates rdf:resource="Mining_the_Kegg_path.wfbundle-wf-6456568665501906248.rdf"/>
-    <j.2:aggregates rdf:resource="annotations/cc9c3b3a-9270-4441-bd2f-ed5e781b2bac"/>
-    <j.2:aggregates rdf:resource="Mining_the_Kegg_path.wfbundle-wf-5888580629669076528.rdf"/>
-    <j.2:aggregates rdf:resource="annotations/a218e28c-5f9d-424c-9e02-23c49f5d4077"/>
-    <j.2:aggregates rdf:resource="Mining_the_Kegg_path.wfbundle-wf-8787218933487439060.rdf"/>
-    <j.2:aggregates rdf:resource="annotations/d260afaa-bc74-45e7-8adf-0426763c98c6"/>
-    <j.2:aggregates rdf:resource="Mining_the_Kegg_path.wfbundle-wfdesc-6015952682888643799.rdf"/>
-    <j.2:aggregates rdf:resource="annotations/6ac9900d-43bd-4e8b-837a-54a3951b6666"/>
-    <j.2:aggregates rdf:resource="Mining_the_Kegg_path.wfbundle-roevo-7692522512332978791.rdf"/>
-    <j.2:aggregates rdf:resource="annotations/ab6a5ed5-99bf-49c4-bf2d-205da6e54174"/>
-    <j.2:aggregates rdf:resource="Mining_the_Kegg_path.wfbundle-link-8750784334472896495.rdf"/>
-    <j.2:aggregates rdf:resource="annotations/459d1777-31c3-43f2-8330-4ec66d682a7d"/>
     <j.2:aggregates rdf:resource="../conclusion.pdf"/>
     <j.2:aggregates rdf:resource="../Hypothesis.txt"/>
     <j.2:aggregates rdf:resource="../workflow_sketch_final.jpg"/>
     <j.2:aggregates rdf:resource="../datasetmarkers_hgvrs487.txt"/>
     <j.2:aggregates rdf:resource="../relations.ttl"/>
-    <j.2:aggregates rdf:resource="annotations/d01a881b-ac03-468d-99f9-74e8378b5969"/>
+    <j.2:aggregates rdf:resource="annotations/b047be3f-81fb-41a7-bcc7-2b46fce65fd5"/>
+    <j.2:aggregates rdf:resource="Mining_the_Kegg_path.wfbundle-wf-9110714213388219663.rdf"/>
+    <j.2:aggregates rdf:resource="annotations/c4617434-d985-4d35-acad-91a9d5a743ec"/>
+    <j.2:aggregates rdf:resource="Mining_the_Kegg_path.wfbundle-wf-7911805585689213657.rdf"/>
+    <j.2:aggregates rdf:resource="annotations/2aae93b7-ca5d-41b6-8254-c7d2d2090a8f"/>
+    <j.2:aggregates rdf:resource="Mining_the_Kegg_path.wfbundle-wf-7826025313386903656.rdf"/>
+    <j.2:aggregates rdf:resource="annotations/08c831d3-9981-4efb-a260-a89e89548e0e"/>
+    <j.2:aggregates rdf:resource="Mining_the_Kegg_path.wfbundle-wfdesc-7303881660586299396.rdf"/>
+    <j.2:aggregates rdf:resource="annotations/d405a5ae-9156-490d-93d4-bc5ac8d0cd8d"/>
+    <j.2:aggregates rdf:resource="Mining_the_Kegg_path.wfbundle-roevo-8271687465233241643.rdf"/>
+    <j.2:aggregates rdf:resource="annotations/da64724b-2af1-43ff-a165-35f885e260a7"/>
+    <j.2:aggregates rdf:resource="Mining_the_Kegg_path.wfbundle-link-7963549988581041147.rdf"/>
+    <j.2:aggregates rdf:resource="annotations/57f1db4e-69fd-4743-8e3b-22089d285d98"/>
+    <j.2:aggregates rdf:resource="annotations/6e101d19-ffaa-4e9c-a1d5-b1bb80f0717b"/>
+    <j.2:aggregates rdf:resource="../c68cb4be-69fd-4e09-bd18-89a21ced7c82"/>
+    <j.2:aggregates rdf:resource="annotations/6a0676a3-902e-4c2a-b55f-8b870c6ef32c"/>
+    <j.2:aggregates rdf:resource="../cea0cc5d-9dcc-474a-8794-d8d8c031f5fa"/>
+    <j.2:aggregates rdf:resource="annotations/c13ea1cd-ab35-4ea9-becf-2f1824bbc12a"/>
     <j.0:rootFolder rdf:resource="../root"/>
   </rdf:Description>
   <rdf:Description rdf:about="evo_info.ttl">
     <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-21T13:48:28.714Z</j.3:created>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:34:57.11Z</j.3:created>
   </rdf:Description>
-  <rdf:Description rdf:about="proxies/1e9d12c3-b278-42da-8249-43efcf0dc85b">
+  <rdf:Description rdf:about="proxies/99f4ec6c-9e1c-4e17-9fce-33df89a3ca5a">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+    <j.2:proxyIn rdf:resource=".."/>
+    <j.2:proxyFor rdf:resource="../root/workflows/main/Mining_the_Kegg_path.wfbundle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="proxies/4ec1b80e-a256-47c1-a0d9-394f5ff09789">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+    <j.2:proxyIn rdf:resource=".."/>
+    <j.2:proxyFor rdf:resource="../root/biblio/produced"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="proxies/dcd7c559-0f1a-4eee-b417-e207fa89f4d2">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+    <j.2:proxyIn rdf:resource=".."/>
+    <j.2:proxyFor rdf:resource="../root/biblio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="proxies/c70ae40e-53d8-47ea-96a0-c0548e98731e">
     <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
     <j.2:proxyIn rdf:resource=".."/>
     <j.2:proxyFor rdf:resource="../root/config/scripts"/>
   </rdf:Description>
-  <rdf:Description rdf:about="Mining_the_Kegg_path.wfbundle-wfdesc-6015952682888643799.rdf">
-    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-21T13:49:13.493Z</j.3:created>
-    <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="annotations/459d1777-31c3-43f2-8330-4ec66d682a7d">
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-21T13:49:21.732Z</j.3:created>
-    <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
-    <j.1:body rdf:resource="Mining_the_Kegg_path.wfbundle-link-8750784334472896495.rdf"/>
-    <j.0:annotatesAggregatedResource rdf:resource="../root/workflows/main/Mining_the_Kegg_path.wfbundle"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="annotations/a218e28c-5f9d-424c-9e02-23c49f5d4077">
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-21T13:49:04.777Z</j.3:created>
-    <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
-    <j.1:body rdf:resource="Mining_the_Kegg_path.wfbundle-wf-5888580629669076528.rdf"/>
-    <j.0:annotatesAggregatedResource rdf:resource="../root/workflows/main/Mining_the_Kegg_path.wfbundle"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="proxies/f683052d-9513-43d6-9fda-75940f99a48a">
+  <rdf:Description rdf:about="proxies/6cf3299b-83f0-4073-a675-f5fa3f587857">
     <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
     <j.2:proxyIn rdf:resource=".."/>
-    <j.2:proxyFor rdf:resource="../root/workflows"/>
+    <j.2:proxyFor rdf:resource="Mining_the_Kegg_path.wfbundle-roevo-8271687465233241643.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="proxies/7dad066c-8bc0-4046-b80a-2a95ed8195b1">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+    <j.2:proxyIn rdf:resource=".."/>
+    <j.2:proxyFor rdf:resource="../root/datasets"/>
   </rdf:Description>
   <rdf:Description rdf:about="../workflow_sketch_final.jpg">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-22T08:32:41.143Z</j.3:created>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:36:50.077Z</j.3:created>
     <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
     <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">workflow_sketch_final.jpg</j.0:name>
     <j.0:filesize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28706</j.0:filesize>
     <j.0:checksum rdf:resource="urn:MD5:f1972866a8fbbeba406dbe7cd2302e9f"/>
   </rdf:Description>
-  <rdf:Description rdf:about="proxies/b5782952-fa9c-408e-8d2e-7827d025df7e">
-    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
-    <j.2:proxyIn rdf:resource=".."/>
-    <j.2:proxyFor rdf:resource="Mining_the_Kegg_path.wfbundle-wf-5888580629669076528.rdf"/>
-  </rdf:Description>
   <rdf:Description rdf:about="../root/config/scripts">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Folder"/>
     <j.2:isDescribedBy rdf:resource="../root/config/scripts/scripts.rdf"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-21T13:48:38.477Z</j.3:created>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:35:01.679Z</j.3:created>
     <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
   </rdf:Description>
-  <rdf:Description rdf:about="proxies/46cbdad3-8c2e-4be2-8e46-b5b3134c5ff2">
-    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
-    <j.2:proxyIn rdf:resource=".."/>
-    <j.2:proxyFor rdf:resource="../root/datasets"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="annotations/cc9c3b3a-9270-4441-bd2f-ed5e781b2bac">
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-21T13:49:01.559Z</j.3:created>
-    <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
-    <j.1:body rdf:resource="Mining_the_Kegg_path.wfbundle-wf-6456568665501906248.rdf"/>
-    <j.0:annotatesAggregatedResource rdf:resource="../root/workflows/main/Mining_the_Kegg_path.wfbundle"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="proxies/2f30e705-5ba8-4078-b37f-924d34038c15">
-    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
-    <j.2:proxyIn rdf:resource=".."/>
-    <j.2:proxyFor rdf:resource="../root/workflows/main"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="annotations/f6e727f8-5dfe-4ed4-b030-b8a0ad3e19c2">
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-21T13:48:28.715Z</j.3:created>
-    <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
-    <j.1:body rdf:resource="evo_info.ttl"/>
-    <j.0:annotatesAggregatedResource rdf:resource=".."/>
-  </rdf:Description>
-  <rdf:Description rdf:about="proxies/2d559aca-8fec-4f68-9589-09555c37912a">
-    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
-    <j.2:proxyIn rdf:resource=".."/>
-    <j.2:proxyFor rdf:resource="../root/config/setup"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="Mining_the_Kegg_path.wfbundle-wf-6456568665501906248.rdf">
+  <rdf:Description rdf:about="Mining_the_Kegg_path.wfbundle-wf-9110714213388219663.rdf">
     <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-21T13:49:00.836Z</j.3:created>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:35:17Z</j.3:created>
     <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
   </rdf:Description>
-  <rdf:Description rdf:about="Mining_the_Kegg_path.wfbundle-link-8750784334472896495.rdf">
+  <rdf:Description rdf:about="Mining_the_Kegg_path.wfbundle-link-7963549988581041147.rdf">
     <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-21T13:49:20.809Z</j.3:created>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:35:32.095Z</j.3:created>
     <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="proxies/4dc2ee3f-e609-4b3c-b24c-1a41e55f48fc">
-    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
-    <j.2:proxyIn rdf:resource=".."/>
-    <j.2:proxyFor rdf:resource="../root"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="Mining_the_Kegg_path.wfbundle-wf-8787218933487439060.rdf">
-    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-21T13:49:08.12Z</j.3:created>
-    <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="proxies/d6ade9b3-ba1f-434c-ac8a-0f1235a8c2d5">
-    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
-    <j.2:proxyIn rdf:resource=".."/>
-    <j.2:proxyFor rdf:resource="../datasetmarkers_hgvrs487.txt"/>
   </rdf:Description>
   <rdf:Description rdf:about="../conclusion.pdf">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-22T08:32:17.181Z</j.3:created>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:36:16.663Z</j.3:created>
     <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
     <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conclusion.pdf</j.0:name>
     <j.0:filesize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">496441</j.0:filesize>
     <j.0:checksum rdf:resource="urn:MD5:5eda6782131912cd3002c400b8a04b9e"/>
   </rdf:Description>
-  <rdf:Description rdf:about="proxies/2c2d093d-ca8c-4bf6-9ab7-7af256d5ced8">
-    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
-    <j.2:proxyIn rdf:resource=".."/>
-    <j.2:proxyFor rdf:resource="Mining_the_Kegg_path.wfbundle-wfdesc-6015952682888643799.rdf"/>
-  </rdf:Description>
   <rdf:Description rdf:about="../root/workflows/components">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Folder"/>
     <j.2:isDescribedBy rdf:resource="../root/workflows/components/components.rdf"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-21T13:48:44.625Z</j.3:created>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:35:06.256Z</j.3:created>
     <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="proxies/af3b631e-2b50-47f2-bca4-69a3da7bbefa">
-    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
-    <j.2:proxyIn rdf:resource=".."/>
-    <j.2:proxyFor rdf:resource="../root/datasets/results"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="proxies/13403be4-0360-4626-83ef-851358f0ec66">
-    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
-    <j.2:proxyIn rdf:resource=".."/>
-    <j.2:proxyFor rdf:resource="../root/biblio/used"/>
   </rdf:Description>
   <rdf:Description rdf:about="../root/biblio/produced">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Folder"/>
     <j.2:isDescribedBy rdf:resource="../root/biblio/produced/produced.rdf"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-21T13:48:36.844Z</j.3:created>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:34:59.737Z</j.3:created>
     <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
   </rdf:Description>
-  <rdf:Description rdf:about="proxies/4f6f849d-ec8a-453d-8696-356bf00c3a62">
-    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
-    <j.2:proxyIn rdf:resource=".."/>
-    <j.2:proxyFor rdf:resource="../relations.ttl"/>
+  <rdf:Description rdf:about="annotations/b047be3f-81fb-41a7-bcc7-2b46fce65fd5">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:34:57.111Z</j.3:created>
+    <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
+    <j.1:body rdf:resource="evo_info.ttl"/>
+    <j.0:annotatesAggregatedResource rdf:resource=".."/>
   </rdf:Description>
-  <rdf:Description rdf:about="proxies/6ee505b6-476f-4899-bc09-17637b1b6869">
+  <rdf:Description rdf:about="proxies/8d7c2ec0-4a2b-4431-84b4-c322ca374619">
     <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
     <j.2:proxyIn rdf:resource=".."/>
-    <j.2:proxyFor rdf:resource="../root/workflows/components"/>
+    <j.2:proxyFor rdf:resource="Mining_the_Kegg_path.wfbundle-wf-9110714213388219663.rdf"/>
   </rdf:Description>
-  <rdf:Description rdf:about="proxies/790d99a2-35bc-429b-828d-431ca3977883">
+  <rdf:Description rdf:about="proxies/7337f4cf-246f-4e54-9666-63d056236537">
     <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
     <j.2:proxyIn rdf:resource=".."/>
-    <j.2:proxyFor rdf:resource="../root/workflows/main/Mining_the_Kegg_path.wfbundle"/>
+    <j.2:proxyFor rdf:resource="../root/workflows"/>
   </rdf:Description>
   <rdf:Description rdf:about="../root/datasets">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Folder"/>
     <j.2:isDescribedBy rdf:resource="../root/datasets/datasets.rdf"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-21T13:48:40.826Z</j.3:created>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:35:03.535Z</j.3:created>
     <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
   </rdf:Description>
-  <rdf:Description rdf:about="Mining_the_Kegg_path.wfbundle-roevo-7692522512332978791.rdf">
-    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-21T13:49:18.13Z</j.3:created>
+  <rdf:Description rdf:about="annotations/c4617434-d985-4d35-acad-91a9d5a743ec">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:35:17.671Z</j.3:created>
     <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
+    <j.1:body rdf:resource="Mining_the_Kegg_path.wfbundle-wf-9110714213388219663.rdf"/>
+    <j.0:annotatesAggregatedResource rdf:resource="../root/workflows/main/Mining_the_Kegg_path.wfbundle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="annotations/da64724b-2af1-43ff-a165-35f885e260a7">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:35:30.089Z</j.3:created>
+    <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
+    <j.1:body rdf:resource="Mining_the_Kegg_path.wfbundle-roevo-8271687465233241643.rdf"/>
+    <j.0:annotatesAggregatedResource rdf:resource="../root/workflows/main/Mining_the_Kegg_path.wfbundle"/>
   </rdf:Description>
   <rdf:Description rdf:about="../root/biblio/used">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Folder"/>
     <j.2:isDescribedBy rdf:resource="../root/biblio/used/used.rdf"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-21T13:48:37.384Z</j.3:created>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:35:00.049Z</j.3:created>
     <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
   </rdf:Description>
-  <rdf:Description rdf:about="proxies/6409c76b-74a5-48f2-9c81-673f09881bd6">
-    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
-    <j.2:proxyIn rdf:resource=".."/>
-    <j.2:proxyFor rdf:resource="Mining_the_Kegg_path.wfbundle-link-8750784334472896495.rdf"/>
+  <rdf:Description rdf:about="Mining_the_Kegg_path.wfbundle-wf-7911805585689213657.rdf">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:35:19.575Z</j.3:created>
+    <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
   </rdf:Description>
   <rdf:Description rdf:about="../root/config/setup">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Folder"/>
     <j.2:isDescribedBy rdf:resource="../root/config/setup/setup.rdf"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-21T13:48:39.547Z</j.3:created>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:35:02.026Z</j.3:created>
     <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
   </rdf:Description>
   <rdf:Description rdf:about="../root/workflows">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Folder"/>
     <j.2:isDescribedBy rdf:resource="../root/workflows/workflows.rdf"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-21T13:48:43.835Z</j.3:created>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:35:05.396Z</j.3:created>
     <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="proxies/f6da20f3-4ae6-40f6-80bf-8bb805498d7e">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+    <j.2:proxyIn rdf:resource=".."/>
+    <j.2:proxyFor rdf:resource="Mining_the_Kegg_path.wfbundle-wf-7911805585689213657.rdf"/>
   </rdf:Description>
   <rdf:Description rdf:about="../root/datasets/results">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Folder"/>
     <j.2:isDescribedBy rdf:resource="../root/datasets/results/results.rdf"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-21T13:48:42.873Z</j.3:created>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:35:04.85Z</j.3:created>
     <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
   </rdf:Description>
-  <rdf:Description rdf:about="proxies/4e9ce124-143b-4b5f-821a-16801a1fe9bb">
+  <rdf:Description rdf:about="proxies/e73021e4-9d3f-4133-89fe-83eff2587e82">
     <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
     <j.2:proxyIn rdf:resource=".."/>
-    <j.2:proxyFor rdf:resource="../root/biblio"/>
+    <j.2:proxyFor rdf:resource="../root/workflows/main"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="proxies/87b08fbc-f787-49bd-84b9-5181980ca5ec">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+    <j.2:proxyIn rdf:resource=".."/>
+    <j.2:proxyFor rdf:resource="../conclusion.pdf"/>
   </rdf:Description>
   <rdf:Description rdf:about="../Hypothesis.txt">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-22T08:32:30.84Z</j.3:created>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:36:38.121Z</j.3:created>
     <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
     <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hypothesis.txt</j.0:name>
     <j.0:filesize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">280</j.0:filesize>
     <j.0:checksum rdf:resource="urn:MD5:64e0738ea97abe4c21d5e89b40922696"/>
   </rdf:Description>
-  <rdf:Description rdf:about="proxies/eff3c8a3-2a19-4b7a-8a2b-dbf4c2e11e1d">
+  <rdf:Description rdf:about="proxies/6c296364-a9e9-4aac-b498-e374277a6c82">
     <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
     <j.2:proxyIn rdf:resource=".."/>
-    <j.2:proxyFor rdf:resource="../Hypothesis.txt"/>
+    <j.2:proxyFor rdf:resource="Mining_the_Kegg_path.wfbundle-wf-7826025313386903656.rdf"/>
   </rdf:Description>
-  <rdf:Description rdf:about="annotations/d01a881b-ac03-468d-99f9-74e8378b5969">
+  <rdf:Description rdf:about="proxies/36934598-f467-44a2-a434-5b39ee884129">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+    <j.2:proxyIn rdf:resource=".."/>
+    <j.2:proxyFor rdf:resource="../root/workflows/components"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="proxies/31d25ba9-545b-4e23-9bc5-07559562c0b1">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+    <j.2:proxyIn rdf:resource=".."/>
+    <j.2:proxyFor rdf:resource="../c68cb4be-69fd-4e09-bd18-89a21ced7c82"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="proxies/55a5db71-2705-4029-9b09-538c9863f520">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+    <j.2:proxyIn rdf:resource=".."/>
+    <j.2:proxyFor rdf:resource="../root/config/setup"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="proxies/0f3c5cc3-421e-4ab6-8b5a-a7da0ba0cd92">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+    <j.2:proxyIn rdf:resource=".."/>
+    <j.2:proxyFor rdf:resource="../cea0cc5d-9dcc-474a-8794-d8d8c031f5fa"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="annotations/6e101d19-ffaa-4e9c-a1d5-b1bb80f0717b">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-22T08:42:47.069Z</j.3:created>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:37:14.781Z</j.3:created>
     <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
     <j.1:body rdf:resource="../relations.ttl"/>
     <j.0:annotatesAggregatedResource rdf:resource=".."/>
   </rdf:Description>
-  <rdf:Description rdf:about="proxies/db59b966-987b-43c9-8bdb-85fbe35fa475">
-    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
-    <j.2:proxyIn rdf:resource=".."/>
-    <j.2:proxyFor rdf:resource="../root/biblio/produced"/>
+  <rdf:Description rdf:about="Mining_the_Kegg_path.wfbundle-wfdesc-7303881660586299396.rdf">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:35:24.906Z</j.3:created>
+    <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="annotations/2aae93b7-ca5d-41b6-8254-c7d2d2090a8f">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:35:20.795Z</j.3:created>
+    <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
+    <j.1:body rdf:resource="Mining_the_Kegg_path.wfbundle-wf-7911805585689213657.rdf"/>
+    <j.0:annotatesAggregatedResource rdf:resource="../root/workflows/main/Mining_the_Kegg_path.wfbundle"/>
   </rdf:Description>
   <rdf:Description rdf:about="../relations.ttl">
     <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-22T08:42:46.464Z</j.3:created>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:37:14.287Z</j.3:created>
     <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
   </rdf:Description>
   <rdf:Description rdf:about="../root">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Folder"/>
     <j.2:isDescribedBy rdf:resource="../root/root.rdf"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-21T13:48:34.812Z</j.3:created>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:34:58.639Z</j.3:created>
     <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
   </rdf:Description>
-  <rdf:Description rdf:about="annotations/ab6a5ed5-99bf-49c4-bf2d-205da6e54174">
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-21T13:49:19.243Z</j.3:created>
-    <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
-    <j.1:body rdf:resource="Mining_the_Kegg_path.wfbundle-roevo-7692522512332978791.rdf"/>
-    <j.0:annotatesAggregatedResource rdf:resource="../root/workflows/main/Mining_the_Kegg_path.wfbundle"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="annotations/6ac9900d-43bd-4e8b-837a-54a3951b6666">
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-21T13:49:15.708Z</j.3:created>
-    <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
-    <j.1:body rdf:resource="Mining_the_Kegg_path.wfbundle-wfdesc-6015952682888643799.rdf"/>
-    <j.0:annotatesAggregatedResource rdf:resource="../root/workflows/main/Mining_the_Kegg_path.wfbundle"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="proxies/c48646ca-cd62-4f95-a181-1cfda0fa81cd">
-    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
-    <j.2:proxyIn rdf:resource=".."/>
-    <j.2:proxyFor rdf:resource="Mining_the_Kegg_path.wfbundle-wf-6456568665501906248.rdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="Mining_the_Kegg_path.wfbundle-wf-5888580629669076528.rdf">
-    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-21T13:49:04.107Z</j.3:created>
-    <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="proxies/54690500-caa3-4805-9557-d66e56787cc3">
+  <rdf:Description rdf:about="proxies/6b0d6c8f-2261-45a7-b8a9-b90956b09aae">
     <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
     <j.2:proxyIn rdf:resource=".."/>
     <j.2:proxyFor rdf:resource="../root/workflows/nested"/>
   </rdf:Description>
-  <rdf:Description rdf:about="proxies/be26435d-6965-43e8-95d3-11e6eabc8e8f">
+  <rdf:Description rdf:about="proxies/b66feb02-f63a-4649-b758-e6d3b4b9d518">
     <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
     <j.2:proxyIn rdf:resource=".."/>
-    <j.2:proxyFor rdf:resource="Mining_the_Kegg_path.wfbundle-roevo-7692522512332978791.rdf"/>
+    <j.2:proxyFor rdf:resource="Mining_the_Kegg_path.wfbundle-wfdesc-7303881660586299396.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="proxies/e76ebf97-7b46-4f11-98d8-6e9f7716d534">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+    <j.2:proxyIn rdf:resource=".."/>
+    <j.2:proxyFor rdf:resource="../workflow_sketch_final.jpg"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="proxies/dd643190-9bd1-45eb-bde1-a781baed0235">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+    <j.2:proxyIn rdf:resource=".."/>
+    <j.2:proxyFor rdf:resource="../root/biblio/used"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="proxies/5e4a31b1-e38b-413c-8738-4b0363897777">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+    <j.2:proxyIn rdf:resource=".."/>
+    <j.2:proxyFor rdf:resource="../root/datasets/results"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="proxies/48849401-6395-4c5a-b6e4-723468492434">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+    <j.2:proxyIn rdf:resource=".."/>
+    <j.2:proxyFor rdf:resource="../Hypothesis.txt"/>
   </rdf:Description>
   <rdf:Description rdf:about="../root/config/web%20services">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Folder"/>
     <j.2:isDescribedBy rdf:resource="../root/config/web%20services/web%20services.rdf"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-21T13:48:40.378Z</j.3:created>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:35:02.671Z</j.3:created>
     <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
   </rdf:Description>
-  <rdf:Description rdf:about="proxies/6a91b241-5c14-4afd-9a22-9245bcc2ac4a">
+  <rdf:Description rdf:about="proxies/d25b986a-d7ee-4cd8-ba02-18dccf6c0978">
     <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
     <j.2:proxyIn rdf:resource=".."/>
-    <j.2:proxyFor rdf:resource="../root/config/software"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="proxies/db66b245-4dfe-4305-8105-dbc27b63bc94">
-    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
-    <j.2:proxyIn rdf:resource=".."/>
-    <j.2:proxyFor rdf:resource="../conclusion.pdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="annotations/d260afaa-bc74-45e7-8adf-0426763c98c6">
-    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-21T13:49:08.821Z</j.3:created>
-    <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
-    <j.1:body rdf:resource="Mining_the_Kegg_path.wfbundle-wf-8787218933487439060.rdf"/>
-    <j.0:annotatesAggregatedResource rdf:resource="../root/workflows/main/Mining_the_Kegg_path.wfbundle"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="proxies/05ad3751-5ef4-47e1-895e-94f81192ab31">
-    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
-    <j.2:proxyIn rdf:resource=".."/>
-    <j.2:proxyFor rdf:resource="../root/datasets/inputs"/>
+    <j.2:proxyFor rdf:resource="../relations.ttl"/>
   </rdf:Description>
   <rdf:Description rdf:about="../root/workflows/nested">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Folder"/>
     <j.2:isDescribedBy rdf:resource="../root/workflows/nested/nested.rdf"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-21T13:48:46.046Z</j.3:created>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:35:07.114Z</j.3:created>
     <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
   </rdf:Description>
-  <rdf:Description rdf:about="proxies/be8d0a4c-5ab2-458a-ad8d-319adf66fd7b">
+  <rdf:Description rdf:about="proxies/499fc8d2-6385-455c-923d-96b0a56c84c8">
     <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
     <j.2:proxyIn rdf:resource=".."/>
-    <j.2:proxyFor rdf:resource="../root/config/web%20services"/>
+    <j.2:proxyFor rdf:resource="../root/config/software"/>
   </rdf:Description>
   <rdf:Description rdf:about="manifest.rdf">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Manifest"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-21T13:48:28.127Z</j.3:created>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:34:56.897Z</j.3:created>
     <j.2:describes rdf:resource=".."/>
   </rdf:Description>
-  <rdf:Description rdf:about="proxies/84cda381-fa65-4dbd-ae98-b867f0b4004f">
+  <rdf:Description rdf:about="proxies/9a295bee-a5f6-4d6a-b565-2f753ebb1263">
     <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
     <j.2:proxyIn rdf:resource=".."/>
-    <j.2:proxyFor rdf:resource="Mining_the_Kegg_path.wfbundle-wf-8787218933487439060.rdf"/>
+    <j.2:proxyFor rdf:resource="Mining_the_Kegg_path.wfbundle-link-7963549988581041147.rdf"/>
   </rdf:Description>
-  <rdf:Description rdf:about="proxies/b76609ec-f059-408a-8718-6b9a249bcc11">
+  <rdf:Description rdf:about="../cea0cc5d-9dcc-474a-8794-d8d8c031f5fa">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-28T12:59:56.624Z</j.3:created>
+    <j.3:creator rdf:resource="http://example.org/public"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="proxies/7648a3eb-009a-4ea1-9eb7-e912dc21d3b2">
     <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
     <j.2:proxyIn rdf:resource=".."/>
-    <j.2:proxyFor rdf:resource="../workflow_sketch_final.jpg"/>
+    <j.2:proxyFor rdf:resource="../root/config"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="annotations/d405a5ae-9156-490d-93d4-bc5ac8d0cd8d">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:35:27.018Z</j.3:created>
+    <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
+    <j.1:body rdf:resource="Mining_the_Kegg_path.wfbundle-wfdesc-7303881660586299396.rdf"/>
+    <j.0:annotatesAggregatedResource rdf:resource="../root/workflows/main/Mining_the_Kegg_path.wfbundle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="proxies/9589ee27-ece4-4e83-a80f-1cc8924baada">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+    <j.2:proxyIn rdf:resource=".."/>
+    <j.2:proxyFor rdf:resource="../root"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="annotations/08c831d3-9981-4efb-a260-a89e89548e0e">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:35:23.273Z</j.3:created>
+    <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
+    <j.1:body rdf:resource="Mining_the_Kegg_path.wfbundle-wf-7826025313386903656.rdf"/>
+    <j.0:annotatesAggregatedResource rdf:resource="../root/workflows/main/Mining_the_Kegg_path.wfbundle"/>
   </rdf:Description>
   <rdf:Description rdf:about="../root/workflows/main/Mining_the_Kegg_path.wfbundle">
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-21T13:48:58.766Z</j.3:created>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:35:15.205Z</j.3:created>
     <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
     <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mining_the_Kegg_path.wfbundle</j.0:name>
     <j.0:filesize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56425</j.0:filesize>
@@ -440,7 +468,17 @@
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Folder"/>
     <j.2:isDescribedBy rdf:resource="../root/config/config.rdf"/>
-    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-21T13:48:37.969Z</j.3:created>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:35:00.697Z</j.3:created>
+    <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="../c68cb4be-69fd-4e09-bd18-89a21ced7c82">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-28T10:01:09.829Z</j.3:created>
+    <j.3:creator rdf:resource="http://wf4ever-test.myopenid.com/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="Mining_the_Kegg_path.wfbundle-wf-7826025313386903656.rdf">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-25T12:35:21.723Z</j.3:created>
     <j.3:creator rdf:resource="https://www.google.com/accounts/o8/id?id=AItOawlbi4F2XqGrYFkqg1uZd51Qex4mL8LMxqg"/>
   </rdf:Description>
 </rdf:RDF>

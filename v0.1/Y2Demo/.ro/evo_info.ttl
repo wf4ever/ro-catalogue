@@ -3,4 +3,6 @@
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-<..>  a       <http://purl.org/wf4ever/roevo#LiveRO> .
+<..>  a       <http://purl.org/wf4ever/roevo#LiveRO> ;
+      <http://purl.org/wf4ever/roevo#hasSnapshot>
+              <http://sandbox.wf4ever-project.org/rodl/ROs/Y2DemoSnapshot-1/> .
