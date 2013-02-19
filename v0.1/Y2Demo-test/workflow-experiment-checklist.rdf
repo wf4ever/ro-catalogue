@@ -341,7 +341,7 @@
     <minim:isDerivedBy>
       <minim:ContentMatchRequirementRule>
         <minim:exists>
-          ?wfbunbdle roterms:inputSelected ?inputdata .
+          ?wfbundle roterms:inputSelected ?inputdata .
         </minim:exists>
         <minim:showpass>Input data is present</minim:showpass>
         <minim:showfail>Input data is not present</minim:showfail>
