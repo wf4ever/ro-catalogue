@@ -126,7 +126,7 @@
     <minim:isDerivedBy>
       <minim:ContentMatchRequirementRule>
         <minim:exists___>
-          <!-- @@FIXME: This query breaks rdflib rdfexttas SPARQL: processor -->
+          <!-- @@FIXME:This query breaks rdflib rdfexttas SPARQL: processor -->
           {
             ?wfbundle roterms:inputSelected ?inputdata 
           }
