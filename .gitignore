@@ -21,7 +21,6 @@ Thumbs.db
 #
 # OS X
 #
-
 *.tmproj
 
 # Desktop Service Store files
@@ -34,4 +33,5 @@ Thumbs.db
 # Other temporary files
 .registries.json
 tmp/
+*.tmp
 
