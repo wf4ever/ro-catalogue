@@ -36,35 +36,38 @@ function make_workflow_pack {
     # $1  Taverna workflow (.t2flow) URI
     # $2  Research Object URI
     #
+    # Is sending wrong content-type
+    # See: http://stackoverflow.com/questions/13484478/curl-per-file-content-type-for-multipart-post-youtube-api
+    #
     rm 00*.tmp
     echo "make_workflow_pack ($1 $2)"
     cat >00_wf_ro_post_data.tmp <<[[EOF]]
       {
-       "resource": "$1"
-       "format": "application/vnd.taverna.t2flow+xml"
-       "ro": "$2"
+       "resource": "$1",
+       "format": "application/vnd.taverna.t2flow+xml",
+       "ro": "$2",
        "token": "$ROSRS_ACCESS_TOKEN"
       }
 [[EOF]]
-    cat >00_curl_command.tmp <<[[EOF]]
-    curl $WF_RO_URI -X POST \
-         --silent --dump-header 00_wf_ro_headers.tmp --output 00_wf_ro_output.tmp \
-         --data-binary 00_wf_ro_post_data.tmp --header "Content-type: application/json"
-[[EOF]]
+
+    set -x
     echo "** curl command: **"
-    cat 00_curl_command.tmp
-    echo "**"
-    `cat 00_curl_command.tmp`
+    curl $WF_RO_URI -X POST \
+         --trace-ascii - --dump-header 00_wf_ro_headers.tmp --output 00_wf_ro_output.tmp \
+         --header "Content-Type: application/json" --data @00_wf_ro_post_data.tmp
     echo "** headers returned: **"
     cat 00_wf_ro_headers.tmp
     echo "**"
-    JOBURI=`awk '/^Location:/ {print $2}' <00_wf_ro_headers.tmp`
+    JOBURI=`awk '/^Location:/ { gsub(/\r/,"") ; printf "%s", $2 }' <00_wf_ro_headers.tmp`
     echo "** JOB URI: $JOBURI **"
     # Wait for conversion to be done
     #while [ $? == 0 ]; do
     #  sleep 2s
     #  curl $JOBURI | grep "\"status\":.*\"running\""
     #done
+    sleep 1s
+    curl --verbose $JOBURI
+    set +x
     return
 }
 
