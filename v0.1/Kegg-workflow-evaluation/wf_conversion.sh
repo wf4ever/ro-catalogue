@@ -42,6 +42,7 @@ function make_workflow_pack {
     rm 00*.tmp
     echo "make_workflow_pack"
     echo "  T2flow: $1"
+    curl -X DELETE $2
     cat >00_wf_ro_post_data.tmp <<[[EOF]]
       {
        "resource": "$1",
@@ -147,21 +148,69 @@ function get_workflow_inputs {
 function annotate_wf_inputs {
     # Add annotation via CURL to new RO describing inputs (Appendix B)
     #
-    # $1 = URI OF ROP top annotate
-    # $2 = name of file containing 'portname inputuri' for each WF input
+    # $1 = URI OF RO to annotate
+    # $2 = URI of WF Bundle
+    # $3 = name of file containing 'portname inputuri' for each WF input
     #
     echo "annotate_wf_inputs ($@)"
-    # cat $2
+    ROURI="$1"
+    BUNDLEURI="$2"
+    # cat $3
+
+    # Initialize annotation
+    cat >00-bundle-inputs.tmp <<[[EOF]]
+      @PREFIX roterms: <http://purl.org/wf4ever/roterms#>
+[[EOF]]
+    cat >00-bundle-inputs-rdf.tmp <<[[EOF]]
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:roterms="http://purl.org/wf4ever/roterms#">
+        <rdf:Description rdf:about="$BUNDLEURI">
+[[EOF]]
+
     while read PORTNAME INPUTURI; do
-      echo "Port: $PORTNAME, Value: $(curl --silent $INPUTURI)"
-    done <$2
+      # echo "Port: $PORTNAME, Value: $(curl --silent $INPUTURI)"
+      #
+      # Generate annotation in local file
+      #
+      # ro:wfbundle roterms:inputValue
+      #    [ roterms:portName "path_to_input_file" ;
+      #      roterms:resource <file:///home/marco/Dropbox/Wf4Ever/Reviews/year 2/Demo/UserMaterial/datasetmarkers_hgvrs487.txt> ]
+      #  .
+      cat >>00-bundle-inputs.tmp <<[[EOF]]
+      $BUNDLEURI roterms:inputValue
+        [ roterms:portName "$PORTNAME" ;
+          roterms:resource <$INPUTURI> ] .
+[[EOF]]
+      cat >>00-bundle-inputs-rdf.tmp <<[[EOF]]
+          <roterms:inputValue>
+            <rdf:Description>
+              <roterms:portName>$PORTNAME</roterms:portName>
+              <roterms:resource rdf:resource="$INPUTURI" />
+            </rdf:Description>
+          </roterms:inputValue>
+[[EOF]]
+    done <$3
+
+    cat >>00-bundle-inputs-rdf.tmp <<[[EOF]]
+        </rdf:Description>
+      </rdf:RDF>
+[[EOF]]
+
+
+    # Create annotation in RO
+    # See: http://www.wf4ever-project.org/wiki/display/docs/RO+SRS+interface+6#ROSRSinterface6-Annotatearesource
+    #
+    # curl -i -v -X POST $BUNDLEURI \
+    #   -H "Link: <$BUNDLEURI>; rel=\"http://purl.org/ao/annotatesResource\"" \
+    #   -H "Content-type: text/turtle" -H "Slug: bundle-inputs.ttl" --data @00-bundle-inputs.tmp
+    curl --silent -X POST $ROURI \
+      -H "Link: <$BUNDLEURI>; rel=\"http://purl.org/ao/annotatesResource\"" \
+      -H "Content-type: application/rdf+xml" -H "Slug: bundle-inputs.rdf" --data @00-bundle-inputs-rdf.tmp >00-annotation-body.tmp
+
     return
 }
 
 echo "New run" >00-trace.log
 
-# for PACK in `cat Kegg-workflows.csv | head -n 1`; do
-# for PACK in `cat Kegg-workflows.csv`; do
 while read PACK; do
     # Split URI from following stuff separated by ','
     # For next, see: http://stackoverflow.com/a/6583589
@@ -174,26 +223,34 @@ while read PACK; do
 
     if [ "${OPT:0:4}" != "skip" ]; then
 
-      # T2URI=$(retrieve_T2_URI $URI)
+      T2URI=$(retrieve_T2_URI $URI)
 
-      # make_workflow_pack $T2URI $ROURI
+      make_workflow_pack $T2URI $ROURI
 
       # For testing...
-      PROVURI=$(get_workflow_provenance $PACKID $VERNUM $OPT)
+      # PROVURI=$(get_workflow_provenance $PACKID $VERNUM $OPT)
       # echo "--- $PROVURI"
 
-      #WFINPUTS=$(get_workflow_inputs $PACKID $VERNUM $OPT)
-      #echo "--- $WFINPUTS"
       get_workflow_inputs $PACKID $VERNUM $OPT >00-wfinputs.tmp
 
-      annotate_wf_inputs $ROURI 00-wfinputs.tmp
+      BUNDLEURI=$(ro dump $ROURI | asq -p provenance.prefixes -fRDFXML,"%(b)s" "SELECT ?w ?b WHERE { ?w a wfdesc:Workflow . ?f wfdesc:hasWorkflowDefinition ?b }")
+      annotate_wf_inputs $ROURI $BUNDLEURI 00-wfinputs.tmp
 
-      # echo "--- $ROURI" >>00-trace.log
-      # echo "$WFINPUTS"  >>00-trace.log
+      echo "--- ROURI: $ROURI --- done --- --- ---"
+
+      echo "--- ROURI:     $ROURI" >>00-trace.log
+      echo "--- BUNDLEURI: $BUNDLEURI" >>00-trace.log
+      echo "$WFINPUTS"  >>00-trace.log
       # echo "--- --- --- ---"
-
-      # break
 
     fi
 
 done <Kegg-workflows-3108.csv 
+
+echo "Done."
+
+# Checklist eval for myexperiment_pack_3108:
+# http://sandbox.wf4ever-project.org/roevaluate/evaluate/trafficlight_html?RO=http://sandbox.wf4ever-project.org/rodl/ROs/myexperiment_pack_3108/&minim=http://sandbox.wf4ever-project.org/rodl/ROs/Kegg-workflow-evaluation/Runnable-workflow-checklist.rdf&purpose=wf-runnable
+
+
+# End.
