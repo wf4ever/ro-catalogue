@@ -26,7 +26,10 @@ function retrieve_T2_URI {
     asq -r $1.rdf \
           -p myExperiment.prefixes \
           -f "%(t2flow)s" \
-          "SELECT * WHERE { ?myexp rdf:type mecontrib:WorkflowVersion ; mebase:content-url ?t2flow }"
+          "SELECT * WHERE { \
+              ?myexp rdf:type mecontrib:WorkflowVersion ; \
+              mebase:has-content-type <http://www.myexperiment.org/content_types/2> ; \
+              mebase:content-url ?t2flow }"
     return
 }
 
@@ -78,6 +81,7 @@ function make_workflow_pack {
     else
       echo "  RO failed creation"
       curl --silent $JOBURI
+      exit 1
     fi
     ###set +x
     return
@@ -224,6 +228,11 @@ while read PACK; do
     if [ "${OPT:0:4}" != "skip" ]; then
 
       T2URI=$(retrieve_T2_URI $URI)
+      echo "--- T2URI: $T2URI"
+      if [ "$T2URI" == "" ] ; then
+        echo "*** No T2flow file found for $URI: skipping ***"
+        continue
+      fi
 
       make_workflow_pack $T2URI $ROURI
 
@@ -232,6 +241,9 @@ while read PACK; do
       # echo "--- $PROVURI"
 
       get_workflow_inputs $PACKID $VERNUM $OPT >00-wfinputs.tmp
+      if [ $? != 0 ] ; then
+        continue
+      fi
 
       BUNDLEURI=$(ro dump $ROURI | asq -p provenance.prefixes -fRDFXML,"%(b)s" "SELECT ?w ?b WHERE { ?w a wfdesc:Workflow . ?f wfdesc:hasWorkflowDefinition ?b }")
       annotate_wf_inputs $ROURI $BUNDLEURI 00-wfinputs.tmp
@@ -245,12 +257,15 @@ while read PACK; do
 
     fi
 
-done <Kegg-workflows-3108.csv 
+#  done <Kegg-workflows-786.csv 
+#  done <Kegg-workflows-1189.csv 
+#  done <Kegg-workflows-2658.csv 
+  done <Kegg-workflows-3108.csv 
+#  done <Kegg-workflows.csv 
 
 echo "Done."
 
 # Checklist eval for myexperiment_pack_3108:
 # http://sandbox.wf4ever-project.org/roevaluate/evaluate/trafficlight_html?RO=http://sandbox.wf4ever-project.org/rodl/ROs/myexperiment_pack_3108/&minim=http://sandbox.wf4ever-project.org/rodl/ROs/Kegg-workflow-evaluation/Runnable-workflow-checklist.rdf&purpose=wf-runnable
-
 
 # End.
