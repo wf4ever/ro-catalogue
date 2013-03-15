@@ -245,7 +245,7 @@ while read PACK; do
         continue
       fi
 
-      BUNDLEURI=$(ro dump $ROURI | asq -p provenance.prefixes -fRDFXML,"%(b)s" "SELECT ?w ?b WHERE { ?w a wfdesc:Workflow . ?f wfdesc:hasWorkflowDefinition ?b }")
+      BUNDLEURI=$(ro dump $ROURI | asq -p provenance.prefixes -fRDFXML,"%(b)s" "SELECT ?w ?b WHERE { ?w a wfdesc:Workflow . ?w wfdesc:hasWorkflowDefinition ?b }")
       annotate_wf_inputs $ROURI $BUNDLEURI 00-wfinputs.tmp
 
       echo "--- ROURI: $ROURI --- done --- --- ---"
@@ -260,7 +260,8 @@ while read PACK; do
 #  done <Kegg-workflows-786.csv 
 #  done <Kegg-workflows-1189.csv 
 #  done <Kegg-workflows-2658.csv 
-  done <Kegg-workflows-3108.csv 
+#  done <Kegg-workflows-3108.csv 
+  done <Kegg-workflows-3107.csv 
 #  done <Kegg-workflows.csv 
 
 echo "Done."
