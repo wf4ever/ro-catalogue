@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY rdf     "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY rdfs    "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY owl     "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd     "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml     "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfg    "http://www.w3.org/2004/03/trix/rdfg-1/" >
+    <!ENTITY ore     "http://www.openarchives.org/ore/terms/" >
+    <!ENTITY ao      "http://purl.org/ao/" >
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY foaf    "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY ro      "http://purl.org/wf4ever/ro#" >
+    <!ENTITY wfprov  "http://purl.org/wf4ever/wfprov#" >
+    <!ENTITY wfdesc  "http://purl.org/wf4ever/wfdesc#" >
+    <!ENTITY wf4ever "http://purl.org/wf4ever/wf4ever#" >
+    <!ENTITY minim   "http://purl.org/minim/minim#" >
+    <!ENTITY chembox     "http://dbpedia.org/resource/Template:Chembox:" >
+    <!ENTITY chembox-mim "http://sierra-nevada.cs.man.ac.uk/mim/chembox/chemmim#" >
+]>
+
+<rdf:RDF xmlns="."
+     xmlns:rdf="&rdf;"
+     xmlns:rdfs="&rdfs;"
+     xmlns:owl="&owl;"
+     xmlns:xsd="&xsd;"
+     xmlns:xml="&xml;"
+     xmlns:rdfg="&rdfg;"
+     xmlns:ore="&ore;"
+     xmlns:ao="&ao;"
+     xmlns:dcterms="&dcterms;"
+     xmlns:foaf="&foaf;"
+     xmlns:ro="&ro;"
+     xmlns:wfprov="&wfprov;"
+     xmlns:wfdesc="&wfdesc;"
+     xmlns:wf4ever="&wf4ever;"
+     xmlns:minim="&minim;"
+     xmlns:chembox="&chembox;"
+     xmlns:chembox-mim="&chembox-mim;"
+>
+
+  <!-- ===========
+       CONSTRAINTS 
+       ===========
+    -->
+
+  <!-- Target for Minimum information requirement 
+
+       Minim invokes minimum information models on for a specified purpose
+       relating to a specified target.  The requirement may apply to some
+       resource other than the specified target.
+    -->
+
+  <rdf:Description rdf:about="http://workflow-experiment#ChecklistConstraints">
+
+    <minim:hasConstraint>
+      <minim:Constraint rdf:about="#inchi_defined">
+        <minim:forTargetTemplate>{+targetro}</minim:forTargetTemplate>
+        <minim:forPurpose>inchi-defined</minim:forPurpose>
+        <minim:toModel rdf:resource="#inchi_defined_model" />
+        <!-- <minim:onResourceTemplate>{+targetro}</minim:onResourceTemplate> -->
+        <rdfs:comment>
+          Constraint to be satisfied if the target RO contains an Inchi chemical id
+        </rdfs:comment>
+      </minim:Constraint>
+    </minim:hasConstraint>
+
+  </rdf:Description>
+
+  <!-- ======
+       MODELS
+       ======
+    -->
+
+  <minim:Model rdf:about="#inchi_defined_model">
+    <rdfs:label>Inchi id defined</rdfs:label>
+    <rdfs:comment>
+      test to see if RO contains an Inchi chemical id.
+    </rdfs:comment>
+    <minim:hasMustRequirement rdf:resource="#RO_has_inchi" />
+  </minim:Model>
+
+  <!-- =================
+       REQUIREMENT RULES
+       =================
+    -->
+
+  <minim:Requirement rdf:about="#RO_has_inchi">
+    <minim:isDerivedBy>
+      <minim:ContentMatchRequirementRule>
+        <minim:exists>
+          ?x &lt;http://dbpedia.org/resource/Template:Chembox:StdInChI&gt; ?value .
+          FILTER ( isLiteral(?value) )
+        </minim:exists>
+        <minim:showpass>Inchi id is present</minim:showpass>
+        <minim:showfail>Inchi id is not present</minim:showfail>
+        <minim:derives rdf:resource="#RO_has_hypothesys" />
+      </minim:ContentMatchRequirementRule>
+    </minim:isDerivedBy>
+    <minim:seq>010</minim:seq>
+  </minim:Requirement>
+
+</rdf:RDF>

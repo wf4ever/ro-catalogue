@@ -3,7 +3,7 @@
 # RO manager script to create trivial RO
 #
 
-source ~/workspace/wf4ever-ro-manager/romenv/bin/activate
+ source ~/workspace/wf4ever-ro-manager/romenv/bin/activate
 
 source ../../ro.sh
 
@@ -46,6 +46,8 @@ ro add -a -d .
 ro list -d .
 
 # ro annotations
+
+ro annotate . -g Ethane.ttl
 
 # End.
 
