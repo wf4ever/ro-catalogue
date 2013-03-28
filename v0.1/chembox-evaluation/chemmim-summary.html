@@ -1,0 +1,494 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="pandoc-html.css" type="text/css" />
+</head>
+<body>
+<div id="TOC">
+<ul>
+<li><a href="#summary-of-chemmim-requirements">Summary of chemmim requirements</a><ul>
+<li><a href="#preliminaries-grouped-requirements">Preliminaries (grouped requirements)</a></li>
+<li><a href="#identifiers">Identifiers</a><ul>
+<li><a href="#inchi">InChI</a></li>
+<li><a href="#smiles">SMILES</a></li>
+<li><a href="#chemspider">ChemSpider</a></li>
+<li><a href="#pubchem">PubChem</a></li>
+</ul></li>
+<li><a href="#properties">Properties</a><ul>
+<li><a href="#molecularformula">MolecularFormula</a></li>
+<li><a href="#solubility">Solubility</a></li>
+<li><a href="#meltingpoint">MeltingPoint</a></li>
+<li><a href="#molarmass">MolarMass</a></li>
+</ul></li>
+<li><a href="#other-requirements">Other requirements</a><ul>
+<li><a href="#synonym">Synonym</a></li>
+<li><a href="#iupacname">IUPACName</a></li>
+<li><a href="#image">Image</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<h1 id="summary-of-chemmim-requirements"><a href="#summary-of-chemmim-requirements">Summary of chemmim requirements</a></h1>
+<p>Note: to convert to HTML with ToC, use:</p>
+<pre><code>    pandoc --table-of-contents --toc-depth=3 -c pandoc-html.css \
+           --from=markdown --to=html \
+           -o chemmim-summary.html chemmim-summary.md</code></pre>
+<h2 id="preliminaries-grouped-requirements"><a href="#preliminaries-grouped-requirements">Preliminaries (grouped requirements)</a></h2>
+<p>Requirements are grouped roughly into identifiers, properties, and other requirements.</p>
+<pre><code>:MIM  rdf:type mim:MIM ;
+      mim:hasMustRequirement      :Properties, :Identifiers ;
+      mim:hasShouldRequirement    :IUPACName, :Image .
+      mim:hasOptionalRequirement  :Synonym ;
+      mim:hasRestriction
+        [ mim:exactCardinality 1 ;
+          mim:onRequirement       :Properties, :Identifiers ] ;
+
+:Identifiers
+      rdf:type mim:RequirementSet ;
+      mim:hasMustRequirement      :InChI , :SMILES ;
+      mim:hasShouldRequirement    :ChemSpider, :PubChem .
+
+:Properties
+      rdf:type mim:RequirementSet ;
+      mim:hasMustRequirement      :MolecularFormula ;
+      mim:hasShouldRequirement    :MeltingPoint , :MolarMass .
+      mim:hasOptionalRequirement  :Solubility ;
+      mim:hasRestriction
+        [ mim:exactCardinality 1 ;
+          mim:onRequirement       :MolecularFormula ] ;</code></pre>
+<h2 id="identifiers"><a href="#identifiers">Identifiers</a></h2>
+<h3 id="inchi"><a href="#inchi">InChI</a></h3>
+<pre><code>:InChI
+      rdf:type mim:DataRequirement ;
+      mim:hasRestriction
+              [ mim:onSelf &quot;true&quot;^^xsd:boolean ;
+                mim:type xsd:string ] .</code></pre>
+<p>An InChI identifier must be present, defined by way of a chembox:StdInChI property on some target resource and its value must be a string. The SPIN rules in chembox-spin.ttl define this mapping from source data to the :InChI requirement; e.g. here's the core of the SPIN rule converted to SPARQL:</p>
+<pre><code>CONSTRUCT 
+    { ?x mim:containsDataReport _:b0 .
+      _:b0 mim:reports chembox-mim:InChI .
+      _:b0 mim:withValue ?value . }
+WHERE { ?x chembox:StdInChI ?value . }</code></pre>
+<p>I think the mim:hasRestriction is asserting that the value of the chembox:StdInChI value must be a string for the report to satisfy the requirement.</p>
+<h3 id="smiles"><a href="#smiles">SMILES</a></h3>
+<pre><code>:SMILES
+      rdf:type mim:DataRequirement ;
+      mim:hasRestriction
+              [ mim:onSelf &quot;true&quot;^^xsd:boolean ;
+                mim:type xsd:string ] .</code></pre>
+<p>This has almost identical construction to the :InChI requirement.</p>
+<h3 id="chemspider"><a href="#chemspider">ChemSpider</a></h3>
+<pre><code>:ChemSpider
+      rdf:type mim:DataRequirement ;
+      mim:hasRestriction
+              [ mim:onSelf &quot;true&quot;^^xsd:boolean ;
+                mim:type xsd:integer ] .</code></pre>
+<p>The construction here is similar to :InChI, except that the ChemSpider identifier is required to be an integer.</p>
+<pre><code>CONSTRUCT
+    { ?x mim:containsDataReport _:b0 .
+     _:b0 mim:reports chembox-mim:ChemSpider .
+     _:b0 mim:withValue ?value . }
+WHERE 
+    { ?x chembox:ChemSpiderID ?c .
+      BIND (xsd:integer(?c) AS ?cd) .
+      BIND (IF(bound(?cd), ?cd, ?c) AS ?value) . }</code></pre>
+<h3 id="pubchem"><a href="#pubchem">PubChem</a></h3>
+<pre><code>:PubChem
+      rdf:type mim:DataRequirement ;
+      mim:hasRestriction
+              [ mim:onSelf &quot;true&quot;^^xsd:boolean ;
+                mim:type xsd:integer ] .</code></pre>
+<p>This has almost identifcal construction to the :ChemSpider requirement.</p>
+<pre><code>CONSTRUCT
+    { ?x mim:containsDataReport _:b0 .
+      _:b0 mim:reports chembox-mim:PubChem .
+      _:b0 mim:withValue ?value . }
+WHERE
+    { ?x chembox:PubChem ?c .
+      BIND (xsd:integer(?c) AS ?cd) .
+      BIND (IF(bound(?cd), ?cd, ?c) AS ?value) . }</code></pre>
+<h2 id="properties"><a href="#properties">Properties</a></h2>
+<h3 id="molecularformula"><a href="#molecularformula">MolecularFormula</a></h3>
+<pre><code>:MolecularFormula
+      rdf:type mim:DataRequirement ;
+      mim:hasRestriction
+              [ mim:onSelf &quot;true&quot;^^xsd:boolean ;
+                mim:type xsd:string
+              ] .</code></pre>
+<p>There's a very simple form for this requirement which simply looks for a chembox:Formula statement in the data. Minim can handle this easily enough.</p>
+<pre><code>CONSTRUCT
+    { ?x mim:containsDataReport _:b0 .
+      _:b0 mim:reports chembox-mim:MolecularFormula .
+      _:b0 mim:withValue ?value . }
+WHERE
+    { ?x chembox:Formula ?value . }</code></pre>
+<p>There's also a more complex form that defeats me, which seems to expect a chemical formula in which the constituent chemical elements are described in some RDF structure:</p>
+<ul>
+<li>the SPIN converter service isn't capable of fully converting the query used: I think it's returning the SELECT subquery, but not the surrounding CONSTRUCT query</li>
+<li>the query itself seems to be attempting to perform a complex string manipulation function that, frankly, I think is unreasonable to attempt using SPARQL. It seems to be trying to parse and/or assemble a chemical formula.</li>
+</ul>
+<p>To handle this in Minim, I would consider introducing a specialized web service to manipulate the formula and return the desired result. This will require a minim extension to use external services, but one that would be available to address many of these domain-specific considerations. (Using a functional language to handle the domain specific service implementation could retain a level of logical tractability, but that's a separate issue. Or simply associate some primitive assertions with the service which can be associated with the result.)</p>
+<p>Here is part of the query used for :MolecularFormula:</p>
+<pre><code>PREFIX chembox: &lt;http://dbpedia.org/resource/Template:Chembox:&gt;
+PREFIX fn: &lt;http://www.w3.org/2005/xpath-functions#&gt;
+SELECT *
+WHERE
+    { OPTIONAL { ?x chembox:C ?C . } .
+      OPTIONAL { ?x chembox:H ?H . } .
+      OPTIONAL { ?x chembox:Ac ?Ac . } .
+      OPTIONAL { ?x chembox:Ag ?Ag . } .
+      OPTIONAL { ?x chembox:Al ?Al . } .
+      OPTIONAL { ?x chembox:Am ?Am . } .
+      OPTIONAL { ?x chembox:Ar ?Ar . } .
+      OPTIONAL { ?x chembox:As ?As . } .
+      OPTIONAL { ?x chembox:At ?At . } .
+      OPTIONAL { ?x chembox:Au ?Au . } .
+      OPTIONAL { ?x chembox:B ?B . } .
+      OPTIONAL { ?x chembox:Ba ?Ba . } .
+      OPTIONAL { ?x chembox:Be ?Be . } .
+      OPTIONAL { ?x chembox:Bh ?Bh . } .
+      OPTIONAL { ?x chembox:Bi ?Bi . } .
+      OPTIONAL { ?x chembox:Bk ?Bk . } .
+      OPTIONAL { ?x chembox:Br ?Br . } .
+      OPTIONAL { ?x chembox:Ca ?Ca . } .
+      OPTIONAL { ?x chembox:Cd ?Cd . } .
+      OPTIONAL { ?x chembox:Ce ?Ce . } .
+      OPTIONAL { ?x chembox:Cf ?Cf . } .
+      OPTIONAL { ?x chembox:Cl ?Cl . } .
+      OPTIONAL { ?x chembox:Cm ?Cm . } .
+      OPTIONAL { ?x chembox:Co ?Co . } .
+      OPTIONAL { ?x chembox:Cr ?Cr . } .
+      OPTIONAL { ?x chembox:Cs ?Cs . } .
+      OPTIONAL { ?x chembox:Cu ?Cu . } .
+      OPTIONAL { ?x chembox:Db ?Db . } .
+      OPTIONAL { ?x chembox:Ds ?Ds . } .
+      OPTIONAL { ?x chembox:Dy ?Dy . } .
+      OPTIONAL { ?x chembox:Er ?Er . } .
+      OPTIONAL { ?x chembox:Es ?Es . } .
+      OPTIONAL { ?x chembox:Eu ?Eu . } .
+      OPTIONAL { ?x chembox:F ?F . } .
+      OPTIONAL { ?x chembox:Fe ?Fe . } .
+      OPTIONAL { ?x chembox:Fm ?Fm . } .
+      OPTIONAL { ?x chembox:Fr ?Fr . } .
+      OPTIONAL { ?x chembox:Ga ?Ga . } .
+      OPTIONAL { ?x chembox:Gd ?Gd . } .
+      OPTIONAL { ?x chembox:Ge ?Ge . } .
+      OPTIONAL { ?x chembox:He ?He . } .
+      OPTIONAL { ?x chembox:Hf ?Hf . } .
+      OPTIONAL { ?x chembox:Hg ?Hg . } .
+      OPTIONAL { ?x chembox:Ho ?Ho . } .
+      OPTIONAL { ?x chembox:Hs ?Hs . } .
+      OPTIONAL { ?x chembox:I ?I . } .
+      OPTIONAL { ?x chembox:In ?In . } .
+      OPTIONAL { ?x chembox:Ir ?Ir . } .
+      OPTIONAL { ?x chembox:K ?K . } .
+      OPTIONAL { ?x chembox:Kr ?Kr . } .
+      OPTIONAL { ?x chembox:La ?La . } .
+      OPTIONAL { ?x chembox:Li ?Li . } .
+      OPTIONAL { ?x chembox:Lr ?Lr . } .
+      OPTIONAL { ?x chembox:Lu ?Lu . } .
+      OPTIONAL { ?x chembox:Md ?Md . } .
+      OPTIONAL { ?x chembox:Mg ?Mg . } .
+      OPTIONAL { ?x chembox:Mn ?Mn . } .
+      OPTIONAL { ?x chembox:Mo ?Mo . } .
+      OPTIONAL { ?x chembox:Mt ?Mt . } .
+      OPTIONAL { ?x chembox:N ?N . } .
+      OPTIONAL { ?x chembox:Na ?Na . } .
+      OPTIONAL { ?x chembox:Nb ?Nb . } .
+      OPTIONAL { ?x chembox:Nd ?Nd . } .
+      OPTIONAL { ?x chembox:Ne ?Ne . } .
+      OPTIONAL { ?x chembox:Ni ?Ni . } .
+      OPTIONAL { ?x chembox:No ?No . } .
+      OPTIONAL { ?x chembox:Np ?Np . } .
+      OPTIONAL { ?x chembox:O ?O . } .
+      OPTIONAL { ?x chembox:Os ?Os . } .
+      OPTIONAL { ?x chembox:P ?P . } .
+      OPTIONAL { ?x chembox:Pa ?Pa . } .
+      OPTIONAL { ?x chembox:Pb ?Pb . } .
+      OPTIONAL { ?x chembox:Pd ?Pd . } .
+      OPTIONAL { ?x chembox:Pm ?Pm . } .
+      OPTIONAL { ?x chembox:Po ?Po . } .
+      OPTIONAL { ?x chembox:Pr ?Pr . } .
+      OPTIONAL { ?x chembox:Pt ?Pt . } .
+      OPTIONAL { ?x chembox:Pu ?Pu . } .
+      OPTIONAL { ?x chembox:Ra ?Ra . } .
+      OPTIONAL { ?x chembox:Rb ?Rb . } .
+      OPTIONAL { ?x chembox:Re ?Re . } .
+      OPTIONAL { ?x chembox:Rf ?Rf . } .
+      OPTIONAL { ?x chembox:Rg ?Rg . } .
+      OPTIONAL { ?x chembox:Rh ?Rh . } .
+      OPTIONAL { ?x chembox:Rn ?Rn . } .
+      OPTIONAL { ?x chembox:Ru ?Ru . } .
+      OPTIONAL { ?x chembox:S ?S . } .
+      OPTIONAL { ?x chembox:Sb ?Sb . } .
+      OPTIONAL { ?x chembox:Sc ?Sc . } .
+      OPTIONAL { ?x chembox:Se ?Se . } .
+      OPTIONAL { ?x chembox:Sg ?Sg . } .
+      OPTIONAL { ?x chembox:Si ?Si . } .
+      OPTIONAL { ?x chembox:Sm ?Sm . } .
+      OPTIONAL { ?x chembox:Sn ?Sn . } .
+      OPTIONAL { ?x chembox:Sr ?Sr . } .
+      OPTIONAL { ?x chembox:Ta ?Ta . } .
+      OPTIONAL { ?x chembox:Tb ?Tb . } .
+      OPTIONAL { ?x chembox:Tc ?Tc . } .
+      OPTIONAL { ?x chembox:Te ?Te . } .
+      OPTIONAL { ?x chembox:Th ?Th . } .
+      OPTIONAL { ?x chembox:Ti ?Ti . } .
+      OPTIONAL { ?x chembox:Tl ?Tl . } .
+      OPTIONAL { ?x chembox:Tm ?Tm . } .
+      OPTIONAL { ?x chembox:U ?U . } .
+      OPTIONAL { ?x chembox:Uub ?Uub . } .
+      OPTIONAL { ?x chembox:Uuh ?Uuh . } .
+      OPTIONAL { ?x chembox:Uuo ?Uuo . } .
+      OPTIONAL { ?x chembox:Uup ?Uup . } .
+      OPTIONAL { ?x chembox:Uuq ?Uuq . } .
+      OPTIONAL { ?x chembox:Uus ?Uus . } .
+      OPTIONAL { ?x chembox:Uut ?Uut . } .
+      OPTIONAL { ?x chembox:V ?V . } .
+      OPTIONAL { ?x chembox:W ?W . } .
+      OPTIONAL { ?x chembox:Xe ?Xe . } .
+      OPTIONAL { ?x chembox:Y ?Y . } .
+      OPTIONAL { ?x chembox:Yb ?Yb . } .
+      OPTIONAL { ?x chembox:Zn ?Zn . } .
+      OPTIONAL { ?x chembox:Zr ?Zr . } .
+      BIND (IF(bound(?C), fn:concat(&quot;C&quot;, ?C), &quot;&quot;) AS ?C1) .
+      BIND (IF(bound(?H), fn:concat(&quot;H&quot;, ?H), &quot;&quot;) AS ?H1) .
+      BIND (IF(bound(?Ac), fn:concat(&quot;Ac&quot;, ?Ac), &quot;&quot;) AS ?Ac1) .
+      BIND (IF(bound(?Ag), fn:concat(&quot;Ag&quot;, ?Ag), &quot;&quot;) AS ?Ag1) .
+      BIND (IF(bound(?Al), fn:concat(&quot;Al&quot;, ?Al), &quot;&quot;) AS ?Al1) .
+      BIND (IF(bound(?Am), fn:concat(&quot;Am&quot;, ?Am), &quot;&quot;) AS ?Am1) .
+      BIND (IF(bound(?Ar), fn:concat(&quot;Ar&quot;, ?Ar), &quot;&quot;) AS ?Ar1) .
+      BIND (IF(bound(?As), fn:concat(&quot;As&quot;, ?As), &quot;&quot;) AS ?As1) .
+      BIND (IF(bound(?At), fn:concat(&quot;At&quot;, ?At), &quot;&quot;) AS ?At1) .
+      BIND (IF(bound(?Au), fn:concat(&quot;Au&quot;, ?Au), &quot;&quot;) AS ?Au1) .
+      BIND (IF(bound(?B), fn:concat(&quot;B&quot;, ?B), &quot;&quot;) AS ?B1) .
+      BIND (IF(bound(?Ba), fn:concat(&quot;Ba&quot;, ?Ba), &quot;&quot;) AS ?Ba1) .
+      BIND (IF(bound(?Be), fn:concat(&quot;Be&quot;, ?Be), &quot;&quot;) AS ?Be1) .
+      BIND (IF(bound(?Bh), fn:concat(&quot;Bh&quot;, ?Bh), &quot;&quot;) AS ?Bh1) .
+      BIND (IF(bound(?Bi), fn:concat(&quot;Bi&quot;, ?Bi), &quot;&quot;) AS ?Bi1) .
+      BIND (IF(bound(?Bk), fn:concat(&quot;Bk&quot;, ?Bk), &quot;&quot;) AS ?Bk1) .
+      BIND (IF(bound(?Br), fn:concat(&quot;Br&quot;, ?Br), &quot;&quot;) AS ?Br1) .
+      BIND (IF(bound(?Ca), fn:concat(&quot;Ca&quot;, ?Ca), &quot;&quot;) AS ?Ca1) .
+      BIND (IF(bound(?Cd), fn:concat(&quot;Cd&quot;, ?Cd), &quot;&quot;) AS ?Cd1) .
+      BIND (IF(bound(?Ce), fn:concat(&quot;Ce&quot;, ?Ce), &quot;&quot;) AS ?Ce1) .
+      BIND (IF(bound(?Cf), fn:concat(&quot;Cf&quot;, ?Cf), &quot;&quot;) AS ?Cf1) .
+      BIND (IF(bound(?Cl), fn:concat(&quot;Cl&quot;, ?Cl), &quot;&quot;) AS ?Cl1) .
+      BIND (IF(bound(?Cm), fn:concat(&quot;Cm&quot;, ?Cm), &quot;&quot;) AS ?Cm1) .
+      BIND (IF(bound(?Co), fn:concat(&quot;Co&quot;, ?Co), &quot;&quot;) AS ?Co1) .
+      BIND (IF(bound(?Cr), fn:concat(&quot;Cr&quot;, ?Cr), &quot;&quot;) AS ?Cr1) .
+      BIND (IF(bound(?Cs), fn:concat(&quot;Cs&quot;, ?Cs), &quot;&quot;) AS ?Cs1) .
+      BIND (IF(bound(?Cu), fn:concat(&quot;Cu&quot;, ?Cu), &quot;&quot;) AS ?Cu1) .
+      BIND (IF(bound(?Db), fn:concat(&quot;Db&quot;, ?Db), &quot;&quot;) AS ?Db1) .
+      BIND (IF(bound(?Ds), fn:concat(&quot;Ds&quot;, ?Ds), &quot;&quot;) AS ?Ds1) .
+      BIND (IF(bound(?Dy), fn:concat(&quot;Dy&quot;, ?Dy), &quot;&quot;) AS ?Dy1) .
+      BIND (IF(bound(?Er), fn:concat(&quot;Er&quot;, ?Er), &quot;&quot;) AS ?Er1) .
+      BIND (IF(bound(?Es), fn:concat(&quot;Es&quot;, ?Es), &quot;&quot;) AS ?Es1) .
+      BIND (IF(bound(?Eu), fn:concat(&quot;Eu&quot;, ?Eu), &quot;&quot;) AS ?Eu1) .
+      BIND (IF(bound(?F), fn:concat(&quot;F&quot;, ?F), &quot;&quot;) AS ?F1) .
+      BIND (IF(bound(?Fe), fn:concat(&quot;Fe&quot;, ?Fe), &quot;&quot;) AS ?Fe1) .
+      BIND (IF(bound(?Fm), fn:concat(&quot;Fm&quot;, ?Fm), &quot;&quot;) AS ?Fm1) .
+      BIND (IF(bound(?Fr), fn:concat(&quot;Fr&quot;, ?Fr), &quot;&quot;) AS ?Fr1) .
+      BIND (IF(bound(?Ga), fn:concat(&quot;Ga&quot;, ?Ga), &quot;&quot;) AS ?Ga1) .
+      BIND (IF(bound(?Gd), fn:concat(&quot;Gd&quot;, ?Gd), &quot;&quot;) AS ?Gd1) .
+      BIND (IF(bound(?Ge), fn:concat(&quot;Ge&quot;, ?Ge), &quot;&quot;) AS ?Ge1) .
+      BIND (IF(bound(?He), fn:concat(&quot;He&quot;, ?He), &quot;&quot;) AS ?He1) .
+      BIND (IF(bound(?Hf), fn:concat(&quot;Hf&quot;, ?Hf), &quot;&quot;) AS ?Hf1) .
+      BIND (IF(bound(?Hg), fn:concat(&quot;Hg&quot;, ?Hg), &quot;&quot;) AS ?Hg1) .
+      BIND (IF(bound(?Ho), fn:concat(&quot;Ho&quot;, ?Ho), &quot;&quot;) AS ?Ho1) .
+      BIND (IF(bound(?Hs), fn:concat(&quot;Hs&quot;, ?Hs), &quot;&quot;) AS ?Hs1) .
+      BIND (IF(bound(?I), fn:concat(&quot;I&quot;, ?I), &quot;&quot;) AS ?I1) .
+      BIND (IF(bound(?In), fn:concat(&quot;In&quot;, ?In), &quot;&quot;) AS ?In1) .
+      BIND (IF(bound(?Ir), fn:concat(&quot;Ir&quot;, ?Ir), &quot;&quot;) AS ?Ir1) .
+      BIND (IF(bound(?K), fn:concat(&quot;K&quot;, ?K), &quot;&quot;) AS ?K1) .
+      BIND (IF(bound(?Kr), fn:concat(&quot;Kr&quot;, ?Kr), &quot;&quot;) AS ?Kr1) .
+      BIND (IF(bound(?La), fn:concat(&quot;La&quot;, ?La), &quot;&quot;) AS ?La1) .
+      BIND (IF(bound(?Li), fn:concat(&quot;Li&quot;, ?Li), &quot;&quot;) AS ?Li1) .
+      BIND (IF(bound(?Lr), fn:concat(&quot;Lr&quot;, ?Lr), &quot;&quot;) AS ?Lr1) .
+      BIND (IF(bound(?Lu), fn:concat(&quot;Lu&quot;, ?Lu), &quot;&quot;) AS ?Lu1) .
+      BIND (IF(bound(?Md), fn:concat(&quot;Md&quot;, ?Md), &quot;&quot;) AS ?Md1) .
+      BIND (IF(bound(?Mg), fn:concat(&quot;Mg&quot;, ?Mg), &quot;&quot;) AS ?Mg1) .
+      BIND (IF(bound(?Mn), fn:concat(&quot;Mn&quot;, ?Mn), &quot;&quot;) AS ?Mn1) .
+      BIND (IF(bound(?Mo), fn:concat(&quot;Mo&quot;, ?Mo), &quot;&quot;) AS ?Mo1) .
+      BIND (IF(bound(?Mt), fn:concat(&quot;Mt&quot;, ?Mt), &quot;&quot;) AS ?Mt1) .
+      BIND (IF(bound(?N), fn:concat(&quot;N&quot;, ?N), &quot;&quot;) AS ?N1) .
+      BIND (IF(bound(?Na), fn:concat(&quot;Na&quot;, ?Na), &quot;&quot;) AS ?Na1) .
+      BIND (IF(bound(?Nb), fn:concat(&quot;Nb&quot;, ?Nb), &quot;&quot;) AS ?Nb1) .
+      BIND (IF(bound(?Nd), fn:concat(&quot;Nd&quot;, ?Nd), &quot;&quot;) AS ?Nd1) .
+      BIND (IF(bound(?Ne), fn:concat(&quot;Ne&quot;, ?Ne), &quot;&quot;) AS ?Ne1) .
+      BIND (IF(bound(?Ni), fn:concat(&quot;Ni&quot;, ?Ni), &quot;&quot;) AS ?Ni1) .
+      BIND (IF(bound(?No), fn:concat(&quot;No&quot;, ?No), &quot;&quot;) AS ?No1) .
+      BIND (IF(bound(?Np), fn:concat(&quot;Np&quot;, ?Np), &quot;&quot;) AS ?Np1) .
+      BIND (IF(bound(?O), fn:concat(&quot;O&quot;, ?O), &quot;&quot;) AS ?O1) .
+      BIND (IF(bound(?Os), fn:concat(&quot;Os&quot;, ?Os), &quot;&quot;) AS ?Os1) .
+      BIND (IF(bound(?P), fn:concat(&quot;P&quot;, ?P), &quot;&quot;) AS ?P1) .
+      BIND (IF(bound(?Pa), fn:concat(&quot;Pa&quot;, ?Pa), &quot;&quot;) AS ?Pa1) .
+      BIND (IF(bound(?Pb), fn:concat(&quot;Pb&quot;, ?Pb), &quot;&quot;) AS ?Pb1) .
+      BIND (IF(bound(?Pd), fn:concat(&quot;Pd&quot;, ?Pd), &quot;&quot;) AS ?Pd1) .
+      BIND (IF(bound(?Pm), fn:concat(&quot;Pm&quot;, ?Pm), &quot;&quot;) AS ?Pm1) .
+      BIND (IF(bound(?Po), fn:concat(&quot;Po&quot;, ?Po), &quot;&quot;) AS ?Po1) .
+      BIND (IF(bound(?Pr), fn:concat(&quot;Pr&quot;, ?Pr), &quot;&quot;) AS ?Pr1) .
+      BIND (IF(bound(?Pt), fn:concat(&quot;Pt&quot;, ?Pt), &quot;&quot;) AS ?Pt1) .
+      BIND (IF(bound(?Pu), fn:concat(&quot;Pu&quot;, ?Pu), &quot;&quot;) AS ?Pu1) .
+      BIND (IF(bound(?Ra), fn:concat(&quot;Ra&quot;, ?Ra), &quot;&quot;) AS ?Ra1) .
+      BIND (IF(bound(?Rb), fn:concat(&quot;Rb&quot;, ?Rb), &quot;&quot;) AS ?Rb1) .
+      BIND (IF(bound(?Re), fn:concat(&quot;Re&quot;, ?Re), &quot;&quot;) AS ?Re1) .
+      BIND (IF(bound(?Rf), fn:concat(&quot;Rf&quot;, ?Rf), &quot;&quot;) AS ?Rf1) .
+      BIND (IF(bound(?Rg), fn:concat(&quot;Rg&quot;, ?Rg), &quot;&quot;) AS ?Rg1) .
+      BIND (IF(bound(?Rh), fn:concat(&quot;Rh&quot;, ?Rh), &quot;&quot;) AS ?Rh1) .
+      BIND (IF(bound(?Rn), fn:concat(&quot;Rn&quot;, ?Rn), &quot;&quot;) AS ?Rn1) .
+      BIND (IF(bound(?Ru), fn:concat(&quot;Ru&quot;, ?Ru), &quot;&quot;) AS ?Ru1) .
+      BIND (IF(bound(?S), fn:concat(&quot;S&quot;, ?S), &quot;&quot;) AS ?S1) .
+      BIND (IF(bound(?Sb), fn:concat(&quot;Sb&quot;, ?Sb), &quot;&quot;) AS ?Sb1) .
+      BIND (IF(bound(?Sc), fn:concat(&quot;Sc&quot;, ?Sc), &quot;&quot;) AS ?Sc1) .
+      BIND (IF(bound(?Se), fn:concat(&quot;Se&quot;, ?Se), &quot;&quot;) AS ?Se1) .
+      BIND (IF(bound(?Sg), fn:concat(&quot;Sg&quot;, ?Sg), &quot;&quot;) AS ?Sg1) .
+      BIND (IF(bound(?Si), fn:concat(&quot;Si&quot;, ?Si), &quot;&quot;) AS ?Si1) .
+      BIND (IF(bound(?Sm), fn:concat(&quot;Sm&quot;, ?Sm), &quot;&quot;) AS ?Sm1) .
+      BIND (IF(bound(?Sn), fn:concat(&quot;Sn&quot;, ?Sn), &quot;&quot;) AS ?Sn1) .
+      BIND (IF(bound(?Sr), fn:concat(&quot;Sr&quot;, ?Sr), &quot;&quot;) AS ?Sr1) .
+      BIND (IF(bound(?Ta), fn:concat(&quot;Ta&quot;, ?Ta), &quot;&quot;) AS ?Ta1) .
+      BIND (IF(bound(?Tb), fn:concat(&quot;Tb&quot;, ?Tb), &quot;&quot;) AS ?Tb1) .
+      BIND (IF(bound(?Tc), fn:concat(&quot;Tc&quot;, ?Tc), &quot;&quot;) AS ?Tc1) .
+      BIND (IF(bound(?Te), fn:concat(&quot;Te&quot;, ?Te), &quot;&quot;) AS ?Te1) .
+      BIND (IF(bound(?Th), fn:concat(&quot;Th&quot;, ?Th), &quot;&quot;) AS ?Th1) .
+      BIND (IF(bound(?Ti), fn:concat(&quot;Ti&quot;, ?Ti), &quot;&quot;) AS ?Ti1) .
+      BIND (IF(bound(?Tl), fn:concat(&quot;Tl&quot;, ?Tl), &quot;&quot;) AS ?Tl1) .
+      BIND (IF(bound(?Tm), fn:concat(&quot;Tm&quot;, ?Tm), &quot;&quot;) AS ?Tm1) .
+      BIND (IF(bound(?U), fn:concat(&quot;U&quot;, ?U), &quot;&quot;) AS ?U1) .
+      BIND (IF(bound(?Uub), fn:concat(&quot;Uub&quot;, ?Uub), &quot;&quot;) AS ?Uub1) .
+      BIND (IF(bound(?Uuh), fn:concat(&quot;Uuh&quot;, ?Uuh), &quot;&quot;) AS ?Uuh1) .
+      BIND (IF(bound(?Uuo), fn:concat(&quot;Uuo&quot;, ?Uuo), &quot;&quot;) AS ?Uuo1) .
+      BIND (IF(bound(?Uup), fn:concat(&quot;Uup&quot;, ?Uup), &quot;&quot;) AS ?Uup1) .
+      BIND (IF(bound(?Uuq), fn:concat(&quot;Uuq&quot;, ?Uuq), &quot;&quot;) AS ?Uuq1) .
+      BIND (IF(bound(?Uus), fn:concat(&quot;Uus&quot;, ?Uus), &quot;&quot;) AS ?Uus1) .
+      BIND (IF(bound(?Uut), fn:concat(&quot;Uut&quot;, ?Uut), &quot;&quot;) AS ?Uut1) .
+      BIND (IF(bound(?V), fn:concat(&quot;V&quot;, ?V), &quot;&quot;) AS ?V1) .
+      BIND (IF(bound(?W), fn:concat(&quot;W&quot;, ?W), &quot;&quot;) AS ?W1) .
+      BIND (IF(bound(?Xe), fn:concat(&quot;Xe&quot;, ?Xe), &quot;&quot;) AS ?Xe1) .
+      BIND (IF(bound(?Y), fn:concat(&quot;Y&quot;, ?Y), &quot;&quot;) AS ?Y1) .
+      BIND (IF(bound(?Yb), fn:concat(&quot;Yb&quot;, ?Yb), &quot;&quot;) AS ?Yb1) .
+      BIND (IF(bound(?Zn), fn:concat(&quot;Zn&quot;, ?Zn), &quot;&quot;) AS ?Zn1) .
+      BIND (IF(bound(?Zr), fn:concat(&quot;Zr&quot;, ?Zr), &quot;&quot;) AS ?Zr1) . }</code></pre>
+<h3 id="solubility"><a href="#solubility">Solubility</a></h3>
+<pre><code>:Solubility
+      rdf:type mim:DataRequirement .</code></pre>
+<p>A solubility description is an optional (MAY) requirement, which is indicated simply by a chembox:Solubility statement.</p>
+<pre><code>CONSTRUCT 
+    { ?x mim:containsDataReport _:b0 .
+      _:b0 mim:reports chembox-mim:Solubility .
+      _:b0 mim:withValue ?value . }
+WHERE
+    { ?x chembox:Solubility ?value . }</code></pre>
+<h3 id="meltingpoint"><a href="#meltingpoint">MeltingPoint</a></h3>
+<pre><code>:MeltingPoint
+    rdf:type mim:RequirementSet ;
+    mim:hasMustRequirement :MeltingPointUnits , :MeltingPointValue ;
+    mim:hasRestriction
+      [ mim:exactCardinality 1 ;
+        mim:onRequirement :MeltingPointUnits , :MeltingPointValue ] .
+
+:MeltingPointUnits
+    rdf:type mim:DataRequirement . 
+
+:MeltingPointValue
+    rdf:type mim:DataRequirement .</code></pre>
+<p>This involves a relatively complex query that generates three separate reports as required: a :MeltingPoint report, and :MeltingPointUnits and :MeltingPointValue reports, of which there must be exactly one of each. (Here, we see a mim:RequirementSet value is generated directly by the SPIN rule, which is a little surprising.)</p>
+<pre><code>CONSTRUCT
+  { ?x mim:containsReportSet _:b0 .
+    _:b0 mim:containsDataReport _:b1 .
+    _:b0 mim:containsDataReport _:b2 .
+    _:b0 mim:reports chembox-mim:MeltingPoint .
+    _:b1 mim:reports chembox-mim:MeltingPointValue .
+    _:b1 mim:withValue ?value .
+    _:b2 mim:reports chembox-mim:MeltingPointUnits .
+    _:b2 mim:withValue ?units . }
+WHERE
+  { OPTIONAL
+      { ?x (chembox:MeltingPtK|chembox:MeltingPtKL)|chembox:MeltingPtKH ?value .
+        BIND (&quot;K&quot; AS ?units) . } .
+    OPTIONAL
+      { ?x (chembox:MeltingPtC|chembox:MeltingPtCL)|chembox:MeltingPtCH ?value .
+        BIND (&quot;C&quot; AS ?units) . } .
+  }</code></pre>
+<p>There are also some related rules that appear to require melting points separately in C or K units:</p>
+<pre><code>CONSTRUCT 
+  { ?x mim:containsReportSet _:b0 .
+    _:b0 mim:containsDataReport _:b1 .
+    _:b0 mim:containsDataReport _:b2 .
+    _:b0 mim:reports chembox-mim:MeltingPoint .
+    _:b1 mim:reports chembox-mim:MeltingPointValue .
+    _:b1 mim:withValue ?value .
+    _:b2 mim:reports chembox-mim:MeltingPointUnits .
+    _:b2 mim:withValue ?units . }
+WHERE
+  { ?x chembox:MeltingPt ?value .
+    BIND (regex(?value, &quot;K$&quot;, &quot;i&quot;) AS ?k) .
+    BIND (IF(?k, &quot;K&quot;, &quot;&quot;) AS ?units) .
+    FILTER (?units != &quot;&quot;) . }</code></pre>
+<p>and</p>
+<pre><code>CONSTRUCT
+  { ?x mim:containsReportSet _:b0 .
+    _:b0 mim:containsDataReport _:b1 .
+    _:b0 mim:containsDataReport _:b2 .
+    _:b0 mim:reports chembox-mim:MeltingPoint .
+    _:b1 mim:reports chembox-mim:MeltingPointValue .
+    _:b1 mim:withValue ?value .
+    _:b2 mim:reports chembox-mim:MeltingPointUnits .
+    _:b2 mim:withValue ?units . }
+WHERE
+  { ?x chembox:MeltingPt ?value .
+    BIND (regex(?value, &quot;C$&quot;, &quot;i&quot;) AS ?c) .
+    BIND (IF(?c, &quot;C&quot;, &quot;&quot;) AS ?units) .
+    FILTER (?units != &quot;&quot;) . }</code></pre>
+<h3 id="molarmass"><a href="#molarmass">MolarMass</a></h3>
+<pre><code>:MolarMass
+      rdf:type mim:DataRequirement .</code></pre>
+<p>The molar mass description is a SHOULD requirement that simply looks for the presence of a chembox:MolarMass value:</p>
+<pre><code>CONSTRUCT
+  { ?x mim:containsDataReport _:b0 .
+    _:b0 mim:reports chembox-mim:MolarMass .
+    _:b0 mim:withValue ?value . }
+WHERE
+  { ?x chembox:MolarMass ?value . }</code></pre>
+<h2 id="other-requirements"><a href="#other-requirements">Other requirements</a></h2>
+<h3 id="synonym"><a href="#synonym">Synonym</a></h3>
+<pre><code>:Synonym
+      rdf:type mim:DataRequirement .</code></pre>
+<p>A synonym is an optional; (MAY) requirement that simply looks for the presence of a chembox:OtherNames value:</p>
+<pre><code>CONSTRUCT
+  { ?x mim:containsDataReport _:b0 .
+    _:b0 mim:reports chembox-mim:Synonym .
+    _:b0 mim:withValue ?value . }
+WHERE
+  { ?x chembox:OtherNames ?value . }</code></pre>
+<h3 id="iupacname"><a href="#iupacname">IUPACName</a></h3>
+<pre><code>:IUPACName
+    rdf:type mim:DataRequirement . </code></pre>
+<p>A simple test for available information:</p>
+<pre><code>CONSTRUCT
+  { ?x mim:containsDataReport _:b0 .
+    _:b0 mim:reports chembox-mim:IUPACName .
+    _:b0 mim:withValue ?value . }
+WHERE
+  { ?x chembox:IUPACName ?value . }</code></pre>
+<h3 id="image"><a href="#image">Image</a></h3>
+<pre><code>:Image 
+    rdf:type mim:DataRequirement . </code></pre>
+<p>Looks for statements using one of three properties, and manipulates the result to construct a URI for the image resource. In this respect (constructing the URI) it goes beyond the requirements of simple metadata checking, but the resulting URI might be useful for liveness testing.</p>
+<pre><code>CONSTRUCT {
+    ?x mim:containsDataReport _:b0 .
+    _:b0 mim:reports chembox-mim:Image .
+    _:b0 mim:withValue ?value .
+    ?value a &lt;http://xmlns.com/foaf/0.1/Image&gt; .
+}
+WHERE {
+    ?x (chembox:ImageFile|chembox:ImageFileL1)|chembox:ImageFileR1 ?f .
+    BIND (IRI(fn:concat(&quot;http://en.wikipedia.org/File:&quot;, ?f)) AS ?value) .
+}</code></pre>
+</body>
+</html>

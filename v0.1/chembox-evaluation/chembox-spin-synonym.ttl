@@ -1,0 +1,971 @@
+# Saved by TopBraid on Sat Jul 14 15:25:24 BST 2012
+# baseURI: http://sierra-nevada.cs.man.ac.uk/mim/chembox/chembox-spin
+# imports: http://purl.org/net/mim/mimspin
+# imports: http://sierra-nevada.cs.man.ac.uk/mim/chembox/chemmim
+# imports: http://purl.org/net/mim/ns
+# imports: http://spinrdf.org/spin
+
+@prefix :        <http://sierra-nevada.cs.man.ac.uk/mim/chembox/chembox-spin#> .
+@prefix chembox:  <http://dbpedia.org/resource/Template:Chembox:> .
+@prefix chembox-mim:  <http://sierra-nevada.cs.man.ac.uk/mim/chembox/chemmim#> .
+@prefix dbpprop:  <http://dbpedia.org/property/> .
+@prefix fn:      <http://www.w3.org/2005/xpath-functions#> .
+@prefix mim:     <http://purl.org/net/mim/ns#> .
+@prefix mimspin:  <http://purl.org/net/mim/mimspin#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sp:      <http://spinrdf.org/sp#> .
+@prefix spin:    <http://spinrdf.org/spin#> .
+@prefix spl:     <http://spinrdf.org/spl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<http://sierra-nevada.cs.man.ac.uk/mim/chembox/chembox-spin>
+      rdf:type owl:Ontology ;
+      owl:imports <http://purl.org/net/mim/ns> , <http://purl.org/net/mim/mimspin> , <http://spinrdf.org/spin> , <http://sierra-nevada.cs.man.ac.uk/mim/chembox/chembox-mim> ;
+      owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
+
+:Synonyms
+      rdf:type spin:ConstructTemplate ;
+      rdfs:subClassOf :Chembox ;
+      spin:body
+              [ rdf:type sp:Construct ;
+                sp:templates ([ sp:object _:b317 ;
+                            sp:predicate mim:containsDataReport ;
+                            sp:subject _:b318
+                          ] [ sp:object chembox-mim:Synonym ;
+                            sp:predicate mim:reports ;
+                            sp:subject _:b317
+                          ] [ sp:object _:b319 ;
+                            sp:predicate mim:withValue ;
+                            sp:subject _:b317
+                          ]) ;
+                sp:where ([ sp:object _:b319 ;
+                            sp:predicate <http://dbpedia.org/resource/Template:Chembox:OtherNames> ;
+                            sp:subject _:b318
+                          ])
+              ] ;
+      spin:labelTemplate "Chembox: Synonyms"^^xsd:string .
+
+rdfs:Resource
+      spin:rule
+              [ rdf:type mimspin:Contains
+              ] .
+
+owl:Thing
+      spin:onceRule
+              [ rdf:type :MIM
+              ] ;
+      spin:onceRule
+              [ rdf:type :MeltingPointSimple
+              ] ;
+      spin:onceRule
+              [ rdf:type :BoilingPointC
+              ] ;
+      spin:onceRule
+              [ rdf:type :ChemSpider
+              ] ;
+      spin:onceRule
+              [ rdf:type :Solubility
+              ] ;
+      spin:onceRule
+              [ rdf:type :Image
+              ] ;
+      spin:onceRule
+              [ rdf:type :PubChem
+              ] ;
+      spin:onceRule
+              [ rdf:type :MolecularFormulaSimple
+              ] ;
+      spin:onceRule
+              [ rdf:type :MolarMass
+              ] ;
+      spin:onceRule
+              [ rdf:type :MeltingPointC
+              ] ;
+      spin:onceRule
+              [ rdf:type :BoilingPointSimple
+              ] ;
+      spin:onceRule
+              [ rdf:type :MeltingPointK
+              ] ;
+      spin:onceRule
+              [ rdf:type :BoilingPointK
+              ] ;
+      spin:onceRule
+              [ rdf:type :IUPACName
+              ] ;
+      spin:onceRule
+              [ rdf:type :Synonyms
+              ] ;
+      spin:onceRule
+              [ rdf:type :SMILES
+              ] ;
+      spin:onceRule
+              [ rdf:type :InChI
+              ] ;
+      spin:onceRule
+              [ rdf:type :MolecularFormula
+              ] .
+
+_:b46
+      sp:varName "units"^^xsd:string .
+
+_:b47
+      sp:varName "c"^^xsd:string .
+
+_:b45
+      sp:varName "value"^^xsd:string .
+
+_:b42
+      sp:varName "x"^^xsd:string .
+
+_:b60
+      sp:varName "units"^^xsd:string .
+
+_:b59
+      sp:varName "value"^^xsd:string .
+
+_:b56
+      sp:varName "x"^^xsd:string .
+
+_:b6  sp:varName "units"^^xsd:string .
+
+_:b7  sp:varName "c"^^xsd:string .
+
+_:b5  sp:varName "value"^^xsd:string .
+
+_:b2  sp:varName "x"^^xsd:string .
+
+_:b53
+      sp:varName "units"^^xsd:string .
+
+_:b54
+      sp:varName "k"^^xsd:string .
+
+_:b52
+      sp:varName "value"^^xsd:string .
+
+_:b49
+      sp:varName "x"^^xsd:string .
+
+_:b34
+      sp:varName "x"^^xsd:string .
+
+_:b36
+      sp:varName "f"^^xsd:string .
+
+_:b35
+      sp:varName "value"^^xsd:string .
+
+_:b20
+      sp:varName "units"^^xsd:string .
+
+_:b19
+      sp:varName "value"^^xsd:string .
+
+_:b16
+      sp:varName "x"^^xsd:string .
+
+_:b319
+      sp:varName "value"^^xsd:string .
+
+_:b318
+      sp:varName "x"^^xsd:string .
+
+_:b316
+      sp:varName "value"^^xsd:string .
+
+_:b315
+      sp:varName "x"^^xsd:string .
+
+_:b313
+      sp:varName "value"^^xsd:string .
+
+_:b312
+      sp:varName "x"^^xsd:string .
+
+_:b310
+      sp:varName "cd"^^xsd:string .
+
+_:b309
+      sp:varName "c"^^xsd:string .
+
+_:b308
+      sp:varName "value"^^xsd:string .
+
+_:b307
+      sp:varName "x"^^xsd:string .
+
+_:b305
+      sp:varName "value"^^xsd:string .
+
+_:b304
+      sp:varName "x"^^xsd:string .
+
+_:b302
+      sp:varName "Zr1"^^xsd:string .
+
+_:b301
+      sp:varName "Zn1"^^xsd:string .
+
+_:b300
+      sp:varName "Yb1"^^xsd:string .
+
+_:b299
+      sp:varName "Y1"^^xsd:string .
+
+_:b298
+      sp:varName "Xe1"^^xsd:string .
+
+_:b297
+      sp:varName "W1"^^xsd:string .
+
+_:b296
+      sp:varName "V1"^^xsd:string .
+
+_:b295
+      sp:varName "Uut1"^^xsd:string .
+
+_:b294
+      sp:varName "Uus1"^^xsd:string .
+
+_:b293
+      sp:varName "Uuq1"^^xsd:string .
+
+_:b292
+      sp:varName "Uup1"^^xsd:string .
+
+_:b291
+      sp:varName "Uuo1"^^xsd:string .
+
+_:b290
+      sp:varName "Uuh1"^^xsd:string .
+
+_:b289
+      sp:varName "Uub1"^^xsd:string .
+
+_:b288
+      sp:varName "U1"^^xsd:string .
+
+_:b287
+      sp:varName "Tm1"^^xsd:string .
+
+_:b286
+      sp:varName "Tl1"^^xsd:string .
+
+_:b285
+      sp:varName "Ti1"^^xsd:string .
+
+_:b284
+      sp:varName "Th1"^^xsd:string .
+
+_:b283
+      sp:varName "Te1"^^xsd:string .
+
+_:b282
+      sp:varName "Tc1"^^xsd:string .
+
+_:b281
+      sp:varName "Tb1"^^xsd:string .
+
+_:b280
+      sp:varName "Ta1"^^xsd:string .
+
+_:b279
+      sp:varName "Sr1"^^xsd:string .
+
+_:b278
+      sp:varName "Sn1"^^xsd:string .
+
+_:b277
+      sp:varName "Sm1"^^xsd:string .
+
+_:b276
+      sp:varName "Si1"^^xsd:string .
+
+_:b275
+      sp:varName "Sg1"^^xsd:string .
+
+_:b274
+      sp:varName "Se1"^^xsd:string .
+
+_:b273
+      sp:varName "Sc1"^^xsd:string .
+
+_:b272
+      sp:varName "Sb1"^^xsd:string .
+
+_:b271
+      sp:varName "S1"^^xsd:string .
+
+_:b270
+      sp:varName "Ru1"^^xsd:string .
+
+_:b269
+      sp:varName "Rn1"^^xsd:string .
+
+_:b268
+      sp:varName "Rh1"^^xsd:string .
+
+_:b267
+      sp:varName "Rg1"^^xsd:string .
+
+_:b266
+      sp:varName "Rf1"^^xsd:string .
+
+_:b265
+      sp:varName "Re1"^^xsd:string .
+
+_:b264
+      sp:varName "Rb1"^^xsd:string .
+
+_:b263
+      sp:varName "Ra1"^^xsd:string .
+
+_:b262
+      sp:varName "Pu1"^^xsd:string .
+
+_:b261
+      sp:varName "Pt1"^^xsd:string .
+
+_:b260
+      sp:varName "Pr1"^^xsd:string .
+
+_:b259
+      sp:varName "Po1"^^xsd:string .
+
+_:b258
+      sp:varName "Pm1"^^xsd:string .
+
+_:b257
+      sp:varName "Pd1"^^xsd:string .
+
+_:b256
+      sp:varName "Pb1"^^xsd:string .
+
+_:b255
+      sp:varName "Pa1"^^xsd:string .
+
+_:b254
+      sp:varName "P1"^^xsd:string .
+
+_:b253
+      sp:varName "Os1"^^xsd:string .
+
+_:b252
+      sp:varName "O1"^^xsd:string .
+
+_:b251
+      sp:varName "Np1"^^xsd:string .
+
+_:b250
+      sp:varName "No1"^^xsd:string .
+
+_:b249
+      sp:varName "Ni1"^^xsd:string .
+
+_:b248
+      sp:varName "Ne1"^^xsd:string .
+
+_:b247
+      sp:varName "Nd1"^^xsd:string .
+
+_:b246
+      sp:varName "Nb1"^^xsd:string .
+
+_:b245
+      sp:varName "Na1"^^xsd:string .
+
+_:b244
+      sp:varName "N1"^^xsd:string .
+
+_:b243
+      sp:varName "Mt1"^^xsd:string .
+
+_:b242
+      sp:varName "Mo1"^^xsd:string .
+
+_:b241
+      sp:varName "Mn1"^^xsd:string .
+
+_:b240
+      sp:varName "Mg1"^^xsd:string .
+
+_:b239
+      sp:varName "Md1"^^xsd:string .
+
+_:b238
+      sp:varName "Lu1"^^xsd:string .
+
+_:b237
+      sp:varName "Lr1"^^xsd:string .
+
+_:b236
+      sp:varName "Li1"^^xsd:string .
+
+_:b235
+      sp:varName "La1"^^xsd:string .
+
+_:b234
+      sp:varName "Kr1"^^xsd:string .
+
+_:b233
+      sp:varName "K1"^^xsd:string .
+
+_:b232
+      sp:varName "Ir1"^^xsd:string .
+
+_:b231
+      sp:varName "In1"^^xsd:string .
+
+_:b230
+      sp:varName "I1"^^xsd:string .
+
+_:b229
+      sp:varName "Hs1"^^xsd:string .
+
+_:b228
+      sp:varName "Ho1"^^xsd:string .
+
+_:b227
+      sp:varName "Hg1"^^xsd:string .
+
+_:b226
+      sp:varName "Hf1"^^xsd:string .
+
+_:b225
+      sp:varName "He1"^^xsd:string .
+
+_:b224
+      sp:varName "Ge1"^^xsd:string .
+
+_:b223
+      sp:varName "Gd1"^^xsd:string .
+
+_:b222
+      sp:varName "Ga1"^^xsd:string .
+
+_:b221
+      sp:varName "Fr1"^^xsd:string .
+
+_:b220
+      sp:varName "Fm1"^^xsd:string .
+
+_:b219
+      sp:varName "Fe1"^^xsd:string .
+
+_:b218
+      sp:varName "F1"^^xsd:string .
+
+_:b217
+      sp:varName "Eu1"^^xsd:string .
+
+_:b216
+      sp:varName "Es1"^^xsd:string .
+
+_:b215
+      sp:varName "Er1"^^xsd:string .
+
+_:b214
+      sp:varName "Dy1"^^xsd:string .
+
+_:b213
+      sp:varName "Ds1"^^xsd:string .
+
+_:b212
+      sp:varName "Db1"^^xsd:string .
+
+_:b211
+      sp:varName "Cu1"^^xsd:string .
+
+_:b210
+      sp:varName "Cs1"^^xsd:string .
+
+_:b209
+      sp:varName "Cr1"^^xsd:string .
+
+_:b208
+      sp:varName "Co1"^^xsd:string .
+
+_:b207
+      sp:varName "Cm1"^^xsd:string .
+
+_:b206
+      sp:varName "Cl1"^^xsd:string .
+
+_:b205
+      sp:varName "Cf1"^^xsd:string .
+
+_:b204
+      sp:varName "Ce1"^^xsd:string .
+
+_:b203
+      sp:varName "Cd1"^^xsd:string .
+
+_:b202
+      sp:varName "Ca1"^^xsd:string .
+
+_:b201
+      sp:varName "Br1"^^xsd:string .
+
+_:b200
+      sp:varName "Bk1"^^xsd:string .
+
+_:b199
+      sp:varName "Bi1"^^xsd:string .
+
+_:b198
+      sp:varName "Bh1"^^xsd:string .
+
+_:b197
+      sp:varName "Be1"^^xsd:string .
+
+_:b196
+      sp:varName "Ba1"^^xsd:string .
+
+_:b195
+      sp:varName "B1"^^xsd:string .
+
+_:b194
+      sp:varName "Au1"^^xsd:string .
+
+_:b193
+      sp:varName "At1"^^xsd:string .
+
+_:b192
+      sp:varName "As1"^^xsd:string .
+
+_:b191
+      sp:varName "Ar1"^^xsd:string .
+
+_:b190
+      sp:varName "Am1"^^xsd:string .
+
+_:b189
+      sp:varName "Al1"^^xsd:string .
+
+_:b188
+      sp:varName "Ag1"^^xsd:string .
+
+_:b187
+      sp:varName "Ac1"^^xsd:string .
+
+_:b186
+      sp:varName "H1"^^xsd:string .
+
+_:b185
+      sp:varName "C1"^^xsd:string .
+
+_:b184
+      sp:varName "Zr"^^xsd:string .
+
+_:b183
+      sp:varName "Zn"^^xsd:string .
+
+_:b182
+      sp:varName "Yb"^^xsd:string .
+
+_:b181
+      sp:varName "Y"^^xsd:string .
+
+_:b180
+      sp:varName "Xe"^^xsd:string .
+
+_:b179
+      sp:varName "W"^^xsd:string .
+
+_:b178
+      sp:varName "V"^^xsd:string .
+
+_:b177
+      sp:varName "Uut"^^xsd:string .
+
+_:b176
+      sp:varName "Uus"^^xsd:string .
+
+_:b175
+      sp:varName "Uuq"^^xsd:string .
+
+_:b174
+      sp:varName "Uup"^^xsd:string .
+
+_:b173
+      sp:varName "Uuo"^^xsd:string .
+
+_:b172
+      sp:varName "Uuh"^^xsd:string .
+
+_:b171
+      sp:varName "Uub"^^xsd:string .
+
+_:b170
+      sp:varName "U"^^xsd:string .
+
+_:b169
+      sp:varName "Tm"^^xsd:string .
+
+_:b168
+      sp:varName "Tl"^^xsd:string .
+
+_:b167
+      sp:varName "Ti"^^xsd:string .
+
+_:b166
+      sp:varName "Th"^^xsd:string .
+
+_:b165
+      sp:varName "Te"^^xsd:string .
+
+_:b164
+      sp:varName "Tc"^^xsd:string .
+
+_:b163
+      sp:varName "Tb"^^xsd:string .
+
+_:b162
+      sp:varName "Ta"^^xsd:string .
+
+_:b161
+      sp:varName "Sr"^^xsd:string .
+
+_:b160
+      sp:varName "Sn"^^xsd:string .
+
+_:b159
+      sp:varName "Sm"^^xsd:string .
+
+_:b158
+      sp:varName "Si"^^xsd:string .
+
+_:b157
+      sp:varName "Sg"^^xsd:string .
+
+_:b156
+      sp:varName "Se"^^xsd:string .
+
+_:b155
+      sp:varName "Sc"^^xsd:string .
+
+_:b154
+      sp:varName "Sb"^^xsd:string .
+
+_:b153
+      sp:varName "S"^^xsd:string .
+
+_:b152
+      sp:varName "Ru"^^xsd:string .
+
+_:b151
+      sp:varName "Rn"^^xsd:string .
+
+_:b150
+      sp:varName "Rh"^^xsd:string .
+
+_:b149
+      sp:varName "Rg"^^xsd:string .
+
+_:b148
+      sp:varName "Rf"^^xsd:string .
+
+_:b147
+      sp:varName "Re"^^xsd:string .
+
+_:b146
+      sp:varName "Rb"^^xsd:string .
+
+_:b145
+      sp:varName "Ra"^^xsd:string .
+
+_:b144
+      sp:varName "Pu"^^xsd:string .
+
+_:b143
+      sp:varName "Pt"^^xsd:string .
+
+_:b142
+      sp:varName "Pr"^^xsd:string .
+
+_:b141
+      sp:varName "Po"^^xsd:string .
+
+_:b140
+      sp:varName "Pm"^^xsd:string .
+
+_:b139
+      sp:varName "Pd"^^xsd:string .
+
+_:b138
+      sp:varName "Pb"^^xsd:string .
+
+_:b137
+      sp:varName "Pa"^^xsd:string .
+
+_:b136
+      sp:varName "P"^^xsd:string .
+
+_:b135
+      sp:varName "Os"^^xsd:string .
+
+_:b134
+      sp:varName "O"^^xsd:string .
+
+_:b133
+      sp:varName "Np"^^xsd:string .
+
+_:b132
+      sp:varName "No"^^xsd:string .
+
+_:b131
+      sp:varName "Ni"^^xsd:string .
+
+_:b130
+      sp:varName "Ne"^^xsd:string .
+
+_:b129
+      sp:varName "Nd"^^xsd:string .
+
+_:b128
+      sp:varName "Nb"^^xsd:string .
+
+_:b127
+      sp:varName "Na"^^xsd:string .
+
+_:b126
+      sp:varName "N"^^xsd:string .
+
+_:b125
+      sp:varName "Mt"^^xsd:string .
+
+_:b124
+      sp:varName "Mo"^^xsd:string .
+
+_:b123
+      sp:varName "Mn"^^xsd:string .
+
+_:b122
+      sp:varName "Mg"^^xsd:string .
+
+_:b121
+      sp:varName "Md"^^xsd:string .
+
+_:b120
+      sp:varName "Lu"^^xsd:string .
+
+_:b119
+      sp:varName "Lr"^^xsd:string .
+
+_:b118
+      sp:varName "Li"^^xsd:string .
+
+_:b117
+      sp:varName "La"^^xsd:string .
+
+_:b116
+      sp:varName "Kr"^^xsd:string .
+
+_:b115
+      sp:varName "K"^^xsd:string .
+
+_:b114
+      sp:varName "Ir"^^xsd:string .
+
+_:b113
+      sp:varName "In"^^xsd:string .
+
+_:b112
+      sp:varName "I"^^xsd:string .
+
+_:b111
+      sp:varName "Hs"^^xsd:string .
+
+_:b110
+      sp:varName "Ho"^^xsd:string .
+
+_:b109
+      sp:varName "Hg"^^xsd:string .
+
+_:b108
+      sp:varName "Hf"^^xsd:string .
+
+_:b107
+      sp:varName "He"^^xsd:string .
+
+_:b106
+      sp:varName "Ge"^^xsd:string .
+
+_:b105
+      sp:varName "Gd"^^xsd:string .
+
+_:b104
+      sp:varName "Ga"^^xsd:string .
+
+_:b103
+      sp:varName "Fr"^^xsd:string .
+
+_:b102
+      sp:varName "Fm"^^xsd:string .
+
+_:b101
+      sp:varName "Fe"^^xsd:string .
+
+_:b100
+      sp:varName "F"^^xsd:string .
+
+_:b99
+      sp:varName "Eu"^^xsd:string .
+
+_:b98
+      sp:varName "Es"^^xsd:string .
+
+_:b97
+      sp:varName "Er"^^xsd:string .
+
+_:b96
+      sp:varName "Dy"^^xsd:string .
+
+_:b95
+      sp:varName "Ds"^^xsd:string .
+
+_:b94
+      sp:varName "Db"^^xsd:string .
+
+_:b93
+      sp:varName "Cu"^^xsd:string .
+
+_:b92
+      sp:varName "Cs"^^xsd:string .
+
+_:b91
+      sp:varName "Cr"^^xsd:string .
+
+_:b90
+      sp:varName "Co"^^xsd:string .
+
+_:b89
+      sp:varName "Cm"^^xsd:string .
+
+_:b88
+      sp:varName "Cl"^^xsd:string .
+
+_:b87
+      sp:varName "Cf"^^xsd:string .
+
+_:b86
+      sp:varName "Ce"^^xsd:string .
+
+_:b85
+      sp:varName "Cd"^^xsd:string .
+
+_:b84
+      sp:varName "Ca"^^xsd:string .
+
+_:b83
+      sp:varName "Br"^^xsd:string .
+
+_:b82
+      sp:varName "Bk"^^xsd:string .
+
+_:b81
+      sp:varName "Bi"^^xsd:string .
+
+_:b80
+      sp:varName "Bh"^^xsd:string .
+
+_:b79
+      sp:varName "Be"^^xsd:string .
+
+_:b78
+      sp:varName "Ba"^^xsd:string .
+
+_:b77
+      sp:varName "B"^^xsd:string .
+
+_:b76
+      sp:varName "Au"^^xsd:string .
+
+_:b75
+      sp:varName "At"^^xsd:string .
+
+_:b74
+      sp:varName "As"^^xsd:string .
+
+_:b73
+      sp:varName "Ar"^^xsd:string .
+
+_:b72
+      sp:varName "Am"^^xsd:string .
+
+_:b71
+      sp:varName "Al"^^xsd:string .
+
+_:b70
+      sp:varName "Ag"^^xsd:string .
+
+_:b69
+      sp:varName "Ac"^^xsd:string .
+
+_:b68
+      sp:varName "H"^^xsd:string .
+
+_:b67
+      sp:varName "C"^^xsd:string .
+
+_:b66
+      sp:varName "result"^^xsd:string .
+
+_:b65
+      sp:varName "x"^^xsd:string .
+
+_:b63
+      sp:varName "value"^^xsd:string .
+
+_:b62
+      sp:varName "x"^^xsd:string .
+
+_:b40
+      sp:varName "x"^^xsd:string .
+
+_:b39
+      sp:varName "value"^^xsd:string .
+
+_:b38
+      sp:varName "x"^^xsd:string .
+
+_:b32
+      sp:varName "f"^^xsd:string .
+
+_:b31
+      sp:varName "value"^^xsd:string .
+
+_:b30
+      sp:varName "x"^^xsd:string .
+
+_:b28
+      sp:varName "value"^^xsd:string .
+
+_:b27
+      sp:varName "x"^^xsd:string .
+
+_:b25
+      sp:varName "cd"^^xsd:string .
+
+_:b24
+      sp:varName "c"^^xsd:string .
+
+_:b23
+      sp:varName "value"^^xsd:string .
+
+_:b22
+      sp:varName "x"^^xsd:string .
+
+_:b14
+      sp:varName "k"^^xsd:string .
+
+_:b13
+      sp:varName "units"^^xsd:string .
+
+_:b12
+      sp:varName "value"^^xsd:string .
+
+_:b9  sp:varName "x"^^xsd:string .
