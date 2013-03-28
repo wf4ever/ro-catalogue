@@ -32,6 +32,9 @@ def run(configbase, options, args):
         if k == "should": status = 1
         if k == "must":   status = 2
     print expr["evalresultlabel"]
+    for item in expr["checklistitems"]:
+        if not item["itemsatisfied"]:
+            print "  %(itemlabel)s"%(item)
     return status
 
 def runCommand(configbase, argv):

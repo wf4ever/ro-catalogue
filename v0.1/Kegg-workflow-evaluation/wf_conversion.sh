@@ -260,8 +260,8 @@ while read PACK; do
 #  done <Kegg-workflows-786.csv 
 #  done <Kegg-workflows-1189.csv 
 #  done <Kegg-workflows-2658.csv 
-#  done <Kegg-workflows-3108.csv 
-  done <Kegg-workflows-3107.csv 
+  done <Kegg-workflows-3108.csv 
+#  done <Kegg-workflows-3107.csv 
 #  done <Kegg-workflows.csv 
 
 echo "Done."
