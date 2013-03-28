@@ -1,0 +1,69 @@
+# Saved by TopBraid on Sat Jul 14 15:25:24 BST 2012
+# baseURI: http://sierra-nevada.cs.man.ac.uk/mim/chembox/chembox-spin
+# imports: http://purl.org/net/mim/mimspin
+# imports: http://sierra-nevada.cs.man.ac.uk/mim/chembox/chemmim
+# imports: http://purl.org/net/mim/ns
+# imports: http://spinrdf.org/spin
+
+@prefix :        <http://sierra-nevada.cs.man.ac.uk/mim/chembox/chembox-spin#> .
+@prefix chembox:  <http://dbpedia.org/resource/Template:Chembox:> .
+@prefix chembox-mim:  <http://sierra-nevada.cs.man.ac.uk/mim/chembox/chemmim#> .
+@prefix dbpprop:  <http://dbpedia.org/property/> .
+@prefix fn:      <http://www.w3.org/2005/xpath-functions#> .
+@prefix mim:     <http://purl.org/net/mim/ns#> .
+@prefix mimspin:  <http://purl.org/net/mim/mimspin#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sp:      <http://spinrdf.org/sp#> .
+@prefix spin:    <http://spinrdf.org/spin#> .
+@prefix spl:     <http://spinrdf.org/spl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<http://sierra-nevada.cs.man.ac.uk/mim/chembox/chembox-spin>
+      rdf:type owl:Ontology ;
+      owl:imports <http://purl.org/net/mim/ns> , <http://purl.org/net/mim/mimspin> , <http://spinrdf.org/spin> , <http://sierra-nevada.cs.man.ac.uk/mim/chembox/chembox-mim> ;
+      owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
+
+:SMILES
+      rdf:type spin:ConstructTemplate ;
+      rdfs:subClassOf :Chembox ;
+      spin:body
+              [ rdf:type sp:Construct ;
+                sp:templates ([ sp:object _:b311 ;
+                            sp:predicate mim:containsDataReport ;
+                            sp:subject _:b312
+                          ] [ sp:object chembox-mim:SMILES ;
+                            sp:predicate mim:reports ;
+                            sp:subject _:b311
+                          ] [ sp:object _:b313 ;
+                            sp:predicate mim:withValue ;
+                            sp:subject _:b311
+                          ]) ;
+                sp:where ([ sp:object _:b313 ;
+                            sp:predicate <http://dbpedia.org/resource/Template:Chembox:SMILES> ;
+                            sp:subject _:b312
+                          ])
+              ] ;
+      spin:labelTemplate "Chembox: SMILES"^^xsd:string .
+
+_:b312
+      sp:varName "x"^^xsd:string .
+
+_:b313
+      sp:varName "value"^^xsd:string .
+
+
+# Converted using http://spinservices.org/spinrdfconverter.html:
+#
+# PREFIX chembox: <http://dbpedia.org/resource/Template:Chembox:>
+# PREFIX chembox-mim: <http://sierra-nevada.cs.man.ac.uk/mim/chembox/chemmim#>
+# PREFIX mim: <http://purl.org/net/mim/ns#>
+# CONSTRUCT {
+#     ?x mim:containsDataReport _:b0 .
+#     _:b0 mim:reports chembox-mim:SMILES .
+#     _:b0 mim:withValue ?value .
+# }
+# WHERE {
+#     ?x chembox:SMILES ?value .
+# }
