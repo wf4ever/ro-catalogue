@@ -8,8 +8,8 @@
 source ../../ro.sh
 
 TESTRO="."
-RONAME="chembox-evaluation"
-ROTITLE="Chembox evaluation"
+RONAME="minim-evaluation"
+ROTITLE="Minim evaluation"
 
 echo "--------"
 

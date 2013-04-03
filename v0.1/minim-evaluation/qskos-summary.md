@@ -8,7 +8,7 @@ It appears that about half of the criteria (7-8) can be tested with existing Min
 
 Three new features may help to cover the qSKOS requirements:
 
-* compare result sets
+* compare result sets (@@consistency?)
 * query external service or resource
 * filter forall results on on namespace (of more generally on some; maybe this can be done in SPARQL?)
 
@@ -42,7 +42,7 @@ This will need a way to compare the result-sets from different queries, which is
 This should be do-able using Minim checklists (a forall:exists query-based test).
 
 
-### Label Conflicts 
+### Label Conflicts
 
 > The SKOS Primer [11] recommends that “no two concepts have the same preferred lexical label in a given language when they belong to the same concept scheme”. This issue could affect application scenarios such as auto-completion, which proposes labels based on user input. Although these extra cases are acceptable for some thesauri, we generalize the above recommendation and search for all concept pairs with their respective skos:prefLabel, skos:altLabel or skos:hiddenLabel property values meeting a certain similarity threshold defined by a function sim : LV × LV → [0, 1]. The default, built-in similarity function checks for case-insensitive string equality with a threshold equal to 1. Label conflicts can be found by iterating over all (authoritative) concept pairs AC × AC, applying sim to every possible label combination, and collecting those pairs with at least one label combination meeting or exceeding a specified similarity threshold. We handle this issue under the Closed World Assumption, because data on concept scheme membership may lack and concepts may be linked to concepts with similar labels in other vocabularies.
 
@@ -72,28 +72,28 @@ This looks like something that would be difficult to accommodate within present 
 This looks like difficult to accommodate within present Minim structures.  I would consider a specialist web service to do the cycle detection, and then test the result from that in a Minim construct.
 
 
-### Valueless Associative Relations 
+### Valueless Associative Relations
 
 > The ISO/DIS 25964-1 standard [1] suggests that terms that share a common broader term should not be related associatively if this relation is only justified by the fact that they are siblings. This is advocated by Hedden [8] and Aitchison et al. [2] who point out “the risk that thesaurus compilers may overload the thesaurus with valueless relationships”, having a negative effect on precision. This issue can be checked by identifying concept pairs C × C that share the same broader or narrower concept while also being associatively related by the property skos:related.
 
 I think this is detectable using a forall:exists test, but may be easier to generate appropriate diagnostics if the reporting structures are revised (e.g. formulated as a not-exists test).
 
 
-### Solely Transitively Related Concepts 
+### Solely Transitively Related Concepts
 
 > Two concepts that are explicitly related by skos:broaderTransitive and/or skos:narrowerTransitive can be regarded a quality issue because, according to [13], these properties are “not used to make assertions”. Transitive hierarchical relations in SKOS are meant to be inferred by the vocabulary consumer, which is reflected in the SKOS ontology by, for instance, skos:broader being a subproperty of skos:broaderTransitive. This issue can be detected by finding all concept pairs C × C that are directly related by skos:broaderTransitive and/or skos:narrowerTransitive properties but not by (chains of) skos:broader and skos:narrower subproperties.
 
 This should be do-able with Minim (an exists query-based test), but may be easier to generate appropriate diagnostics if the reporting structures are revised (e.g. formulated as a not-exists test).
 
 
-### Omitted Top Concepts 
+### Omitted Top Concepts
 
 > The SKOS model provides concept schemes, which are a facility for grouping related concepts. This helps to provide “efficient access” [11] and simplifies orientation in the vocabulary. In order to provide entry points to such a group of concepts, one or more concepts can be marked as top concepts. Omitted top concepts can be detected by iterating over all concept schemes in CS and collecting those that do not occur in relations established by the properties skos:hasTopConcept or skos:topConceptOf.
 
 This should be do-able with Minim (a forall:exists query-based test).
 
 
-### Top Concept Having Broader Concepts 
+### Top Concept Having Broader Concepts
 
 > Allemang et al. [3] propose to “not indicate any concepts internal to the tree as top concepts”, which means that top concepts should not have broader concepts. Affected resources are found by collecting all top concepts that are related to a resource via a skos:broader statement and not via skos:broadMatch—mappings are not part of a vocabulary’s “intrinsic” definition and a top concept in one vocabulary may perfectly have a broader concept in another vocabulary.
 
@@ -102,13 +102,13 @@ This should be do-able with Minim (a forall:exists query-based test), but may be
 
 ## Linked Data Specific Issues
 
-### Missing In-Links 
+### Missing In-Links
 
 > When vocabularies are published on the Web, SKOS concepts become linkable resources. Estimating the number of in-links and identifying the concepts without any in-links, can indicate the importance of a concept. We estimate the number of in-links by iterating over all elements in AC and querying the [Sindice](http://sindice.com/) SPARQL endpoint for triples containing the concept’s URI in the object part. Empty query results are indicators for missing in-links.
 
 >http://sindice.com/ indexes the Web of Data, which is composed of pages with semantic markup in RDF, RDFa, Microformats, or Microdata. Currently [June 2012?] it covers approximately 230M documents with over 11 billion triples.
 
-This would require making namespaces visible to Minim checklist items, _and_ providing a mechanism to use queries against external SPARQL services.
+This would require making namespaces visible (@@really?) to Minim checklist items, _and_ providing a mechanism to use queries against external SPARQL services.
 
 
 ### Missing Out-Links
