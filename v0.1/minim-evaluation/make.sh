@@ -47,7 +47,9 @@ ro list -d .
 
 # ro annotations
 
-ro annotate . -g Ethane.ttl
+# ro annotate . -g Ethane.ttl
+
+ro annotate . -g chembox.ttl
 
 # End.
 
