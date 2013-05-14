@@ -1,0 +1,53 @@
+<http://purl.org/net/chembox/Tryptoline>
+      <http://dbpedia.org/property/wikiPageUsesTemplate>
+              <http://dbpedia.org/resource/Template:Chembox> ;
+      <http://dbpedia.org/resource/Template:Chembox:ChemSpiderID>
+              "96979" ;
+      <http://dbpedia.org/resource/Template:Chembox:Formula>
+              "C&lt;sub>11&lt;/sub>H&lt;sub>12&lt;/sub>N&lt;sub>2&lt;/sub>" ;
+      <http://dbpedia.org/resource/Template:Chembox:IUPACName>
+              "1,2,3,4-Tetrahydro-9H-pyrido[3,4-b]indole" ;
+      <http://dbpedia.org/resource/Template:Chembox:ImageFile>
+              "Tryptoline structure.png" ;
+      <http://dbpedia.org/resource/Template:Chembox:InChI>
+              "1/C11H12N2/c1-2-4-10-8(3-1)9-5-6-12-7-11(9)13-10/h1-4,12-13H,5-7H2" ;
+      <http://dbpedia.org/resource/Template:Chembox:InChIKey>
+              "CFTOTSJVQRFXOF-UHFFFAOYAW" ;
+      <http://dbpedia.org/resource/Template:Chembox:MolarMass>
+              "172.226 g/mol" ;
+      <http://dbpedia.org/resource/Template:Chembox:OtherNames>
+              "Noreleagnine&lt;br>Tetrahydronorharman&lt;br>2,3,4,9-Tetrahydro-1H-Œ≤-carboline" ;
+      <http://dbpedia.org/resource/Template:Chembox:PubChem>
+              "107838" ;
+      <http://dbpedia.org/resource/Template:Chembox:SMILES>
+              "c3c1c(nc2c1CCNC2)ccc3" ;
+      <http://dbpedia.org/resource/Template:Chembox:StdInChI>
+              "1S/C11H12N2/c1-2-4-10-8(3-1)9-5-6-12-7-11(9)13-10/h1-4,12-13H,5-7H2" ;
+      <http://dbpedia.org/resource/Template:Chembox:StdInChIKey>
+              "CFTOTSJVQRFXOF-UHFFFAOYSA-N" ;
+      <http://dbpedia.org/resource/Template:Chembox:author>
+              "H. Rommelspacher, H. Kauffmann, C. Heyck Cohnitz and H. Coper" ;
+      <http://dbpedia.org/resource/Template:Chembox:date>
+              "June 2009" ;
+      <http://dbpedia.org/resource/Template:Chembox:doi>
+              "10.1007/BF00508615" ;
+      <http://dbpedia.org/resource/Template:Chembox:issue>
+              "2" ;
+      <http://dbpedia.org/resource/Template:Chembox:journal>
+              "Journal Naunyn-Schmiedeberg's Archives of Pharmacology" ;
+      <http://dbpedia.org/resource/Template:Chembox:pages>
+              "83‚Äì91" ;
+      <http://dbpedia.org/resource/Template:Chembox:title>
+              "Pharmacological properties of tetrahydronorharmane (Tryptoline)" ;
+      <http://dbpedia.org/resource/Template:Chembox:url>
+              "http://www.springerlink.com/content/g264075045877742/" ;
+      <http://dbpedia.org/resource/Template:Chembox:verifiedrevid>
+              "419126694" ;
+      <http://dbpedia.org/resource/Template:Chembox:volume>
+              "298" ;
+      <http://dbpedia.org/resource/Template:Chembox:wikiPageHasName>
+              "Tryptoline" ;
+      <http://dbpedia.org/resource/Template:Chembox:year>
+              "1977" ;
+      <http://www.w3.org/2002/07/owl#sameAs>
+              <http://dbpedia.org/resource/Tryptoline> .

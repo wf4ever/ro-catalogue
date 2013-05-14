@@ -23,7 +23,7 @@ chembox: minim:hasPrefix "chembox" .
 :minim_constraints
   minim:hasConstraint
     [ a minim:Constraint ;
-      minim:forTargetTemplate "{+targetres}" ;
+      minim:forTargetTemplate "*" ;
       minim:forPurpose "complete" ;
       minim:toModel :minim_model ;
       rdfs:comment

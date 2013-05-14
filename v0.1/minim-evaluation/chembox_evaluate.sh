@@ -40,7 +40,10 @@ while read TARGET
       echo "$ROURI, $result"
     fi
 
-  done <chembox-uris-sample.txt
+  # done <chembox-uris-tryptoline.txt
+  # done <chembox-uris-dihydrothiazole.txt
+  # done <chembox-uris-test.txt
+  done <chembox-uris-100.txt
 
 echo "Total pass: $countpass, fail: $countfail out of $countall"
 
