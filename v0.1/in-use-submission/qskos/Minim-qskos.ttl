@@ -1,0 +1,303 @@
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix xml:      <http://www.w3.org/XML/1998/namespace> .
+@prefix rdfg:     <http://www.w3.org/2004/03/trix/rdfg-1/> .
+@prefix ore:      <http://www.openarchives.org/ore/terms/> .
+@prefix ao:       <http://purl.org/ao/> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix ro:       <http://purl.org/wf4ever/ro#> .
+@prefix wfprov:   <http://purl.org/wf4ever/wfprov#> .
+@prefix wfdesc:   <http://purl.org/wf4ever/wfdesc#> .
+@prefix wf4ever:  <http://purl.org/wf4ever/wf4ever#> .
+@prefix minim:    <http://purl.org/minim/minim#> .
+@prefix gn:       <http://www.geonames.org/ontology#> .
+
+@prefix :             <http://example.com/qskos-samples/> .
+
+# These prefixes are added to any SPARQL query generated using the query patterns in this file
+gn:      minim:hasPrefix "gn" .
+:        minim:hasPrefix "default" .
+
+
+:minim_checklists
+  minim:hasChecklist
+    [ a minim:Checklist ;
+      minim:forTargetTemplate "http://www.geonames.org/ontology" ;
+      minim:forPurpose "qskos" ;
+      minim:toModel :minim_qskos ;
+      rdfs:comment
+          """
+          Checklist to be satisfied if the target resource is to be considered a
+          "good" SKOS vocabulary according to QSOS criteria.
+          """ ] .
+
+:minim_checklists
+  minim:hasChecklist
+    [ a minim:Checklist ;
+      minim:forTargetTemplate "http://www.geonames.org/ontology" ;
+      minim:forPurpose "fail" ;
+      minim:toModel :minim_fail ;
+      rdfs:comment
+          """
+          Checklist used for testing failure conditions.
+          """ ] .
+
+:minim_qskos a minim:Model ;
+  rdfs:label "QSKOS Minim checklist" ;
+  rdfs:comment
+    """
+    This checklist refers to QSKOS quality requirements.
+    """ ;
+  # minim:hasMustRequirement   :ValidLanguageTags ;
+  # minim:hasMustRequirement   :ConsistentLanguageTags ;
+  minim:hasMustRequirement   :DocumentedConcepts ;
+  # minim:hasMustRequirement   :NoLabelConflicts ;
+  # minim:hasMustRequirement   :NoOrphanConcepts ;
+  # minim:hasMustRequirement   :NoWeaklyConnectedConcepts ;
+  # minim:hasMustRequirement   :NoCyclicHierarchicalRelations ;
+  # minim:hasMustRequirement   :NoValuelessAssociations ;
+  # minim:hasMustRequirement   :AllTopConceptsIdentified ;
+  # minim:hasMustRequirement   :NoTopConceptWithBroaderConcept ;
+  # minim:hasMustRequirement   :AllConceptsLinkedInwards ;
+  # minim:hasMustRequirement   :AllConceptsLinkedOutwards ;
+  # minim:hasMustRequirement   :NoBrokenLinks ;
+  # minim:hasMustRequirement   :NoBrokenLinks ;
+  # minim:hasMustRequirement   :NoUndefinedSkosTerms ;
+  .
+
+:minim_fail a minim:Model ;
+  rdfs:label "A failing Minim checklist" ;
+  rdfs:comment
+    """
+    This checklist is used to test failure of a minim test
+    """ ;
+  minim:hasMustRequirement   :failreq ;
+  .
+
+# Common prolog/datalog predicates assumed
+#
+# q[<sparql-pattern>](<variables>)
+# u[<uri>]
+#
+# count(<predicate>) # number of results available for <predicate>
+#
+# validLanguage(LANG) # true is LANG is a valid RFC3066 language tag
+#
+# subclass_closure(CLASS, SUBCLASS) :- 
+#     q[?subclass a ?class](SUBCLASS, CLASS) ;
+#     q[?subclass rdfs:subClassOf ?c](SUBCLASS, C), subclass_closure(CLASS, C)
+#
+# skosconcept(V) :- q[?v a ?concept](V,CONCEPT), subclass_closure(u[skos:Concept],CONCEPT)
+#
+# skoslabel(CONCEPT,LABEL) :-
+#     q[?labelprop rdfs:subPropertyOf* rdfs:label . ?concept ?labelprop ?label](CONCEPT,LABEL).
+#
+# skoslabel(CONCEPT,LABEL,LANG) :-
+#     skoslabel(CONCEPT, LABEL),
+#     q[BIND lang(?label) AS ?lang](LABEL,LANG).
+#
+# preflabel(CONCEPT,LABEL) :-
+#     q[?concept skos:prefLabel ?label](CONCEPT,LABEL).
+#
+# assert(<value>)
+#     -- this needs work; getting a universal quantification over a Prolog predicate 
+#        seems to need some kind of conversion between predicates and list values.
+#        member/2 goes one way.  findall/3 goes the other.  See also forall.
+#          http://www.swi-prolog.org/pldoc/man?predicate=member/2
+#          http://www.swi-prolog.org/pldoc/man?predicate=findall/3
+#          http://www.swi-prolog.org/pldoc/man?predicate=forall/2
+#
+
+:ValidLanguageTags a minim:Requirement;
+  rdfs:comment
+    """
+    Check that all SKOS labels have valid language tags
+    
+    validLanguageTags(TARGETRO, TARGETRES) :-
+        skosconcept(CONCEPT),
+        skoslabel(CONCEPT,LABEL),
+        assert(validLanguage(LABEL)).
+    """ ;
+  minim:isDerivedBy
+    [ a minim:QueryTestRule ;
+      minim:query
+        [ a minim:SparqlQuery ;
+          minim:sparql_query
+            """
+            ?labelprop rdfs:subPropertyOf* rdfs:label .
+            ?concept rdf:type/rdfs:subClassOf* skos:Concept ;
+                     ?labelprop ?label .
+            BIND( lang(?label) as ?lang )
+            """ ;
+        ] ;
+      ### @@TODO: validLanguageTag(?lang) 
+      minim:showpass "Documentation properties are present for all SKOS concepts" ;
+      minim:showfail "Documentation property not provided for %(concept)s" ;
+    ] .
+  .
+
+:ConsistentLanguageTags a minim:Requirement;
+  rdfs:comment
+    """
+    Check that all SKOS labels have valid language tags
+    
+    consistentLanguageTags(TARGETRO, TARGETRES) :-
+        skosconcept(CONCEPT1),
+        skosconcept(CONCEPT2),
+        CONCEPT1 != CONCEPT2,
+        skoslabel(CONCEPT1,LABEL1,LANG1),
+        skoslabel(CONCEPT2,LABEL2,LANG2),
+        assert(LANG1 == LANG2).
+    """ ;
+  minim:isDerivedBy
+    [ a minim:QueryTestRule ;
+      minim:query
+        [ a minim:SparqlQuery ;
+          minim:sparql_query
+            """
+            ?concept1 rdf:type/rdfs:subClassOf* skos:Concept .
+            ?concept2 rdf:type/rdfs:subClassOf* skos:Concept .
+            FILTER(?concept1 != ?concept2)
+            ?labelprop rdfs:subPropertyOf* rdfs:label .
+            ?concept1 ?labelprop ?label1 .
+            BIND(lang(?label1) as ?lang)
+            """ ;
+        ] ;
+      minim:affirmRule    # could use minim:exists
+        [ a minim:QueryTestRule ;
+          minim:query
+            [ a minim:SparqlQuery ;
+              minim:sparql_query
+                """
+                ?concept2 ?labelprop ?label2 .
+                FILTER(lang(?label2) == ?lang)
+                """ ;
+            ] ;
+          minim:min 1 ;
+        ] ;
+      minim:showpass "All language tags seen are used on all labels" ;
+      minim:showfail "Language tag %(lang)s" used with concept %(concept1)s label is not present for any %(concept2)s label" ;
+    ] .
+  .
+
+:DocumentedConcepts a minim:Requirement;
+  rdfs:comment
+    """
+    Check that all SKOS concepts have documentation properties.
+    
+    documentedConcepts(TARGETRO, TARGETRES) :-
+        skosconcept(CONCEPT),
+        assert(count(q[?concept skos:definition ?def](CONCEPT, DEF)) == 1).
+    """ ;
+  minim:isDerivedBy
+    [ a minim:QueryTestRule ;
+      minim:query
+        [ a minim:SparqlQuery ;
+          minim:sparql_query
+            """
+            { ?concept rdf:type/rdfs:subClassOf* skos:Concept }
+            """ ;
+        ] ;
+      minim:affirmRule       ### Could use minim:exists instead
+        [ a minim:QueryTestRule ;
+          minim:query
+            [ a minim:SparqlQuery ;
+              minim:sparql_query
+                """
+                ?concept skos:definition ?def
+                """ ;
+            ] ;
+          minim:min 1 ;
+        ] ;
+      minim:showpass "Documentation properties are present for all SKOS concepts" ;
+      minim:showfail "Documentation property not provided for %(concept)s" ;
+    ] .
+  .
+
+:NoLabelConflicts a minim:Requirement;
+  rdfs:comment
+    """
+    Check no two concepts have same preferred label in same language.
+    
+    noLabelConflicts(TARGETRO, TARGETRES) :-
+        skosconcept(CONCEPT1),
+        preflabel(CONCEPT1, LANG1, LABEL1),
+        concept(CONCEPT2),
+        preflabel(CONCEPT2, LANG2, LABEL2),
+        assert( (LANG1 == LANG2 && LABEL1 == LABEL2) => CONCEPT1 == CONCEPT2 ).
+    """ ;
+  minim:isDerivedBy
+    [ a minim:QueryTestRule ;
+      minim:query
+        [ a minim:SparqlQuery ;
+          minim:sparql_query
+            """
+            ?concept1 rdf:type/rdfs:subClassOf* skos:Concept ;
+                      skos:prefLabel ?preflabel1 .
+            ?concept2 rdf:type/rdfs:subClassOf* skos:Concept .
+                      skos:prefLabel ?preflabel2 .
+            FILTER( ?concept2 != ?concept1 )
+            FILTER( ?preflabel1 == ?preflabel2 )
+            """ ;
+        ] ;
+      minim:max 0 ;
+      minim:showpass "Preferred labels are distinct for all concepts" ;
+      minim:showfail "Concepts %(concept1)s and %(concept2)s share preferred label %(preflabel1)s" ;
+    ] .
+  .
+
+:NoOrphanConcepts a minim:Requirement;
+  .
+
+:NoWeaklyConnectedConcepts a minim:Requirement;
+  .
+
+:NoCyclicHierarchicalRelations a minim:Requirement;
+  .
+
+:NoValuelessAssociations a minim:Requirement;
+  .
+
+:AllTopConceptsIdentified a minim:Requirement;
+  .
+
+:NoTopConceptWithBroaderConcept a minim:Requirement;
+  .
+
+:AllConceptsLinkedInwards a minim:Requirement;
+  .
+
+:AllConceptsLinkedOutwards a minim:Requirement;
+  .
+
+:NoBrokenLinks a minim:Requirement;
+  .
+
+:NoBrokenLinks a minim:Requirement;
+  .
+
+:NoUndefinedSkosTerms a minim:Requirement;
+  .
+
+:failreq a minim:Requirement ;
+  rdfs:comment
+    """
+    This requirement should be failed.
+    """ ;
+  minim:isDerivedBy
+    [ a minim:QueryTestRule ;
+      minim:query
+        [ a minim:SparqlQuery ;
+          minim:sparql_query
+            """
+            ?targetres skos:NoSuchProperty ?value .
+            """ ;
+        ] ;
+      minim:min 1 ;
+      minim:max 1 ;
+      minim:show "This test should fail" ;
+    ] .
+
