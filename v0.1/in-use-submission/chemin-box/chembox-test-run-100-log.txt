@@ -1,0 +1,471 @@
+conina:minim-evaluation graham$ ./chembox_evaluate.sh 
+Using local evaluation of file:///usr/workspace/wf4ever-ro-catalogue/v0.1
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Altechromone_A -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Tralomethrin -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, does not satisfy
+  No ChemSpider identifier is present
+  No InChI identifier is present
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Carbendazim -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/N-Methylformamide -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, nominally satisfies
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Diphenylketene -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Yohimban -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Merocyanine -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, does not satisfy
+  No ChemSpider identifier is present
+  No InChI identifier is present
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Potassium_propanoate -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, does not satisfy
+  No ChemSpider identifier is present
+  No InChI identifier is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Butanethiol -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Triformin -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Adipic_acid_dihydrazide -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Glutaconaldehyde -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Geranic_acid -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Sudan_Yellow_3G -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Levothyroxine -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/2-Nonenal -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, nominally satisfies
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Polylactic_acid -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, does not satisfy
+  No ChemSpider identifier is present
+  No InChI identifier is present
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Botrydial -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, nominally satisfies
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Diucifon -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, does not satisfy
+  No ChemSpider identifier is present
+  No InChI identifier is present
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Boron_monoxide -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, does not satisfy
+  No ChemSpider identifier is present
+  No InChI identifier is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Potassium_superoxide -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, does not satisfy
+  No ChemSpider identifier is present
+  No InChI identifier is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Tryptoline -----
+Traceback (most recent call last):
+  File "checklistresult.py", line 70, in <module>
+    status = runMain()
+  File "checklistresult.py", line 63, in runMain
+    return runCommand(configbase, sys.argv)
+  File "checklistresult.py", line 55, in runCommand
+    status = run(configbase, {}, argv)
+  File "checklistresult.py", line 26, in run
+    expr = json.load(sys.stdin)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 278, in load
+    **kw)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 326, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, 
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/2,4,6-Tribromophenol -----
+Traceback (most recent call last):
+  File "checklistresult.py", line 70, in <module>
+    status = runMain()
+  File "checklistresult.py", line 63, in runMain
+    return runCommand(configbase, sys.argv)
+  File "checklistresult.py", line 55, in runCommand
+    status = run(configbase, {}, argv)
+  File "checklistresult.py", line 26, in run
+    expr = json.load(sys.stdin)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 278, in load
+    **kw)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 326, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, 
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Orthoformic_acid -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Dihydrofolic_acid -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Calcium_peroxide -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Retinal -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, does not satisfy
+  No ChemSpider identifier is present
+  No InChI identifier is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Retene -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, does not satisfy
+  No ChemSpider identifier is present
+  No InChI identifier is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Chromium%28III%29_sulfate -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, does not satisfy
+  No ChemSpider identifier is present
+  No InChI identifier is present
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Alkannin -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Uridine_triphosphate -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, does not satisfy
+  No ChemSpider identifier is present
+  No InChI identifier is present
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Pyruvic_acid -----
+Traceback (most recent call last):
+  File "checklistresult.py", line 70, in <module>
+    status = runMain()
+  File "checklistresult.py", line 63, in runMain
+    return runCommand(configbase, sys.argv)
+  File "checklistresult.py", line 55, in runCommand
+    status = run(configbase, {}, argv)
+  File "checklistresult.py", line 26, in run
+    expr = json.load(sys.stdin)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 278, in load
+    **kw)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 326, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, 
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Morphine-6-glucuronide -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Astatine_monoiodide -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, minimally satisfies
+  No ChemSpider identifier is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Cyfluthrin -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, nominally satisfies
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Monoammonium_glutamate -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Dichloroisocyanuric_acid -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, nominally satisfies
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Calusterone -----
+Traceback (most recent call last):
+  File "checklistresult.py", line 70, in <module>
+    status = runMain()
+  File "checklistresult.py", line 63, in runMain
+    return runCommand(configbase, sys.argv)
+  File "checklistresult.py", line 55, in runCommand
+    status = run(configbase, {}, argv)
+  File "checklistresult.py", line 26, in run
+    expr = json.load(sys.stdin)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 278, in load
+    **kw)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 326, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, 
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Diptoindonesin_A -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, does not satisfy
+  No ChemSpider identifier is present
+  No InChI identifier is present
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Gemopatrilat -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, nominally satisfies
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Piperine -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Wedelolactone -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, nominally satisfies
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/%28Benzylideneacetone%29iron_tricarbonyl -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, does not satisfy
+  No ChemSpider identifier is present
+  No InChI identifier is present
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Potassium_citrate -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, nominally satisfies
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Thallium%28III%29_nitrate -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, does not satisfy
+  No ChemSpider identifier is present
+  No InChI identifier is present
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Deuterated_DMF -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, nominally satisfies
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/N-Oxalylglycine -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, nominally satisfies
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/6-Phosphogluconic_acid -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Cyclohexylamine -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/6-Ketoprogesterone -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, minimally satisfies
+  No ChemSpider identifier is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Hydroxypyruvic_acid -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Ethyl_acetate -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Manganese%28II%29_phthalocyanine -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, does not satisfy
+  No ChemSpider identifier is present
+  No InChI identifier is present
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Tetrabutylammonium_hydroxide -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, nominally satisfies
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Glycin -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Salicylaldehyde -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Pentagalloyl_glucose -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, does not satisfy
+  No ChemSpider identifier is present
+  No InChI identifier is present
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Iscotrizinol -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Neo-Inositol -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, nominally satisfies
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/2-Ethoxyethanol -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Hematein -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, does not satisfy
+  No ChemSpider identifier is present
+  No InChI identifier is present
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Phenol_red -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, nominally satisfies
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Oenanthotoxin -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, does not satisfy
+  No ChemSpider identifier is present
+  No InChI identifier is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Hexanitrohexaazaisowurtzitane -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Tunicamycin -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, does not satisfy
+  No ChemSpider identifier is present
+  No InChI identifier is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Phytanoyl-CoA -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, does not satisfy
+  No ChemSpider identifier is present
+  No InChI identifier is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Deoxyepinephrine -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Swainsonine -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Linoelaidic_acid -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Hexafluoroethane -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/2-Chloro-9,10-bis%28phenylethynyl%29anthracene -----
+Traceback (most recent call last):
+  File "checklistresult.py", line 70, in <module>
+    status = runMain()
+  File "checklistresult.py", line 63, in runMain
+    return runCommand(configbase, sys.argv)
+  File "checklistresult.py", line 55, in runCommand
+    status = run(configbase, {}, argv)
+  File "checklistresult.py", line 26, in run
+    expr = json.load(sys.stdin)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 278, in load
+    **kw)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 326, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, 
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Uridine_diphosphate_glucose -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Propiophenone -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Titanium%28III%29_fluoride -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, does not satisfy
+  No ChemSpider identifier is present
+  No InChI identifier is present
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/SCH_23390 -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, does not satisfy
+  No ChemSpider identifier is present
+  No InChI identifier is present
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Gold%28III%29_fluoride -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, does not satisfy
+  No ChemSpider identifier is present
+  No InChI identifier is present
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/DABCO -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Leukotriene_C4 -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, does not satisfy
+  No ChemSpider identifier is present
+  No InChI identifier is present
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Tris%281,3-dichloro-2-propyl%29phosphate -----
+Traceback (most recent call last):
+  File "checklistresult.py", line 70, in <module>
+    status = runMain()
+  File "checklistresult.py", line 63, in runMain
+    return runCommand(configbase, sys.argv)
+  File "checklistresult.py", line 55, in runCommand
+    status = run(configbase, {}, argv)
+  File "checklistresult.py", line 26, in run
+    expr = json.load(sys.stdin)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 278, in load
+    **kw)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 326, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, 
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Cinchonain-Ib -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Arachidonic_acid_5-hydroperoxide -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, nominally satisfies
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Ruthenium%28III%29_acetylacetonate -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, does not satisfy
+  No ChemSpider identifier is present
+  No InChI identifier is present
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Tetrakis%28triphenylphosphine%29palladium%280%29 -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, does not satisfy
+  No ChemSpider identifier is present
+  No InChI identifier is present
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Sinapyl_alcohol -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, does not satisfy
+  No ChemSpider identifier is present
+  No InChI identifier is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/2,4-Bis%284-hydroxybenzyl%29_phenol -----
+Traceback (most recent call last):
+  File "checklistresult.py", line 70, in <module>
+    status = runMain()
+  File "checklistresult.py", line 63, in runMain
+    return runCommand(configbase, sys.argv)
+  File "checklistresult.py", line 55, in runCommand
+    status = run(configbase, {}, argv)
+  File "checklistresult.py", line 26, in run
+    expr = json.load(sys.stdin)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 278, in load
+    **kw)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 326, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, 
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Ascaridole -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, nominally satisfies
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Kekulene -----
+Traceback (most recent call last):
+  File "checklistresult.py", line 70, in <module>
+    status = runMain()
+  File "checklistresult.py", line 63, in runMain
+    return runCommand(configbase, sys.argv)
+  File "checklistresult.py", line 55, in runCommand
+    status = run(configbase, {}, argv)
+  File "checklistresult.py", line 26, in run
+    expr = json.load(sys.stdin)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 278, in load
+    **kw)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 326, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, 
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/L-chiro-Inositol -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, nominally satisfies
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Nitroethane -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, nominally satisfies
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Iron%28II%29_fumarate -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, does not satisfy
+  No ChemSpider identifier is present
+  No InChI identifier is present
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Meprylcaine -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, does not satisfy
+  No ChemSpider identifier is present
+  No InChI identifier is present
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Vulpinic_acid -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, does not satisfy
+  No ChemSpider identifier is present
+  No InChI identifier is present
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Petunidin -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Dodecahydroxycyclohexane -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/2-sec-Butyl-4,5-dihydrothiazole -----
+Traceback (most recent call last):
+  File "checklistresult.py", line 70, in <module>
+    status = runMain()
+  File "checklistresult.py", line 63, in runMain
+    return runCommand(configbase, sys.argv)
+  File "checklistresult.py", line 55, in runCommand
+    status = run(configbase, {}, argv)
+  File "checklistresult.py", line 26, in run
+    expr = json.load(sys.stdin)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 278, in load
+    **kw)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 326, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, 
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Calmagite -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, does not satisfy
+  No InChI identifier is present
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Eucalyptol -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, fully satisfies
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Urocanic_acid -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, does not satisfy
+  No ChemSpider identifier is present
+  No InChI identifier is present
+  No synomym is present
+----- file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation :: http://purl.org/net/chembox/Benzocyclobutene -----
+file:///usr/workspace/wf4ever-ro-catalogue/v0.1/minim-evaluation, does not satisfy
+  No ChemSpider identifier is present
+  No InChI identifier is present
+Total pass: 55, fail: 44 out of 99
+conina:minim-evaluation graham$ 
