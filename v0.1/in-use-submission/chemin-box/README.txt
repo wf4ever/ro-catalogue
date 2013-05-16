@@ -12,6 +12,8 @@ chembox-uris-100.txt: the 100 sample chemical compounds assessed
 
 chembox-test-run-100-log.txt: the assessment result from the Minim checklist
 
-== To reproduce the assessment presented in the paper ==
+MIM-chembox-uris.100.results: the assessment result from the MIM assessment tool
+
+== To reproduce the Minim assessment ==
 
 ./chembox_evaluate.sh
