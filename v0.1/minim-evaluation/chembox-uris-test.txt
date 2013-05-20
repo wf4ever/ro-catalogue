@@ -1,2 +1,5 @@
 http://purl.org/net/chembox/2-sec-Butyl-4,5-dihydrothiazole
 http://purl.org/net/chembox/Tryptoline
+http://purl.org/net/chembox/Tralomethrin
+http://purl.org/net/chembox/N-Methylformamide
+http://purl.org/net/chembox/Chromium%28III%29_sulfate

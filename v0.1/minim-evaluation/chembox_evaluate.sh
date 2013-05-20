@@ -21,13 +21,15 @@ countall=0
 
 while read TARGET
   do
-    echo "----- $ROURI :: $TARGET -----"
+    # Escape '%' in URI used as parameter in URI.
+    TARGETESC=${TARGET//%/%25}
+    echo "----- $ROURI :: $TARGET :: $TARGETESC -----"
     echo "RO evaluation run: $(date)" >00-evaluate-ROs
 
     if [ "${OPT:0:4}" != "skip" ]; then
       # checklist eval ...
       result=$(curl --silent \
-            "$CHECKLIST_SERVICE?RO=$ROURI&minim=$CHECKLIST_URI&purpose=complete&target=$TARGET" \
+            "$CHECKLIST_SERVICE?RO=$ROURI&minim=$CHECKLIST_URI&purpose=complete&target=$TARGETESC" \
           | python checklistresult.py)
       # @@TODO: count results for individual checklist items
       # (or, just hack the 
@@ -43,6 +45,7 @@ while read TARGET
   # done <chembox-uris-tryptoline.txt
   # done <chembox-uris-dihydrothiazole.txt
   # done <chembox-uris-test.txt
+  # done <chembox-uris-test1.txt
   done <chembox-uris-100.txt
 
 echo "Total pass: $countpass, fail: $countfail out of $countall"
