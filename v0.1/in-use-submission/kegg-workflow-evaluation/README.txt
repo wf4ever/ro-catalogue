@@ -6,5 +6,3 @@ on/Runnable-workflow-checklist.rdf.
 == To reproduce the assessment presented in the paper ==
 
 ./wf_evaluate.sh
-
-The assessment result is kept at: 00-evaluate-ROs
