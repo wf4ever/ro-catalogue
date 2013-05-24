@@ -4,6 +4,67 @@ Using workflows described in myExperiment, provide accurate prediction of workfl
 
 The initial focus will be on runnability of the workflows, and may later extend to other criterial
 
+# Conclusions
+
+## Phase 1: accurate detection of workflow decay
+
+1. Identified 45 workflows that used to run, but should now fail with the change to KEGG services
+  * https://github.com/wf4ever/ro-catalogue/blob/master/v0.1/Kegg-workflow-evaluation/Kegg-workflows.csv
+  * KEGG workflow survey
+2. Created script to convert Taverna workflows in www/myExperiment to ROs, and merge with input data annotations gleaned from the provenance corpus
+  * https://github.com/wf4ever/ro-catalogue/blob/master/v0.1/Kegg-workflow-evaluation/wf_conversion.sh
+  * https://github.com/wf4ever/provenance-corpus/tree/master/Taverna_kegg_wf
+3. Of the 45 workflows originally identified:
+  * 21 converted and annotated successfully
+  * 20 use SCUFL workflow format, are not handled by Wf-RO service
+  * 2 have incorrect workflow URI in myExperiment RDF
+  * 1 is access restricted (401 Unauthorized)
+  * 1 has no provenance files present
+4. Of the 21 workflows successfully converted:
+  * 19 have the failure of KEGG services is successfully detected and reported
+  * 2 are incorrectly reported as runnable; further analysis shows this is due to the workflow description created by the Wf-RO service does not actually mention the KEGG services used, despite this clearly being referenced in the original Taverna2 workflow.
+5. At least one of the Wf-RO converted and annotated ROs is still showing missing inputs in addition to the missing KEGG service. Further investigation is needed to determiner how many ROs exhibit this problem, and the underlying cause.
+
+Below is an excerpt from the evaluation log, containing those entries that are in some way unexpected. (Investigating: the above numbers may need to be updated.
+
+    ----- http://sandbox.wf4ever-project.org/rodl/ROs/myexperiment_pack_3108/ ::  :: 3108 -----
+    http://sandbox.wf4ever-project.org/rodl/ROs/myexperiment_pack_3108/, does not satisfy
+      Workflow is not present.
+      No workflows are described
+      No workflow definitions are present
+      Input data is not present
+
+    ----- http://sandbox.wf4ever-project.org/rodl/ROs/myexperiment_pack_3107/ :: run_3 // skip: no provenance files present :: 3107 -----
+    http://sandbox.wf4ever-project.org/rodl/ROs/myexperiment_pack_3107/, does not satisfy
+      Workflow is not present.
+      No workflows are described
+      No workflow definitions are present
+      Input data is not present
+
+    ----- http://sandbox.wf4ever-project.org/rodl/ROs/myexperiment_pack_3001/ ::  :: 3001 -----
+    http://sandbox.wf4ever-project.org/rodl/ROs/myexperiment_pack_3001/, does not satisfy
+      One or more web services used by one of the workflows are inaccessible, including <a href="http://soap.genome.jp/KEGG.wsdl"><i>get_enzymes_by_gene</i></a>
+      Input data is not present
+
+    ----- http://sandbox.wf4ever-project.org/rodl/ROs/myexperiment_pack_2021/ ::  :: 2021 -----
+    http://sandbox.wf4ever-project.org/rodl/ROs/myexperiment_pack_2021/, does not satisfy
+      Input data is not present
+
+    ----- http://sandbox.wf4ever-project.org/rodl/ROs/myexperiment_pack_987/ :: run1 :: 987 -----
+    http://sandbox.wf4ever-project.org/rodl/ROs/myexperiment_pack_987/, does not satisfy
+      Input data is not present
+
+    ----- http://sandbox.wf4ever-project.org/rodl/ROs/myexperiment_pack_980/ :: run1 :: 980 -----
+    http://sandbox.wf4ever-project.org/rodl/ROs/myexperiment_pack_980/, fully satisfies
+
+    ----- http://sandbox.wf4ever-project.org/rodl/ROs/myexperiment_pack_967/ ::  :: 967 -----
+    http://sandbox.wf4ever-project.org/rodl/ROs/myexperiment_pack_967/, does not satisfy
+      One or more web services used by one of the workflows are inaccessible, including <a href="http://soap.genome.jp/KEGG.wsdl"><i>list_databases</i></a>
+      Input data is not present
+
+    ----- http://sandbox.wf4ever-project.org/rodl/ROs/myexperiment_pack_936/ ::  :: 936 -----
+    http://sandbox.wf4ever-project.org/rodl/ROs/myexperiment_pack_936/, fully satisfies
+
 
 # Plan
 

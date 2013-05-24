@@ -208,7 +208,8 @@ function annotate_wf_inputs {
     #   -H "Content-type: text/turtle" -H "Slug: bundle-inputs.ttl" --data @00-bundle-inputs.tmp
     curl --silent -X POST $ROURI \
       -H "Link: <$BUNDLEURI>; rel=\"http://purl.org/ao/annotatesResource\"" \
-      -H "Content-type: application/rdf+xml" -H "Slug: bundle-inputs.rdf" --data @00-bundle-inputs-rdf.tmp >00-annotation-body.tmp
+      -H "Content-type: application/rdf+xml" -H "Slug: bundle-inputs.rdf" \
+      --data @00-bundle-inputs-rdf.tmp >00-annotation-body.tmp
 
     return
 }
