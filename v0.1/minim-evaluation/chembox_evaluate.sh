@@ -2,7 +2,7 @@
 #
 
 LOCAL=YES
-if [ "$LOCAL"=="YES" ]; then
+if [ "$LOCAL" == "YES" ]; then
   CHECKLIST_SERVICE=http://localhost:8080/evaluate/trafficlight_json
   ROBASE=file:///usr/workspace/wf4ever-ro-catalogue/v0.1
   echo "Using local evaluation of $ROBASE"
@@ -24,7 +24,7 @@ while read TARGET
     # Escape '%' in URI used as parameter in URI.
     TARGETESC=${TARGET//%/%25}
     echo "----- $ROURI :: $TARGET :: $TARGETESC -----"
-    echo "RO evaluation run: $(date)" >00-evaluate-ROs
+    echo "RO evaluation run: $(date)" >00-evaluate-ROs.log
 
     if [ "${OPT:0:4}" != "skip" ]; then
       # checklist eval ...
@@ -32,7 +32,6 @@ while read TARGET
             "$CHECKLIST_SERVICE?RO=$ROURI&minim=$CHECKLIST_URI&purpose=complete&target=$TARGETESC" \
           | python checklistresult.py)
       # @@TODO: count results for individual checklist items
-      # (or, just hack the 
       if [ $? == 0 ]; then
           countpass=$((countpass+1))
       else

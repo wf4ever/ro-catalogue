@@ -1,4 +1,4 @@
 # URI for checklist evaluation of myexperiment_pack_3108
 
-http://sandbox.wf4ever-project.org/roevaluate/evaluate/trafficlight_html?RO=http://sandbox.wf4ever-project.org/rodl/ROs/myexperiment_pack_3108/&minim=http://sandbox.wf4ever-project.org/rodl/ROs/Kegg-workflow-evaluation/Runnable-workflow-checklist.rdf&purpose=wf-runnable
+http://sandbox.wf4ever-project.org/roevaluate/evaluate/trafficlight_html?RO=http://sandbox.wf4ever-project.org/rodl/ROs/myexperiment_pack_3108/&minim=http://sandbox.wf4ever-project.org/rodl/ROs/Kegg-workflow-evaluation-5/Runnable-workflow-checklist.rdf&purpose=wf-runnable
 
