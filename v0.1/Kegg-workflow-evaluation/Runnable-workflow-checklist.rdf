@@ -143,6 +143,9 @@
             }
           }
         </minim:exists___>
+        <minim:forall>
+            ?wf a wfdesc:Workflow ; wfdesc:hasInput ?inp .
+        </minim:forall>
         <minim:exists>
             ?wfbundle roterms:inputValue ?iv .
             ?iv roterms:portName ?portname .
@@ -154,6 +157,7 @@
               ?iv roterms:resource ?inputref
             }
         </minim:exists>
+        <minim:showmiss>Workflow uses no inputs</minim:showmiss>
         <minim:showpass>Input data is present</minim:showpass>
         <minim:showfail>Input data is not present</minim:showfail>
         <minim:derives rdf:resource="#RO_has_inputdata" />

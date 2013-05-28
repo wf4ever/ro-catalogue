@@ -22,7 +22,7 @@ function retrieve_T2_URI {
     #
     # $1  is URI of myExperiment pack to query
     #
-    # echo "retrieve_T2_URI ($1)"
+    echo "-- retrieve_T2_URI ($1)"
     asq -r $1.rdf \
           -p myExperiment.prefixes \
           -f "%(t2flow)s" \
@@ -199,7 +199,6 @@ function annotate_wf_inputs {
       </rdf:RDF>
 [[EOF]]
 
-
     # Create annotation in RO
     # See: http://www.wf4ever-project.org/wiki/display/docs/RO+SRS+interface+6#ROSRSinterface6-Annotatearesource
     #
@@ -261,8 +260,8 @@ while read PACK; do
 #  done <Kegg-workflows-786.csv 
 #  done <Kegg-workflows-1189.csv 
 #  done <Kegg-workflows-2658.csv 
-  done <Kegg-workflows-3108.csv 
-#  done <Kegg-workflows-3107.csv 
+#  done <Kegg-workflows-3108.csv 
+  done <Kegg-workflows-3107.csv 
 #  done <Kegg-workflows.csv 
 
 echo "Done."
