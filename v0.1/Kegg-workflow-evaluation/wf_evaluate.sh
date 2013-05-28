@@ -38,7 +38,7 @@ while read PACK
       echo "$ROURI, $result"
     fi
 
-  done <Kegg-workflows-936.csv
+  done <Kegg-workflows-980.csv
 
 echo "Total pass: $countpass, fail: $countfail out of $countall"
 

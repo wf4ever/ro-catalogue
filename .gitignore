@@ -30,6 +30,9 @@ Thumbs.db
 # RO metadata directories (except when explicitly added)
 .ro/
 
+# Python compiled files
+*.pyc
+
 # Other temporary files
 .registries.json
 tmp/

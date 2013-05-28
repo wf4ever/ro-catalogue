@@ -57,9 +57,60 @@ One DoUpdateROAnnotations_nnnn.py module is created for each RO tpo be tweaked.
 
 ...
 
+WF980 (same problem)
+
+Download from myExp 
+
+Taverna shows problems in KEGG_Namespaces/list_databases and Query_KEGG_by_namespace/bfind
+
+Proposed fix is to add these annotations:
+
+<http://ns.taverna.org.uk/2010/workflowBundle/48e5ac9d-6f92-467e-b901-da2c14c4b886/workflow/Workflow17/processor/KEGG_namespaces/>
+  wf4ever:wsdlURI
+    "http://soap.genome.jp/KEGG.wsdl"^^http://www.w3.org/2001/XMLSchema#anyURI .
+<http://ns.taverna.org.uk/2010/workflowBundle/48e5ac9d-6f92-467e-b901-da2c14c4b886/workflow/Workflow17/processor/Query_KEGG_by_namespace/>
+  wf4ever:wsdlURI
+    "http://soap.genome.jp/KEGG.wsdl"^^http://www.w3.org/2001/XMLSchema#anyURI .
 
 
-
+[[
+(romenv)conina:Kegg-workflow-evaluation graham$ ./wf_evaluate.sh 
+----- http://sandbox.wf4ever-project.org/rodl/ROs/myexperiment_pack_980/ ::  :: 980 -----
+http://sandbox.wf4ever-project.org/rodl/ROs/myexperiment_pack_980/, fully satisfies
+Total pass: 1, fail: 0 out of 1
+(romenv)conina:Kegg-workflow-evaluation graham$ 
+(romenv)conina:Kegg-workflow-evaluation graham$ 
+(romenv)conina:Kegg-workflow-evaluation graham$ python DoUpdateROAnnotations_0980.py 
+INFO:rdflib:RDFLib Version: 4.0.1
+INFO:UpdateROAnnotations:UpdateAnnotation:
+INFO:UpdateROAnnotations:-- resuri:  http://sandbox.wf4ever-project.org/rodl/ROs/myexperiment_pack_980/
+INFO:UpdateROAnnotations:-- rouri:   http://sandbox.wf4ever-project.org/rodl/ROs/myexperiment_pack_980/
+INFO:UpdateROAnnotations:-- bodyuri: http://sandbox.wf4ever-project.org/rodl/ROs/myexperiment_pack_980/wfdesc-extras.rdf
+INFO:UpdateROAnnotations:-- Created empty annotation body (http://sandbox.wf4ever-project.org/rodl/ROs/myexperiment_pack_980/wfdesc-extras.rdf)
+Traceback (most recent call last):
+  File "DoUpdateROAnnotations_0980.py", line 75, in <module>
+    updateAnnotation(rosrs, rouri, resuri, ANNOTATION_PATH, ANNOTATION_BODY)
+  File "/usr/workspace/wf4ever-ro-catalogue/v0.1/Kegg-workflow-evaluation/UpdateROAnnotations.py", line 78, in updateAnnotation
+    (status, reason, annuri) = rosrs.createROAnnotationExt(rouri, resuri, bodyuri)
+  File "../../../wf4ever-ro-manager/src/rocommand/ROSRS_Session.py", line 590, in createROAnnotationExt
+    (status, reason, annuri) = self.createROAnnotation(rouri, resuri, bodyuri)
+  File "../../../wf4ever-ro-manager/src/rocommand/ROSRS_Session.py", line 569, in createROAnnotation
+    "%03d %s (%s)"%(status, reason, str(resuri)))
+ROSRS_Session.ROSRS_Error: Error creating annotation for http://sandbox.wf4ever-project.org/rodl/ROs/: '500 Internal Server Error (http://sandbox.wf4ever-project.org/rodl/ROs/myexperiment_pack_980/)'
+(romenv)conina:Kegg-workflow-evaluation graham$ python DoUpdateROAnnotations_0980.py 
+INFO:rdflib:RDFLib Version: 4.0.1
+INFO:UpdateROAnnotations:UpdateAnnotation:
+INFO:UpdateROAnnotations:-- resuri:  http://sandbox.wf4ever-project.org/rodl/ROs/myexperiment_pack_980/
+INFO:UpdateROAnnotations:-- rouri:   http://sandbox.wf4ever-project.org/rodl/ROs/myexperiment_pack_980/
+INFO:UpdateROAnnotations:-- bodyuri: http://sandbox.wf4ever-project.org/rodl/ROs/myexperiment_pack_980/wfdesc-extras.rdf
+INFO:UpdateROAnnotations:-- Updated annotation body (http://sandbox.wf4ever-project.org/rodl/ROs/myexperiment_pack_980/wfdesc-extras.rdf)
+(romenv)conina:Kegg-workflow-evaluation graham$ ./wf_evaluate.sh 
+----- http://sandbox.wf4ever-project.org/rodl/ROs/myexperiment_pack_980/ ::  :: 980 -----
+http://sandbox.wf4ever-project.org/rodl/ROs/myexperiment_pack_980/, does not satisfy
+  One or more web services used by one of the workflows are inaccessible, including <a href="http://soap.genome.jp/KEGG.wsdl"><i>KEGG_namespaces</i></a>
+Total pass: 0, fail: 1 out of 1
+(romenv)conina:Kegg-workflow-evaluation graham$ 
+]]
 
 
 
