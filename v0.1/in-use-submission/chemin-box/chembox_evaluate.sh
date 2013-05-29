@@ -1,26 +1,36 @@
 #!/bin/bash
 #
 
-USE_SERVICE="ANDROS"
+USE_SERVICE="ANDROS-SANDBOX"
 
 if [ "$USE_SERVICE" == "ESKARINA" ]; then
   CHECKLIST_SERVICE=http://localhost:8080/evaluate/trafficlight_json
   ROBASE=file:///usr/workspace/wf4ever-ro-catalogue/v0.1/
+  RONAME=minim-evaluation
   echo "Using local evaluation of $ROBASE"
 fi
 if [ "$USE_SERVICE" == "SANDBOX" ]; then
   CHECKLIST_SERVICE=http://sandbox.wf4ever-project.org/roevaluate/evaluate/trafficlight_json
   ROBASE=http://sandbox.wf4ever-project.org/rodl/ROs
+  RONAME=minim-evaluation
   echo "Using sandbox evaluation of $ROBASE"
 fi
 if [ "$USE_SERVICE" == "ANDROS" ]; then
   CHECKLIST_SERVICE=http://andros.zoo.ox.ac.uk:8080/evaluate/trafficlight_json
-  ROBASE=file:///home/graham/Workspace/wf4ever/ro-catalogue/v0.1/
+  ROBASE=file:///home/graham/Workspace/wf4ever/ro-catalogue/v0.1
+  RONAME=minim-evaluation
+  echo "Using andros-based evaluation of $ROBASE"
+fi
+if [ "$USE_SERVICE" == "ANDROS-SANDBOX" ]; then
+  CHECKLIST_SERVICE=http://andros.zoo.ox.ac.uk:8080/evaluate/trafficlight_json
+  ROBASE=http://sandbox.wf4ever-project.org/rodl/ROs
+  RONAME=minim-evaluation-1
   echo "Using andros-based evaluation of $ROBASE"
 fi
 
 echo "CHECKLIST_SERVICE: $CHECKLIST_SERVICE"
 echo "ROBASE:            $ROBASE"
+echo "RONAME:            $RONAME"
 
 if [ "$CHECKLIST_SERVICE" == "" ]; then
   echo "Set USE_SERVICE to ESKARINA, SANDBOX or ANDROS (was $USE_SERVICE)"
@@ -29,7 +39,6 @@ if [ "$CHECKLIST_SERVICE" == "" ]; then
 fi
 
 ROSRS_ACCESS_TOKEN="4d0cf8b6-0d4c-4150-9f29-0e2b9081ed18"
-RONAME=minim-evaluation
 ROURI=$ROBASE/$RONAME
 CHECKLIST_URI=$ROBASE/$RONAME/chembox-minim-samples.ttl
 

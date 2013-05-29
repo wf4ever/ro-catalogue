@@ -1,10 +1,9 @@
-chembox evaluation experiment
+# chembox evaluation experiment
 
 Converting a small part of Matthew Gamble's "chemmim" evaluation of chemical descriptions to use the RO checklist evaluation framework, with a view to making a concrete comparison between the approaches used.
 
-@@NOTE:  at the present time (28-May-2013) I am having problems running this evaluation against the chembox data in sandbox.wf4ever-project.org/rodl, due to a problem uploading and/or retrieving the RO.  The tests have been performed using a local instance of the RO checklist service, which requires installing the RO Manager and Pyramid web framework software to the local computer.
 
-== Content of the folder ==
+## Content of the folder
 
 chembox_evaluate.sh: the script for running the assessment locally or remotely
 
@@ -12,18 +11,22 @@ chembox-minim-samples.ttl: the checklist used for assessment
 
 chembox-uris-100.txt: the 100 sample chemical compounds assessed
 
-chembox-test-run-100-log.txt: the assessment result from the Minim checklist
-
 MIM-chembox-uris.100.results: the assessment result from the MIM assessment tool
 
-== To reproduce the Minim assessment ==
+
+## To reproduce the Minim assessment
 
     ./chembox_evaluate.sh
 
+(This script is currently configured to use a checklist service deployed at andros.zoo.ox.ac.uk, evaluating ROs served by sandbox.wf4ever-project.org/rodl.
+We have been experiencing timeout problems if we try to run the evaluation service from the sandbox - possibly due to a reverse proxy server configuration.)
+
 Expected results: see below
 
+Note: this script takes a couple of hours to complete.
 
-== Results from 28-may using "in-use-submission" RO and local checklist evaluation ==
+
+## Results from 28-may using "in-use-submission" RO and local checklist evaluation
 
     (romenv)conina:chemin-box graham$ ./chembox_evaluate.sh 
     Using local evaluation of file:///usr/workspace/wf4ever-ro-catalogue/v0.1
@@ -334,7 +337,7 @@ Expected results: see below
     Total pass: 65, fail: 35 out of 100
     (romenv)conina:chemin-box graham$ 
 
-== Results from 20-May run used as basis for paper submission ==
+## Results from 20-May run used as basis for paper submission
 
     (romenv)zoo-dhcp06:minim-evaluation graham$ ./chembox_evaluate.sh
     Using local evaluation of file:///usr/workspace/wf4ever-ro-catalogue/v0.1
