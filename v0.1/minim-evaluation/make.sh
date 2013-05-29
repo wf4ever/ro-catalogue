@@ -3,7 +3,7 @@
 # RO manager script to create trivial RO
 #
 
- source ~/workspace/wf4ever-ro-manager/romenv/bin/activate
+# source ~/workspace/wf4ever-ro-manager/romenv/bin/activate
 
 source ../../ro.sh
 
@@ -13,6 +13,7 @@ ROTITLE="Minim evaluation"
 
 echo "--------"
 
+# ro config -b <robase> -n <username> -e <useremail> -r <rosrs_uri> -t <access_token>
 $RO config -v \
   -b $ROPATH \
   -r $ROSRS_URI \

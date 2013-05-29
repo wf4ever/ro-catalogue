@@ -5,6 +5,10 @@
 
 # Change these lines to match local setup
 ROBASE=/home/graham/Workspace/wf4ever/ro-catalogue
-RO=/home/graham/Workspace/wf4ever/ro-manager/src/ro
+#RO=/home/graham/Workspace/wf4ever/ro-manager/src/ro
+RO=ro
+
+# Set up ROPATH
+source ../ro.sh
 
 # End.
