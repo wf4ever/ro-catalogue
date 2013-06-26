@@ -25,6 +25,7 @@ while read PACK
 
     if [ "${OPT:0:4}" != "skip" ]; then
       # checklist eval ...
+      echo "$CHECKLIST_SERVICE?RO=$ROURI&minim=$CHECKLIST_URI&purpose=wf-runnable"
       curl --silent \
            "$CHECKLIST_SERVICE?RO=$ROURI&minim=$CHECKLIST_URI&purpose=wf-runnable" \
            >00-checklistresult.tmp
@@ -39,6 +40,7 @@ while read PACK
     fi
 
   # done <Kegg-workflows-967.csv
+  # done <Kegg-workflows-3107.csv
   done <Kegg-workflows.csv
 
 echo "Total pass: $countpass, fail: $countfail out of $countall"

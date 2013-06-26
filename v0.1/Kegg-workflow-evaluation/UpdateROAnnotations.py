@@ -28,7 +28,8 @@ log = logging.getLogger(__name__)
 ROSRS_API_URI = "http://sandbox.wf4ever-project.org/rodl/ROs/"
 
 # Wf4Ever test user:
-ROSRS_ACCESS_TOKEN="972850de-1d98-488d-bd34-a19c9b86eb76"
+#ROSRS_ACCESS_TOKEN = "972850de-1d98-488d-bd34-a19c9b86eb76"
+ROSRS_ACCESS_TOKEN = "3c7483ac-e157-4cb3-97d5-8cf6e129f8e9"
 
 # Annotations to add
 

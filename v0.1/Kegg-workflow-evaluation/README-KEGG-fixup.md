@@ -150,6 +150,8 @@ The evaluation fails thus:
       Input data is not present
     Total pass: 0, fail: 1 out of 1
 
+NOTE: in this case, the workflow description is missing from the RO.  I attempted to re-run the myExperiment->RO conversion process, but this failed because myExperiment would not return an RDF descrtiption for the workflow.
+
 ...
 
 Locate missing metadata:
@@ -169,9 +171,11 @@ Locate missing metadata:
     </rdf:RDF>
     (romenv)conina:Kegg-workflow-evaluation graham$ 
 
+This dump shows an empty RO, hence no defined workflow.
+
 ...
 
-The root problem here was that no provenance information was available from which to determine the input data, as required by the wf_conversion script.
+The original problem here was that no provenance information was available from which to determine the input data, as required by the wf_conversion script.
 
         PROVURI=$(get_workflow_provenance $1 $2 $3)
         asq -r $PROVURI -p provenance.prefixes -f TURTLE,"%(portname)s %(valueuri)s\n" \

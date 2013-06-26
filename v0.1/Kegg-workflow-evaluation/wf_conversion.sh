@@ -10,7 +10,8 @@
 #
 
 ROSRS_URI="http://sandbox.wf4ever-project.org/rodl/ROs/"
-ROSRS_ACCESS_TOKEN="4d0cf8b6-0d4c-4150-9f29-0e2b9081ed18"
+# ROSRS_ACCESS_TOKEN="4d0cf8b6-0d4c-4150-9f29-0e2b9081ed18" (no longer works?)
+ROSRS_ACCESS_TOKEN="3c7483ac-e157-4cb3-97d5-8cf6e129f8e9"
 # WF_RO_URI="http://sandbox.wf4ever-project.org/wf-ro/translate/jobs"
 WF_RO_URI="http://sandbox.wf4ever-project.org/wf-ro/jobs/"
 ROBASE=http://sandbox.wf4ever-project.org/rodl/ROs
@@ -22,7 +23,7 @@ function retrieve_T2_URI {
     #
     # $1  is URI of myExperiment pack to query
     #
-    echo "-- retrieve_T2_URI ($1)"
+    # echo "-- retrieve_T2_URI ($1)"
     asq -r $1.rdf \
           -p myExperiment.prefixes \
           -f "%(t2flow)s" \
@@ -76,6 +77,7 @@ function make_workflow_pack {
     done
     echo
     curl --silent $JOBURI | grep "\"status\":\"DONE\"" > /dev/null
+    ### @@TODO: can extract and return RO URI from result here?
     if [ $? == 0 ]; then
       echo "  RO created: $2"
     else
@@ -119,14 +121,14 @@ function get_workflow_provenance {
     PROVURI="${KEGG_PROV_RAW_BASE}/workflow_${PACKID}_version_${VERNUM}/${RUNNUM}/workflowrun.prov.ttl"
     curl --silent --head $PROVURI | grep "HTTP/1.1 200 OK" >/dev/null
     if [ $? != 0 ]; then
-      echo "** No provenance found for pack $PACKID ($PROVURI) **"
+      echo "++ No provenance found for pack $PACKID ($PROVURI) ++"
     else
       echo $PROVURI
     fi
     return
 }
 
-function get_workflow_inputs {
+function get_workflow_inputs   {
     # Isolate details of WF inputs values and/or references and corresponding ports.
     # This information will be extracted from the provenance corpus saved in GitHub (see Appendix F).
     #
@@ -137,8 +139,9 @@ function get_workflow_inputs {
     # Returns via stdout a list of lines containing:
     #   portname contenturi
     #
-    # echo "get_workflow_inputs ($@)"
+    ## echo "get_workflow_inputs ($@)"
     PROVURI=$(get_workflow_provenance $1 $2 $3)
+    ## echo "PROVURI: $PROVURI"
     asq -r $PROVURI -p provenance.prefixes -f TURTLE,"%(portname)s %(valueuri)s\n" \
       " SELECT ?portname ?valueuri ?portname WHERE \
           { ?wfrun a wfprov:WorkflowRun ; \
@@ -234,11 +237,12 @@ while read PACK; do
         continue
       fi
 
+      #### @@FIXME - temporarily removed while trying to work aroubnd RODL API change
       make_workflow_pack $T2URI $ROURI
 
       # For testing...
-      # PROVURI=$(get_workflow_provenance $PACKID $VERNUM $OPT)
-      # echo "--- $PROVURI"
+      PROVURI=$(get_workflow_provenance $PACKID $VERNUM $OPT)
+      echo "--- PROVURI: $PROVURI"
 
       get_workflow_inputs $PACKID $VERNUM $OPT >00-wfinputs.tmp
       if [ $? != 0 ] ; then
