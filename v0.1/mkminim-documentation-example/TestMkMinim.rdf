@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:minim="http://purl.org/minim/minim#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:nodeID="N8c7b3a6adce34549a191c7c585384310">
+    <minim:sparql_query>?file rdf:type ex:Part</minim:sparql_query>
+  </rdf:Description>
+  <rdf:Description rdf:about="#req_foreach_accessible">
+    <minim:showfail>File as part %(file)s is not accessible</minim:showfail>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
+    <minim:showpass>All file as part resources are accessible (live)</minim:showpass>
+    <minim:query rdf:nodeID="N47dc6f0afe144c8795782e444468de34"/>
+    <minim:showmiss>No file as part definitions are present</minim:showmiss>
+    <minim:isLiveTemplate>{+pruri}</minim:isLiveTemplate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N69640c7fcccc42f3827ea2ef2ec55b00">
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
+    <minim:isDerivedBy rdf:resource="#req_foreach_exists"/>
+    <minim:seq>020</minim:seq>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9d92b3d9a3ec4d4794a87a99d4369d85">
+    <minim:sparql_query>?file ex:partOf [ rdf:type ex:Whole ]</minim:sparql_query>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N95c6e5f7107441e9a9e0f8844b9b9af5">
+    <minim:sparql_query>?file rdf:type ex:Part</minim:sparql_query>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N21befb0f7e994023abf96949d2eb30e1">
+    <minim:seq>020</minim:seq>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
+    <minim:isDerivedBy rdf:resource="#req_foreach_exists"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N205e59c9429f485192bac0589153d845">
+    <minim:sparql_query>?file rdf:type ex:Part</minim:sparql_query>
+  </rdf:Description>
+  <rdf:Description rdf:about="#req_foreach_aggregated">
+    <minim:aggregatesTemplate>{+file}</minim:aggregatesTemplate>
+    <minim:showpass>All file as part resources are aggregated in RO</minim:showpass>
+    <minim:query rdf:nodeID="Nd11f45d6359744d9b7cfd535481f0b96"/>
+    <minim:showmiss>No file as part definitions are present</minim:showmiss>
+    <minim:showfail>File as part %(file)s is not aggregated in RO</minim:showfail>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1898c13b3d2945d4bd80c9c658e5a4eb">
+    <minim:isDerivedBy rdf:resource="#req_python"/>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
+    <minim:seq>070</minim:seq>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6676b506f7ce451aa037a66e5fda36ea">
+    <minim:seq>010</minim:seq>
+    <minim:isDerivedBy rdf:resource="#req_exists"/>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N04782c8116454e128c6ea4ade0bf8bca">
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
+    <minim:seq>030</minim:seq>
+    <minim:isDerivedBy rdf:resource="#req_foreach_aggregated"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndaf1ba70e8df48328f823d80f9d638ea">
+    <minim:isDerivedBy rdf:resource="#req_max"/>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
+    <minim:seq>060</minim:seq>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N99927d4b2bf24a1b9cad1862db747f70">
+    <minim:isDerivedBy rdf:resource="#req_min"/>
+    <minim:seq>040</minim:seq>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N11eacddaaa32489ab1910873bc0219b3">
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Checklist"/>
+    <minim:forPurpose>test1</minim:forPurpose>
+    <minim:forTargetTemplate>{+targetro}</minim:forTargetTemplate>
+    <minim:toModel rdf:resource="#model_test1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#req_python">
+    <minim:command>python --version</minim:command>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#SoftwareEnvironmentRule"/>
+    <minim:response>^Python 2\.7.*$</minim:response>
+    <minim:showpass>Python 2.7.x present</minim:showpass>
+    <minim:showfail>Python 2.7.x not present</minim:showfail>
+  </rdf:Description>
+  <rdf:Description rdf:about="#model_test2">
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Model"/>
+    <minim:hasMustRequirement rdf:nodeID="N21befb0f7e994023abf96949d2eb30e1"/>
+    <minim:hasMustRequirement rdf:nodeID="Na3fef2a9900a40a790bc71106b91d607"/>
+    <minim:hasShouldRequirement rdf:nodeID="Nc62dca6fda03417480ec73c4f23958ff"/>
+    <minim:hasShouldRequirement rdf:nodeID="N99927d4b2bf24a1b9cad1862db747f70"/>
+    <minim:hasMustRequirement rdf:nodeID="Nf12dff6afc4044a192270044d0b8a140"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#req_min">
+    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
+    <minim:showpass>At least 3 file as part values are present</minim:showpass>
+    <minim:query rdf:nodeID="N205e59c9429f485192bac0589153d845"/>
+    <minim:min rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</minim:min>
+    <minim:showfail>Fewer than 3 file as part values are present</minim:showfail>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ChecklistConstraints">
+    <minim:hasChecklist rdf:nodeID="N11eacddaaa32489ab1910873bc0219b3"/>
+    <minim:hasChecklist rdf:nodeID="Ndce7cf232cb34821881f2bbcc7fcc112"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#model_test1">
+    <minim:hasMayRequirement rdf:nodeID="N1898c13b3d2945d4bd80c9c658e5a4eb"/>
+    <minim:hasMustRequirement rdf:nodeID="N1cc005758c064d09ab5a6d7067ad9ae7"/>
+    <minim:hasShouldRequirement rdf:nodeID="Ndaf1ba70e8df48328f823d80f9d638ea"/>
+    <minim:hasMustRequirement rdf:nodeID="N04782c8116454e128c6ea4ade0bf8bca"/>
+    <minim:hasMustRequirement rdf:nodeID="N6676b506f7ce451aa037a66e5fda36ea"/>
+    <minim:hasShouldRequirement rdf:nodeID="N1f775633e5c542b79b2713d0d28e30e6"/>
+    <minim:hasMustRequirement rdf:nodeID="N69640c7fcccc42f3827ea2ef2ec55b00"/>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Model"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na3fef2a9900a40a790bc71106b91d607">
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
+    <minim:seq>030</minim:seq>
+    <minim:isDerivedBy rdf:resource="#req_foreach_aggregated"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#req_max">
+    <minim:query rdf:nodeID="N95c6e5f7107441e9a9e0f8844b9b9af5"/>
+    <minim:max rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</minim:max>
+    <minim:showpass>At most 3 file as part values are present</minim:showpass>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
+    <minim:showfail>At more than 3 file as part values are present</minim:showfail>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd11f45d6359744d9b7cfd535481f0b96">
+    <minim:sparql_query>?file rdf:type ex:Part</minim:sparql_query>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf12dff6afc4044a192270044d0b8a140">
+    <minim:seq>010</minim:seq>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
+    <minim:isDerivedBy rdf:resource="#req_exists"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N88ae424885dd4daf90878eaf02ff01fd">
+    <minim:sparql_query>?file rdf:type ex:Part</minim:sparql_query>
+    <minim:result_mod>ORDER BY ?file</minim:result_mod>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndce7cf232cb34821881f2bbcc7fcc112">
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Checklist"/>
+    <minim:toModel rdf:resource="#model_test2"/>
+    <minim:forTargetTemplate>{+targetro}</minim:forTargetTemplate>
+    <minim:forPurpose>test2</minim:forPurpose>
+  </rdf:Description>
+  <rdf:Description rdf:about="#req_exists">
+    <minim:showpass>File exists as a part</minim:showpass>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
+    <minim:showfail>File as part does not exist</minim:showfail>
+    <minim:exists rdf:nodeID="N8c7b3a6adce34549a191c7c585384310"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1f775633e5c542b79b2713d0d28e30e6">
+    <minim:seq>050</minim:seq>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
+    <minim:isDerivedBy rdf:resource="#req_min"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc62dca6fda03417480ec73c4f23958ff">
+    <minim:seq>050</minim:seq>
+    <minim:isDerivedBy rdf:resource="#req_max"/>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#req_foreach_exists">
+    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
+    <minim:showpass>Files as part are partOf some indicated whole</minim:showpass>
+    <minim:exists rdf:nodeID="N9d92b3d9a3ec4d4794a87a99d4369d85"/>
+    <minim:query rdf:nodeID="N88ae424885dd4daf90878eaf02ff01fd"/>
+    <minim:showfail>File as part %(file)s is not part of some whole</minim:showfail>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N47dc6f0afe144c8795782e444468de34">
+    <minim:sparql_query>?file rdf:type ex:Part</minim:sparql_query>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1cc005758c064d09ab5a6d7067ad9ae7">
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
+    <minim:isDerivedBy rdf:resource="#req_foreach_accessible"/>
+    <minim:seq>040</minim:seq>
+  </rdf:Description>
+</rdf:RDF>
