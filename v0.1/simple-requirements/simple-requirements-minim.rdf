@@ -107,7 +107,9 @@
       This model defines information that must be available for the 
       requirements Research Object to be runnable.
     </rdfs:comment>
+    <!--
     <minim:hasMustRequirement rdf:resource="#environment-software/lpod-show" />
+    -->
     <minim:hasMustRequirement rdf:resource="#environment-software/python" />
     <minim:hasMustRequirement rdf:resource="#isPresent/workflow-instance" />
     <minim:hasMustRequirement rdf:resource="#isPresent/workflow-inputfiles" />
@@ -142,7 +144,9 @@
       requirements Research Object to be repeatable; i.e. to re-run it and
       compare results with a previous run.
     </rdfs:comment>
+    <!--
     <minim:hasMustRequirement rdf:resource="#environment-software/lpod-show" />
+    -->
     <minim:hasMustRequirement rdf:resource="#environment-software/python" />
     <minim:hasMustRequirement rdf:resource="#isPresent/workflow-instance" />
     <minim:hasMustRequirement rdf:resource="#isPresent/workflow-inputfiles" />
