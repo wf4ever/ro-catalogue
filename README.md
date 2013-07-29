@@ -32,3 +32,4 @@ To update the published datya from the master branch, assuming the master branch
     git checkout gh-pages
     git merge master
     git checkout master
+    git push
