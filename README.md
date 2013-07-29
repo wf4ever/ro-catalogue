@@ -24,8 +24,8 @@ A collection of Research Objects for development and testing.
 
 ## Publication direct to web
 
-This project is also published directly to the web via its {{gh-pages}} branch, accessible at
-[http://wf4ever.github.io/ro-catalogue/...]().
+This project is also published directly to the web via its `gh-pages` branch, accessible at
+[http://wf4ever.github.io/ro-catalogue/...](http://wf4ever.github.io/ro-catalogue/...).
 
 To update the published datya from the master branch, assuming the master branch is locally up-to-date and fully committed:
 
