@@ -30,5 +30,5 @@ This project is also published dirtectly to the web via its {{gh-pages}} branchy
 To update the published datya from the master branch, assuming the master branch is locally up-to-date and fully committed:
 
     git checkout gh-pages
-    git checkout master -- *
-    
+    git merge master
+    git checkout master
