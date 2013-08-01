@@ -1,0 +1,190 @@
+@prefix ao: <http://purl.org/ao/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix minim: <http://purl.org/minim/minim#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ro: <http://purl.org/wf4ever/ro#> .
+@prefix roterms: <http://purl.org/wf4ever/roterms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<#ChecklistConstraints> minim:hasChecklist [ a minim:Checklist ;
+            minim:forPurpose "complete" ;
+            minim:forTargetTemplate "{+targetro}" ;
+            minim:toModel <#model_complete> ] .
+
+<#req_exactly> a minim:QueryTestRule ;
+    minim:max 3 ;
+    minim:min 3 ;
+    minim:query [ minim:sparql_query "?file rdf:type ex:Part" ] ;
+    minim:showfail "Fewer or greater than 3 file as part values are present" ;
+    minim:showpass "Exactly 3 file as part values are present" .
+
+<#req_exists> a minim:QueryTestRule ;
+    minim:exists [ minim:sparql_query "?file rdf:type ex:Part" ] ;
+    minim:showfail "File as part does not exist" ;
+    minim:showpass "File exists as a part" .
+
+<#req_foreach_accessible> a minim:QueryTestRule ;
+    minim:isLiveTemplate "{+pruri}" ;
+    minim:query [ minim:result_mod "ORDER BY ?file" ;
+            minim:sparql_query "?file rdf:type ex:Part" ] ;
+    minim:showfail "File as part %(file)s is not accessible" ;
+    minim:showmiss "No file as part definitions are present" ;
+    minim:showpass "All file as part resources are accessible (live)" .
+
+<#req_foreach_aggregated> a minim:QueryTestRule ;
+    minim:aggregatesTemplate "{+file}" ;
+    minim:query [ minim:result_mod "ORDER BY ?file" ;
+            minim:sparql_query "?file rdf:type ex:Part" ] ;
+    minim:showfail "File as part %(file)s is not aggregated in RO" ;
+    minim:showmiss "No file as part definitions are present" ;
+    minim:showpass "All file as part resources are aggregated in RO" .
+
+<#req_foreach_exists> a minim:QueryTestRule ;
+    minim:exists [ minim:sparql_query "?file ex:partOf [ rdf:type ex:Whole ]" ] ;
+    minim:query [ minim:result_mod "ORDER BY ?file" ;
+            minim:sparql_query "?file rdf:type ex:Part" ] ;
+    minim:showfail "File as part %(file)s is not part of some whole" ;
+    minim:showpass "Files as part are partOf some indicated whole" .
+
+<#req_max> a minim:QueryTestRule ;
+    minim:max 3 ;
+    minim:query [ minim:sparql_query "?file rdf:type ex:Part" ] ;
+    minim:showfail "At more than 3 file as part values are present" ;
+    minim:showpass "At most 3 file as part values are present" .
+
+<#req_min> a minim:QueryTestRule ;
+    minim:min 3 ;
+    minim:query [ minim:sparql_query "?file rdf:type ex:Part" ] ;
+    minim:showfail "Fewer than 3 file as part values are present" ;
+    minim:showpass "At least 3 file as part values are present" .
+
+<#req_python> a minim:SoftwareEnvironmentRule ;
+    minim:command "python --version" ;
+    minim:response "^Python 2\\.7.*$" ;
+    minim:showfail "Python 2.7.x not present" ;
+    minim:showpass "Python 2.7.x present" .
+
+<#model_complete> a minim:Model ;
+    minim:hasMustRequirement [ a minim:Requirement ;
+            minim:isDerivedBy <#req_conclusion> ;
+            minim:seq "req_11" ],
+        [ a minim:Requirement ;
+            minim:isDerivedBy <#req_workflow_definition> ;
+            minim:seq "req_05" ],
+        [ a minim:Requirement ;
+            minim:isDerivedBy <#req_selected_inputs> ;
+            minim:seq "req_09" ],
+        [ a minim:Requirement ;
+            minim:isDerivedBy <#req_workflow_description> ;
+            minim:seq "req_04" ],
+        [ a minim:Requirement ;
+            minim:isDerivedBy <#req_live_web_service> ;
+            minim:seq "req_07" ],
+        [ a minim:Requirement ;
+            minim:isDerivedBy <#req_dependencies> ;
+            minim:seq "req_06" ],
+        [ a minim:Requirement ;
+            minim:isDerivedBy <#req_results_run> ;
+            minim:seq "req_10" ] ;
+    minim:hasShouldRequirement [ a minim:Requirement ;
+            minim:isDerivedBy <#req_design_sketch> ;
+            minim:seq "req_03" ],
+        [ a minim:Requirement ;
+            minim:isDerivedBy <#req_sample_data> ;
+            minim:seq "req_08" ],
+        [ a minim:Requirement ;
+            minim:isDerivedBy <#req_research_question> ;
+            minim:seq "req_01" ],
+        [ a minim:Requirement ;
+            minim:isDerivedBy <#req_article> ;
+            minim:seq "req_02" ] .
+
+<#req_article> a minim:QueryTestRule ;
+    minim:exists [ minim:sparql_query "?res rdf:type roterms:Paper" ] ;
+    minim:showfail "General topic description is not indicated" ;
+    minim:showpass "General topic description is indicated" .
+
+<#req_conclusion> a minim:QueryTestRule ;
+    minim:exists [ minim:sparql_query "?res rdf:type roterms:Conclusions" ] ;
+    minim:showfail "Experiment conclusions are not indicated" ;
+    minim:showpass "Experiment conclusions are indicated" .
+
+<#req_dependencies> a minim:QueryTestRule ;
+    minim:exists [ minim:sparql_query "?wf roterms:requiresSoftware ?anything" ] ;
+    minim:query [ minim:result_mod "ORDER BY ?wflab" ;
+            minim:sparql_query """?wf rdf:type wfdesc:Workflow
+  ; rdfs:label ?wflab""" ] ;
+    minim:showfail "Workflow software dependencies indicated for all workflows" ;
+    minim:showpass "No workflow software dependencies indicated for %(wflab)" .
+
+<#req_design_sketch> a minim:QueryTestRule ;
+    minim:exists [ minim:sparql_query "?res rdf:type roterms:Sketch" ] ;
+    minim:showfail "Design sketch is not indicated" ;
+    minim:showpass "Design sketch is indicated" .
+
+<#req_live_web_service> a minim:QueryTestRule ;
+    minim:isLiveTemplate "{+wfdef}" ;
+    minim:query [ minim:result_mod "ORDER BY ?wflab" ;
+            minim:sparql_query """?wf rdf:type wfdesc:Workflow
+  ; rdfs:label ?wflab
+  ; wfdesc:hasWorkflowDefinition ?wfdef""" ] ;
+    minim:showfail "Workflow definition %(wfdef)s for %(wflab) is not accessible" ;
+    minim:showmiss "No workflow definitions found" ;
+    minim:showpass "All referenced workflow definitions are accessible" .
+
+<#req_research_question> a minim:QueryTestRule ;
+    minim:exists [ minim:sparql_query "?res rdf:type roterms:ResearchQuestion" ] ;
+    minim:showfail "Research question is not indicated" ;
+    minim:showpass "Research question is indicated" .
+
+<#req_results_run> a minim:QueryTestRule ;
+    minim:exists [ minim:sparql_query """?wfrun rdf:type wfprov:WorkflowRun,
+        roterms:ResultGenerationRun ;
+    wfprov:describedByWorkflow ?wf""" ] ;
+    minim:query [ minim:result_mod "ORDER BY ?wflab" ;
+            minim:sparql_query """?wf rdf:type wfdesc:Workflow
+  ; rdfs:label ?wflab""" ] ;
+    minim:showfail "Workflow sample runs indicated for all workflows" ;
+    minim:showpass "No workflow sample run data indicated for %(wflab)" .
+
+<#req_sample_data> a minim:QueryTestRule ;
+    minim:exists [ minim:sparql_query """?wfrun rdf:type wfprov:WorkflowRun,
+                       roterms:ExampleRun ;
+    wfprov:describedByWorkflow ?wf""" ] ;
+    minim:query [ minim:result_mod "ORDER BY ?wflab" ;
+            minim:sparql_query """?wf rdf:type wfdesc:Workflow
+  ; rdfs:label ?wflab""" ] ;
+    minim:showfail "Workflow sample runs indicated for all workflows" ;
+    minim:showpass "No workflow sample run data indicated for %(wflab)" .
+
+<#req_selected_inputs> a minim:QueryTestRule ;
+    minim:exists [ minim:sparql_query """?wfrun rdf:type wfprov:WorkflowRun,
+        roterms:ProspectiveRun ;
+    wfprov:describedByWorkflow ?wf""" ] ;
+    minim:query [ minim:result_mod "ORDER BY ?wflab" ;
+            minim:sparql_query """?wf rdf:type wfdesc:Workflow
+  ; rdfs:label ?wflab""" ] ;
+    minim:showfail "Workflow sample runs indicated for all workflows" ;
+    minim:showpass "No workflow sample run data indicated for %(wflab)" .
+
+<#req_workflow_definition> a minim:QueryTestRule ;
+    minim:isLiveTemplate "{+wfdef}" ;
+    minim:query [ minim:result_mod "ORDER BY ?wflab" ;
+            minim:sparql_query """?wf rdf:type wfdesc:Workflow
+  ; rdfs:label ?wflab
+  ; wfdesc:hasWorkflowDefinition ?wfdef""" ] ;
+    minim:showfail "Workflow definition %(wfdef)s for %(wflab) is not accessible" ;
+    minim:showmiss "No workflow definitions found" ;
+    minim:showpass "All referenced workflow definitions are accessible" .
+
+<#req_workflow_description> a minim:QueryTestRule ;
+    minim:exists [ minim:sparql_query """?wf rdf:type wfdesc:Workflow
+  ; rdfs:label ?label""" ] ;
+    minim:showfail "Workflow description metadata is not present" ;
+    minim:showpass "Workflow description metadata is present" .
+
