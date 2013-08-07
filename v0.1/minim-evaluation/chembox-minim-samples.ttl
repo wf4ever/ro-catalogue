@@ -83,8 +83,8 @@ chembox: minim:hasPrefix "chembox" .
         ] ;
       minim:min 1 ;
       minim:max 1 ;
-      minim:showpass "InChI identifier is present" ;
-      minim:showfail "No InChI identifier is present" ;
+      minim:showpass "InChI is present" ;
+      minim:showfail "InChI not present" ;
     ] .
 
 :ChemSpider a minim:Requirement ;
@@ -113,8 +113,8 @@ chembox: minim:hasPrefix "chembox" .
             # Thus, only valid integer literals will be accepted.
         ] ;
       minim:min 1 ;
-      minim:showpass "ChemSpider identifier is present" ;
-      minim:showfail "No ChemSpider identifier is present" ;
+      minim:showpass "ChemSpider is present" ;
+      minim:showfail "ChemSpider not present" ;
     ] .
 
 :Synonym a minim:Requirement ;
@@ -133,7 +133,7 @@ chembox: minim:hasPrefix "chembox" .
         ] ;
       minim:min 1 ;
       minim:showpass "Synonym is present" ;
-      minim:showfail "No synomym is present" ;
+      minim:showfail "Synonym not present" ;
     ] .
 
 :failreq a minim:Requirement ;
