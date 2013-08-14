@@ -13,10 +13,11 @@
 
 # Timbus-demo version
 
+# CHECKLIST_SERVICE="http://localhost:8080"
 CHECKLIST_SERVICE="http://sandbox.wf4ever-project.org/roevaluate"
-CHECKLIST_SERVICE="http://localhost:8080"
 CHECK_RO="http://alpha2.myexperiment.org/rodl/ROs/Pack5/"
-CHECK_MINIM="file:///usr/workspace/wf4ever-ro-catalogue/v0.1/Timbus-demo-test/Timbus-demo-minim.ttl"
+# CHECK_MINIM="file:///usr/workspace/wf4ever-ro-catalogue/v0.1/Timbus-demo-test/Timbus-demo-minim.ttl"
+CHECK_MINIM="http://wf4ever.github.io/ro-catalogue/v0.1/Timbus-demo-test/Timbus-demo-minim.rdf"
 CHECK_PURPOSE="complete"
 
 # Retrieve service description and extract the URI template
