@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 
-USE_SERVICE="ESKARINA"
+USE_SERVICE="ANDROS"
 
 if [ "$USE_SERVICE" == "ESKARINA" ]; then
   CHECKLIST_SERVICE=http://localhost:8080/evaluate/trafficlight_json
@@ -49,7 +49,7 @@ while read TARGET
     echo "" >>00-evaluate-ROs.log
     echo "<$TARGET>" >>00-evaluate-ROs.log
     # Create Overlay RO for selected target...
-    ROURI=$(roverlay $TARGET)
+    ROURI=$(roverlay -s $ROVERLAY_SERVICE $TARGET)
 
     # checklist eval ...
     # result=$(curl --silent \
