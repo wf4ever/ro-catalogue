@@ -71,38 +71,38 @@
 
 <#model_complete> a minim:Model ;
     minim:hasMustRequirement [ a minim:Requirement ;
-            minim:isDerivedBy <#req_workflow_definition> ;
-            minim:seq "req_05" ],
+            minim:isDerivedBy <#req_selected_inputs> ;
+            minim:seq "req_09" ],
         [ a minim:Requirement ;
-            minim:isDerivedBy <#req_dependencies> ;
-            minim:seq "req_06" ],
-        [ a minim:Requirement ;
-            minim:isDerivedBy <#req_live_web_service> ;
-            minim:seq "req_07" ],
+            minim:isDerivedBy <#req_results_run> ;
+            minim:seq "req_10" ],
         [ a minim:Requirement ;
             minim:isDerivedBy <#req_workflow_description> ;
             minim:seq "req_04" ],
         [ a minim:Requirement ;
-            minim:isDerivedBy <#req_selected_inputs> ;
-            minim:seq "req_09" ],
+            minim:isDerivedBy <#req_live_web_service> ;
+            minim:seq "req_07" ],
         [ a minim:Requirement ;
-            minim:isDerivedBy <#req_conclusion> ;
-            minim:seq "req_11" ],
-        [ a minim:Requirement ;
-            minim:isDerivedBy <#req_results_run> ;
-            minim:seq "req_10" ] ;
+            minim:isDerivedBy <#req_workflow_definition> ;
+            minim:seq "req_05" ] ;
     minim:hasShouldRequirement [ a minim:Requirement ;
+            minim:isDerivedBy <#req_research_question> ;
+            minim:seq "req_01" ],
+        [ a minim:Requirement ;
             minim:isDerivedBy <#req_article> ;
             minim:seq "req_02" ],
         [ a minim:Requirement ;
-            minim:isDerivedBy <#req_research_question> ;
-            minim:seq "req_01" ],
+            minim:isDerivedBy <#req_conclusion> ;
+            minim:seq "req_11" ],
         [ a minim:Requirement ;
             minim:isDerivedBy <#req_sample_data> ;
             minim:seq "req_08" ],
         [ a minim:Requirement ;
             minim:isDerivedBy <#req_design_sketch> ;
-            minim:seq "req_03" ] .
+            minim:seq "req_03" ],
+        [ a minim:Requirement ;
+            minim:isDerivedBy <#req_dependencies> ;
+            minim:seq "req_06" ] .
 
 <#req_article> a minim:QueryTestRule ;
     minim:exists [ minim:sparql_query "?res rdf:type roterms:Paper" ] ;
@@ -132,9 +132,9 @@
     minim:query [ minim:result_mod "ORDER BY ?wflab" ;
             minim:sparql_query """?wf rdf:type wfdesc:Process
   ; rdfs:label ?wflab
-  ; wf4ever:wsdlURI ?wfservice""" ] ;
+  ; wf4ever:rootURI ?wfservice""" ] ;
     minim:showfail "Workflow service %(wfservice)s for %(wflab)s is not accessible" ;
-    minim:showmiss "No workflow services found" ;
+    minim:showmiss "No workflow service references found" ;
     minim:showpass "All referenced workflow services are accessible" .
 
 <#req_research_question> a minim:QueryTestRule ;
