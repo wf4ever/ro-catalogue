@@ -35,5 +35,5 @@ allrdf: $(TARGETS_RDF)
 allpdf: $(TARGETS_PDF)
 
 clean:
-	rm *.rdf *.ttl *.pdf
+	rm minim-*.rdf minim-*.ttl minim-*.pdf
 
