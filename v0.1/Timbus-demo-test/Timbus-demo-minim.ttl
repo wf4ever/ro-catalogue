@@ -71,26 +71,29 @@
 
 <#model_complete> a minim:Model ;
     minim:hasMustRequirement [ a minim:Requirement ;
-            minim:isDerivedBy <#req_selected_inputs> ;
-            minim:seq "req_09" ],
-        [ a minim:Requirement ;
-            minim:isDerivedBy <#req_results_run> ;
-            minim:seq "req_10" ],
-        [ a minim:Requirement ;
             minim:isDerivedBy <#req_workflow_description> ;
             minim:seq "req_04" ],
+        [ a minim:Requirement ;
+            minim:isDerivedBy <#req_live_web_service> ;
+            minim:seq "req_07" ],
         [ a minim:Requirement ;
             minim:isDerivedBy <#req_workflow_definition> ;
             minim:seq "req_05" ],
         [ a minim:Requirement ;
-            minim:isDerivedBy <#req_live_web_service> ;
-            minim:seq "req_07" ] ;
+            minim:isDerivedBy <#req_selected_inputs> ;
+            minim:seq "req_09" ],
+        [ a minim:Requirement ;
+            minim:isDerivedBy <#req_results_run> ;
+            minim:seq "req_10" ] ;
     minim:hasShouldRequirement [ a minim:Requirement ;
+            minim:isDerivedBy <#req_article> ;
+            minim:seq "req_02" ],
+        [ a minim:Requirement ;
+            minim:isDerivedBy <#req_dependencies> ;
+            minim:seq "req_06" ],
+        [ a minim:Requirement ;
             minim:isDerivedBy <#req_research_question> ;
             minim:seq "req_01" ],
-        [ a minim:Requirement ;
-            minim:isDerivedBy <#req_conclusion> ;
-            minim:seq "req_11" ],
         [ a minim:Requirement ;
             minim:isDerivedBy <#req_sample_data> ;
             minim:seq "req_08" ],
@@ -98,11 +101,8 @@
             minim:isDerivedBy <#req_design_sketch> ;
             minim:seq "req_03" ],
         [ a minim:Requirement ;
-            minim:isDerivedBy <#req_article> ;
-            minim:seq "req_02" ],
-        [ a minim:Requirement ;
-            minim:isDerivedBy <#req_dependencies> ;
-            minim:seq "req_06" ] .
+            minim:isDerivedBy <#req_conclusion> ;
+            minim:seq "req_11" ] .
 
 <#req_article> a minim:QueryTestRule ;
     minim:exists [ minim:sparql_query "?res rdf:type roterms:Paper" ] ;
@@ -115,12 +115,10 @@
     minim:showpass "Experiment conclusions are indicated" .
 
 <#req_dependencies> a minim:QueryTestRule ;
-    minim:exists [ minim:sparql_query "?wf roterms:requiresSoftware ?anything" ] ;
-    minim:query [ minim:result_mod "ORDER BY ?wflab" ;
-            minim:sparql_query """?wf rdf:type wfdesc:Workflow
-  ; rdfs:label ?wflab""" ] ;
-    minim:showfail "No workflow software dependencies indicated for %(wflab)s" ;
-    minim:showpass "Workflow software dependencies indicated for all workflows" .
+    minim:exists [ minim:sparql_query """?wp rdf:type wfdesc:Process
+  ; roterms:requiresSoftware ?anything""" ] ;
+    minim:showfail "No workflow process software dependencies indicated" ;
+    minim:showpass "Workflow process software dependencies are indicated" .
 
 <#req_design_sketch> a minim:QueryTestRule ;
     minim:exists [ minim:sparql_query "?res rdf:type roterms:Sketch" ] ;
