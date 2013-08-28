@@ -127,10 +127,10 @@
     <minim:hasShouldRequirement rdf:resource="#RO_has_result_presentation" />
     -->
     <minim:hasShouldRequirement rdf:resource="#RO_has_conclusion" />
-    
+    <!--
     <minim:hasMayRequirement rdf:resource="#RO_has_annotations" />
     <minim:hasMayRequirement rdf:resource="#RO_live_annotations" />
-    
+    -->
   </minim:Model>
 
   <!-- Model (checklist) for WF accessible
