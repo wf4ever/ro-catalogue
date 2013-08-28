@@ -170,8 +170,8 @@
         <minim:exists>
           ?sketch rdf:type roterms:Sketch .
         </minim:exists>
-        <minim:showpass>Workflow design sketch is present</minim:showpass>
-        <minim:showfail>Workflow design sketch is not present</minim:showfail>
+        <minim:showpass>Experiment design sketch is present</minim:showpass>
+        <minim:showfail>Experiment design sketch is not present</minim:showfail>
         <minim:derives rdf:resource="#RO_has_sketch" />
       </minim:ContentMatchRequirementRule>
     </minim:isDerivedBy>
