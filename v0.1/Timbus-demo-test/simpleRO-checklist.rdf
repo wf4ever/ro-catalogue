@@ -150,6 +150,60 @@
        =================
     -->
 
+	<!-- RO annotations present 1 (DOES IT REALLY WORKS?)-->
+  <minim:Requirement rdf:about="#RO_has_annotations1">
+    <minim:isDerivedBy>
+      <minim:ContentMatchRequirementRule>
+        <minim:forall>
+          ?res1 ore:aggregates ?res2 .
+        </minim:forall>
+        <minim:exists>
+          ?res2 rdf:type ro:AggregatedAnnotation .
+        </minim:exists>
+        <minim:showpass>Annotations are present</minim:showpass>
+        <minim:showfail>Annotations are not present</minim:showfail>
+        <minim:derives rdf:resource="#RO_has_annotations1" />
+      </minim:ContentMatchRequirementRule>
+    </minim:isDerivedBy>
+    <minim:seq>001</minim:seq>
+  </minim:Requirement>
+
+  <!-- RO title is present -->
+  <minim:Requirement rdf:about="#RO_has_title">
+    <minim:isDerivedBy>
+      <minim:ContentMatchRequirementRule>
+        <minim:forall>
+          ?wf rdf:type ro:ResearchObject .
+        </minim:forall>
+        <minim:exists>
+          ?wf dcterms:title ?rotitle .
+        </minim:exists>
+        <minim:showpass>RO title is present</minim:showpass>
+        <minim:showfail>RO title is not present</minim:showfail>
+        <minim:derives rdf:resource="#RO_has_title" />
+      </minim:ContentMatchRequirementRule>
+    </minim:isDerivedBy>
+    <minim:seq>002</minim:seq>
+  </minim:Requirement>
+  
+  <!-- RO description is present -->
+  <minim:Requirement rdf:about="#RO_has_description">
+    <minim:isDerivedBy>
+      <minim:ContentMatchRequirementRule>
+        <minim:forall>
+          ?wf rdf:type ro:ResearchObject .
+        </minim:forall>
+        <minim:exists>
+          ?wf dcterms:description ?rodescription .
+        </minim:exists>
+        <minim:showpass>RO description is present</minim:showpass>
+        <minim:showfail>RO description is not present</minim:showfail>
+        <minim:derives rdf:resource="#RO_has_description" />
+      </minim:ContentMatchRequirementRule>
+    </minim:isDerivedBy>
+    <minim:seq>003</minim:seq>
+  </minim:Requirement>
+
   <!-- Hypothesis is present -->
   <minim:Requirement rdf:about="#RO_has_hypothesys">
     <minim:isDerivedBy>
@@ -564,7 +618,7 @@
         Other diagnostics
   -->
 
-  <!-- RO annotations present -->
+  <!-- RO annotations present (DOES NOT WORK)-->
   <minim:Requirement rdf:about="#RO_has_annotations">
     <minim:isDerivedBy>
       <minim:ContentMatchRequirementRule>
@@ -579,25 +633,9 @@
     <minim:seq>101</minim:seq>
   </minim:Requirement>
   
-  <!-- RO annotations present 1-->
-  <minim:Requirement rdf:about="#RO_has_annotations1">
-    <minim:isDerivedBy>
-      <minim:ContentMatchRequirementRule>
-        <minim:forall>
-          ?res1 ore:aggregates ?res2 .
-        </minim:forall>
-        <minim:exists>
-          ?res2 rdf:type ro:AggregatedAnnotation .
-        </minim:exists>
-        <minim:showpass>Annotations are present</minim:showpass>
-        <minim:showfail>Annotations are not present</minim:showfail>
-        <minim:derives rdf:resource="#RO_has_annotations1" />
-      </minim:ContentMatchRequirementRule>
-    </minim:isDerivedBy>
-    <minim:seq>105</minim:seq>
-  </minim:Requirement>
+  
 
-  <!-- RO annotations present -->
+  <!-- RO annotations bodies present -->
   <minim:Requirement rdf:about="#RO_live_annotations">
     <minim:isDerivedBy>
       <minim:ContentMatchRequirementRule>
@@ -616,41 +654,7 @@
     <minim:seq>102</minim:seq>
   </minim:Requirement>
   
-  <!-- RO title is present -->
-  <minim:Requirement rdf:about="#RO_has_title">
-    <minim:isDerivedBy>
-      <minim:ContentMatchRequirementRule>
-        <minim:forall>
-          ?wf rdf:type ro:ResearchObject .
-        </minim:forall>
-        <minim:exists>
-          ?wf dcterms:title ?rotitle .
-        </minim:exists>
-        <minim:showpass>RO title is present</minim:showpass>
-        <minim:showfail>RO title is not present</minim:showfail>
-        <minim:derives rdf:resource="#RO_has_title" />
-      </minim:ContentMatchRequirementRule>
-    </minim:isDerivedBy>
-    <minim:seq>103</minim:seq>
-  </minim:Requirement>
   
-  <!-- RO description is present -->
-  <minim:Requirement rdf:about="#RO_has_description">
-    <minim:isDerivedBy>
-      <minim:ContentMatchRequirementRule>
-        <minim:forall>
-          ?wf rdf:type ro:ResearchObject .
-        </minim:forall>
-        <minim:exists>
-          ?wf dcterms:description ?rodescription .
-        </minim:exists>
-        <minim:showpass>RO description is present</minim:showpass>
-        <minim:showfail>RO description is not present</minim:showfail>
-        <minim:derives rdf:resource="#RO_has_description" />
-      </minim:ContentMatchRequirementRule>
-    </minim:isDerivedBy>
-    <minim:seq>104</minim:seq>
-  </minim:Requirement>
   
 
 </rdf:RDF>
