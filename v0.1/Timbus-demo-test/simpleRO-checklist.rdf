@@ -127,8 +127,10 @@
     <minim:hasShouldRequirement rdf:resource="#RO_has_result_presentation" />
     -->
     <minim:hasShouldRequirement rdf:resource="#RO_has_conclusion" />
-    
-    <minim:hasShouldRequirement rdf:resource="#RO_has_annotations1" />
+    <!--
+    <minim:hasShouldRequirement rdf:resource="#RO_has_annotations" /> This one does not work
+    <minim:hasMustRequirement rdf:resource="#RO_has_annotations1" /> If title is must then this should be MUST as well
+    -->
     <minim:hasShouldRequirement rdf:resource="#RO_live_annotations" />
     
     <minim:hasMustRequirement   rdf:resource="#RO_has_title" />
@@ -178,8 +180,8 @@
         <minim:exists>
           ?wf dcterms:title ?rotitle .
         </minim:exists>
-        <minim:showpass>RO title is present</minim:showpass>
-        <minim:showfail>RO title is not present</minim:showfail>
+        <minim:showpass>Research Object title is present</minim:showpass>
+        <minim:showfail>Research Object title is not present</minim:showfail>
         <minim:derives rdf:resource="#RO_has_title" />
       </minim:ContentMatchRequirementRule>
     </minim:isDerivedBy>
@@ -196,8 +198,8 @@
         <minim:exists>
           ?wf dcterms:description ?rodescription .
         </minim:exists>
-        <minim:showpass>RO description is present</minim:showpass>
-        <minim:showfail>RO description is not present</minim:showfail>
+        <minim:showpass>Research Object description is present</minim:showpass>
+        <minim:showfail>Research Object description is not present</minim:showfail>
         <minim:derives rdf:resource="#RO_has_description" />
       </minim:ContentMatchRequirementRule>
     </minim:isDerivedBy>
