@@ -128,7 +128,7 @@
     -->
     <minim:hasShouldRequirement rdf:resource="#RO_has_conclusion" />
     
-    <minim:hasShouldRequirement rdf:resource="#RO_has_annotations" />
+    <minim:hasShouldRequirement rdf:resource="#RO_has_annotations1" />
     <minim:hasShouldRequirement rdf:resource="#RO_live_annotations" />
     
     <minim:hasMustRequirement   rdf:resource="#RO_has_title" />
@@ -569,7 +569,7 @@
     <minim:isDerivedBy>
       <minim:ContentMatchRequirementRule>
         <minim:exists>
-          ?wf rdf:type ro:Folder .
+          ?wf rdf:type ro:AggregatedAnnotation .
         </minim:exists>
         <minim:showpass>Annotations are present</minim:showpass>
         <minim:showfail>Annotations are not present</minim:showfail>
@@ -577,6 +577,24 @@
       </minim:ContentMatchRequirementRule>
     </minim:isDerivedBy>
     <minim:seq>101</minim:seq>
+  </minim:Requirement>
+  
+  <!-- RO annotations present 1-->
+  <minim:Requirement rdf:about="#RO_has_annotations1">
+    <minim:isDerivedBy>
+      <minim:ContentMatchRequirementRule>
+        <minim:forall>
+          ?res1 ore:aggregates ?res2 .
+        </minim:forall>
+        <minim:exists>
+          ?res2 rdf:type ro:AggregatedAnnotation .
+        </minim:exists>
+        <minim:showpass>Annotations are present</minim:showpass>
+        <minim:showfail>Annotations are not present</minim:showfail>
+        <minim:derives rdf:resource="#RO_has_annotations1" />
+      </minim:ContentMatchRequirementRule>
+    </minim:isDerivedBy>
+    <minim:seq>105</minim:seq>
   </minim:Requirement>
 
   <!-- RO annotations present -->
