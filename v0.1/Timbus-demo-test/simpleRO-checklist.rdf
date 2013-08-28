@@ -569,7 +569,7 @@
     <minim:isDerivedBy>
       <minim:ContentMatchRequirementRule>
         <minim:exists>
-          ?astub1 rdf:type ro:AggregatedAnnotation .
+          ?astub1 rdf:type ore:AggregatedResource .
         </minim:exists>
         <minim:showpass>Annotations are present</minim:showpass>
         <minim:showfail>Annotations are not present</minim:showfail>
