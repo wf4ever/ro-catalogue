@@ -569,7 +569,7 @@
     <minim:isDerivedBy>
       <minim:ContentMatchRequirementRule>
         <minim:exists>
-          ?wf rdf:type ro:ResearchObject .
+          ?wf rdf:type ro:Folder .
         </minim:exists>
         <minim:showpass>Annotations are present</minim:showpass>
         <minim:showfail>Annotations are not present</minim:showfail>
