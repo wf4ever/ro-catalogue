@@ -569,7 +569,7 @@
     <minim:isDerivedBy>
       <minim:ContentMatchRequirementRule>
         <minim:exists>
-          ?sketch rdf:type roterms:Conclusions .
+          ?sketch rdf:type roterms:WorkflowRunBundle .
         </minim:exists>
         <minim:showpass>Annotations are present</minim:showpass>
         <minim:showfail>Annotations are not present</minim:showfail>
