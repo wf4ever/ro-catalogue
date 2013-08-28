@@ -104,10 +104,10 @@
     <!--
     <minim:hasMustRequirement   rdf:resource="#WF_has_definition" />
     -->
-    <!--
+    
     <minim:hasMustRequirement   rdf:resource="#WF_accessible" />
     <minim:hasMustRequirement   rdf:resource="#WF_services_accessible" />
-    -->
+    
     <!--
     -->
     <minim:hasMustRequirement   rdf:resource="#RO_has_inputdata" />
