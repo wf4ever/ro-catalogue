@@ -569,7 +569,7 @@
     <minim:isDerivedBy>
       <minim:ContentMatchRequirementRule>
         <minim:exists>
-          ?astub1 rdf:type ore:ResourceMap .
+          ?sketch rdf:type roterms:Conclusions .
         </minim:exists>
         <minim:showpass>Annotations are present</minim:showpass>
         <minim:showfail>Annotations are not present</minim:showfail>
