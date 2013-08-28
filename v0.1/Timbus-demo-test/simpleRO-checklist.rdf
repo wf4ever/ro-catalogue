@@ -131,6 +131,7 @@
     <minim:hasMayRequirement rdf:resource="#RO_has_annotations" />
     <minim:hasMayRequirement rdf:resource="#RO_live_annotations" />
     
+    <minim:hasShouldRequirement   rdf:resource="#RO_has_title" />
   </minim:Model>
 
   <!-- Model (checklist) for WF accessible
@@ -595,5 +596,24 @@
     </minim:isDerivedBy>
     <minim:seq>102</minim:seq>
   </minim:Requirement>
+  
+  <!-- RO title is present -->
+  <minim:Requirement rdf:about="#RO_has_title">
+    <minim:isDerivedBy>
+      <minim:ContentMatchRequirementRule>
+        <minim:forall>
+          ?wf rdf:type ro:ResearchObject .
+        </minim:forall>
+        <minim:exists>
+          ?wf dcterms:title ?wftitle .
+        </minim:exists>
+        <minim:showpass>RO title is present</minim:showpass>
+        <minim:showfail>RO title is not present</minim:showfail>
+        <minim:derives rdf:resource="#RO_has_title" />
+      </minim:ContentMatchRequirementRule>
+    </minim:isDerivedBy>
+    <minim:seq>103</minim:seq>
+  </minim:Requirement>
+  
 
 </rdf:RDF>
