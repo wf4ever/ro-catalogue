@@ -137,8 +137,10 @@
     
     <minim:hasMustRequirement   rdf:resource="#RO_has_title" />
     <minim:hasShouldRequirement   rdf:resource="#RO_has_description" />
+    <!--
     <minim:hasShouldRequirement   rdf:resource="#RO_has_exampleinput" />
     <minim:hasShouldRequirement   rdf:resource="#RO_has_result" />
+    -->
   </minim:Model>
 
   <!-- Model (checklist) for WF accessible
