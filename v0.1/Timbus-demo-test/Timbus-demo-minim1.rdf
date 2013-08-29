@@ -251,7 +251,6 @@
          wfprov:describedByWorkflow ?wf .
     </minim:exists>          
     -->
-
     <minim:exists>
       ?wf rdf:type wfdesc:Workflow ;
      		rdfs:label ?wflab .
@@ -259,7 +258,6 @@
          rdf:type roterms:ExampleRun ;
          wfprov:describedByWorkflow ?wf .
     </minim:exists>    
-    
     <minim:showfail>No workflow sample run data indicated for any workflow</minim:showfail>
   </rdf:Description>
   
@@ -281,7 +279,7 @@
   </rdf:Description>
   
   <rdf:Description rdf:about="#req_results_run">
-    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#ContentMatchRequirementRule"/>
     <minim:showpass>Workflow results data run indicated for workflows</minim:showpass>
     <minim:showfail>No workflow results data run indicated for any workflow</minim:showfail>
     <!--
