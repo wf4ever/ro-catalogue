@@ -120,9 +120,9 @@
   
   <rdf:Description rdf:about="#req_article">
     <minim:exists rdf:nodeID="Nd29daf7d338d4a848078230656a2cb39"/>
-    <minim:showpass>Experiment description is indicated</minim:showpass>
+    <minim:showpass>Experiment description paper is indicated</minim:showpass>
     <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
-    <minim:showfail>Experiment description is not indicated</minim:showfail>
+    <minim:showfail>Experiment description paper is not indicated</minim:showfail>
   </rdf:Description>
   
   <rdf:Description rdf:nodeID="Nfb6cd6e30586450f917661dc54517f24">
