@@ -215,8 +215,9 @@
     <minim:isDerivedBy>
       <minim:ContentMatchRequirementRule>
         <minim:exists>
-          ?hypothesis rdf:type roterms:Hypothesis .
-          
+          { ?hypothesis rdf:type roterms:Hypothesis . }
+          UNION
+          { ?hypothesis rdf:type roterms:ResearchQuestion . }
         </minim:exists>
         <minim:showpass>Experiment hypothesis or research question is present</minim:showpass>
         <minim:showfail>Experiment hypothesis or research question is not present</minim:showfail>
@@ -633,7 +634,7 @@
           ?sketch rdf:type roterms:ExampleInput .
         </minim:exists>
         <minim:showpass>Example inputs are present</minim:showpass>
-        <minim:showfail>Example outputs are not present</minim:showfail>
+        <minim:showfail>Example inputs are not present</minim:showfail>
         <minim:derives rdf:resource="#RO_has_exampleinput" />
       </minim:ContentMatchRequirementRule>
     </minim:isDerivedBy>
