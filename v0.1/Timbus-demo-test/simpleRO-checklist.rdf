@@ -646,7 +646,7 @@
     <minim:isDerivedBy>
       <minim:ContentMatchRequirementRule>
         <minim:exists>
-          ?sketch rdf:type roterms:Result .
+          ?sketch rdf:type roterms:Results .
         </minim:exists>
         <minim:showpass>Results are present</minim:showpass>
         <minim:showfail>Results are not present</minim:showfail>
