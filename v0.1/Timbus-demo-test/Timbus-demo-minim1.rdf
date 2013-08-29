@@ -246,15 +246,10 @@
     <minim:exists rdf:nodeID="N3c8473ac737e4875985c40f0ddc99f7f"/>
     -->    
     <minim:exists>
-     			{
-     			  ?wf rdf:type wfdesc:Workflow .
-     			}
-     			UNION
-          {
+     			
           	?wfrun rdf:type wfprov:WorkflowRun ;
           	rdf:type roterms:ExampleRun ;
-          	wfprov:describedByWorkflow ?wf .
-          }
+          
     </minim:exists>
     <minim:showfail>No workflow sample run data indicated for %(wflab)s</minim:showfail>
   </rdf:Description>
