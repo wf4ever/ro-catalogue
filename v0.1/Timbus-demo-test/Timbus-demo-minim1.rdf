@@ -239,13 +239,22 @@
     wfprov:describedByWorkflow ?wf</minim:sparql_query>
   </rdf:Description>
   <rdf:Description rdf:about="#req_sample_data">
-    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#ContentMatchRequirementRule"/>
     <minim:showpass>Workflow sample runs indicated for all workflows</minim:showpass>
     
+    <!--
     <minim:query rdf:nodeID="Nf02064e684774443b69cc6024cf60f57"/>
     <minim:exists rdf:nodeID="N3c8473ac737e4875985c40f0ddc99f7f"/>
        
-    <!--
+    
+    <minim:forall>
+          ?wf rdf:type wfdesc:Workflow ;
+              rdfs:label ?wflab .
+    </minim:forall>
+    <minim:exists>
+          ?wf wfdesc:hasWorkflowDefinition ?wfdef .
+    </minim:exists>
+    --> 
     <minim:exists>
      			{
      			  ?wf rdf:type wfdesc:Workflow .
@@ -257,7 +266,7 @@
           	wfprov:describedByWorkflow ?wf .
           }
     </minim:exists>
-    --> 
+    
     <minim:showfail>No workflow sample run data indicated for %(wflab)s</minim:showfail>
   </rdf:Description>
   <rdf:Description rdf:nodeID="Nf02064e684774443b69cc6024cf60f57">
