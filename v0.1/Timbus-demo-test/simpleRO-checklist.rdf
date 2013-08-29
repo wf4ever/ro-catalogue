@@ -631,7 +631,9 @@
     <minim:isDerivedBy>
       <minim:ContentMatchRequirementRule>
         <minim:exists>
-          ?sketch rdf:type roterms:ExampleInputs .
+          { ?sketch rdf:type roterms:ExampleInputs . }
+          UNION
+          { ?sketch rdf:type roterms:ExampleInput . }
         </minim:exists>
         <minim:showpass>Example inputs are present</minim:showpass>
         <minim:showfail>Example inputs are not present</minim:showfail>
@@ -646,7 +648,9 @@
     <minim:isDerivedBy>
       <minim:ContentMatchRequirementRule>
         <minim:exists>
-          ?sketch rdf:type roterms:Results .
+          { ?sketch rdf:type roterms:Results . }
+          UNION
+          { ?sketch rdf:type roterms:Result . }
         </minim:exists>
         <minim:showpass>Results are present</minim:showpass>
         <minim:showfail>Results are not present</minim:showfail>
