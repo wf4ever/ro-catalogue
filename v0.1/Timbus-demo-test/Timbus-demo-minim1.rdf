@@ -257,12 +257,16 @@
          wfprov:describedByWorkflow ?wf .
       }
     </minim:exists>    
-    -->
+    
     <minim:forall>
     		?wf rdf:type wfdesc:Workflow ;
      		rdfs:label ?wflab .
     </minim:forall>
+    -->
+    
     <minim:exists>
+      ?wf rdf:type wfdesc:Workflow ;
+     		rdfs:label ?wflab .
     	?wfrun rdf:type wfprov:WorkflowRun ;
          rdf:type roterms:ExampleRun ;
          wfprov:describedByWorkflow ?wf .
