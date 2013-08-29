@@ -252,8 +252,6 @@
          wfprov:describedByWorkflow ?wf .
     </minim:exists>
     ***         
-    -->
-    {
     <minim:forall>
     		?wf rdf:type wfdesc:Workflow ;
      		rdfs:label ?wflab .
@@ -263,23 +261,15 @@
          rdf:type roterms:ExampleRun ;
          wfprov:describedByWorkflow ?wf .
     </minim:exists>
-    }
-    AND
-    {
-    <minim:exists>
-      ?wf rdf:type wfdesc:Workflow ;
-     		rdfs:label ?wflab .
-    </minim:exists>
-    }
-    <!--
+    ***
+    -->    
     <minim:exists>
       ?wf rdf:type wfdesc:Workflow ;
      		rdfs:label ?wflab .
     	?wfrun rdf:type wfprov:WorkflowRun ;
          rdf:type roterms:ExampleRun ;
          wfprov:describedByWorkflow ?wf .
-    </minim:exists>    
-    -->
+    </minim:exists>        
     <minim:showfail>No workflow sample run data indicated for any workflow</minim:showfail>
   </rdf:Description>
   
