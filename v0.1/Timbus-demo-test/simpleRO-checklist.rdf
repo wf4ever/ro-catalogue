@@ -217,7 +217,7 @@
         <minim:exists>
           ?hypothesis rdf:type roterms:Hypothesis .
           UNION
-          ?resquestion rdf:type roterms:ResearchQuestion .
+          ?hypothesis rdf:type roterms:ResearchQuestion .
         </minim:exists>
         <minim:showpass>Experiment hypothesis or research question is present</minim:showpass>
         <minim:showfail>Experiment hypothesis or research question is not present</minim:showfail>
