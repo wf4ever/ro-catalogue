@@ -241,16 +241,23 @@
   <rdf:Description rdf:about="#req_sample_data">
     <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
     <minim:showpass>Workflow sample runs indicated for all workflows</minim:showpass>
-    <!--
+    
     <minim:query rdf:nodeID="Nf02064e684774443b69cc6024cf60f57"/>
     <minim:exists rdf:nodeID="N3c8473ac737e4875985c40f0ddc99f7f"/>
-    -->    
+       
+    <!--
     <minim:exists>
-     			
+     			{
+     			  ?wf rdf:type wfdesc:Workflow .
+     			}
+     			UNION
+          {
           	?wfrun rdf:type wfprov:WorkflowRun ;
           	rdf:type roterms:ExampleRun ;
-          
+          	wfprov:describedByWorkflow ?wf .
+          }
     </minim:exists>
+    --> 
     <minim:showfail>No workflow sample run data indicated for %(wflab)s</minim:showfail>
   </rdf:Description>
   <rdf:Description rdf:nodeID="Nf02064e684774443b69cc6024cf60f57">
