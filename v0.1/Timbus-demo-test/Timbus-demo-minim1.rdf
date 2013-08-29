@@ -117,12 +117,14 @@
   <rdf:Description rdf:nodeID="N713bccb3601f4eeba7b865cbaa7d5b0b">
     <minim:sparql_query>?file rdf:type ex:Part</minim:sparql_query>
   </rdf:Description>
+  
   <rdf:Description rdf:about="#req_article">
     <minim:exists rdf:nodeID="Nd29daf7d338d4a848078230656a2cb39"/>
-    <minim:showpass>General topic description is indicated</minim:showpass>
+    <minim:showpass>Experiment description is indicated</minim:showpass>
     <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
-    <minim:showfail>General topic description is not indicated</minim:showfail>
+    <minim:showfail>Experiment description is not indicated</minim:showfail>
   </rdf:Description>
+  
   <rdf:Description rdf:nodeID="Nfb6cd6e30586450f917661dc54517f24">
     <minim:sparql_query>?file rdf:type ex:Part</minim:sparql_query>
   </rdf:Description>
@@ -181,8 +183,8 @@
   <rdf:Description rdf:about="#req_design_sketch">
     <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
     <minim:exists rdf:nodeID="N5752335e54c64a9b920f447d892b8daa"/>
-    <minim:showfail>Design sketch is not indicated</minim:showfail>
-    <minim:showpass>Design sketch is indicated</minim:showpass>
+    <minim:showfail>Experiment design sketch is not indicated</minim:showfail>
+    <minim:showpass>Experiment design sketch is indicated</minim:showpass>
   </rdf:Description>
   <rdf:Description rdf:nodeID="N7765bc0feb094d1fb8f432a03d943b28">
     <minim:sparql_query>?wf rdf:type wfdesc:Process
@@ -210,8 +212,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="#req_workflow_description">
     <minim:exists rdf:nodeID="N593a4f8df4884362a6f3fc8c985fd4ba"/>
-    <minim:showfail>Workflow description metadata is not present</minim:showfail>
-    <minim:showpass>Workflow description metadata is present</minim:showpass>
+    <minim:showfail>Workflow is not present</minim:showfail>
+    <minim:showpass>Workflow is present</minim:showpass>
     <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
   </rdf:Description>
   <rdf:Description rdf:about="#req_conclusion">
@@ -323,19 +325,29 @@
     <minim:isDerivedBy rdf:resource="#req_article"/>
     <minim:seq>req_02</minim:seq>
   </rdf:Description>
+  
   <rdf:Description rdf:about="#req_research_question">
-    <minim:showfail>Research question is not indicated</minim:showfail>
+    <minim:showfail>Experiment hypothesis or research question is not indicated</minim:showfail>
+    <!--
     <minim:exists rdf:nodeID="N42c48edaa49a4ebaa987d7f278b8cef2"/>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
-    <minim:showpass>Research question is indicated</minim:showpass>
+    -->
+    <minim:exists>
+       { ?hypothesis rdf:type roterms:Hypothesis . }
+       UNION
+       { ?hypothesis rdf:type roterms:ResearchQuestion . }
+    </minim:exists>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#ContentMatchRequirementRule"/>
+    <minim:showpass>Experiment hypothesis or research question is indicated</minim:showpass>
   </rdf:Description>
+  
+  
   <rdf:Description rdf:about="#req_foreach_exists">
     <minim:query rdf:nodeID="Ne83636ce05f84c29b79d181c99a8a016"/>
     <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
     <minim:exists rdf:nodeID="N034e8dc8b82044b98b631b246f1dce88"/>
     <minim:showfail>File as part %(file)s is not part of some whole</minim:showfail>
     <minim:showpass>Files as part are partOf some indicated whole</minim:showpass>
-  </rdf:Description>
+  </rdf:Description>  
   <rdf:Description rdf:nodeID="N4ebe4e0bd4e14c739bd6a779e2b83826">
     <minim:result_mod>ORDER BY ?wflab</minim:result_mod>
     <minim:sparql_query>?wf rdf:type wfdesc:Workflow
