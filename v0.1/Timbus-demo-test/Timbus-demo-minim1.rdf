@@ -50,13 +50,7 @@
     <minim:showfail>File as part does not exist</minim:showfail>
     <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#req_selected_inputs">
-    <minim:query rdf:nodeID="N13df787795b34bb986be7f1518fcaefb"/>
-    <minim:exists rdf:nodeID="N643f5a3a32dc438fac508aa2c167bd15"/>
-    <minim:showpass>Workflow selected input data indicated for all workflows</minim:showpass>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
-    <minim:showfail>No workflow selected input data indicated for %(wflab)s</minim:showfail>
-  </rdf:Description>
+  
   <rdf:Description rdf:about="#req_exactly">
     <minim:min rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</minim:min>
     <minim:query rdf:nodeID="N419f36c30ec942a6be73fa40621628a4"/>
@@ -104,13 +98,7 @@
     <minim:showpass>All referenced workflow services are accessible</minim:showpass>
     <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#req_results_run">
-    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
-    <minim:showpass>Workflow results data run indicated for all workflows</minim:showpass>
-    <minim:showfail>No workflow results data run indicated for %(wflab)s</minim:showfail>
-    <minim:exists rdf:nodeID="N3497dd4d2e3049b6833beef5323887a8"/>
-    <minim:query rdf:nodeID="N8ffaba0d7b514051820de8c1dbe0af6b"/>
-  </rdf:Description>
+  
   <rdf:Description rdf:nodeID="N441de285e6814dc1b804e4a93563d961">
     <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
     <minim:seq>req_09</minim:seq>
@@ -233,18 +221,13 @@
     <minim:showfail>Experiment conclusions are not indicated</minim:showfail>
   </rdf:Description>
   
-  <rdf:Description rdf:nodeID="N3c8473ac737e4875985c40f0ddc99f7f">
-    <minim:sparql_query>?wfrun rdf:type wfprov:WorkflowRun ;
-    rdf:type roterms:ExampleRun ;
-    wfprov:describedByWorkflow ?wf</minim:sparql_query>
-  </rdf:Description>
   <rdf:Description rdf:about="#req_sample_data">
     <rdf:type rdf:resource="http://purl.org/minim/minim#ContentMatchRequirementRule"/>
-    <minim:showpass>Workflow sample runs indicated for all workflows</minim:showpass>    
+    <minim:showpass>Workflow sample runs indicated for workflows</minim:showpass>    
     <!--
     <minim:query rdf:nodeID="Nf02064e684774443b69cc6024cf60f57"/>
     <minim:exists rdf:nodeID="N3c8473ac737e4875985c40f0ddc99f7f"/>       
-    
+    ---------
     <minim:exists>
     	{
      		?wf rdf:type wfdesc:Workflow ;
@@ -257,13 +240,31 @@
          wfprov:describedByWorkflow ?wf .
       }
     </minim:exists>    
-    
-    <minim:forall>
+    -----------
+        
+    -->
+    <minim:exists>
+    {    
+    	<minim:forall>
     		?wf rdf:type wfdesc:Workflow ;
      		rdfs:label ?wflab .
-    </minim:forall>
-    -->
+    	</minim:forall>
+    	<minim:exists>
+    		 ?wfrun rdf:type wfprov:WorkflowRun ;
+         rdf:type roterms:ExampleRun ;
+         wfprov:describedByWorkflow ?wf .
+    	</minim:exists>
+    }
+    AND
+    {
+    	<minim:exists>
+      ?wf rdf:type wfdesc:Workflow ;
+     		rdfs:label ?wflab .
+      </minim:exists>
+    }	
+    </minim:exists>
     
+    <!--
     <minim:exists>
       ?wf rdf:type wfdesc:Workflow ;
      		rdfs:label ?wflab .
@@ -271,12 +272,53 @@
          rdf:type roterms:ExampleRun ;
          wfprov:describedByWorkflow ?wf .
     </minim:exists>    
-    <minim:showfail>No workflow sample run data indicated for %(wflab)s</minim:showfail>
+    -->
+    <minim:showfail>No workflow sample run data indicated for any workflow</minim:showfail>
   </rdf:Description>
+  
+  <rdf:Description rdf:about="#req_selected_inputs">
+    <!--
+    <minim:query rdf:nodeID="N13df787795b34bb986be7f1518fcaefb"/>
+    <minim:exists rdf:nodeID="N643f5a3a32dc438fac508aa2c167bd15"/>
+    -->
+    <minim:exists>
+      ?wf rdf:type wfdesc:Workflow ;
+     		rdfs:label ?wflab .
+    	?wfrun rdf:type wfprov:WorkflowRun ;
+         rdf:type roterms:ProspectiveRun ;
+         wfprov:describedByWorkflow ?wf .
+    </minim:exists>
+    <minim:showpass>Workflow selected input data indicated for workflows</minim:showpass>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#ContentMatchRequirementRule"/>
+    <minim:showfail>No workflow selected input data indicated for any workflow</minim:showfail>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="#req_results_run">
+    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
+    <minim:showpass>Workflow results data run indicated for workflows</minim:showpass>
+    <minim:showfail>No workflow results data run indicated for any workflow</minim:showfail>
+    <!--
+    <minim:exists rdf:nodeID="N3497dd4d2e3049b6833beef5323887a8"/>
+    <minim:query rdf:nodeID="N8ffaba0d7b514051820de8c1dbe0af6b"/>
+    -->
+    <minim:exists>
+      ?wf rdf:type wfdesc:Workflow ;
+     		rdfs:label ?wflab .
+    	?wfrun rdf:type wfprov:WorkflowRun ;
+         rdf:type roterms:ResultGenerationRun ;
+         wfprov:describedByWorkflow ?wf .
+    </minim:exists>
+  </rdf:Description>
+  
   <rdf:Description rdf:nodeID="Nf02064e684774443b69cc6024cf60f57">
     <minim:sparql_query>?wf rdf:type wfdesc:Workflow
   ; rdfs:label ?wflab</minim:sparql_query>
     <minim:result_mod>ORDER BY ?wflab</minim:result_mod>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3c8473ac737e4875985c40f0ddc99f7f">
+    <minim:sparql_query>?wfrun rdf:type wfprov:WorkflowRun ;
+    rdf:type roterms:ExampleRun ;
+    wfprov:describedByWorkflow ?wf</minim:sparql_query>
   </rdf:Description>
   
   <rdf:Description rdf:nodeID="Nea454455bb2641ab8e83fe5783da8e99">
