@@ -375,8 +375,7 @@
     <minim:sparql_query>?file rdf:type ex:Part</minim:sparql_query>
   </rdf:Description>
   <rdf:Description rdf:nodeID="N593a4f8df4884362a6f3fc8c985fd4ba">
-    <minim:sparql_query>?wf rdf:type wfdesc:Workflow
-  ; rdfs:label ?label</minim:sparql_query>
+    <minim:sparql_query>?wf rdf:type wfdesc:Workflow</minim:sparql_query>
   </rdf:Description>
   <rdf:Description rdf:nodeID="N5752335e54c64a9b920f447d892b8daa">
     <minim:sparql_query>?res rdf:type roterms:Sketch</minim:sparql_query>
