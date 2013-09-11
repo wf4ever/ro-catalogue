@@ -13,8 +13,13 @@
     <minim:sparql_query>?file rdf:type ex:Part</minim:sparql_query>
   </rdf:Description>
   <rdf:Description rdf:nodeID="N8880f80fa9a141d5946c07ea6715361d">
-    <minim:sparql_query>?wp rdf:type wfdesc:Process
-  ; roterms:requiresSoftware ?anything</minim:sparql_query>
+    <minim:sparql_query>
+    { ?wp rdf:type wfdesc:Process
+      ; roterms:requiresSoftware ?anything }
+       UNION
+    {?wp rdf:type wfdesc:Workflow
+      ; roterms:requiresSoftware ?anything }
+    </minim:sparql_query>
   </rdf:Description>
   <rdf:Description rdf:nodeID="Nd29daf7d338d4a848078230656a2cb39">
     <minim:sparql_query>?res rdf:type roterms:Paper</minim:sparql_query>
