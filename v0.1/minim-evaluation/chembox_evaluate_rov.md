@@ -22,3 +22,8 @@ Using linked data read directly using their assigned PURLs (http://purl.org/net/
     RO evaluation run ended: Thu Aug 15 18:52:04 BST 2013
 
 So we can see that 7570 chemical dfescriptions have been evaluated in about 4.5 hours, or a little over two seconds per chemical.  This is a massive improvement on the previous performance of over 2 minutes per chemical using a single RO for all chemicals.
+
+Files used include:
+* https://github.com/wf4ever/ro-catalogue/blob/master/v0.1/minim-evaluation/chembox_evaluate_rov.sh (script file)
+* https://github.com/wf4ever/ro-catalogue/blob/master/v0.1/minim-evaluation/chembox-uris.txt (list of URIs for all chemicals)
+* https://github.com/wf4ever/ro-catalogue/blob/master/v0.1/minim-evaluation/chembox_evaluate_rov_all.log (resulting log file)
