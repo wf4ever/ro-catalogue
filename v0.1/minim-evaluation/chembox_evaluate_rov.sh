@@ -76,7 +76,8 @@ while read TARGET
   # done <chembox-uris-tryptoline.txt
   # done <chembox-uris-dihydrothiazole.txt
   # done <chembox-uris-test.txt
-  done <chembox-uris-100.txt
+  # done <chembox-uris-100.txt
+  done <chembox-uris.txt  # full 7.5K chemicals
 
 echo "Total pass: $countpass, fail: $countfail out of $countall"
 echo "Total pass: $countpass, fail: $countfail out of $countall" >>00-evaluate-ROs.log
