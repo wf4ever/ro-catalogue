@@ -1,5 +1,11 @@
 #!/bin/bash
 #
+# This script evaluates ChemBox chemical descriptions using:
+# (1) RO checklist service ($CHECKLIST_SERVICE)
+# (2) The Overlay RO service to create ROs for each evaluation ($ROVERLAY_SERVICE)
+# (3) A list of URIs of chemicals to be evaluated 
+#     (see "done" statement at end of main while loop)
+#
 
 USE_SERVICE="ANDROS"
 
@@ -82,6 +88,5 @@ while read TARGET
 echo "Total pass: $countpass, fail: $countfail out of $countall"
 echo "Total pass: $countpass, fail: $countfail out of $countall" >>00-evaluate-ROs.log
 echo "RO evaluation run ended: $(date)" >>00-evaluate-ROs.log
-
 
 # End.
