@@ -13,29 +13,36 @@
 
 ![Checklist processing model](minim-evaluation-sequence.png "Minim ecvaluation steps")
 
-#### 1. RO access and serialization of annotations
+1. RO access and serialization of annotations
 
-RODL stores some RDF internally in a triple store, and serializes on demand.  I'm not sure if this applies to annotations.
+    RODL stores some RDF internally in a triple store, and serializes on demand.  I'm not sure if this applies to annotations.
 
-#### 2. Network transfer of serialized RDF annotations
+2. Network transfer of serialized RDF annotations
 
-This appears to be a factor affecting performance, but I'm not sure if it is really meaningful to try and separate this.  I see it as an RODL rather than checklist performance copncern.
+    This appears to be a factor affecting performance, but I'm not sure if it is really meaningful to try and separate this.  I see it as an RODL rather than checklist performance copncern.
 
-#### 3. Checklist processor read and parse RDF annotations
+3. Checklist processor read and parse RDF annotations
 
-From informal observations, this appears to be one of the performance constraining factors for checklist evaluation.  Each time a checklist is evaluated, the RDF annotations from the RO need to be read and parsed into an internal graph.
+    From informal observations, this appears to be one of the performance constraining factors for checklist evaluation.  Each time a checklist is evaluated, the RDF annotations from the RO need to be read and parsed into an internal graph.
 
-A key purpose of these performance tests is to gather evidence for or agasinst this hypothesis.
+    A key purpose of these performance tests is to gather evidence for or agasinst this hypothesis.
 
-#### 4. Checklist evaluation: queries to local graph of RDF annotations
+4. Checklist evaluation: queries to local graph of RDF annotations
 
-This includes creation of an internal RDF graph containing the results, but not serialization of that graph.  I don't believe this to be a performance-constraining element.
+    This includes creation of an internal RDF graph containing the results, but not serialization of that graph.  I don't believe this to be a performance-constraining element.
 
-#### 5. Serialize checklist evaluation result
+5. Serialize checklist evaluation result
 
-Serialization of the result graph to some RDF serialization.
+    Serialization of the result graph to some RDF serialization.
 
-#### 6. Network transfer of serialized result
+    Probably not important:  when using the JSON/HTML formatting services, the result graph is not serialized or transferred, but used directly to generate the HTML/JSON.
+
+    In planning the performance evaluation, I am not addressing these auxiliary services that format the results for use in a web page.
+
+6. Network transfer of serialized result
+
+    Probably not important: see comment above.
+
 
 ### Candidiate variations to evaluate
 
@@ -79,8 +86,6 @@ These measurements would allow us to isolate values for:
 * step 5
 * step 6
 
-In designing these tests, I am not addressing the auxiliary services that format the results for use in a web page.
-
 If results indicate that parse/serialization time is a factor, we might then wish to explore different serialization formats.
 
 ## Scripts and code used
@@ -88,6 +93,8 @@ If results indicate that parse/serialization time is a factor, we might then wis
 @@TODO
 
 ## Results
+
+@@TODO: add numbers
 
 <table border="1" bordercolor="#D3D1D1" cellpadding="2" cellspacing="0">
     <tr>
