@@ -99,7 +99,8 @@ If results indicate that parse/serialization time is a factor, we might then wis
 <table border="1" bordercolor="#D3D1D1" cellpadding="2" cellspacing="0">
     <tr>
         <td></td>
-        <td colspan="5">Test cases</td>
+        <td colspan="5">Test case times</td>
+        <td colspan="5">Inferred processing step times</td>
     </tr>
     <tr>
         <td>Annotation size</td>
@@ -108,9 +109,19 @@ If results indicate that parse/serialization time is a factor, we might then wis
         <td>C</td>
         <td>D</td>
         <td>E</td>
+        <td>1+2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
     </tr>
     <tr>
         <td>10KB</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -124,9 +135,19 @@ If results indicate that parse/serialization time is a factor, we might then wis
         <td></td>
         <td></td>
         <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
     </tr>
     <tr>
         <td>1MB</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -140,9 +161,19 @@ If results indicate that parse/serialization time is a factor, we might then wis
         <td></td>
         <td></td>
         <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
     </tr>
     <tr>
         <td>10 x1KB</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -156,6 +187,11 @@ If results indicate that parse/serialization time is a factor, we might then wis
         <td></td>
         <td></td>
         <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
     </tr>
     <tr>
         <td>1000 x 1KB</td>
@@ -164,9 +200,19 @@ If results indicate that parse/serialization time is a factor, we might then wis
         <td></td>
         <td></td>
         <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
     </tr>
     <tr>
         <td>10000 x 1KB</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
