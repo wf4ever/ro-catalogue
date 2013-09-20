@@ -1,5 +1,12 @@
 # Checklist performance evaluation
 
+## Tasks
+
+* Review evaluation plan
+* Assemble RO data for evaluation
+* Create scripts and supporting code for each test case
+* Run tests, record results
+
 ## Evaluation  plan
 
 ### Processing model
@@ -33,7 +40,8 @@ Serialization of the result graph to some RDF serialization.
 ### Candidiate variations to evaluate
 
 1. Different total size of annotations: 10Kb, 100Kb, 1Mb, 10Mb
-2. Different numbers of individual annotations: 1, 10, 100, 1000
+    (Maybve need to cast these as triple counts, and record actual size?)
+2. Different numbers of individual annotations: 1, 10, 100, 1000, 10000
 3. Local vs remote access
 4. Different RDF serialization formats?
 
@@ -74,11 +82,11 @@ In designing these tests, I am not addressing the auxiliary services that format
 
 If results indicate that parse/serialization time is a factor, we might then wish to explore different serialization formats.
 
-# Scripts and code used
+## Scripts and code used
 
 @@TODO
 
-# Results
+## Results
 
 <table border="1" bordercolor="#D3D1D1" cellpadding="2" cellspacing="0">
     <tr>
