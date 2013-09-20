@@ -53,13 +53,13 @@ Serialization of the result graph to some RDF serialization.
 
 * B. Full checklist evaluation from local store, accessed locally
 
-    Tests steps 3-5 (*plus* file access time, which is assumed to be discountable for this purpose)
+    Tests steps 3-5, _plus_ file access time, which is assumed to be discountable for this purpose
 
-    Adding instrumentation to the checklist web service should help us to separate the checklist evaluation time
+    Adding instrumentation to the checklist web service should allow us to separate the checklist evaluation time
 
 * C. Full checklist evaluation from local store, accessed remotely
 
-    Tests steps 3-6 (*plus* file access time, which is assumed to be discountable for this purpose)
+    Tests steps 3-6, _plus_ file access time, which is assumed to be discountable for this purpose)
 
 * D. Curl retrieval of annotations from RODL
 
@@ -67,15 +67,16 @@ Serialization of the result graph to some RDF serialization.
 
 * E. `ro dump` from RODL
 
-    Tests 1-3 _plus_ serialization of merged annotation graph
+    Tests 1-3, _plus_ serialization of merged annotation graph
 
-    Adding some instrumentation to RO manager could allow the serialization element to be separated
+    Adding some instrumentation to RO manager could allow the serialization element to be separated.
 
 These measurements would allow us to isolate values for:
 
 * steps 1+2
 * step 3
-* steps 4+5
+* step 4
+* step 5
 * step 6
 
 In designing these tests, I am not addressing the auxiliary services that format the results for use in a web page.
