@@ -3,66 +3,66 @@
    xmlns:minim="http://purl.org/minim/minim#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <rdf:Description rdf:about="#req_synonym">
-    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
-    <minim:showfail>No synonym is present for %(targetres)s</minim:showfail>
-    <minim:exists rdf:nodeID="N0810760121d14d1ebd14fe4b6b7f6bab"/>
-    <minim:showpass>A synonym is present for %(targetres)s</minim:showpass>
+  <rdf:Description rdf:nodeID="Ncb7e823c6d57481f9db35b93b4bfd2ff">
+    <minim:sparql_query>?targetres chembox:OtherNames ?value</minim:sparql_query>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nd50999276a174a02b4256adbdc8a22cb">
+  <rdf:Description rdf:about="#req_inchi">
+    <minim:query rdf:nodeID="N1124ca021aab44f597575e8d65d632be"/>
+    <minim:max rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</minim:max>
+    <minim:showfail>InChI not present, or multiple InChI values present, for &lt;a href="%(targetres)s"&gt;%(targetlabel)s&lt;/a&gt;</minim:showfail>
+    <minim:showpass>A single InChI value is present for &lt;a href="%(targetres)s"&gt;%(targetlabel)s&lt;/a&gt;</minim:showpass>
+    <minim:min rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</minim:min>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N697851de134048a9ba82331f53c8b408">
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Checklist"/>
+    <minim:toModel rdf:resource="#minim_model"/>
+    <minim:forPurpose>complete</minim:forPurpose>
+    <minim:forTargetTemplate>*</minim:forTargetTemplate>
+  </rdf:Description>
+  <rdf:Description rdf:about="#req_synonym">
+    <minim:showpass>A synonym is present for &lt;a href="%(targetres)s"&gt;%(targetlabel)s&lt;/a&gt;</minim:showpass>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
+    <minim:exists rdf:nodeID="Ncb7e823c6d57481f9db35b93b4bfd2ff"/>
+    <minim:showfail>No synonym is present for &lt;a href="%(targetres)s"&gt;%(targetlabel)s&lt;/a&gt;</minim:showfail>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nadca903117574931b1e66437f341eed0">
+    <minim:sparql_query>?targetres chembox:ChemSpiderID ?value .
+  # FILTER ( str(xsd:integer(?value)) )</minim:sparql_query>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ChecklistConstraints">
+    <minim:hasChecklist rdf:nodeID="N697851de134048a9ba82331f53c8b408"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1124ca021aab44f597575e8d65d632be">
+    <minim:sparql_query>?targetres chembox:StdInChI ?value .
+FILTER ( datatype(?value) = xsd:string )</minim:sparql_query>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0452589c36874a15b1a66afc7b400198">
     <minim:seq>030</minim:seq>
     <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
     <minim:isDerivedBy rdf:resource="#req_synonym"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Na81ed4f09c17452b9ee99abaef6a2b0e">
-    <minim:sparql_query>?targetres chembox:StdInChI ?value .
-FILTER ( datatype(?value) = xsd:string )</minim:sparql_query>
+  <rdf:Description rdf:nodeID="N63e67e4b64f94f9fb5bc5d097110855a">
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
+    <minim:isDerivedBy rdf:resource="#req_inchi"/>
+    <minim:seq>010</minim:seq>
   </rdf:Description>
-  <rdf:Description rdf:about="#minim_mode">
-    <rdf:type rdf:resource="http://purl.org/minim/minim#Model"/>
-    <minim:hasShouldRequirement rdf:nodeID="N18203afa74184654b36337cffd3960f5"/>
-    <minim:hasMayRequirement rdf:nodeID="Nd50999276a174a02b4256adbdc8a22cb"/>
-    <minim:hasMustRequirement rdf:nodeID="Nbb5ea278536f4e5882be221a144ed35f"/>
+  <rdf:Description rdf:about="#req_chemspider">
+    <minim:query rdf:nodeID="Nadca903117574931b1e66437f341eed0"/>
+    <minim:showfail>No ChemSpiderId is present for &lt;a href="%(targetres)s"&gt;%(targetlabel)s&lt;/a&gt;</minim:showfail>
+    <minim:min rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</minim:min>
+    <minim:showpass>A ChemSpiderId value is present for &lt;a href="%(targetres)s"&gt;%(targetlabel)s&lt;/a&gt;</minim:showpass>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N930c19eb58ac4e85a7a6d8c6b8bfc3c3">
-    <minim:forPurpose>complete</minim:forPurpose>
-    <minim:forTargetTemplate>*</minim:forTargetTemplate>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#Checklist"/>
-    <minim:toModel rdf:resource="#minim_model"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N0810760121d14d1ebd14fe4b6b7f6bab">
-    <minim:sparql_query>?targetres chembox:OtherNames ?value</minim:sparql_query>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N18203afa74184654b36337cffd3960f5">
+  <rdf:Description rdf:nodeID="Ne3b34f0c68e74af9a79751b7e3364837">
     <minim:isDerivedBy rdf:resource="#req_chemspider"/>
     <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
     <minim:seq>020</minim:seq>
   </rdf:Description>
-  <rdf:Description rdf:about="#req_inchi">
-    <minim:min rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</minim:min>
-    <minim:query rdf:nodeID="Na81ed4f09c17452b9ee99abaef6a2b0e"/>
-    <minim:max rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</minim:max>
-    <minim:showpass>A single InChI value is present for %(targetres)s</minim:showpass>
-    <minim:showfail>InChI not present, or multiple InChI values present, for %(targetres)s</minim:showfail>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#ChecklistConstraints">
-    <minim:hasChecklist rdf:nodeID="N930c19eb58ac4e85a7a6d8c6b8bfc3c3"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N4f5c68c217dc4c46a67d13e202435e42">
-    <minim:sparql_query>?targetres chembox:ChemSpiderID ?value .
-# FILTER ( str(xsd:integer(?value)) )</minim:sparql_query>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nbb5ea278536f4e5882be221a144ed35f">
-    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
-    <minim:seq>010</minim:seq>
-    <minim:isDerivedBy rdf:resource="#req_inchi"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#req_chemspider">
-    <minim:query rdf:nodeID="N4f5c68c217dc4c46a67d13e202435e42"/>
-    <minim:showfail>No ChemSpiderId is present for %(targetres)s</minim:showfail>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
-    <minim:min rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</minim:min>
-    <minim:showpass>A ChemSpiderId value is present for %(targetres)s</minim:showpass>
+  <rdf:Description rdf:about="#minim_model">
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Model"/>
+    <minim:hasMustRequirement rdf:nodeID="N63e67e4b64f94f9fb5bc5d097110855a"/>
+    <minim:hasMayRequirement rdf:nodeID="N0452589c36874a15b1a66afc7b400198"/>
+    <minim:hasShouldRequirement rdf:nodeID="Ne3b34f0c68e74af9a79751b7e3364837"/>
   </rdf:Description>
 </rdf:RDF>

@@ -7,7 +7,7 @@
 #     (see "done" statement at end of main while loop)
 #
 
-USE_SERVICE="ANDROS"
+USE_SERVICE="ESKARINA"
 
 if [ "$USE_SERVICE" == "ESKARINA" ]; then
   CHECKLIST_SERVICE=http://localhost:8080/evaluate/trafficlight_json
@@ -62,7 +62,7 @@ while read TARGET
     #       "$CHECKLIST_SERVICE?RO=$ROURI&minim=$CHECKLIST_URI&purpose=complete&target=$TARGETESC" \
     #     | python checklistresult.py)
     EVALUATE_URI="$CHECKLIST_SERVICE?RO=$ROURI&minim=$CHECKLIST_URI&purpose=complete&target=$TARGETESC"
-    # echo "Evaluate: $EVALUATE_URI" >>00-evaluate-ROs.log   
+    echo "Evaluate: $EVALUATE_URI" >>00-evaluate-ROs.log   
     curl --silent "$EVALUATE_URI"  >00-checklistresult.tmp
     result=$(cat 00-checklistresult.tmp | python checklistresult.py)
     # @@TODO: count results for individual checklist items
@@ -79,11 +79,11 @@ while read TARGET
     # Delete Overlay RO created
     roverlay -s $ROVERLAY_SERVICE -d $ROURI
 
-  # done <chembox-uris-tryptoline.txt
+  done <chembox-uris-tryptoline.txt
   # done <chembox-uris-dihydrothiazole.txt
   # done <chembox-uris-test.txt
   # done <chembox-uris-100.txt
-  done <chembox-uris.txt  # full 7.5K chemicals
+  # done <chembox-uris.txt  # full 7.5K chemicals
 
 echo "Total pass: $countpass, fail: $countfail out of $countall"
 echo "Total pass: $countpass, fail: $countfail out of $countall" >>00-evaluate-ROs.log

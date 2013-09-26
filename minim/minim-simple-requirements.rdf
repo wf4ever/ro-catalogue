@@ -3,172 +3,172 @@
    xmlns:minim="http://purl.org/minim/minim#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <rdf:Description rdf:about="#isPresent/workflow-run">
-    <minim:showfail>No workflow instance or template found</minim:showfail>
+  <rdf:Description rdf:about="#isPresent/workflow-outputfiles">
+    <minim:showfail>Workflow %(wf)s output %(of)s not found</minim:showfail>
+    <minim:aggregatesTemplate>{+of}</minim:aggregatesTemplate>
+    <minim:showmiss>No workflow output file references were found</minim:showmiss>
+    <minim:query rdf:nodeID="Ndbdbf5fc9a074bc5a82b87acf7a41881"/>
+    <minim:showpass>All workflow outputs referenced are present</minim:showpass>
     <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
-    <minim:exists rdf:nodeID="N20bf1a5545a14fa68ae939cdb064d28b"/>
-    <minim:showpass>Workflow instance or template found</minim:showpass>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nffcb6a1d3d0f43f79201e76d1cb9575b">
-    <rdf:type rdf:resource="http://purl.org/minim/minim#Checklist"/>
-    <minim:toModel rdf:resource="#reviewable_RO_model"/>
-    <minim:forTargetTemplate>{+targetro}</minim:forTargetTemplate>
-    <minim:forPurpose>Reviewable</minim:forPurpose>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nd5d28feae37048658193c3bf6612d100">
-    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
-    <minim:seq>req_4</minim:seq>
-    <minim:isDerivedBy rdf:resource="#isPresent/workflow-outputfiles"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N0df0c070f352448f8115a15217b93356">
-    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
-    <minim:isDerivedBy rdf:resource="#isPresent/workflow-instance"/>
-    <minim:seq>req_3</minim:seq>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nae178093dad04be2bf4f12eebb22f52e">
-    <minim:seq>req_1</minim:seq>
+  <rdf:Description rdf:nodeID="N6b833bfb3e2a4ad499c2220d8b8ee760">
     <minim:isDerivedBy rdf:resource="#environment-software/lpod-show"/>
+    <minim:seq>req_1</minim:seq>
     <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#runnable-RO_mode">
-    <minim:hasMustRequirement rdf:nodeID="Nf52936128f564be4829ddaead2560307"/>
-    <minim:hasMustRequirement rdf:nodeID="N127d2c457f0a4569bd8f20a2354eda6f"/>
-    <minim:hasMustRequirement rdf:nodeID="Ncc636ae9ae624d828399b490af15723d"/>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#Model"/>
-    <minim:hasMustRequirement rdf:nodeID="N9f04b12e6de84b5c81e8ea23d87e84ab"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N20bf1a5545a14fa68ae939cdb064d28b">
-    <minim:sparql_query>?wf rdf:type wfprov:WorkflowRun</minim:sparql_query>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N5b1fb380ba1f488295fcb713fec7f5f5">
-    <minim:forPurpose>Runnable</minim:forPurpose>
+  <rdf:Description rdf:nodeID="N5f2aa60e28b2470388f9f290dd566a7e">
     <minim:forTargetTemplate>{+targetro}</minim:forTargetTemplate>
-    <minim:toModel rdf:resource="#runnable-RO_mode"/>
+    <minim:toModel rdf:resource="#reviewable_RO_model"/>
+    <minim:forPurpose>Reviewable</minim:forPurpose>
     <rdf:type rdf:resource="http://purl.org/minim/minim#Checklist"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N3908816459f44d7e9c65b1d848501f3f">
-    <minim:forTargetTemplate>{+targetro}</minim:forTargetTemplate>
-    <minim:forPurpose>Repeatable</minim:forPurpose>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#Checklist"/>
-    <minim:toModel rdf:resource="#repeatable_RO_model"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#environment-software/lpod-show">
-    <minim:showpass>lpod-show version 0.9.3 is present</minim:showpass>
-    <minim:command>lpod-show.py --version</minim:command>
-    <minim:showfail>lpOD command %(command)s returns %(response)s</minim:showfail>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#SoftwareEnvironmentRule"/>
-    <minim:response>0.9.3</minim:response>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N53af3738d2dc436ab03a9a08a3eac2f1">
-    <minim:sparql_query>?wf rdf:type wfdesc:Workflow</minim:sparql_query>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N8ad563250fc24528884724d6212817f9">
-    <minim:sparql_query>?wf rdf:type wfdesc:Workflow
-  ; wfdesc:hasInput [ wfdesc:hasArtifact ?if ]</minim:sparql_query>
-    <minim:result_mod>ORDER BY ?if</minim:result_mod>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nbab9022724324ffda462a526f1e05f03">
-    <minim:seq>req_2</minim:seq>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
-    <minim:isDerivedBy rdf:resource="#environment-software/python"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#repeatable_RO_model">
-    <minim:hasMustRequirement rdf:nodeID="Naf2e7bbed96f40dcbf7d914d43beb22a"/>
-    <minim:hasMustRequirement rdf:nodeID="Nbab9022724324ffda462a526f1e05f03"/>
-    <minim:hasMustRequirement rdf:nodeID="N0df0c070f352448f8115a15217b93356"/>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#Model"/>
-    <minim:hasMustRequirement rdf:nodeID="Nd5d28feae37048658193c3bf6612d100"/>
-    <minim:hasMustRequirement rdf:nodeID="Nae178093dad04be2bf4f12eebb22f52e"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N6060d1b7869149d08a1060b15672d08d">
-    <minim:seq>req_4</minim:seq>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
-    <minim:isDerivedBy rdf:resource="#isPresent/workflow-inputfiles"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#reviewable_RO_model">
-    <minim:hasMustRequirement rdf:nodeID="N1396c1c9e5af47509131b129aacba06c"/>
-    <minim:hasMustRequirement rdf:nodeID="N6391222fa4524b44b25fcffe2f388b8d"/>
-    <minim:hasMustRequirement rdf:nodeID="Neec1a0d894e34dc0ad386a2dc243f30d"/>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#Model"/>
-    <minim:hasMustRequirement rdf:nodeID="N6060d1b7869149d08a1060b15672d08d"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N9f04b12e6de84b5c81e8ea23d87e84ab">
-    <minim:isDerivedBy rdf:resource="#isPresent/workflow-inputfiles"/>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
-    <minim:seq>req_4</minim:seq>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N1396c1c9e5af47509131b129aacba06c">
-    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
-    <minim:seq>req_4</minim:seq>
-    <minim:isDerivedBy rdf:resource="#isPresent/workflow-outputfiles"/>
   </rdf:Description>
   <rdf:Description rdf:about="#environment-software/python">
     <minim:showpass>Python 2.7.x present</minim:showpass>
-    <minim:command>python --version</minim:command>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#SoftwareEnvironmentRule"/>
     <minim:showfail>Python 2.7.x not present</minim:showfail>
     <minim:response>^Python 2\.7.*$</minim:response>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#SoftwareEnvironmentRule"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#isPresent/workflow-instance">
-    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
-    <minim:showpass>Workflow instance or template found</minim:showpass>
-    <minim:showfail>No workflow instance or template found</minim:showfail>
-    <minim:exists rdf:nodeID="N53af3738d2dc436ab03a9a08a3eac2f1"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nf52936128f564be4829ddaead2560307">
-    <minim:isDerivedBy rdf:resource="#environment-software/lpod-show"/>
-    <minim:seq>req_1</minim:seq>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N127d2c457f0a4569bd8f20a2354eda6f">
-    <minim:isDerivedBy rdf:resource="#isPresent/workflow-instance"/>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
-    <minim:seq>req_3</minim:seq>
+    <minim:command>python --version</minim:command>
   </rdf:Description>
   <rdf:Description rdf:about="#isPresent/workflow-inputfiles">
-    <minim:aggregatesTemplate>{+if}</minim:aggregatesTemplate>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
     <minim:showfail>Workflow %(wf)s input %(if)s not found</minim:showfail>
+    <minim:query rdf:nodeID="Nd110b403ed4b40f4a49aa64030ed2dc5"/>
+    <minim:aggregatesTemplate>{+if}</minim:aggregatesTemplate>
     <minim:showmiss>No workflow input file references were found</minim:showmiss>
-    <minim:query rdf:nodeID="N8ad563250fc24528884724d6212817f9"/>
     <minim:showpass>All workflow inputs referenced are present</minim:showpass>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Ncc636ae9ae624d828399b490af15723d">
+  <rdf:Description rdf:nodeID="N1c70af231b394e1ea15fc6e01b80e78e">
+    <minim:seq>req_3</minim:seq>
     <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
-    <minim:seq>req_2</minim:seq>
-    <minim:isDerivedBy rdf:resource="#environment-software/python"/>
+    <minim:isDerivedBy rdf:resource="#isPresent/workflow-instance"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N7b51c176de1941669e38c81059bbc5e5">
+  <rdf:Description rdf:about="#runnable-RO_mode">
+    <minim:hasMustRequirement rdf:nodeID="N9046efadfb1945f888017b56d3a92158"/>
+    <minim:hasMustRequirement rdf:nodeID="Nc5837fd24b4049faa244fe57726a15ee"/>
+    <minim:hasMustRequirement rdf:nodeID="N182df4d74adf41a9914ace2c6e5f91f1"/>
+    <minim:hasMustRequirement rdf:nodeID="Nf68c272831954cb1b7cad6d54f6e32db"/>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Model"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2232c8ed6f75469ca3dfdfe0bb6fce99">
+    <minim:isDerivedBy rdf:resource="#isPresent/workflow-outputfiles"/>
+    <minim:seq>req_4</minim:seq>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3c21009fe9ca447780fefde5b9c06535">
+    <minim:isDerivedBy rdf:resource="#isPresent/workflow-inputfiles"/>
+    <minim:seq>req_4</minim:seq>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndbdbf5fc9a074bc5a82b87acf7a41881">
     <minim:sparql_query>?wf rdf:type wfdesc:Workflow
   ; wfdesc:hasOutput [ wfdesc:hasArtifact ?of ]</minim:sparql_query>
     <minim:result_mod>ORDER BY ?of</minim:result_mod>
   </rdf:Description>
-  <rdf:Description rdf:about="#ChecklistConstraints">
-    <minim:hasChecklist rdf:nodeID="N5b1fb380ba1f488295fcb713fec7f5f5"/>
-    <minim:hasChecklist rdf:nodeID="N3908816459f44d7e9c65b1d848501f3f"/>
-    <minim:hasChecklist rdf:nodeID="Nffcb6a1d3d0f43f79201e76d1cb9575b"/>
+  <rdf:Description rdf:nodeID="N2ed9aaebb95c4de5b11684958579a8db">
+    <minim:sparql_query>?wf rdf:type wfdesc:Workflow</minim:sparql_query>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Neec1a0d894e34dc0ad386a2dc243f30d">
+  <rdf:Description rdf:about="#environment-software/lpod-show">
+    <minim:showpass>lpod-show version 0.9.3 is present</minim:showpass>
+    <minim:showfail>lpOD command %(command)s returns %(response)s</minim:showfail>
+    <minim:command>lpod-show.py --version</minim:command>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#SoftwareEnvironmentRule"/>
+    <minim:response>0.9.3</minim:response>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N824e3887f6f649bbb388021d72975767">
+    <minim:forPurpose>Repeatable</minim:forPurpose>
+    <minim:toModel rdf:resource="#repeatable_RO_model"/>
+    <minim:forTargetTemplate>{+targetro}</minim:forTargetTemplate>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Checklist"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Naee537feec2d4e2d8768890c21e82a19">
+    <minim:sparql_query>?wf rdf:type wfprov:WorkflowRun</minim:sparql_query>
+  </rdf:Description>
+  <rdf:Description rdf:about="#repeatable_RO_model">
+    <minim:hasMustRequirement rdf:nodeID="N2232c8ed6f75469ca3dfdfe0bb6fce99"/>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Model"/>
+    <minim:hasMustRequirement rdf:nodeID="Nd76c3f2a13494fcf8e0b5c28b7584ae1"/>
+    <minim:hasMustRequirement rdf:nodeID="N12d54c0b483c4190a52a5157cf927728"/>
+    <minim:hasMustRequirement rdf:nodeID="N6b833bfb3e2a4ad499c2220d8b8ee760"/>
+    <minim:hasMustRequirement rdf:nodeID="N1c70af231b394e1ea15fc6e01b80e78e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N61525d2ae88b4cf7965af4e90da0de29">
     <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
+    <minim:seq>req_3</minim:seq>
+    <minim:isDerivedBy rdf:resource="#isPresent/workflow-instance"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndd5905c2970249fb8edac982d9383af2">
+    <minim:forPurpose>Runnable</minim:forPurpose>
+    <minim:toModel rdf:resource="#runnable-RO_mode"/>
+    <minim:forTargetTemplate>{+targetro}</minim:forTargetTemplate>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Checklist"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd76c3f2a13494fcf8e0b5c28b7584ae1">
+    <minim:seq>req_4</minim:seq>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
+    <minim:isDerivedBy rdf:resource="#isPresent/workflow-inputfiles"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd110b403ed4b40f4a49aa64030ed2dc5">
+    <minim:sparql_query>?wf rdf:type wfdesc:Workflow
+  ; wfdesc:hasInput [ wfdesc:hasArtifact ?if ]</minim:sparql_query>
+    <minim:result_mod>ORDER BY ?if</minim:result_mod>
+  </rdf:Description>
+  <rdf:Description rdf:about="#isPresent/workflow-run">
+    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
+    <minim:showpass>Workflow instance or template found</minim:showpass>
+    <minim:showfail>No workflow instance or template found</minim:showfail>
+    <minim:exists rdf:nodeID="Naee537feec2d4e2d8768890c21e82a19"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9046efadfb1945f888017b56d3a92158">
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
+    <minim:seq>req_3</minim:seq>
+    <minim:isDerivedBy rdf:resource="#isPresent/workflow-instance"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#isPresent/workflow-instance">
+    <minim:showpass>Workflow instance or template found</minim:showpass>
+    <minim:showfail>No workflow instance or template found</minim:showfail>
+    <minim:exists rdf:nodeID="N2ed9aaebb95c4de5b11684958579a8db"/>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N182df4d74adf41a9914ace2c6e5f91f1">
+    <minim:seq>req_2</minim:seq>
+    <minim:isDerivedBy rdf:resource="#environment-software/python"/>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf68c272831954cb1b7cad6d54f6e32db">
+    <minim:isDerivedBy rdf:resource="#isPresent/workflow-inputfiles"/>
+    <minim:seq>req_4</minim:seq>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb421eaf726bd417192441b7bad785b3b">
+    <minim:isDerivedBy rdf:resource="#isPresent/workflow-outputfiles"/>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
+    <minim:seq>req_4</minim:seq>
+  </rdf:Description>
+  <rdf:Description rdf:about="#reviewable_RO_model">
+    <minim:hasMustRequirement rdf:nodeID="N72cca161d454492499674242f55922f1"/>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Model"/>
+    <minim:hasMustRequirement rdf:nodeID="N61525d2ae88b4cf7965af4e90da0de29"/>
+    <minim:hasMustRequirement rdf:nodeID="N3c21009fe9ca447780fefde5b9c06535"/>
+    <minim:hasMustRequirement rdf:nodeID="Nb421eaf726bd417192441b7bad785b3b"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc5837fd24b4049faa244fe57726a15ee">
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
+    <minim:seq>req_1</minim:seq>
+    <minim:isDerivedBy rdf:resource="#environment-software/lpod-show"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N12d54c0b483c4190a52a5157cf927728">
+    <minim:seq>req_2</minim:seq>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
+    <minim:isDerivedBy rdf:resource="#environment-software/python"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ChecklistConstraints">
+    <minim:hasChecklist rdf:nodeID="N5f2aa60e28b2470388f9f290dd566a7e"/>
+    <minim:hasChecklist rdf:nodeID="Ndd5905c2970249fb8edac982d9383af2"/>
+    <minim:hasChecklist rdf:nodeID="N824e3887f6f649bbb388021d72975767"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N72cca161d454492499674242f55922f1">
     <minim:isDerivedBy rdf:resource="#isPresent/workflow-run"/>
     <minim:seq>req_3</minim:seq>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N6391222fa4524b44b25fcffe2f388b8d">
     <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
-    <minim:isDerivedBy rdf:resource="#isPresent/workflow-instance"/>
-    <minim:seq>req_3</minim:seq>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Naf2e7bbed96f40dcbf7d914d43beb22a">
-    <minim:seq>req_4</minim:seq>
-    <minim:isDerivedBy rdf:resource="#isPresent/workflow-inputfiles"/>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#isPresent/workflow-outputfiles">
-    <minim:showmiss>No workflow output file references were found</minim:showmiss>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
-    <minim:aggregatesTemplate>{+of}</minim:aggregatesTemplate>
-    <minim:showfail>Workflow %(wf)s output %(of)s not found</minim:showfail>
-    <minim:showpass>All workflow outputs referenced are present</minim:showpass>
-    <minim:query rdf:nodeID="N7b51c176de1941669e38c81059bbc5e5"/>
   </rdf:Description>
 </rdf:RDF>
