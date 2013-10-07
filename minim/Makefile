@@ -17,12 +17,14 @@ PDFCONV=/Applications/LibreOffice.app/Contents/MacOS/soffice --headless --conver
 TARGETS_RDF=minim-chembox-samples.rdf \
 	minim-workflow-runnable.rdf \
 	minim-simple-requirements.rdf \
-	minim-workflow-demo.rdf
+	minim-workflow-demo.rdf \
+	minim-null-checklist.rdf
 
 TARGETS_PDF=minim-chembox-samples.pdf \
 	minim-workflow-runnable.pdf \
 	minim-simple-requirements.pdf \
-	minim-workflow-demo.pdf
+	minim-workflow-demo.pdf \
+	minim-null-checklist.pdf
 
 %.rdf : %.xls ; $(MKMINIM) -o xml $< >$@
 
