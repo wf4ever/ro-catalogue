@@ -181,8 +181,8 @@
     <minim:isDerivedBy>
       <minim:ContentMatchRequirementRule>
         <minim:forall>
-          ?wf rdf:type ro:ResearchObject .
-          NOT EXISTS { ?wf rdf:type ore:AggregatedResource }
+          ?ro rdf:type ro:ResearchObject .
+          FILTER NOT EXISTS { ?ro rdf:type ore:AggregatedResource }
         </minim:forall>
         <minim:exists>
           ?wf dcterms:title ?rotitle .
