@@ -3,295 +3,295 @@
    xmlns:minim="http://purl.org/minim/minim#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <rdf:Description rdf:about="#req_dependencies">
-    <minim:showfail>No workflow process software dependencies are indicated.  Apply "roterms:requiresSoftware" annotations to workflows and/or workflow processes. </minim:showfail>
-    <minim:showpass>Workflow process software dependencies are indicated</minim:showpass>
-    <minim:exists rdf:nodeID="N338ec5bbd9db4654830fea7455b0bc82"/>
+  <rdf:Description rdf:about="#req_sample_data">
     <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
+    <minim:exists rdf:nodeID="N500c7ea8136c45d184d4f463db67fbf0"/>
+    <minim:showfail>No workflow sample run indicated for any workflow.  A sample run may be indicated as a "wfprov:WorkflowRun" bundle annotated with type "roterms:ExampleRun".</minim:showfail>
+    <minim:showpass>Workflow sample run indicated</minim:showpass>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N9557c47a1c4f4f7bb513761c60c696c8">
-    <minim:sparql_query>?wf rdf:type wfdesc:Workflow
-  ; rdfs:label ?label</minim:sparql_query>
+  <rdf:Description rdf:about="#req_python">
+    <minim:response>^Python 2\.7.*$</minim:response>
+    <minim:showfail>Python 2.7.x not present</minim:showfail>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#SoftwareEnvironmentRule"/>
+    <minim:command>python --version</minim:command>
+    <minim:showpass>Python 2.7.x present</minim:showpass>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N88b10bcb16754d46a13197dee0ce9464">
+  <rdf:Description rdf:nodeID="Nbcbf1911d949494caa0c0268c4078279">
     <minim:sparql_query>?file rdf:type ex:Part</minim:sparql_query>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Ne20ff83989ba41f487c856ee1ddb228d">
-    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
-    <minim:isDerivedBy rdf:resource="#req_sample_data"/>
-    <minim:seq>req_08</minim:seq>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nbcf67aac635d4233b606bd9d96f5cb7e">
-    <minim:sparql_query>?wf rdf:type wfdesc:Workflow
-  ; rdfs:label ?wflab .
-?wfrun rdf:type wfprov:WorkflowRun ;
-    rdf:type roterms:ResultGenerationRun ;
-    wfprov:describedByWorkflow ?wf</minim:sparql_query>
-  </rdf:Description>
-  <rdf:Description rdf:about="#req_selected_inputs">
-    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
-    <minim:exists rdf:nodeID="N7a216c5e8e014463afd12d0d4435e277"/>
-    <minim:showfail>No input data indicated for any workflow. Input data may be indicated as a (partial) "wfprov:WorkflowRun" bundle annotated with type "roterms:ProspectiveRun".</minim:showfail>
-    <minim:showpass>Workflow input data indicated</minim:showpass>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N1123e3539021424f877eab44b800fef2">
-    <minim:forTargetTemplate>{+targetro}</minim:forTargetTemplate>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#Checklist"/>
-    <minim:forPurpose>complete</minim:forPurpose>
+  <rdf:Description rdf:nodeID="N5852dc1428c2450f804b8f190c46a2da">
     <minim:toModel rdf:resource="#model_complete"/>
+    <minim:forTargetTemplate>{+targetro}</minim:forTargetTemplate>
+    <minim:forPurpose>complete</minim:forPurpose>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Checklist"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N4d6a8b313ee44895ab36e87bd972c80f">
+  <rdf:Description rdf:nodeID="N396411a6d0214140b7df6d25178f4642">
     <minim:sparql_query>?file rdf:type ex:Part</minim:sparql_query>
-    <minim:result_mod>ORDER BY ?file</minim:result_mod>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N5ab5183e81454f13b3bca44ebcd2580f">
+  <rdf:Description rdf:about="#req_dependencies">
+    <minim:exists rdf:nodeID="N2c7eb70532ba4fb2add6004499092e11"/>
+    <minim:showpass>Workflow process software dependencies are indicated</minim:showpass>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
+    <minim:showfail>No workflow process software dependencies are indicated.  Apply "roterms:requiresSoftware" annotations to workflows and/or workflow processes. </minim:showfail>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N108dd962503047f7bc3d82b68e3d1d67">
+    <minim:result_mod>ORDER BY ?wflab</minim:result_mod>
+    <minim:sparql_query>?wf rdf:type wfdesc:Workflow
+  ; rdfs:label ?wflab
+  ; wfdesc:hasWorkflowDefinition ?wfdef</minim:sparql_query>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N27eea3f6b9d54fe5aa8a0bcc6cff64d8">
+    <minim:sparql_query>?res rdf:type roterms:Sketch</minim:sparql_query>
+  </rdf:Description>
+  <rdf:Description rdf:about="#model_complete">
+    <minim:hasShouldRequirement rdf:nodeID="N73b12369233e435a924ea720c98210b3"/>
+    <minim:hasShouldRequirement rdf:nodeID="N6ca446abffaf48d89c895d46c6a11d61"/>
+    <minim:hasMustRequirement rdf:nodeID="Nffd1f8d7009543aebee4b8c83278ff25"/>
+    <minim:hasMustRequirement rdf:nodeID="N7d2b40336a184193a7b1befe1266b02a"/>
+    <minim:hasMustRequirement rdf:nodeID="Nf525ac283cac436e90139a67f9738541"/>
+    <minim:hasShouldRequirement rdf:nodeID="Ne6362d7a47c4414cb6a3940b81fd8137"/>
+    <minim:hasShouldRequirement rdf:nodeID="Nf380b872d3454a1493974c2c9c70ea95"/>
+    <minim:hasShouldRequirement rdf:nodeID="Nc01fa62726ca46699443f2c4345e7717"/>
+    <minim:hasMustRequirement rdf:nodeID="Ne262fabe14034f8dbafd1346663b1fb2"/>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Model"/>
+    <minim:hasMustRequirement rdf:nodeID="Na2fa02721d3e4f45885bb1939b69f3e7"/>
+    <minim:hasShouldRequirement rdf:nodeID="N9d7a8c243088432bbab3a269dbeffcc0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N500c7ea8136c45d184d4f463db67fbf0">
     <minim:sparql_query>?wf rdf:type wfdesc:Workflow
   ; rdfs:label ?wflab .
 ?wfrun rdf:type wfprov:WorkflowRun ;
     rdf:type roterms:ExampleRun ;
     wfprov:describedByWorkflow ?wf</minim:sparql_query>
   </rdf:Description>
-  <rdf:Description rdf:about="#req_workflow_description">
-    <minim:exists rdf:nodeID="N9557c47a1c4f4f7bb513761c60c696c8"/>
+  <rdf:Description rdf:about="#req_conclusion">
+    <minim:exists rdf:nodeID="N72b08a7c3a744b25b155877355fd8a2a"/>
+    <minim:showfail>Experiment conclusions are not indicated.  Conlusions are indicated by a resource annotated as an "roterms:Conclusions" value.</minim:showfail>
     <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
-    <minim:showpass>Workflow description is present</minim:showpass>
-    <minim:showfail>Workflow description is not present.  For workflows to be recognized, they must be annotated with descrtiptions using the "wfdesc" vocabulary.  This is normally done in when Taverna workflows are transformed to myExperiment packs.</minim:showfail>
+    <minim:showpass>Experiment conclusions are indicated</minim:showpass>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N3d4c4fd6b14642f18d53d282a2cf2f0a">
-    <minim:result_mod>ORDER BY ?wflab</minim:result_mod>
-    <minim:sparql_query>?wf rdf:type wfdesc:Workflow
-  ; rdfs:label ?wflab
-  ; wfdesc:hasWorkflowDefinition ?wfdef</minim:sparql_query>
+  <rdf:Description rdf:about="#req_results_run">
+    <minim:showpass>Workflow results data run indicated</minim:showpass>
+    <minim:showfail>No result data indicated for any workflow.  Result data may be indicated as a "wfprov:WorkflowRun" bundle annotated with type "roterms:ResultGenerationRun".</minim:showfail>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
+    <minim:exists rdf:nodeID="N5caa9e44ce4541abb4c413a6588b05c5"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nca4d75297eaa45ea8b323383afe0e66b">
-    <minim:sparql_query>?res rdf:type roterms:Sketch</minim:sparql_query>
+  <rdf:Description rdf:nodeID="Nf380b872d3454a1493974c2c9c70ea95">
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
+    <minim:isDerivedBy rdf:resource="#req_research_question"/>
+    <minim:seq>req_01</minim:seq>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N6727d565ffd04bf6b1987d1ee73bc3a9">
+  <rdf:Description rdf:nodeID="N3aa89119a97d4dfb89d6c0e899ededf9">
     <minim:result_mod>ORDER BY ?file</minim:result_mod>
     <minim:sparql_query>?file rdf:type ex:Part</minim:sparql_query>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nb2da30ca47e743a4bd8701d67e134cce">
+  <rdf:Description rdf:about="#req_min">
+    <minim:showfail>Fewer than 3 file as part values are present</minim:showfail>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
+    <minim:min rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</minim:min>
+    <minim:showpass>At least 3 file as part values are present</minim:showpass>
+    <minim:query rdf:nodeID="Nf10038ce2a23483191a1677ef989b542"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf525ac283cac436e90139a67f9738541">
     <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
-    <minim:seq>req_06</minim:seq>
-    <minim:isDerivedBy rdf:resource="#req_dependencies"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#req_design_sketch">
-    <minim:showfail>Experiment design sketch is not indicated</minim:showfail>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
-    <minim:showpass>Experiment design sketch is indicated</minim:showpass>
-    <minim:exists rdf:nodeID="Nca4d75297eaa45ea8b323383afe0e66b"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#req_workflow_definition">
-    <minim:query rdf:nodeID="N3d4c4fd6b14642f18d53d282a2cf2f0a"/>
-    <minim:isLiveTemplate>{+wfdef}</minim:isLiveTemplate>
-    <minim:showfail>Workflow definition %(wfdef)s for %(wflab)s is not accessible</minim:showfail>
-    <minim:showpass>All referenced workflow definitions are accessible</minim:showpass>
-    <minim:showmiss>No workflow definitions found.  A workflow definition is referenced by a workflow description annotation using the "wfdesc" vocabulary.  If a .t2flow file is present in a myExperiment pack, use the "Annotate and Transform" option to create the anotation.</minim:showmiss>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
+    <minim:seq>req_09</minim:seq>
+    <minim:isDerivedBy rdf:resource="#req_selected_inputs"/>
   </rdf:Description>
   <rdf:Description rdf:about="#req_foreach_exists">
-    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
-    <minim:exists rdf:nodeID="N4e66af5e8eb24500b8c91e02a9ea130a"/>
-    <minim:query rdf:nodeID="N89c084d7fa8047d99c907eb175fb8b7d"/>
     <minim:showpass>Files as part are partOf some indicated whole</minim:showpass>
     <minim:showfail>File as part %(file)s is not part of some whole</minim:showfail>
-  </rdf:Description>
-  <rdf:Description rdf:about="#req_conclusion">
-    <minim:exists rdf:nodeID="N1a3261efe3f2453293b30e8dd0ca4d4a"/>
+    <minim:exists rdf:nodeID="Na6f8f08293fc42f58553d7d52a03e20f"/>
+    <minim:query rdf:nodeID="Ne7b759b954fb4d7198282f4d60ac6cc4"/>
     <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
-    <minim:showpass>Experiment conclusions are indicated</minim:showpass>
-    <minim:showfail>Experiment conclusions are not indicated.  Conlusions are indicated by a resource annotated as an "roterms:Conclusions" value.</minim:showfail>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N6ba3cf8b575c4ef58dfff172b3633983">
-    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
-    <minim:seq>req_01</minim:seq>
-    <minim:isDerivedBy rdf:resource="#req_research_question"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#req_sample_data">
-    <minim:showfail>No workflow sample run indicated for any workflow.  A sample run may be indicated as a "wfprov:WorkflowRun" bundle annotated with type "roterms:ExampleRun".</minim:showfail>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
-    <minim:exists rdf:nodeID="N5ab5183e81454f13b3bca44ebcd2580f"/>
-    <minim:showpass>Workflow sample run indicated</minim:showpass>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N1a3261efe3f2453293b30e8dd0ca4d4a">
+  <rdf:Description rdf:nodeID="N72b08a7c3a744b25b155877355fd8a2a">
     <minim:sparql_query>?res rdf:type roterms:Conclusions</minim:sparql_query>
   </rdf:Description>
-  <rdf:Description rdf:about="#req_max">
-    <minim:max rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</minim:max>
-    <minim:showfail>At more than 3 file as part values are present</minim:showfail>
-    <minim:query rdf:nodeID="N88b10bcb16754d46a13197dee0ce9464"/>
+  <rdf:Description rdf:about="#req_foreach_accessible">
+    <minim:query rdf:nodeID="N15f32c7d95d946f9abd613bd718ebd6c"/>
+    <minim:showmiss>No file as part definitions are present</minim:showmiss>
+    <minim:showfail>File as part %(file)s is not accessible</minim:showfail>
     <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
-    <minim:showpass>At most 3 file as part values are present</minim:showpass>
+    <minim:isLiveTemplate>{+pruri}</minim:isLiveTemplate>
+    <minim:showpass>All file as part resources are accessible (live)</minim:showpass>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N7a216c5e8e014463afd12d0d4435e277">
+  <rdf:Description rdf:nodeID="N7d2b40336a184193a7b1befe1266b02a">
+    <minim:seq>req_10</minim:seq>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
+    <minim:isDerivedBy rdf:resource="#req_results_run"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne262fabe14034f8dbafd1346663b1fb2">
+    <minim:isDerivedBy rdf:resource="#req_workflow_definition"/>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
+    <minim:seq>req_05</minim:seq>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na6f8f08293fc42f58553d7d52a03e20f">
+    <minim:sparql_query>?file ex:partOf [ rdf:type ex:Whole ]</minim:sparql_query>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf10038ce2a23483191a1677ef989b542">
+    <minim:sparql_query>?file rdf:type ex:Part</minim:sparql_query>
+  </rdf:Description>
+  <rdf:Description rdf:about="#req_live_web_service">
+    <minim:showmiss>No workflow service references found. These are provided as part of a workflow description. The myExperiment "Annotate and Transform" option creates a workflow description with references to any workflow services used.</minim:showmiss>
+    <minim:isLiveTemplate>{+wfservice}</minim:isLiveTemplate>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
+    <minim:showfail>Workflow service %(wfservice)s for %(wflab)s is not accessible</minim:showfail>
+    <minim:showpass>All referenced workflow services are accessible</minim:showpass>
+    <minim:query rdf:nodeID="N418f229c81704c589a14373d4ae4427a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na2fa02721d3e4f45885bb1939b69f3e7">
+    <minim:isDerivedBy rdf:resource="#req_live_web_service"/>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
+    <minim:seq>req_07</minim:seq>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9d7a8c243088432bbab3a269dbeffcc0">
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
+    <minim:isDerivedBy rdf:resource="#req_sample_data"/>
+    <minim:seq>req_08</minim:seq>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N73b12369233e435a924ea720c98210b3">
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
+    <minim:isDerivedBy rdf:resource="#req_design_sketch"/>
+    <minim:seq>req_03</minim:seq>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nffd1f8d7009543aebee4b8c83278ff25">
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
+    <minim:seq>req_04</minim:seq>
+    <minim:isDerivedBy rdf:resource="#req_workflow_description"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ChecklistConstraints">
+    <minim:hasChecklist rdf:nodeID="N5852dc1428c2450f804b8f190c46a2da"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N15f32c7d95d946f9abd613bd718ebd6c">
+    <minim:sparql_query>?file rdf:type ex:Part</minim:sparql_query>
+    <minim:result_mod>ORDER BY ?file</minim:result_mod>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne6362d7a47c4414cb6a3940b81fd8137">
+    <minim:isDerivedBy rdf:resource="#req_conclusion"/>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
+    <minim:seq>req_11</minim:seq>
+  </rdf:Description>
+  <rdf:Description rdf:about="#req_selected_inputs">
+    <minim:showpass>Workflow input data indicated</minim:showpass>
+    <minim:exists rdf:nodeID="N38117a5a6f614aefb1b520a5aad54561"/>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
+    <minim:showfail>No input data indicated for any workflow. Input data may be indicated as a (partial) "wfprov:WorkflowRun" bundle annotated with type "roterms:ProspectiveRun".</minim:showfail>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5caa9e44ce4541abb4c413a6588b05c5">
+    <minim:sparql_query>?wf rdf:type wfdesc:Workflow
+  ; rdfs:label ?wflab .
+?wfrun rdf:type wfprov:WorkflowRun ;
+    rdf:type roterms:ResultGenerationRun ;
+    wfprov:describedByWorkflow ?wf</minim:sparql_query>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N96ab2c4c0c824278a004460394bca0b4">
+    <minim:sparql_query>{ ?rqh rdf:type roterms:Hypothesis }
+UNION
+{ ?rqh rdf:type roterms:ResearchQuestion }</minim:sparql_query>
+  </rdf:Description>
+  <rdf:Description rdf:about="#req_research_question">
+    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
+    <minim:showfail>Experiment hypothesis or research question is not indicated.</minim:showfail>
+    <minim:showpass>Experiment hypothesis or research question is indicated</minim:showpass>
+    <minim:exists rdf:nodeID="N96ab2c4c0c824278a004460394bca0b4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc01fa62726ca46699443f2c4345e7717">
+    <minim:isDerivedBy rdf:resource="#req_article"/>
+    <minim:seq>req_02</minim:seq>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb9d5d75897c7412aa107583774bcf013">
+    <minim:sparql_query>?wf rdf:type wfdesc:Workflow
+  ; rdfs:label ?label</minim:sparql_query>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne7b759b954fb4d7198282f4d60ac6cc4">
+    <minim:result_mod>ORDER BY ?file</minim:result_mod>
+    <minim:sparql_query>?file rdf:type ex:Part</minim:sparql_query>
+  </rdf:Description>
+  <rdf:Description rdf:about="#req_exists">
+    <minim:exists rdf:nodeID="N01cb716c369c41148a156c9b3fed39d9"/>
+    <minim:showpass>File exists as a part</minim:showpass>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
+    <minim:showfail>File as part does not exist</minim:showfail>
+  </rdf:Description>
+  <rdf:Description rdf:about="#req_workflow_description">
+    <minim:showfail>Workflow description is not present.  For workflows to be recognized, they must be annotated with descrtiptions using the "wfdesc" vocabulary.  This is normally done in when Taverna workflows are transformed to myExperiment packs.</minim:showfail>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
+    <minim:exists rdf:nodeID="Nb9d5d75897c7412aa107583774bcf013"/>
+    <minim:showpass>Workflow description is present</minim:showpass>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N418f229c81704c589a14373d4ae4427a">
+    <minim:result_mod>ORDER BY ?wflab</minim:result_mod>
+    <minim:sparql_query>?wf rdf:type wfdesc:Process
+  ; rdfs:label ?wflab
+  ; wf4ever:rootURI ?wfservice</minim:sparql_query>
+  </rdf:Description>
+  <rdf:Description rdf:about="#req_exactly">
+    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
+    <minim:showfail>Fewer or greater than 3 file as part values are present</minim:showfail>
+    <minim:max rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</minim:max>
+    <minim:min rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</minim:min>
+    <minim:showpass>Exactly 3 file as part values are present</minim:showpass>
+    <minim:query rdf:nodeID="Nbcbf1911d949494caa0c0268c4078279"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N01cb716c369c41148a156c9b3fed39d9">
+    <minim:sparql_query>?file rdf:type ex:Part</minim:sparql_query>
+  </rdf:Description>
+  <rdf:Description rdf:about="#req_workflow_definition">
+    <minim:query rdf:nodeID="N108dd962503047f7bc3d82b68e3d1d67"/>
+    <minim:showpass>All referenced workflow definitions are accessible</minim:showpass>
+    <minim:showmiss>No workflow definitions found.  A workflow definition is referenced by a workflow description annotation using the "wfdesc" vocabulary.  If a .t2flow file is present in a myExperiment pack, use the "Annotate and Transform" option to create the anotation.</minim:showmiss>
+    <minim:showfail>Workflow definition %(wfdef)s for %(wflab)s is not accessible</minim:showfail>
+    <minim:isLiveTemplate>{+wfdef}</minim:isLiveTemplate>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6ca446abffaf48d89c895d46c6a11d61">
+    <minim:seq>req_06</minim:seq>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
+    <minim:isDerivedBy rdf:resource="#req_dependencies"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#req_max">
+    <minim:showfail>At more than 3 file as part values are present</minim:showfail>
+    <minim:showpass>At most 3 file as part values are present</minim:showpass>
+    <minim:max rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</minim:max>
+    <minim:query rdf:nodeID="N396411a6d0214140b7df6d25178f4642"/>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#req_foreach_aggregated">
+    <minim:aggregatesTemplate>{+file}</minim:aggregatesTemplate>
+    <minim:showpass>All file as part resources are aggregated in RO</minim:showpass>
+    <minim:showfail>File as part %(file)s is not aggregated in RO</minim:showfail>
+    <minim:showmiss>No file as part definitions are present</minim:showmiss>
+    <minim:query rdf:nodeID="N3aa89119a97d4dfb89d6c0e899ededf9"/>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#req_article">
+    <minim:showpass>Experiment description paper is indicated</minim:showpass>
+    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
+    <minim:showfail>Experiment description is not indicated</minim:showfail>
+    <minim:exists rdf:nodeID="N970f2b7ceb724a25bc18ede99789939f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N970f2b7ceb724a25bc18ede99789939f">
+    <minim:sparql_query>?res rdf:type roterms:Paper</minim:sparql_query>
+  </rdf:Description>
+  <rdf:Description rdf:about="#req_design_sketch">
+    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
+    <minim:showpass>Experiment design sketch is indicated</minim:showpass>
+    <minim:exists rdf:nodeID="N27eea3f6b9d54fe5aa8a0bcc6cff64d8"/>
+    <minim:showfail>Experiment design sketch is not indicated</minim:showfail>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N38117a5a6f614aefb1b520a5aad54561">
     <minim:sparql_query>?wf rdf:type wfdesc:Workflow
   ; rdfs:label ?wflab .
 ?wfrun rdf:type wfprov:WorkflowRun
   ; rdf:type roterms:ProspectiveRun
   ; wfprov:describedByWorkflow ?wf</minim:sparql_query>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nd7fc59e36d314e92bba8754ae71dede0">
-    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
-    <minim:isDerivedBy rdf:resource="#req_design_sketch"/>
-    <minim:seq>req_03</minim:seq>
-  </rdf:Description>
-  <rdf:Description rdf:about="#req_foreach_accessible">
-    <minim:query rdf:nodeID="N4d6a8b313ee44895ab36e87bd972c80f"/>
-    <minim:isLiveTemplate>{+pruri}</minim:isLiveTemplate>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
-    <minim:showmiss>No file as part definitions are present</minim:showmiss>
-    <minim:showpass>All file as part resources are accessible (live)</minim:showpass>
-    <minim:showfail>File as part %(file)s is not accessible</minim:showfail>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nd826bc3690914903b6f3fa4dbadd707a">
-    <minim:sparql_query>?file rdf:type ex:Part</minim:sparql_query>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nf470c35b103e4ccf9dbc51a2febe437b">
-    <minim:isDerivedBy rdf:resource="#req_workflow_description"/>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
-    <minim:seq>req_04</minim:seq>
-  </rdf:Description>
-  <rdf:Description rdf:about="#req_research_question">
-    <minim:showfail>Experiment hypothesis or research question is not indicated.</minim:showfail>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
-    <minim:exists rdf:nodeID="N8ee82523dc2a4d4c90dffbf918ffed40"/>
-    <minim:showpass>Experiment hypothesis or research question is indicated</minim:showpass>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nbefedd351976458bb9b0d462fd278e4b">
-    <minim:result_mod>ORDER BY ?wflab</minim:result_mod>
-    <minim:sparql_query>?wf rdf:type wfdesc:Process
-  ; rdfs:label ?wflab
-  ; wf4ever:rootURI ?wfservice</minim:sparql_query>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N6afefc09714e4a928811979c7ddf8a99">
-    <minim:sparql_query>?file rdf:type ex:Part</minim:sparql_query>
-  </rdf:Description>
-  <rdf:Description rdf:about="#req_min">
-    <minim:query rdf:nodeID="N7d0e463449744e83850ba0c1ce92962d"/>
-    <minim:min rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</minim:min>
-    <minim:showpass>At least 3 file as part values are present</minim:showpass>
-    <minim:showfail>Fewer than 3 file as part values are present</minim:showfail>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N4e66af5e8eb24500b8c91e02a9ea130a">
-    <minim:sparql_query>?file ex:partOf [ rdf:type ex:Whole ]</minim:sparql_query>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N8ee82523dc2a4d4c90dffbf918ffed40">
-    <minim:sparql_query>{ ?rqh rdf:type roterms:Hypothesis }
-UNION
-{ ?rqh rdf:type roterms:ResearchQuestion }</minim:sparql_query>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N338ec5bbd9db4654830fea7455b0bc82">
+  <rdf:Description rdf:nodeID="N2c7eb70532ba4fb2add6004499092e11">
     <minim:sparql_query>{ ?wp rdf:type wfdesc:Process
    ; roterms:requiresSoftware ?anything . }
 UNION
   {?wp rdf:type wfdesc:Workflow
     ; roterms:requiresSoftware ?anything . }</minim:sparql_query>
-  </rdf:Description>
-  <rdf:Description rdf:about="#req_exactly">
-    <minim:min rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</minim:min>
-    <minim:showpass>Exactly 3 file as part values are present</minim:showpass>
-    <minim:showfail>Fewer or greater than 3 file as part values are present</minim:showfail>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
-    <minim:max rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</minim:max>
-    <minim:query rdf:nodeID="Nd826bc3690914903b6f3fa4dbadd707a"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#req_results_run">
-    <minim:showfail>No result data indicated for any workflow.  Result data may be indicated as a "wfprov:WorkflowRun" bundle annotated with type "roterms:ResultGenerationRun".</minim:showfail>
-    <minim:exists rdf:nodeID="Nbcf67aac635d4233b606bd9d96f5cb7e"/>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
-    <minim:showpass>Workflow results data run indicated</minim:showpass>
-  </rdf:Description>
-  <rdf:Description rdf:about="#req_foreach_aggregated">
-    <minim:query rdf:nodeID="N6727d565ffd04bf6b1987d1ee73bc3a9"/>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
-    <minim:showpass>All file as part resources are aggregated in RO</minim:showpass>
-    <minim:showmiss>No file as part definitions are present</minim:showmiss>
-    <minim:aggregatesTemplate>{+file}</minim:aggregatesTemplate>
-    <minim:showfail>File as part %(file)s is not aggregated in RO</minim:showfail>
-  </rdf:Description>
-  <rdf:Description rdf:about="#req_python">
-    <minim:command>python --version</minim:command>
-    <minim:response>^Python 2\.7.*$</minim:response>
-    <minim:showpass>Python 2.7.x present</minim:showpass>
-    <minim:showfail>Python 2.7.x not present</minim:showfail>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#SoftwareEnvironmentRule"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#model_complete">
-    <minim:hasShouldRequirement rdf:nodeID="N6ba3cf8b575c4ef58dfff172b3633983"/>
-    <minim:hasShouldRequirement rdf:nodeID="Ne20ff83989ba41f487c856ee1ddb228d"/>
-    <minim:hasMustRequirement rdf:nodeID="Nb099609e1206488a822b2c38611766f2"/>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#Model"/>
-    <minim:hasMustRequirement rdf:nodeID="Nf60a552f3ef042f3884f1c09f64096da"/>
-    <minim:hasShouldRequirement rdf:nodeID="Nd7fc59e36d314e92bba8754ae71dede0"/>
-    <minim:hasMustRequirement rdf:nodeID="Nf470c35b103e4ccf9dbc51a2febe437b"/>
-    <minim:hasShouldRequirement rdf:nodeID="Nd2d298cdeba649e889e4449fd639345b"/>
-    <minim:hasMustRequirement rdf:nodeID="N0870f810aa5c4f8f9c37a1c05021a831"/>
-    <minim:hasMustRequirement rdf:nodeID="N8578db1acf294fc6b568fa39b043f852"/>
-    <minim:hasShouldRequirement rdf:nodeID="N18e9fa3dffc74af398a80eefe1c1f545"/>
-    <minim:hasShouldRequirement rdf:nodeID="Nb2da30ca47e743a4bd8701d67e134cce"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N0870f810aa5c4f8f9c37a1c05021a831">
-    <minim:isDerivedBy rdf:resource="#req_results_run"/>
-    <minim:seq>req_10</minim:seq>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N8578db1acf294fc6b568fa39b043f852">
-    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
-    <minim:isDerivedBy rdf:resource="#req_selected_inputs"/>
-    <minim:seq>req_09</minim:seq>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nd2d298cdeba649e889e4449fd639345b">
-    <minim:isDerivedBy rdf:resource="#req_conclusion"/>
-    <minim:seq>req_11</minim:seq>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N18e9fa3dffc74af398a80eefe1c1f545">
-    <minim:seq>req_02</minim:seq>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
-    <minim:isDerivedBy rdf:resource="#req_article"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#req_live_web_service">
-    <minim:showmiss>No workflow service references found. These are provided as part of a workflow description. The myExperiment "Annotate and Transform" option creates a workflow description with references to any workflow services used.</minim:showmiss>
-    <minim:showpass>All referenced workflow services are accessible</minim:showpass>
-    <minim:query rdf:nodeID="Nbefedd351976458bb9b0d462fd278e4b"/>
-    <minim:isLiveTemplate>{+wfservice}</minim:isLiveTemplate>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
-    <minim:showfail>Workflow service %(wfservice)s for %(wflab)s is not accessible</minim:showfail>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N20ee7c1fe0214fefb6ef08e27d6ba9ba">
-    <minim:sparql_query>?res rdf:type roterms:Paper</minim:sparql_query>
-  </rdf:Description>
-  <rdf:Description rdf:about="#req_article">
-    <minim:exists rdf:nodeID="N20ee7c1fe0214fefb6ef08e27d6ba9ba"/>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
-    <minim:showpass>Experiment description paper is indicated</minim:showpass>
-    <minim:showfail>Experiment description is not indicated</minim:showfail>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nb099609e1206488a822b2c38611766f2">
-    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
-    <minim:seq>req_05</minim:seq>
-    <minim:isDerivedBy rdf:resource="#req_workflow_definition"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N89c084d7fa8047d99c907eb175fb8b7d">
-    <minim:sparql_query>?file rdf:type ex:Part</minim:sparql_query>
-    <minim:result_mod>ORDER BY ?file</minim:result_mod>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N7d0e463449744e83850ba0c1ce92962d">
-    <minim:sparql_query>?file rdf:type ex:Part</minim:sparql_query>
-  </rdf:Description>
-  <rdf:Description rdf:about="#ChecklistConstraints">
-    <minim:hasChecklist rdf:nodeID="N1123e3539021424f877eab44b800fef2"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#req_exists">
-    <rdf:type rdf:resource="http://purl.org/minim/minim#QueryTestRule"/>
-    <minim:showpass>File exists as a part</minim:showpass>
-    <minim:exists rdf:nodeID="N6afefc09714e4a928811979c7ddf8a99"/>
-    <minim:showfail>File as part does not exist</minim:showfail>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nf60a552f3ef042f3884f1c09f64096da">
-    <minim:isDerivedBy rdf:resource="#req_live_web_service"/>
-    <rdf:type rdf:resource="http://purl.org/minim/minim#Requirement"/>
-    <minim:seq>req_07</minim:seq>
   </rdf:Description>
 </rdf:RDF>
