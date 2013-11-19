@@ -71,35 +71,41 @@
 
 <#model_complete> a minim:Model ;
     minim:hasMayRequirement [ a minim:Requirement ;
+            minim:isDerivedBy <#req_sample_data_enumeration> ;
+            minim:seq "req_08a" ],
+        [ a minim:Requirement ;
+            minim:isDerivedBy <#req_web_service_enumeration> ;
+            minim:seq "req_07a" ],
+        [ a minim:Requirement ;
             minim:isDerivedBy <#req_workflow_definitions_inaccessible> ;
             minim:seq "req_05a" ],
         [ a minim:Requirement ;
             minim:isDerivedBy <#req_workflow_definitions_missing> ;
             minim:seq "req_04a" ] ;
     minim:hasMustRequirement [ a minim:Requirement ;
-            minim:isDerivedBy <#req_live_web_service> ;
-            minim:seq "req_07" ],
-        [ a minim:Requirement ;
-            minim:isDerivedBy <#req_selected_inputs> ;
-            minim:seq "req_09" ],
-        [ a minim:Requirement ;
             minim:isDerivedBy <#req_workflow_description> ;
             minim:seq "req_04" ],
+        [ a minim:Requirement ;
+            minim:isDerivedBy <#req_workflow_definition> ;
+            minim:seq "req_05" ],
+        [ a minim:Requirement ;
+            minim:isDerivedBy <#req_live_web_service> ;
+            minim:seq "req_07" ],
         [ a minim:Requirement ;
             minim:isDerivedBy <#req_results_run> ;
             minim:seq "req_10" ],
         [ a minim:Requirement ;
-            minim:isDerivedBy <#req_workflow_definition> ;
-            minim:seq "req_05" ] ;
+            minim:isDerivedBy <#req_selected_inputs> ;
+            minim:seq "req_09" ] ;
     minim:hasShouldRequirement [ a minim:Requirement ;
-            minim:isDerivedBy <#req_dependencies> ;
-            minim:seq "req_06" ],
+            minim:isDerivedBy <#req_research_question> ;
+            minim:seq "req_01" ],
+        [ a minim:Requirement ;
+            minim:isDerivedBy <#req_article> ;
+            minim:seq "req_02" ],
         [ a minim:Requirement ;
             minim:isDerivedBy <#req_design_sketch> ;
             minim:seq "req_03" ],
-        [ a minim:Requirement ;
-            minim:isDerivedBy <#req_research_question> ;
-            minim:seq "req_01" ],
         [ a minim:Requirement ;
             minim:isDerivedBy <#req_conclusion> ;
             minim:seq "req_11" ],
@@ -107,8 +113,8 @@
             minim:isDerivedBy <#req_sample_data> ;
             minim:seq "req_08" ],
         [ a minim:Requirement ;
-            minim:isDerivedBy <#req_article> ;
-            minim:seq "req_02" ] .
+            minim:isDerivedBy <#req_dependencies> ;
+            minim:seq "req_06" ] .
 
 <#req_article> a minim:QueryTestRule ;
     minim:exists [ minim:sparql_query "?res rdf:type roterms:Paper" ] ;
@@ -137,9 +143,11 @@ UNION
 <#req_live_web_service> a minim:QueryTestRule ;
     minim:isLiveTemplate "{+wfservice}" ;
     minim:query [ minim:result_mod "ORDER BY ?wflab" ;
-            minim:sparql_query """?wf rdf:type wfdesc:Process
-  ; rdfs:label ?wflab
-  ; wf4ever:rootURI ?wfservice""" ] ;
+            minim:sparql_query """?wf rdf:type wfdesc:Process ;
+    rdfs:label ?wflab .
+  { ?wf wf4ever:serviceURI ?wfservice }
+  UNION
+  { ?wf wf4ever:wsdlURI ?wfservice }""" ] ;
     minim:showfail "Workflow service %(wfservice)s for %(wflab)s is not accessible" ;
     minim:showmiss "No workflow service references found. These are provided as part of a workflow description. The myExperiment \"Annotate and Transform\" option creates a workflow description with references to any workflow services used." ;
     minim:showpass "All referenced workflow services are accessible" .
@@ -169,6 +177,19 @@ UNION
     minim:showfail "No workflow sample run indicated for any workflow.  A sample run may be indicated as a \"wfprov:WorkflowRun\" bundle annotated with type \"roterms:ExampleRun\"." ;
     minim:showpass "Workflow sample run indicated" .
 
+<#req_sample_data_enumeration> a minim:QueryTestRule ;
+    minim:exists [ minim:sparql_query """?wfrun rdf:type wfprov:WorkflowRun ;
+    rdf:type roterms:ExampleRun ;
+    wfprov:describedByWorkflow ?wf""" ] ;
+    minim:listfail [ a minim:ValueCollector ;
+            minim:collectList "wflab_list" ;
+            minim:collectVar "wflab" ] ;
+    minim:query [ minim:result_mod "ORDER BY ?wflab" ;
+            minim:sparql_query """?wf rdf:type wfdesc:Workflow
+  ; rdfs:label ?wflab""" ] ;
+    minim:showfail "The following workflows did not indicate a sample run: %(wflab_list)s." ;
+    minim:showpass "All workflows have indicated sample run" .
+
 <#req_selected_inputs> a minim:QueryTestRule ;
     minim:exists [ minim:sparql_query """?wf rdf:type wfdesc:Workflow
   ; rdfs:label ?wflab .
@@ -177,6 +198,26 @@ UNION
   ; wfprov:describedByWorkflow ?wf""" ] ;
     minim:showfail "No input data indicated for any workflow. Input data may be indicated as a (partial) \"wfprov:WorkflowRun\" bundle annotated with type \"roterms:ProspectiveRun\"." ;
     minim:showpass "Workflow input data indicated" .
+
+<#req_web_service_enumeration> a minim:QueryTestRule ;
+    minim:isLiveTemplate "{+wfservice}" ;
+    minim:listfail [ a minim:ValueCollector ;
+            minim:collectList "wfservices_fail" ;
+            minim:collectVar "wfservice" ],
+        [ a minim:ValueCollector ;
+            minim:collectList "wflab_list" ;
+            minim:collectVar "wflab" ] ;
+    minim:listpass [ a minim:ValueCollector ;
+            minim:collectList "wfservices_pass" ;
+            minim:collectVar "wfservice" ] ;
+    minim:query [ minim:result_mod "ORDER BY ?wflab" ;
+            minim:sparql_query """?wf rdf:type wfdesc:Process ;
+    rdfs:label ?wflab .
+  { ?wf wf4ever:serviceURI ?wfservice }
+  UNION
+  { ?wf wf4ever:wsdlURI ?wfservice }""" ] ;
+    minim:showfail "Some workflow services used by workflows %(wflab_list)s are not accessible: %(wfservices_fail)s.  Accessible services referenced are %(wfservices_pass)s." ;
+    minim:showpass "All referenced workflow services are accessible: %(wfservices_pass)s" .
 
 <#req_workflow_definition> a minim:QueryTestRule ;
     minim:isLiveTemplate "{+wfdef}" ;
@@ -216,6 +257,6 @@ UNION
 <#req_workflow_description> a minim:QueryTestRule ;
     minim:exists [ minim:sparql_query """?wf rdf:type wfdesc:Workflow
   ; rdfs:label ?label""" ] ;
-    minim:showfail "Workflow description is not present.  For workflows to be recognized, they must be annotated with descrtiptions using the \"wfdesc\" vocabulary.  This is normally done in when Taverna workflows are transformed to myExperiment packs." ;
+    minim:showfail "Workflow description is not present.  For workflows to be recognized, they must be annotated with descriptions using the \"wfdesc\" vocabulary.  This is normally done in when Taverna workflows are transformed to myExperiment packs." ;
     minim:showpass "Workflow description is present" .
 

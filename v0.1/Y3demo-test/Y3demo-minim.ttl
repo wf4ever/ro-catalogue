@@ -74,35 +74,35 @@
             minim:isDerivedBy <#req_selected_inputs> ;
             minim:seq "req_09" ],
         [ a minim:Requirement ;
-            minim:isDerivedBy <#req_workflow_definition> ;
-            minim:seq "req_05" ],
-        [ a minim:Requirement ;
-            minim:isDerivedBy <#req_live_web_service> ;
-            minim:seq "req_07" ],
+            minim:isDerivedBy <#req_results_run> ;
+            minim:seq "req_10" ],
         [ a minim:Requirement ;
             minim:isDerivedBy <#req_workflow_description> ;
             minim:seq "req_04" ],
         [ a minim:Requirement ;
-            minim:isDerivedBy <#req_results_run> ;
-            minim:seq "req_10" ] ;
+            minim:isDerivedBy <#req_live_web_service> ;
+            minim:seq "req_07" ],
+        [ a minim:Requirement ;
+            minim:isDerivedBy <#req_workflow_definition> ;
+            minim:seq "req_05" ] ;
     minim:hasShouldRequirement [ a minim:Requirement ;
             minim:isDerivedBy <#req_article> ;
             minim:seq "req_02" ],
         [ a minim:Requirement ;
+            minim:isDerivedBy <#req_dependencies> ;
+            minim:seq "req_06" ],
+        [ a minim:Requirement ;
             minim:isDerivedBy <#req_conclusion> ;
             minim:seq "req_11" ],
-        [ a minim:Requirement ;
-            minim:isDerivedBy <#req_design_sketch> ;
-            minim:seq "req_03" ],
         [ a minim:Requirement ;
             minim:isDerivedBy <#req_sample_data> ;
             minim:seq "req_08" ],
         [ a minim:Requirement ;
-            minim:isDerivedBy <#req_research_question> ;
-            minim:seq "req_01" ],
+            minim:isDerivedBy <#req_design_sketch> ;
+            minim:seq "req_03" ],
         [ a minim:Requirement ;
-            minim:isDerivedBy <#req_dependencies> ;
-            minim:seq "req_06" ] .
+            minim:isDerivedBy <#req_research_question> ;
+            minim:seq "req_01" ] .
 
 <#req_article> a minim:QueryTestRule ;
     minim:exists [ minim:sparql_query "?res rdf:type roterms:Paper" ] ;
