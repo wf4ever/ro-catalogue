@@ -71,50 +71,50 @@
 
 <#model_complete> a minim:Model ;
     minim:hasMayRequirement [ a minim:Requirement ;
+            minim:isDerivedBy <#req_sample_data_enumeration> ;
+            minim:seq "req_08a" ],
+        [ a minim:Requirement ;
             minim:isDerivedBy <#req_web_service_enumeration> ;
             minim:seq "req_07a" ],
-        [ a minim:Requirement ;
-            minim:isDerivedBy <#req_workflow_definitions_missing> ;
-            minim:seq "req_04a" ],
         [ a minim:Requirement ;
             minim:isDerivedBy <#req_workflow_definitions_inaccessible> ;
             minim:seq "req_05a" ],
         [ a minim:Requirement ;
-            minim:isDerivedBy <#req_sample_data_enumeration> ;
-            minim:seq "req_08a" ] ;
+            minim:isDerivedBy <#req_workflow_definitions_missing> ;
+            minim:seq "req_04a" ] ;
     minim:hasMustRequirement [ a minim:Requirement ;
-            minim:isDerivedBy <#req_live_web_service> ;
-            minim:seq "req_07" ],
-        [ a minim:Requirement ;
             minim:isDerivedBy <#req_workflow_description> ;
             minim:seq "req_04" ],
+        [ a minim:Requirement ;
+            minim:isDerivedBy <#req_workflow_definition> ;
+            minim:seq "req_05" ],
+        [ a minim:Requirement ;
+            minim:isDerivedBy <#req_live_web_service> ;
+            minim:seq "req_07" ],
         [ a minim:Requirement ;
             minim:isDerivedBy <#req_results_run> ;
             minim:seq "req_10" ],
         [ a minim:Requirement ;
             minim:isDerivedBy <#req_selected_inputs> ;
-            minim:seq "req_09" ],
-        [ a minim:Requirement ;
-            minim:isDerivedBy <#req_workflow_definition> ;
-            minim:seq "req_05" ] ;
+            minim:seq "req_09" ] ;
     minim:hasShouldRequirement [ a minim:Requirement ;
+            minim:isDerivedBy <#req_research_question> ;
+            minim:seq "req_01" ],
+        [ a minim:Requirement ;
             minim:isDerivedBy <#req_article> ;
             minim:seq "req_02" ],
         [ a minim:Requirement ;
-            minim:isDerivedBy <#req_sample_data> ;
-            minim:seq "req_08" ],
+            minim:isDerivedBy <#req_design_sketch> ;
+            minim:seq "req_03" ],
         [ a minim:Requirement ;
             minim:isDerivedBy <#req_conclusion> ;
             minim:seq "req_11" ],
         [ a minim:Requirement ;
-            minim:isDerivedBy <#req_research_question> ;
-            minim:seq "req_01" ],
+            minim:isDerivedBy <#req_sample_data> ;
+            minim:seq "req_08" ],
         [ a minim:Requirement ;
             minim:isDerivedBy <#req_dependencies> ;
-            minim:seq "req_06" ],
-        [ a minim:Requirement ;
-            minim:isDerivedBy <#req_design_sketch> ;
-            minim:seq "req_03" ] .
+            minim:seq "req_06" ] .
 
 <#req_article> a minim:QueryTestRule ;
     minim:exists [ minim:sparql_query "?res rdf:type roterms:Paper" ] ;
@@ -187,7 +187,7 @@ UNION
     minim:query [ minim:result_mod "ORDER BY ?wflab" ;
             minim:sparql_query """?wf rdf:type wfdesc:Workflow
   ; rdfs:label ?wflab""" ] ;
-    minim:showfail "No workflow sample run indicated for any workflow. The following workflows did not indicate a sample run: %(wflab_list)s." ;
+    minim:showfail "The following workflows did not indicate a sample run: %(wflab_list)s." ;
     minim:showpass "All workflows have indicated sample run" .
 
 <#req_selected_inputs> a minim:QueryTestRule ;
@@ -202,11 +202,11 @@ UNION
 <#req_web_service_enumeration> a minim:QueryTestRule ;
     minim:isLiveTemplate "{+wfservice}" ;
     minim:listfail [ a minim:ValueCollector ;
-            minim:collectList "wflab_list" ;
-            minim:collectVar "wflab" ],
-        [ a minim:ValueCollector ;
             minim:collectList "wfservices_fail" ;
-            minim:collectVar "wfservice" ] ;
+            minim:collectVar "wfservice" ],
+        [ a minim:ValueCollector ;
+            minim:collectList "wflab_list" ;
+            minim:collectVar "wflab" ] ;
     minim:listpass [ a minim:ValueCollector ;
             minim:collectList "wfservices_pass" ;
             minim:collectVar "wfservice" ] ;
