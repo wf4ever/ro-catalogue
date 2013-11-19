@@ -70,39 +70,45 @@
     minim:showpass "Python 2.7.x present" .
 
 <#model_complete> a minim:Model ;
-    minim:hasMustRequirement [ a minim:Requirement ;
-            minim:isDerivedBy <#req_selected_inputs> ;
-            minim:seq "req_09" ],
+    minim:hasMayRequirement [ a minim:Requirement ;
+            minim:isDerivedBy <#req_workflow_definitions_missing> ;
+            minim:seq "req_04a" ],
         [ a minim:Requirement ;
-            minim:isDerivedBy <#req_workflow_definition> ;
-            minim:seq "req_05" ],
+            minim:isDerivedBy <#req_workflow_definitions_inaccessible> ;
+            minim:seq "req_05a" ] ;
+    minim:hasMustRequirement [ a minim:Requirement ;
+            minim:isDerivedBy <#req_results_run> ;
+            minim:seq "req_10" ],
         [ a minim:Requirement ;
             minim:isDerivedBy <#req_live_web_service> ;
             minim:seq "req_07" ],
         [ a minim:Requirement ;
-            minim:isDerivedBy <#req_results_run> ;
-            minim:seq "req_10" ],
+            minim:isDerivedBy <#req_workflow_definition> ;
+            minim:seq "req_05" ],
         [ a minim:Requirement ;
             minim:isDerivedBy <#req_workflow_description> ;
-            minim:seq "req_04" ] ;
-    minim:hasShouldRequirement [ a minim:Requirement ;
-            minim:isDerivedBy <#req_dependencies> ;
-            minim:seq "req_06" ],
+            minim:seq "req_04" ],
         [ a minim:Requirement ;
+            minim:isDerivedBy <#req_selected_inputs> ;
+            minim:seq "req_09" ] ;
+    minim:hasShouldRequirement [ a minim:Requirement ;
             minim:isDerivedBy <#req_research_question> ;
             minim:seq "req_01" ],
-        [ a minim:Requirement ;
-            minim:isDerivedBy <#req_sample_data> ;
-            minim:seq "req_08" ],
         [ a minim:Requirement ;
             minim:isDerivedBy <#req_design_sketch> ;
             minim:seq "req_03" ],
         [ a minim:Requirement ;
+            minim:isDerivedBy <#req_dependencies> ;
+            minim:seq "req_06" ],
+        [ a minim:Requirement ;
+            minim:isDerivedBy <#req_article> ;
+            minim:seq "req_02" ],
+        [ a minim:Requirement ;
             minim:isDerivedBy <#req_conclusion> ;
             minim:seq "req_11" ],
         [ a minim:Requirement ;
-            minim:isDerivedBy <#req_article> ;
-            minim:seq "req_02" ] .
+            minim:isDerivedBy <#req_sample_data> ;
+            minim:seq "req_08" ] .
 
 <#req_article> a minim:QueryTestRule ;
     minim:exists [ minim:sparql_query "?res rdf:type roterms:Paper" ] ;
@@ -181,6 +187,31 @@ UNION
     minim:showfail "Workflow definition %(wfdef)s for %(wflab)s is not accessible" ;
     minim:showmiss "No workflow definitions found.  A workflow definition is referenced by a workflow description annotation using the \"wfdesc\" vocabulary.  If a .t2flow file is present in a myExperiment pack, use the \"Annotate and Transform\" option to create the anotation." ;
     minim:showpass "All referenced workflow definitions are accessible" .
+
+<#req_workflow_definitions_inaccessible> a minim:QueryTestRule ;
+    minim:exists [ minim:sparql_query "?wf wfdesc:hasWorkflowDefinition ?wfdef" ] ;
+    minim:listfail [ a minim:ValueCollector ;
+            minim:collectList "wflab_list" ;
+            minim:collectVar "wflab" ] ;
+    minim:query [ minim:result_mod "ORDER BY ?wflab" ;
+            minim:sparql_query """?wf rdf:type wfdesc:Workflow
+  ; rdfs:label ?wflab
+  ; wfdesc:hasWorkflowDefinition ?wfdef""" ] ;
+    minim:showfail "The following workflows do not have accessible workflow definitions: %(wflab_list)s" ;
+    minim:showmiss "No workflows definitions referenced" ;
+    minim:showpass "All referenced workflows have indicated workflow definitions" .
+
+<#req_workflow_definitions_missing> a minim:QueryTestRule ;
+    minim:exists [ minim:sparql_query "?wf wfdesc:hasWorkflowDefinition ?wfdef" ] ;
+    minim:listfail [ a minim:ValueCollector ;
+            minim:collectList "wflab_list" ;
+            minim:collectVar "wflab" ] ;
+    minim:query [ minim:result_mod "ORDER BY ?wflab" ;
+            minim:sparql_query """?wf rdf:type wfdesc:Workflow
+  ; rdfs:label ?wflab""" ] ;
+    minim:showfail "No workflow definition indicated for the following workflows: %(wflab_list)s" ;
+    minim:showmiss "No labeled workflows found" ;
+    minim:showpass "All referenced workflows have indicated workflow definitions" .
 
 <#req_workflow_description> a minim:QueryTestRule ;
     minim:exists [ minim:sparql_query """?wf rdf:type wfdesc:Workflow
