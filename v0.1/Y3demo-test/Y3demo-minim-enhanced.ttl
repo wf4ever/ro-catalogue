@@ -71,44 +71,44 @@
 
 <#model_complete> a minim:Model ;
     minim:hasMayRequirement [ a minim:Requirement ;
-            minim:isDerivedBy <#req_workflow_definitions_missing> ;
-            minim:seq "req_04a" ],
-        [ a minim:Requirement ;
             minim:isDerivedBy <#req_workflow_definitions_inaccessible> ;
-            minim:seq "req_05a" ] ;
-    minim:hasMustRequirement [ a minim:Requirement ;
-            minim:isDerivedBy <#req_results_run> ;
-            minim:seq "req_10" ],
+            minim:seq "req_05a" ],
         [ a minim:Requirement ;
+            minim:isDerivedBy <#req_workflow_definitions_missing> ;
+            minim:seq "req_04a" ] ;
+    minim:hasMustRequirement [ a minim:Requirement ;
             minim:isDerivedBy <#req_live_web_service> ;
             minim:seq "req_07" ],
         [ a minim:Requirement ;
-            minim:isDerivedBy <#req_workflow_definition> ;
-            minim:seq "req_05" ],
+            minim:isDerivedBy <#req_selected_inputs> ;
+            minim:seq "req_09" ],
         [ a minim:Requirement ;
             minim:isDerivedBy <#req_workflow_description> ;
             minim:seq "req_04" ],
         [ a minim:Requirement ;
-            minim:isDerivedBy <#req_selected_inputs> ;
-            minim:seq "req_09" ] ;
+            minim:isDerivedBy <#req_results_run> ;
+            minim:seq "req_10" ],
+        [ a minim:Requirement ;
+            minim:isDerivedBy <#req_workflow_definition> ;
+            minim:seq "req_05" ] ;
     minim:hasShouldRequirement [ a minim:Requirement ;
-            minim:isDerivedBy <#req_research_question> ;
-            minim:seq "req_01" ],
+            minim:isDerivedBy <#req_dependencies> ;
+            minim:seq "req_06" ],
         [ a minim:Requirement ;
             minim:isDerivedBy <#req_design_sketch> ;
             minim:seq "req_03" ],
         [ a minim:Requirement ;
-            minim:isDerivedBy <#req_dependencies> ;
-            minim:seq "req_06" ],
-        [ a minim:Requirement ;
-            minim:isDerivedBy <#req_article> ;
-            minim:seq "req_02" ],
+            minim:isDerivedBy <#req_research_question> ;
+            minim:seq "req_01" ],
         [ a minim:Requirement ;
             minim:isDerivedBy <#req_conclusion> ;
             minim:seq "req_11" ],
         [ a minim:Requirement ;
             minim:isDerivedBy <#req_sample_data> ;
-            minim:seq "req_08" ] .
+            minim:seq "req_08" ],
+        [ a minim:Requirement ;
+            minim:isDerivedBy <#req_article> ;
+            minim:seq "req_02" ] .
 
 <#req_article> a minim:QueryTestRule ;
     minim:exists [ minim:sparql_query "?res rdf:type roterms:Paper" ] ;
@@ -199,7 +199,7 @@ UNION
   ; wfdesc:hasWorkflowDefinition ?wfdef""" ] ;
     minim:showfail "The following workflows do not have accessible workflow definitions: %(wflab_list)s" ;
     minim:showmiss "No workflows definitions referenced" ;
-    minim:showpass "All referenced workflows have indicated workflow definitions" .
+    minim:showpass "All referenced workflows have accessible workflow definitions" .
 
 <#req_workflow_definitions_missing> a minim:QueryTestRule ;
     minim:exists [ minim:sparql_query "?wf wfdesc:hasWorkflowDefinition ?wfdef" ] ;
