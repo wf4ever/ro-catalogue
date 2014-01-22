@@ -207,7 +207,7 @@
           ?ro dcterms:description ?rodescription .
         </minim:exists>
         <minim:showpass>Research Object description is present</minim:showpass>
-        <minim:showfail>Research Object description is not present</minim:showfail>
+        <minim:showfail>Research Object description is not present (%(ro)s)</minim:showfail>
         <minim:derives rdf:resource="#RO_has_description" />
       </minim:ContentMatchRequirementRule>
     </minim:isDerivedBy>
