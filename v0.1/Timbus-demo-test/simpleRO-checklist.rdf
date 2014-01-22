@@ -200,11 +200,11 @@
     <minim:isDerivedBy>
       <minim:ContentMatchRequirementRule>
         <minim:forall>
-          ?wf rdf:type ro:ResearchObject .
+          ?ro rdf:type ro:ResearchObject .
           FILTER NOT EXISTS { ?ro rdf:type ore:AggregatedResource }
         </minim:forall>
         <minim:exists>
-          ?wf dcterms:description ?rodescription .
+          ?ro dcterms:description ?rodescription .
         </minim:exists>
         <minim:showpass>Research Object description is present</minim:showpass>
         <minim:showfail>Research Object description is not present</minim:showfail>
