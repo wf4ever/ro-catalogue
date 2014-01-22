@@ -183,9 +183,10 @@
         <minim:forall>
           ?ro rdf:type ro:ResearchObject .
           FILTER NOT EXISTS { ?ro rdf:type ore:AggregatedResource }
+          FILTER NOT EXISTS { ?ro rdf:type roterms:WorkflowRunBundle  }
         </minim:forall>
         <minim:exists>
-          ?wf dcterms:title ?rotitle .
+          ?ro dcterms:title ?rotitle .
         </minim:exists>
         <minim:showpass>Research Object title is present</minim:showpass>
         <minim:showfail>Research Object title is not present</minim:showfail>
