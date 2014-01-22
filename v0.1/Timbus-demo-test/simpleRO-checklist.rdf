@@ -201,6 +201,7 @@
       <minim:ContentMatchRequirementRule>
         <minim:forall>
           ?wf rdf:type ro:ResearchObject .
+          FILTER NOT EXISTS { ?ro rdf:type ore:AggregatedResource }
         </minim:forall>
         <minim:exists>
           ?wf dcterms:description ?rodescription .
