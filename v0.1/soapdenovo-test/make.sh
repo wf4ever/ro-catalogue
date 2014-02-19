@@ -58,6 +58,10 @@ ro link Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s
 ro link Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga roterms:inputSelected Inputs/saureus_B_L3_37bp3500IS45X_2.fq
 ro link Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga roterms:inputSelected Inputs/saureus.fasta
 
+# Annotate output data
+ro annotate Outputs/gage.out.Tabular -g output.rdf
+
+
 # Show all annotations
 
 ro annotations
