@@ -1,0 +1,389 @@
+{
+    "a_galaxy_workflow": "true", 
+    "annotation": "", 
+    "format-version": "0.1", 
+    "name": "Workflow constructed from history 'reproduce s.aureus pipeline'", 
+    "steps": {
+        "0": {
+            "annotation": "", 
+            "id": 0, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Input Dataset"
+                }
+            ], 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 10
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Input Dataset\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": []
+        }, 
+        "1": {
+            "annotation": "", 
+            "id": 1, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Input Dataset"
+                }
+            ], 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 130
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Input Dataset\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": []
+        }, 
+        "2": {
+            "annotation": "", 
+            "id": 2, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Input Dataset"
+                }
+            ], 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 250
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Input Dataset\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": []
+        }, 
+        "3": {
+            "annotation": "", 
+            "id": 3, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Input Dataset"
+                }
+            ], 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 370
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Input Dataset\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": []
+        }, 
+        "4": {
+            "annotation": "", 
+            "id": 4, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Input Dataset"
+                }
+            ], 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 490
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Input Dataset\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": []
+        }, 
+        "5": {
+            "annotation": "", 
+            "id": 5, 
+            "input_connections": {
+                "data_format|libraries_0|input1": {
+                    "id": 0, 
+                    "output_name": "output"
+                }, 
+                "data_format|libraries_0|input2": {
+                    "id": 1, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "name": "KmerFreq AR", 
+            "outputs": [
+                {
+                    "name": "filelist", 
+                    "type": "Tabular"
+                }, 
+                {
+                    "name": "stat", 
+                    "type": "Tabular"
+                }, 
+                {
+                    "name": "cz_len", 
+                    "type": "Tabular"
+                }, 
+                {
+                    "name": "cz", 
+                    "type": "Tabular"
+                }, 
+                {
+                    "name": "genome_estimate", 
+                    "type": "Tabular"
+                }, 
+                {
+                    "name": "space_stat", 
+                    "type": "Tabular"
+                }, 
+                {
+                    "name": "space_cz_len", 
+                    "type": "Tabular"
+                }, 
+                {
+                    "name": "space_cz", 
+                    "type": "Tabular"
+                }, 
+                {
+                    "name": "space_genome_estimate", 
+                    "type": "Tabular"
+                }
+            ], 
+            "position": {
+                "left": 230, 
+                "top": 10
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "kmerfreq_ar", 
+            "tool_state": "{\"space_consecutive_settings\": \"{\\\"min_precision_kmer_rate\\\": \\\"-1\\\", \\\"ascii_shift\\\": \\\"33\\\", \\\"__current_case__\\\": 0, \\\"space_consecutive_settings_type\\\": \\\"consecutive\\\", \\\"use_num_bases\\\": \\\"\\\", \\\"kmer_size\\\": \\\"17\\\", \\\"output_depth\\\": \\\"1\\\"}\", \"__rerun_remap_job_id__\": null, \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist-232ef8122d54/tool-data/shared/ucsc/chrom/?.len\\\"\", \"data_format\": \"{\\\"libraries\\\": [{\\\"input2\\\": null, \\\"__index__\\\": 0, \\\"input1\\\": null}], \\\"fastq_fasta\\\": \\\"fastq\\\", \\\"__current_case__\\\": 0}\", \"__page__\": 0}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }, 
+        "6": {
+            "annotation": "", 
+            "id": 6, 
+            "input_connections": {
+                "space_consecutive_settings|filelist": {
+                    "id": 5, 
+                    "output_name": "filelist"
+                }, 
+                "space_consecutive_settings|freq_cz": {
+                    "id": 5, 
+                    "output_name": "cz"
+                }, 
+                "space_consecutive_settings|freq_cz_len": {
+                    "id": 5, 
+                    "output_name": "cz_len"
+                }
+            }, 
+            "inputs": [], 
+            "name": "Corrector AR", 
+            "outputs": [
+                {
+                    "name": "html_file", 
+                    "type": "html"
+                }, 
+                {
+                    "name": "corrected_forward", 
+                    "type": "fa.gz"
+                }, 
+                {
+                    "name": "corrected_reverse", 
+                    "type": "fa.gz"
+                }, 
+                {
+                    "name": "corrected_single", 
+                    "type": "fa.gz"
+                }
+            ], 
+            "position": {
+                "left": 450, 
+                "top": 10
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "corrector_ar", 
+            "tool_state": "{\"space_consecutive_settings\": \"{\\\"freq_cz_len\\\": null, \\\"__current_case__\\\": 0, \\\"ascii_shift_quality_value\\\": \\\"33\\\", \\\"consec_low_freq_cutoff\\\": \\\"3\\\", \\\"filelist\\\": null, \\\"space_consecutive_settings_type\\\": \\\"consecutive\\\", \\\"kmer_size\\\": \\\"17\\\", \\\"freq_cz\\\": null}\", \"default_full_settings\": \"{\\\"max_node_num\\\": \\\"15000000\\\", \\\"min_length_high_freq_region\\\": \\\"10\\\", \\\"min_length_trimmed_read\\\": \\\"50\\\", \\\"length_trim_low_qual_ends\\\": \\\"8\\\", \\\"trim_error_bases_Q\\\": \\\"0\\\", \\\"qual_threshold_error_bases\\\": \\\"30\\\", \\\"settings_type\\\": \\\"full\\\", \\\"convert_reads_into_paired_end_file\\\": \\\"1\\\", \\\"remove_suspicious_data\\\": \\\"0\\\", \\\"__current_case__\\\": 1, \\\"trim_suspicious_end_regions_Q\\\": \\\"1\\\", \\\"output_format\\\": \\\"1\\\", \\\"max_read_change\\\": \\\"2\\\"}\", \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist-232ef8122d54/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"__page__\": 0}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }, 
+        "7": {
+            "annotation": "", 
+            "id": 7, 
+            "input_connections": {
+                "config_source|libraries_0|files_0|data_type|data_format|input1": {
+                    "id": 6, 
+                    "output_name": "corrected_forward"
+                }, 
+                "config_source|libraries_0|files_0|data_type|data_format|input2": {
+                    "id": 6, 
+                    "output_name": "corrected_reverse"
+                }, 
+                "config_source|libraries_1|files_0|data_type|data_format|input1": {
+                    "id": 2, 
+                    "output_name": "output"
+                }, 
+                "config_source|libraries_1|files_0|data_type|data_format|input2": {
+                    "id": 3, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "name": "SOAPdenovo2", 
+            "outputs": [
+                {
+                    "name": "contig", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "scafseq", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "config", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 670, 
+                "top": 10
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "soapdenovo2", 
+            "tool_state": "{\"__page__\": 0, \"kmer_freq_cutoff\": \"\\\"1\\\"\", \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist-232ef8122d54/tool-data/shared/ucsc/chrom/?.len\\\"\", \"default_full_settings\": \"{\\\"__current_case__\\\": 0, \\\"settings_type\\\": \\\"default\\\"}\", \"config_source\": \"{\\\"libraries\\\": [{\\\"files\\\": [{\\\"__index__\\\": 0, \\\"data_type\\\": {\\\"single_paired\\\": \\\"paired\\\", \\\"data_format\\\": {\\\"input2\\\": null, \\\"input1\\\": null, \\\"fastq_fasta\\\": \\\"fastq_gzipped\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 0}}], \\\"rd_len_cutoff\\\": \\\"\\\", \\\"avg_ins\\\": \\\"180\\\", \\\"rank\\\": \\\"1\\\", \\\"asm_flags\\\": \\\"3\\\", \\\"map_len\\\": \\\"\\\", \\\"pair_num_cutoff\\\": \\\"\\\", \\\"__index__\\\": 0, \\\"reverse_seq\\\": \\\"0\\\"}, {\\\"files\\\": [{\\\"__index__\\\": 0, \\\"data_type\\\": {\\\"single_paired\\\": \\\"paired\\\", \\\"data_format\\\": {\\\"input2\\\": null, \\\"input1\\\": null, \\\"fastq_fasta\\\": \\\"fastq\\\", \\\"__current_case__\\\": 0}, \\\"__current_case__\\\": 0}}], \\\"rd_len_cutoff\\\": \\\"\\\", \\\"avg_ins\\\": \\\"3500\\\", \\\"rank\\\": \\\"2\\\", \\\"asm_flags\\\": \\\"2\\\", \\\"map_len\\\": \\\"31\\\", \\\"pair_num_cutoff\\\": \\\"11\\\", \\\"__index__\\\": 1, \\\"reverse_seq\\\": \\\"1\\\"}], \\\"max_read_length\\\": \\\"100\\\", \\\"config_source_select\\\": \\\"create\\\", \\\"__current_case__\\\": 1}\", \"kmer_size\": \"\\\"31\\\"\", \"resolve_repeats\": \"\\\"YES\\\"\", \"fill_gaps\": \"\\\"YES\\\"\", \"__rerun_remap_job_id__\": null}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }, 
+        "8": {
+            "annotation": "", 
+            "id": 8, 
+            "input_connections": {
+                "config_source|own_file": {
+                    "id": 7, 
+                    "output_name": "config"
+                }, 
+                "scaff_in": {
+                    "id": 7, 
+                    "output_name": "scafseq"
+                }
+            }, 
+            "inputs": [], 
+            "name": "GapCloser", 
+            "outputs": [
+                {
+                    "name": "scaff", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "fill_info", 
+                    "type": "tabular"
+                }
+            ], 
+            "position": {
+                "left": 890, 
+                "top": 10
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "gapcloser", 
+            "tool_state": "{\"__page__\": 0, \"scaff_in\": \"null\", \"default_full_settings\": \"{\\\"overlap_param\\\": \\\"31\\\", \\\"max_read_length\\\": \\\"70\\\", \\\"__current_case__\\\": 1, \\\"settings_type\\\": \\\"full\\\"}\", \"config_source\": \"{\\\"own_file\\\": null, \\\"config_source_select\\\": \\\"history\\\", \\\"__current_case__\\\": 0}\", \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist-232ef8122d54/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }, 
+        "9": {
+            "annotation": "", 
+            "id": 9, 
+            "input_connections": {
+                "scafseq_gc_fa": {
+                    "id": 8, 
+                    "output_name": "scaff"
+                }
+            }, 
+            "inputs": [], 
+            "name": "Extract ACGT", 
+            "outputs": [
+                {
+                    "name": "scafseq_gc_ctg_fa", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 1110, 
+                "top": 10
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "extractACGT", 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist-232ef8122d54/tool-data/shared/ucsc/chrom/?.len\\\"\", \"scafseq_gc_fa\": \"null\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }, 
+        "10": {
+            "annotation": "", 
+            "id": 10, 
+            "input_connections": {
+                "contig_fasta": {
+                    "id": 9, 
+                    "output_name": "scafseq_gc_ctg_fa"
+                }, 
+                "ref_fasta": {
+                    "id": 4, 
+                    "output_name": "output"
+                }, 
+                "scaffold_fasta": {
+                    "id": 8, 
+                    "output_name": "scaff"
+                }
+            }, 
+            "inputs": [], 
+            "name": "GAGE evaluation", 
+            "outputs": [
+                {
+                    "name": "outfile", 
+                    "type": "Tabular"
+                }
+            ], 
+            "position": {
+                "left": 1330, 
+                "top": 10
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "get_correctness_stats", 
+            "tool_state": "{\"__page__\": 0, \"ref_fasta\": \"null\", \"contig_fasta\": \"null\", \"scaffold_fasta\": \"null\", \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist-232ef8122d54/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }
+    }
+}

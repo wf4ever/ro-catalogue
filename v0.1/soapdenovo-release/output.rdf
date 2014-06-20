@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY rdf     "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY rdfs    "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY owl     "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd     "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml     "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfg    "http://www.w3.org/2004/03/trix/rdfg-1/" >
+    <!ENTITY ore     "http://www.openarchives.org/ore/terms/" >
+    <!ENTITY ao      "http://purl.org/ao/" >
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY foaf    "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY ro      "http://purl.org/wf4ever/ro#" >
+    <!ENTITY wfprov  "http://purl.org/wf4ever/wfprov#" >
+    <!ENTITY wfdesc  "http://purl.org/wf4ever/wfdesc#" >
+    <!ENTITY wf4ever "http://purl.org/wf4ever/wf4ever#" >
+    <!ENTITY roterms "http://purl.org/wf4ever/roterms#" >
+    <!ENTITY prov    "http://www.w3.org/ns/prov#" >
+]>
+
+<rdf:RDF xmlns=""
+     xmlns:rdf="&rdf;"
+     xmlns:rdfs="&rdfs;"
+     xmlns:owl="&owl;"
+     xmlns:xsd="&xsd;"
+     xmlns:xml="&xml;"
+     xmlns:rdfg="&rdfg;"
+     xmlns:ore="&ore;"
+     xmlns:ao="&ao;"
+     xmlns:dcterms="&dcterms;"
+     xmlns:foaf="&foaf;"
+     xmlns:ro="&ro;"
+     xmlns:wfprov="&wfprov;"
+     xmlns:wfdesc="&wfdesc;"
+     xmlns:wf4ever="&wf4ever;"
+     xmlns:roterms="&roterms;"
+     xmlns:prov="&prov;"
+>
+
+  <!-- Workflow output -->
+
+<roterms:Result rdf:about="Outputs/gage.out.Tabular">
+    <rdfs:seeAlso rdf:resource="http://w3id.org/isa/soapdenovo2/derived_data_file/3"/>
+    <rdfs:label>Results calculating the N50 and corrected N50 scores</rdfs:label>
+    <dcterms:title>Results calculating the N50 and corrected N50 scores</dcterms:title>
+    <prov:wasGeneratedBy>
+        <wfprov:WorkflowRun>
+            <wfprov:describedByWorkflow rdf:resource="Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga"/>
+        </wfprov:WorkflowRun>
+    </prov:wasGeneratedBy>
+    <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/raw_data_file/17" />
+    <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/raw_data_file/18" />
+    <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/raw_data_file/19" />
+    <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/raw_data_file/20" />
+    <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/raw_data_file/21" />
+  </roterms:Result>
+
+</rdf:RDF>
+
