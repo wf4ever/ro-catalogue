@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY rdf     "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY rdfs    "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY owl     "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd     "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml     "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfg    "http://www.w3.org/2004/03/trix/rdfg-1/" >
+    <!ENTITY ore     "http://www.openarchives.org/ore/terms/" >
+    <!ENTITY ao      "http://purl.org/ao/" >
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY foaf    "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY ro      "http://purl.org/wf4ever/ro#" >
+    <!ENTITY wfprov  "http://purl.org/wf4ever/wfprov#" >
+    <!ENTITY wfdesc  "http://purl.org/wf4ever/wfdesc#" >
+    <!ENTITY wf4ever "http://purl.org/wf4ever/wf4ever#" >
+    <!ENTITY roterms "http://purl.org/wf4ever/roterms#" >
+]>
+
+<rdf:RDF xmlns=""
+     xmlns:rdf="&rdf;"
+     xmlns:rdfs="&rdfs;"
+     xmlns:owl="&owl;"
+     xmlns:xsd="&xsd;"
+     xmlns:xml="&xml;"
+     xmlns:rdfg="&rdfg;"
+     xmlns:ore="&ore;"
+     xmlns:ao="&ao;"
+     xmlns:dcterms="&dcterms;"
+     xmlns:foaf="&foaf;"
+     xmlns:ro="&ro;"
+     xmlns:wfprov="&wfprov;"
+     xmlns:wfdesc="&wfdesc;"
+     xmlns:wf4ever="&wf4ever;"
+     xmlns:roterms="&roterms;"
+>
+
+  <!-- Workflow instance -->
+
+  <wfdesc:Workflow rdf:about="Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga">
+    <rdfs:label>Galaxy workflow for reproducing Table 2 of SOAPdenovo paper</rdfs:label>
+    <dcterms:title>Galaxy workflow for reproducing Table 2 of SOAPdenovo paper</dcterms:title>
+    <rdfs:comment>Galaxy workflow for reproducing Table 2 of SOAPdenovo paper</rdfs:comment>
+    <dcterms:description>
+      Galaxy workflow for reproducing Table 2 of SOAPdenovo paper
+    </dcterms:description>
+    <wfdesc:hasWorkflowDefinition rdf:resource="Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga" />
+    <wfdesc:hasWorkflowDefinition rdf:resource="http://www.myexperiment.org/workflows/4078.html" />
+
+
+    <wfdesc:hasInput>
+      <wfdesc:Input>
+        <wfdesc:hasArtifact rdf:resource="Inputs/saureus_A_L1_101bp180IS45X_1.fq" />
+        <rdfs:label>Workflow input file for KmerFreq AR</rdfs:label>
+	<rdfs:comment>TODO:Upload and share the data</rdfs:comment>
+      </wfdesc:Input>
+    </wfdesc:hasInput>
+
+    <roterms:inputValue>
+      <roterms:inputValue>
+          <roterms:portName>KmerFreq AR/Library1/Forward FASTQ file</roterms:portName>
+          <roterms:resource rdf:resource="https://example.org/Inputs/saureus_A_L1_101bp180IS45X_1.fq"/>
+      </roterms:inputValue>
+    </roterms:inputValue>
+
+    <wfdesc:hasInput>
+      <wfdesc:Input>
+        <wfdesc:hasArtifact rdf:resource="Inputs/saureus_A_L1_101bp180IS45X_2.fq" />
+        <rdfs:label>Workflow input file for KmerFreq AR</rdfs:label>
+	<rdfs:comment>TODO:Upload and share the data</rdfs:comment>
+      </wfdesc:Input>
+    </wfdesc:hasInput>
+
+    <roterms:inputValue>
+        <roterms:inputValue>
+            <roterms:portName>KmerFreq AR/Library1/Reverse FASTQ file</roterms:portName>
+            <roterms:resource rdf:resource="https://example.org/Inputs/saureus_A_L1_101bp180IS45X_2.fq"/>
+        </roterms:inputValue>
+    </roterms:inputValue>
+
+
+   <wfdesc:hasInput>
+      <wfdesc:Input>
+        <wfdesc:hasArtifact rdf:resource="Inputs/saureus_B_L3_37bp3500IS45X_1.fq" />
+        <rdfs:label>Workflow input file for SOAPdenovo2</rdfs:label>
+      <rdfs:comment>TODO:Upload and share the data</rdfs:comment>
+      </wfdesc:Input>
+    </wfdesc:hasInput>
+
+   <roterms:inputValue>
+       <roterms:inputValue>
+           <roterms:portName>SOAPdenovo2/Library2/Forward FASTQ file</roterms:portName>
+           <roterms:resource rdf:resource="https://example.org/Inputs/saureus_B_L3_37bp3500IS45X_1.fq"/>
+       </roterms:inputValue>
+    </roterms:inputValue>
+
+   <wfdesc:hasInput>
+      <wfdesc:Input>
+        <wfdesc:hasArtifact rdf:resource="Inputs/saureus_B_L3_37bp3500IS45X_2.fq" />
+        <rdfs:label>Workflow input file for SOAPdenovo2</rdfs:label>
+      <rdfs:comment>TODO:Upload and share the data</rdfs:comment>
+      </wfdesc:Input>
+    </wfdesc:hasInput>
+
+    <roterms:inputValue>
+        <roterms:inputValue>
+            <roterms:portName>SOAPdenovo2/Library2/Reverse FASTQ file</roterms:portName>
+            <roterms:resource rdf:resource="https://example.org/Inputs/saureus_B_L3_37bp3500IS45X_2.fq"/>
+        </roterms:inputValue>
+    </roterms:inputValue>
+
+
+   <wfdesc:hasInput>
+      <wfdesc:Input>
+        <wfdesc:hasArtifact rdf:resource="Inputs/saureus.fasta" />
+        <rdfs:label>Workflow input file for GAGE/Reference genome file in FASTA format</rdfs:label>
+      <rdfs:comment>TODO:Upload and share the data</rdfs:comment>
+      </wfdesc:Input>
+    </wfdesc:hasInput>
+
+    <roterms:inputValue>
+        <roterms:inputValue>
+            <roterms:portName>GAGE/Reference genome file in FASTA format</roterms:portName>
+            <roterms:resource rdf:resource="https://example.org/Inputs/saureus.fasta"/>
+        </roterms:inputValue>
+    </roterms:inputValue>
+
+    <wfdesc:hasOutput>
+      <wfdesc:Output>
+        <wfdesc:hasArtifact rdf:resource="Outputs/gage.out.Tabular" />
+        <rdfs:label>Workflow output file</rdfs:label>
+      </wfdesc:Output>
+    </wfdesc:hasOutput>
+
+  </wfdesc:Workflow>
+
+</rdf:RDF>
+

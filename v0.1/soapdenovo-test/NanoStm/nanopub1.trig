@@ -1,0 +1,69 @@
+@prefix this: <http://purl.org/isatab/soapdenovo2/nanopub/000001> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+
+<http://purl.org/isatab/soapdenovo2/nanopub/000001/context> {
+	this: np:hasProvenance <http://purl.org/isatab/soapdenovo2/nanopub/000001/provenance> ;
+		a np:Nanopublication ;
+		np:hasPublicationInfo <http://purl.org/isatab/soapdenovo2/nanopub/000001/pubInfo> ;
+		np:hasAssertion <http://purl.org/isatab/soapdenovo2/nanopub/000001/assertion> .
+}
+
+<http://purl.org/isatab/soapdenovo2/nanopub/000001/assertion> {
+	<http://purl.org/isatab/soapdenovo2/nanopub/000001/genome_coverage2> <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.org/isatab/soapdenovo2/nanopub/000001/genome_coverage2> .
+	
+	<http://w3id.org/isa/soapdenovo2/> <http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.org/isatab/soapdenovo2/nanopub/000001/http://w3id.org/isa/soapdenovo2/> .
+	
+	<http://purl.org/isatab/soapdenovo2/nanopub/000001/human_genome_YH> rdf: <http://purl.obolibrary.org/obo/SO_0001026> .
+	
+	<http://purl.org/isatab/soapdenovo2/nanopub/000001/organism_YH > rdf: <http://purl.obolibrary.org/obo/NCBITaxon_9606> .
+	
+	<http://w3id.org/isa/soapdenovo2/> rdf: <http://purl.obolibrary.org/obo/OBI_0001872> .
+	
+	<http://purl.org/isatab/soapdenovo2/nanopub/000001/genome_assembly1> <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.org/isatab/soapdenovo2/nanopub/000001/genome_assembly1> .
+	
+	<http://purl.org/isatab/soapdenovo2/nanopub/000001/human_genome_YH> <http://purl.obolibrary.org/obo/so_genome_of> <http://purl.org/isatab/soapdenovo2/nanopub/000001/human_genome_YH> .
+	
+	<http://purl.org/isatab/soapdenovo2/nanopub/000001/genome_coverage1> <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.org/isatab/soapdenovo2/nanopub/000001/genome_coverage1> .
+	
+	<http://purl.org/isatab/soapdenovo2/nanopub/000001/genome_assembly1> rdf: <http://purl.obolibrary.org/obo/SO_0000353> .
+	
+	<http://purl.org/isatab/soapdenovo2/nanopub/000001/organism_YH > rdf: <http://purl.org/isatab/soapdenovo2/nanopub/000001/organism_YH > .
+	
+	<http://purl.org/isatab/soapdenovo2/nanopub/000001/genome_assembly2> rdf: <http://purl.obolibrary.org/obo/SO_0000353> ;
+		<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.org/isatab/soapdenovo2/nanopub/000001/genome_assembly2> .
+	
+	<http://purl.org/isatab/soapdenovo2/nanopub/000001/genome_coverage2> <http://semanticscience.org/resource/SIO_000734> <http://purl.org/isatab/soapdenovo2/nanopub/000001/genome_coverage2> .
+}
+
+<http://purl.org/isatab/soapdenovo2/nanopub/000001/provenance> {
+	<http://purl.org/isatab/soapdenovo2/nanopub/000001/genome coverage2> <http://purl.obolibrary.org/obo/IAO_0000039> <http://mimi.case.edu/ontologies/2009/1/UnitsOntology#percent> .
+	
+	<http://purl.org/isatab/soapdenovo2/nanopub/000001/SOAPdenovo2_process> <http://purl.org/isatab/soapdenovo2/nanopub/000001/SOAPdenovo2_process> <http://purl.org/isatab/soapdenovo2/nanopub/000001/SOAPdenovo2_process> .
+	
+	<http://purl.org/isatab/soapdenovo2/nanopub/000001/SOAPdenovo2_algorithm> rdf: <http://purl.obolibrary.org/obo/OBI_0001522> .
+	
+	<http://purl.org/isatab/soapdenovo2/nanopub/000001/SOAPdenovo1_process> <http://purl.org/isatab/soapdenovo2/nanopub/000001/SOAPdenovo1_process> <http://purl.org/isatab/soapdenovo2/nanopub/000001/SOAPdenovo1_process> .
+	
+	<http://purl.org/isatab/soapdenovo2/nanopub/000001/genome coverage_v1> <http://purl.obolibrary.org/obo/IAO_0000039> <http://mimi.case.edu/ontologies/2009/1/UnitsOntology#percent> .
+	
+	<http://purl.org/isatab/soapdenovo2/nanopub/000001/genome coverage2> <http://purl.obolibrary.org/obo/IAO_0000004> <http://purl.org/isatab/soapdenovo2/nanopub/000001/genome coverage2> .
+	
+	<http://purl.org/isatab/soapdenovo2/nanopub/000001/SOAPdenovo1_algorithm> rdf: <http://purl.obolibrary.org/obo/OBI_0001522> .
+	
+	<http://purl.org/isatab/soapdenovo2/nanopub/000001/genome coverage_v1> <http://purl.obolibrary.org/obo/IAO_0000004> <http://purl.org/isatab/soapdenovo2/nanopub/000001/genome coverage_v1> .
+}
+
+<http://purl.org/isatab/soapdenovo2/nanopub/000001/pubInfo> {
+	<http://purl.org/isatab/soapdenovo2/nanopub/000001/<nanopubURI\>> dc:created <http://purl.org/isatab/soapdenovo2/nanopub/000001/<nanopubURI\>> ;
+		dc:rightsHolder <http://purl.org/isatab/soapdenovo2/nanopub/000001/<nanopubURI\>> ;
+		dc:bibliographicCitation <http://dx.doi.org/10.1186/2047-217X-1-18> ;
+		dc:creator <http://w3id.org/people/agbeltran> , <http://w3id.org/people/proccaserra> ;
+		dc:hasVersion <http://purl.org/isatab/soapdenovo2/nanopub/000001/<nanopubURI\>> .
+}
